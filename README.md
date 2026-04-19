@@ -1,5 +1,5 @@
 <div style="text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 50px;">
-    <img src="img/TB1/Carátula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
+    <img src="img/AV1/caratula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
     <h1 style="font-size: 24px;">Universidad Peruana de Ciencias Aplicadas</h1>
     <h2 style="font-size: 24px;">Ingeniería de Software</h2>
     <p style="margin: 10px 0; border-bottom: none;">Ciclo: 7</p>
@@ -367,9 +367,134 @@ A fin de obtener información valiosa sobre las necesidades, deseos y desafíos 
 15. ¿Qué beneficios verías en contar con alertas automáticas o reportes sobre estos niveles?
 16. ¿Estarías dispuesto a implementar sensores IoT en tu oficina para prevenir posibles riesgos invisibles?
 
-
-
 ### 2.2.2. Registro de entrevistas
+
+#### Segmento 1: Personas comprometidas con el cuidado de su salud
+    
+> Entrevistado 01: Alejandra Gallo
+
+- **Sexo:** Femenino
+- **Edad:**  21
+- **Distrito donde vive:** Santiago de Surco, Lima
+- **Nivel socioeconómico:** Medio 
+
+**Entrevista:**
+
+![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-1/entrevista-1-segmento-1.png)
+
+- **Link:**  
+- **Duración:**  
+- **Aplicaciones usadas:** TikTok, Youtube, Netflix
+- **Tecnologías:**  Celular, Laptop, Consolas   
+- **Entrevistador:** Mauro Fabricio Lopez de la Cruz
+
+**Resumen:**  
+Alejandra Gallo un estudiante de ciencia de la computacion de 21años expresa su preocupación por la exposición constante a las ondas electromagnéticas generadas por dispositivos electrónicos como celulares, routers y electrodomésticos. Señala que aunque muchos no lo notan, estos campos pueden tener efectos negativos en la salud a largo plazo, como alteraciones del sueño, dolores de cabeza o incluso riesgos más serios aún en estudio. Gallo destaca la importancia de tomar conciencia sobre este tema, promover investigaciones al respecto y adoptar hábitos que reduzcan la exposición diaria a estas ondas..
+
+> Entrevistado 02: [Nombre y Apellido]
+
+- **Sexo:**  
+- **Edad:**  
+- **Distrito donde vive:**  
+- **Nivel socioeconómico:**  
+
+**Entrevista:**
+
+![Imagen de entrevista](URL_DE_LA_IMAGEN)
+
+- **Link:**  
+- **Duración:**  
+- **Aplicaciones usadas:**  
+- **Tecnologías:**  
+- **Entrevistador:**  
+
+**Resumen:**  
+[-- Resumen de la entrevista --]
+
+> Entrevistado 03: [Nombre y Apellido]
+
+- **Sexo:**  
+- **Edad:**  
+- **Distrito donde vive:**  
+- **Nivel socioeconómico:**  
+
+**Entrevista:**
+
+![Imagen de entrevista](URL_DE_LA_IMAGEN)
+
+- **Link:**  
+- **Duración:**  
+- **Aplicaciones usadas:**  
+- **Tecnologías:**  
+- **Entrevistador:**  
+
+**Resumen:**  
+[-- Resumen de la entrevista --]
+
+#### Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética
+
+    
+> Entrevistado 01: Alejandro Oroncoy
+
+- **Sexo:** Masculino   
+- **Edad:** 20
+- **Distrito donde vive:** San Borja, Lima
+- **Nivel socioeconómico:** Medio Alto 
+
+**Entrevista:**
+
+![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-2/entrevista-1-segmento-2.png)
+
+- **Link:**  
+- **Duración:**  
+- **Aplicaciones usadas:** Zoom, Twitter, Instagram 
+- **Tecnologías:**  Celular y Laptop
+- **Entrevistador:**  Fabian Alejandro Oliva López
+
+**Resumen:**  
+Alejandro, un back end developer de su startup con más de 1 año de experiencia. Tiene como principal preocupación la exposición constante a campos electromagnéticos debido a que teme que en un futuro afecte la salud de sus compañeros de trabajo. El estaría dispuesto a implementar los sensores IOT para generar alertas automáticas y reportes para visualizar estos riesgos invisibles y reducir el riesgo de exposiciones a la salud de él y sus compañeros de trabajo.  
+
+
+> Entrevistado 02: Gael Rivera
+
+- **Sexo:**  Masculino
+- **Edad:**  25
+- **Distrito donde vive:** La Molina, Lima
+- **Nivel socioeconómico:**  Medio Alto
+
+**Entrevista:**
+
+![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-2/entrevista-2-segmento-2.png)
+
+- **Link:**  
+- **Duración:**  
+- **Aplicaciones usadas:**  Zoom, Instagram, YouTube
+- **Tecnologías:**  Celular y Laptop
+- **Entrevistador:**  Fabian Alejandro Oliva López
+
+**Resumen:**  
+Gael, dueño de su proyecto con más de 3 años de experiencia, tiene como principal preocupación la exposición constante a campos electromagnéticos generados por los servidores y equipos de cómputo que utiliza en su operación diaria, ya que considera que, a largo plazo, podrían afectar su salud y la de las personas que trabajan en su entorno. Por ello, está interesado en adoptar soluciones IoT que le permitan supervisar estos niveles en tiempo real y tomar decisiones informadas para optimizar la distribución de sus equipos, mejorar las condiciones del espacio y prevenir posibles impactos en la salud.
+
+> Entrevistado 03: [Nombre y Apellido]
+
+- **Sexo:**  
+- **Edad:**  
+- **Distrito donde vive:**  
+- **Nivel socioeconómico:**  
+
+**Entrevista:**
+
+![Imagen de entrevista](URL_DE_LA_IMAGEN)
+
+- **Link:**  
+- **Duración:**  
+- **Aplicaciones usadas:**  
+- **Tecnologías:**  
+- **Entrevistador:**  
+
+**Resumen:**  
+[-- Resumen de la entrevista --]
+
 
 ### 2.2.3. Análisis de entrevistas
 
