@@ -1,5 +1,5 @@
 <div style="text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 50px;">
-    <img src="img/TB1/Carátula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
+    <img src="img/AV1/caratula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
     <h1 style="font-size: 24px;">Universidad Peruana de Ciencias Aplicadas</h1>
     <h2 style="font-size: 24px;">Ingeniería de Software</h2>
     <p style="margin: 10px 0; border-bottom: none;">Ciclo: 7</p>
