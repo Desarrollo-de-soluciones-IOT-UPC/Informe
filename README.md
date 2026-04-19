@@ -1,5 +1,5 @@
 <div style="text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 50px;">
-    <img src="img/TB1/Carátula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
+    <img src="img/AV1/caratula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
     <h1 style="font-size: 24px;">Universidad Peruana de Ciencias Aplicadas</h1>
     <h2 style="font-size: 24px;">Ingeniería de Software</h2>
     <p style="margin: 10px 0; border-bottom: none;">Ciclo: 7</p>
@@ -276,7 +276,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Descripción del integrante                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                   Perfil del integrante del equipo                                   |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------: |
-| [Descripcion 1] |      [Imagen]  |
+| Soy Carlos Eduardo Guimaraes Escalante, estudiante de la carrera de Ingeniería de Software, estoy cursando el séptimo ciclo de mi carrera y tengo 19 años. Soy una persona responsable y puntual, por lo que me gusta terminar y presentar los trabajos en los tiempos establecidos. Siempre me ha gustado la innovación y la creación de nuevas ideas. Estoy capacitado en algunos temas de edición de videos, y me considero bueno en programación. Voy a aportar al grupo de manera proactiva e intentaré aportar ideas que ayuden a mejorar el trabajo, siempre intentando mantener un ambiente positivo dentro del área de trabajo. | ![Carlos](img/AV1/chapter-1/team/carlos.png) |
 | [Descripcion 2] |      [Imagen]  |
 | [Descripcion 3] |      [Imagen]  |
 | [Descripcion 4] |      [Imagen]  |
