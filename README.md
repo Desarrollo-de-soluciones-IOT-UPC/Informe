@@ -309,7 +309,65 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ## 2.2. Entrevistas
 
+Una entrevista es un proceso de comunicación en el que una persona (entrevistador) realiza preguntas y otra persona (entrevistado) responde, con el objetivo de obtener información relevante sobre un tema específico. En este ámbito sería conocer la opinión y necesidades respecto a las preguntas que se le haría para llegar a comprender a nuestro público. 
+Para esto, es muy importante la información de cada entrevista que se realizará y de esa forma nuestra StartUp pueda lograr el éxito. Finalmente, realizaremos un total de seis entrevistas: tres dirigidas al segmento de Hogares y ciudadanos conscientes de la salud y tres al segmento de Oficinas, pymes y/o instituciones educativas.
+
 ### 2.2.1. Diseño de entrevistas
+
+A fin de obtener información valiosa sobre las necesidades, deseos y desafíos de nuestro público objetivo, hemos planteado una serie de preguntas.
+
+
+#### Segmento 1: Personas comprometidas con el cuidado de su salud
+
+##### Información personal:
+1. ¿Cuál es su nombre?
+2. ¿Cuál es su edad?
+3. ¿En qué ciudad resides?
+4. ¿Cuál es su ocupación profesional? ¿Se encuentra laborando actualmente?
+
+##### Personalidad, aspecto emocional y habilidades del usuario:
+5. ¿Podrías compartir una frase o dicho que refleje tu forma de ver la vida?
+6. ¿Cuáles son algunas de tus fortalezas o debilidades personales?
+7. ¿Qué medios digitales (TV, YouTube, redes sociales, etc.) sueles consumir?
+8. ¿Te sientes cómodo/a usando aplicaciones móviles o dispositivos electrónicos en casa? ¿Has tenido dificultades para aprender a usarlos?
+9. ¿Qué sistema operativo utilizas en tu celular? ¿iOS o Android?
+10. ¿Qué navegador web usas con mayor frecuencia?
+
+##### Evaluación del problema:
+11. ¿Sabías que los aparatos electrónicos emiten radiación electromagnética constantemente dentro del hogar?
+12.  ¿Has experimentado molestias como insomnio o dolores de cabeza que asocies con el uso prolongado de dispositivos electrónicos?
+13. ¿Qué tanto te preocupa la exposición a campos electromagnéticos en tu entorno diario?
+14. ¿Qué acciones tomas actualmente para reducir tu exposición a dispositivos electrónicos?
+15. ¿Qué información te gustaría tener para sentirte más seguro respecto a este tipo de exposición?
+16. ¿Usarías una aplicación que te alerte cuando los niveles de radiación en tu casa sean elevados?
+
+---
+
+#### Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética
+
+##### Información personal:
+1. ¿Cuál es su nombre?
+2. ¿Cuál es su edad?
+3. ¿En qué ciudad resides?
+4. ¿Cuál es su rol dentro de la organización? ¿Desde hace cuánto tiempo lo desempeñas?
+
+##### Personalidad, aspecto emocional y habilidades del usuario:
+5. ¿Qué lema o principio te guía en tu trabajo diario?
+6. ¿Qué cualidades personales consideras importantes para gestionar un entorno laboral saludable?
+7. ¿Qué plataformas digitales sueles usar para informarte o entretenerte?
+8. ¿Qué nivel de familiaridad tienes con el uso de aplicaciones o herramientas tecnológicas en tu entorno laboral?
+9. ¿Qué sistema operativo usas en tu celular y computadora?
+10. ¿Te consideras alguien abierto a la implementación de nuevas tecnologías?
+
+##### Evaluación del problema:
+11. ¿Consideras que el ambiente tecnológico de tu organización podría estar afectando la salud de los trabajadores o estudiantes?
+12. ¿Existen actualmente protocolos de monitoreo ambiental en tu institución (ruido, calidad del aire, etc.)?
+13. ¿Has recibido quejas de fatiga, dolores de cabeza u otros síntomas relacionados con el entorno de trabajo?
+14. ¿Qué tan importante crees que sería monitorear la exposición a radiación electromagnética en tu espacio laboral?
+15. ¿Qué beneficios verías en contar con alertas automáticas o reportes sobre estos niveles?
+16. ¿Estarías dispuesto a implementar sensores IoT en tu oficina para prevenir posibles riesgos invisibles?
+
+
 
 ### 2.2.2. Registro de entrevistas
 
