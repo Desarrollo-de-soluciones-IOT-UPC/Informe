@@ -675,6 +675,8 @@ El mapa de empatía de Ricardo Sánchez presenta a un profesional técnico altam
 
 ### 2.5. Ubiquitous Language
 
+El Ubiquitous Language es un principio fundamental en el diseño de sistemas y productos que busca establecer un lenguaje común, claro y consistente entre todos los participantes del proyecto, como desarrolladores, diseñadores y stakeholders. Este enfoque permite mejorar la comunicación, garantizar una comprensión compartida de los conceptos clave y disminuir errores o confusiones durante el desarrollo.
+
 # Capitulo III: Requirements Specification
 
 ## 3.1. User Stories
