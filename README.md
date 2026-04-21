@@ -677,6 +677,21 @@ El mapa de empatía de Ricardo Sánchez presenta a un profesional técnico altam
 
 El Ubiquitous Language es un principio fundamental en el diseño de sistemas y productos que busca establecer un lenguaje común, claro y consistente entre todos los participantes del proyecto, como desarrolladores, diseñadores y stakeholders. Este enfoque permite mejorar la comunicación, garantizar una comprensión compartida de los conceptos clave y disminuir errores o confusiones durante el desarrollo.
 
+Sensor: Dispositivo IoT encargado de detectar los niveles de radiación electromagnética no ionizante en un entorno determinado.
+
+Radiación No Ionizante: Tipo de radiación generada por equipos como routers, teléfonos móviles y electrodomésticos. No modifica el ADN, aunque una exposición prolongada podría afectar la salud.
+
+Medición en Tiempo Real: Proceso continuo en el que los sensores capturan y envían datos al sistema para su visualización inmediata.
+
+Plataforma EMSafe: Aplicación web que permite a los usuarios consultar reportes, visualizar niveles de radiación y configurar alertas o zonas de monitoreo.
+
+Umbral de Seguridad: Límite de radiación definido según estándares internacionales (como ICNIRP o WHO), cuyo exceso activa una alerta en la plataforma.
+
+Alerta Automática: Notificación que se envía al usuario cuando los niveles de radiación superan el umbral establecido.
+
+Recomendación Personalizada: Sugerencias específicas basadas en las mediciones del entorno del usuario, orientadas a reducir la exposición.
+
+
 # Capitulo III: Requirements Specification
 
 ## 3.1. User Stories
