@@ -673,6 +673,51 @@ El mapa de empatía de Ricardo Sánchez presenta a un profesional técnico altam
 
 ### 2.4. Big Picture Event Storming
 
+En esta sección el equipo presenta los resultados de la sesión de Big Picture Event
+Storming realizada de manera colaborativa, con el objetivo de explorar y comprender
+el dominio del negocio de la solución de monitoreo de campos electromagnéticos (EMF).
+Esta técnica permitió identificar los eventos de dominio más significativos, los actores
+involucrados, los comandos que desencadenan acciones y las políticas que rigen el
+comportamiento del sistema, ofreciendo una visión de alto nivel del landscape del negocio.
+
+La sesión se estructuró en cinco fases principales que representan el ciclo de vida
+completo de la solución:
+
+La primera fase, **Registro y Configuración del Dispositivo**, cubre el proceso inicial
+mediante el cual tanto usuarios del hogar como técnicos empresariales crean su cuenta
+en la plataforma, instalan el sensor EMF físico y configuran los umbrales de alerta
+personalizados. Durante esta fase se identificó un hotspot relevante: la definición de
+valores de umbral seguros por defecto, que deberá resolverse con base en normativas
+internacionales de exposición EMF.
+
+La segunda fase, **Captura y Transmisión de Datos EMF**, modela el flujo de datos desde
+el sensor físico (hardware GY-273) hasta el almacenamiento en base de datos, pasando
+por la transmisión vía protocolo MQTT hacia el Edge API. Se identificó como hotspot la
+frecuencia de muestreo óptima del sensor, aspecto que impacta directamente en el consumo
+de recursos y la precisión del monitoreo.
+
+La tercera fase, **Monitoreo en Tiempo Real**, representa la consulta del dashboard por
+parte del usuario y la lógica de alerta automática: cuando una lectura supera el umbral
+configurado, el sistema genera una alerta de sobreexposición y envía una notificación al
+usuario. Esta política constituye el núcleo de valor de la solución.
+
+La cuarta fase, **Análisis Histórico y Reportes**, cubre la consulta de datos históricos
+y la generación de reportes en formato PDF, funcionalidad especialmente relevante para el
+segmento empresarial que requiere evidencia documental para auditorías y cumplimiento
+normativo. Se identificó como hotspot el período mínimo de retención de datos.
+
+La quinta fase, **Gestión de Dispositivos**, abarca la verificación del estado del sensor,
+la actualización de firmware y la política de alerta ante desconexión prolongada del
+dispositivo (más de 5 minutos offline).
+
+El proceso permitió además identificar cinco aggregates principales del sistema:
+Dispositivo, LecturaEMF, Alerta, Informe y CuentaUsuario, los cuales servirán como
+base para el modelado táctico en capítulos posteriores.
+
+![Event Storming](img/AV1/chapter-2/needfinding/event-storming/event_storming.png)
+
+Enlace al tablero: [Big Picture Event Storming en Miro](https://miro.com/welcomeonboard/dUtIRzBmank2eDlMSzZleDl2NEV1WFJNMVE1a3pRZCt0dlhkRlI2a2lhWm1Ba2luamtHL1BlanVYV1U3a1hWWjRiU3N3VHQ0dlkvaHJpUjJEdkNxOFovWTdPWU1HbmRlNWNuZEMxR1lKNU03emJLUjBzM2dhQU9JN0FSWDkvU1dQdGo1ZEV3bUdPQWRZUHQzSGl6V2NBPT0hdjE=?share_link_id=82954980569)
+
 ### 2.5. Ubiquitous Language
 
 # Capitulo III: Requirements Specification
