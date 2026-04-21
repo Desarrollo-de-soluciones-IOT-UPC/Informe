@@ -423,8 +423,8 @@ A fin de obtener información valiosa sobre las necesidades, deseos y desafíos 
 
 ![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-1/entrevista-1-segmento-1.png)
 
-- **Link:**  
-- **Duración:**  
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">Link de la entrevista</a> 
+- **Duración:** 0:00 - 6:05
 - **Aplicaciones usadas:** TikTok, Youtube, Netflix
 - **Tecnologías:**  Celular, Laptop, Consolas   
 - **Entrevistador:** Mauro Fabricio Lopez de la Cruz
@@ -432,45 +432,47 @@ A fin de obtener información valiosa sobre las necesidades, deseos y desafíos 
 **Resumen:**  
 Alejandra Gallo un estudiante de ciencia de la computacion de 21años expresa su preocupación por la exposición constante a las ondas electromagnéticas generadas por dispositivos electrónicos como celulares, routers y electrodomésticos. Señala que aunque muchos no lo notan, estos campos pueden tener efectos negativos en la salud a largo plazo, como alteraciones del sueño, dolores de cabeza o incluso riesgos más serios aún en estudio. Gallo destaca la importancia de tomar conciencia sobre este tema, promover investigaciones al respecto y adoptar hábitos que reduzcan la exposición diaria a estas ondas..
 
-> Entrevistado 02: [Nombre y Apellido]
+> Entrevistado 02: Miquel de la Piedra
 
-- **Sexo:**  
-- **Edad:**  
-- **Distrito donde vive:**  
-- **Nivel socioeconómico:**  
-
-**Entrevista:**
-
-![Imagen de entrevista](URL_DE_LA_IMAGEN)
-
-- **Link:**  
-- **Duración:**  
-- **Aplicaciones usadas:**  
-- **Tecnologías:**  
-- **Entrevistador:**  
-
-**Resumen:**  
-[-- Resumen de la entrevista --]
-
-> Entrevistado 03: [Nombre y Apellido]
-
-- **Sexo:**  
-- **Edad:**  
-- **Distrito donde vive:**  
-- **Nivel socioeconómico:**  
+- **Sexo:** Masculino
+- **Edad:** 22
+- **Distrito donde vive:** Santiago de Surco, Lima
+- **Nivel socioeconómico:** Medio
 
 **Entrevista:**
 
-![Imagen de entrevista](URL_DE_LA_IMAGEN)
+![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-1/entrevista-2-segmento-1.png)
 
-- **Link:**  
-- **Duración:**  
-- **Aplicaciones usadas:**  
-- **Tecnologías:**  
-- **Entrevistador:**  
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">Link de la entrevista</a>
+- **Duración:** 6:05 - 13:04
+- **Aplicaciones usadas:** TikTok, Instagram, WhatsApp y Chrome
+- **Tecnologías:** Laptop, Celular y Computadora
+- **Entrevistador:**  Carlos Eduardo Guimaraes Escalante
 
 **Resumen:**  
-[-- Resumen de la entrevista --]
+Miquel es un joven de 21 años que estudia y actualmente realiza prácticas en Ingeniería de Software, lo que implica una exposición constante a dispositivos electrónicos como laptops, celulares y computadoras. A raíz de este uso prolongado, ha experimentado síntomas como insomnio y fatiga visual, los cuales logró mitigar parcialmente mediante el uso de lentes. Sin embargo, estos efectos siguen generándole cierta preocupación por su bienestar a largo plazo.
+
+Además, Miquel reconoce que no tiene claridad sobre los niveles de radiación electromagnética a los que está expuesto diariamente, principalmente debido a la falta de fuentes de información confiables y accesibles sobre el tema. En este contexto, expresa interés en contar con una herramienta que le permita monitorear estos niveles en tiempo real y recibir alertas cuando sean elevados, de modo que pueda tomar medidas preventivas y proteger su salud.
+
+> Entrevistado 03: Luis Barrantes
+
+- **Sexo:** Masculino
+- **Edad:** 21
+- **Distrito donde vive:** Santiago de Surco, Lima
+- **Nivel socioeconómico:** Alto
+
+**Entrevista:**
+
+![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-1/entrevista-3-segmento-1.png)
+
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">Link de la entrevista</a>
+- **Duración:** 13:04 - 17:38
+- **Aplicaciones usadas:** Brave, YouTube y TikTok
+- **Tecnologías:** Celular y Laptop
+- **Entrevistador:** Oskar Rodrigo Sosa Soto
+
+**Resumen:**  
+Luis Barrantes, un joven de 21 años residente de Surco, reconoce ser un usuario constante de tecnologías como su celular y plataformas digitales (YouTube, TikTok y Brave), lo cual lo mantiene en una exposición continua a dispositivos electrónicos. Aunque se siente cómodo con el uso de la tecnología, manifiesta una preocupación moderada por los efectos de la radiación electromagnética en su salud, vinculando el uso prolongado de dispositivos con malestares como el insomnio y dolores de cabeza leves
 
 #### Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética
 
@@ -486,8 +488,8 @@ Alejandra Gallo un estudiante de ciencia de la computacion de 21años expresa su
 
 ![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-2/entrevista-1-segmento-2.png)
 
-- **Link:**  
-- **Duración:**  
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">Link de la entrevista</a>
+- **Duración:** 17:38 - 28:59
 - **Aplicaciones usadas:** Zoom, Twitter, Instagram 
 - **Tecnologías:**  Celular y Laptop
 - **Entrevistador:**  Fabian Alejandro Oliva López
@@ -507,8 +509,8 @@ Alejandro, un back end developer de su startup con más de 1 año de experiencia
 
 ![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-2/entrevista-2-segmento-2.png)
 
-- **Link:**  
-- **Duración:**  
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">Link de la entrevista</a> 
+- **Duración:** 28:59 - 35:10
 - **Aplicaciones usadas:**  Zoom, Instagram, YouTube
 - **Tecnologías:**  Celular y Laptop
 - **Entrevistador:**  Fabian Alejandro Oliva López
@@ -516,36 +518,158 @@ Alejandro, un back end developer de su startup con más de 1 año de experiencia
 **Resumen:**  
 Gael, dueño de su proyecto con más de 3 años de experiencia, tiene como principal preocupación la exposición constante a campos electromagnéticos generados por los servidores y equipos de cómputo que utiliza en su operación diaria, ya que considera que, a largo plazo, podrían afectar su salud y la de las personas que trabajan en su entorno. Por ello, está interesado en adoptar soluciones IoT que le permitan supervisar estos niveles en tiempo real y tomar decisiones informadas para optimizar la distribución de sus equipos, mejorar las condiciones del espacio y prevenir posibles impactos en la salud.
 
-> Entrevistado 03: [Nombre y Apellido]
+> Entrevistado 03: Jose Miguel Riega
 
-- **Sexo:**  
-- **Edad:**  
-- **Distrito donde vive:**  
-- **Nivel socioeconómico:**  
+- **Sexo:** Masculino
+- **Edad:** 22 
+- **Distrito donde vive:** Chorrillos, Lima
+- **Nivel socioeconómico:** Alto
 
 **Entrevista:**
 
-![Imagen de entrevista](URL_DE_LA_IMAGEN)
+![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-2/entrevista-3-segmento-2.png)
 
-- **Link:**  
-- **Duración:**  
-- **Aplicaciones usadas:**  
-- **Tecnologías:**  
-- **Entrevistador:**  
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">Link de la entrevista</a>  
+- **Duración:** 35:10 - 42:13
+- **Aplicaciones usadas:** TikTok e Instagram
+- **Tecnologías:** Celular y Computadora
+- **Entrevistador:** Fernando Jesus Lizano Coll Cardenas
 
 **Resumen:**  
-[-- Resumen de la entrevista --]
+Jose Riega es un técnico de mantenimiento eléctrico de 22 años con un año de experiencia en una empresa de manufactura en Lima. Se describe como una persona responsable y abierta a aprender, quien considera que la comunicación oportuna sobre riesgos laborales es clave para un ambiente de trabajo saludable. En cuanto a sus hábitos digitales, utiliza principalmente TikTok, YouTube e Instagram, maneja Android y Windows, y se considera abierto a adoptar nuevas tecnologías si éstas simplifican su trabajo.
 
+Respecto al problema, Jose admitió no haber reflexionado antes sobre los riesgos electromagnéticos en su entorno, a pesar de trabajar rodeado de maquinaria industrial todo el día. Mencionó que frecuentemente termina su turno con dolor de cabeza, síntoma compartido por varios compañeros, y que la empresa no comunica claramente los resultados de sus monitoreos de seguridad. Valoró positivamente la idea de un sistema de alertas automáticas sobre niveles electromagnéticos y se mostró completamente dispuesto a que se instalen sensores IoT en su área de trabajo.
 
 ### 2.2.3. Análisis de entrevistas
+
+De acuerdo con las entrevistas registradas y sus respectivos resúmenes, hemos realizado el siguiente análisis, donde se resaltan los puntos en común de los entrevistados. 
+
+#### Análisis del Segmento 1: Personas comprometidas con el cuidado de su salud
+
+##### Características Objetivas:
+
+- **Preocupación por la Radiación Electromagnética:** Todos los entrevistados manifestaron preocupación por los efectos de la exposición constante a campos electromagnéticos provenientes de dispositivos electrónicos, asociándolos con problemas como insomnio, fatiga visual y dolores de cabeza.  
+
+- **Alta Exposición Tecnológica:** Los tres participantes presentan un uso intensivo de dispositivos electrónicos en su vida diaria, tanto por motivos académicos y laborales como por entretenimiento, lo que incrementa su nivel de exposición.  
+
+- **Interés en Soluciones de Monitoreo:** Dos de los tres entrevistados expresaron interés en contar con herramientas que les permitan monitorear los niveles de radiación electromagnética en tiempo real y recibir información clara al respecto.  
+
+- **Falta de Información Accesible:** La mayoría de los entrevistados indicó no contar con información suficiente, confiable o comprensible sobre los niveles de radiación y sus posibles efectos en la salud.  
+
+- **Preferencia por Alertas Proactivas:** Los participantes valoran la posibilidad de recibir alertas automáticas cuando los niveles de radiación sean elevados, considerándolo un elemento clave para la prevención.  
+
+##### Características Subjetivas:
+
+- **Sensación de Incertidumbre:** Los entrevistados expresan preocupación e incertidumbre debido a la falta de conocimiento sobre su nivel real de exposición a radiación electromagnética.  
+
+- **Interés por el Bienestar Personal:** Existe una clara intención de adoptar hábitos más saludables y prevenir posibles efectos negativos a largo plazo, especialmente en relación con el uso constante de tecnología.  
+
+- **Confianza en Soluciones Tecnológicas:** Los participantes muestran una actitud positiva hacia el uso de herramientas digitales que les permitan monitorear y gestionar su exposición, siempre que estas sean accesibles y fáciles de usar.  
+
+##### Conclusión:
+
+Las personas comprometidas con el cuidado de su salud presentan una exposición constante a dispositivos electrónicos y una preocupación generalizada por los posibles efectos de la radiación electromagnética. A pesar de ello, enfrentan una falta de información clara y herramientas prácticas para gestionar este riesgo. Existe una clara disposición a adoptar soluciones tecnológicas que permitan monitorear los niveles de radiación en tiempo real y recibir alertas preventivas, lo que evidencia una oportunidad para desarrollar una herramienta accesible que contribuya a mejorar su bienestar y reducir la incertidumbre.
+
+---
+
+#### Análisis del Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética
+
+##### Características Objetivas:
+
+- **Exposición en Entornos Laborales:** Todos los entrevistados trabajan en entornos donde existe exposición constante a campos electromagnéticos, ya sea por el uso de servidores, equipos de cómputo o maquinaria industrial.  
+
+- **Uso de Métodos Limitados de Monitoreo:** La mayoría de los participantes indicó que actualmente no cuenta con sistemas adecuados o claros para monitorear los niveles de radiación electromagnética en sus entornos laborales.  
+
+- **Interés en Soluciones IoT:** Los entrevistados muestran interés en implementar soluciones basadas en sensores IoT que permitan medir y visualizar los niveles de radiación en tiempo real.  
+
+- **Necesidad de Reportes y Análisis:** Dos de los tres entrevistados consideran importante contar con reportes que les permitan identificar patrones de exposición y tomar decisiones informadas para mejorar las condiciones de trabajo.  
+
+- **Aceptación de Alertas Automatizadas:** Los participantes valoran la implementación de alertas automáticas que les permitan actuar de manera preventiva frente a niveles elevados de radiación.  
+
+##### Características Subjetivas:
+
+- **Preocupación por la Salud Laboral:** Los entrevistados expresan preocupación por el impacto que la exposición prolongada podría tener en su salud y en la de sus compañeros de trabajo.  
+
+- **Falta de Conciencia Inicial:** Uno de los participantes señala que no había considerado previamente este problema, lo que evidencia una falta de concientización general en algunos entornos laborales.  
+
+- **Interés en la Prevención y Mejora Continua:** Existe una actitud proactiva hacia la adopción de soluciones que permitan reducir riesgos, mejorar la seguridad laboral y optimizar la gestión del entorno de trabajo.  
+
+##### Conclusión:
+
+Los miembros de empresas y organizaciones presentan una exposición constante a campos electromagnéticos en sus entornos laborales, junto con una limitada disponibilidad de herramientas para su monitoreo. A pesar de ello, muestran una alta disposición a adoptar soluciones tecnológicas, especialmente aquellas basadas en IoT, que permitan medir, analizar y prevenir riesgos mediante alertas y reportes. Esto representa una oportunidad clara para implementar sistemas que mejoren la seguridad laboral, faciliten la toma de decisiones y protejan la salud de los trabajadores.
 
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
 
+A través de un perfil detallado, esta sección explora las características demográficas, necesidades, deseos, comportamientos y problemas específicos de los usuarios de los segmentos objetivos predefinidos, facilitando el diseño de soluciones que se alineen mejor con sus expectativas y desafíos.
+
+**Segmento 1:** Personas comprometidas con el cuidado de su salud
+
+<img src="img/AV1/chapter-2/needfinding/user-personas/user-persona-segmento-1.png" alt="User Persona Segmento 1" width="600"/> <br>
+
+**Segmento 2:** Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética
+
+<img src="img/AV1/chapter-2/needfinding/user-personas/user-persona-segmento-2.png" alt="User Persona Segmento 2" width="600"/>
+
 ### 2.3.2. User Task Matrix
 
+**Segmento 1:** Personas comprometidas con el cuidado de su salud
+- Nombre: María Gutiérrez
+- Edad: 37 años
+- Profesión: Maestra de primaria
+- Interés: Proteger la salud de su familia ante la exposición electromagnética
+
+| Tarea                                                                 | Frecuencia | Importancia | Comentarios |
+|-----------------------------------------------------------------------|------------|-------------|-------------|
+| Verificar niveles de radiación en su casa                            | Diaria     | Alta        | Revisa exposición en zonas como dormitorio, sala y cocina. |
+| Recibir alertas si hay sobreexposición                               | Eventual   | Alta        | Desea alertas claras, automáticas y fáciles de entender. |
+| Acceder a recomendaciones para reducir exposición                    | Semanal    | Media       | Busca consejos simples como cambiar ubicación de dispositivos. |
+| Configurar zonas seguras en la app                                   | Ocasional  | Media       | Le interesa definir áreas donde sus hijos juegan o duermen. |
+| Consultar histórico de niveles de exposición                         | Mensual    | Media       | Quiere evaluar cambios a lo largo del tiempo para tomar decisiones. |
+| Compartir inquietudes o consejos en redes o foros                    | Ocasional  | Baja        | Busca validar preocupaciones con otros padres o usuarios. |
+
+
+**Segmento 2:** Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética
+
+- Nombre: Ricardo Sánchez
+- Edad: 42 años
+- Profesión: Técnico en telecomunicaciones
+- Interés: Garantizar entornos seguros en industrias y cumplir con normativas
+
+| Tarea                                                                 | Frecuencia | Importancia | Comentarios |
+|-----------------------------------------------------------------------|------------|-------------|-------------|
+| Instalar sensores en entornos industriales                           | Recurrente | Alta        | Necesita facilidad de instalación y conectividad inmediata. |
+| Ver dashboards de radiación en tiempo real                           | Diaria     | Alta        | Usa los datos para supervisar condiciones operativas. |
+| Generar reportes PDF para auditorías o clientes                      | Semanal    | Alta        | Automatización y formatos exportables son clave. |
+| Configurar umbrales personalizados de alerta                         | Ocasional  | Alta        | Desea adaptar alertas a normas de seguridad de su empresa. |
+| Integrar datos con plataformas internas mediante API                 | Eventual   | Media       | Requiere endpoints bien documentados y estables. |
+| Realizar mantenimientos o actualizaciones de sensores                | Mensual    | Media       | Importante para asegurar continuidad del monitoreo. |
+
+El análisis del User Task Matrix evidencia dos perfiles de usuario con necesidades claramente diferenciadas, pero alineadas en torno a un mismo objetivo: el monitoreo y control efectivo de la exposición electromagnética.
+
+Por un lado, el Segmento 1 prioriza la simplicidad, claridad y accesibilidad. Sus tareas más importantes están relacionadas con la verificación diaria de niveles de radiación y la recepción de alertas comprensibles, lo que refleja la necesidad de una solución intuitiva, automatizada y orientada a la toma de decisiones rápidas para proteger la salud familiar. Las funcionalidades complementarias, como recomendaciones y visualización histórica, aportan valor educativo y de prevención a mediano plazo.
+
+Por otro lado, el Segmento 2 requiere una solución más robusta, técnica y escalable. Sus tareas críticas giran en torno al monitoreo en tiempo real, la generación de reportes y la configuración avanzada de alertas, lo que evidencia la necesidad de herramientas precisas, personalizables e integrables con otros sistemas. Además, aspectos como la instalación de sensores y el mantenimiento destacan la importancia de la confiabilidad y continuidad operativa.
+
+En conjunto, ambos segmentos comparten la alta importancia de las alertas y el monitoreo constante, lo que sugiere que estos deben ser los pilares centrales del sistema. Sin embargo, la solución debe ser lo suficientemente flexible para adaptarse tanto a usuarios no técnicos como a profesionales especializados, diferenciando la experiencia de usuario según el contexto de uso.
+
 ### 2.3.4. Empathy Mapping
+
+El Empathy Mapping es una herramienta que ayuda a comprender más profundamente las necesidades, deseos, preocupaciones y emociones de los usuarios. Al centrarse en lo que los usuarios piensan, sienten, dicen y hacen, el mapa permite a los diseñadores y equipos de producto conectar mejor con los usuarios y crear soluciones que realmente resuelvan sus problemas y satisfagan sus expectativas.
+
+**Segmento 1: Personas comprometidas con el cuidado de su salud**
+
+El mapa de empatía de María Gutiérrez muestra a una madre de familia preocupada por el bienestar de su hogar, que busca comprender y controlar la exposición a la radiación electromagnética. Necesita una solución clara, confiable y fácil de interpretar que le permita tomar decisiones informadas, reducir riesgos para sus hijos y sentirse segura dentro de su propio entorno.
+
+![Mapa de empatía 1  (1)](img/AV1/chapter-2/needfinding/empathy-mapping/empathy-mapping-segmento-1.png)
+
+**Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética**
+
+El mapa de empatía de Ricardo Sánchez presenta a un profesional técnico altamente responsable, enfocado en garantizar la seguridad y el cumplimiento normativo en entornos industriales. Requiere herramientas precisas, integrables y automatizadas que le permitan monitorear en tiempo real, generar reportes eficientes y minimizar riesgos operativos, optimizando así la toma de decisiones en su organización.
+
+![Empathy map 2](img/AV1/chapter-2/needfinding/empathy-mapping/empathy-mapping-segmento-2.png)
+
 
 ### 2.4. Big Picture Event Storming
 
