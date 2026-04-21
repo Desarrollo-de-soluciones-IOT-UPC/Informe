@@ -699,6 +699,21 @@ Usuario Individual: Persona que utiliza EMSafe para monitorear y reducir su expo
 
 Usuario Corporativo: Organización o empresa que emplea EMSafe para supervisar y minimizar la exposición de sus colaboradores.
 
+API REST: Interfaz que permite la comunicación e integración de EMSafe con otros sistemas para el intercambio automático de datos.
+
+Dashboard: Panel principal donde se visualizan métricas clave, estado de sensores y alertas recientes en tiempo real.
+
+Reporte: Documento generado automáticamente que resume las mediciones de radiación en un periodo determinado, útil para análisis o auditorías.
+
+Integración: Proceso de conexión entre EMSafe y otras plataformas o sistemas externos.
+
+Auditoría: Evaluación del cumplimiento de normativas, donde EMSafe proporciona evidencia mediante reportes certificados.
+
+Configuración de Sensor: Proceso mediante el cual el usuario define la ubicación, nombre y parámetros de funcionamiento de un sensor desde la plataforma.
+
+Salud Electromagnética: Nivel de bienestar relacionado con la exposición controlada a campos electromagnéticos en el entorno cotidiano.
+
+Comunidad: Conjunto de usuarios que comparten sus datos de medición para generar información colaborativa sobre la exposición en zonas comunes.
 
 # Capitulo III: Requirements Specification
 
