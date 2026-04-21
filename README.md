@@ -153,11 +153,6 @@ Se presenta el resumen de commits:
 - [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
 
 - [2.1. Competidores](#21-competidores)
-Con el propósito de analizar el entorno competitivo en el que se desarrollará la solución propuesta, se ha llevado a cabo una evaluación de distintas alternativas existentes relacionadas con la medición y estudio de la radiación electromagnética. Estas soluciones presentan enfoques variados, que abarcan desde la investigación científica hasta el uso de dispositivos de medición y herramientas de detección básica. Este análisis permite identificar sus principales características, limitaciones y oportunidades, aportando información clave para definir el posicionamiento estratégico y el valor diferencial de la propuesta planteada.
-
-<img width="594" height="734" alt="image" src="https://github.com/user-attachments/assets/40533bd0-db3e-419e-a173-8e3e0b77afb6" />
-
-
   - [2.1.1. Análisis competitivo]()
   - [2.1.2. Estrategias y tácticas frente a competidores](#211-análisis-competitivo)
 
@@ -306,6 +301,10 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
+
+Con el propósito de analizar el entorno competitivo en el que se desarrollará la solución propuesta, se ha llevado a cabo una evaluación de distintas alternativas existentes relacionadas con la medición y estudio de la radiación electromagnética. Estas soluciones presentan enfoques variados, que abarcan desde la investigación científica hasta el uso de dispositivos de medición y herramientas de detección básica. Este análisis permite identificar sus principales características, limitaciones y oportunidades, aportando información clave para definir el posicionamiento estratégico y el valor diferencial de la propuesta planteada.
+
+<img width="594" height="734" alt="image" src= "img/AV1/chapter-2/competidores/Competidores.PNG" />
 
 ### 2.1.1. Análisis competitivo
 
