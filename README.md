@@ -308,7 +308,45 @@ Con el propósito de analizar el entorno competitivo en el que se desarrollará 
 
 ### 2.1.1. Análisis competitivo
 
+En esta sección se presenta un análisis comparativo de la solución propuesta frente a otras alternativas existentes en el ámbito de la medición y gestión de la radiación electromagnética. A través de una matriz estructurada, se examinan distintos aspectos como el enfoque del producto, el mercado objetivo, las estrategias utilizadas y sus capacidades tecnológicas.
+
+| **Nombre de los Startups** |  | **Gauss (EmSafe)** | **EMF-Portal** | **Safe Living Technologies** | **Trifield** |
+|--------------------------|----------------------------------------------------|------------------------------|------------------------------|------------------------------|------------------------------|
+| **Perfil** | Overview | Plataforma tecnológica basada en IoT que permite monitorear en tiempo real la radiación electromagnética mediante sensores, app móvil y plataforma web con análisis en la nube. | Plataforma académica que recopila y organiza estudios científicos sobre los efectos de la radiación electromagnética en la salud. | Empresa enfocada en la comercialización de productos de medición y protección contra radiación electromagnética. | Empresa que desarrolla dispositivos de medición EMF para uso doméstico y profesional. |
+| | Ventaja competitiva / ¿Qué valor ofrece a los clientes? | Monitoreo en tiempo real, integración IoT, alertas automáticas, reportes históricos y recomendaciones personalizadas. | Amplia base de datos científica confiable y gratuita. | Soluciones físicas orientadas a la salud y protección EMF. | Dispositivos accesibles, simples y fáciles de usar. |
+| **Perfil de Marketing** | Mercado objetivo | Personas, empresas e industrias preocupadas por la exposición electromagnética. | Investigadores, científicos y comunidad académica. | Usuarios preocupados por la salud y protección EMF. | Usuarios domésticos y técnicos básicos. |
+| | Estrategias de marketing | Marketing digital, enfoque en salud y tecnología, modelo freemium/premium. | Difusión académica y publicaciones científicas. | Venta online y posicionamiento en salud y bienestar. | Comercialización online y distribución de dispositivos. |
+| **Perfil del Producto** | Productos & Servicios | Aplicación móvil, plataforma web, sensores IoT y análisis en la nube. | Base de datos de estudios científicos. | Medidores EMF y productos de protección. | Dispositivos portátiles de medición EMF. |
+| | Precios & Costos | Modelo freemium con suscripción premium. | Acceso gratuito. | Venta de productos físicos (hardware). | Venta de dispositivos (hardware). |
+| | Canales de distribución (Web y/o Móvil) | Aplicación móvil, plataforma web e integración con sensores IoT. | Plataforma web. | Comercio electrónico (web). | Página web y distribuidores. |
+| **Análisis SWOT** | Fortalezas | Solución integral (IoT + app + nube), monitoreo en tiempo real, alertas automáticas y análisis de datos. | Alta credibilidad científica. | Productos especializados en salud. | Simplicidad y facilidad de uso. |
+| | Debilidades | Dependencia de sensores físicos y conectividad. | No ofrece monitoreo en tiempo real. | No cuenta con plataforma digital avanzada. | No permite almacenamiento ni análisis de datos. |
+| | Oportunidades | Crecimiento del IoT y mayor preocupación por la salud tecnológica. | Incremento de investigaciones científicas. | Mayor demanda de protección EMF. | Expansión en el mercado doméstico. |
+| | Amenazas | Nuevos competidores tecnológicos y regulaciones. | Limitada innovación tecnológica. | Competidores con soluciones digitales más completas. | Sustitución por soluciones más avanzadas basadas en IoT. |
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
+Nuestra estrategia se basa en la diferenciación tecnológica mediante el uso de sensores IoT, análisis en la nube y monitoreo en tiempo real de la radiación electromagnética, con el objetivo de ofrecer una solución integral que supere las limitaciones de las alternativas actuales. Así, nuestras tácticas clave son:
+
+🟩 **Optimizar la experiencia del usuario en la plataforma**
+
+Garantizar que la aplicación móvil y la plataforma web sean intuitivas, accesibles y fáciles de usar tanto para usuarios individuales como para organizaciones, facilitando la interpretación de datos, la visualización de niveles de radiación y la toma de decisiones informadas.
+
+🟩 **Implementar monitoreo continuo con alertas inteligentes**
+
+Aprovechar la integración de sensores IoT para ofrecer mediciones en tiempo real, complementadas con alertas automáticas cuando se superen los niveles seguros, lo que permite actuar de manera preventiva frente a la exposición electromagnética.
+
+🟩 **Desarrollar alianzas estratégicas con organizaciones y empresas**
+
+Establecer vínculos con empresas, instituciones educativas y entidades interesadas en la salud ocupacional y tecnológica, promoviendo el uso de la plataforma como una herramienta de monitoreo y prevención en entornos laborales y cotidianos.
+
+🟩 **Fomentar la adopción mediante un modelo freemium**
+
+Ofrecer acceso gratuito a funcionalidades básicas de la plataforma, incentivando a los usuarios a migrar hacia planes premium que incluyan reportes avanzados, análisis histórico y recomendaciones personalizadas, facilitando la captación y retención de clientes.
+
+🟩 **Promover la concientización sobre la exposición electromagnética**
+
+Desarrollar contenido educativo, campañas digitales y recursos informativos que permitan a los usuarios comprender los riesgos asociados a la radiación electromagnética y adoptar medidas preventivas, posicionando la solución como una herramienta clave para el bienestar y la seguridad.
 
 ## 2.2. Entrevistas
 
