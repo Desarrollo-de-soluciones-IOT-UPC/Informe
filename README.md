@@ -691,6 +691,14 @@ Alerta Automática: Notificación que se envía al usuario cuando los niveles de
 
 Recomendación Personalizada: Sugerencias específicas basadas en las mediciones del entorno del usuario, orientadas a reducir la exposición.
 
+Mapa de Calor: Representación visual geoespacial que muestra la intensidad de radiación mediante diferentes colores.
+
+Zona Crítica: Área donde los niveles de radiación superan de forma constante el umbral de seguridad y requieren intervención.
+
+Usuario Individual: Persona que utiliza EMSafe para monitorear y reducir su exposición o la de su entorno cercano.
+
+Usuario Corporativo: Organización o empresa que emplea EMSafe para supervisar y minimizar la exposición de sus colaboradores.
+
 
 # Capitulo III: Requirements Specification
 
