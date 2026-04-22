@@ -720,6 +720,65 @@ Enlace al tablero: [Big Picture Event Storming en Miro](https://miro.com/welcome
 
 ### 2.5. Ubiquitous Language
 
+El Ubiquitous Language es un principio fundamental en el diseño de sistemas y productos que busca establecer un lenguaje común, claro y consistente entre todos los participantes del proyecto, como desarrolladores, diseñadores y stakeholders. Este enfoque permite mejorar la comunicación, garantizar una comprensión compartida de los conceptos clave y disminuir errores o confusiones durante el desarrollo.
+
+**Sensor**:
+Dispositivo IoT encargado de detectar los niveles de radiación electromagnética no ionizante en un entorno determinado.
+
+**Radiación No Ionizante**:
+Tipo de radiación generada por equipos como routers, teléfonos móviles y electrodomésticos. No modifica el ADN, aunque una exposición prolongada podría afectar la salud.
+
+**Medición en Tiempo Real**: 
+Proceso continuo en el que los sensores capturan y envían datos al sistema para su visualización inmediata.
+
+**Plataforma EMSafe**:
+Aplicación web que permite a los usuarios consultar reportes, visualizar niveles de radiación y configurar alertas o zonas de monitoreo.
+
+**Umbral de Seguridad**:
+Límite de radiación definido según estándares internacionales (como ICNIRP o WHO), cuyo exceso activa una alerta en la plataforma.
+
+**Alerta Automática**:
+Notificación que se envía al usuario cuando los niveles de radiación superan el umbral establecido.
+
+**Recomendación Personalizada**:
+Sugerencias específicas basadas en las mediciones del entorno del usuario, orientadas a reducir la exposición.
+
+**Mapa de Calor**:
+Representación visual geoespacial que muestra la intensidad de radiación mediante diferentes colores.
+
+**Zona Crítica**:
+Área donde los niveles de radiación superan de forma constante el umbral de seguridad y requieren intervención.
+
+**Usuario Individual**: 
+Persona que utiliza EMSafe para monitorear y reducir su exposición o la de su entorno cercano.
+
+**Usuario Corporativo**: 
+Organización o empresa que emplea EMSafe para supervisar y minimizar la exposición de sus colaboradores.
+
+**API REST**: 
+Interfaz que permite la comunicación e integración de EMSafe con otros sistemas para el intercambio automático de datos.
+
+**Dashboard**: 
+Panel principal donde se visualizan métricas clave, estado de sensores y alertas recientes en tiempo real.
+
+**Reporte**: 
+Documento generado automáticamente que resume las mediciones de radiación en un periodo determinado, útil para análisis o auditorías.
+
+**Integración**: 
+Proceso de conexión entre EMSafe y otras plataformas o sistemas externos.
+
+**Auditoría**: 
+Evaluación del cumplimiento de normativas, donde EMSafe proporciona evidencia mediante reportes certificados.
+
+**Configuración de Sensor**: 
+Proceso mediante el cual el usuario define la ubicación, nombre y parámetros de funcionamiento de un sensor desde la plataforma.
+
+**Salud Electromagnética**: 
+Nivel de bienestar relacionado con la exposición controlada a campos electromagnéticos en el entorno cotidiano.
+
+**Comunidad**: 
+Conjunto de usuarios que comparten sus datos de medición para generar información colaborativa sobre la exposición en zonas comunes.
+
 # Capitulo III: Requirements Specification
 
 ## 3.1. User Stories
