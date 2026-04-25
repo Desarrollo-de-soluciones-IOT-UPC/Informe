@@ -452,12 +452,12 @@ Este Bounded Context se encarga de gestionar el procesamiento y análisis de dat
 
 | Archivo / Carpeta                                         | Propósito                           | Tipo de recurso |
 | --------------------------------------------------------- | ----------------------------------- | --------------- |
-| persistence/jpa/repositories/RadiationRepositoryImpl.java | Implementación JPA del repositorio  | Repository Impl |
-| persistence/jpa/repositories/ReportRepositoryImpl.java    | Persistencia de reportes            | Repository Impl |
-| persistence/database/DatabaseConnection.java              | Conexión a base de datos            | Infrastructure  |
-| services/DataAggregationService.java                      | Agrega datos históricos (TS07)      | Service         |
-| services/QueryOptimizationService.java                    | Optimiza consultas (TS08)           | Service         |
-| api/DashboardAPI.java                                     | Endpoint `/api/v1/dashboard` (TS31) | REST API        |
+| persistence/jpa/repositories/RadiationRepositoryImpl | Implementación JPA del repositorio  | Repository Impl |
+| persistence/jpa/repositories/ReportRepositoryImpl    | Persistencia de reportes            | Repository Impl |
+| persistence/database/DatabaseConnection              | Conexión a base de datos            | Infrastructure  |
+| services/DataAggregationService                      | Agrega datos históricos       | Service         |
+| services/QueryOptimizationService                    | Optimiza consultas            | Service         |
+| api/DashboardAPI                                     | Endpoint   | REST API        |
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
 
