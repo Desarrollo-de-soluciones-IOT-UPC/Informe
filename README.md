@@ -765,6 +765,410 @@ erDiagram
  
 ---
 
+
+### 4.2.5. Bounded Context: Admin & Operations Management
+ 
+Este Bounded Context soporta la gestión operativa del sistema EmSafe desde la plataforma web administrativa. Abarca el ciclo de vida completo del servicio: desde que un cliente contrata el monitoreo y se le agenda una instalación de sensores y adaptadores inteligentes, pasando por el mantenimiento preventivo y correctivo, hasta la recolección del hardware al finalizar el servicio. Incluye la administración de técnicos de campo, el control de inventario de dispositivos, el dashboard centralizado de clientes y la visualización del calendario de citas del equipo técnico.
+ 
+El acceso a este BC es diferenciado por rol: el **Admin** (equipo Gauss) puede crear, editar y eliminar registros; el **Técnico** solo puede visualizar sus citas asignadas y marcarlas como culminadas.
+ 
+Historias relacionadas: US26, US27, US28, US29, US31, US32, US33, US41, TS01, TS05, TS31.
+ 
+#### 4.2.5.1. Domain Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `model/aggregates/ServiceAppointment.java` | Agregado raíz que representa una cita de servicio (instalación, mantenimiento o recolección). Contiene el ciclo de vida completo: programación, ejecución y finalización. Es el concepto central del agendamiento. | Aggregate |
+| `model/entities/AppointmentDevice.java` | Entidad que registra cada dispositivo (sensor o adaptador inteligente) involucrado en una cita, junto con su estado individual dentro de la visita (instalado, retirado, pendiente). | Entity |
+| `model/aggregates/Technician.java` | Agregado raíz que representa un técnico de campo del equipo. Contiene sus datos de perfil, estado (activo/inactivo) y su disponibilidad para asignación de citas. | Aggregate |
+| `model/aggregates/ClientRecord.java` | Agregado raíz que representa el registro de un cliente dentro del sistema operativo. Almacena el estado del servicio contratado, datos de la sede y la relación con su cuenta de usuario final. | Aggregate |
+| `model/aggregates/DeviceInventoryItem.java` | Agregado raíz que representa un ítem del inventario de dispositivos (sensor o adaptador inteligente). Registra su ciclo de vida completo: disponible, instalado, en mantenimiento, retirado. | Aggregate |
+| `model/valueobjects/AppointmentId.java` | Identificador único de la cita de servicio. | Value Object |
+| `model/valueobjects/TechnicianId.java` | Identificador único del técnico. | Value Object |
+| `model/valueobjects/ClientId.java` | Identificador único del registro de cliente. | Value Object |
+| `model/valueobjects/InventoryItemId.java` | Identificador único del ítem de inventario. | Value Object |
+| `model/valueobjects/TimeSlot.java` | Value object que encapsula la fecha, hora de inicio y hora de fin de un bloque horario para una cita. | Value Object |
+| `model/valueobjects/Address.java` | Value object que encapsula la dirección de la sede del cliente (calle, distrito, ciudad, referencia). | Value Object |
+| `model/commands/ScheduleInstallationCommand.java` | Record para programar una cita de instalación de sensores y adaptadores inteligentes en la sede de un cliente con pago confirmado. | Command |
+| `model/commands/ScheduleMaintenanceCommand.java` | Record para programar una cita de mantenimiento preventivo o correctivo de dispositivos instalados. | Command |
+| `model/commands/ScheduleCollectionCommand.java` | Record para programar una cita de recolección de dispositivos al finalizar o cancelar el servicio. | Command |
+| `model/commands/RescheduleAppointmentCommand.java` | Record para modificar la fecha, horario o técnico asignado de una cita existente. | Command |
+| `model/commands/CompleteAppointmentCommand.java` | Record para que el técnico marque una cita como completada, indicando los dispositivos procesados. | Command |
+| `model/commands/RegisterTechnicianCommand.java` | Record para registrar un nuevo técnico en el sistema. | Command |
+| `model/commands/UpdateTechnicianCommand.java` | Record para actualizar los datos de un técnico existente. | Command |
+| `model/commands/DeactivateTechnicianCommand.java` | Record para desactivar un técnico que ya no forma parte del equipo. | Command |
+| `model/commands/RegisterClientCommand.java` | Record para registrar un nuevo cliente con su sede y datos de servicio. | Command |
+| `model/commands/UpdateInventoryItemStatusCommand.java` | Record para actualizar el estado de un ítem del inventario (disponible, instalado, en mantenimiento, retirado). | Command |
+| `model/queries/GetAppointmentsByDateRangeQuery.java` | Record para consultar citas dentro de un rango de fechas, con filtro opcional por técnico. | Query |
+| `model/queries/GetAppointmentsByTechnicianQuery.java` | Record para consultar las citas asignadas a un técnico específico. | Query |
+| `model/queries/GetInstallationHistoryQuery.java` | Record para consultar el historial de instalaciones realizadas, con filtros por fecha y técnico. | Query |
+| `model/queries/GetAllTechniciansQuery.java` | Record para consultar todos los técnicos registrados en el sistema. | Query |
+| `model/queries/GetClientDashboardQuery.java` | Record para obtener las métricas del dashboard de clientes: totales por estado, alertas activas, citas pendientes. | Query |
+| `model/queries/GetClientDetailQuery.java` | Record para obtener el perfil detallado de un cliente con sus dispositivos, citas e historial. | Query |
+| `model/queries/GetInventoryQuery.java` | Record para consultar el inventario de dispositivos, con filtro opcional por estado. | Query |
+| `model/queries/GetInventoryItemDetailQuery.java` | Record para consultar el historial completo de un ítem de inventario. | Query |
+| `model/queries/GetDashboardMetricsQuery.java` | Record para obtener las métricas generales del dashboard web: dispositivos activos, alertas recientes, citas programadas. | Query |
+| `services/OperationsCommandService.java` | Interfaz que expone operaciones de escritura: agendamiento de citas, gestión de técnicos, registro de clientes y actualización de inventario. | Command Service |
+| `services/OperationsQueryService.java` | Interfaz que expone operaciones de lectura: consultas de calendario, historial de instalaciones, dashboard de clientes, inventario y métricas. | Query Service |
+ 
+#### 4.2.5.2. Interface Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `rest/controllers/AppointmentController.java` | Controlador REST que expone endpoints para agendar, reprogramar y completar citas de instalación, mantenimiento y recolección. Diferencia permisos por rol (Admin: CRUD, Técnico: solo lectura y marcar completado). | REST Controller |
+| `rest/controllers/TechnicianController.java` | Controlador REST que expone endpoints para registrar, editar, desactivar y consultar técnicos. Solo accesible por Admin. | REST Controller |
+| `rest/controllers/ClientManagementController.java` | Controlador REST que expone endpoints para el dashboard de clientes, registro de clientes, detalle y búsqueda. Solo accesible por Admin. | REST Controller |
+| `rest/controllers/InventoryController.java` | Controlador REST que expone endpoints para consultar y gestionar el inventario de dispositivos. Solo accesible por Admin. | REST Controller |
+| `rest/controllers/AdminDashboardController.java` | Controlador REST que expone el endpoint del dashboard general con métricas operativas. Solo accesible por Admin. | REST Controller |
+| `rest/resources/ScheduleInstallationResource.java` | Resource de entrada para programar una cita de instalación (clientId, fecha, bloque horario, technicianId, dispositivos). | Resource (Input) |
+| `rest/resources/ScheduleMaintenanceResource.java` | Resource de entrada para programar una cita de mantenimiento (deviceIds, fecha, bloque horario, technicianId). | Resource (Input) |
+| `rest/resources/ScheduleCollectionResource.java` | Resource de entrada para programar una cita de recolección (clientId, fecha, bloque horario, technicianId). | Resource (Input) |
+| `rest/resources/RescheduleAppointmentResource.java` | Resource de entrada para reprogramar una cita existente (nueva fecha, nuevo bloque, nuevo técnico). | Resource (Input) |
+| `rest/resources/CompleteAppointmentResource.java` | Resource de entrada para que el técnico marque la cita como completada (lista de dispositivos procesados, estado de cada uno). | Resource (Input) |
+| `rest/resources/AppointmentResource.java` | Resource de salida que representa una cita con todos sus datos: tipo, cliente, técnico, dispositivos, estado y timestamps. | Resource (Output) |
+| `rest/resources/RegisterTechnicianResource.java` | Resource de entrada para registrar un técnico (nombre, correo, teléfono, especialidad). | Resource (Input) |
+| `rest/resources/TechnicianResource.java` | Resource de salida que representa un técnico con su perfil, estado y cantidad de citas asignadas. | Resource (Output) |
+| `rest/resources/RegisterClientResource.java` | Resource de entrada para registrar un nuevo cliente (nombre, empresa, dirección sede, correo, teléfono). | Resource (Input) |
+| `rest/resources/ClientSummaryResource.java` | Resource de salida resumida para el dashboard de clientes (nombre, estado del servicio, alertas activas, citas pendientes). | Resource (Output) |
+| `rest/resources/ClientDetailResource.java` | Resource de salida detallada de un cliente (perfil completo, dispositivos instalados, historial de citas e historial de alertas). | Resource (Output) |
+| `rest/resources/InventoryItemResource.java` | Resource de salida que representa un ítem de inventario (ID, tipo, estado, sede asignada, historial de cambios). | Resource (Output) |
+| `rest/resources/DashboardMetricsResource.java` | Resource de salida con las métricas del dashboard web (dispositivos activos, alertas recientes, citas del día, tendencia de radiación). | Resource (Output) |
+| `rest/resources/ClientDashboardMetricsResource.java` | Resource de salida con métricas agregadas de clientes (total activos, con alertas, con citas pendientes, finalizados). | Resource (Output) |
+| `rest/assemblers/ScheduleInstallationCommandFromResourceAssembler.java` | Convierte un `ScheduleInstallationResource` en `ScheduleInstallationCommand`. | Resource → Command Assembler |
+| `rest/assemblers/AppointmentResourceFromEntityAssembler.java` | Convierte un `ServiceAppointment` (aggregate) en `AppointmentResource`. | Entity → Resource Assembler |
+| `rest/assemblers/TechnicianResourceFromEntityAssembler.java` | Convierte un `Technician` (aggregate) en `TechnicianResource`. | Entity → Resource Assembler |
+| `rest/assemblers/ClientSummaryResourceFromEntityAssembler.java` | Convierte un `ClientRecord` en `ClientSummaryResource`. | Entity → Resource Assembler |
+| `rest/assemblers/ClientDetailResourceFromEntityAssembler.java` | Convierte un `ClientRecord` con relaciones cargadas en `ClientDetailResource`. | Entity → Resource Assembler |
+| `rest/assemblers/InventoryItemResourceFromEntityAssembler.java` | Convierte un `DeviceInventoryItem` en `InventoryItemResource`. | Entity → Resource Assembler |
+ 
+#### 4.2.5.3. Application Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `internal/commandservices/OperationsCommandServiceImpl.java` | Implementación concreta de `OperationsCommandService`. Orquesta el agendamiento de citas validando disponibilidad del técnico y estado del cliente, gestiona técnicos, registra clientes y actualiza inventario. | Command Service Impl |
+| `internal/queryservices/OperationsQueryServiceImpl.java` | Implementación concreta de `OperationsQueryService`. Ejecuta consultas de calendario, historial de instalaciones, dashboard de clientes con métricas agregadas, inventario y métricas generales. | Query Service Impl |
+| `internal/outboundservices/acl/AlertContextService.java` | Servicio ACL que consulta el Bounded Context de Alert & Automation para obtener el conteo de alertas activas por cliente. | ACL Service |
+| `internal/outboundservices/acl/UserAccountService.java` | Servicio ACL que consulta el módulo de autenticación (IAM) para vincular el registro de cliente con su cuenta de usuario final. | ACL Service |
+| `internal/outboundservices/acl/EmailNotificationService.java` | Servicio ACL que envía correos electrónicos al técnico cuando se le asigna, modifica o cancela una cita. | ACL Service |
+ 
+#### 4.2.5.4. Infrastructure Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `persistence/jpa/repositories/ServiceAppointmentRepository.java` | Repositorio JPA para el agregado `ServiceAppointment`. Incluye queries para buscar por rango de fechas, por técnico, por cliente y por tipo de servicio. Valida conflictos de agenda. | Repository Impl |
+| `persistence/jpa/repositories/AppointmentDeviceRepository.java` | Repositorio JPA para la entidad `AppointmentDevice`. | Repository Impl |
+| `persistence/jpa/repositories/TechnicianRepository.java` | Repositorio JPA para el agregado `Technician`. Incluye query para buscar técnicos activos y verificar disponibilidad en un bloque horario. | Repository Impl |
+| `persistence/jpa/repositories/ClientRecordRepository.java` | Repositorio JPA para el agregado `ClientRecord`. Incluye queries para buscar por estado del servicio y para obtener métricas agregadas del dashboard. | Repository Impl |
+| `persistence/jpa/repositories/DeviceInventoryItemRepository.java` | Repositorio JPA para el agregado `DeviceInventoryItem`. Incluye queries para filtrar por estado y para detectar stock bajo. | Repository Impl |
+ 
+#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+ 
+##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+ 
+El diagrama de clases del Bounded Context Admin & Operations Management muestra los cuatro agregados principales: `ServiceAppointment` como eje central del agendamiento, `Technician` para la gestión del equipo de campo, `ClientRecord` para el seguimiento de clientes y `DeviceInventoryItem` para el control de inventario. Se incluyen los value objects, entidades y enums que modelan el ciclo de vida completo de las operaciones.
+ 
+```mermaid
+classDiagram
+    direction TB
+ 
+    class ServiceAppointment {
+        -Long id
+        -ClientId clientId
+        -TechnicianId technicianId
+        -AppointmentType type
+        -AppointmentStatus status
+        -TimeSlot scheduledSlot
+        -String notes
+        -Instant createdAt
+        -Instant updatedAt
+        -Instant completedAt
+        +reschedule(TimeSlot newSlot, TechnicianId newTechnician) void
+        +markCompleted(String completionNotes) void
+        +cancel(String reason) void
+        +addDevice(AppointmentDevice device) void
+        +isConflicting(TimeSlot otherSlot) boolean
+    }
+ 
+    class AppointmentDevice {
+        -Long id
+        -InventoryItemId inventoryItemId
+        -String deviceName
+        -String deviceType
+        -AppointmentDeviceStatus status
+    }
+ 
+    class Technician {
+        -Long id
+        -String firstName
+        -String lastName
+        -String email
+        -String phone
+        -String specialty
+        -TechnicianStatus status
+        -Instant createdAt
+        +deactivate() void
+        +activate() void
+        +getFullName() String
+    }
+ 
+    class ClientRecord {
+        -Long id
+        -Long userId
+        -String companyName
+        -String contactName
+        -String contactEmail
+        -String contactPhone
+        -Address siteAddress
+        -ServiceStatus serviceStatus
+        -Boolean paymentConfirmed
+        -Instant createdAt
+        -Instant updatedAt
+        +activateService() void
+        +finalizeService() void
+        +cancelService() void
+        +confirmPayment() void
+    }
+ 
+    class DeviceInventoryItem {
+        -Long id
+        -String serialNumber
+        -InventoryDeviceType deviceType
+        -InventoryStatus status
+        -Long assignedClientId
+        -String assignedLocation
+        -Instant registeredAt
+        -Instant lastStatusChange
+        +install(Long clientId, String location) void
+        +markForMaintenance() void
+        +retire() void
+        +returnToStock() void
+    }
+ 
+    class AppointmentType {
+        <<enumeration>>
+        INSTALLATION
+        MAINTENANCE
+        COLLECTION
+    }
+ 
+    class AppointmentStatus {
+        <<enumeration>>
+        SCHEDULED
+        IN_PROGRESS
+        COMPLETED
+        CANCELLED
+        PARTIALLY_COMPLETED
+    }
+ 
+    class AppointmentDeviceStatus {
+        <<enumeration>>
+        PENDING
+        INSTALLED
+        MAINTAINED
+        COLLECTED
+        FAILED
+    }
+ 
+    class TechnicianStatus {
+        <<enumeration>>
+        ACTIVE
+        INACTIVE
+    }
+ 
+    class ServiceStatus {
+        <<enumeration>>
+        PENDING_INSTALLATION
+        ACTIVE
+        SUSPENDED
+        FINALIZED
+        CANCELLED
+    }
+ 
+    class InventoryDeviceType {
+        <<enumeration>>
+        EMF_SENSOR
+        SMART_PLUG
+    }
+ 
+    class InventoryStatus {
+        <<enumeration>>
+        AVAILABLE
+        INSTALLED
+        IN_MAINTENANCE
+        IN_COLLECTION
+        RETIRED
+    }
+ 
+    class TimeSlot {
+        <<value object>>
+        -LocalDate date
+        -LocalTime startTime
+        -LocalTime endTime
+    }
+ 
+    class Address {
+        <<value object>>
+        -String street
+        -String district
+        -String city
+        -String reference
+    }
+ 
+    class AppointmentId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class TechnicianId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class ClientId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class InventoryItemId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class OperationsCommandService {
+        <<interface>>
+        +scheduleInstallation(ScheduleInstallationCommand cmd) ServiceAppointment
+        +scheduleMaintenance(ScheduleMaintenanceCommand cmd) ServiceAppointment
+        +scheduleCollection(ScheduleCollectionCommand cmd) ServiceAppointment
+        +rescheduleAppointment(RescheduleAppointmentCommand cmd) ServiceAppointment
+        +completeAppointment(CompleteAppointmentCommand cmd) ServiceAppointment
+        +registerTechnician(RegisterTechnicianCommand cmd) Technician
+        +updateTechnician(UpdateTechnicianCommand cmd) Technician
+        +deactivateTechnician(DeactivateTechnicianCommand cmd) Technician
+        +registerClient(RegisterClientCommand cmd) ClientRecord
+        +updateInventoryStatus(UpdateInventoryItemStatusCommand cmd) DeviceInventoryItem
+    }
+ 
+    class OperationsQueryService {
+        <<interface>>
+        +getAppointmentsByDateRange(GetAppointmentsByDateRangeQuery q) List~ServiceAppointment~
+        +getAppointmentsByTechnician(GetAppointmentsByTechnicianQuery q) List~ServiceAppointment~
+        +getInstallationHistory(GetInstallationHistoryQuery q) List~ServiceAppointment~
+        +getAllTechnicians(GetAllTechniciansQuery q) List~Technician~
+        +getClientDashboard(GetClientDashboardQuery q) ClientDashboardMetrics
+        +getClientDetail(GetClientDetailQuery q) ClientRecord
+        +getInventory(GetInventoryQuery q) List~DeviceInventoryItem~
+        +getInventoryItemDetail(GetInventoryItemDetailQuery q) DeviceInventoryItem
+        +getDashboardMetrics(GetDashboardMetricsQuery q) DashboardMetrics
+    }
+ 
+    ServiceAppointment "1" *-- "0..*" AppointmentDevice : devices
+    ServiceAppointment --> AppointmentType
+    ServiceAppointment --> AppointmentStatus
+    ServiceAppointment --> TimeSlot
+    ServiceAppointment --> ClientId
+    ServiceAppointment --> TechnicianId
+ 
+    AppointmentDevice --> AppointmentDeviceStatus
+    AppointmentDevice --> InventoryItemId
+ 
+    Technician --> TechnicianStatus
+ 
+    ClientRecord --> ServiceStatus
+    ClientRecord --> Address
+ 
+    DeviceInventoryItem --> InventoryDeviceType
+    DeviceInventoryItem --> InventoryStatus
+ 
+    OperationsCommandService ..> ServiceAppointment : manages
+    OperationsCommandService ..> Technician : manages
+    OperationsCommandService ..> ClientRecord : manages
+    OperationsCommandService ..> DeviceInventoryItem : manages
+    OperationsQueryService ..> ServiceAppointment : queries
+    OperationsQueryService ..> Technician : queries
+    OperationsQueryService ..> ClientRecord : queries
+    OperationsQueryService ..> DeviceInventoryItem : queries
+```
+ 
+##### 4.2.5.6.2. Bounded Context Database Design Diagram
+ 
+El diseño de base de datos del Bounded Context Admin & Operations Management persiste toda la información operativa del servicio: citas de instalación, mantenimiento y recolección con sus dispositivos asociados, el equipo de técnicos de campo, los registros de clientes con el estado de su servicio y el inventario completo de sensores y adaptadores inteligentes con su ciclo de vida.
+ 
+```mermaid
+erDiagram
+    SERVICE_APPOINTMENT {
+        bigint id PK
+        bigint client_id FK
+        bigint technician_id FK
+        varchar type
+        varchar status
+        date scheduled_date
+        time start_time
+        time end_time
+        text notes
+        text completion_notes
+        text cancellation_reason
+        timestamp created_at
+        timestamp updated_at
+        timestamp completed_at
+    }
+ 
+    APPOINTMENT_DEVICE {
+        bigint id PK
+        bigint appointment_id FK
+        bigint inventory_item_id FK
+        varchar device_name
+        varchar device_type
+        varchar status
+    }
+ 
+    TECHNICIAN {
+        bigint id PK
+        varchar first_name
+        varchar last_name
+        varchar email
+        varchar phone
+        varchar specialty
+        varchar status
+        timestamp created_at
+    }
+ 
+    CLIENT_RECORD {
+        bigint id PK
+        bigint user_id FK
+        varchar company_name
+        varchar contact_name
+        varchar contact_email
+        varchar contact_phone
+        varchar site_street
+        varchar site_district
+        varchar site_city
+        varchar site_reference
+        varchar service_status
+        boolean payment_confirmed
+        timestamp created_at
+        timestamp updated_at
+    }
+ 
+    DEVICE_INVENTORY_ITEM {
+        bigint id PK
+        varchar serial_number
+        varchar device_type
+        varchar status
+        bigint assigned_client_id FK
+        varchar assigned_location
+        timestamp registered_at
+        timestamp last_status_change
+    }
+ 
+    CLIENT_RECORD ||--o{ SERVICE_APPOINTMENT : "tiene citas"
+    TECHNICIAN ||--o{ SERVICE_APPOINTMENT : "asignado a"
+    SERVICE_APPOINTMENT ||--o{ APPOINTMENT_DEVICE : "involucra dispositivos"
+    DEVICE_INVENTORY_ITEM ||--o{ APPOINTMENT_DEVICE : "referenciado en"
+    CLIENT_RECORD ||--o{ DEVICE_INVENTORY_ITEM : "tiene instalados"
+```
+ 
 #### 4.2.X.1. Domain Layer
 
 #### 4.2.X.2. Interface Layer
