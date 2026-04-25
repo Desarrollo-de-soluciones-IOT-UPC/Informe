@@ -1251,7 +1251,11 @@ Representa los elementos centrales del modelo de dominio, incluyendo agregados, 
 
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
 
+Define las tablas necesarias para almacenar las mediciones de radiación, su análisis y los reportes generados. Incluye entidades como Radiation_Reading, Radiation_Analysis, Report y User_Exposure_Profile, además de Sensor y Location para el origen de los datos.
 
+Las relaciones permiten gestionar el monitoreo en tiempo real, analizar tendencias, detectar picos y generar alertas dentro de la plataforma EmSafe.
+
+![Database Design Diagram](img/AV1/chapter-4/Radiation%20Monitoring%20&%20Analytics/Database%20Design%20Diagram.png)
 
 # Bibliografía
 
