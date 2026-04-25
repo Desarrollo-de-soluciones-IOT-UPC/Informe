@@ -1245,8 +1245,12 @@ Describe la estructura interna del backend a nivel de componentes, organizados e
 
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
 
+Representa los elementos centrales del modelo de dominio, incluyendo agregados, entidades, objetos de valor, servicios de dominio y repositorios. En este nivel se define la lógica de negocio relacionada con el análisis de la radiación electromagnética, destacando el agregado RadiationAnalysis, que gestiona las mediciones y permite calcular métricas y detectar picos. Asimismo, las entidades como RadiationReading y UserExposureProfile modelan la información clave del sistema, mientras que los objetos de valor encapsulan conceptos como niveles de radiación, rangos de tiempo y tipos de reporte. Los servicios de dominio se encargan de operaciones complejas como el análisis de datos y la generación de reportes, manteniendo una separación clara de responsabilidades y alineándose con los principios de Domain-Driven Design.
+
+![Domain Layer Class Diagrams](img/AV1/chapter-4/Radiation%20Monitoring%20&%20Analytics/domain%20layer.png)
 
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
+
 
 
 # Bibliografía
