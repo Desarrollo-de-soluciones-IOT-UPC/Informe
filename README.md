@@ -353,43 +353,43 @@ Para la identificación de los bounded context se ha utilizado la técnica start
 
 <img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Events.png"   alt="Eventstorming step 1, Events identification">
 
-Como primer paso en la técnica de Eventstorming, el equipo identificó en conjunto todos los eventos posibles, considerando el conocimiento que se tiene sobre el dominio en cuestión. Los eventos se representan con post-its naranjas y siguen el formato **SUSTANTIVO + VERBO EN PASADO**.
+<br>Como primer paso en la técnica de Eventstorming, el equipo identificó en conjunto todos los eventos posibles, considerando el conocimiento que se tiene sobre el dominio en cuestión. Los eventos se representan con post-its naranjas y siguen el formato **SUSTANTIVO + VERBO EN PASADO**.
 
 **PASO 2: ORDENAR EVENTOS**
 
 <img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Events Ordered.png"   alt="Eventstorming step 2, Events ordering">
 
-Después de identificar los eventos, se procede a organizarlos siguiendo las secuencias lógicas determinadas por el equipo. En la parte superior de la imagen se muestra cómo se disponen los eventos necesarios para cubrir todo el ciclo de vida de una orden.
+<br>Después de identificar los eventos, se procede a organizarlos siguiendo las secuencias lógicas determinadas por el equipo. En la parte superior de la imagen se muestra cómo se disponen los eventos necesarios para cubrir todo el ciclo de vida de una orden.
 
 **PASO 3: DETERMINAR PIVOTAL POINTS**
 
 <img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Pivotal Points.png"   alt="Eventstorming step 3, Pivotal points identification">
 
-Para lograr una organización más clara y precisa de los eventos identificados, se establecen los puntos clave (pivotal points) dentro del dominio. Estas divisiones representan cambios significativos que marcan un antes y un después. Por ejemplo, cuando varios productos pasan a conformar una orden, o cuando se marca una orden como entregada, lo que genera un evento de ingreso monetario para la bodega. Los puntos clave se señalan con una barra negra vertical.
+<br>Para lograr una organización más clara y precisa de los eventos identificados, se establecen los puntos clave (pivotal points) dentro del dominio. Estas divisiones representan cambios significativos que marcan un antes y un después. Por ejemplo, cuando varios productos pasan a conformar una orden, o cuando se marca una orden como entregada, lo que genera un evento de ingreso monetario para la bodega. Los puntos clave se señalan con una barra negra vertical.
 
 **PASO 4: IDENTIFICAR COMANDOS**
 
 <img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Commands.png"   alt="Eventstorming step 4, Commands identification">
 
-Una vez que se han identificado y organizado tanto los eventos como los puntos clave del dominio, es fundamental reconocer los comandos que los originan. Esto permite determinar qué acciones provocan la aparición de los eventos en el dominio. Los comandos se representan con post-its de color azul claro y siguen el formato VERBO EN PRESENTE + SUSTANTIVO.
+<br>Una vez que se han identificado y organizado tanto los eventos como los puntos clave del dominio, es fundamental reconocer los comandos que los originan. Esto permite determinar qué acciones provocan la aparición de los eventos en el dominio. Los comandos se representan con post-its de color azul claro y siguen el formato VERBO EN PRESENTE + SUSTANTIVO.
 
 **PASO 5: IDENTIFICAR POLITICAS**
 
 <img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Policies.png"   alt="Eventstorming step 5, Policies identification">
 
-Trabajar dentro de un dominio requiere atender reglas de negocio específicas; en este caso, se han identificado cuatro reglas clave, todas vinculadas al registro de los clientes y sus dispositivos, alertas y monitoreo, y por último las analíticas. Reconocer estas políticas del dominio nos permitirá, más adelante, definir los distintos contextos del dominio. Las políticas se representan con post-its de color morado.
+<br>Trabajar dentro de un dominio requiere atender reglas de negocio específicas; en este caso, se han identificado cuatro reglas clave, todas vinculadas al registro de los clientes y sus dispositivos, alertas y monitoreo, y por último las analíticas. Reconocer estas políticas del dominio nos permitirá, más adelante, definir los distintos contextos del dominio. Las políticas se representan con post-its de color morado.
 
 **PASO 6: IDENTIFICAR VISTAS**
 
 <img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - View.png"   alt="Eventstorming step 6, Views identification">
 
-Los eventos y comandos ocurren en diferentes partes del sistema; por ello, para evitar confusiones y facilitar la definición del diseño de la aplicación, se identifican de manera general las “pantallas” donde tienen lugar. Estas vistas se representan mediante post-its de color verde.
+<br>Los eventos y comandos ocurren en diferentes partes del sistema; por ello, para evitar confusiones y facilitar la definición del diseño de la aplicación, se identifican de manera general las “pantallas” donde tienen lugar. Estas vistas se representan mediante post-its de color verde.
 
 **PASO 7: IDENTIFICAR ACTORES**
 
 <img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Actors.png"  alt="Eventstorming step 7, Actors identification">
 
-La mayoría de los comandos identificados son ejecutados mediante la intervención de usuarios dentro del sistema EMSafe. En este contexto, una gran parte de los comandos se encuentran asociados a sus respectivos actores, tales como el Admin, el Técnico y el Cliente (usuario de la aplicación móvil). 
+<br>La mayoría de los comandos identificados son ejecutados mediante la intervención de usuarios dentro del sistema EMSafe. En este contexto, una gran parte de los comandos se encuentran asociados a sus respectivos actores, tales como el Admin, el Técnico y el Cliente (usuario de la aplicación móvil). 
 
 Asimismo, se observa que ciertos comandos no están directamente vinculados a un actor humano, ya que son ejecutados de manera automática por el sistema, como parte de procesos internos. Estos casos serán detallados con mayor profundidad en secciones posteriores.
 
@@ -401,7 +401,7 @@ Los actores se representan mediante post-its de color amarillo, ubicados en la e
 <br> 
 <img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Aggregates - 2.png"  alt="Eventstorming step 8, Aggregates identification 2">
 
-Posterior a la identificación de eventos, comandos, vistas, políticas y actores, se han definido los agregados del dominio que garantizan la integridad de las reglas de negocio. En este sistema se identifican los siguientes 4 agregados:
+<br>Posterior a la identificación de eventos, comandos, vistas, políticas y actores, se han definido los agregados del dominio que garantizan la integridad de las reglas de negocio. En este sistema se identifican los siguientes 4 agregados:
 
 - **Client** Encargado de gestionar la identidad y el perfil del usuario, actuando como la entidad raíz para la vinculación de servicios y la recepción de notificaciones de seguridad.
 
@@ -410,6 +410,26 @@ Posterior a la identificación de eventos, comandos, vistas, políticas y actore
 - **Work Order**. Representa la gestión operativa y logística del sistema; se encarga de coordinar la asignación de técnicos y la programación de instalaciones, mantenimientos o recolecciones de equipo.
 
 - **Radiation Monitor**. Constituye el núcleo del dominio; procesa las lecturas de telemetría de los sensores para identificar niveles de riesgo, disparar alertas de emergencia y asegurar la trazabilidad de las notificaciones enviadas al usuario.
+
+**PASO 9: DEFINIR CONTEXTOS**
+
+<img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Bounded Contexts 1.png"  alt="Eventstorming step 9, Bounded contexts definition 1">
+<br>
+<img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Bounded Contexts 2.png"  alt="Eventstorming step 9, Bounded contexts definition 2">
+
+<br>Finalmente, con los agregados estructurados y las políticas parametrizadas, se han definido los contextos del dominio. El equipo de desarrollo determinó 5 contextos basados en las funcionalidades identificadas, utilizando la técnica de start-with-simple:
+
+- **IAM Context:** Se encarga de la gestión de identidad y acceso, centrando su responsabilidad en la administración del perfil del cliente y sus datos personales.
+
+- **Admin & Operations Management Context:** Gestiona el ciclo de vida operativo de los equipos, incluyendo el registro de dispositivos, la asignación de técnicos y la programación de tareas de instalación, mantenimiento y recolección.
+
+- **Radiation Monitoring & Analytics Context:** Representa el núcleo del sistema, encargado del monitoreo en tiempo real de los sensores, la generación de reportes periódicos y la visualización de datos geográficos a través de mapas de radiación.
+
+- **Alert & Automation Context:** Gestiona la lógica de respuesta ante eventos críticos, encargándose de identificar niveles de riesgo, emitir notificaciones al usuario y registrar las interacciones con el chatbot de asistencia.
+
+- **Device Management Context:** Se encarga exclusivamente del control técnico del hardware, permitiendo la ejecución de comandos remotos y el apagado de emergencia de los dispositivos ante situaciones de peligro.
+
+Los contextos son representados a través de las figuras que agrupan a los eventos, comandos, agregados y políticas en el tablero. Se observa que la comunicación entre estos contextos se realiza de manera reactiva a través de las Políticas, asegurando un desacoplamiento efectivo entre las distintas áreas del sistema.
 
 #### 4.1.1.2. Domain Message Flows Modeling
 
