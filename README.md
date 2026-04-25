@@ -363,6 +363,93 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ### 4.2.X. Bounded Context: [Bounded Context Name]
 
+### 4.2.2. Bounded Context: Device Management
+
+#### 4.2.2.1. Domain Layer
+
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|------------------|----------|-----------------|
+| `model/aggregates/Device.java` | Agregado raíz del bounded context. Encapsula identidad, tipo, estado y configuración del sensor IoT. | Aggregate |
+| `model/aggregates/InventoryRecord.java` | Agregado secundario. Gestiona el stock de dispositivos disponibles y dispara alertas de bajo inventario. | Aggregate |
+| `model/entities/LifecycleEvent.java` | Entidad que registra cada evento del ciclo de vida de un dispositivo (registro, instalación, retiro, etc.). | Entity |
+| `model/valueobjects/DeviceId.java` | Identificador único del dispositivo. | Value Object |
+| `model/valueobjects/DeviceConfig.java` | Agrupa los parámetros de configuración del dispositivo: frecuencia de muestreo, umbral de alerta y coordenadas. | Value Object |
+| `model/valueobjects/DeviceStatus.java` | Registra los estados del dispositivo: AVAILABLE, INSTALLED, MAINTENANCE, RETIRED. | Value Object |
+| `model/valueobjects/DeviceType.java` | Registra el tipo de dispositivo IoT: SENSOR_IOT, ADAPTER_IOT. | Value Object |
+| `model/valueobjects/GeoCoordinates.java` | Encapsula la ubicación geográfica (latitud y longitud) del dispositivo. | Value Object |
+| `model/valueobjects/LifecycleEventType.java` | Categoriza los tipos de evento del ciclo de vida: REGISTERED, INSTALLED, CONFIG_UPDATED, MAINTENANCE, RETIRED. | Value Object |
+| `model/commands/RegisterDeviceCommand.java` | Record para registrar un nuevo dispositivo IoT. | Command |
+| `model/commands/UpdateDeviceConfigCommand.java` | Record para actualizar la configuración de un dispositivo. | Command |
+| `model/commands/DeleteDeviceCommand.java` | Record para eliminar un dispositivo del sistema. | Command |
+| `model/commands/RetireDeviceCommand.java` | Record para confirmar el retiro y desvinculación de un dispositivo. | Command |
+| `model/queries/GetDeviceListQuery.java` | Record para consultar la lista paginada de dispositivos con filtros opcionales. | Query |
+| `model/queries/GetDeviceHistoryQuery.java` | Record para consultar el historial cronológico de lecturas de un dispositivo. | Query |
+| `model/queries/GetInventoryQuery.java` | Record para consultar el inventario de dispositivos con filtros por estado. | Query |
+| `services/DeviceCommandService.java` | Expone operaciones CUD sobre dispositivos. | Command Service |
+| `services/DeviceQueryService.java` | Expone operaciones de lectura sobre dispositivos. | Query Service |
+| `services/InventoryQueryService.java` | Expone operaciones de lectura sobre el inventario de dispositivos. | Query Service |
+| `services/DeviceLifecycleService.java` | Orquesta las transiciones de estado del dispositivo, validando reglas de negocio. | Domain Service |
+| `services/MqttDisconnectionService.java` | Coordina el cierre de conexiones MQTT y bloqueo de topics al retirar dispositivos. | Domain Service |
+| `services/InventoryAlertService.java` | Evalúa el stock disponible y genera alertas cuando cae por debajo del umbral configurado. | Domain Service |
+
+#### 4.2.2.2. Interface Layer
+
+| Carpeta / Archivo | Propósito | Tipo de recurso |
+|------------------|----------|-----------------|
+| `acl/DeviceManagementContextFacade.java` | Interface para exponer capacidades del bounded context a otros bounded contexts. | ACL Facade |
+| `rest/controllers/DeviceController.java` | Interface para exponer capacidades de gestión de dispositivos mediante endpoints REST. | REST Controller |
+| `rest/controllers/InventoryController.java` | Interface para exponer capacidades de consulta y filtrado del inventario mediante endpoints REST. | REST Controller |
+| `rest/controllers/ExportController.java` | Interface para exponer el endpoint de exportación de historial en PDF o CSV mediante REST. | REST Controller |
+| `rest/controllers/IntegrationController.java` | Interface para exponer el endpoint de integración de sensores de proveedores externos mediante REST. | REST Controller |
+| `rest/assemblers/RegisterDeviceCommandFromResourceAssembler.java` | Convierte un RegisterDeviceResource en un RegisterDeviceCommand. | Resource → Command Assembler |
+| `rest/assemblers/UpdateDeviceConfigCommandFromResourceAssembler.java` | Convierte un UpdateDeviceConfigResource en un UpdateDeviceConfigCommand. | Resource → Command Assembler |
+| `rest/assemblers/DeviceFromEntityAssembler.java` | Convierte un Device en un DeviceResource. | Entity → Resource Assembler |
+| `rest/assemblers/InventoryRecordFromEntityAssembler.java` | Convierte un InventoryRecord en un InventoryRecordResource. | Entity → Resource Assembler |
+| `rest/assemblers/GetDeviceHistoryQueryFromResourceAssembler.java` | Convierte un DeviceHistoryResource en un GetDeviceHistoryQuery. | Resource → Query Assembler |
+
+#### 4.2.2.3. Application Layer
+
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|------------------|----------|-----------------|
+| `internal/commandservices/DeviceCommandServiceImpl.java` | Implementación concreta de DeviceCommandService. Orquesta RegisterDevice, UpdateConfig, DeleteDevice y RetireDevice. | Command Service Impl |
+| `internal/queryservices/DeviceQueryServiceImpl.java` | Implementación concreta de DeviceQueryService. Orquesta consultas de dispositivos e historial de lecturas. | Query Service Impl |
+| `internal/queryservices/InventoryQueryServiceImpl.java` | Implementación concreta de InventoryQueryService. Orquesta consultas de inventario y evaluación de stock bajo. | Query Service Impl |
+| `internal/acl/DeviceManagementContextFacadeImpl.java` | Implementación concreta de la interface expuesta a otros bounded contexts para acceder a la lógica de dispositivos. | ACL Facade |
+| `internal/outboundservices/acl/ExternalAlertingService.java` | Adaptador para publicar Domain Events hacia el bounded context de Alerting. | ACL Service |
+| `internal/outboundservices/acl/ExternalAnalyticsService.java` | Adaptador para enviar datos de lecturas al bounded context de Analytics. | ACL Service |
+
+#### 4.2.2.4. Infrastructure Layer
+
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|------------------|----------|-----------------|
+| `persistence/jpa/repositories/DeviceRepository.java` | Implementación JPA de DeviceRepository (agregado). Persiste y recupera Devices e InventoryRecords. | Repository Impl |
+| `persistence/jpa/repositories/LifecycleEventRepository.java` | Implementación JPA para el historial de eventos del ciclo de vida de cada dispositivo. | Repository Impl |
+| `persistence/timescale/repositories/ReadingRepository.java` | Implementación TimescaleDB para series de tiempo de lecturas electromagnéticas. | Repository Impl |
+| `messaging/mqtt/MqttBrokerAdapter.java` | Gestiona conexiones y topics MQTT con los sensores IoT. Cierra y bloquea topics al retirar dispositivos. | Messaging Adapter |
+| `messaging/events/EventPublisherAdapter.java` | Publica Domain Events (DeviceRegistered, DeviceRetired, LowStockDetected) hacia el bus de eventos (RabbitMQ). | Event Publisher |
+| `export/ReportExporterAdapter.java` | Genera archivos PDF y CSV del historial de lecturas mediante iText y Apache POI. | Export Adapter |
+| `notifications/NotificationAdapter.java` | Envía notificaciones push de stock bajo al panel del administrador mediante FCM. | Notification Adapter |
+| `persistence/jpa/mapping/DeviceMapper.java` | Mapea entre el Aggregate Device y su entidad JPA correspondiente. | ORM Mapper |
+| `persistence/jpa/mapping/InventoryRecordMapper.java` | Mapea entre el Aggregate InventoryRecord y su entidad JPA correspondiente. | ORM Mapper |
+
+### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img src="img/AV1/caratula/DeviceManagement-Components.png">
+
+### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+Se presenta el diagrama de clases del contexto de gestión de dispositivos, teniendo como clases principales a Device e InventoryRecord, además de contar con un enum DeviceStatus que ayuda a gestionar el ciclo de vida del dispositivo a través de sus estados: Available, Installed, Maintenance y Retired.
+
+<img src="img/AV1/caratula/Device Management - Bounded Context Domain Layer Class Diagrams.png">
+
+#### 4.2.2.6.2. Bounded Context Database Design Diagram
+
+La base de datos persiste los dispositivos IoT junto con su configuración y estado actual, registrando cada cambio a través del historial de eventos del ciclo de vida. Además, se persisten las lecturas electromagnéticas capturadas por cada dispositivo y los registros de inventario necesarios para controlar el stock y planificar nuevas instalaciones.
+
+<img src="img/AV1/caratula/Device Management - Bounded Context Database Design Diagram.png">
+
 #### 4.2.X.1. Domain Layer
 
 #### 4.2.X.2. Interface Layer
