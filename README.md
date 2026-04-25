@@ -363,6 +363,812 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ### 4.2.X. Bounded Context: [Bounded Context Name]
 
+### 4.2.2. Bounded Context: Device Management
+
+#### 4.2.2.1. Domain Layer
+
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|------------------|----------|-----------------|
+| `model/aggregates/Device.java` | Agregado raíz del bounded context. Encapsula identidad, tipo, estado y configuración del sensor IoT. | Aggregate |
+| `model/aggregates/InventoryRecord.java` | Agregado secundario. Gestiona el stock de dispositivos disponibles y dispara alertas de bajo inventario. | Aggregate |
+| `model/entities/LifecycleEvent.java` | Entidad que registra cada evento del ciclo de vida de un dispositivo (registro, instalación, retiro, etc.). | Entity |
+| `model/valueobjects/DeviceId.java` | Identificador único del dispositivo. | Value Object |
+| `model/valueobjects/DeviceConfig.java` | Agrupa los parámetros de configuración del dispositivo: frecuencia de muestreo, umbral de alerta y coordenadas. | Value Object |
+| `model/valueobjects/DeviceStatus.java` | Registra los estados del dispositivo: AVAILABLE, INSTALLED, MAINTENANCE, RETIRED. | Value Object |
+| `model/valueobjects/DeviceType.java` | Registra el tipo de dispositivo IoT: SENSOR_IOT, ADAPTER_IOT. | Value Object |
+| `model/valueobjects/GeoCoordinates.java` | Encapsula la ubicación geográfica (latitud y longitud) del dispositivo. | Value Object |
+| `model/valueobjects/LifecycleEventType.java` | Categoriza los tipos de evento del ciclo de vida: REGISTERED, INSTALLED, CONFIG_UPDATED, MAINTENANCE, RETIRED. | Value Object |
+| `model/commands/RegisterDeviceCommand.java` | Record para registrar un nuevo dispositivo IoT. | Command |
+| `model/commands/UpdateDeviceConfigCommand.java` | Record para actualizar la configuración de un dispositivo. | Command |
+| `model/commands/DeleteDeviceCommand.java` | Record para eliminar un dispositivo del sistema. | Command |
+| `model/commands/RetireDeviceCommand.java` | Record para confirmar el retiro y desvinculación de un dispositivo. | Command |
+| `model/queries/GetDeviceListQuery.java` | Record para consultar la lista paginada de dispositivos con filtros opcionales. | Query |
+| `model/queries/GetDeviceHistoryQuery.java` | Record para consultar el historial cronológico de lecturas de un dispositivo. | Query |
+| `model/queries/GetInventoryQuery.java` | Record para consultar el inventario de dispositivos con filtros por estado. | Query |
+| `services/DeviceCommandService.java` | Expone operaciones CUD sobre dispositivos. | Command Service |
+| `services/DeviceQueryService.java` | Expone operaciones de lectura sobre dispositivos. | Query Service |
+| `services/InventoryQueryService.java` | Expone operaciones de lectura sobre el inventario de dispositivos. | Query Service |
+| `services/DeviceLifecycleService.java` | Orquesta las transiciones de estado del dispositivo, validando reglas de negocio. | Domain Service |
+| `services/MqttDisconnectionService.java` | Coordina el cierre de conexiones MQTT y bloqueo de topics al retirar dispositivos. | Domain Service |
+| `services/InventoryAlertService.java` | Evalúa el stock disponible y genera alertas cuando cae por debajo del umbral configurado. | Domain Service |
+
+#### 4.2.2.2. Interface Layer
+
+| Carpeta / Archivo | Propósito | Tipo de recurso |
+|------------------|----------|-----------------|
+| `acl/DeviceManagementContextFacade.java` | Interface para exponer capacidades del bounded context a otros bounded contexts. | ACL Facade |
+| `rest/controllers/DeviceController.java` | Interface para exponer capacidades de gestión de dispositivos mediante endpoints REST. | REST Controller |
+| `rest/controllers/InventoryController.java` | Interface para exponer capacidades de consulta y filtrado del inventario mediante endpoints REST. | REST Controller |
+| `rest/controllers/ExportController.java` | Interface para exponer el endpoint de exportación de historial en PDF o CSV mediante REST. | REST Controller |
+| `rest/controllers/IntegrationController.java` | Interface para exponer el endpoint de integración de sensores de proveedores externos mediante REST. | REST Controller |
+| `rest/assemblers/RegisterDeviceCommandFromResourceAssembler.java` | Convierte un RegisterDeviceResource en un RegisterDeviceCommand. | Resource → Command Assembler |
+| `rest/assemblers/UpdateDeviceConfigCommandFromResourceAssembler.java` | Convierte un UpdateDeviceConfigResource en un UpdateDeviceConfigCommand. | Resource → Command Assembler |
+| `rest/assemblers/DeviceFromEntityAssembler.java` | Convierte un Device en un DeviceResource. | Entity → Resource Assembler |
+| `rest/assemblers/InventoryRecordFromEntityAssembler.java` | Convierte un InventoryRecord en un InventoryRecordResource. | Entity → Resource Assembler |
+| `rest/assemblers/GetDeviceHistoryQueryFromResourceAssembler.java` | Convierte un DeviceHistoryResource en un GetDeviceHistoryQuery. | Resource → Query Assembler |
+
+#### 4.2.2.3. Application Layer
+
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|------------------|----------|-----------------|
+| `internal/commandservices/DeviceCommandServiceImpl.java` | Implementación concreta de DeviceCommandService. Orquesta RegisterDevice, UpdateConfig, DeleteDevice y RetireDevice. | Command Service Impl |
+| `internal/queryservices/DeviceQueryServiceImpl.java` | Implementación concreta de DeviceQueryService. Orquesta consultas de dispositivos e historial de lecturas. | Query Service Impl |
+| `internal/queryservices/InventoryQueryServiceImpl.java` | Implementación concreta de InventoryQueryService. Orquesta consultas de inventario y evaluación de stock bajo. | Query Service Impl |
+| `internal/acl/DeviceManagementContextFacadeImpl.java` | Implementación concreta de la interface expuesta a otros bounded contexts para acceder a la lógica de dispositivos. | ACL Facade |
+| `internal/outboundservices/acl/ExternalAlertingService.java` | Adaptador para publicar Domain Events hacia el bounded context de Alerting. | ACL Service |
+| `internal/outboundservices/acl/ExternalAnalyticsService.java` | Adaptador para enviar datos de lecturas al bounded context de Analytics. | ACL Service |
+
+#### 4.2.2.4. Infrastructure Layer
+
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|------------------|----------|-----------------|
+| `persistence/jpa/repositories/DeviceRepository.java` | Implementación JPA de DeviceRepository (agregado). Persiste y recupera Devices e InventoryRecords. | Repository Impl |
+| `persistence/jpa/repositories/LifecycleEventRepository.java` | Implementación JPA para el historial de eventos del ciclo de vida de cada dispositivo. | Repository Impl |
+| `persistence/timescale/repositories/ReadingRepository.java` | Implementación TimescaleDB para series de tiempo de lecturas electromagnéticas. | Repository Impl |
+| `messaging/mqtt/MqttBrokerAdapter.java` | Gestiona conexiones y topics MQTT con los sensores IoT. Cierra y bloquea topics al retirar dispositivos. | Messaging Adapter |
+| `messaging/events/EventPublisherAdapter.java` | Publica Domain Events (DeviceRegistered, DeviceRetired, LowStockDetected) hacia el bus de eventos (RabbitMQ). | Event Publisher |
+| `export/ReportExporterAdapter.java` | Genera archivos PDF y CSV del historial de lecturas mediante iText y Apache POI. | Export Adapter |
+| `notifications/NotificationAdapter.java` | Envía notificaciones push de stock bajo al panel del administrador mediante FCM. | Notification Adapter |
+| `persistence/jpa/mapping/DeviceMapper.java` | Mapea entre el Aggregate Device y su entidad JPA correspondiente. | ORM Mapper |
+| `persistence/jpa/mapping/InventoryRecordMapper.java` | Mapea entre el Aggregate InventoryRecord y su entidad JPA correspondiente. | ORM Mapper |
+
+### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img src="img/Device Management - Images/DeviceManagement-Components.png">
+
+### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+#### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+Se presenta el diagrama de clases del contexto de gestión de dispositivos, teniendo como clases principales a Device e InventoryRecord, además de contar con un enum DeviceStatus que ayuda a gestionar el ciclo de vida del dispositivo a través de sus estados: Available, Installed, Maintenance y Retired.
+
+<img src="img/Device Management - Images/Device Management - Bounded Context Domain Layer Class Diagrams.png">
+
+#### 4.2.2.6.2. Bounded Context Database Design Diagram
+
+La base de datos persiste los dispositivos IoT junto con su configuración y estado actual, registrando cada cambio a través del historial de eventos del ciclo de vida. Además, se persisten las lecturas electromagnéticas capturadas por cada dispositivo y los registros de inventario necesarios para controlar el stock y planificar nuevas instalaciones.
+
+<img src="img/Device Management - Images/Device Management - Bounded Context Database Design Diagram.png">
+
+### 4.2.4. Bounded Context: Alert & Automation
+
+Este Bounded Context gestiona la generación de alertas ante niveles altos de radiación electromagnética detectados por los sensores IoT, la ejecución de acciones automáticas o configurables como notificaciones push y el control de adaptadores inteligentes (smart plugs) para cortar o permitir el paso de corriente a dispositivos conectados. Además, administra el historial de alertas y permite al usuario y al administrador dar seguimiento, reconocer y resolver eventos de riesgo.
+ 
+Historias relacionadas: US02, US04, US05, US07, US39, US40, TS02, TS29.
+ 
+#### 4.2.4.1. Domain Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `model/aggregates/Alert.java` | Agregado raíz que representa una alerta generada cuando una lectura de sensor supera el umbral de seguridad configurado. Contiene el ciclo de vida completo: creación, reconocimiento y resolución. | Aggregate |
+| `model/entities/AlertAction.java` | Entidad que registra cada acción ejecutada en respuesta a una alerta (notificación push enviada, dispositivo apagado vía adaptador inteligente, acción manual del usuario). | Entity |
+| `model/entities/AutomationRule.java` | Entidad que representa una regla de automatización configurada por el usuario, como activar o desactivar el apagado automático de un adaptador inteligente ante alerta de radiación elevada. | Entity |
+| `model/entities/SmartPlugCommand.java` | Entidad que registra un comando enviado a un adaptador inteligente (encender/apagar), incluyendo el estado de entrega y respuesta del dispositivo. | Entity |
+| `model/valueobjects/AlertId.java` | Identificador único de la alerta. | Value Object |
+| `model/valueobjects/DeviceId.java` | Identificador del sensor IoT que originó la lectura. | Value Object |
+| `model/valueobjects/SmartPlugId.java` | Identificador del adaptador inteligente asociado. | Value Object |
+| `model/valueobjects/ThresholdLevel.java` | Value object que encapsula el valor del umbral, la unidad de medida (μSv/h, °C, kPa) y el nivel de severidad (warning, critical). | Value Object |
+| `model/valueobjects/ReadingSnapshot.java` | Snapshot de la lectura del sensor al momento de dispararse la alerta (valor, unidad, timestamp). | Value Object |
+| `model/valueobjects/UserId.java` | Identificador del usuario propietario del entorno monitoreado. | Value Object |
+| `model/commands/CreateAlertCommand.java` | Record para crear una nueva alerta a partir de una lectura que superó el umbral. | Command |
+| `model/commands/AcknowledgeAlertCommand.java` | Record para marcar una alerta como reconocida por un usuario o administrador. | Command |
+| `model/commands/ResolveAlertCommand.java` | Record para marcar una alerta como resuelta, incluyendo notas de resolución. | Command |
+| `model/commands/ConfigureAutomationRuleCommand.java` | Record para crear o actualizar una regla de automatización (activar/desactivar apagado automático de un adaptador inteligente). | Command |
+| `model/commands/SendSmartPlugCommandCommand.java` | Record para enviar un comando de encendido o apagado a un adaptador inteligente. | Command |
+| `model/queries/GetAlertsByUserQuery.java` | Record para consultar todas las alertas de un usuario, con filtros opcionales por fecha, nivel y estado. | Query |
+| `model/queries/GetAlertByIdQuery.java` | Record para consultar el detalle de una alerta específica, incluyendo las acciones ejecutadas. | Query |
+| `model/queries/GetAlertHistoryQuery.java` | Record para consultar el historial de alertas con filtros por rango de fecha, zona, nivel de gravedad y estado. | Query |
+| `model/queries/GetAutomationRulesByUserQuery.java` | Record para consultar las reglas de automatización configuradas por un usuario. | Query |
+| `services/AlertCommandService.java` | Interfaz que expone operaciones de escritura: crear alertas, reconocer, resolver, configurar reglas de automatización y enviar comandos a adaptadores inteligentes. | Command Service |
+| `services/AlertQueryService.java` | Interfaz que expone operaciones de lectura: consultar alertas, historial, detalle y reglas de automatización. | Query Service |
+ 
+#### 4.2.4.2. Interface Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `rest/controllers/AlertController.java` | Controlador REST que expone los endpoints para gestión de alertas: listar, filtrar por estado/fecha/nivel, obtener detalle, reconocer y resolver. | REST Controller |
+| `rest/controllers/AutomationController.java` | Controlador REST que expone los endpoints para configurar reglas de automatización y enviar comandos manuales a adaptadores inteligentes. | REST Controller |
+| `rest/resources/CreateAlertResource.java` | Resource de entrada con los datos necesarios para registrar una nueva alerta (deviceId, reading, threshold, unit, type). | Resource (Input) |
+| `rest/resources/AcknowledgeAlertResource.java` | Resource de entrada para reconocer una alerta (acknowledgedBy). | Resource (Input) |
+| `rest/resources/ResolveAlertResource.java` | Resource de entrada para resolver una alerta (notes de resolución). | Resource (Input) |
+| `rest/resources/AlertResource.java` | Resource de salida que representa una alerta con su estado completo, datos del sensor, acciones ejecutadas y timestamps. | Resource (Output) |
+| `rest/resources/AlertHistoryResource.java` | Resource de salida que representa un registro del historial de alertas con fecha, nivel, dispositivo y acción tomada. | Resource (Output) |
+| `rest/resources/ConfigureAutomationRuleResource.java` | Resource de entrada para activar o desactivar el apagado automático de un adaptador inteligente. | Resource (Input) |
+| `rest/resources/AutomationRuleResource.java` | Resource de salida que representa una regla de automatización configurada. | Resource (Output) |
+| `rest/resources/SmartPlugCommandResource.java` | Resource de entrada para enviar manualmente un comando a un adaptador inteligente (ON/OFF). | Resource (Input) |
+| `rest/assemblers/CreateAlertCommandFromResourceAssembler.java` | Convierte un `CreateAlertResource` en un `CreateAlertCommand`. | Resource → Command Assembler |
+| `rest/assemblers/AlertResourceFromEntityAssembler.java` | Convierte un `Alert` (aggregate) en `AlertResource`. | Entity → Resource Assembler |
+| `rest/assemblers/AlertHistoryResourceFromEntityAssembler.java` | Convierte un `Alert` en `AlertHistoryResource` para la vista de historial. | Entity → Resource Assembler |
+| `rest/assemblers/AutomationRuleResourceFromEntityAssembler.java` | Convierte un `AutomationRule` en `AutomationRuleResource`. | Entity → Resource Assembler |
+ 
+#### 4.2.4.3. Application Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `internal/commandservices/AlertCommandServiceImpl.java` | Implementación concreta de `AlertCommandService`. Orquesta la creación de alertas, el reconocimiento, la resolución y la ejecución de acciones automáticas (notificaciones y comandos a adaptadores inteligentes). | Command Service Impl |
+| `internal/queryservices/AlertQueryServiceImpl.java` | Implementación concreta de `AlertQueryService`. Ejecuta consultas de alertas, historial con filtros y reglas de automatización. | Query Service Impl |
+| `internal/outboundservices/acl/DeviceContextService.java` | Servicio ACL que consulta información del sensor IoT desde el Bounded Context de Device Management (nombre, ubicación, estado). | ACL Service |
+| `internal/outboundservices/acl/NotificationService.java` | Servicio ACL que se comunica con el servicio de notificaciones push para enviar alertas al usuario cuando se detecta sobreexposición. | ACL Service |
+| `internal/outboundservices/acl/SmartPlugGatewayService.java` | Servicio ACL que se comunica con el broker MQTT para enviar comandos de encendido/apagado a los adaptadores inteligentes. | ACL Service |
+ 
+#### 4.2.4.4. Infrastructure Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `persistence/jpa/repositories/AlertRepository.java` | Repositorio JPA para el agregado `Alert`. Incluye queries personalizadas para filtrar por userId, rango de fechas, nivel de severidad y estado (acknowledged, resolved). | Repository Impl |
+| `persistence/jpa/repositories/AlertActionRepository.java` | Repositorio JPA para la entidad `AlertAction`. | Repository Impl |
+| `persistence/jpa/repositories/AutomationRuleRepository.java` | Repositorio JPA para la entidad `AutomationRule`. Incluye query para buscar reglas activas por userId y smartPlugId. | Repository Impl |
+| `persistence/jpa/repositories/SmartPlugCommandRepository.java` | Repositorio JPA para la entidad `SmartPlugCommand`. Registra el historial de comandos enviados a adaptadores inteligentes. | Repository Impl |
+| `messaging/mqtt/AlertMqttListener.java` | Listener MQTT que recibe las lecturas de los sensores IoT en tiempo real, evalúa si superan el umbral configurado y dispara la creación de alertas. | MQTT Listener |
+| `messaging/mqtt/SmartPlugMqttPublisher.java` | Publisher MQTT que envía comandos de encendido/apagado a los adaptadores inteligentes a través del broker. | MQTT Publisher |
+
+#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+ 
+##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+ 
+El diagrama de clases del Bounded Context Alert & Automation muestra el agregado `Alert` como raíz, junto con las entidades `AlertAction`, `AutomationRule` y `SmartPlugCommand`. Se incluyen los value objects que encapsulan identificadores y datos de lectura, así como los enums que controlan el ciclo de vida de las alertas y los estados de los comandos.
+ 
+```mermaid
+classDiagram
+    direction TB
+ 
+    class Alert {
+        -Long id
+        -DeviceId deviceId
+        -UserId userId
+        -String type
+        -AlertSeverity severity
+        -ReadingSnapshot reading
+        -ThresholdLevel threshold
+        -AlertStatus status
+        -String acknowledgedBy
+        -Instant acknowledgedAt
+        -Instant resolvedAt
+        -String resolutionNotes
+        -Instant createdAt
+        +acknowledge(String acknowledgedBy) void
+        +resolve(String resolutionNotes) void
+        +isActive() boolean
+        +addAction(AlertAction action) void
+    }
+ 
+    class AlertAction {
+        -Long id
+        -ActionType actionType
+        -String description
+        -Boolean success
+        -String errorMessage
+        -Instant executedAt
+    }
+ 
+    class AutomationRule {
+        -Long id
+        -UserId userId
+        -SmartPlugId smartPlugId
+        -DeviceId triggerDeviceId
+        -Boolean autoShutdownEnabled
+        -Double thresholdValue
+        -String thresholdUnit
+        -Instant createdAt
+        -Instant updatedAt
+        +enable() void
+        +disable() void
+        +isActive() boolean
+    }
+ 
+    class SmartPlugCommand {
+        -Long id
+        -SmartPlugId smartPlugId
+        -PlugCommandType commandType
+        -CommandStatus deliveryStatus
+        -Instant sentAt
+        -Instant confirmedAt
+        -String errorMessage
+    }
+ 
+    class AlertSeverity {
+        <<enumeration>>
+        WARNING
+        CRITICAL
+    }
+ 
+    class AlertStatus {
+        <<enumeration>>
+        ACTIVE
+        ACKNOWLEDGED
+        RESOLVED
+    }
+ 
+    class ActionType {
+        <<enumeration>>
+        PUSH_NOTIFICATION_SENT
+        SMART_PLUG_OFF
+        SMART_PLUG_ON
+        MANUAL_ACTION
+    }
+ 
+    class PlugCommandType {
+        <<enumeration>>
+        TURN_ON
+        TURN_OFF
+    }
+ 
+    class CommandStatus {
+        <<enumeration>>
+        PENDING
+        DELIVERED
+        CONFIRMED
+        FAILED
+    }
+ 
+    class DeviceId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class UserId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class SmartPlugId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class AlertId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class ReadingSnapshot {
+        <<value object>>
+        -Double value
+        -String unit
+        -Instant timestamp
+    }
+ 
+    class ThresholdLevel {
+        <<value object>>
+        -Double value
+        -String unit
+        -AlertSeverity severity
+    }
+ 
+    class AlertCommandService {
+        <<interface>>
+        +createAlert(CreateAlertCommand command) Alert
+        +acknowledgeAlert(AcknowledgeAlertCommand command) Alert
+        +resolveAlert(ResolveAlertCommand command) Alert
+        +configureAutomationRule(ConfigureAutomationRuleCommand command) AutomationRule
+        +sendSmartPlugCommand(SendSmartPlugCommandCommand command) SmartPlugCommand
+    }
+ 
+    class AlertQueryService {
+        <<interface>>
+        +getAlertsByUser(GetAlertsByUserQuery query) List~Alert~
+        +getAlertById(GetAlertByIdQuery query) Alert
+        +getAlertHistory(GetAlertHistoryQuery query) List~Alert~
+        +getAutomationRulesByUser(GetAutomationRulesByUserQuery query) List~AutomationRule~
+    }
+ 
+    Alert "1" *-- "0..*" AlertAction : actions
+    Alert --> AlertSeverity
+    Alert --> AlertStatus
+    Alert --> ReadingSnapshot
+    Alert --> ThresholdLevel
+    Alert --> DeviceId
+    Alert --> UserId
+ 
+    AlertAction --> ActionType
+ 
+    AutomationRule --> UserId
+    AutomationRule --> SmartPlugId
+    AutomationRule --> DeviceId
+ 
+    SmartPlugCommand --> SmartPlugId
+    SmartPlugCommand --> PlugCommandType
+    SmartPlugCommand --> CommandStatus
+ 
+    AlertCommandService ..> Alert : manages
+    AlertCommandService ..> AutomationRule : manages
+    AlertCommandService ..> SmartPlugCommand : manages
+    AlertQueryService ..> Alert : queries
+    AlertQueryService ..> AutomationRule : queries
+```
+ 
+##### 4.2.4.6.2. Bounded Context Database Design Diagram
+ 
+El diseño de base de datos del Bounded Context Alert & Automation persiste las alertas generadas por lecturas de sensores que superan umbrales, las acciones ejecutadas en respuesta, las reglas de automatización configuradas por cada usuario y el historial de comandos enviados a los adaptadores inteligentes.
+ 
+```mermaid
+erDiagram
+    ALERT {
+        bigint id PK
+        bigint device_id FK
+        bigint user_id FK
+        varchar type
+        varchar severity
+        double reading_value
+        varchar reading_unit
+        timestamp reading_timestamp
+        double threshold_value
+        varchar threshold_unit
+        varchar status
+        varchar acknowledged_by
+        timestamp acknowledged_at
+        timestamp resolved_at
+        text resolution_notes
+        timestamp created_at
+    }
+ 
+    ALERT_ACTION {
+        bigint id PK
+        bigint alert_id FK
+        varchar action_type
+        varchar description
+        boolean success
+        text error_message
+        timestamp executed_at
+    }
+ 
+    AUTOMATION_RULE {
+        bigint id PK
+        bigint user_id FK
+        bigint smart_plug_id FK
+        bigint trigger_device_id FK
+        boolean auto_shutdown_enabled
+        double threshold_value
+        varchar threshold_unit
+        timestamp created_at
+        timestamp updated_at
+    }
+ 
+    SMART_PLUG_COMMAND {
+        bigint id PK
+        bigint smart_plug_id FK
+        bigint alert_id FK
+        varchar command_type
+        varchar delivery_status
+        timestamp sent_at
+        timestamp confirmed_at
+        text error_message
+    }
+ 
+    ALERT ||--o{ ALERT_ACTION : "tiene acciones"
+    ALERT ||--o{ SMART_PLUG_COMMAND : "dispara comandos"
+    AUTOMATION_RULE ||--o{ SMART_PLUG_COMMAND : "genera comandos"
+```
+ 
+---
+
+
+### 4.2.5. Bounded Context: Admin & Operations Management
+ 
+Este Bounded Context soporta la gestión operativa del sistema EmSafe desde la plataforma web administrativa. Abarca el ciclo de vida completo del servicio: desde que un cliente contrata el monitoreo y se le agenda una instalación de sensores y adaptadores inteligentes, pasando por el mantenimiento preventivo y correctivo, hasta la recolección del hardware al finalizar el servicio. Incluye la administración de técnicos de campo, el control de inventario de dispositivos, el dashboard centralizado de clientes y la visualización del calendario de citas del equipo técnico.
+ 
+El acceso a este BC es diferenciado por rol: el **Admin** (equipo Gauss) puede crear, editar y eliminar registros; el **Técnico** solo puede visualizar sus citas asignadas y marcarlas como culminadas.
+ 
+Historias relacionadas: US26, US27, US28, US29, US31, US32, US33, US41, TS01, TS05, TS31.
+ 
+#### 4.2.5.1. Domain Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `model/aggregates/ServiceAppointment.java` | Agregado raíz que representa una cita de servicio (instalación, mantenimiento o recolección). Contiene el ciclo de vida completo: programación, ejecución y finalización. Es el concepto central del agendamiento. | Aggregate |
+| `model/entities/AppointmentDevice.java` | Entidad que registra cada dispositivo (sensor o adaptador inteligente) involucrado en una cita, junto con su estado individual dentro de la visita (instalado, retirado, pendiente). | Entity |
+| `model/aggregates/Technician.java` | Agregado raíz que representa un técnico de campo del equipo. Contiene sus datos de perfil, estado (activo/inactivo) y su disponibilidad para asignación de citas. | Aggregate |
+| `model/aggregates/ClientRecord.java` | Agregado raíz que representa el registro de un cliente dentro del sistema operativo. Almacena el estado del servicio contratado, datos de la sede y la relación con su cuenta de usuario final. | Aggregate |
+| `model/aggregates/DeviceInventoryItem.java` | Agregado raíz que representa un ítem del inventario de dispositivos (sensor o adaptador inteligente). Registra su ciclo de vida completo: disponible, instalado, en mantenimiento, retirado. | Aggregate |
+| `model/valueobjects/AppointmentId.java` | Identificador único de la cita de servicio. | Value Object |
+| `model/valueobjects/TechnicianId.java` | Identificador único del técnico. | Value Object |
+| `model/valueobjects/ClientId.java` | Identificador único del registro de cliente. | Value Object |
+| `model/valueobjects/InventoryItemId.java` | Identificador único del ítem de inventario. | Value Object |
+| `model/valueobjects/TimeSlot.java` | Value object que encapsula la fecha, hora de inicio y hora de fin de un bloque horario para una cita. | Value Object |
+| `model/valueobjects/Address.java` | Value object que encapsula la dirección de la sede del cliente (calle, distrito, ciudad, referencia). | Value Object |
+| `model/commands/ScheduleInstallationCommand.java` | Record para programar una cita de instalación de sensores y adaptadores inteligentes en la sede de un cliente con pago confirmado. | Command |
+| `model/commands/ScheduleMaintenanceCommand.java` | Record para programar una cita de mantenimiento preventivo o correctivo de dispositivos instalados. | Command |
+| `model/commands/ScheduleCollectionCommand.java` | Record para programar una cita de recolección de dispositivos al finalizar o cancelar el servicio. | Command |
+| `model/commands/RescheduleAppointmentCommand.java` | Record para modificar la fecha, horario o técnico asignado de una cita existente. | Command |
+| `model/commands/CompleteAppointmentCommand.java` | Record para que el técnico marque una cita como completada, indicando los dispositivos procesados. | Command |
+| `model/commands/RegisterTechnicianCommand.java` | Record para registrar un nuevo técnico en el sistema. | Command |
+| `model/commands/UpdateTechnicianCommand.java` | Record para actualizar los datos de un técnico existente. | Command |
+| `model/commands/DeactivateTechnicianCommand.java` | Record para desactivar un técnico que ya no forma parte del equipo. | Command |
+| `model/commands/RegisterClientCommand.java` | Record para registrar un nuevo cliente con su sede y datos de servicio. | Command |
+| `model/commands/UpdateInventoryItemStatusCommand.java` | Record para actualizar el estado de un ítem del inventario (disponible, instalado, en mantenimiento, retirado). | Command |
+| `model/queries/GetAppointmentsByDateRangeQuery.java` | Record para consultar citas dentro de un rango de fechas, con filtro opcional por técnico. | Query |
+| `model/queries/GetAppointmentsByTechnicianQuery.java` | Record para consultar las citas asignadas a un técnico específico. | Query |
+| `model/queries/GetInstallationHistoryQuery.java` | Record para consultar el historial de instalaciones realizadas, con filtros por fecha y técnico. | Query |
+| `model/queries/GetAllTechniciansQuery.java` | Record para consultar todos los técnicos registrados en el sistema. | Query |
+| `model/queries/GetClientDashboardQuery.java` | Record para obtener las métricas del dashboard de clientes: totales por estado, alertas activas, citas pendientes. | Query |
+| `model/queries/GetClientDetailQuery.java` | Record para obtener el perfil detallado de un cliente con sus dispositivos, citas e historial. | Query |
+| `model/queries/GetInventoryQuery.java` | Record para consultar el inventario de dispositivos, con filtro opcional por estado. | Query |
+| `model/queries/GetInventoryItemDetailQuery.java` | Record para consultar el historial completo de un ítem de inventario. | Query |
+| `model/queries/GetDashboardMetricsQuery.java` | Record para obtener las métricas generales del dashboard web: dispositivos activos, alertas recientes, citas programadas. | Query |
+| `services/OperationsCommandService.java` | Interfaz que expone operaciones de escritura: agendamiento de citas, gestión de técnicos, registro de clientes y actualización de inventario. | Command Service |
+| `services/OperationsQueryService.java` | Interfaz que expone operaciones de lectura: consultas de calendario, historial de instalaciones, dashboard de clientes, inventario y métricas. | Query Service |
+ 
+#### 4.2.5.2. Interface Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `rest/controllers/AppointmentController.java` | Controlador REST que expone endpoints para agendar, reprogramar y completar citas de instalación, mantenimiento y recolección. Diferencia permisos por rol (Admin: CRUD, Técnico: solo lectura y marcar completado). | REST Controller |
+| `rest/controllers/TechnicianController.java` | Controlador REST que expone endpoints para registrar, editar, desactivar y consultar técnicos. Solo accesible por Admin. | REST Controller |
+| `rest/controllers/ClientManagementController.java` | Controlador REST que expone endpoints para el dashboard de clientes, registro de clientes, detalle y búsqueda. Solo accesible por Admin. | REST Controller |
+| `rest/controllers/InventoryController.java` | Controlador REST que expone endpoints para consultar y gestionar el inventario de dispositivos. Solo accesible por Admin. | REST Controller |
+| `rest/controllers/AdminDashboardController.java` | Controlador REST que expone el endpoint del dashboard general con métricas operativas. Solo accesible por Admin. | REST Controller |
+| `rest/resources/ScheduleInstallationResource.java` | Resource de entrada para programar una cita de instalación (clientId, fecha, bloque horario, technicianId, dispositivos). | Resource (Input) |
+| `rest/resources/ScheduleMaintenanceResource.java` | Resource de entrada para programar una cita de mantenimiento (deviceIds, fecha, bloque horario, technicianId). | Resource (Input) |
+| `rest/resources/ScheduleCollectionResource.java` | Resource de entrada para programar una cita de recolección (clientId, fecha, bloque horario, technicianId). | Resource (Input) |
+| `rest/resources/RescheduleAppointmentResource.java` | Resource de entrada para reprogramar una cita existente (nueva fecha, nuevo bloque, nuevo técnico). | Resource (Input) |
+| `rest/resources/CompleteAppointmentResource.java` | Resource de entrada para que el técnico marque la cita como completada (lista de dispositivos procesados, estado de cada uno). | Resource (Input) |
+| `rest/resources/AppointmentResource.java` | Resource de salida que representa una cita con todos sus datos: tipo, cliente, técnico, dispositivos, estado y timestamps. | Resource (Output) |
+| `rest/resources/RegisterTechnicianResource.java` | Resource de entrada para registrar un técnico (nombre, correo, teléfono, especialidad). | Resource (Input) |
+| `rest/resources/TechnicianResource.java` | Resource de salida que representa un técnico con su perfil, estado y cantidad de citas asignadas. | Resource (Output) |
+| `rest/resources/RegisterClientResource.java` | Resource de entrada para registrar un nuevo cliente (nombre, empresa, dirección sede, correo, teléfono). | Resource (Input) |
+| `rest/resources/ClientSummaryResource.java` | Resource de salida resumida para el dashboard de clientes (nombre, estado del servicio, alertas activas, citas pendientes). | Resource (Output) |
+| `rest/resources/ClientDetailResource.java` | Resource de salida detallada de un cliente (perfil completo, dispositivos instalados, historial de citas e historial de alertas). | Resource (Output) |
+| `rest/resources/InventoryItemResource.java` | Resource de salida que representa un ítem de inventario (ID, tipo, estado, sede asignada, historial de cambios). | Resource (Output) |
+| `rest/resources/DashboardMetricsResource.java` | Resource de salida con las métricas del dashboard web (dispositivos activos, alertas recientes, citas del día, tendencia de radiación). | Resource (Output) |
+| `rest/resources/ClientDashboardMetricsResource.java` | Resource de salida con métricas agregadas de clientes (total activos, con alertas, con citas pendientes, finalizados). | Resource (Output) |
+| `rest/assemblers/ScheduleInstallationCommandFromResourceAssembler.java` | Convierte un `ScheduleInstallationResource` en `ScheduleInstallationCommand`. | Resource → Command Assembler |
+| `rest/assemblers/AppointmentResourceFromEntityAssembler.java` | Convierte un `ServiceAppointment` (aggregate) en `AppointmentResource`. | Entity → Resource Assembler |
+| `rest/assemblers/TechnicianResourceFromEntityAssembler.java` | Convierte un `Technician` (aggregate) en `TechnicianResource`. | Entity → Resource Assembler |
+| `rest/assemblers/ClientSummaryResourceFromEntityAssembler.java` | Convierte un `ClientRecord` en `ClientSummaryResource`. | Entity → Resource Assembler |
+| `rest/assemblers/ClientDetailResourceFromEntityAssembler.java` | Convierte un `ClientRecord` con relaciones cargadas en `ClientDetailResource`. | Entity → Resource Assembler |
+| `rest/assemblers/InventoryItemResourceFromEntityAssembler.java` | Convierte un `DeviceInventoryItem` en `InventoryItemResource`. | Entity → Resource Assembler |
+ 
+#### 4.2.5.3. Application Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `internal/commandservices/OperationsCommandServiceImpl.java` | Implementación concreta de `OperationsCommandService`. Orquesta el agendamiento de citas validando disponibilidad del técnico y estado del cliente, gestiona técnicos, registra clientes y actualiza inventario. | Command Service Impl |
+| `internal/queryservices/OperationsQueryServiceImpl.java` | Implementación concreta de `OperationsQueryService`. Ejecuta consultas de calendario, historial de instalaciones, dashboard de clientes con métricas agregadas, inventario y métricas generales. | Query Service Impl |
+| `internal/outboundservices/acl/AlertContextService.java` | Servicio ACL que consulta el Bounded Context de Alert & Automation para obtener el conteo de alertas activas por cliente. | ACL Service |
+| `internal/outboundservices/acl/UserAccountService.java` | Servicio ACL que consulta el módulo de autenticación (IAM) para vincular el registro de cliente con su cuenta de usuario final. | ACL Service |
+| `internal/outboundservices/acl/EmailNotificationService.java` | Servicio ACL que envía correos electrónicos al técnico cuando se le asigna, modifica o cancela una cita. | ACL Service |
+ 
+#### 4.2.5.4. Infrastructure Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `persistence/jpa/repositories/ServiceAppointmentRepository.java` | Repositorio JPA para el agregado `ServiceAppointment`. Incluye queries para buscar por rango de fechas, por técnico, por cliente y por tipo de servicio. Valida conflictos de agenda. | Repository Impl |
+| `persistence/jpa/repositories/AppointmentDeviceRepository.java` | Repositorio JPA para la entidad `AppointmentDevice`. | Repository Impl |
+| `persistence/jpa/repositories/TechnicianRepository.java` | Repositorio JPA para el agregado `Technician`. Incluye query para buscar técnicos activos y verificar disponibilidad en un bloque horario. | Repository Impl |
+| `persistence/jpa/repositories/ClientRecordRepository.java` | Repositorio JPA para el agregado `ClientRecord`. Incluye queries para buscar por estado del servicio y para obtener métricas agregadas del dashboard. | Repository Impl |
+| `persistence/jpa/repositories/DeviceInventoryItemRepository.java` | Repositorio JPA para el agregado `DeviceInventoryItem`. Incluye queries para filtrar por estado y para detectar stock bajo. | Repository Impl |
+ 
+#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+ 
+##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+ 
+El diagrama de clases del Bounded Context Admin & Operations Management muestra los cuatro agregados principales: `ServiceAppointment` como eje central del agendamiento, `Technician` para la gestión del equipo de campo, `ClientRecord` para el seguimiento de clientes y `DeviceInventoryItem` para el control de inventario. Se incluyen los value objects, entidades y enums que modelan el ciclo de vida completo de las operaciones.
+ 
+```mermaid
+classDiagram
+    direction TB
+ 
+    class ServiceAppointment {
+        -Long id
+        -ClientId clientId
+        -TechnicianId technicianId
+        -AppointmentType type
+        -AppointmentStatus status
+        -TimeSlot scheduledSlot
+        -String notes
+        -Instant createdAt
+        -Instant updatedAt
+        -Instant completedAt
+        +reschedule(TimeSlot newSlot, TechnicianId newTechnician) void
+        +markCompleted(String completionNotes) void
+        +cancel(String reason) void
+        +addDevice(AppointmentDevice device) void
+        +isConflicting(TimeSlot otherSlot) boolean
+    }
+ 
+    class AppointmentDevice {
+        -Long id
+        -InventoryItemId inventoryItemId
+        -String deviceName
+        -String deviceType
+        -AppointmentDeviceStatus status
+    }
+ 
+    class Technician {
+        -Long id
+        -String firstName
+        -String lastName
+        -String email
+        -String phone
+        -String specialty
+        -TechnicianStatus status
+        -Instant createdAt
+        +deactivate() void
+        +activate() void
+        +getFullName() String
+    }
+ 
+    class ClientRecord {
+        -Long id
+        -Long userId
+        -String companyName
+        -String contactName
+        -String contactEmail
+        -String contactPhone
+        -Address siteAddress
+        -ServiceStatus serviceStatus
+        -Boolean paymentConfirmed
+        -Instant createdAt
+        -Instant updatedAt
+        +activateService() void
+        +finalizeService() void
+        +cancelService() void
+        +confirmPayment() void
+    }
+ 
+    class DeviceInventoryItem {
+        -Long id
+        -String serialNumber
+        -InventoryDeviceType deviceType
+        -InventoryStatus status
+        -Long assignedClientId
+        -String assignedLocation
+        -Instant registeredAt
+        -Instant lastStatusChange
+        +install(Long clientId, String location) void
+        +markForMaintenance() void
+        +retire() void
+        +returnToStock() void
+    }
+ 
+    class AppointmentType {
+        <<enumeration>>
+        INSTALLATION
+        MAINTENANCE
+        COLLECTION
+    }
+ 
+    class AppointmentStatus {
+        <<enumeration>>
+        SCHEDULED
+        IN_PROGRESS
+        COMPLETED
+        CANCELLED
+        PARTIALLY_COMPLETED
+    }
+ 
+    class AppointmentDeviceStatus {
+        <<enumeration>>
+        PENDING
+        INSTALLED
+        MAINTAINED
+        COLLECTED
+        FAILED
+    }
+ 
+    class TechnicianStatus {
+        <<enumeration>>
+        ACTIVE
+        INACTIVE
+    }
+ 
+    class ServiceStatus {
+        <<enumeration>>
+        PENDING_INSTALLATION
+        ACTIVE
+        SUSPENDED
+        FINALIZED
+        CANCELLED
+    }
+ 
+    class InventoryDeviceType {
+        <<enumeration>>
+        EMF_SENSOR
+        SMART_PLUG
+    }
+ 
+    class InventoryStatus {
+        <<enumeration>>
+        AVAILABLE
+        INSTALLED
+        IN_MAINTENANCE
+        IN_COLLECTION
+        RETIRED
+    }
+ 
+    class TimeSlot {
+        <<value object>>
+        -LocalDate date
+        -LocalTime startTime
+        -LocalTime endTime
+    }
+ 
+    class Address {
+        <<value object>>
+        -String street
+        -String district
+        -String city
+        -String reference
+    }
+ 
+    class AppointmentId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class TechnicianId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class ClientId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class InventoryItemId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class OperationsCommandService {
+        <<interface>>
+        +scheduleInstallation(ScheduleInstallationCommand cmd) ServiceAppointment
+        +scheduleMaintenance(ScheduleMaintenanceCommand cmd) ServiceAppointment
+        +scheduleCollection(ScheduleCollectionCommand cmd) ServiceAppointment
+        +rescheduleAppointment(RescheduleAppointmentCommand cmd) ServiceAppointment
+        +completeAppointment(CompleteAppointmentCommand cmd) ServiceAppointment
+        +registerTechnician(RegisterTechnicianCommand cmd) Technician
+        +updateTechnician(UpdateTechnicianCommand cmd) Technician
+        +deactivateTechnician(DeactivateTechnicianCommand cmd) Technician
+        +registerClient(RegisterClientCommand cmd) ClientRecord
+        +updateInventoryStatus(UpdateInventoryItemStatusCommand cmd) DeviceInventoryItem
+    }
+ 
+    class OperationsQueryService {
+        <<interface>>
+        +getAppointmentsByDateRange(GetAppointmentsByDateRangeQuery q) List~ServiceAppointment~
+        +getAppointmentsByTechnician(GetAppointmentsByTechnicianQuery q) List~ServiceAppointment~
+        +getInstallationHistory(GetInstallationHistoryQuery q) List~ServiceAppointment~
+        +getAllTechnicians(GetAllTechniciansQuery q) List~Technician~
+        +getClientDashboard(GetClientDashboardQuery q) ClientDashboardMetrics
+        +getClientDetail(GetClientDetailQuery q) ClientRecord
+        +getInventory(GetInventoryQuery q) List~DeviceInventoryItem~
+        +getInventoryItemDetail(GetInventoryItemDetailQuery q) DeviceInventoryItem
+        +getDashboardMetrics(GetDashboardMetricsQuery q) DashboardMetrics
+    }
+ 
+    ServiceAppointment "1" *-- "0..*" AppointmentDevice : devices
+    ServiceAppointment --> AppointmentType
+    ServiceAppointment --> AppointmentStatus
+    ServiceAppointment --> TimeSlot
+    ServiceAppointment --> ClientId
+    ServiceAppointment --> TechnicianId
+ 
+    AppointmentDevice --> AppointmentDeviceStatus
+    AppointmentDevice --> InventoryItemId
+ 
+    Technician --> TechnicianStatus
+ 
+    ClientRecord --> ServiceStatus
+    ClientRecord --> Address
+ 
+    DeviceInventoryItem --> InventoryDeviceType
+    DeviceInventoryItem --> InventoryStatus
+ 
+    OperationsCommandService ..> ServiceAppointment : manages
+    OperationsCommandService ..> Technician : manages
+    OperationsCommandService ..> ClientRecord : manages
+    OperationsCommandService ..> DeviceInventoryItem : manages
+    OperationsQueryService ..> ServiceAppointment : queries
+    OperationsQueryService ..> Technician : queries
+    OperationsQueryService ..> ClientRecord : queries
+    OperationsQueryService ..> DeviceInventoryItem : queries
+```
+ 
+##### 4.2.5.6.2. Bounded Context Database Design Diagram
+ 
+El diseño de base de datos del Bounded Context Admin & Operations Management persiste toda la información operativa del servicio: citas de instalación, mantenimiento y recolección con sus dispositivos asociados, el equipo de técnicos de campo, los registros de clientes con el estado de su servicio y el inventario completo de sensores y adaptadores inteligentes con su ciclo de vida.
+ 
+```mermaid
+erDiagram
+    SERVICE_APPOINTMENT {
+        bigint id PK
+        bigint client_id FK
+        bigint technician_id FK
+        varchar type
+        varchar status
+        date scheduled_date
+        time start_time
+        time end_time
+        text notes
+        text completion_notes
+        text cancellation_reason
+        timestamp created_at
+        timestamp updated_at
+        timestamp completed_at
+    }
+ 
+    APPOINTMENT_DEVICE {
+        bigint id PK
+        bigint appointment_id FK
+        bigint inventory_item_id FK
+        varchar device_name
+        varchar device_type
+        varchar status
+    }
+ 
+    TECHNICIAN {
+        bigint id PK
+        varchar first_name
+        varchar last_name
+        varchar email
+        varchar phone
+        varchar specialty
+        varchar status
+        timestamp created_at
+    }
+ 
+    CLIENT_RECORD {
+        bigint id PK
+        bigint user_id FK
+        varchar company_name
+        varchar contact_name
+        varchar contact_email
+        varchar contact_phone
+        varchar site_street
+        varchar site_district
+        varchar site_city
+        varchar site_reference
+        varchar service_status
+        boolean payment_confirmed
+        timestamp created_at
+        timestamp updated_at
+    }
+ 
+    DEVICE_INVENTORY_ITEM {
+        bigint id PK
+        varchar serial_number
+        varchar device_type
+        varchar status
+        bigint assigned_client_id FK
+        varchar assigned_location
+        timestamp registered_at
+        timestamp last_status_change
+    }
+ 
+    CLIENT_RECORD ||--o{ SERVICE_APPOINTMENT : "tiene citas"
+    TECHNICIAN ||--o{ SERVICE_APPOINTMENT : "asignado a"
+    SERVICE_APPOINTMENT ||--o{ APPOINTMENT_DEVICE : "involucra dispositivos"
+    DEVICE_INVENTORY_ITEM ||--o{ APPOINTMENT_DEVICE : "referenciado en"
+    CLIENT_RECORD ||--o{ DEVICE_INVENTORY_ITEM : "tiene instalados"
+```
+ 
 #### 4.2.X.1. Domain Layer
 
 #### 4.2.X.2. Interface Layer
