@@ -403,6 +403,27 @@ Este Bounded Context se encarga de gestionar el procesamiento y análisis de dat
 
 #### 4.2.3.1. Domain Layer
 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|-------------------|-----------|-----------------|
+| model/aggregates/RadiationAnalysis | Agregado raíz que gestiona el análisis de radiación | Aggregate |
+| model/entities/RadiationReading| Representa una medición individual de radiación EM | Entity |
+| model/entities/UserExposureProfile | Perfil de exposición del usuario | Entity |
+| model/valueobjects/RadiationLevel | Nivel de radiación (bajo, medio, alto) | Value Object |
+| model/valueobjects/TimeRange | Rango de tiempo para análisis | Value Object |
+| model/valueobjects/Location | Ubicación asociada a mediciones | Value Object |
+| model/valueobjects/ReportType | Tipo de reporte (diario, mensual, anual) | Value Object |
+| model/valueobjects/RadiationReadingId | Identificador de medición | Value Object |
+| model/valueobjects/ReportId | Identificador de reporte | Value Object |
+| model/commands/GenerateReportCommand | Comando para generar reportes | Command |
+| model/commands/FilterRadiationDataCommand | Comando para filtrar datos | Command |
+| model/queries/GetRadiationLevelsQuery | Query para obtener datos en tiempo real | Query |
+| model/queries/GetDashboardDataQuery | Query para dashboard | Query |
+| model/queries/GetRadiationTrendsQuery | Query para tendencias | Query |
+| services/RadiationAnalysisService | Lógica de análisis de datos EM | Domain Service |
+| services/PeakDetectionService | Detecta picos de radiación | Domain Service |
+| services/ReportGenerationService | Genera reportes analíticos | Domain Service |
+| services/RadiationRepository | Interface para acceso a datos | Repository |
+
 #### 4.2.3.2. Interface Layer
 
 #### 4.2.3.3. Application Layer
