@@ -440,15 +440,24 @@ Este Bounded Context se encarga de gestionar el procesamiento y análisis de dat
 
 | Archivo / Carpeta                                         | Propósito                                | Tipo de recurso      |
 | --------------------------------------------------------- | ---------------------------------------- | -------------------- |
-| internal/commandservices/RadiationCommandServiceImpl.java | Implementa comandos (filtrado, reportes) | Command Service Impl |
-| internal/queryservices/RadiationQueryServiceImpl.java     | Implementa consultas de datos            | Query Service Impl   |
-| internal/queryservices/DashboardQueryServiceImpl.java     | Maneja lógica del dashboard              | Query Service Impl   |
-| internal/commandservices/ReportCommandServiceImpl.java    | Generación de reportes                   | Command Service Impl |
-| internal/acl/RadiationContextFacadeImpl.java              | Implementación del facade                | ACL Facade           |
-| internal/outboundservices/acl/ExternalSensorService.java  | Conecta con sensores IoT                 | ACL Service          |
-| internal/outboundservices/acl/ExternalUserService.java    | Obtiene datos de usuario                 | ACL Service          |
+| internal/commandservices/RadiationCommandServiceImpl | Implementa comandos (filtrado, reportes) | Command Service Impl |
+| internal/queryservices/RadiationQueryServiceImpl     | Implementa consultas de datos            | Query Service Impl   |
+| internal/queryservices/DashboardQueryServiceImpl     | Maneja lógica del dashboard              | Query Service Impl   |
+| internal/commandservices/ReportCommandServiceImpl    | Generación de reportes                   | Command Service Impl |
+| internal/acl/RadiationContextFacadeImpl              | Implementación del facade                | ACL Facade           |
+| internal/outboundservices/acl/ExternalSensorService  | Conecta con sensores IoT                 | ACL Service          |
+| internal/outboundservices/acl/ExternalUserService    | Obtiene datos de usuario                 | ACL Service          |
 
 #### 4.2.3.4. Infrastructure Layer
+
+| Archivo / Carpeta                                         | Propósito                           | Tipo de recurso |
+| --------------------------------------------------------- | ----------------------------------- | --------------- |
+| persistence/jpa/repositories/RadiationRepositoryImpl.java | Implementación JPA del repositorio  | Repository Impl |
+| persistence/jpa/repositories/ReportRepositoryImpl.java    | Persistencia de reportes            | Repository Impl |
+| persistence/database/DatabaseConnection.java              | Conexión a base de datos            | Infrastructure  |
+| services/DataAggregationService.java                      | Agrega datos históricos (TS07)      | Service         |
+| services/QueryOptimizationService.java                    | Optimiza consultas (TS08)           | Service         |
+| api/DashboardAPI.java                                     | Endpoint `/api/v1/dashboard` (TS31) | REST API        |
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
 
