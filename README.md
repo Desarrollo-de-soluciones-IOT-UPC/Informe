@@ -399,8 +399,6 @@ Trabajar dentro de un dominio requiere atender reglas de negocio específicas; e
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
-### 4.2.X. Bounded Context: [Bounded Context Name]
-
 ### 4.2.2. Bounded Context: Device Management
 
 #### 4.2.2.1. Domain Layer
@@ -488,6 +486,91 @@ La base de datos persiste los dispositivos IoT junto con su configuración y est
 
 <img src="img/AV1/chapter-4/Device Management/Device Management - Bounded Context Database Design Diagram.png">
 
+### 4.2.3. Bounded Context: Radiation Monitoring & Analytics
+
+Este Bounded Context se encarga de gestionar el procesamiento y análisis de datos recolectados por sensores IoT de EmSafe. Su función es transformar datos crudos en métricas, tendencias y perfiles de exposición personalizados mediante dashboards y reportes históricos (diarios, mensuales y anuales). Al optimizar la gestión de datos, permite identificar picos de radiación y facilita la toma de decisiones informadas para el bienestar del usuario.
+
+#### 4.2.3.1. Domain Layer
+
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|-------------------|-----------|-----------------|
+| model/aggregates/RadiationAnalysis | Agregado raíz que gestiona el análisis de radiación | Aggregate |
+| model/entities/RadiationReading| Representa una medición individual de radiación EM | Entity |
+| model/entities/UserExposureProfile | Perfil de exposición del usuario | Entity |
+| model/valueobjects/RadiationLevel | Nivel de radiación (bajo, medio, alto) | Value Object |
+| model/valueobjects/TimeRange | Rango de tiempo para análisis | Value Object |
+| model/valueobjects/Location | Ubicación asociada a mediciones | Value Object |
+| model/valueobjects/ReportType | Tipo de reporte (diario, mensual, anual) | Value Object |
+| model/valueobjects/RadiationReadingId | Identificador de medición | Value Object |
+| model/valueobjects/ReportId | Identificador de reporte | Value Object |
+| model/commands/GenerateReportCommand | Comando para generar reportes | Command |
+| model/commands/FilterRadiationDataCommand | Comando para filtrar datos | Command |
+| model/queries/GetRadiationLevelsQuery | Query para obtener datos en tiempo real | Query |
+| model/queries/GetDashboardDataQuery | Query para dashboard | Query |
+| model/queries/GetRadiationTrendsQuery | Query para tendencias | Query |
+| services/RadiationAnalysisService | Lógica de análisis de datos EM | Domain Service |
+| services/PeakDetectionService | Detecta picos de radiación | Domain Service |
+| services/ReportGenerationService | Genera reportes analíticos | Domain Service |
+| services/RadiationRepository | Interface para acceso a datos | Repository |
+
+#### 4.2.3.2. Interface Layer
+
+| Carpeta / Archivo                               | Propósito                                  | Tipo de recurso    |
+| ----------------------------------------------- | ------------------------------------------ | ------------------ |
+| acl/RadiationContextFacade                 | Expone capacidades del contexto a otros BC | ACL Facade         |
+| rest/controllers/RadiationController       | Endpoints para monitoreo en tiempo real    | REST Controller    |
+| rest/controllers/ReportController          | Endpoints para reportes                    | REST Controller    |
+| rest/controllers/DashboardController       | Endpoint para dashboard                    | REST Controller    |
+| rest/assemblers/RadiationResourceAssembler | Convierte Entity → Resource                | Resource Assembler |
+| rest/assemblers/ReportResourceAssembler    | Convierte reportes a formato UI            | Resource Assembler |
+| rest/assemblers/DashboardResourceAssembler | Convierte datos a vista dashboard          | Resource Assembler |
+
+#### 4.2.3.3. Application Layer
+
+| Archivo / Carpeta                                         | Propósito                                | Tipo de recurso      |
+| --------------------------------------------------------- | ---------------------------------------- | -------------------- |
+| internal/commandservices/RadiationCommandServiceImpl | Implementa comandos (filtrado, reportes) | Command Service Impl |
+| internal/queryservices/RadiationQueryServiceImpl     | Implementa consultas de datos            | Query Service Impl   |
+| internal/queryservices/DashboardQueryServiceImpl     | Maneja lógica del dashboard              | Query Service Impl   |
+| internal/commandservices/ReportCommandServiceImpl    | Generación de reportes                   | Command Service Impl |
+| internal/acl/RadiationContextFacadeImpl              | Implementación del facade                | ACL Facade           |
+| internal/outboundservices/acl/ExternalSensorService  | Conecta con sensores IoT                 | ACL Service          |
+| internal/outboundservices/acl/ExternalUserService    | Obtiene datos de usuario                 | ACL Service          |
+
+#### 4.2.3.4. Infrastructure Layer
+
+| Archivo / Carpeta                                         | Propósito                           | Tipo de recurso |
+| --------------------------------------------------------- | ----------------------------------- | --------------- |
+| persistence/jpa/repositories/RadiationRepositoryImpl | Implementación JPA del repositorio  | Repository Impl |
+| persistence/jpa/repositories/ReportRepositoryImpl    | Persistencia de reportes            | Repository Impl |
+| persistence/database/DatabaseConnection              | Conexión a base de datos            | Infrastructure  |
+| services/DataAggregationService                      | Agrega datos históricos       | Service         |
+| services/QueryOptimizationService                    | Optimiza consultas            | Service         |
+| api/DashboardAPI                                     | Endpoint   | REST API        |
+
+#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+Describe la estructura interna del backend a nivel de componentes, organizados en capas siguiendo principios de Domain-Driven Design. Este diagrama muestra cómo los controladores gestionan las solicitudes entrantes, los servicios de aplicación coordinan la lógica del sistema, el dominio encapsula las reglas de negocio relacionadas al análisis de radiación electromagnética, y la infraestructura se encarga del acceso a datos y la integración con sensores IoT. De esta manera, se evidencia una arquitectura desacoplada, mantenible y alineada con las necesidades de procesamiento, análisis y visualización de datos del sistema EmSafe.
+
+![Radiation Monitoring & Analytics](img/AV1/chapter-4/Radiation%20Monitoring%20&%20Analytics/Component%20Level%20Diagrams_2.png)
+![Radiation Monitoring & Analytics](img/AV1/chapter-4/Radiation%20Monitoring%20&%20Analytics/Component%20Level%20Diagrams_1.png)
+
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+Representa los elementos centrales del modelo de dominio, incluyendo agregados, entidades, objetos de valor, servicios de dominio y repositorios. En este nivel se define la lógica de negocio relacionada con el análisis de la radiación electromagnética, destacando el agregado RadiationAnalysis, que gestiona las mediciones y permite calcular métricas y detectar picos. Asimismo, las entidades como RadiationReading y UserExposureProfile modelan la información clave del sistema, mientras que los objetos de valor encapsulan conceptos como niveles de radiación, rangos de tiempo y tipos de reporte. Los servicios de dominio se encargan de operaciones complejas como el análisis de datos y la generación de reportes, manteniendo una separación clara de responsabilidades y alineándose con los principios de Domain-Driven Design.
+
+![Domain Layer Class Diagrams](img/AV1/chapter-4/Radiation%20Monitoring%20&%20Analytics/domain%20layer.png)
+
+##### 4.2.3.6.2. Bounded Context Database Design Diagram
+
+Define las tablas necesarias para almacenar las mediciones de radiación, su análisis y los reportes generados. Incluye entidades como Radiation_Reading, Radiation_Analysis, Report y User_Exposure_Profile, además de Sensor y Location para el origen de los datos.
+
+Las relaciones permiten gestionar el monitoreo en tiempo real, analizar tendencias, detectar picos y generar alertas dentro de la plataforma EmSafe.
+
+![Database Design Diagram](img/AV1/chapter-4/Radiation%20Monitoring%20&%20Analytics/Database%20Design%20Diagram.png)
+
 ### 4.2.4. Bounded Context: Alert & Automation
 
 Este Bounded Context gestiona la generación de alertas ante niveles altos de radiación electromagnética detectados por los sensores IoT, la ejecución de acciones automáticas o configurables como notificaciones push y el control de adaptadores inteligentes (smart plugs) para cortar o permitir el paso de corriente a dispositivos conectados. Además, administra el historial de alertas y permite al usuario y al administrador dar seguimiento, reconocer y resolver eventos de riesgo.
@@ -562,6 +645,7 @@ Historias relacionadas: US02, US04, US05, US07, US39, US40, TS02, TS29.
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 
+![Alert & Automation Component Diagram](img/AV1/chapter-4/Alert%20&%20Automation/Alert_Automation_C4.png)
 
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
  
@@ -901,6 +985,8 @@ Historias relacionadas: US26, US27, US28, US29, US31, US32, US33, US41, TS01, TS
  
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 
+![Admin & Operations Component Diagram](img/AV1/chapter-4/Admin%20&%20Operations/Admin_Operation_C4.png)
+
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
  
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
@@ -1205,113 +1291,7 @@ erDiagram
     SERVICE_APPOINTMENT ||--o{ APPOINTMENT_DEVICE : "involucra dispositivos"
     DEVICE_INVENTORY_ITEM ||--o{ APPOINTMENT_DEVICE : "referenciado en"
     CLIENT_RECORD ||--o{ DEVICE_INVENTORY_ITEM : "tiene instalados"
-```
- 
-#### 4.2.X.1. Domain Layer
-
-#### 4.2.X.2. Interface Layer
-
-#### 4.2.X.3. Application Layer
-
-#### 4.2.X.4. Infrastructure Layer
-
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
-
-### 4.2.X. Bounded Context: [Bounded Context Name]
-
-#### 4.2.X.1. Domain Layer
-
-#### 4.2.X.2. Interface Layer
-
-#### 4.2.X.3. Application Layer
-
-#### 4.2.X.4. Infrastructure Layer
-
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
-
-### 4.2.3. Bounded Context: Radiation Monitoring & Analytics
-
-Este Bounded Context se encarga de gestionar el procesamiento y análisis de datos recolectados por sensores IoT de EmSafe. Su función es transformar datos crudos en métricas, tendencias y perfiles de exposición personalizados mediante dashboards y reportes históricos (diarios, mensuales y anuales). Al optimizar la gestión de datos, permite identificar picos de radiación y facilita la toma de decisiones informadas para el bienestar del usuario.
-
-#### 4.2.3.1. Domain Layer
-
-| Archivo / Carpeta | Propósito | Tipo de recurso |
-|-------------------|-----------|-----------------|
-| model/aggregates/RadiationAnalysis | Agregado raíz que gestiona el análisis de radiación | Aggregate |
-| model/entities/RadiationReading| Representa una medición individual de radiación EM | Entity |
-| model/entities/UserExposureProfile | Perfil de exposición del usuario | Entity |
-| model/valueobjects/RadiationLevel | Nivel de radiación (bajo, medio, alto) | Value Object |
-| model/valueobjects/TimeRange | Rango de tiempo para análisis | Value Object |
-| model/valueobjects/Location | Ubicación asociada a mediciones | Value Object |
-| model/valueobjects/ReportType | Tipo de reporte (diario, mensual, anual) | Value Object |
-| model/valueobjects/RadiationReadingId | Identificador de medición | Value Object |
-| model/valueobjects/ReportId | Identificador de reporte | Value Object |
-| model/commands/GenerateReportCommand | Comando para generar reportes | Command |
-| model/commands/FilterRadiationDataCommand | Comando para filtrar datos | Command |
-| model/queries/GetRadiationLevelsQuery | Query para obtener datos en tiempo real | Query |
-| model/queries/GetDashboardDataQuery | Query para dashboard | Query |
-| model/queries/GetRadiationTrendsQuery | Query para tendencias | Query |
-| services/RadiationAnalysisService | Lógica de análisis de datos EM | Domain Service |
-| services/PeakDetectionService | Detecta picos de radiación | Domain Service |
-| services/ReportGenerationService | Genera reportes analíticos | Domain Service |
-| services/RadiationRepository | Interface para acceso a datos | Repository |
-
-#### 4.2.3.2. Interface Layer
-
-| Carpeta / Archivo                               | Propósito                                  | Tipo de recurso    |
-| ----------------------------------------------- | ------------------------------------------ | ------------------ |
-| acl/RadiationContextFacade                 | Expone capacidades del contexto a otros BC | ACL Facade         |
-| rest/controllers/RadiationController       | Endpoints para monitoreo en tiempo real    | REST Controller    |
-| rest/controllers/ReportController          | Endpoints para reportes                    | REST Controller    |
-| rest/controllers/DashboardController       | Endpoint para dashboard                    | REST Controller    |
-| rest/assemblers/RadiationResourceAssembler | Convierte Entity → Resource                | Resource Assembler |
-| rest/assemblers/ReportResourceAssembler    | Convierte reportes a formato UI            | Resource Assembler |
-| rest/assemblers/DashboardResourceAssembler | Convierte datos a vista dashboard          | Resource Assembler |
-
-#### 4.2.3.3. Application Layer
-
-| Archivo / Carpeta                                         | Propósito                                | Tipo de recurso      |
-| --------------------------------------------------------- | ---------------------------------------- | -------------------- |
-| internal/commandservices/RadiationCommandServiceImpl | Implementa comandos (filtrado, reportes) | Command Service Impl |
-| internal/queryservices/RadiationQueryServiceImpl     | Implementa consultas de datos            | Query Service Impl   |
-| internal/queryservices/DashboardQueryServiceImpl     | Maneja lógica del dashboard              | Query Service Impl   |
-| internal/commandservices/ReportCommandServiceImpl    | Generación de reportes                   | Command Service Impl |
-| internal/acl/RadiationContextFacadeImpl              | Implementación del facade                | ACL Facade           |
-| internal/outboundservices/acl/ExternalSensorService  | Conecta con sensores IoT                 | ACL Service          |
-| internal/outboundservices/acl/ExternalUserService    | Obtiene datos de usuario                 | ACL Service          |
-
-#### 4.2.3.4. Infrastructure Layer
-
-| Archivo / Carpeta                                         | Propósito                           | Tipo de recurso |
-| --------------------------------------------------------- | ----------------------------------- | --------------- |
-| persistence/jpa/repositories/RadiationRepositoryImpl | Implementación JPA del repositorio  | Repository Impl |
-| persistence/jpa/repositories/ReportRepositoryImpl    | Persistencia de reportes            | Repository Impl |
-| persistence/database/DatabaseConnection              | Conexión a base de datos            | Infrastructure  |
-| services/DataAggregationService                      | Agrega datos históricos       | Service         |
-| services/QueryOptimizationService                    | Optimiza consultas            | Service         |
-| api/DashboardAPI                                     | Endpoint   | REST API        |
-
-#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
-
-#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
-
-##### 4.2.3.6.2. Bounded Context Database Design Diagram
-
-
+``` 
 # Bibliografía
 
 # Anexo
