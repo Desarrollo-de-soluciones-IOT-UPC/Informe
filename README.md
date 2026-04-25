@@ -446,6 +446,155 @@ Historias relacionadas: US43, US42, US34, US44, US45, TS21, TS30
 | `rest/assemblers/RegisterUserCommandFromResourceAssembler.java` | Convierte un `RegisterUserResource` en `RegisterUserCommand`. | Resource → Command Assembler |
 | `rest/assemblers/UserProfileResourceFromEntityAssembler.java` | Convierte un `UserProfile` en `UserProfileResource`. | Entity → Resource Assembler |
 
+#### 4.2.1.3. Application Layer
+
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `internal/commandservices/UserCommandServiceImpl.java` | Orquesta RegisterUser, CreateAdminOrTechnician, UpdateUserProfile y DeleteUser. Valida reglas de negocio y persiste. | Command Service Impl |
+| `internal/commandservices/AuthCommandServiceImpl.java` | Orquesta AuthenticateUser. Valida credenciales con `AuthenticationService` y retorna JWT. | Command Service Impl |
+| `internal/queryservices/UserQueryServiceImpl.java` | Ejecuta consultas de perfil de usuario por ID. | Query Service Impl |
+| `internal/outboundservices/acl/EmailNotificationService.java` | Envía correo de verificación al registrar un cliente y correo con credenciales al crear Admin/Técnico. | ACL Service |
+| `internal/outboundservices/acl/DeviceContextService.java` | Consulta el Bounded Context de Device Management para verificar si el usuario tiene dispositivos activos antes de eliminar su cuenta. | ACL Service |
+
+#### 4.2.1.4. Infrastructure Layer
+
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `persistence/jpa/repositories/UserRepositoryImpl.java` | Implementación JPA de `IUserRepository` sobre PostgreSQL. | Repository Impl |
+| `persistence/jpa/repositories/UserProfileRepositoryImpl.java` | Implementación JPA de `IUserProfileRepository` sobre PostgreSQL. | Repository Impl |
+| `security/JwtTokenProvider.java` | Genera y valida JSON Web Tokens. Configura expiración y firma mediante clave secreta. | Security Component |
+| `security/SecurityFilterChain.java` | Define rutas públicas (`/auth/**`) y rutas protegidas por JWT, junto con el filtro de autenticación por token. | Security Component |
+| `external/BcryptPasswordEncoder.java` | Implementa hashing y verificación de contraseñas usando BCrypt. | External Adapter |
+| `external/SmtpEmailAdapter.java` | Implementa el envío de correos de verificación y credenciales usando un proveedor SMTP. | External Adapter |
+
+#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+> _[]_
+
+#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases del Bounded Context IAM muestra el agregado `User` como raíz, junto con la entidad `UserProfile`. Se incluyen los value objects `Email`, `PasswordHash`, `Role` y `UserStatus`, así como las interfaces de repositorio y los servicios de dominio `AuthenticationService` y `PasswordPolicyService`.
+```mermaid
+classDiagram
+    direction TB
+
+    class User {
+        -Long id
+        -Email email
+        -PasswordHash passwordHash
+        -String fullName
+        -Role role
+        -UserStatus status
+        -LocalDateTime createdAt
+        -LocalDateTime updatedAt
+        +changePassword(String rawPassword) void
+        +activate() void
+        +deactivate() void
+    }
+
+    class UserProfile {
+        -Long id
+        -Long userId
+        -String phoneNumber
+        -String preferredAlertTypes
+        -String monitoredZones
+        -String notificationFrequency
+        +updatePreferences(String alertTypes, String zones, String frequency) void
+        +updatePersonalData(String phone) void
+    }
+
+    class Email {
+        <>
+        -String value
+        +validate() boolean
+    }
+
+    class PasswordHash {
+        <>
+        -String value
+        +matches(String rawPassword) boolean
+    }
+
+    class Role {
+        <>
+        CLIENT
+        ADMIN
+        TECHNICIAN
+        SUPER_ADMIN
+    }
+
+    class UserStatus {
+        <>
+        ACTIVE
+        INACTIVE
+        PENDING_VERIFICATION
+    }
+
+    class AuthenticationService {
+        <>
+        +authenticate(String email, String password) String
+        +validateToken(String token) UserClaims
+    }
+
+    class PasswordPolicyService {
+        <>
+        +validate(String rawPassword) boolean
+    }
+
+    class IUserRepository {
+        <>
+        +findById(Long id) User
+        +findByEmail(String email) User
+        +save(User user) User
+        +delete(Long id) void
+        +existsByEmail(String email) boolean
+    }
+
+    class IUserProfileRepository {
+        <>
+        +findByUserId(Long userId) UserProfile
+        +save(UserProfile profile) UserProfile
+        +deleteByUserId(Long userId) void
+    }
+
+    User "1" *-- "1" UserProfile : profile
+    User --> Email
+    User --> PasswordHash
+    User --> Role
+    User --> UserStatus
+    IUserRepository ..> User : manages
+    IUserProfileRepository ..> UserProfile : manages
+```
+
+##### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+La base de datos del Bounded Context IAM persiste los usuarios con sus credenciales y rol, junto con sus perfiles de preferencias y datos personales.
+```mermaid
+erDiagram
+    USERS {
+        bigint id PK
+        varchar full_name
+        varchar email
+        varchar password_hash
+        varchar role
+        varchar status
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    USER_PROFILES {
+        bigint id PK
+        bigint user_id FK
+        varchar phone_number
+        text preferred_alert_types
+        text monitored_zones
+        varchar notification_frequency
+    }
+
+    USERS ||--|| USER_PROFILES : "tiene perfil"
+```
 
 ### 4.2.2. Bounded Context: Device Management
 
