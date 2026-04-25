@@ -438,6 +438,16 @@ Este Bounded Context se encarga de gestionar el procesamiento y análisis de dat
 
 #### 4.2.3.3. Application Layer
 
+| Archivo / Carpeta                                         | Propósito                                | Tipo de recurso      |
+| --------------------------------------------------------- | ---------------------------------------- | -------------------- |
+| internal/commandservices/RadiationCommandServiceImpl.java | Implementa comandos (filtrado, reportes) | Command Service Impl |
+| internal/queryservices/RadiationQueryServiceImpl.java     | Implementa consultas de datos            | Query Service Impl   |
+| internal/queryservices/DashboardQueryServiceImpl.java     | Maneja lógica del dashboard              | Query Service Impl   |
+| internal/commandservices/ReportCommandServiceImpl.java    | Generación de reportes                   | Command Service Impl |
+| internal/acl/RadiationContextFacadeImpl.java              | Implementación del facade                | ACL Facade           |
+| internal/outboundservices/acl/ExternalSensorService.java  | Conecta con sensores IoT                 | ACL Service          |
+| internal/outboundservices/acl/ExternalUserService.java    | Obtiene datos de usuario                 | ACL Service          |
+
 #### 4.2.3.4. Infrastructure Layer
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
