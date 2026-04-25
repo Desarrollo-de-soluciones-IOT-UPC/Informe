@@ -438,7 +438,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 El Impact Mapping es una herramienta estratégica que será aplicada por la startup Gauss para asegurar que las funcionalidades técnicas de su producto EmSafe estén alineadas con los objetivos del proyecto. Esta metodología permitirá identificar y priorizar aquellas características que generen mayor valor, optimizando la toma de decisiones y el uso eficiente de los recursos. En este contexto, el Impact Mapping ayudará a comprender cómo las soluciones tecnológicas implementadas en EmSafe contribuyen a mejorar el monitoreo de la contaminación electromagnética, garantizando que el desarrollo de la plataforma responda tanto a las necesidades de los usuarios como a los objetivos de salud pública.
 
-![Impact Mapping](img/AV1/Impact_Mapping/impact_mapping.png) 
+![Impact Mapping](img/AV1/chapter-3/Impact_Mapping/impact_mapping.png) 
 
 ## 3.3. Product Backlog
 
