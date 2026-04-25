@@ -426,6 +426,16 @@ Este Bounded Context se encarga de gestionar el procesamiento y análisis de dat
 
 #### 4.2.3.2. Interface Layer
 
+| Carpeta / Archivo                               | Propósito                                  | Tipo de recurso    |
+| ----------------------------------------------- | ------------------------------------------ | ------------------ |
+| acl/RadiationContextFacade                 | Expone capacidades del contexto a otros BC | ACL Facade         |
+| rest/controllers/RadiationController       | Endpoints para monitoreo en tiempo real    | REST Controller    |
+| rest/controllers/ReportController          | Endpoints para reportes                    | REST Controller    |
+| rest/controllers/DashboardController       | Endpoint para dashboard                    | REST Controller    |
+| rest/assemblers/RadiationResourceAssembler | Convierte Entity → Resource                | Resource Assembler |
+| rest/assemblers/ReportResourceAssembler    | Convierte reportes a formato UI            | Resource Assembler |
+| rest/assemblers/DashboardResourceAssembler | Convierte datos a vista dashboard          | Resource Assembler |
+
 #### 4.2.3.3. Application Layer
 
 #### 4.2.3.4. Infrastructure Layer
