@@ -379,7 +379,37 @@ Una vez que se han identificado y organizado tanto los eventos como los puntos c
 
 Trabajar dentro de un dominio requiere atender reglas de negocio específicas; en este caso, se han identificado cuatro reglas clave, todas vinculadas al registro de los clientes y sus dispositivos, alertas y monitoreo, y por último las analíticas. Reconocer estas políticas del dominio nos permitirá, más adelante, definir los distintos contextos del dominio. Las políticas se representan con post-its de color morado.
 
+**PASO 6: IDENTIFICAR VISTAS**
 
+<img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - View.png"   alt="Eventstorming step 6, Views identification">
+
+Los eventos y comandos ocurren en diferentes partes del sistema; por ello, para evitar confusiones y facilitar la definición del diseño de la aplicación, se identifican de manera general las “pantallas” donde tienen lugar. Estas vistas se representan mediante post-its de color verde.
+
+**PASO 7: IDENTIFICAR ACTORES**
+
+<img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Actors.png"  alt="Eventstorming step 7, Actors identification">
+
+La mayoría de los comandos identificados son ejecutados mediante la intervención de usuarios dentro del sistema EMSafe. En este contexto, una gran parte de los comandos se encuentran asociados a sus respectivos actores, tales como el Admin, el Técnico y el Cliente (usuario de la aplicación móvil). 
+
+Asimismo, se observa que ciertos comandos no están directamente vinculados a un actor humano, ya que son ejecutados de manera automática por el sistema, como parte de procesos internos. Estos casos serán detallados con mayor profundidad en secciones posteriores.
+
+Los actores se representan mediante post-its de color amarillo, ubicados en la esquina inferior izquierda de los comandos correspondientes.
+
+**PASO 8: IDENTIFICAR AGREGADOS**
+
+<img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Aggregates - 1.png"  alt="Eventstorming step 8, Aggregates identification 1">
+<br> 
+<img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Aggregates - 2.png"  alt="Eventstorming step 8, Aggregates identification 2">
+
+Posterior a la identificación de eventos, comandos, vistas, políticas y actores, se han definido los agregados del dominio que garantizan la integridad de las reglas de negocio. En este sistema se identifican los siguientes 4 agregados:
+
+- **Client** Encargado de gestionar la identidad y el perfil del usuario, actuando como la entidad raíz para la vinculación de servicios y la recepción de notificaciones de seguridad.
+
+- **IoT Device**. Representa el hardware de monitoreo; gestiona su registro único, su estado operativo (activo/terminado) y la ejecución de comandos críticos como el apagado remoto.
+
+- **Work Order**. Representa la gestión operativa y logística del sistema; se encarga de coordinar la asignación de técnicos y la programación de instalaciones, mantenimientos o recolecciones de equipo.
+
+- **Radiation Monitor**. Constituye el núcleo del dominio; procesa las lecturas de telemetría de los sensores para identificar niveles de riesgo, disparar alertas de emergencia y asegurar la trazabilidad de las notificaciones enviadas al usuario.
 
 #### 4.1.1.2. Domain Message Flows Modeling
 
