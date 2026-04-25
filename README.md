@@ -450,6 +450,321 @@ La base de datos persiste los dispositivos IoT junto con su configuración y est
 
 <img src="img/Device Management - Images/Device Management - Bounded Context Database Design Diagram.png">
 
+### 4.2.4. Bounded Context: Alert & Automation
+
+Este Bounded Context gestiona la generación de alertas ante niveles altos de radiación electromagnética detectados por los sensores IoT, la ejecución de acciones automáticas o configurables como notificaciones push y el control de adaptadores inteligentes (smart plugs) para cortar o permitir el paso de corriente a dispositivos conectados. Además, administra el historial de alertas y permite al usuario y al administrador dar seguimiento, reconocer y resolver eventos de riesgo.
+ 
+Historias relacionadas: US02, US04, US05, US07, US39, US40, TS02, TS29.
+ 
+#### 4.2.4.1. Domain Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `model/aggregates/Alert.java` | Agregado raíz que representa una alerta generada cuando una lectura de sensor supera el umbral de seguridad configurado. Contiene el ciclo de vida completo: creación, reconocimiento y resolución. | Aggregate |
+| `model/entities/AlertAction.java` | Entidad que registra cada acción ejecutada en respuesta a una alerta (notificación push enviada, dispositivo apagado vía adaptador inteligente, acción manual del usuario). | Entity |
+| `model/entities/AutomationRule.java` | Entidad que representa una regla de automatización configurada por el usuario, como activar o desactivar el apagado automático de un adaptador inteligente ante alerta de radiación elevada. | Entity |
+| `model/entities/SmartPlugCommand.java` | Entidad que registra un comando enviado a un adaptador inteligente (encender/apagar), incluyendo el estado de entrega y respuesta del dispositivo. | Entity |
+| `model/valueobjects/AlertId.java` | Identificador único de la alerta. | Value Object |
+| `model/valueobjects/DeviceId.java` | Identificador del sensor IoT que originó la lectura. | Value Object |
+| `model/valueobjects/SmartPlugId.java` | Identificador del adaptador inteligente asociado. | Value Object |
+| `model/valueobjects/ThresholdLevel.java` | Value object que encapsula el valor del umbral, la unidad de medida (μSv/h, °C, kPa) y el nivel de severidad (warning, critical). | Value Object |
+| `model/valueobjects/ReadingSnapshot.java` | Snapshot de la lectura del sensor al momento de dispararse la alerta (valor, unidad, timestamp). | Value Object |
+| `model/valueobjects/UserId.java` | Identificador del usuario propietario del entorno monitoreado. | Value Object |
+| `model/commands/CreateAlertCommand.java` | Record para crear una nueva alerta a partir de una lectura que superó el umbral. | Command |
+| `model/commands/AcknowledgeAlertCommand.java` | Record para marcar una alerta como reconocida por un usuario o administrador. | Command |
+| `model/commands/ResolveAlertCommand.java` | Record para marcar una alerta como resuelta, incluyendo notas de resolución. | Command |
+| `model/commands/ConfigureAutomationRuleCommand.java` | Record para crear o actualizar una regla de automatización (activar/desactivar apagado automático de un adaptador inteligente). | Command |
+| `model/commands/SendSmartPlugCommandCommand.java` | Record para enviar un comando de encendido o apagado a un adaptador inteligente. | Command |
+| `model/queries/GetAlertsByUserQuery.java` | Record para consultar todas las alertas de un usuario, con filtros opcionales por fecha, nivel y estado. | Query |
+| `model/queries/GetAlertByIdQuery.java` | Record para consultar el detalle de una alerta específica, incluyendo las acciones ejecutadas. | Query |
+| `model/queries/GetAlertHistoryQuery.java` | Record para consultar el historial de alertas con filtros por rango de fecha, zona, nivel de gravedad y estado. | Query |
+| `model/queries/GetAutomationRulesByUserQuery.java` | Record para consultar las reglas de automatización configuradas por un usuario. | Query |
+| `services/AlertCommandService.java` | Interfaz que expone operaciones de escritura: crear alertas, reconocer, resolver, configurar reglas de automatización y enviar comandos a adaptadores inteligentes. | Command Service |
+| `services/AlertQueryService.java` | Interfaz que expone operaciones de lectura: consultar alertas, historial, detalle y reglas de automatización. | Query Service |
+ 
+#### 4.2.4.2. Interface Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `rest/controllers/AlertController.java` | Controlador REST que expone los endpoints para gestión de alertas: listar, filtrar por estado/fecha/nivel, obtener detalle, reconocer y resolver. | REST Controller |
+| `rest/controllers/AutomationController.java` | Controlador REST que expone los endpoints para configurar reglas de automatización y enviar comandos manuales a adaptadores inteligentes. | REST Controller |
+| `rest/resources/CreateAlertResource.java` | Resource de entrada con los datos necesarios para registrar una nueva alerta (deviceId, reading, threshold, unit, type). | Resource (Input) |
+| `rest/resources/AcknowledgeAlertResource.java` | Resource de entrada para reconocer una alerta (acknowledgedBy). | Resource (Input) |
+| `rest/resources/ResolveAlertResource.java` | Resource de entrada para resolver una alerta (notes de resolución). | Resource (Input) |
+| `rest/resources/AlertResource.java` | Resource de salida que representa una alerta con su estado completo, datos del sensor, acciones ejecutadas y timestamps. | Resource (Output) |
+| `rest/resources/AlertHistoryResource.java` | Resource de salida que representa un registro del historial de alertas con fecha, nivel, dispositivo y acción tomada. | Resource (Output) |
+| `rest/resources/ConfigureAutomationRuleResource.java` | Resource de entrada para activar o desactivar el apagado automático de un adaptador inteligente. | Resource (Input) |
+| `rest/resources/AutomationRuleResource.java` | Resource de salida que representa una regla de automatización configurada. | Resource (Output) |
+| `rest/resources/SmartPlugCommandResource.java` | Resource de entrada para enviar manualmente un comando a un adaptador inteligente (ON/OFF). | Resource (Input) |
+| `rest/assemblers/CreateAlertCommandFromResourceAssembler.java` | Convierte un `CreateAlertResource` en un `CreateAlertCommand`. | Resource → Command Assembler |
+| `rest/assemblers/AlertResourceFromEntityAssembler.java` | Convierte un `Alert` (aggregate) en `AlertResource`. | Entity → Resource Assembler |
+| `rest/assemblers/AlertHistoryResourceFromEntityAssembler.java` | Convierte un `Alert` en `AlertHistoryResource` para la vista de historial. | Entity → Resource Assembler |
+| `rest/assemblers/AutomationRuleResourceFromEntityAssembler.java` | Convierte un `AutomationRule` en `AutomationRuleResource`. | Entity → Resource Assembler |
+ 
+#### 4.2.4.3. Application Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `internal/commandservices/AlertCommandServiceImpl.java` | Implementación concreta de `AlertCommandService`. Orquesta la creación de alertas, el reconocimiento, la resolución y la ejecución de acciones automáticas (notificaciones y comandos a adaptadores inteligentes). | Command Service Impl |
+| `internal/queryservices/AlertQueryServiceImpl.java` | Implementación concreta de `AlertQueryService`. Ejecuta consultas de alertas, historial con filtros y reglas de automatización. | Query Service Impl |
+| `internal/outboundservices/acl/DeviceContextService.java` | Servicio ACL que consulta información del sensor IoT desde el Bounded Context de Device Management (nombre, ubicación, estado). | ACL Service |
+| `internal/outboundservices/acl/NotificationService.java` | Servicio ACL que se comunica con el servicio de notificaciones push para enviar alertas al usuario cuando se detecta sobreexposición. | ACL Service |
+| `internal/outboundservices/acl/SmartPlugGatewayService.java` | Servicio ACL que se comunica con el broker MQTT para enviar comandos de encendido/apagado a los adaptadores inteligentes. | ACL Service |
+ 
+#### 4.2.4.4. Infrastructure Layer
+ 
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `persistence/jpa/repositories/AlertRepository.java` | Repositorio JPA para el agregado `Alert`. Incluye queries personalizadas para filtrar por userId, rango de fechas, nivel de severidad y estado (acknowledged, resolved). | Repository Impl |
+| `persistence/jpa/repositories/AlertActionRepository.java` | Repositorio JPA para la entidad `AlertAction`. | Repository Impl |
+| `persistence/jpa/repositories/AutomationRuleRepository.java` | Repositorio JPA para la entidad `AutomationRule`. Incluye query para buscar reglas activas por userId y smartPlugId. | Repository Impl |
+| `persistence/jpa/repositories/SmartPlugCommandRepository.java` | Repositorio JPA para la entidad `SmartPlugCommand`. Registra el historial de comandos enviados a adaptadores inteligentes. | Repository Impl |
+| `messaging/mqtt/AlertMqttListener.java` | Listener MQTT que recibe las lecturas de los sensores IoT en tiempo real, evalúa si superan el umbral configurado y dispara la creación de alertas. | MQTT Listener |
+| `messaging/mqtt/SmartPlugMqttPublisher.java` | Publisher MQTT que envía comandos de encendido/apagado a los adaptadores inteligentes a través del broker. | MQTT Publisher |
+
+#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+ 
+##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+ 
+El diagrama de clases del Bounded Context Alert & Automation muestra el agregado `Alert` como raíz, junto con las entidades `AlertAction`, `AutomationRule` y `SmartPlugCommand`. Se incluyen los value objects que encapsulan identificadores y datos de lectura, así como los enums que controlan el ciclo de vida de las alertas y los estados de los comandos.
+ 
+```mermaid
+classDiagram
+    direction TB
+ 
+    class Alert {
+        -Long id
+        -DeviceId deviceId
+        -UserId userId
+        -String type
+        -AlertSeverity severity
+        -ReadingSnapshot reading
+        -ThresholdLevel threshold
+        -AlertStatus status
+        -String acknowledgedBy
+        -Instant acknowledgedAt
+        -Instant resolvedAt
+        -String resolutionNotes
+        -Instant createdAt
+        +acknowledge(String acknowledgedBy) void
+        +resolve(String resolutionNotes) void
+        +isActive() boolean
+        +addAction(AlertAction action) void
+    }
+ 
+    class AlertAction {
+        -Long id
+        -ActionType actionType
+        -String description
+        -Boolean success
+        -String errorMessage
+        -Instant executedAt
+    }
+ 
+    class AutomationRule {
+        -Long id
+        -UserId userId
+        -SmartPlugId smartPlugId
+        -DeviceId triggerDeviceId
+        -Boolean autoShutdownEnabled
+        -Double thresholdValue
+        -String thresholdUnit
+        -Instant createdAt
+        -Instant updatedAt
+        +enable() void
+        +disable() void
+        +isActive() boolean
+    }
+ 
+    class SmartPlugCommand {
+        -Long id
+        -SmartPlugId smartPlugId
+        -PlugCommandType commandType
+        -CommandStatus deliveryStatus
+        -Instant sentAt
+        -Instant confirmedAt
+        -String errorMessage
+    }
+ 
+    class AlertSeverity {
+        <<enumeration>>
+        WARNING
+        CRITICAL
+    }
+ 
+    class AlertStatus {
+        <<enumeration>>
+        ACTIVE
+        ACKNOWLEDGED
+        RESOLVED
+    }
+ 
+    class ActionType {
+        <<enumeration>>
+        PUSH_NOTIFICATION_SENT
+        SMART_PLUG_OFF
+        SMART_PLUG_ON
+        MANUAL_ACTION
+    }
+ 
+    class PlugCommandType {
+        <<enumeration>>
+        TURN_ON
+        TURN_OFF
+    }
+ 
+    class CommandStatus {
+        <<enumeration>>
+        PENDING
+        DELIVERED
+        CONFIRMED
+        FAILED
+    }
+ 
+    class DeviceId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class UserId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class SmartPlugId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class AlertId {
+        <<value object>>
+        -Long value
+    }
+ 
+    class ReadingSnapshot {
+        <<value object>>
+        -Double value
+        -String unit
+        -Instant timestamp
+    }
+ 
+    class ThresholdLevel {
+        <<value object>>
+        -Double value
+        -String unit
+        -AlertSeverity severity
+    }
+ 
+    class AlertCommandService {
+        <<interface>>
+        +createAlert(CreateAlertCommand command) Alert
+        +acknowledgeAlert(AcknowledgeAlertCommand command) Alert
+        +resolveAlert(ResolveAlertCommand command) Alert
+        +configureAutomationRule(ConfigureAutomationRuleCommand command) AutomationRule
+        +sendSmartPlugCommand(SendSmartPlugCommandCommand command) SmartPlugCommand
+    }
+ 
+    class AlertQueryService {
+        <<interface>>
+        +getAlertsByUser(GetAlertsByUserQuery query) List~Alert~
+        +getAlertById(GetAlertByIdQuery query) Alert
+        +getAlertHistory(GetAlertHistoryQuery query) List~Alert~
+        +getAutomationRulesByUser(GetAutomationRulesByUserQuery query) List~AutomationRule~
+    }
+ 
+    Alert "1" *-- "0..*" AlertAction : actions
+    Alert --> AlertSeverity
+    Alert --> AlertStatus
+    Alert --> ReadingSnapshot
+    Alert --> ThresholdLevel
+    Alert --> DeviceId
+    Alert --> UserId
+ 
+    AlertAction --> ActionType
+ 
+    AutomationRule --> UserId
+    AutomationRule --> SmartPlugId
+    AutomationRule --> DeviceId
+ 
+    SmartPlugCommand --> SmartPlugId
+    SmartPlugCommand --> PlugCommandType
+    SmartPlugCommand --> CommandStatus
+ 
+    AlertCommandService ..> Alert : manages
+    AlertCommandService ..> AutomationRule : manages
+    AlertCommandService ..> SmartPlugCommand : manages
+    AlertQueryService ..> Alert : queries
+    AlertQueryService ..> AutomationRule : queries
+```
+ 
+##### 4.2.4.6.2. Bounded Context Database Design Diagram
+ 
+El diseño de base de datos del Bounded Context Alert & Automation persiste las alertas generadas por lecturas de sensores que superan umbrales, las acciones ejecutadas en respuesta, las reglas de automatización configuradas por cada usuario y el historial de comandos enviados a los adaptadores inteligentes.
+ 
+```mermaid
+erDiagram
+    ALERT {
+        bigint id PK
+        bigint device_id FK
+        bigint user_id FK
+        varchar type
+        varchar severity
+        double reading_value
+        varchar reading_unit
+        timestamp reading_timestamp
+        double threshold_value
+        varchar threshold_unit
+        varchar status
+        varchar acknowledged_by
+        timestamp acknowledged_at
+        timestamp resolved_at
+        text resolution_notes
+        timestamp created_at
+    }
+ 
+    ALERT_ACTION {
+        bigint id PK
+        bigint alert_id FK
+        varchar action_type
+        varchar description
+        boolean success
+        text error_message
+        timestamp executed_at
+    }
+ 
+    AUTOMATION_RULE {
+        bigint id PK
+        bigint user_id FK
+        bigint smart_plug_id FK
+        bigint trigger_device_id FK
+        boolean auto_shutdown_enabled
+        double threshold_value
+        varchar threshold_unit
+        timestamp created_at
+        timestamp updated_at
+    }
+ 
+    SMART_PLUG_COMMAND {
+        bigint id PK
+        bigint smart_plug_id FK
+        bigint alert_id FK
+        varchar command_type
+        varchar delivery_status
+        timestamp sent_at
+        timestamp confirmed_at
+        text error_message
+    }
+ 
+    ALERT ||--o{ ALERT_ACTION : "tiene acciones"
+    ALERT ||--o{ SMART_PLUG_COMMAND : "dispara comandos"
+    AUTOMATION_RULE ||--o{ SMART_PLUG_COMMAND : "genera comandos"
+```
+ 
+---
+
 #### 4.2.X.1. Domain Layer
 
 #### 4.2.X.2. Interface Layer
