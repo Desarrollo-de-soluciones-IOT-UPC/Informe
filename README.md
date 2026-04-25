@@ -404,6 +404,49 @@ El diagrama de despliegue muestra la distribución de la infraestructura en prod
 ![Deployment Diagram](img/AV1/chapter-4/Software%20Architecture/Software%20Architecture%20Deployment%20Diagrams.png)
 ## 4.2. Tactical-Level Domain-Driven Design
 
+### 4.2.1. Bounded Context: IAM (Identity & Access Management)
+
+Este bounded context gestiona la identidad de los usuarios, la autenticación, la autorización basada en roles y la administración del perfil dentro de la plataforma EMSafe. Abarca los flujos de registro, inicio de sesión, asignación de roles (Admin, Técnico, Cliente) y eliminación de datos personales.
+
+Historias relacionadas: US43, US42, US34, US44, US45, TS21, TS30
+
+#### 4.2.1.1. Domain Layer
+
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `model/aggregates/User.java` | Agregado raíz del bounded context. Encapsula identidad, credenciales, rol y estado del usuario. | Aggregate |
+| `model/entities/UserProfile.java` | Entidad asociada al agregado User. Almacena datos personales y preferencias del usuario. | Entity |
+| `model/valueobjects/Email.java` | Encapsula la validación de formato de correo electrónico. | Value Object |
+| `model/valueobjects/PasswordHash.java` | Encapsula el hash seguro de la contraseña. Método: `matches(rawPassword)`. | Value Object |
+| `model/valueobjects/Role.java` | Enumeración de roles posibles: `CLIENT`, `ADMIN`, `TECHNICIAN`, `SUPER_ADMIN`. | Value Object |
+| `model/valueobjects/UserStatus.java` | Enumeración de estados: `ACTIVE`, `INACTIVE`, `PENDING_VERIFICATION`. | Value Object |
+| `model/commands/RegisterUserCommand.java` | Record para registrar un nuevo usuario cliente. | Command |
+| `model/commands/AuthenticateUserCommand.java` | Record para autenticar un usuario con email y contraseña. | Command |
+| `model/commands/CreateAdminOrTechnicianCommand.java` | Record para crear un usuario con rol Admin o Técnico (solo Super Admin). | Command |
+| `model/commands/UpdateUserProfileCommand.java` | Record para actualizar datos personales y preferencias del perfil. | Command |
+| `model/commands/DeleteUserCommand.java` | Record para eliminar los datos personales de un usuario del sistema. | Command |
+| `model/queries/GetUserProfileQuery.java` | Record para consultar el perfil de un usuario por su ID. | Query |
+| `services/AuthenticationService.java` | Valida credenciales y genera tokens de acceso JWT. Métodos: `authenticate()`, `validateToken()`. | Domain Service |
+| `services/PasswordPolicyService.java` | Verifica que una contraseña cumple los requisitos mínimos de seguridad. | Domain Service |
+| `services/IUserRepository.java` | Interfaz de repositorio: `findById()`, `findByEmail()`, `save()`, `delete()`, `existsByEmail()`. | Repository Interface |
+| `services/IUserProfileRepository.java` | Interfaz de repositorio: `findByUserId()`, `save()`, `deleteByUserId()`. | Repository Interface |
+
+#### 4.2.1.2. Interface Layer
+
+| Archivo / Carpeta | Propósito | Tipo de recurso |
+|:---|:---|:---|
+| `rest/controllers/AuthController.java` | Expone endpoints de autenticación: `POST /api/v1/auth/register`, `POST /api/v1/auth/login`, `POST /api/v1/auth/logout`. | REST Controller |
+| `rest/controllers/UserController.java` | Expone endpoints de gestión de usuarios: registro de Admin/Técnico, consulta, actualización y eliminación de perfil. | REST Controller |
+| `rest/resources/RegisterUserResource.java` | Resource de entrada para registrar un nuevo usuario cliente. | Resource (Input) |
+| `rest/resources/AuthenticateUserResource.java` | Resource de entrada para inicio de sesión (email, contraseña). | Resource (Input) |
+| `rest/resources/CreateAdminOrTechnicianResource.java` | Resource de entrada para crear Admin o Técnico (nombre, correo, contraseña temporal, rol). | Resource (Input) |
+| `rest/resources/UpdateUserProfileResource.java` | Resource de entrada para actualizar datos personales y preferencias. | Resource (Input) |
+| `rest/resources/UserProfileResource.java` | Resource de salida con el perfil completo del usuario. | Resource (Output) |
+| `rest/resources/AuthTokenResource.java` | Resource de salida con el JWT generado tras autenticación exitosa. | Resource (Output) |
+| `rest/assemblers/RegisterUserCommandFromResourceAssembler.java` | Convierte un `RegisterUserResource` en `RegisterUserCommand`. | Resource → Command Assembler |
+| `rest/assemblers/UserProfileResourceFromEntityAssembler.java` | Convierte un `UserProfile` en `UserProfileResource`. | Entity → Resource Assembler |
+
+
 ### 4.2.2. Bounded Context: Device Management
 
 #### 4.2.2.1. Domain Layer
