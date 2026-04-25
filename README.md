@@ -1172,40 +1172,6 @@ erDiagram
     CLIENT_RECORD ||--o{ DEVICE_INVENTORY_ITEM : "tiene instalados"
 ```
  
-#### 4.2.X.1. Domain Layer
-
-#### 4.2.X.2. Interface Layer
-
-#### 4.2.X.3. Application Layer
-
-#### 4.2.X.4. Infrastructure Layer
-
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
-
-### 4.2.X. Bounded Context: [Bounded Context Name]
-
-#### 4.2.X.1. Domain Layer
-
-#### 4.2.X.2. Interface Layer
-
-#### 4.2.X.3. Application Layer
-
-#### 4.2.X.4. Infrastructure Layer
-
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
-
 ### 4.2.3. Bounded Context: Radiation Monitoring & Analytics
 
 Este Bounded Context se encarga de gestionar el procesamiento y análisis de datos recolectados por sensores IoT de EmSafe. Su función es transformar datos crudos en métricas, tendencias y perfiles de exposición personalizados mediante dashboards y reportes históricos (diarios, mensuales y anuales). Al optimizar la gestión de datos, permite identificar picos de radiación y facilita la toma de decisiones informadas para el bienestar del usuario.
@@ -1270,9 +1236,15 @@ Este Bounded Context se encarga de gestionar el procesamiento y análisis de dat
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
 
+Describe la estructura interna del backend a nivel de componentes, organizados en capas siguiendo principios de Domain-Driven Design. Este diagrama muestra cómo los controladores gestionan las solicitudes entrantes, los servicios de aplicación coordinan la lógica del sistema, el dominio encapsula las reglas de negocio relacionadas al análisis de radiación electromagnética, y la infraestructura se encarga del acceso a datos y la integración con sensores IoT. De esta manera, se evidencia una arquitectura desacoplada, mantenible y alineada con las necesidades de procesamiento, análisis y visualización de datos del sistema EmSafe.
+
+![Radiation Monitoring & Analytics](img/AV1/chapter-4/Radiation%20Monitoring%20&%20Analytics/Component%20Level%20Diagrams_2.png)
+![Radiation Monitoring & Analytics](img/AV1/chapter-4/Radiation%20Monitoring%20&%20Analytics/Component%20Level%20Diagrams_1.png)
+
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+
 
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
 
