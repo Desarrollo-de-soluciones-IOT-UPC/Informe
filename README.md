@@ -343,6 +343,44 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 #### 4.1.1.1. Candidate Context Discovery
 
+En base al conocimiento actual del equipo sobre el dominio se ha realizado la técnica Eventstorming. A través de la cual se ha podido identificar los contextos del dominio.
+
+En pro de la documentación del proyecto se hara un resumen de lo la técnica utilizada y el proceso que ejecuto el equipo de desarrollo.
+
+Para la identificación de los bounded context se ha utilizado la técnica start-with-simple, identificando los procesos secuencialmente de manera sencilla y pausada.
+
+**PASO 1: IDENTIFICAR EVENTOS**
+
+<img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Events.png"   alt="Eventstorming step 1, Events identification">
+
+Como primer paso en la técnica de Eventstorming, el equipo identificó en conjunto todos los eventos posibles, considerando el conocimiento que se tiene sobre el dominio en cuestión. Los eventos se representan con post-its naranjas y siguen el formato **SUSTANTIVO + VERBO EN PASADO**.
+
+**PASO 2: ORDENAR EVENTOS**
+
+<img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Events Ordered.png"   alt="Eventstorming step 2, Events ordering">
+
+Después de identificar los eventos, se procede a organizarlos siguiendo las secuencias lógicas determinadas por el equipo. En la parte superior de la imagen se muestra cómo se disponen los eventos necesarios para cubrir todo el ciclo de vida de una orden.
+
+**PASO 3: DETERMINAR PIVOTAL POINTS**
+
+<img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Pivotal Points.png"   alt="Eventstorming step 3, Pivotal points identification">
+
+Para lograr una organización más clara y precisa de los eventos identificados, se establecen los puntos clave (pivotal points) dentro del dominio. Estas divisiones representan cambios significativos que marcan un antes y un después. Por ejemplo, cuando varios productos pasan a conformar una orden, o cuando se marca una orden como entregada, lo que genera un evento de ingreso monetario para la bodega. Los puntos clave se señalan con una barra negra vertical.
+
+**PASO 4: IDENTIFICAR COMANDOS**
+
+<img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Commands.png"   alt="Eventstorming step 4, Commands identification">
+
+Una vez que se han identificado y organizado tanto los eventos como los puntos clave del dominio, es fundamental reconocer los comandos que los originan. Esto permite determinar qué acciones provocan la aparición de los eventos en el dominio. Los comandos se representan con post-its de color azul claro y siguen el formato VERBO EN PRESENTE + SUSTANTIVO.
+
+**PASO 5: IDENTIFICAR POLITICAS**
+
+<img src="img/AV1/chapter-4/Candidate-context-discovery/Candidate Context Discovery - Policies.png"   alt="Eventstorming step 5, Policies identification">
+
+Trabajar dentro de un dominio requiere atender reglas de negocio específicas; en este caso, se han identificado cuatro reglas clave, todas vinculadas al registro de los clientes y sus dispositivos, alertas y monitoreo, y por último las analíticas. Reconocer estas políticas del dominio nos permitirá, más adelante, definir los distintos contextos del dominio. Las políticas se representan con post-its de color morado.
+
+
+
 #### 4.1.1.2. Domain Message Flows Modeling
 
 #### 4.1.1.3. Bounded Context Canvases
