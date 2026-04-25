@@ -466,6 +466,44 @@ La base de datos persiste los dispositivos IoT junto con su configuración y est
 
 ##### 4.2.X.6.2. Bounded Context Database Design Diagram
 
+### 4.2.X. Bounded Context: [Bounded Context Name]
+
+#### 4.2.X.1. Domain Layer
+
+#### 4.2.X.2. Interface Layer
+
+#### 4.2.X.3. Application Layer
+
+#### 4.2.X.4. Infrastructure Layer
+
+#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+
+#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+
+##### 4.2.X.6.2. Bounded Context Database Design Diagram
+
+### 4.2.3. Bounded Context: Radiation Monitoring & Analytics
+
+Este Bounded Context se encarga de gestionar el procesamiento y análisis de datos recolectados por sensores IoT de EmSafe. Su función es transformar datos crudos en métricas, tendencias y perfiles de exposición personalizados mediante dashboards y reportes históricos (diarios, mensuales y anuales). Al optimizar la gestión de datos, permite identificar picos de radiación y facilita la toma de decisiones informadas para el bienestar del usuario.
+
+#### 4.2.3.1. Domain Layer
+
+#### 4.2.3.2. Interface Layer
+
+#### 4.2.3.3. Application Layer
+
+#### 4.2.3.4. Infrastructure Layer
+
+#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+##### 4.2.3.6.2. Bounded Context Database Design Diagram
+
 
 # Bibliografía
 
