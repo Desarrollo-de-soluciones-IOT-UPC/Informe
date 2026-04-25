@@ -434,7 +434,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img src="img/AV1/caratula/DeviceManagement-Components.png">
+<img src="img/Device Management - Images/DeviceManagement-Components.png">
 
 ### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -442,13 +442,13 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 Se presenta el diagrama de clases del contexto de gestión de dispositivos, teniendo como clases principales a Device e InventoryRecord, además de contar con un enum DeviceStatus que ayuda a gestionar el ciclo de vida del dispositivo a través de sus estados: Available, Installed, Maintenance y Retired.
 
-<img src="img/AV1/caratula/Device Management - Bounded Context Domain Layer Class Diagrams.png">
+<img src="img/Device Management - Images/Device Management - Bounded Context Domain Layer Class Diagrams.png">
 
 #### 4.2.2.6.2. Bounded Context Database Design Diagram
 
 La base de datos persiste los dispositivos IoT junto con su configuración y estado actual, registrando cada cambio a través del historial de eventos del ciclo de vida. Además, se persisten las lecturas electromagnéticas capturadas por cada dispositivo y los registros de inventario necesarios para controlar el stock y planificar nuevas instalaciones.
 
-<img src="img/AV1/caratula/Device Management - Bounded Context Database Design Diagram.png">
+<img src="img/Device Management - Images/Device Management - Bounded Context Database Design Diagram.png">
 
 #### 4.2.X.1. Domain Layer
 
