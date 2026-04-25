@@ -526,125 +526,14 @@ Historias relacionadas: US43, US42, US34, US44, US45, TS21, TS30
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 
 El diagrama de clases del Bounded Context IAM muestra el agregado `User` como raíz, junto con la entidad `UserProfile`. Se incluyen los value objects `Email`, `PasswordHash`, `Role` y `UserStatus`, así como las interfaces de repositorio y los servicios de dominio `AuthenticationService` y `PasswordPolicyService`.
-```mermaid
-classDiagram
-    direction TB
 
-    class User {
-        -Long id
-        -Email email
-        -PasswordHash passwordHash
-        -String fullName
-        -Role role
-        -UserStatus status
-        -LocalDateTime createdAt
-        -LocalDateTime updatedAt
-        +changePassword(String rawPassword) void
-        +activate() void
-        +deactivate() void
-    }
-
-    class UserProfile {
-        -Long id
-        -Long userId
-        -String phoneNumber
-        -String preferredAlertTypes
-        -String monitoredZones
-        -String notificationFrequency
-        +updatePreferences(String alertTypes, String zones, String frequency) void
-        +updatePersonalData(String phone) void
-    }
-
-    class Email {
-        <>
-        -String value
-        +validate() boolean
-    }
-
-    class PasswordHash {
-        <>
-        -String value
-        +matches(String rawPassword) boolean
-    }
-
-    class Role {
-        <>
-        CLIENT
-        ADMIN
-        TECHNICIAN
-        SUPER_ADMIN
-    }
-
-    class UserStatus {
-        <>
-        ACTIVE
-        INACTIVE
-        PENDING_VERIFICATION
-    }
-
-    class AuthenticationService {
-        <>
-        +authenticate(String email, String password) String
-        +validateToken(String token) UserClaims
-    }
-
-    class PasswordPolicyService {
-        <>
-        +validate(String rawPassword) boolean
-    }
-
-    class IUserRepository {
-        <>
-        +findById(Long id) User
-        +findByEmail(String email) User
-        +save(User user) User
-        +delete(Long id) void
-        +existsByEmail(String email) boolean
-    }
-
-    class IUserProfileRepository {
-        <>
-        +findByUserId(Long userId) UserProfile
-        +save(UserProfile profile) UserProfile
-        +deleteByUserId(Long userId) void
-    }
-
-    User "1" *-- "1" UserProfile : profile
-    User --> Email
-    User --> PasswordHash
-    User --> Role
-    User --> UserStatus
-    IUserRepository ..> User : manages
-    IUserProfileRepository ..> UserProfile : manages
-```
+<img src="img/AV1/chapter-4/Identity & Access Management/Bounded Context Domain Layer Class Diagrams - IAM.png">
 
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram
 
 La base de datos del Bounded Context IAM persiste los usuarios con sus credenciales y rol, junto con sus perfiles de preferencias y datos personales.
-```mermaid
-erDiagram
-    USERS {
-        bigint id PK
-        varchar full_name
-        varchar email
-        varchar password_hash
-        varchar role
-        varchar status
-        timestamp created_at
-        timestamp updated_at
-    }
 
-    USER_PROFILES {
-        bigint id PK
-        bigint user_id FK
-        varchar phone_number
-        text preferred_alert_types
-        text monitored_zones
-        varchar notification_frequency
-    }
-
-    USERS ||--|| USER_PROFILES : "tiene perfil"
-```
+<img src="img/AV1/chapter-4/Identity & Access Management/Bounded Context Database Design Diagram - IAM.png" width="300">
 
 ### 4.2.2. Bounded Context: Device Management
 
