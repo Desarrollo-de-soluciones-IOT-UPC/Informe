@@ -524,6 +524,7 @@ Historias relacionadas: US02, US04, US05, US07, US39, US40, TS02, TS29.
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 
+![Alert & Automation Component Diagram](img/AV1/chapter-4/Alert%20&%20Automation/Alert_Automation_C4.png)
 
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
  
@@ -862,6 +863,8 @@ Historias relacionadas: US26, US27, US28, US29, US31, US32, US33, US41, TS01, TS
 | `persistence/jpa/repositories/DeviceInventoryItemRepository.java` | Repositorio JPA para el agregado `DeviceInventoryItem`. Incluye queries para filtrar por estado y para detectar stock bajo. | Repository Impl |
  
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+![Admin & Operations Component Diagram](img/AV1/chapter-4/Admin%20&%20Operations/Admin_Operation_C4.png)
 
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
  
