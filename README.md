@@ -165,7 +165,8 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
 El proceso de colaboración en el informe se realizó mediante commits constantes al repositorio de la organización.
 
 Se presenta el resumen de commits:
-![Commits](Captura%20de%20pantalla%202026-04-25%20205616.png)
+<strong>AV1</strong><br>
+![Commits](img/AV1/colaboration-insights/collaboration-insights-av1.png)
 
 ## Contenido
 - [Student Outcome](#student-outcome)
