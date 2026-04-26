@@ -117,7 +117,14 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
     </tr>
     <tr>
       <td>Lopez de la Cruz, Mauro Fabricio</td>
-      <td>[A completar luego]</td>
+      <td> Bounded Context: Alert & Automation - Admin & Operations Management (WEB)
+
+* Todo el capítulo 1
+* User stories
+* Product backlog
+* Context Mapping
+* Software Architecture
+      </td>
     </tr>
     <tr>
       <td>Guimaraes Escalante, Carlos Eduardo</td>
