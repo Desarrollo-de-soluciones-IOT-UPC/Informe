@@ -493,16 +493,7 @@ con una plataforma que presenta análisis longitudinales y notificaciones de ale
 
 A continuación, se presenta el Lean UX Canvas, una herramienta que sigue los principios de Lean UX y facilita la comprensión de los problemas del usuario, la definición de supuestos, la formulación de hipótesis y la planificación de experimentos para validar o refutar dichas hipótesis de manera ágil.
 
-| Sección | Contenido |
-|---|---|
-| **Business Problem** | La contaminación electromagnética generada por dispositivos tecnológicos y maquinaria industrial está en aumento. No existe una herramienta accesible y en tiempo real que permita a personas y organizaciones medir, evaluar y monitorear los niveles de radiación no ionizante, dificultando la toma de decisiones informadas para proteger la salud. |
-| **Business Outcomes** | Aumentar en 50% los hogares y organizaciones que monitorean radiación activamente. Reducir en 30% los niveles de exposición en entornos monitoreados. Lograr satisfacción de usuario superior al 85%. Incrementar en 40% la conciencia sobre riesgos electromagnéticos. |
-| **Users & Customers** | **Segmento 1:** Personas comprometidas con el cuidado de su salud, preocupadas por la exposición electromagnética en hogares y entornos cotidianos. **Segmento 2:** Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética y necesitan monitorear la exposición de su personal. |
-| **User Benefits** | Acceso en tiempo real a niveles de radiación desde el celular. Alertas automáticas ante niveles peligrosos. Recomendaciones personalizadas para reducir exposición. Reportes históricos y análisis de tendencias. Gestión centralizada de la seguridad ambiental para organizaciones. |
-| **Solution Ideas** | Aplicación móvil con dashboard en tiempo real, alertas push y recomendaciones personalizadas. Plataforma web administrativa para gestión de sensores, usuarios y reportes. Red de sensores IoT para medición continua. API REST para integración con sistemas externos. Historial de mediciones y análisis de tendencias. |
-| **Hypotheses** | H1: El acceso en tiempo real a datos de radiación mejorará la conciencia y acción preventiva. H2: Las alertas automáticas y recomendaciones reducirán la preocupación por efectos en la salud. H3: Los informes detallados mejorarán la toma de decisiones en organizaciones. H4: La información precisa y basada en estándares aumentará la confianza de los usuarios. H5: Los datos históricos y tendencias mejorarán la gestión de la exposición cotidiana y laboral. |
-| **What's the most important thing we need to learn first?** | Validar que los usuarios individuales y las organizaciones están dispuestos a adoptar un sistema de monitoreo continuo basado en sensores IoT y una app móvil, y que encuentran valor práctico en las alertas automáticas y recomendaciones personalizadas para reducir su exposición electromagnética. |
-| **What's the least amount of work to learn the next most important thing?** | Desarrollar un MVP de la aplicación móvil conectada a un sensor IoT prototipo que permita visualizar niveles de radiación en tiempo real y recibir alertas básicas. Realizar pruebas con un grupo reducido de usuarios de ambos segmentos para validar la propuesta de valor y la experiencia de uso. |
+![Lean UX Canvas](img/AV1/Lean%20UX%20Canvas/Lean_Ux_Canvas.png)
 
 ## 1.3. Segmentos Objetivos
 
