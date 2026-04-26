@@ -143,7 +143,14 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
     </tr>
     <tr>
       <td>Lizano Coll Cardenas, Fernando Jesus</td>
-      <td>[A completar luego]</td>
+      <td>Bounded Context "Radiation Monitoring & Analytics"
+- Diseño de las cuatro capas arquitectónicas (Domain Layer, Interface Layer, Application Layer, Infrastructure Layer) con tablas detalladas especificando componentes, propósitos y tipos de recursos.
+- Documentación de los agregados raíz, entidades, value objects, commands y queries del dominio.
+- Definición de controladores REST, assemblers y facades para la interfaz.
+- Implementación de servicios de aplicación, ACL (Anti-Corruption Layer) y adaptadores.
+- Especificación de repositorios JPA, servicios de persistencia e infraestructura.
+- Integración de diagramas de arquitectura a nivel de componentes y código.
+      </td>
     </tr>
   </tbody>
 </table>
