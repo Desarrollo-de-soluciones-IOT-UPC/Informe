@@ -573,7 +573,9 @@ Historias relacionadas: US43, US42, US34, US44, US45, TS21, TS30
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-> _[]_
+El bounded context IAM se estructura internamente en cuatro componentes principales dentro del container Backend API (Java / Spring Boot): el componente **Auth**, que gestiona el registro e inicio de sesión a través de `AuthController` apoyándose en `AuthenticationService` y `PasswordPolicyService`; el componente **User Management**, expuesto vía `UserController`, que permite la gestión de perfiles y roles con restricción por permisos; el componente **Token**, responsable de la generación y validación de JWT mediante `JwtTokenProvider`; y el componente **Persistence**, que accede a la base de datos PostgreSQL a través de los repositorios JPA `UserRepositoryImpl` y `UserProfileRepositoryImpl`.
+
+<img src="img/AV1/chapter-4/Identity & Access Management/IAM-Components-dark.png">
 
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
