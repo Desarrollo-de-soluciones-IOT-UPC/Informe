@@ -491,6 +491,56 @@ A través del análisis de reportes y el monitoreo del dashboard, el administrad
 
 ### 4.1.2. Context Mapping
 
+Se presenta a continuación el proceso en que se evalúa propuestas de context maps para la solución de software **EmSafe**. Se consideran los *capabilities* del negocio así como las características del producto de software en cuestión.
+
+#### Análisis de Alternativas y Decisiones de Diseño
+
+**¿Qué pasa si dejamos que Alert & Automation se encargue también de gestionar los dispositivos y sus umbrales?**
+
+En este mapping se observa que el contexto de **Alert & Automation** terminaría asumiendo responsabilidades que no le corresponden: administrar el ciclo de vida de los dispositivos IoT, sus configuraciones y su inventario. El propósito de Alert & Automation es únicamente reaccionar ante lecturas que superan umbrales y ejecutar acciones automáticas (notificaciones push y comandos a smart plugs). 
+
+Si además gestionara los dispositivos en sí, se contaminaría con lógica de registro, configuración y mantenimiento de hardware que pertenece al dominio operativo, no al dominio de alertas. Por tanto, es necesario mantener **Device Management** como un *bounded context* separado que provee la información de dispositivos y umbrales a Alert & Automation.
+
+> 
+
+**¿Qué pasa si unificamos Radiation Monitoring & Analytics con Alert & Automation en un solo contexto de "Monitoreo"?**
+
+En este mapping se puede observar que al unificar ambos contextos, el *bounded context* resultante tendría dos responsabilidades muy distintas:
+1. Procesar y agregar datos históricos para generar reportes y tendencias (análisis).
+2. Detectar umbrales superados en tiempo real y ejecutar acciones inmediatas (reacción).
+
+Estas dos preocupaciones tienen requisitos técnicos opuestos: el análisis necesita consultas optimizadas sobre grandes volúmenes de datos históricos, mientras que las alertas necesitan latencia mínima y procesamiento en tiempo real. Además, el acoplamiento resultante haría que cualquier cambio en la lógica de reportes pudiera afectar la detección de alertas, poniendo en riesgo la seguridad del sistema. Por tanto, se mantienen como *bounded contexts* separados.
+
+> 
+
+**¿Qué pasa si separamos la gestión de técnicos y la gestión de clientes del contexto Admin & Operations en bounded contexts independientes?**
+
+Se evalúa separar **Admin & Operations Management** en tres contextos: uno para agendamiento de citas, otro para gestión de técnicos y otro para dashboard de clientes. Sin embargo, en el análisis se identifica que esta separación no aporta valor porque:
+
+* La gestión de técnicos no maneja un modelo propio complejo: solo registra perfiles y verifica disponibilidad.
+* El dashboard de clientes es una vista agregada que consulta datos de citas, dispositivos y alertas — no tiene lógica de negocio propia.
+* Separarlos incrementaría el acoplamiento entre tres contextos que siempre operan juntos en el mismo flujo operativo (*agendar → asignar técnico → verificar cliente*).
+
+Por tanto, se determina mantener Admin & Operations Management como un único *bounded context* que orquesta toda la gestión operativa.
+
+> 
+
+---
+
+#### MODELO FINAL
+
+En consecuencia, se determina que el modelo final de **EmSafe** consta de los siguientes *bounded contexts*:
+
+1.  **IAM (Identity & Access Management):** Autenticación, autorización y perfiles.
+2.  **Device Management:** Ciclo de vida de sensores y smart plugs.
+3.  **Radiation Monitoring & Analytics:** Procesamiento, análisis y visualización de datos de radiación.
+4.  **Alert & Automation:** Alertas en tiempo real y control de adaptadores inteligentes.
+5.  **Admin & Operations Management:** Gestión operativa (citas, técnicos, clientes e inventario).
+
+> 
+
+
+
 ### 4.1.3. Software Architecture
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
