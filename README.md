@@ -8,8 +8,8 @@
     <p style="margin: 10px 0; border-bottom: none;">NRC: 6766</p>
     <p style="margin: 10px 0; border-bottom: none;">Docente: Leon Baca, Marco Antonio</p>
     <h2 style="font-size: 24px;">Informe de Trabajo Final</h2>
-    <p style="margin: 10px 0; border-bottom: none;">Startup: [Por definir]</p>
-    <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; ">Producto: [Por definir]</p>
+    <p style="margin: 10px 0; border-bottom: none;">Startup: Gauss</p>
+    <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; ">Producto: EMsafe</p>
     <table style="width: 50%; margin: 0 auto; text-align: center;">
         <tr>
             <th>Nombre</th>
