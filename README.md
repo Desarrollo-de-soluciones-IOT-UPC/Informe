@@ -164,8 +164,8 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
 
 El proceso de colaboración en el informe se realizó mediante commits constantes al repositorio de la organización.
 
-Se presenta el resumen de commits:
-<strong>AV1</strong><br>
+Se presenta el resumen de commits:<br>
+<strong>AV1</strong>
 ![Commits](img/AV1/colaboration-insights/collaboration-insights-av1.png)
 
 ## Contenido
@@ -330,9 +330,9 @@ La **plataforma web administrativa** está diseñada para que el equipo de Gauss
 
 El propósito de Gauss es proteger la salud de las personas y promover espacios seguros, proporcionando información clara, oportuna y basada en evidencia que permita tomar decisiones informadas frente a la exposición electromagnética.
 
-**Misión:** Monitorear y evaluar en tiempo real la contaminación electromagnética del entorno mediante EmSafe, una solución basada en tecnología IoT, análisis en la nube y visualización inteligente de datos a través de una aplicación móvil accesible, con el objetivo de proteger la salud de las personas, promover espacios seguros en hogares y entornos laborales, y facilitar decisiones informadas mediante alertas automáticas y recomendaciones personalizadas.
+**Misión:** <br> Monitorear y evaluar en tiempo real la contaminación electromagnética del entorno mediante EmSafe, una solución basada en tecnología IoT, análisis en la nube y visualización inteligente de datos a través de una aplicación móvil accesible, con el objetivo de proteger la salud de las personas, promover espacios seguros en hogares y entornos laborales, y facilitar decisiones informadas mediante alertas automáticas y recomendaciones personalizadas.
 
-**Visión:** Posicionar a EmSafe como la plataforma líder en Latinoamérica en la detección y gestión de radiación electromagnética no ionizante, estableciendo un nuevo estándar de bienestar y prevención tecnológica para hogares, empresas y organizaciones que operan en entornos con alta exposición electromagnética.
+**Visión:** <br> Posicionar a EmSafe como la plataforma líder en Latinoamérica en la detección y gestión de radiación electromagnética no ionizante, estableciendo un nuevo estándar de bienestar y prevención tecnológica para hogares, empresas y organizaciones que operan en entornos con alta exposición electromagnética.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
