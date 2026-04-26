@@ -92,7 +92,7 @@
 
 Enlace de la organización para el reporte del proyecto: https://github.com/Desarrollo-de-soluciones-IOT-UPC/Informe
 
-**TB1**
+**AV1**
 
 Para el desarrollo del informe correspondiente a todas las entregas, se estableció la implementación de secciones de la siguiente manera para cada integrante del equipo:
 <table>
@@ -117,13 +117,13 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
     </tr>
     <tr>
       <td>Lopez de la Cruz, Mauro Fabricio</td>
-      <td> Bounded Context: Alert & Automation - Admin & Operations Management (WEB)
-
-* Todo el capítulo 1
-* User stories
-* Product backlog
-* Context Mapping
-* Software Architecture
+      <td> 
+      - Bounded Context: Alert & Automation - Admin & Operations Management (WEB) <br>
+      - Todo el capítulo 1 <br>
+      - User stories <br>
+      - Product backlog <br>
+      - Context Mapping <br>
+      - Software Architecture
       </td>
     </tr>
     <tr>
@@ -138,18 +138,25 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
     </tr>
     <tr>
       <td>Oliva Lopez, Fabian Alejandro</td>
-      <td>2.1 Competidores, 2.1.1. Análisis competitivo, 2.1.2. Estrategias y tácticas frente a competidores, 2.2.2. Registro de entrevistas, 3.1. User Stories, 4.2.2. Bounded Context: Device Management
+      <td>
+      - 2.1 Competidores <br>
+      - 2.1.1. Análisis competitivo <br>
+      - 2.1.2. Estrategias y tácticas frente a competidores <br>
+      - 2.2.2. Registro de entrevistas <br>
+      - 3.1. User Stories <br>
+      - 4.2.2. Bounded Context: Device Management
 </td>
     </tr>
     <tr>
       <td>Lizano Coll Cardenas, Fernando Jesus</td>
-      <td>Bounded Context "Radiation Monitoring & Analytics"
-- Diseño de las cuatro capas arquitectónicas (Domain Layer, Interface Layer, Application Layer, Infrastructure Layer) con tablas detalladas especificando componentes, propósitos y tipos de recursos.
-- Documentación de los agregados raíz, entidades, value objects, commands y queries del dominio.
-- Definición de controladores REST, assemblers y facades para la interfaz.
-- Implementación de servicios de aplicación, ACL (Anti-Corruption Layer) y adaptadores.
-- Especificación de repositorios JPA, servicios de persistencia e infraestructura.
-- Integración de diagramas de arquitectura a nivel de componentes y código.
+      <td>
+      - Bounded Context "Radiation Monitoring & Analytics" <br>
+      - Diseño de las cuatro capas arquitectónicas (Domain  Layer, Interface Layer, Application Layer, Infrastructure Layer) con tablas detalladas especificando componentes, propósitos y tipos de recursos. <br>
+      - Documentación de los agregados raíz, entidades, value objects, commands y queries del dominio. <br>
+      - Definición de controladores REST, assemblers y facades para la interfaz. <br>
+      - Implementación de servicios de aplicación, ACL (Anti-Corruption Layer) y adaptadores. <br>
+      - Especificación de repositorios JPA, servicios de persistencia e infraestructura. <br>
+      - Integración de diagramas de arquitectura a nivel de componentes y código.
       </td>
     </tr>
   </tbody>
@@ -259,15 +266,17 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       </td>
       <td style="padding: 10px; vertical-align: top;">
         Sosa Soto, Oskar Rodrigo<br>
-        <strong>Participé activamente en el desarrollo del proyecto asumiendo responsabilidades dentro del equipo, especialmente en la definición de funcionalidades mobile y el diseño del Bounded Context. Contribuí en la elaboración, priorización del backlog y desarrollo de artefactos como diagramas de arquitectura y base de datos. Además, apoyé en la toma de decisiones técnicas relacionadas al análisis de datos de radiación y su visualización, aportando ideas y soluciones alineadas con los objetivos del proyecto. Esto permitió un trabajo más organizado y colaborativo entre los integrantes del equipo.</strong><br><br>
+        <strong>AV1</strong><br>
+        Participé activamente en el desarrollo del proyecto asumiendo responsabilidades dentro del equipo, especialmente en la definición de funcionalidades mobile y el diseño del Bounded Context. Contribuí en la elaboración, priorización del backlog y desarrollo de artefactos como diagramas de arquitectura y base de datos. Además, apoyé en la toma de decisiones técnicas relacionadas al análisis de datos de radiación y su visualización, aportando ideas y soluciones alineadas con los objetivos del proyecto. Esto permitió un trabajo más organizado y colaborativo entre los integrantes del equipo.<br><br>
         Lopez de la Cruz, Mauro Fabricio<br>
-        <strong>Durante el desarrollo de nuestras soluciones de software, he promovido un liderazgo distribuido trabajando de forma articulada con mis compañeros (Romina, Carlos, Camila y Ernesto). En lugar de centralizar la toma de decisiones, facilitamos espacios de discusión técnica donde cada integrante aportó desde su especialidad. Al definir la arquitectura de nuestros sistemas, estructurar los Bounded Contexts o evaluar migraciones críticas de backend hacia tecnologías como FastAPI, las directrices se establecieron mediante consenso. Esto aseguró que todo el equipo comprendiera, respaldara y se hiciera dueño de la dirección técnica adoptada, logrando un frente unido y cohesionado para superar los desafíos del proyecto.</strong><br><br>
+        <strong>AV1</strong><br>
+        Durante el desarrollo de nuestras soluciones de software, he promovido un liderazgo distribuido trabajando de forma articulada con mis compañeros (Romina, Carlos, Camila y Ernesto). En lugar de centralizar la toma de decisiones, facilitamos espacios de discusión técnica donde cada integrante aportó desde su especialidad. Al definir la arquitectura de nuestros sistemas, estructurar los Bounded Contexts o evaluar migraciones críticas de backend hacia tecnologías como FastAPI, las directrices se establecieron mediante consenso. Esto aseguró que todo el equipo comprendiera, respaldara y se hiciera dueño de la dirección técnica adoptada, logrando un frente unido y cohesionado para superar los desafíos del proyecto.<br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
         <strong>AV1</strong><br>
         A lo largo del desarrollo del proyecto, pude evidenciar la importancia de trabajar en equipo y cómo el liderazgo no recae en una sola persona, sino que puede ser compartido entre todos los integrantes. En distintos momentos, cada miembro asumió la iniciativa según sus fortalezas, lo que permitió avanzar de manera más eficiente y equilibrada. Personalmente, considero que esta experiencia fortaleció mi capacidad de comunicación, coordinación y adaptación dentro de un grupo, contribuyendo no solo al logro de los objetivos, sino también a un ambiente de trabajo colaborativo y respetuoso.<br><br>
         Oliva Lopez, Fabian Alejandro<br>
         <strong>AV1</strong><br>
-        Liderazgo técnico en la fase de investigación de mercado y definición de producto. Ejecución del análisis competitivo y diseño de estrategias frente a competidores. Supervisión del registro de entrevistas para asegurar la extracción de insights accionables. Definición de la arquitectura técnica mediante el establecimiento del Bounded Context: Device Management.<br><br>
+        Liderazgo Técnico en la fase de investigación de mercado y definición de producto. Ejecución del análisis competitivo y diseño de estrategias frente a competidores. Supervisión del registro de entrevistas para asegurar la extracción de insights accionables. Definición de la arquitectura técnica mediante el establecimiento del Bounded Context: Device Management.<br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
         <strong>AV1</strong><br>
         Lideré el diseño completo del Bounded Context IAM (Identity & Access Management), tomando decisiones de arquitectura sobre las capas Domain, Interface, Application e Infrastructure. Propuse y coordiné con el equipo la estructura de relaciones entre bounded contexts en el Context Mapping, asumiendo responsabilidad sobre mi parte del entregable de manera autónoma.
@@ -282,14 +291,16 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       </td>
       <td style="padding: 10px; vertical-align: top;">
         Sosa Soto, Oskar Rodrigo<br>
-        <strong>Durante el desarrollo del proyecto, contribuí a mantener una comunicación constante y respetuosa con el equipo, facilitando la coordinación de tareas y el cumplimiento de los objetivos establecidos. Participé en la planificación de actividades relacionadas a mi módulo, asegurando la entrega oportuna, diagramas y diseño de base de datos. Asimismo, estuve dispuesto a apoyar a mis compañeros y adaptar mi trabajo según las necesidades del equipo, lo que permitió avanzar de manera ordenada y cumplir con los entregables dentro del plazo establecido.</strong><br><br>
+        <strong>AV1</strong><br>
+        Durante el desarrollo del proyecto, contribuí a mantener una comunicación constante y respetuosa con el equipo, facilitando la coordinación de tareas y el cumplimiento de los objetivos establecidos. Participé en la planificación de actividades relacionadas a mi módulo, asegurando la entrega oportuna, diagramas y diseño de base de datos. Asimismo, estuve dispuesto a apoyar a mis compañeros y adaptar mi trabajo según las necesidades del equipo, lo que permitió avanzar de manera ordenada y cumplir con los entregables dentro del plazo establecido.<br><br>
         Lopez de la Cruz, Mauro Fabricio<br>
-        <strong>Fomenté un espacio de trabajo donde la comunicación abierta y la seguridad técnica fueron la base para planificar nuestros ciclos de desarrollo. Nos enfocamos en desglosar los requerimientos de la solución en historias de usuario claras y tareas medibles desde el Product Backlog, asignándolas estratégicamente según las fortalezas de cada miembro entre el frontend, el backend y el control de calidad. Gracias a este entorno estructurado, al apoyo mutuo frente a los bloqueos técnicos y al seguimiento constante de nuestro progreso, logramos integrar nuestro código de manera continua y cumplir con éxito los objetivos y plazos de entrega propuestos para nuestros despliegues.</strong><br><br>
+        <strong>AV1</strong><br>
+        Fomenté un espacio de trabajo donde la comunicación abierta y la seguridad técnica fueron la base para planificar nuestros ciclos de desarrollo. Nos enfocamos en desglosar los requerimientos de la solución en historias de usuario claras y tareas medibles desde el Product Backlog, asignándolas estratégicamente según las fortalezas de cada miembro entre el frontend, el backend y el control de calidad. Gracias a este entorno estructurado, al apoyo mutuo frente a los bloqueos técnicos y al seguimiento constante de nuestro progreso, logramos integrar nuestro código de manera continua y cumplir con éxito los objetivos y plazos de entrega propuestos para nuestros despliegues.</strong><br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
-        <strong>AV1</strong><br><br>
-        Durante el desarrollo del proyecto, pude contribuir a la creación de un entorno colaborativo e inclusivo, donde todos los integrantes del equipo tuvieron la oportunidad de participar y aportar sus ideas. Se establecieron metas claras desde el inicio, lo que facilitó la planificación de tareas y la distribución equitativa de responsabilidades. Personalmente, considero que mantener una comunicación constante y respetuosa fue clave para cumplir con los objetivos propuestos, ya que permitió coordinar mejor el trabajo y adaptarnos ante cualquier dificultad que surgiera en el proceso.
+        <strong>AV1</strong><br>
+        Durante el desarrollo del proyecto, pude contribuir a la creación de un entorno colaborativo e inclusivo, donde todos los integrantes del equipo tuvieron la oportunidad de participar y aportar sus ideas. Se establecieron metas claras desde el inicio, lo que facilitó la planificación de tareas y la distribución equitativa de responsabilidades. Personalmente, considero que mantener una comunicación constante y respetuosa fue clave para cumplir con los objetivos propuestos, ya que permitió coordinar mejor el trabajo y adaptarnos ante cualquier dificultad que surgiera en el proceso.<br><br>
         Oliva Lopez, Fabian Alejandro<br>
-        <strong>AV1</strong><br><br>
+        <strong>AV1</strong><br>
         Facilitación de sesiones de trabajo para la creación y refinamiento de User Stories, asegurando la participación de todos los roles del equipo. Coordinación de la planificación de tareas dentro del contexto de gestión de dispositivos. Integración de los hallazgos de las entrevistas de usuario en el flujo de desarrollo para mantener el cumplimiento de los objetivos del sprint.<br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
         <strong>AV1</strong><br>
