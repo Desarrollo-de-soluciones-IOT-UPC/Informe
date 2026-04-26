@@ -433,6 +433,60 @@ Los contextos son representados a través de las figuras que agrupan a los event
 
 #### 4.1.1.2. Domain Message Flows Modeling
 
+##### Escenario 1: Respuesta ante alerta de alta radiación
+
+**Objetivo:**  
+El cliente busca proteger su salud ante un pico de radiación detectado por el sensor.
+
+<img src="img/AV1/chapter-4/Domain Message Flows/Doman message flows - Scenario 1.png" alt="Domain Message Flows - Alert Scenario 1">
+
+**Flujo:**
+
+1. El IoT Device detecta un nivel crítico y envía una señal al Sistema.  
+2. El Sistema dispara una notificación push a la Mobile Application.  
+3. El Cliente visualiza la alerta y el mapa de radiación domiciliaria para identificar el foco.  
+4. El Cliente, a través de la aplicación, envía el comando de apagado remoto al dispositivo para mitigar el riesgo.  
+5. El Cliente consulta al AI Chatbot sobre recomendaciones de salud inmediatas.  
+
+**Descripción:**  
+Se observa cómo el sensor interactúa con el sistema para alertar al usuario. El cliente toma el control apagando el equipo desde su celular y se informa con la IA para evitar efectos nocivos en su salud.
+
+##### Escenario 2: Gestión de ciclo de vida del dispositivo (Onboarding)
+
+**Objetivo:**  
+Un administrador coordina la puesta en marcha del servicio para un nuevo cliente.
+
+<img src="img/AV1/chapter-4/Domain Message Flows/Doman message flows - Scenario 2.png" alt="Domain Message Flows - Alert Scenario 2">
+
+**Flujo:**
+
+1. El Admin registra al nuevo usuario en el Admin Dashboard (Web).  
+2. El Admin utiliza la funcionalidad de agendamiento para asignar una instalación.  
+3. El Sistema notifica al Técnico sobre su nueva tarea asignada.  
+4. El Técnico realiza la instalación física y marca la tarea como "Completada" en su vista.  
+5. El Admin Dashboard actualiza el estado del dispositivo a "Activo" y el Cliente ya puede ver sus datos en la aplicación.  
+
+**Descripción:**  
+El administrador centraliza la logística de los equipos. Una vez agendada la instalación, el técnico asegura la operatividad del sensor, permitiendo que el flujo de datos comience a nutrir la aplicación del cliente.
+
+##### Escenario 3: Análisis y mantenimiento preventivo
+
+**Objetivo:**  
+El administrador utiliza datos históricos para garantizar el buen estado de la red de sensores.
+
+<img src="img/AV1/chapter-4/Domain Message Flows/Doman message flows - Scenario 3.png" alt="Domain Message Flows - Alert Scenario 3">
+
+**Flujo:**
+
+1. El Cliente visualiza su reporte mensual de picos de radiación y nota anomalías en el sensor.  
+2. El Cliente solicita soporte o el Sistema detecta la necesidad de calibración.  
+3. El Admin revisa el dashboard de clientes y el historial de instalaciones para validar la garantía.  
+4. El Admin agenda un mantenimiento de dispositivo mediante la plataforma web.  
+5. El Técnico recibe la orden de trabajo para revisar el sensor en el domicilio.  
+
+**Descripción:**  
+A través del análisis de reportes y el monitoreo del dashboard, el administrador puede proactivamente programar visitas técnicas, asegurando que el hardware siempre entregue mediciones precisas para la seguridad del usuario.
+
 #### 4.1.1.3. Bounded Context Canvases
 
 ### 4.1.2. Context Mapping
