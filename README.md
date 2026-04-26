@@ -438,7 +438,7 @@ Los contextos son representados a través de las figuras que agrupan a los event
 **Objetivo:**  
 El cliente busca proteger su salud ante un pico de radiación detectado por el sensor.
 
-<img src="img/AV1/chapter-4/Domain Message Flows/Doman message flows - Scenario 1.png" alt="Domain Message Flows - Alert Scenario 1">
+<img src="img/AV1/chapter-4/Domain Message Flows/Domain message flows - Scenario 1.png" alt="Domain Message Flows - Alert Scenario 1">
 
 **Flujo:**
 
@@ -456,7 +456,7 @@ Se observa cómo el sensor interactúa con el sistema para alertar al usuario. E
 **Objetivo:**  
 Un administrador coordina la puesta en marcha del servicio para un nuevo cliente.
 
-<img src="img/AV1/chapter-4/Domain Message Flows/Doman message flows - Scenario 2.png" alt="Domain Message Flows - Alert Scenario 2">
+<img src="img/AV1/chapter-4/Domain Message Flows/Domain message flows - Scenario 2.png" alt="Domain Message Flows - Alert Scenario 2">
 
 **Flujo:**
 
@@ -474,7 +474,7 @@ El administrador centraliza la logística de los equipos. Una vez agendada la in
 **Objetivo:**  
 El administrador utiliza datos históricos para garantizar el buen estado de la red de sensores.
 
-<img src="img/AV1/chapter-4/Domain Message Flows/Doman message flows - Scenario 3.png" alt="Domain Message Flows - Alert Scenario 3">
+<img src="img/AV1/chapter-4/Domain Message Flows/Domain message flows - Scenario 3.png" alt="Domain Message Flows - Alert Scenario 3">
 
 **Flujo:**
 
@@ -488,6 +488,54 @@ El administrador utiliza datos históricos para garantizar el buen estado de la 
 A través del análisis de reportes y el monitoreo del dashboard, el administrador puede proactivamente programar visitas técnicas, asegurando que el hardware siempre entregue mediciones precisas para la seguridad del usuario.
 
 #### 4.1.1.3. Bounded Context Canvases
+
+Con el objetivo de documentar el propósito y la relación entre los contextos identificados, se utilizó la herramienta Bounded Context Canvas en cada uno de ellos.
+
+Este proceso permitió al equipo de desarrollo comprender mejor el dominio y la finalidad de cada contexto.
+
+##### IAM (Identity & Access Management) Context
+
+Este contexto es responsable de la gestión de la identidad de los usuarios y el control de accesos dentro del sistema EMSafe. Se encarga del registro, autenticación y asignación de roles, tales como Admin, Técnico y Cliente, asegurando que cada usuario acceda únicamente a las funcionalidades que le corresponden.
+
+Se comunica principalmente con los demás contextos del sistema a través del backend API, proporcionando los mecanismos de validación y autorización necesarios para garantizar la seguridad. Asimismo, interactúa con las aplicaciones web y móvil para gestionar sesiones de usuario y proteger el acceso a los recursos del sistema.
+
+<img src="img/AV1/chapter-4/Bounded Context Canvases/IAM Context Canvas.png" alt="IAM Bounded Context Canvas">
+
+
+##### Device Management Context
+
+Este contexto es responsable de la gestión del ciclo de vida de los dispositivos IoT, desde su registro hasta su retiro del servicio. Incluye funcionalidades como el agendamiento de instalaciones, mantenimientos y recolecciones, así como la asignación de técnicos y la actualización del estado de los dispositivos.
+
+Se comunica principalmente con el contexto de Radiation Monitoring & Analytics para habilitar la transmisión de datos desde los dispositivos activos, y con el contexto de Alert & Automation para permitir acciones sobre los dispositivos, como el control remoto. Además, interactúa con el front-end web a través del API para la gestión operativa por parte del administrador.
+
+<img src="img/AV1/chapter-4/Bounded Context Canvases/Device Management Context Canvas.png" alt="Device Management Bounded Context Canvas">
+
+
+##### Radiation Monitoring & Analytics Context
+
+Este contexto tiene como propósito la recolección, procesamiento y análisis de los datos de radiación capturados por los dispositivos IoT. Se encarga de transformar los datos crudos en información útil, como reportes periódicos y visualizaciones en mapas de radiación a nivel global y domiciliario.
+
+Se comunica principalmente con el contexto de Device Management para recibir datos de los dispositivos activos, y con el contexto de Alert & Automation para informar sobre condiciones críticas detectadas. Asimismo, provee información al front-end móvil para que el usuario pueda visualizar niveles de radiación, reportes históricos y mapas interactivos.
+
+<img src="img/AV1/chapter-4/Bounded Context Canvases/Radiation Monitoring & Analysis Context Canvas.png" alt="Radiation Monitoring & Analytics Bounded Context Canvas">
+
+##### Alert & Automation Context
+
+Este contexto es responsable de la gestión de alertas y la ejecución de acciones automáticas ante eventos críticos, como niveles elevados de radiación. Incluye la generación de notificaciones, el envío de alertas al usuario y la ejecución de comandos sobre los dispositivos, como el apagado remoto.
+
+Se comunica principalmente con el contexto de Radiation Monitoring & Analytics, del cual recibe información sobre condiciones de riesgo, y con Device Management para ejecutar acciones sobre los dispositivos. Además, interactúa con la aplicación móvil para notificar al usuario y permitir su intervención, así como con servicios adicionales como el chatbot para brindar recomendaciones.
+
+<img src="img/AV1/chapter-4/Bounded Context Canvases/Alert & Automation Context Canvas.png" alt="Alert & Automation Bounded Context Canvas">
+
+##### Admin & Operations Management Context
+
+Este contexto es responsable de la gestión operativa del sistema EMSafe desde la perspectiva administrativa. Incluye funcionalidades como la visualización del dashboard de clientes, el historial de instalaciones y la supervisión general de las operaciones relacionadas con dispositivos y usuarios.
+
+Su propósito es centralizar la toma de decisiones y el monitoreo del estado del sistema, permitiendo al Super Admin tener una visión integral del funcionamiento del servicio y del comportamiento de los clientes.
+
+Se comunica principalmente con el contexto de Device Management para obtener información sobre el estado y ciclo de vida de los dispositivos, y con el contexto de IAM para la gestión de usuarios y roles. Asimismo, interactúa con el front-end web a través del API, proporcionando la información necesaria para la visualización y control de las operaciones del sistema.
+
+<img src="img/AV1/chapter-4/Bounded Context Canvases/Admin & Operations Management Context Canvas.png" alt="Admin & Operations Management Bounded Context Canvas">
 
 ### 4.1.2. Context Mapping
 
