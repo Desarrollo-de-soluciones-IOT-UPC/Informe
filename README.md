@@ -117,7 +117,8 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
     </tr>
     <tr>
       <td>Oliva Lopez, Fabian Alejandro</td>
-      <td>[A completar luego]</td>
+      <td>2.1 Competidores, 2.1.1. Análisis competitivo, 2.1.2. Estrategias y tácticas frente a competidores, 2.2.2. Registro de entrevistas, 3.1. User Stories, 4.2.2. Bounded Context: Device Management
+</td>
     </tr>
     <tr>
       <td>Lizano Coll Cardenas, Fernando Jesus</td>
@@ -236,8 +237,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <strong>AV1</strong><br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
         <strong>AV1</strong><br><br>
-        Oliva Lopez, Fabian Alejandro<br>
-        <strong>AV1</strong><br><br>
+        Oliva Lopez, Fabian Alejandro<br> 
+        <strong>Liderazgo técnico en la fase de investigación de mercado y definición de producto. Ejecución del análisis competitivo y diseño de estrategias frente a competidores. Supervisión del registro de entrevistas para asegurar la extracción de insights accionables. Definición de la arquitectura técnica mediante el establecimiento del Bounded Context: Device Management.</strong><br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
         <strong>AV1</strong>
       </td>
@@ -256,7 +257,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Guimaraes Escalante, Carlos Eduardo<br>
         <strong>AV1</strong><br><br>
         Oliva Lopez, Fabian Alejandro<br>
-        <strong>AV1</strong><br><br>
+        <strong>Facilitación de sesiones de trabajo para la creación y refinamiento de User Stories, asegurando la participación de todos los roles del equipo. Coordinación de la planificación de tareas dentro del contexto de gestión de dispositivos. Integración de los hallazgos de las entrevistas de usuario en el flujo de desarrollo para mantener el cumplimiento de los objetivos del sprint.</strong><br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
         <strong>AV1</strong>
       </td>
