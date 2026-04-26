@@ -253,9 +253,9 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       </td>
       <td style="padding: 10px; vertical-align: top;">
         Sosa Soto, Oskar Rodrigo<br>
-        <strong>AV1</strong><br><br>
+        <strong>Participé activamente en el desarrollo del proyecto asumiendo responsabilidades dentro del equipo, especialmente en la definición de funcionalidades mobile y el diseño del Bounded Context. Contribuí en la elaboración, priorización del backlog y desarrollo de artefactos como diagramas de arquitectura y base de datos. Además, apoyé en la toma de decisiones técnicas relacionadas al análisis de datos de radiación y su visualización, aportando ideas y soluciones alineadas con los objetivos del proyecto. Esto permitió un trabajo más organizado y colaborativo entre los integrantes del equipo.</strong><br><br>
         Lopez de la Cruz, Mauro Fabricio<br>
-        <strong>AV1</strong><br><br>
+        <strong>Durante el desarrollo de nuestras soluciones de software, he promovido un liderazgo distribuido trabajando de forma articulada con mis compañeros (Romina, Carlos, Camila y Ernesto). En lugar de centralizar la toma de decisiones, facilitamos espacios de discusión técnica donde cada integrante aportó desde su especialidad. Al definir la arquitectura de nuestros sistemas, estructurar los Bounded Contexts o evaluar migraciones críticas de backend hacia tecnologías como FastAPI, las directrices se establecieron mediante consenso. Esto aseguró que todo el equipo comprendiera, respaldara y se hiciera dueño de la dirección técnica adoptada, logrando un frente unido y cohesionado para superar los desafíos del proyecto.</strong><br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
         <strong>AV1</strong><br>
         A lo largo del desarrollo del proyecto, pude evidenciar la importancia de trabajar en equipo y cómo el liderazgo no recae en una sola persona, sino que puede ser compartido entre todos los integrantes. En distintos momentos, cada miembro asumió la iniciativa según sus fortalezas, lo que permitió avanzar de manera más eficiente y equilibrada. Personalmente, considero que esta experiencia fortaleció mi capacidad de comunicación, coordinación y adaptación dentro de un grupo, contribuyendo no solo al logro de los objetivos, sino también a un ambiente de trabajo colaborativo y respetuoso.<br><br>
@@ -267,6 +267,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Lideré el diseño completo del Bounded Context IAM (Identity & Access Management), tomando decisiones de arquitectura sobre las capas Domain, Interface, Application e Infrastructure. Propuse y coordiné con el equipo la estructura de relaciones entre bounded contexts en el Context Mapping, asumiendo responsabilidad sobre mi parte del entregable de manera autónoma.
       </td>
       <td style="padding: 10px; vertical-align: top;">
+          La dirección compartida y la sólida base técnica permitieron unificar la visión del producto con las capacidades del sistema. El liderazgo en el análisis estratégico aseguró que el equipo tomara decisiones informadas para diferenciar la solución en el mercado.
       </td>
     </tr>
     <tr>
@@ -275,9 +276,9 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       </td>
       <td style="padding: 10px; vertical-align: top;">
         Sosa Soto, Oskar Rodrigo<br>
-        <strong>AV1</strong><br><br>
+        <strong>Durante el desarrollo del proyecto, contribuí a mantener una comunicación constante y respetuosa con el equipo, facilitando la coordinación de tareas y el cumplimiento de los objetivos establecidos. Participé en la planificación de actividades relacionadas a mi módulo, asegurando la entrega oportuna, diagramas y diseño de base de datos. Asimismo, estuve dispuesto a apoyar a mis compañeros y adaptar mi trabajo según las necesidades del equipo, lo que permitió avanzar de manera ordenada y cumplir con los entregables dentro del plazo establecido.</strong><br><br>
         Lopez de la Cruz, Mauro Fabricio<br>
-        <strong>AV1</strong><br><br>
+        <strong>Fomenté un espacio de trabajo donde la comunicación abierta y la seguridad técnica fueron la base para planificar nuestros ciclos de desarrollo. Nos enfocamos en desglosar los requerimientos de la solución en historias de usuario claras y tareas medibles desde el Product Backlog, asignándolas estratégicamente según las fortalezas de cada miembro entre el frontend, el backend y el control de calidad. Gracias a este entorno estructurado, al apoyo mutuo frente a los bloqueos técnicos y al seguimiento constante de nuestro progreso, logramos integrar nuestro código de manera continua y cumplir con éxito los objetivos y plazos de entrega propuestos para nuestros despliegues.</strong><br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
         <strong>AV1</strong><br><br>
         Durante el desarrollo del proyecto, pude contribuir a la creación de un entorno colaborativo e inclusivo, donde todos los integrantes del equipo tuvieron la oportunidad de participar y aportar sus ideas. Se establecieron metas claras desde el inicio, lo que facilitó la planificación de tareas y la distribución equitativa de responsabilidades. Personalmente, considero que mantener una comunicación constante y respetuosa fue clave para cumplir con los objetivos propuestos, ya que permitió coordinar mejor el trabajo y adaptarnos ante cualquier dificultad que surgiera en el proceso.
@@ -289,6 +290,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Planifiqué y completé las secciones asignadas del informe: Impact Mapping y el Bounded Context IAM (secciones 4.2.1.1 a 4.2.1.6), cumpliendo con los criterios establecidos por el equipo. Elaboré los diagramas de clases del dominio, el diseño de base de datos y el Component Level Diagram, asegurando coherencia con el resto de bounded contexts desarrollados por mis compañeros.
       </td>
       <td style="padding: 10px; vertical-align: top;">
+          El fomento de la comunicación abierta y la organización estructurada de las tareas técnicas facilitaron un flujo de trabajo cohesivo. Esto permitió que el equipo alcanzara las metas del sprint de manera eficiente, manteniendo siempre el enfoque en las necesidades validadas del usuario.
       </td>
     </tr>
   </tbody>
