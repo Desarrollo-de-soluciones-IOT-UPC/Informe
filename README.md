@@ -248,6 +248,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Oliva Lopez, Fabian Alejandro<br> 
         <strong>Liderazgo técnico en la fase de investigación de mercado y definición de producto. Ejecución del análisis competitivo y diseño de estrategias frente a competidores. Supervisión del registro de entrevistas para asegurar la extracción de insights accionables. Definición de la arquitectura técnica mediante el establecimiento del Bounded Context: Device Management.</strong><br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
+        Lideré el diseño completo del Bounded Context IAM (Identity & Access Management), tomando decisiones de arquitectura sobre las capas Domain, Interface, Application e Infrastructure. Propuse y coordiné con el equipo la estructura de relaciones entre bounded contexts en el Context Mapping, asumiendo responsabilidad sobre mi parte del entregable de manera autónoma.
         <strong>AV1</strong>
       </td>
       <td style="padding: 10px; vertical-align: top;">
@@ -267,6 +268,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Oliva Lopez, Fabian Alejandro<br>
         <strong>Facilitación de sesiones de trabajo para la creación y refinamiento de User Stories, asegurando la participación de todos los roles del equipo. Coordinación de la planificación de tareas dentro del contexto de gestión de dispositivos. Integración de los hallazgos de las entrevistas de usuario en el flujo de desarrollo para mantener el cumplimiento de los objetivos del sprint.</strong><br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
+        Planifiqué y completé las secciones asignadas del informe: Impact Mapping y el Bounded Context IAM (secciones 4.2.1.1 a 4.2.1.6), cumpliendo con los criterios establecidos por el equipo. Elaboré los diagramas de clases del dominio, el diseño de base de datos y el Component Level Diagram, asegurando coherencia con el resto de bounded contexts desarrollados por mis compañeros.
         <strong>AV1</strong>
       </td>
       <td style="padding: 10px; vertical-align: top;">
