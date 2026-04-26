@@ -503,6 +503,8 @@ Si además gestionara los dispositivos en sí, se contaminaría con lógica de r
 
 > 
 
+![Diagrama alternativo 1: 4 BCs sin Device Management, con Alert & Automation inflado](img/AV1/chapter-4/Context%20Mapping/1.png)
+
 **¿Qué pasa si unificamos Radiation Monitoring & Analytics con Alert & Automation en un solo contexto de "Monitoreo"?**
 
 En este mapping se puede observar que al unificar ambos contextos, el *bounded context* resultante tendría dos responsabilidades muy distintas:
@@ -512,6 +514,8 @@ En este mapping se puede observar que al unificar ambos contextos, el *bounded c
 Estas dos preocupaciones tienen requisitos técnicos opuestos: el análisis necesita consultas optimizadas sobre grandes volúmenes de datos históricos, mientras que las alertas necesitan latencia mínima y procesamiento en tiempo real. Además, el acoplamiento resultante haría que cualquier cambio en la lógica de reportes pudiera afectar la detección de alertas, poniendo en riesgo la seguridad del sistema. Por tanto, se mantienen como *bounded contexts* separados.
 
 > 
+
+![Diagrama alternativo 2: 4 BCs con Monitoreo unificado](img/AV1/chapter-4/Context%20Mapping/2.png)
 
 **¿Qué pasa si separamos la gestión de técnicos y la gestión de clientes del contexto Admin & Operations en bounded contexts independientes?**
 
@@ -524,6 +528,8 @@ Se evalúa separar **Admin & Operations Management** en tres contextos: uno para
 Por tanto, se determina mantener Admin & Operations Management como un único *bounded context* que orquesta toda la gestión operativa.
 
 > 
+
+![Diagrama alternativo 3: 7 BCs con técnicos y clientes separados](img/AV1/chapter-4/Context%20Mapping/3.png)
 
 ---
 
@@ -539,7 +545,7 @@ En consecuencia, se determina que el modelo final de **EmSafe** consta de los si
 
 > 
 
-
+![Diagrama del modelo final de Context Mapping de EmSafe](img/AV1/chapter-4/Context%20Mapping/4.png)
 
 ### 4.1.3. Software Architecture
 
