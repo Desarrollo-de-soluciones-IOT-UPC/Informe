@@ -106,12 +106,12 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
     <tr>
       <td>Sosa Soto, Oskar Rodrigo</td>
       <td>
-      Bounded Context "Radiation Monitoring & Analytics"
-      - Diseño de las cuatro capas arquitectónicas (Domain Layer, Interface Layer, Application Layer, Infrastructure Layer) con tablas detalladas especificando componentes, propósitos y tipos de recursos.
-      - Documentación de los agregados raíz, entidades, value objects, commands y queries del dominio.
-      - Definición de controladores REST, assemblers y facades para la interfaz.
-      - Implementación de servicios de aplicación, ACL (Anti-Corruption Layer) y adaptadores.
-      - Especificación de repositorios JPA, servicios de persistencia e infraestructura.
+      - Bounded Context "Radiation Monitoring & Analytics" <br>
+      - Diseño de las cuatro capas arquitectónicas (Domain Layer, Interface Layer, Application Layer, Infrastructure Layer) con tablas detalladas especificando componentes, propósitos y tipos de recursos. <br>
+      - Documentación de los agregados raíz, entidades, value objects, commands y queries del dominio. <br>
+      - Definición de controladores REST, assemblers y facades para la interfaz. <br>
+      - Implementación de servicios de aplicación, ACL (Anti-Corruption Layer) y adaptadores. <br>
+      - Especificación de repositorios JPA, servicios de persistencia e infraestructura. <br>
       - Integración de diagramas de arquitectura a nivel de componentes y código.
 </td>
     </tr>
@@ -121,7 +121,13 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
     </tr>
     <tr>
       <td>Guimaraes Escalante, Carlos Eduardo</td>
-      <td>[A completar luego]</td>
+      <td>
+      - Entrevistas: Diseño de entrevistas, Registro de entrevistas, Análisis de entrevistas <br>
+      - Needfinding: User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping <br>
+      - Strategic-Level Domain-Driven Design: Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases <br>
+      - Creacion de User y Technical Stories <br>
+      - Correcciones del documento
+      </td>
     </tr>
     <tr>
       <td>Oliva Lopez, Fabian Alejandro</td>
@@ -138,7 +144,7 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
 El proceso de colaboración en el informe se realizó mediante commits constantes al repositorio de la organización.
 
 Se presenta el resumen de commits:
-[IMAGEN DE LOS COMMITS]
+
 
 ## Contenido
 - [Student Outcome](#student-outcome)
@@ -244,12 +250,14 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Lopez de la Cruz, Mauro Fabricio<br>
         <strong>AV1</strong><br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
-        <strong>AV1</strong><br><br>
-        Oliva Lopez, Fabian Alejandro<br> 
-        <strong>Liderazgo técnico en la fase de investigación de mercado y definición de producto. Ejecución del análisis competitivo y diseño de estrategias frente a competidores. Supervisión del registro de entrevistas para asegurar la extracción de insights accionables. Definición de la arquitectura técnica mediante el establecimiento del Bounded Context: Device Management.</strong><br><br>
+        <strong>AV1</strong><br>
+        A lo largo del desarrollo del proyecto, pude evidenciar la importancia de trabajar en equipo y cómo el liderazgo no recae en una sola persona, sino que puede ser compartido entre todos los integrantes. En distintos momentos, cada miembro asumió la iniciativa según sus fortalezas, lo que permitió avanzar de manera más eficiente y equilibrada. Personalmente, considero que esta experiencia fortaleció mi capacidad de comunicación, coordinación y adaptación dentro de un grupo, contribuyendo no solo al logro de los objetivos, sino también a un ambiente de trabajo colaborativo y respetuoso.<br><br>
+        Oliva Lopez, Fabian Alejandro<br>
+        <strong>AV1</strong><br>
+        Liderazgo técnico en la fase de investigación de mercado y definición de producto. Ejecución del análisis competitivo y diseño de estrategias frente a competidores. Supervisión del registro de entrevistas para asegurar la extracción de insights accionables. Definición de la arquitectura técnica mediante el establecimiento del Bounded Context: Device Management.<br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
+        <strong>AV1</strong><br>
         Lideré el diseño completo del Bounded Context IAM (Identity & Access Management), tomando decisiones de arquitectura sobre las capas Domain, Interface, Application e Infrastructure. Propuse y coordiné con el equipo la estructura de relaciones entre bounded contexts en el Context Mapping, asumiendo responsabilidad sobre mi parte del entregable de manera autónoma.
-        <strong>AV1</strong>
       </td>
       <td style="padding: 10px; vertical-align: top;">
       </td>
@@ -265,11 +273,13 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <strong>AV1</strong><br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
         <strong>AV1</strong><br><br>
+        Durante el desarrollo del proyecto, pude contribuir a la creación de un entorno colaborativo e inclusivo, donde todos los integrantes del equipo tuvieron la oportunidad de participar y aportar sus ideas. Se establecieron metas claras desde el inicio, lo que facilitó la planificación de tareas y la distribución equitativa de responsabilidades. Personalmente, considero que mantener una comunicación constante y respetuosa fue clave para cumplir con los objetivos propuestos, ya que permitió coordinar mejor el trabajo y adaptarnos ante cualquier dificultad que surgiera en el proceso.
         Oliva Lopez, Fabian Alejandro<br>
-        <strong>Facilitación de sesiones de trabajo para la creación y refinamiento de User Stories, asegurando la participación de todos los roles del equipo. Coordinación de la planificación de tareas dentro del contexto de gestión de dispositivos. Integración de los hallazgos de las entrevistas de usuario en el flujo de desarrollo para mantener el cumplimiento de los objetivos del sprint.</strong><br><br>
+        <strong>AV1</strong><br><br>
+        Facilitación de sesiones de trabajo para la creación y refinamiento de User Stories, asegurando la participación de todos los roles del equipo. Coordinación de la planificación de tareas dentro del contexto de gestión de dispositivos. Integración de los hallazgos de las entrevistas de usuario en el flujo de desarrollo para mantener el cumplimiento de los objetivos del sprint.<br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
+        <strong>AV1</strong><br>
         Planifiqué y completé las secciones asignadas del informe: Impact Mapping y el Bounded Context IAM (secciones 4.2.1.1 a 4.2.1.6), cumpliendo con los criterios establecidos por el equipo. Elaboré los diagramas de clases del dominio, el diseño de base de datos y el Component Level Diagram, asegurando coherencia con el resto de bounded contexts desarrollados por mis compañeros.
-        <strong>AV1</strong>
       </td>
       <td style="padding: 10px; vertical-align: top;">
       </td>
