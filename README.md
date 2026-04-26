@@ -582,4 +582,8 @@ Una vez definidas todas las User Stories (US), es necesario establecer su nivel 
 
 # Bibliografía
 
+* Parrales H. Y. (2021). Análisis de ondas electromagnéticas no ionizantes y sus efectos en el medio ambiente. [Tesis de grado]. Universidad Estatal del Sur de Manabí. [Análisis de ondas electromagnéticas no ionizantes y sus efectos en el medio ambiente](https://repositorio.unesum.edu.ec/handle/53000/2832) 
+
+* Sujay, L. (2024). Number of IoT connections worldwide 2022-2033. Statista. [Number of IoT connections worldwide 2022-2033](https://www.statista.com/statistics/1183457/iot-connected-devices-worldwide/) 
+
 # Anexo
