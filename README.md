@@ -2489,6 +2489,14 @@ erDiagram
     DEVICE_INVENTORY_ITEM ||--o{ APPOINTMENT_DEVICE : "referenciado en"
     CLIENT_RECORD ||--o{ DEVICE_INVENTORY_ITEM : "tiene instalados"
 ``` 
+
+# Conclusiones
+
+El desarrollo de EmSafe permitió comprender la importancia del monitoreo de la contaminación electromagnética en entornos domésticos y laborales. A través de la integración de sensores IoT, una aplicación móvil y una plataforma web, se logró plantear una solución enfocada en el monitoreo en tiempo real, la generación de alertas automáticas y la prevención de riesgos asociados a la exposición electromagnética. Además, el uso de metodologías como Lean UX y Domain-Driven Design facilitó la organización del sistema, la identificación de las necesidades de los usuarios y el cumplimiento de los objetivos planteados durante el proyecto.
+
+Como recomendación, se propone continuar fortaleciendo la plataforma mediante la incorporación de nuevas funcionalidades y mejoras que permitan ofrecer una experiencia más eficiente, accesible y confiable para los usuarios. Asimismo, sería importante seguir impulsando la concientización sobre los riesgos de la exposición electromagnética y promover el uso de herramientas tecnológicas que contribuyan a la prevención y el bienestar de las personas.
+
+
 # Bibliografía
 
 * Parrales H. Y. (2021). Análisis de ondas electromagnéticas no ionizantes y sus efectos en el medio ambiente. [Tesis de grado]. Universidad Estatal del Sur de Manabí. [Análisis de ondas electromagnéticas no ionizantes y sus efectos en el medio ambiente](https://repositorio.unesum.edu.ec/handle/53000/2832) 
@@ -2496,3 +2504,5 @@ erDiagram
 * Sujay, L. (2024). Number of IoT connections worldwide 2022-2033. Statista. [Number of IoT connections worldwide 2022-2033](https://www.statista.com/statistics/1183457/iot-connected-devices-worldwide/) 
 
 # Anexo
+
+
