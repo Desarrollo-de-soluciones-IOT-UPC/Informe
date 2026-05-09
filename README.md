@@ -672,7 +672,7 @@ A fin de obtener información valiosa sobre las necesidades, deseos y desafíos 
 
 ![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-1/entrevista-1-segmento-1.png)
 
-- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">Link de la entrevista</a> 
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr</a> 
 - **Duración:** 0:00 - 6:05
 - **Aplicaciones usadas:** TikTok, Youtube, Netflix
 - **Tecnologías:**  Celular, Laptop, Consolas   
@@ -692,7 +692,7 @@ Alejandra Gallo un estudiante de ciencia de la computacion de 21años expresa su
 
 ![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-1/entrevista-2-segmento-1.png)
 
-- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">Link de la entrevista</a>
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr</a>
 - **Duración:** 6:05 - 13:04
 - **Aplicaciones usadas:** TikTok, Instagram, WhatsApp y Chrome
 - **Tecnologías:** Laptop, Celular y Computadora
@@ -714,7 +714,7 @@ Además, Miquel reconoce que no tiene claridad sobre los niveles de radiación e
 
 ![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-1/entrevista-3-segmento-1.png)
 
-- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">Link de la entrevista</a>
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr</a>
 - **Duración:** 13:04 - 17:38
 - **Aplicaciones usadas:** Brave, YouTube y TikTok
 - **Tecnologías:** Celular y Laptop
@@ -737,7 +737,7 @@ Luis Barrantes, un joven de 21 años residente de Surco, reconoce ser un usuario
 
 ![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-2/entrevista-1-segmento-2.png)
 
-- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">Link de la entrevista</a>
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr</a>
 - **Duración:** 17:38 - 28:59
 - **Aplicaciones usadas:** Zoom, Twitter, Instagram 
 - **Tecnologías:**  Celular y Laptop
@@ -758,7 +758,7 @@ Alejandro, un back end developer de su startup con más de 1 año de experiencia
 
 ![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-2/entrevista-2-segmento-2.png)
 
-- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">Link de la entrevista</a> 
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr</a>
 - **Duración:** 28:59 - 35:10
 - **Aplicaciones usadas:**  Zoom, Instagram, YouTube
 - **Tecnologías:**  Celular y Laptop
@@ -778,7 +778,7 @@ Gael, dueño de su proyecto con más de 3 años de experiencia, tiene como princ
 
 ![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-2/entrevista-3-segmento-2.png)
 
-- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">Link de la entrevista</a>  
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQC4q9T3DaaATKxY7tvs9napAVF3cBqFSW8L3lboNkqM0Vc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ee88kr</a>
 - **Duración:** 35:10 - 42:13
 - **Aplicaciones usadas:** TikTok e Instagram
 - **Tecnologías:** Celular y Computadora
