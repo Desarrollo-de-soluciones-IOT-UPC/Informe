@@ -1,37 +1,37 @@
 <div style="text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 50px;">
     <img src="img/AV1/caratula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
     <h1 style="font-size: 24px;">Universidad Peruana de Ciencias Aplicadas</h1>
-    <h2 style="font-size: 24px;">Ingeniería de Software</h2>
-    <p style="margin: 10px 0; border-bottom: none;">1ASI0572 | Desarrollo de Soluciones IoT</p>
+    <h2 style="font-size: 24px;">Facultad de Ingeneria</h2>
+    <p style="margin: 10px 0; border-bottom: none;">Curso: 1ASI0572 - Desarrollo de Soluciones IoT</p>
     <p style="margin: 10px 0; border-bottom: none;">NRC: 6766</p>
-    <p style="margin: 10px 0; border-bottom: none;">Periodo: 202610</p>
+    <p style="margin: 10px 0; border-bottom: none;">Nombre del profesor: Marco Antonio León Baca</p>
     <h2 style="font-size: 24px;">Informe de Trabajo Final</h2>
     <p style="margin: 10px 0; border-bottom: none;">Startup: Gauss</p>
     <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; ">Producto: EMsafe</p>
     <table style="width: 50%; margin: 0 auto; text-align: center;">
         <tr>
-            <th>Nombre</th>
             <th>Código</th>
+            <th>Nombre</th>
         </tr>
         <tr>
-            <td>Sosa Soto, Oskar Rodrigo</td>
             <td>U202212214</td>
+            <td>Sosa Soto, Oskar Rodrigo</td>
         </tr>
         <tr>
-            <td>Lopez de la Cruz, Mauro Fabricio</td>
             <td>U202215695</td>
+            <td>Lopez de la Cruz, Mauro Fabricio</td>
         </tr>
         <tr>
-            <td>Guimaraes Escalante, Carlos Eduardo</td>
             <td>U202210364</td>
+            <td>Guimaraes Escalante, Carlos Eduardo</td>
         </tr>
         <tr>
-            <td>Oliva Lopez, Fabian Alejandro</td>
             <td>U202312013</td>
+            <td>Oliva Lopez, Fabian Alejandro</td>
         </tr>
         <tr>
-            <td>Lizano Coll Cardenas, Fernando Jesus</td>
             <td>U202214522</td>
+            <td>Lizano Coll Cardenas, Fernando Jesus</td>
         </tr>
     </table>
     </br></br>
