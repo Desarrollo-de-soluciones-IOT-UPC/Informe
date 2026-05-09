@@ -258,6 +258,8 @@ Se presenta el resumen de commits:<br>
   - [5.4.3. Applications User Flow Diagrams.](#543-applications-user-flow-diagrams)
   - [5.5. Applications Prototyping.](#55-applications-prototyping)
   - [5.6. IoT Device Design.](#56-iot-device-design)
+- [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 
 <div style="page-break-before: always;">
 
@@ -2513,6 +2515,7 @@ erDiagram
 ``` 
 
 # Conclusiones
+## Conclusiones y recomendaciones
 
 El desarrollo de EmSafe permitió comprender la importancia del monitoreo de la contaminación electromagnética en entornos domésticos y laborales. A través de la integración de sensores IoT, una aplicación móvil y una plataforma web, se logró plantear una solución enfocada en el monitoreo en tiempo real, la generación de alertas automáticas y la prevención de riesgos asociados a la exposición electromagnética. Además, el uso de metodologías como Lean UX y Domain-Driven Design facilitó la organización del sistema, la identificación de las necesidades de los usuarios y el cumplimiento de los objetivos planteados durante el proyecto.
 
