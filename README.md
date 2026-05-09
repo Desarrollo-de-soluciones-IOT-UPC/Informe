@@ -2559,7 +2559,7 @@ En el contexto empresarial, la aplicación móvil permitirá a los responsables 
 
 A continuación, se presenta el sistema de etiquetado utilizado tanto en la Landing Page como en la Aplicación Móvil de EMSafe, el cual busca representar de forma clara, concisa y accesible los distintos grupos de información. Las etiquetas seleccionadas tienen un lenguaje simple y directo para facilitar la navegación y evitar confusión en los usuarios.
 
-## Landing Page
+## Aplicación Web
 
 Actualmente, la Landing Page cuenta con secciones identificadas con headings claros y minimalistas, orientados a explicar el funcionamiento y propósito de la plataforma.
 
@@ -2605,6 +2605,8 @@ La aplicación móvil utiliza etiquetas cortas e iconográficas en la barra de n
 
 Los SEO Tags y Meta Tags son esenciales para mejorar el posicionamiento del web y mobile application de EMSafe en los motores de búsqueda y facilitar que los usuarios encuentren la plataforma al buscar soluciones relacionadas con salud, tecnología y monitoreo ambiental.
 
+### Web Application
+
 **Title:** EMsafe App – Panel de Monitoreo Electromagnético  
 
 **Description:**  
@@ -2617,6 +2619,8 @@ panel de control EMF, gestión de sensores IoT, monitoreo electromagnético, ale
 EMSafe Team
 
 ---
+
+### Mobile Application
 
 **Title:** EMsafe – Monitor de Radiación Electromagnética  
 
