@@ -2,11 +2,9 @@
     <img src="img/AV1/caratula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
     <h1 style="font-size: 24px;">Universidad Peruana de Ciencias Aplicadas</h1>
     <h2 style="font-size: 24px;">Ingeniería de Software</h2>
-    <p style="margin: 10px 0; border-bottom: none;">Ciclo: 7</p>
-    <p style="margin: 10px 0; border-bottom: none;">Periodo: 2026-10</p>
     <p style="margin: 10px 0; border-bottom: none;">1ASI0572 | Desarrollo de Soluciones IoT</p>
     <p style="margin: 10px 0; border-bottom: none;">NRC: 6766</p>
-    <p style="margin: 10px 0; border-bottom: none;">Docente: Leon Baca, Marco Antonio</p>
+    <p style="margin: 10px 0; border-bottom: none;">Periodo: 202610</p>
     <h2 style="font-size: 24px;">Informe de Trabajo Final</h2>
     <p style="margin: 10px 0; border-bottom: none;">Startup: Gauss</p>
     <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; ">Producto: EMsafe</p>
@@ -349,6 +347,10 @@ El propósito de Gauss es proteger la salud de las personas y promover espacios 
 Esta sección se divide en dos apartados. El primero, Antecedentes y Problemática, presenta la definición del problema junto con una descripción de los aspectos clave que la solución debe abordar, además de establecer los objetivos y restricciones que determinan el alcance del proyecto. El segundo apartado, Lean UX Process, muestra los resultados obtenidos tras aplicar este enfoque metodológico en el contexto del problema planteado.
 
 ### 1.2.1. Antecedenetes y problemática
+
+En la última década, la proliferación masiva de tecnologías inalámbricas y la automatización industrial han transformado radicalmente los entornos domésticos y laborales, incrementando exponencialmente la densidad de campos electromagnéticos no ionizantes. A pesar de que esta infraestructura es el pilar de la conectividad moderna, la falta de visibilidad sobre los niveles de radiación acumulada ha generado una creciente preocupación en torno a la salud pública y la seguridad ocupacional. 
+
+Históricamente, la medición de estos niveles ha sido un proceso técnico, costoso y esporádico, dejando a individuos y organizaciones sin herramientas para una gestión proactiva de su entorno. En este contexto, surge la necesidad de transitar hacia un modelo de monitoreo continuo y accesible que permita transformar datos complejos en información accionable. A continuación, se detalla el análisis de la problemática bajo el enfoque del framework **5W2H**, estableciendo las bases que justifican el desarrollo de la solución **EmSafe**.
 
 **What - ¿Cuál es el problema?**
 
