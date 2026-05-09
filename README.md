@@ -2558,9 +2558,15 @@ erDiagram
 
 ## Conclusiones y recomendaciones
 
-El desarrollo de EmSafe permitió comprender la importancia del monitoreo de la contaminación electromagnética en entornos domésticos y laborales. A través de la integración de sensores IoT, una aplicación móvil y una plataforma web, se logró plantear una solución enfocada en el monitoreo en tiempo real, la generación de alertas automáticas y la prevención de riesgos asociados a la exposición electromagnética. Además, el uso de metodologías como Lean UX y Domain-Driven Design facilitó la organización del sistema, la identificación de las necesidades de los usuarios y el cumplimiento de los objetivos planteados durante el proyecto.
+- La contaminación electromagnética en entornos domésticos e industriales representa un riesgo real y creciente, agravado por la ausencia de herramientas accesibles para medirla. EmSafe surge como respuesta directa a esta brecha mediante una solución IoT integrada.
 
-Como recomendación, se propone continuar fortaleciendo la plataforma mediante la incorporación de nuevas funcionalidades y mejoras que permitan ofrecer una experiencia más eficiente, accesible y confiable para los usuarios. Asimismo, sería importante seguir impulsando la concientización sobre los riesgos de la exposición electromagnética y promover el uso de herramientas tecnológicas que contribuyan a la prevención y el bienestar de las personas.
+- Las entrevistas a ambos segmentos confirmaron preocupación genuina por la exposición electromagnética, aunque con falta de información y herramientas concretas para actuar. El segmento empresarial mostró especial interés en alertas automáticas y reportes exportables para auditorías.
+
+- Las User Stories y el Product Backlog cubren de forma completa los flujos de la app móvil, plataforma web y backend, priorizando funcionalidades de alto valor como el monitoreo en tiempo real, las alertas automáticas y la integración vía API REST.
+
+- La adopción de Domain-Driven Design permitió delimitar cinco bounded contexts con responsabilidades claras y bajo acoplamiento, evitando conflictos técnicos que habrían surgido de unificar contextos como Alert & Automation con Radiation Monitoring.
+
+- La distribución de bounded contexts entre los integrantes facilitó un desarrollo paralelo y organizado, mientras que el uso de Miro y GitHub fortaleció la comunicación técnica y la trazabilidad del avance del equipo.
 
 
 # Bibliografía
