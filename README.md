@@ -1,37 +1,37 @@
 <div style="text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 50px;">
     <img src="img/AV1/caratula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
     <h1 style="font-size: 24px;">Universidad Peruana de Ciencias Aplicadas</h1>
-    <h2 style="font-size: 24px;">Ingeniería de Software</h2>
-    <p style="margin: 10px 0; border-bottom: none;">1ASI0572 | Desarrollo de Soluciones IoT</p>
+    <h2 style="font-size: 24px;">Facultad de Ingeneria</h2>
+    <p style="margin: 10px 0; border-bottom: none;">Curso: 1ASI0572 - Desarrollo de Soluciones IoT</p>
     <p style="margin: 10px 0; border-bottom: none;">NRC: 6766</p>
-    <p style="margin: 10px 0; border-bottom: none;">Periodo: 202610</p>
+    <p style="margin: 10px 0; border-bottom: none;">Nombre del profesor: Marco Antonio León Baca</p>
     <h2 style="font-size: 24px;">Informe de Trabajo Final</h2>
     <p style="margin: 10px 0; border-bottom: none;">Startup: Gauss</p>
     <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; ">Producto: EMsafe</p>
     <table style="width: 50%; margin: 0 auto; text-align: center;">
         <tr>
-            <th>Nombre</th>
             <th>Código</th>
+            <th>Nombre</th>
         </tr>
         <tr>
-            <td>Sosa Soto, Oskar Rodrigo</td>
             <td>U202212214</td>
+            <td>Sosa Soto, Oskar Rodrigo</td>
         </tr>
         <tr>
-            <td>Lopez de la Cruz, Mauro Fabricio</td>
             <td>U202215695</td>
+            <td>Lopez de la Cruz, Mauro Fabricio</td>
         </tr>
         <tr>
-            <td>Guimaraes Escalante, Carlos Eduardo</td>
             <td>U202210364</td>
+            <td>Guimaraes Escalante, Carlos Eduardo</td>
         </tr>
         <tr>
-            <td>Oliva Lopez, Fabian Alejandro</td>
             <td>U202312013</td>
+            <td>Oliva Lopez, Fabian Alejandro</td>
         </tr>
         <tr>
-            <td>Lizano Coll Cardenas, Fernando Jesus</td>
             <td>U202214522</td>
+            <td>Lizano Coll Cardenas, Fernando Jesus</td>
         </tr>
     </table>
     </br></br>
@@ -2613,9 +2613,15 @@ Figma: [https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node
 
 ## Conclusiones y recomendaciones
 
-El desarrollo de EmSafe permitió comprender la importancia del monitoreo de la contaminación electromagnética en entornos domésticos y laborales. A través de la integración de sensores IoT, una aplicación móvil y una plataforma web, se logró plantear una solución enfocada en el monitoreo en tiempo real, la generación de alertas automáticas y la prevención de riesgos asociados a la exposición electromagnética. Además, el uso de metodologías como Lean UX y Domain-Driven Design facilitó la organización del sistema, la identificación de las necesidades de los usuarios y el cumplimiento de los objetivos planteados durante el proyecto.
+- La contaminación electromagnética en entornos domésticos e industriales representa un riesgo real y creciente, agravado por la ausencia de herramientas accesibles para medirla. EmSafe surge como respuesta directa a esta brecha mediante una solución IoT integrada.
 
-Como recomendación, se propone continuar fortaleciendo la plataforma mediante la incorporación de nuevas funcionalidades y mejoras que permitan ofrecer una experiencia más eficiente, accesible y confiable para los usuarios. Asimismo, sería importante seguir impulsando la concientización sobre los riesgos de la exposición electromagnética y promover el uso de herramientas tecnológicas que contribuyan a la prevención y el bienestar de las personas.
+- Las entrevistas a ambos segmentos confirmaron preocupación genuina por la exposición electromagnética, aunque con falta de información y herramientas concretas para actuar. El segmento empresarial mostró especial interés en alertas automáticas y reportes exportables para auditorías.
+
+- Las User Stories y el Product Backlog cubren de forma completa los flujos de la app móvil, plataforma web y backend, priorizando funcionalidades de alto valor como el monitoreo en tiempo real, las alertas automáticas y la integración vía API REST.
+
+- La adopción de Domain-Driven Design permitió delimitar cinco bounded contexts con responsabilidades claras y bajo acoplamiento, evitando conflictos técnicos que habrían surgido de unificar contextos como Alert & Automation con Radiation Monitoring.
+
+- La distribución de bounded contexts entre los integrantes facilitó un desarrollo paralelo y organizado, mientras que el uso de Miro y GitHub fortaleció la comunicación técnica y la trazabilidad del avance del equipo.
 
 
 # Bibliografía
