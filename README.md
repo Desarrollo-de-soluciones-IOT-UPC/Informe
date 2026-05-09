@@ -2536,9 +2536,64 @@ erDiagram
 
 ## 5.3. Landing Page UI Design
 
+Las landing pages cumplen un papel clave en la transformación de visitantes en posibles usuarios, ya que utilizan mensajes persuasivos, presentan información relevante del producto y ofrecen un diseño fácil de usar. Considerando su importancia, se ha planteado una propuesta inicial de diseño que se adapta tanto a dispositivos móviles como a computadoras de escritorio.
+
+En el caso de la versión para escritorio, se ha diseñado una interfaz estructurada en secciones visuales claras, con opciones de navegación bien definidas y descripciones breves de las principales funcionalidades del sitio. El propósito es lograr que el usuario comprenda rápidamente el contenido y reducir al mínimo cualquier obstáculo en su experiencia. Además, se ha incorporado una barra de navegación fija, lo que permite acceder a ella en todo momento y favorece un recorrido más fluido por la landing page.
+
 ### 5.3.1. Landing Page Wireframe
 
+En esta sección se presentarán los wireframes de la versión de la versión con menos exactitud del Landing Page.
+
+* **Sección Inicio**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-inicio.png" alt="Inicio" width="600"/><br>
+
+* **Sección Beneficios**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-beneficios.png" alt="Inicio" width="600"/><br>
+
+* **Sección Problema**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-problema.png" alt="Inicio" width="600"/><br>
+
+* **Sección Ubicacion**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-ubicacion.png" alt="Inicio" width="600"/><br>
+
+* **Sección Contacto**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-contacto.png" alt="Inicio" width="600"/><br>
+
+Figma: [https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node-id=14-9&t=m71F7tjyaI4ySMIN-1](https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node-id=14-9&t=m71F7tjyaI4ySMIN-1)
+
 ### 5.3.2. Landing Page Mock-up
+En esta sección se muestra el mockup de la landing page desarrollada para la plataforma EMSafe. A diferencia del wireframe, este diseño presenta una aproximación más realista al producto final, integrando elementos visuales como colores, tipografías, gráficos y la organización del contenido, alineados con la identidad de la marca. El propósito de esta propuesta es evidenciar cómo se transmitirán los beneficios principales del sistema, el problema que busca solucionar, su localización, y cómo se facilitará el contacto con posibles usuarios.
+
+* **Sección Inicio**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-inicio.png" alt="Inicio" width="600"/><br>
+
+* **Sección Beneficios**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-beneficios.png" alt="Inicio" width="600"/><br>
+
+* **Sección Problema**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-problema.png" alt="Inicio" width="600"/><br>
+
+* **Sección Testimonio**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-testimonio.png" alt="Inicio" width="600"/><br>
+
+* **Sección Ubicacion**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-ubicacion.png" alt="Inicio" width="600"/><br>
+
+* **Sección Contacto**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-contacto.png" alt="Inicio" width="600"/><br>
+
+Figma: [https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node-id=14-9&t=m71F7tjyaI4ySMIN-1](https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node-id=14-9&t=m71F7tjyaI4ySMIN-1)
 
 ## 5.4. Applications UX/UI Design
 
