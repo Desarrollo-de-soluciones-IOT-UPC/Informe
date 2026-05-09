@@ -254,8 +254,8 @@ Se presenta el resumen de commits:<br>
 - [5.4. Applications UX/UI Design.](#54-applications-uxui-design)
   - [5.4.1. Applications Wireframes.](#541-applications-wireframes)
   - [5.4.2. Applications Wireflow Diagrams.](#542-applications-wireflow-diagrams)
-  - [5.4.2. Applications Mock-ups.](#542-applications-mock-ups)
-  - [5.4.3. Applications User Flow Diagrams.](#543-applications-user-flow-diagrams)
+  - [5.4.3. Applications Mock-ups.](#543-applications-mock-ups)
+  - [5.4.4. Applications User Flow Diagrams.](#544-applications-user-flow-diagrams)
   - [5.5. Applications Prototyping.](#55-applications-prototyping)
   - [5.6. IoT Device Design.](#56-iot-device-design)
 - [Conclusiones](#conclusiones)
@@ -944,7 +944,7 @@ El mapa de empatía de Ricardo Sánchez presenta a un profesional técnico altam
 ![Empathy map 2](img/AV1/chapter-2/needfinding/empathy-mapping/empathy-mapping-segmento-2.png)
 
 
-### 2.4. Big Picture Event Storming
+## 2.4. Big Picture Event Storming
 
 En esta sección el equipo presenta los resultados de la sesión de Big Picture Event
 Storming realizada de manera colaborativa, con el objetivo de explorar y comprender
@@ -2514,7 +2514,48 @@ erDiagram
     CLIENT_RECORD ||--o{ DEVICE_INVENTORY_ITEM : "tiene instalados"
 ``` 
 
+# Capítulo V: Solution UI/UX Design
+
+## 5.1. Style Guidelines
+
+### 5.1.1. General Style Guidelines
+
+### 5.1.2. Web, Mobile and IoT Style Guidelines
+
+## 5.2. Information Architecture
+
+### 5.2.1. Organization Systems
+
+### 5.2.2. Labeling Systems
+
+### 5.2.3. SEO Tags and Meta Tags
+
+### 5.2.4. Searching Systems
+
+### 5.2.5. Navigation Systems
+
+## 5.3. Landing Page UI Design
+
+### 5.3.1. Landing Page Wireframe
+
+### 5.3.2. Landing Page Mock-up
+
+## 5.4. Applications UX/UI Design
+
+### 5.4.1. Applications Wireframes
+
+### 5.4.2. Applications Wireflow Diagrams
+
+### 5.4.3. Applications Mock-ups
+
+### 5.4.4. Applications User Flow Diagrams
+
+## 5.5. Applications Prototyping
+
+## 5.6. IoT Device Design
+
 # Conclusiones
+
 ## Conclusiones y recomendaciones
 
 El desarrollo de EmSafe permitió comprender la importancia del monitoreo de la contaminación electromagnética en entornos domésticos y laborales. A través de la integración de sensores IoT, una aplicación móvil y una plataforma web, se logró plantear una solución enfocada en el monitoreo en tiempo real, la generación de alertas automáticas y la prevención de riesgos asociados a la exposición electromagnética. Además, el uso de metodologías como Lean UX y Domain-Driven Design facilitó la organización del sistema, la identificación de las necesidades de los usuarios y el cumplimiento de los objetivos planteados durante el proyecto.
