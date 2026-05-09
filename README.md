@@ -2527,9 +2527,107 @@ erDiagram
 
 ### 5.2.1. Organization Systems
 
+Esta sección describe los sistemas de organización implementados tanto en la Landing Page actual como en futuras versiones de la plataforma EMSafe. Se definen los esquemas jerárquicos, secuenciales y temáticos utilizados para estructurar la información de manera clara, eficiente y alineada con los objetivos del proyecto. Esto garantiza una navegación fluida y una experiencia coherente para los distintos tipos de usuarios.
+
+## Landing Page
+
+### Grupo de Usuarios 1: Personas interesadas en su salud
+
+#### Organización jerárquica
+La estructura de la Landing Page está pensada para captar rápidamente la atención de este perfil de usuario, seguida de las características principales del sistema, sus beneficios a nivel personal, la problemática global, testimonios de usuarios reales y finalmente el contacto. Esta jerarquía permite al visitante comprender de forma progresiva cómo EMSafe puede ayudarle directamente en su vida diaria.
+
+### Grupo de Usuarios 2: Empresas que operan maquinaria de emisión electromagnética
+
+#### Organización jerárquica
+Este tipo de usuario encuentra primero información orientada al valor organizacional del sistema: monitoreo en tiempo real, prevención de riesgos laborales y cumplimiento normativo. Luego, se presenta evidencia del impacto positivo (testimonios de empresas) y un formulario de contacto para solicitar una demo adaptada a sus necesidades.
+
+--------
+
+## Aplicación Móvil
+
+### Grupo de Usuarios 1: Personas interesadas en su salud
+
+#### Organización jerárquica
+La aplicación móvil está estructurada para que el usuario acceda primero a su estado actual de exposición electromagnética mediante el Home Dashboard, que muestra el nivel de radiación en tiempo real. Desde allí se puede navegar hacia el monitoreo detallado, reportes históricos, recomendaciones de salud. Esta jerarquía garantiza que la información más crítica (el nivel de radiación actual) esté siempre accesible desde el inicio.
+
+### Grupo de Usuarios 2: Empresas que operan maquinaria de emisión electromagnética
+
+#### Organización matricial:
+En el contexto empresarial, la aplicación móvil permitirá a los responsables de seguridad visualizar una vista matricial con el estado de múltiples sensores IoT distribuidos en diferentes áreas o plantas de la organización, mostrando simultáneamente los niveles de exposición de cada zona y permitiendo identificar puntos críticos de forma inmediata.
+
 ### 5.2.2. Labeling Systems
 
+A continuación, se presenta el sistema de etiquetado utilizado tanto en la Landing Page como en la Aplicación Móvil de EMSafe, el cual busca representar de forma clara, concisa y accesible los distintos grupos de información. Las etiquetas seleccionadas tienen un lenguaje simple y directo para facilitar la navegación y evitar confusión en los usuarios.
+
+## Landing Page
+
+Actualmente, la Landing Page cuenta con secciones identificadas con headings claros y minimalistas, orientados a explicar el funcionamiento y propósito de la plataforma.
+
+| Sección | Etiqueta Utilizada | Descripción |
+|---|---|---|
+| Inicio / Hero | Inicio | Presentación del nombre, descripción del sistema y llamado a la acción principal (CTA). |
+| Características | Características | Funciones clave como monitoreo, análisis y alertas, explicadas de forma visual mediante tarjetas. |
+| Beneficios | Beneficios | Ventajas del sistema para usuarios individuales y empresas, mostradas en tarjetas comparativas. |
+| Problemática | Problemática | Contexto sobre los riesgos de la radiación electromagnética y la necesidad de EMSafe. |
+| Testimonios | Testimonios | Experiencias breves de distintos usuarios, etiquetados por rol y nombre completo. |
+| Ubicación | Ubicación | Mapa que muestra la localización del equipo desarrollador del proyecto. |
+| Contacto | Contacto | Formulario corto con campos básicos para recibir información o solicitar demo. |
+
+---
+
+## Aplicación Móvil
+
+La aplicación móvil utiliza etiquetas cortas e iconográficas en la barra de navegación inferior, complementadas por títulos de pantalla en cada vista. Las etiquetas están diseñadas para ser reconocibles de forma inmediata, reduciendo la carga cognitiva del usuario.
+
+| Pantalla / Sección | Etiqueta Utilizada | Descripción |
+|---|---|---|
+| Splash Screen | EMSafe | Pantalla de carga inicial con logo e identidad visual de la marca. |
+| Bienvenida | Bienvenido a EMSafe | Introducción al sistema con opción de registro o inicio de sesión. |
+| Verificación OTP | Verificación | Confirmación de identidad mediante código de un solo uso enviado por correo. |
+| Autenticación Biométrica | Acceso Biométrico | Autenticación mediante huella dactilar o reconocimiento facial para mayor seguridad. |
+| Vinculación de Sensor | Vincular Sensor | Proceso guiado para emparejar el dispositivo IoT con la cuenta del usuario. |
+| Home Dashboard | Inicio | Panel principal con nivel de radiación actual, estado del sensor y accesos rápidos. |
+| Monitoreo en Tiempo Real | Monitoreo | Lectura continua de campos electromagnéticos con indicadores visuales de nivel. |
+| Mapa de Radiación (Hogar) | Mi Entorno | Visualización del nivel de radiación distribuida en el espacio del usuario. |
+| Mapa de Radiación (Ciudad) | Mapa Ciudad | Mapa con niveles de radiación electromagnética registrados en distintas zonas urbanas. |
+| Centro de Alertas | Alertas | Listado de alertas activas e historial de notificaciones por niveles de exposición. |
+| Protocolo de Emergencia | Emergencia | Guía paso a paso ante detección de niveles críticos de radiación. |
+| Insights de Salud | Salud | Análisis personalizados del impacto de la radiación en la salud del usuario. |
+| Recomendaciones de Salud | Recomendaciones | Acciones específicas para reducir la exposición electromagnética del usuario. |
+| Exportar Reporte Médico | Exportar Reporte | Generación y descarga de informe de exposición para compartir con profesionales de salud. |
+| Reproducción Histórica | Historial | Revisión cronológica de los niveles de radiación registrados en el pasado. |
+| Reporte Semanal | Reporte Semanal | Resumen visual de la exposición electromagnética acumulada durante la semana. |
+| Control de Dispositivos | Dispositivos | Gestión de aparatos conectados con posibilidad de activación/desactivación remota. |
+| Motor de Automatización | Automatización | Configuración de reglas automáticas para controlar dispositivos según umbrales de radiación. |
+| Asistente ASTRA | ASTRA | Asistente de inteligencia artificial para consultas sobre radiación y recomendaciones personalizadas. |
+
 ### 5.2.3. SEO Tags and Meta Tags
+
+Los SEO Tags y Meta Tags son esenciales para mejorar el posicionamiento del web y mobile application de EMSafe en los motores de búsqueda y facilitar que los usuarios encuentren la plataforma al buscar soluciones relacionadas con salud, tecnología y monitoreo ambiental.
+
+**Title:** EMsafe App – Panel de Monitoreo Electromagnético  
+
+**Description:**  
+Accede a tu panel de control EMsafe para visualizar niveles de radiación en tiempo real, gestionar sensores IoT y recibir alertas personalizadas.
+
+**Keywords:**  
+panel de control EMF, gestión de sensores IoT, monitoreo electromagnético, alertas de radiación, plataforma de bienestar, radiación en el trabajo.
+
+**Author:**  
+EMSafe Team
+
+---
+
+**Title:** EMsafe – Monitor de Radiación Electromagnética  
+
+**Description:**  
+Monitorea en tiempo real la radiación electromagnética de tu entorno, recibe alertas personalizadas y accede a recomendaciones de salud desde tu dispositivo móvil.
+
+**Keywords:**  
+monitoreo EMF móvil, radiación electromagnética, sensores IoT, alertas de salud, campos electromagnéticos, protección radiación, bienestar, ASTRA asistente IA.
+
+**Author:**  
+EMSafe Team
 
 ### 5.2.4. Searching Systems
 
