@@ -2,16 +2,17 @@
     <img src="img/AV1/caratula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
     <h1 style="font-size: 24px;">Universidad Peruana de Ciencias Aplicadas</h1>
     <h2 style="font-size: 24px;">Facultad de Ingeneria</h2>
-    <p style="margin: 10px 0; border-bottom: none;">Curso: 1ASI0572 - Desarrollo de Soluciones IoT</p>
-    <p style="margin: 10px 0; border-bottom: none;">NRC: 6766</p>
-    <p style="margin: 10px 0; border-bottom: none;">Nombre del profesor: Marco Antonio León Baca</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Curso:</strong> 1ASI0572 - Desarrollo de Soluciones IoT</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>NRC:</strong> 6766</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Nombre del profesor:</strong> Marco Antonio León Baca</p>
     <h2 style="font-size: 24px;">Informe de Trabajo Final</h2>
-    <p style="margin: 10px 0; border-bottom: none;">Startup: Gauss</p>
-    <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; ">Producto: EMsafe</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Nombre del grupo:</strong> Gauss</p>
+    <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; "><strong>Nombre del producto:</strong> EMsafe</p>
+    <h4 style="font-size: 18px; margin-bottom: 20px;"><strong>Integrantes</strong></h4>
     <table style="width: 50%; margin: 0 auto; text-align: center;">
         <tr>
             <th>Código</th>
-            <th>Nombre</th>
+            <th>Apellidos y Nombres</th>
         </tr>
         <tr>
             <td>U202212214</td>
@@ -35,7 +36,7 @@
         </tr>
     </table>
     </br></br>
-    <p style="margin: 10px 0; border-bottom: none;">Abril de 2026</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Lima - Abril 2025</strong></p>
 </div>
 
 <div style="page-break-before: always;">
