@@ -2700,6 +2700,29 @@ El badge en "Alertas" se muestra en `--color-danger` cuando hay alertas activas 
 - **Haptic feedback** en alertas críticas (patrón de vibración `[100ms, 50ms, 100ms]`).
 ---
 
+**IoT Device Style Guidelines**
+
+El dispositivo sensor de EMSafe (ESP32 con sensor GY-273) comunica su estado al usuario mediante **indicadores LED RGB** físicos. Se definen los siguientes patrones:
+
+| Estado del dispositivo | Color LED | Patrón |
+|---|---|---|
+| Encendido / Iniciando | Blanco | Pulso lento (1s on / 1s off) |
+| Conectado a WiFi | Azul | Encendido fijo |
+| Transmitiendo datos | Cian (`#39D5FF`) | Parpadeo rápido (200ms) |
+| Nivel de radiación bajo | Verde (`#2EA043`) | Encendido fijo |
+| Nivel de radiación medio | Amarillo (`#D29922`) | Parpadeo lento (1s) |
+| Nivel de radiación alto | Rojo (`#F85149`) | Parpadeo rápido (300ms) |
+| Sin conexión WiFi | Naranja | Parpadeo lento (2s) |
+| Error / Falla | Rojo | 3 destellos rápidos y pausa |
+| Firmware actualizando | Azul | Pulso continuo |
+| Apagado por comando remoto | Morado | 2 destellos y apagado |
+
+Los colores del LED físico se alinean intencionalmente con el sistema semáforo de la plataforma digital, creando **coherencia perceptual** entre el hardware y las interfaces digitales.
+
+*Etiquetado físico del dispositivo:*
+
+El dispositivo incluye una etiqueta adhesiva con logotipo EMSafe, QR code de vinculación único, ID de dispositivo en `IBM Plex Mono` 10px, e icono de señal WiFi con escala EMF de referencia rápida (tres franjas: verde / amarillo / rojo).
+
 ## 5.2. Information Architecture
 
 ### 5.2.1. Organization Systems
