@@ -2588,6 +2588,39 @@ El sistema de espaciado sigue una base de **8px**. Los valores permitidos son m�
 - **Border radius:** Badges y chips: 4px. Tarjetas y paneles: 8px. Modales y bottom sheets: 12px. Botones: 6px.
 ---
 
+**Iconografía**
+
+Se utiliza la librería **Phosphor Icons** en su variante `Regular` para interfaz general y `Bold` para estados de alerta crítica. Los iconos se renderizan a tamaños estandarizados: 16px (inline), 20px (botones), 24px (navegación), 32px (cards de métricas). Los iconos de nivel de radiación siempre van acompañados de su color semáforo correspondiente.
+ 
+---
+
+**Tono de comunicación**
+
+EMSafe comunica con un tono **técnico pero accesible**: preciso en los datos, claro en las recomendaciones y nunca alarmista. Las alertas usan lenguaje directo y orientado a la acción:
+
+- **Correcto:** "Nivel de radiación elevado detectado en Sala Principal. Se recomienda alejar el router al menos 2 metros."
+- **Incorrecto:** "¡PELIGRO! ¡Radiación peligrosa detectada!"
+  Los textos del sistema evitan tecnicismos innecesarios en la interfaz de usuario final (segmento hogar), y pueden incluir terminología técnica en la plataforma web administrativa (segmento empresarial/admin).
+
+---
+
+**Estados de componentes**
+
+Todos los componentes interactivos deben implementar los siguientes estados:
+
+| Estado | Comportamiento visual |
+|---|---|
+| Default | Color base del componente |
+| Hover | Ligero aumento de brillo o color `primary-dark` |
+| Active / Pressed | Reducción de escala `scale(0.97)` |
+| Focused | Outline de 2px en `--color-primary` |
+| Disabled | Opacidad `0.4`, cursor `not-allowed` |
+| Loading | Skeleton shimmer o spinner en `--color-accent` |
+| Error | Borde en `--color-danger`, icono de advertencia |
+| Success | Borde en `--color-success`, icono de verificación |
+ 
+---
+
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
 ## 5.2. Information Architecture
