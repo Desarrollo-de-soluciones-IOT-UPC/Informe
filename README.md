@@ -2550,6 +2550,44 @@ La paleta de EMSafe combina tonos oscuros tecnológicos con acentos de alerta es
 Los niveles de radiación se representan **siempre** con el sistema de semáforo (`success` → `warning` → `danger`) para garantizar una lectura inmediata e intuitiva en cualquier interfaz.
  
 ---
+
+**Tipografía**
+
+EMSafe utiliza una jerarquía tipográfica de tres familias con roles diferenciados:
+
+| Familia | Uso | Importación |
+|---|---|---|
+| **Sora** | Encabezados, títulos, métricas clave | Google Fonts |
+| **IBM Plex Mono** | Valores numéricos de sensores, código, timestamps | Google Fonts |
+| **Inter** | Cuerpo de texto, formularios, párrafos | Google Fonts |
+
+---
+
+**Escala tipográfica:**
+
+| Nivel | Tamaño | Peso | Familia | Uso |
+|---|---|---|---|---|
+| Display | 48px | 700 | Sora | Hero de landing, valor principal del dashboard |
+| H1 | 32px | 700 | Sora | Títulos de sección |
+| H2 | 24px | 600 | Sora | Subtítulos |
+| H3 | 20px | 600 | Sora | Encabezados de tarjeta |
+| Body L | 16px | 400 | Inter | Párrafos, descripciones |
+| Body S | 14px | 400 | Inter | Labels, metadata |
+| Caption | 12px | 400 | Inter | Timestamps, notas auxiliares |
+| Metric | 36px | 700 | IBM Plex Mono | Lecturas de sensor en tiempo real |
+| Code | 13px | 400 | IBM Plex Mono | Valores técnicos, IDs de dispositivo |
+ 
+---
+
+**Espaciado y Grid**
+
+El sistema de espaciado sigue una base de **8px**. Los valores permitidos son múltiplos: 4, 8, 16, 24, 32, 48, 64, 80px.
+
+- **Grid web:** 12 columnas, gutter de 24px, margen lateral de 48px (desktop) y 16px (mobile).
+- **Grid móvil:** 4 columnas, gutter de 16px.
+- **Border radius:** Badges y chips: 4px. Tarjetas y paneles: 8px. Modales y bottom sheets: 12px. Botones: 6px.
+---
+
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
 ## 5.2. Information Architecture
