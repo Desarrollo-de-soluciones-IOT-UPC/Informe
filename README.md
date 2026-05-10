@@ -2637,6 +2637,28 @@ La plataforma web de EMSafe está dirigida a **Administradores y Técnicos de ca
 - Header de 64px con breadcrumb, buscador global y notificaciones.
 - Área de contenido con máximo ancho de 1280px centrado.
 - Dashboard principal en grid de 3 columnas para métricas y 2 columnas para gráficos.
+  *Componentes específicos web:*
+
+| Componente | Especificación |
+|---|---|
+| Data Table | Paginación de 20 ítems, columnas ordenables, filtros inline |
+| Chart | Librería Recharts; colores del sistema semáforo para niveles EMF |
+| Calendar | Vista mensual/semanal/diaria; eventos con código de color por tipo de cita |
+| Badge de estado | Pills de 6px radius; colores según `DeviceStatus` |
+| Mapa de radiación | Integración con Leaflet.js; heatmap con paleta `success→warning→danger` |
+| Modal | Overlay 60% opacidad; ancho máximo 640px; animación slide-up 200ms |
+| Toast | Posición inferior derecha; duración 4s; íconos Phosphor |
+
+*Responsividad web:*
+
+| Breakpoint | Ancho | Comportamiento |
+|---|---|---|
+| Desktop L | ≥ 1440px | Layout completo, sidebar expandido |
+| Desktop | ≥ 1024px | Layout completo, sidebar colapsable |
+| Tablet | ≥ 768px | Sidebar colapsado por defecto, grid 2 columnas |
+| Mobile web | < 768px | Sidebar como drawer, grid 1 columna |
+ 
+---
 
 ## 5.2. Information Architecture
 
