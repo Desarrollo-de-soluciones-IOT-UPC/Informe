@@ -2533,6 +2533,23 @@ EMSafe es una plataforma de monitoreo de radiación electromagnética no ionizan
 
 La paleta de EMSafe combina tonos oscuros tecnológicos con acentos de alerta estandarizados internacionalmente. Se definen los siguientes tokens de color:
 
+| Token | Nombre | Valor HEX | Uso principal |
+|---|---|---|---|
+| `--color-primary` | Azul EMSafe | `#1A6EFF` | Botones primarios, enlaces, CTA |
+| `--color-primary-dark` | Azul oscuro | `#0D4DB3` | Hover de botones, énfasis |
+| `--color-background` | Fondo oscuro | `#0D1117` | Fondo principal de la plataforma |
+| `--color-surface` | Superficie | `#161B22` | Tarjetas, paneles, modales |
+| `--color-surface-alt` | Superficie alternativa | `#21262D` | Bordes de tarjetas, separadores |
+| `--color-text-primary` | Texto principal | `#E6EDF3` | Encabezados, cuerpo de texto |
+| `--color-text-secondary` | Texto secundario | `#8B949E` | Subtítulos, metadata, labels |
+| `--color-success` | Verde seguro | `#2EA043` | Nivel de radiación bajo (safe) |
+| `--color-warning` | Amarillo alerta | `#D29922` | Nivel de radiación medio (warning) |
+| `--color-danger` | Rojo crítico | `#F85149` | Nivel de radiación alto (critical) |
+| `--color-accent` | Cian IoT | `#39D5FF` | Indicadores de sensor activo, gráficos |
+
+Los niveles de radiación se representan **siempre** con el sistema de semáforo (`success` → `warning` → `danger`) para garantizar una lectura inmediata e intuitiva en cualquier interfaz.
+ 
+---
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
 ## 5.2. Information Architecture
