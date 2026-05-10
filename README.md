@@ -2660,6 +2660,46 @@ La plataforma web de EMSafe está dirigida a **Administradores y Técnicos de ca
  
 ---
 
+**Mobile Application Style Guidelines**
+
+La aplicación móvil de EMSafe está dirigida al **usuario final** (segmento hogar y personal de empresa). Su diseño prioriza la lectura rápida del nivel de radiación actual, las alertas y el acceso al chatbot ASTRA.
+
+*Dimensiones y áreas seguras:*
+
+- Diseño base para pantalla de 390px × 844px (iPhone 14 Pro como referencia).
+- Safe area insets respetados: top 44px, bottom 34px.
+- Bottom navigation bar de 56px de alto.
+- Botón de acción flotante (FAB) de 56px × 56px, posicionado 80px desde el fondo.
+  *Navegación móvil — Bottom Tab Bar:*
+
+| Tab | Ícono Phosphor | Label |
+|---|---|---|
+| Inicio | `House` | Inicio |
+| Monitoreo | `Waves` | Monitoreo |
+| Alertas | `Bell` | Alertas |
+| Perfil | `User` | Perfil |
+
+El badge en "Alertas" se muestra en `--color-danger` cuando hay alertas activas no leídas.
+
+*Componentes específicos móvil:*
+
+| Componente | Especificación |
+|---|---|
+| Gauge de radiación | Componente circular; arco de 270°; colores semáforo; valor central en IBM Plex Mono 36px bold |
+| Sensor card | 100% ancho, padding 16px, radius 8px; indicador online/offline en `--color-accent` |
+| Alert card | Swipe-to-dismiss; franja lateral de color según severidad |
+| Bottom sheet | Altura variable; drag indicator 36px × 4px; radius superior 16px |
+| Chatbot ASTRA | Pantalla full; burbujas de chat; input sticky en fondo; botón enviar en `--color-primary` |
+| Mapa domicilio | Integración Mapbox; marcadores de sensor con color semáforo; zoom 17 por defecto |
+
+*Gestos e interacciones:*
+
+- **Pull to refresh** en pantallas de monitoreo y alertas.
+- **Swipe left** en alert cards para marcar como leída o descartar.
+- **Long press** en sensor card para acceder a opciones rápidas (apagado remoto, historial).
+- **Haptic feedback** en alertas críticas (patrón de vibración `[100ms, 50ms, 100ms]`).
+---
+
 ## 5.2. Information Architecture
 
 ### 5.2.1. Organization Systems
