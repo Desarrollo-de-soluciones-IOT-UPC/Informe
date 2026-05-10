@@ -2521,6 +2521,18 @@ erDiagram
 
 ### 5.1.1. General Style Guidelines
 
+Las General Style Guidelines de EMSafe definen los fundamentos visuales y comunicativos que garantizan coherencia en todos los canales de la solución: landing page, aplicación web y aplicación móvil. Estas decisiones de diseño reflejan los valores de la marca: **precisión técnica, confianza y accesibilidad**.
+
+---
+
+**Brand Overview**
+
+EMSafe es una plataforma de monitoreo de radiación electromagnética no ionizante. Su identidad visual transmite **seguridad, claridad y tecnología responsable**. El diseño evita el alarmismo visual; en su lugar, prioriza la legibilidad de datos críticos y la toma de decisiones informada.
+
+**Colores**
+
+La paleta de EMSafe combina tonos oscuros tecnológicos con acentos de alerta estandarizados internacionalmente. Se definen los siguientes tokens de color:
+
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
 ## 5.2. Information Architecture
