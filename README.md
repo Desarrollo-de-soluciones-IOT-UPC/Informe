@@ -2631,6 +2631,13 @@ Esta sección especifica las adaptaciones de las General Style Guidelines para c
 
 La plataforma web de EMSafe está dirigida a **Administradores y Técnicos de campo**. Su diseño prioriza la densidad de información, la gestión de múltiples dispositivos y la generación de reportes.
 
+*Layout y estructura:*
+
+- Sidebar de navegación fija de 240px con colapso a 64px en modo compacto.
+- Header de 64px con breadcrumb, buscador global y notificaciones.
+- Área de contenido con máximo ancho de 1280px centrado.
+- Dashboard principal en grid de 3 columnas para métricas y 2 columnas para gráficos.
+
 ## 5.2. Information Architecture
 
 ### 5.2.1. Organization Systems
