@@ -2623,6 +2623,14 @@ Todos los componentes interactivos deben implementar los siguientes estados:
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
+Esta sección especifica las adaptaciones de las General Style Guidelines para cada plataforma de la solución EMSafe: plataforma web administrativa, aplicación móvil y dispositivo IoT.
+ 
+---
+
+**Web Application Style Guidelines**
+
+La plataforma web de EMSafe está dirigida a **Administradores y Técnicos de campo**. Su diseño prioriza la densidad de información, la gestión de múltiples dispositivos y la generación de reportes.
+
 ## 5.2. Information Architecture
 
 ### 5.2.1. Organization Systems
