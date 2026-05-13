@@ -2977,6 +2977,18 @@ A continuación se especifican las herramientas de software utilizadas por el eq
  
 ---
 
+### 6.1.2. Source Code Management
+
+El equipo utiliza **GitHub** como plataforma de control de versiones y colaboración. A continuación se listan los repositorios correspondientes a cada producto digital de la solución EMSafe:
+
+| Producto | Repositorio |
+|---|---|
+| Informe | https://github.com/Desarrollo-de-soluciones-IOT-UPC/Informe |
+| Landing Page | https://github.com/Desarrollo-de-soluciones-IOT-UPC/landing-page |
+| Frontend Web Application | https://github.com/Desarrollo-de-soluciones-IOT-UPC/Front-End |
+| Backend Web Services | https://github.com/Desarrollo-de-soluciones-IOT-UPC/Back-End |
+| Embedded Application | |
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
