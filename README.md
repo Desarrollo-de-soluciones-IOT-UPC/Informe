@@ -2989,6 +2989,36 @@ El equipo utiliza **GitHub** como plataforma de control de versiones y colaborac
 | Backend Web Services | https://github.com/Desarrollo-de-soluciones-IOT-UPC/Back-End |
 | Embedded Application | |
 
+**GitFlow como Workflow de control de versiones**
+
+El equipo implementa **GitFlow** como modelo de branching. Las ramas definidas son:
+
+- `main`: rama principal que contiene el código en producción. Solo recibe merges desde `release` o `hotfix`.
+- `develop`: rama de integración continua donde se consolidan los cambios de los feature branches antes de un release.
+- `feature/<nombre>`: ramas para el desarrollo de nuevas funcionalidades. Se crean desde `develop` y se fusionan de vuelta a `develop` al completarse. Ejemplo: `feature/emf-alert-module`.
+
+**Conventional Commits**
+
+Para los mensajes de commits se aplica la convención **Conventional Commits**, con el formato:
+
+```
+<type>(<scope>): <description>
+```
+
+Los tipos permitidos son:
+
+| Tipo | Uso |
+|---|---|
+| `feat` | Nueva funcionalidad |
+| `fix` | Corrección de errores |
+| `docs` | Cambios en documentación |
+| `style` | Cambios de formato sin afectar lógica |
+| `refactor` | Refactorización de código |
+| `test` | Adición o corrección de pruebas |
+| `chore` | Tareas de mantenimiento o configuración |
+
+Ejemplo: `feat(sensor): add threshold-based EMF alert trigger`
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
