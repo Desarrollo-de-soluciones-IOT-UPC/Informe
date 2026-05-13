@@ -2912,6 +2912,12 @@ Figma: [https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node
 
 ## 5.6. IoT Device Design
 
+# Capítulo VI: Product Implementation, Validation & Deployment
+
+## 6.1. Software Configuration Management
+
+En esta sección el equipo establece las decisiones y convenciones que permitirán mantener la consistencia durante el ciclo de vida del producto. Se incluyen secciones para la configuración del entorno de desarrollo, la gestión del código fuente, las convenciones de estilo y la configuración de despliegue.
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
