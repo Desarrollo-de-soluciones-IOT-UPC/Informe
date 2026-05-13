@@ -3019,6 +3019,44 @@ Los tipos permitidos son:
 
 Ejemplo: `feat(sensor): add threshold-based EMF alert trigger`
 
+---
+
+### 6.1.3. Source Code Style Guide & Conventions
+
+El equipo adopta las siguientes guías de estilo para cada lenguaje o tecnología utilizada en la solución. Todo el código fuente se escribe en **inglés**.
+
+**HTML**
+- Guía adoptada: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- Usar indentación de 2 espacios.
+- Todos los atributos deben estar en minúsculas y entre comillas dobles.
+- Incluir el atributo `alt` en todas las imágenes.
+  **CSS / SCSS**
+- Guía adoptada: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- Usar notación en `kebab-case` para nombres de clases.
+- Evitar el uso de `!important`.
+- Organizar las propiedades en orden alfabético.
+  **TypeScript / Angular**
+- Guía adoptada: [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html) y [Angular Coding Style Guide](https://angular.io/guide/styleguide)
+- Usar `camelCase` para variables y funciones; `PascalCase` para clases y componentes.
+- Tipar explícitamente todas las variables y parámetros de funciones.
+- Un componente por archivo; nomenclatura: `feature-name.component.ts`.
+  **Java / Spring Boot**
+- Guía adoptada: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+- Usar `camelCase` para métodos y variables; `PascalCase` para clases.
+- Seguir el patrón de capas: Controller → Service → Repository.
+- Documentar con Javadoc los métodos públicos relevantes.
+  **C++ (Arduino / ESP32)**
+- Usar `camelCase` para variables y funciones; `UPPER_SNAKE_CASE` para constantes.
+- Preferir `millis()` sobre `delay()` para temporización no bloqueante.
+- Cada función debe tener una única responsabilidad.
+- Comentar en inglés las secciones críticas del código.
+  **Gherkin (.feature)**
+- Guía adoptada: [Gherkin Conventions for Readable Specifications](https://cucumber.io/docs/gherkin/)
+- Usar el formato `Given / When / Then` en inglés.
+- Nombrar los archivos en `kebab-case`: `emf-alert.feature`.
+- Cada escenario debe ser independiente y cubrir un único caso de prueba.
+---
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
