@@ -3055,7 +3055,55 @@ El equipo adopta las siguientes guías de estilo para cada lenguaje o tecnologí
 - Usar el formato `Given / When / Then` en inglés.
 - Nombrar los archivos en `kebab-case`: `emf-alert.feature`.
 - Cada escenario debe ser independiente y cubrir un único caso de prueba.
+
 ---
+
+### 6.1.4. Software Deployment Configuration
+
+En esta sección se describe la configuración de despliegue para cada producto digital de la solución EMSafe, detallando los pasos necesarios para publicar cada producto a partir de los repositorios de código fuente.
+
+**Landing Page**
+
+La Landing Page se despliega mediante **GitHub Pages** directamente desde el repositorio `landing-page`.
+
+Pasos:
+1. Asegurarse de que el archivo `index.html` se encuentre en la raíz o en la carpeta `/docs` de la rama `main`.
+2. Ir a `Settings > Pages` en el repositorio de GitHub.
+3. Seleccionar la rama `main` y la carpeta raíz (`/root`) como fuente.
+4. GitHub Pages generará automáticamente la URL de despliegue.
+   URL de despliegue: ``
+
+**Frontend Web Application**
+
+El Frontend se despliega mediante **Vercel** conectado al repositorio `Front-End`.
+
+Pasos:
+1. Crear un proyecto en Vercel e importar el repositorio `Front-End` desde GitHub.
+2. Configurar el comando de build: `ng build --configuration production`.
+3. Configurar el directorio de salida: `dist/<nombre-del-proyecto>`.
+4. Vercel detecta automáticamente los cambios en la rama `main` y realiza el redespliegue.
+   **Backend Web Services**
+
+El Backend se despliega mediante **Railway** conectado al repositorio `Back-End`.
+
+Pasos:
+1. Crear un nuevo proyecto en Railway e importar el repositorio `Back-End` desde GitHub.
+2. Configurar las variables de entorno necesarias (credenciales de base de datos, puertos, etc.).
+3. Railway detecta el proyecto Spring Boot y ejecuta automáticamente `mvn clean install`.
+4. El servicio queda expuesto en una URL pública generada por Railway.
+
+**Embedded Application**
+
+El firmware del dispositivo IoT (ESP32) se despliega de forma local desde el repositorio `Embedded-Application`.
+
+Pasos:
+1. Clonar el repositorio `Embedded-Application`.
+2. Abrir el proyecto en el Arduino IDE o PlatformIO.
+3. Conectar el dispositivo ESP32 mediante USB.
+4. Seleccionar la placa `ESP32 Dev Module` y el puerto COM correspondiente.
+5. Compilar y cargar el firmware con el comando `Upload`.
+> A continuación se presenta el Deployment Diagram del C4 Model que ilustra la infraestructura de despliegue de la solución EMSafe:
+
 
 # Conclusiones
 
