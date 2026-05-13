@@ -2918,6 +2918,65 @@ Figma: [https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node
 
 En esta sección el equipo establece las decisiones y convenciones que permitirán mantener la consistencia durante el ciclo de vida del producto. Se incluyen secciones para la configuración del entorno de desarrollo, la gestión del código fuente, las convenciones de estilo y la configuración de despliegue.
 
+### 6.1.1. Software Development Environment Configuration
+
+A continuación se especifican las herramientas de software utilizadas por el equipo para el desarrollo de la solución EMSafe, organizadas por tipo de actividad:
+
+**Project Management**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| GitHub | Plataforma para el alojamiento de repositorios y gestión de versiones del código fuente. | https://github.com |
+| Trello | Gestión de tareas y seguimiento del progreso del equipo mediante tableros Kanban. | https://trello.com |
+
+**Requirements Management**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Miro | Elaboración de Event Storming (Big Picture y Design-Level), mapas de contexto y diagramas colaborativos. | https://miro.com |
+| UXPressia | Creación de User Personas, User Journey Maps y Empathy Maps. | https://uxpressia.com |
+
+**Product UX/UI Design**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Figma | Diseño de wireframes, mockups y prototipos interactivos de la aplicación web y móvil. | https://figma.com |
+
+**Software Development**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Visual Studio Code | Editor de código principal para el desarrollo del Frontend Web y Landing Page. | https://code.visualstudio.com |
+| IntelliJ IDEA | IDE para el desarrollo del Backend con Spring Boot (Java). | https://www.jetbrains.com/idea |
+| Angular CLI | Framework para el desarrollo del Frontend Web Application con TypeScript. | https://angular.io/cli |
+| Spring Boot | Framework para el desarrollo del Backend RESTful Web Service. | https://spring.io/projects/spring-boot |
+| Wokwi | Simulador en línea para el desarrollo y prueba del Embedded Application en ESP32. | https://wokwi.com |
+| Arduino Framework (C++) | Framework para la programación del dispositivo IoT (ESP32). | https://www.arduino.cc |
+
+**Software Testing**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Postman | Pruebas manuales de los endpoints del RESTful Web Service. | https://www.postman.com |
+
+**Software Deployment**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| GitHub Pages | Despliegue del Landing Page directamente desde el repositorio de GitHub. | https://pages.github.com |
+| Vercel | Despliegue del Frontend Web Application. | https://vercel.com |
+| Railway | Despliegue del Backend RESTful Web Service. | https://railway.app |
+
+**Software Documentation**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Markdown | Formato de escritura utilizado para la documentación del informe en GitHub. | https://www.markdownguide.org |
+| Structurizr | Elaboración de diagramas de arquitectura de software bajo el modelo C4. | https://structurizr.com |
+| LucidChart | Elaboración de diagramas complementarios de arquitectura y flujos. | https://lucidchart.com |
+ 
+---
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
