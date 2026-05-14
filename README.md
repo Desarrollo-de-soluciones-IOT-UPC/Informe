@@ -3194,6 +3194,10 @@ Link de evidencia de la ejecucion del servicio web: falta link y fotos
 
 ### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
+En esta sección se presenta la documentación relacionada con los servicios utilizados en la primera versión del **Frontend Web Application** de EMSafe. Durante este sprint, se trabajó con una estructura inicial de servicios, datos simulados mediante **mock API** y componentes preparados para futuras integraciones con el backend.
+
+Debido a que el enfoque principal estuvo en la construcción del panel administrativo, la navegación, las vistas principales y la validación visual del sistema, en esta etapa aún no se generó una documentación completa de servicios backend. Sin embargo, se dejó preparada la base del frontend para conectarse posteriormente con los endpoints reales de la API.
+
 ### 6.2.1.8. Software Deployment Evidence for Sprint Review
 
 ### 6.2.1.9. Team Collaboration Insights during Sprint
