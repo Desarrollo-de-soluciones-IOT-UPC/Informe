@@ -3065,11 +3065,18 @@ Registro de servicios previamente realizados que permite al técnico consultar t
 <img src="img/TB1/chapter-5/web-app/mock-ups/work_orders_technician_mockup.png" alt="Listado de Servicios" width="600"/><br>
 
 
-
-
 ### 5.4.4. Applications User Flow Diagrams
 
 ## 5.5. Applications Prototyping
+
+#### App Web
+
+##### Sprint 1
+En este primer sprint, se logró implementar la mayor parte de las funcionalidades de la aplicación web, abarcando principalmente los componentes core del frontend y cubriendo aspectos clave como la gestión de procesos, manejo de información y aplicación de reglas de negocio.
+
+* **Video de exploración de prototipo Web (Gauss - EMSafe):** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQDktdKKxmINQ7fXWALRJrG8AY34MIwA19xNLJ9oI41tm9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ELPcvP](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQDktdKKxmINQ7fXWALRJrG8AY34MIwA19xNLJ9oI41tm9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ELPcvP)
+
+<img src="img/TB1/chapter-5/prototype/web/web-prototype-video.png" alt="Prototipo Web" width="600"/><br>
 
 ## 5.6. IoT Device Design
 
