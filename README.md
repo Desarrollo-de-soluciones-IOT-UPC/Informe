@@ -3198,8 +3198,15 @@ Link de evidencia de la ejecucion del servicio web: falta link y fotos
 
 ### 6.2.1.9. Team Collaboration Insights during Sprint
 
+Durante este sprint, el equipo enfocó sus esfuerzos en desarrollar la primera versión del **Frontend Web Application** de EMSafe. Para organizar el trabajo, se utilizó GitHub como herramienta principal de colaboración, trabajando con ramas como `main` y `feature/ui-redesign`, donde se fueron realizando commits relacionados con la configuración inicial del proyecto, la implementación de componentes principales, páginas del sistema web y correcciones visuales. Además, la coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar avances, distribuir tareas y mantener una integración ordenada de los cambios realizados durante el sprint.
 
+## Github analytics de nuestro primer sprint Landing Page:
 
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Landing Page Collaborators.png">
+
+## Github analytics de nuestro Front End: 
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Front End Collaborators.png">
 
 # Conclusiones
 
