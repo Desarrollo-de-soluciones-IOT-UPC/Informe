@@ -3187,11 +3187,47 @@ La evidencia de testing del Sprint 1 se basa en la validación realizada sobre l
 | Front-End | feature/ui-redesign | b515a93 | feat: sidebar, topbar, dashboard, work orders, history and users pages | Se verificó la implementación de las vistas principales del panel administrativo, incluyendo sidebar, topbar, dashboard, work orders, history y users pages. | 2026-05-13 |
 | Front-End | feature/ui-redesign | 75b87bb | chore: project setup, mock API and core services with i18n EN/ES | Se validó la configuración inicial del proyecto, el uso de mock API, los servicios principales y la compatibilidad de textos en inglés y español mediante i18n. | 2026-05-13 |
 | Front-End | feature/ui-redesign | 1ce28bb | Initial commit - EMSafe Admin Panel | Se revisó la estructura inicial del proyecto EMSafe Admin Panel como base para las pruebas posteriores de navegación, componentes y servicios. | 2026-05-13 |
-
 ### 6.2.1.6. Execution Evidence for Sprint Review
+Durante el Sprint 1, se completó el desarrollo e implementación de la primera versión del
+  Frontend Web Application de EMSafe, incorporando el sistema de autenticación con redirección
+  por rol, el portal completo del técnico de campo y la preparación del proyecto para su
+  despliegue en un entorno de producción en la nube.                                             
+   
+  La aplicación fue desplegada en Microsoft Azure App Service con un pipeline CI/CD mediante     
+  GitHub Actions, el cual ejecuta el build de producción de Angular SSR y realiza el deploy
+  automáticamente con cada push a la rama `main`.
 
-Link de evidencia de la ejecucion del servicio web: falta link y fotos
+  **Link de evidencia del servicio web desplegado:**
+  [https://emsafe-amh9hgdudda3bybj.eastus-01.azurewebsites.net](https://emsafe-amh9hgdudda3bybj.e
+  astus-01.azurewebsites.net)
 
+  A continuación se presentan las capturas de pantalla que evidencian la ejecución del servicio
+  web en producción:
+
+  **Pantalla de Login — Página de inicio de sesión de EMSafe desplegada en Azure.**
+
+  ![Login EMSafe](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/Login.png)
+
+  **Portal Administrativo — Dashboard principal con métricas, gráficos y órdenes recientes.**
+
+  ![Dashboard Admin](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/admin1.png)
+
+  **Portal Administrativo — Gestión de Work Orders con filtros funcionales.**
+
+  ![Work Orders Admin](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/admin2.png)
+
+  **Portal Técnico — My Schedule con calendario semanal y navegación por semana.**
+
+  ![Tech Schedule](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/tecnico1.png)
+
+  **Portal Técnico — Work Orders del técnico con tabs de filtrado por estado.**
+
+  ![Tech Work Orders](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/tecnico2.png)
+
+  **CI/CD Pipeline — GitHub Actions ejecutando el build y deploy automático a Azure.**
+
+  ![GitHub Actions
+  CI/CD](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/deploy.png)
 ### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
 En esta sección se presenta la documentación relacionada con los servicios utilizados en la primera versión del **Frontend Web Application** de EMSafe. Durante este sprint, se trabajó con una estructura inicial de servicios, datos simulados mediante **mock API** y componentes preparados para futuras integraciones con el backend.
