@@ -3104,6 +3104,90 @@ Pasos:
 5. Compilar y cargar el firmware con el comando `Upload`.
 > A continuación se presenta el Deployment Diagram del C4 Model que ilustra la infraestructura de despliegue de la solución EMSafe:
 
+## 6.2. Sprint 1
+
+### 6.2.1.1. Sprint Planning 1
+
+En este sprint, el enfoque estará en iniciar la implementación de los componentes principales de EMSafe, priorizando la configuración del backend, la comunicación con la base de datos y la preparación de los servicios que permitirán registrar, consultar y gestionar información relacionada con usuarios, dispositivos IoT, mediciones de radiación electromagnética y alertas del sistema. Asimismo, se busca establecer una base técnica ordenada para facilitar la integración posterior con la aplicación móvil, la plataforma web administrativa y el dispositivo IoT.
+
+| Sprint # | Sprint 1 |
+|---|---|
+| Sprint Planning Background | Durante la reunión se revisaron los requerimientos principales del producto, el Product Backlog y las funcionalidades necesarias para iniciar el desarrollo técnico de EMSafe. Se priorizó la implementación de la primera versión del Frontend Web Application, la estructura inicial de datos y la preparación de funcionalidades que permitan mostrar información relevante en la plataforma web. |
+| Date | 09-05-2026 |
+| Time | 3:00 p.m. |
+| Location | Reunión realizada mediante Discord |
+| Prepared By | Guimaraes Escalante, Carlos Eduardo |
+| Attendees (to planning meeting) | Sosa Soto, Oskar Rodrigo / Lopez de la Cruz, Mauro Fabricio / Guimaraes Escalante, Carlos Eduardo / Oliva Lopez, Fabian Alejandro / Lizano Coll Cardenas, Fernando Jesus |
+| Sprint Goal & User Stories |  |
+| Sprint 1 Goal | Implementar la base funcional del sistema EMSafe, desarrollando la primera versión del Frontend, la estructura de persistencia de datos y los componentes necesarios para la gestión de usuarios, dispositivos IoT, mediciones de radiación electromagnética y alertas, asegurando una arquitectura escalable, mantenible y alineada con las necesidades del producto. |
+| Sprint 1 Velocity | 15 Story Points |
+| Sum of Story Points | 26 Story Points |
+
+### 6.2.1.2. Aspect Leaders and Collaborators
+
+| Aspecto | Líder | Colaboradores |
+|---|---|---|
+| Frontend Development | Sosa Soto, Oskar Rodrigo | Lopez de la Cruz, Mauro Fabricio / Guimaraes Escalante, Carlos Eduardo |
+| UI Layout and Components | Lopez de la Cruz, Mauro Fabricio | Sosa Soto, Oskar Rodrigo / Oliva Lopez, Fabian Alejandro |
+| Navigation and Routing | Guimaraes Escalante, Carlos Eduardo | Sosa Soto, Oskar Rodrigo / Lizano Coll Cardenas, Fernando Jesus |
+| Dashboard and Data Visualization | Lizano Coll Cardenas, Fernando Jesus | Lopez de la Cruz, Mauro Fabricio / Sosa Soto, Oskar Rodrigo |
+| Mock Data and Service Integration | Oliva Lopez, Fabian Alejandro | Guimaraes Escalante, Carlos Eduardo / Lizano Coll Cardenas, Fernando Jesus |
+| Responsive Design and Styling | Lopez de la Cruz, Mauro Fabricio | Oliva Lopez, Fabian Alejandro / Sosa Soto, Oskar Rodrigo |
+| Testing and Validation | Guimaraes Escalante, Carlos Eduardo | Sosa Soto, Oskar Rodrigo / Lopez de la Cruz, Mauro Fabricio |
+| Repository Management and Deployment Preparation | Guimaraes Escalante, Carlos Eduardo | Lizano Coll Cardenas, Fernando Jesus / Oliva Lopez, Fabian Alejandro |
+
+Cada líder fue responsable de coordinar las tareas correspondientes a su aspecto dentro de la primera versión del Frontend Web Application de EMSafe. Los colaboradores apoyaron en la implementación de componentes visuales, organización de rutas, validación de interfaces, uso de datos simulados y preparación del repositorio para su posterior integración y despliegue.
+
+### 6.2.1.3. Sprint Backlog 1
+
+En este sprint, el enfoque estará en desarrollar la primera versión del **Frontend Web Application** y complementar las funcionalidades principales del **Landing Page** de EMSafe. Para ello, se priorizarán User Stories relacionadas con la visualización de secciones informativas, navegación, diseño responsive, dashboard, gestión de dispositivos, mapa de radiación, alarmas y perfil de usuario. Además, se incluirán tareas técnicas vinculadas a la integración inicial con endpoints del backend para preparar la comunicación entre la interfaz web y los servicios API.
+
+| ID | User Story | Work-Item / Task | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|
+| US46 | Visualizar la sección Características | T01: TS10 - Desarrollo de estructura HTML del Landing Page | Implementar la estructura base de la sección de características del Landing Page, respetando la organización visual definida para la primera versión. | 5 | Oskar | Done |
+| US46 | Visualizar la sección Características | T02: TS11 - Desarrollo de estilos CSS del Landing Page | Aplicar estilos visuales a la sección de características para mantener coherencia con el mock-up y la identidad visual de EMSafe. | 5 | Mauro | Done |
+| US47 | Visualizar la sección Problemática | T03: TS13 - Implementación de la Sección Problemática del Landing Page | Desarrollar la sección que explica la contaminación electromagnética y la necesidad que resuelve EMSafe. | 4 | Carlos | Done |
+| US53 | Visualizar la sección Beneficios | T04: TS12 - Implementación de la Sección Beneficios del Landing | Implementar la sección de beneficios, mostrando de forma clara las ventajas de usar la plataforma EMSafe. | 4 | Fabian | Done |
+| US50 | Testimonios de Usuarios | T05: TS14 - Implementación de la Sección Testimonios del Landing Page | Crear la sección de testimonios para mostrar experiencias de usuarios y reforzar la confianza en la solución. | 3 | Fernando | Done |
+| US52 | Visualización de la sección de ubicación del centro de investigación | T06: TS15 - Implementación de la Sección Ubicación del Landing Page | Implementar la sección de ubicación para mostrar información de localización de manera clara dentro del Landing Page. | 3 | Oskar | Done |
+| US48 | CTA Claros | T07: TS17 - Implementación de la Sección Iniciar Sesión del Landing Page | Desarrollar la sección de inicio de sesión o acceso, permitiendo que el visitante identifique fácilmente cómo ingresar a la plataforma. | 6 | Mauro | Done |
+| US48 | CTA Claros | T08: TS19 - Redirección a la Aplicación Web | Implementar el botón de redirección desde el Landing Page hacia la aplicación web de EMSafe. | 3 | Carlos | Done |
+| US49 | Responsive Design | T09: TS18 - Desarrollo de funcionalidad con JavaScript | Ajustar interacciones básicas y comportamiento responsive para mejorar la experiencia desde distintos dispositivos. | 4 | Fabian | Done |
+| US51 | Visualizar link público de acceso al Landing Page | T10: TS20 - Despliegue del Landing Page en GitHub | Publicar el Landing Page en el repositorio correspondiente y validar que el enlace público funcione correctamente. | 2 | Fernando | Done |
+| TS26 | Desarrollo de Dashboard (Frontend Web) | TS26: Desarrollo de Dashboard (Frontend Web) | Implementar el dashboard principal para mostrar un resumen general de la plataforma, métricas clave, accesos rápidos y alertas relevantes. | 6 | Oskar | Done |
+| TS22 | Desarrollo de sección Devices (Frontend Web) | TS22: Desarrollo de sección Devices (Frontend Web) | Implementar la sección de dispositivos para visualizar todos los dispositivos registrados en la plataforma. | 6 | Mauro | Done |
+| TS23 | Desarrollo de sección Map Radiation (Frontend Web) | TS23: Desarrollo de sección Map Radiation (Frontend Web) | Implementar la sección del mapa de radiación para visualizar los niveles de radiación registrados por zona geográfica. | 7 | Fernando | Done |
+| TS24 | Desarrollo de sección Alarms (Frontend Web) | TS24: Desarrollo de sección Alarms (Frontend Web) | Implementar la sección de alarmas para visualizar y gestionar las alertas generadas por la plataforma. | 6 | Carlos | Done |
+| TS25 | Desarrollo de sección Profile (Frontend Web) | TS25: Desarrollo de sección Profile (Frontend Web) | Implementar la sección de perfil para que los usuarios puedan ver y editar su información personal. | 5 | Fabian | Done |
+| US57 | API de Integración | US57: API de Integración | Preparar la integración de sensores vía API para que los datos puedan incorporarse en tiempo real a la plataforma. | 6 | Carlos | Done |
+| TS27 | Gestión de endpoints de Devices | TS27: Gestión de endpoints de Devices | Implementar y consumir los endpoints del módulo de dispositivos para mantener actualizada la información desde la aplicación. | 5 | Mauro | Done |
+| TS28 | Gestión de endpoints de Map Radiation | TS28: Gestión de endpoints de Map Radiation | Consumir los endpoints relacionados con puntos de radiación para visualizar la información en el mapa. | 5 | Fernando | Done |
+| TS29 | Gestión de endpoints de Alarms | TS29: Gestión de endpoints de Alarms | Consumir los endpoints de alarmas para mostrar, crear, actualizar y eliminar alertas del sistema. | 5 | Oskar | Done |
+| TS31 | Consulta de endpoints de Dashboard | TS31: Consulta de endpoints de Dashboard | Obtener los datos generales de la plataforma desde el dashboard para visualizar métricas clave y accesos rápidos. | 4 | Fabian | Done |
+
+### 6.2.1.4. Development Evidence for Sprint Review.
+
+La evidencia de desarrollo del Sprint 1 se sustenta en los commits realizados dentro del repositorio del **Frontend Web Application** de EMSafe. Estos commits reflejan la configuración inicial del proyecto, la implementación de la estructura base del sistema, el desarrollo de vistas principales del panel administrativo, la integración de cambios mediante pull request y ajustes finales en la documentación del repositorio.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| Front-End | main | 27ff5ec | Fix formatting in README.md | Se corrigió el formato del archivo README para mejorar la presentación de la documentación inicial del proyecto y facilitar su lectura. | 2026-05-13 |
+| Front-End | main | ec3121c | Merge pull request #1 from Desarrollo-de-soluciones-IOT-UPC/feature/ui-redesign | Se integraron en la rama principal los cambios desarrollados en la rama `feature/ui-redesign`, consolidando avances relevantes de la primera versión del frontend. | 2026-05-13 |
+| Front-End | main | b515a93 | feat: sidebar, topbar, dashboard, work orders, history and users pages | Se implementaron los componentes y páginas principales del panel administrativo, incluyendo la barra lateral, barra superior, dashboard y páginas de work orders, history y users. | 2026-05-13 |
+| Front-End | main | 75b87bb | chore: project setup, mock API and core services with i18n EN/ES | Se configuró la estructura base del proyecto, los servicios principales, una mock API para pruebas iniciales y el soporte de internacionalización en inglés y español. | 2026-05-13 |
+| Front-End | main | 1ce28bb | Initial commit - EMSafe Admin Panel | Se realizó el commit inicial del proyecto EMSafe Admin Panel, estableciendo la base del frontend para el desarrollo posterior del sprint. | 2026-05-12 |
+
+### 6.2.1.5. Testing Suite Evidence for Sprint Review.
+
+La evidencia de testing del Sprint 1 se basa en la validación realizada sobre la rama `feature/ui-redesign` del repositorio **Front-End**. Durante esta etapa se verificó el correcto funcionamiento visual de los componentes principales, la navegación entre vistas, la integración de servicios simulados y la consistencia general del panel administrativo de EMSafe.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| Front-End | feature/ui-redesign | ddbc82c | fix: fix cosmetic components in different views | Se corrigieron detalles visuales en diferentes vistas del frontend, validando la correcta presentación de los componentes y mejorando la consistencia de la interfaz. | 2026-05-13 |
+| Front-End | feature/ui-redesign | b515a93 | feat: sidebar, topbar, dashboard, work orders, history and users pages | Se verificó la implementación de las vistas principales del panel administrativo, incluyendo sidebar, topbar, dashboard, work orders, history y users pages. | 2026-05-13 |
+| Front-End | feature/ui-redesign | 75b87bb | chore: project setup, mock API and core services with i18n EN/ES | Se validó la configuración inicial del proyecto, el uso de mock API, los servicios principales y la compatibilidad de textos en inglés y español mediante i18n. | 2026-05-13 |
+| Front-End | feature/ui-redesign | 1ce28bb | Initial commit - EMSafe Admin Panel | Se revisó la estructura inicial del proyecto EMSafe Admin Panel como base para las pruebas posteriores de navegación, componentes y servicios. | 2026-05-13 |
+
 
 # Conclusiones
 
