@@ -3188,6 +3188,18 @@ La evidencia de testing del Sprint 1 se basa en la validación realizada sobre l
 | Front-End | feature/ui-redesign | 75b87bb | chore: project setup, mock API and core services with i18n EN/ES | Se validó la configuración inicial del proyecto, el uso de mock API, los servicios principales y la compatibilidad de textos en inglés y español mediante i18n. | 2026-05-13 |
 | Front-End | feature/ui-redesign | 1ce28bb | Initial commit - EMSafe Admin Panel | Se revisó la estructura inicial del proyecto EMSafe Admin Panel como base para las pruebas posteriores de navegación, componentes y servicios. | 2026-05-13 |
 
+### 6.2.1.6. Execution Evidence for Sprint Review
+
+Link de evidencia de la ejecucion del servicio web: falta link y fotos
+
+### 6.2.1.7. Services Documentation Evidence for Sprint Review
+
+### 6.2.1.8. Software Deployment Evidence for Sprint Review
+
+### 6.2.1.9. Team Collaboration Insights during Sprint
+
+
+
 
 # Conclusiones
 
