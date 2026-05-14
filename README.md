@@ -1,41 +1,42 @@
 <div style="text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 50px;">
     <img src="img/AV1/caratula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
     <h1 style="font-size: 24px;">Universidad Peruana de Ciencias Aplicadas</h1>
-    <h2 style="font-size: 24px;">Ingeniería de Software</h2>
-    <p style="margin: 10px 0; border-bottom: none;">1ASI0572 | Desarrollo de Soluciones IoT</p>
-    <p style="margin: 10px 0; border-bottom: none;">NRC: 6766</p>
-    <p style="margin: 10px 0; border-bottom: none;">Periodo: 202610</p>
+    <h2 style="font-size: 24px;">Facultad de Ingeneria</h2>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Curso:</strong> 1ASI0572 - Desarrollo de Soluciones IoT</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>NRC:</strong> 6766</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Nombre del profesor:</strong> Marco Antonio León Baca</p>
     <h2 style="font-size: 24px;">Informe de Trabajo Final</h2>
-    <p style="margin: 10px 0; border-bottom: none;">Startup: Gauss</p>
-    <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; ">Producto: EMsafe</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Nombre del grupo:</strong> Gauss</p>
+    <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; "><strong>Nombre del producto:</strong> EMsafe</p>
+    <h4 style="font-size: 18px; margin-bottom: 20px;"><strong>Integrantes</strong></h4>
     <table style="width: 50%; margin: 0 auto; text-align: center;">
         <tr>
-            <th>Nombre</th>
             <th>Código</th>
+            <th>Apellidos y Nombres</th>
         </tr>
         <tr>
-            <td>Sosa Soto, Oskar Rodrigo</td>
             <td>U202212214</td>
+            <td>Sosa Soto, Oskar Rodrigo</td>
         </tr>
         <tr>
-            <td>Lopez de la Cruz, Mauro Fabricio</td>
             <td>U202215695</td>
+            <td>Lopez de la Cruz, Mauro Fabricio</td>
         </tr>
         <tr>
-            <td>Guimaraes Escalante, Carlos Eduardo</td>
             <td>U202210364</td>
+            <td>Guimaraes Escalante, Carlos Eduardo</td>
         </tr>
         <tr>
-            <td>Oliva Lopez, Fabian Alejandro</td>
             <td>U202312013</td>
+            <td>Oliva Lopez, Fabian Alejandro</td>
         </tr>
         <tr>
-            <td>Lizano Coll Cardenas, Fernando Jesus</td>
             <td>U202214522</td>
+            <td>Lizano Coll Cardenas, Fernando Jesus</td>
         </tr>
     </table>
     </br></br>
-    <p style="margin: 10px 0; border-bottom: none;">Abril de 2026</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Lima - Abril 2025</strong></p>
 </div>
 
 <div style="page-break-before: always;">
@@ -238,6 +239,28 @@ Se presenta el resumen de commits:<br>
     - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams.](#42x6-bounded-context-software-architecture-code-level-diagrams)
       - [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams.](#42x61-bounded-context-domain-layer-class-diagrams)
       - [4.2.X.6.2. Bounded Context Database Design Diagram.](#42x62-bounded-context-database-design-diagram)
+- [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+- [5.1. Style Guidelines.](#51-style-guidelines)
+  - [5.1.1. General Style Guidelines.](#511-general-style-guidelines)
+  - [5.1.2. Web, Mobile and IoT Style Guidelines.](#512-web-mobile-and-iot-style-guidelines)
+- [5.2. Information Architecture.](#52-information-architecture)
+  - [5.2.1. Organization Systems.](#521-organization-systems)
+  - [5.2.2. Labeling Systems.](#522-labeling-systems)
+  - [5.2.3. SEO Tags and Meta Tags.](#523-seo-tags-and-meta-tags)
+  - [5.2.4. Searching Systems.](#524-searching-systems)
+  - [5.2.5. Navigation Systems.](#525-navigation-systems)
+- [5.3. Landing Page UI Design.](#53-landing-page-ui-design)
+  - [5.3.1. Landing Page Wireframe.](#531-landing-page-wireframe)
+  - [5.3.2. Landing Page Mock-up.](#532-landing-page-mock-up)
+- [5.4. Applications UX/UI Design.](#54-applications-uxui-design)
+  - [5.4.1. Applications Wireframes.](#541-applications-wireframes)
+  - [5.4.2. Applications Wireflow Diagrams.](#542-applications-wireflow-diagrams)
+  - [5.4.3. Applications Mock-ups.](#543-applications-mock-ups)
+  - [5.4.4. Applications User Flow Diagrams.](#544-applications-user-flow-diagrams)
+  - [5.5. Applications Prototyping.](#55-applications-prototyping)
+  - [5.6. IoT Device Design.](#56-iot-device-design)
+- [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 
 <div style="page-break-before: always;">
 
@@ -922,7 +945,7 @@ El mapa de empatía de Ricardo Sánchez presenta a un profesional técnico altam
 ![Empathy map 2](img/AV1/chapter-2/needfinding/empathy-mapping/empathy-mapping-segmento-2.png)
 
 
-### 2.4. Big Picture Event Storming
+## 2.4. Big Picture Event Storming
 
 En esta sección el equipo presenta los resultados de la sesión de Big Picture Event
 Storming realizada de manera colaborativa, con el objetivo de explorar y comprender
@@ -2492,11 +2515,772 @@ erDiagram
     CLIENT_RECORD ||--o{ DEVICE_INVENTORY_ITEM : "tiene instalados"
 ``` 
 
+# Capítulo V: Solution UI/UX Design
+
+## 5.1. Style Guidelines
+
+### 5.1.1. General Style Guidelines
+
+Las General Style Guidelines de EMSafe definen los fundamentos visuales y comunicativos que garantizan coherencia en todos los canales de la solución: landing page, aplicación web y aplicación móvil. Estas decisiones de diseño reflejan los valores de la marca: **precisión técnica, confianza y accesibilidad**.
+
+---
+
+**Brand Overview**
+
+EMSafe es una plataforma de monitoreo de radiación electromagnética no ionizante. Su identidad visual transmite **seguridad, claridad y tecnología responsable**. El diseño evita el alarmismo visual; en su lugar, prioriza la legibilidad de datos críticos y la toma de decisiones informada.
+
+**Colores**
+
+La paleta de EMSafe combina tonos oscuros tecnológicos con acentos de alerta estandarizados internacionalmente. Se definen los siguientes tokens de color:
+
+| Token | Nombre | Valor HEX | Uso principal |
+|---|---|---|---|
+| `--color-primary` | Azul EMSafe | `#1A6EFF` | Botones primarios, enlaces, CTA |
+| `--color-primary-dark` | Azul oscuro | `#0D4DB3` | Hover de botones, énfasis |
+| `--color-background` | Fondo oscuro | `#0D1117` | Fondo principal de la plataforma |
+| `--color-surface` | Superficie | `#161B22` | Tarjetas, paneles, modales |
+| `--color-surface-alt` | Superficie alternativa | `#21262D` | Bordes de tarjetas, separadores |
+| `--color-text-primary` | Texto principal | `#E6EDF3` | Encabezados, cuerpo de texto |
+| `--color-text-secondary` | Texto secundario | `#8B949E` | Subtítulos, metadata, labels |
+| `--color-success` | Verde seguro | `#2EA043` | Nivel de radiación bajo (safe) |
+| `--color-warning` | Amarillo alerta | `#D29922` | Nivel de radiación medio (warning) |
+| `--color-danger` | Rojo crítico | `#F85149` | Nivel de radiación alto (critical) |
+| `--color-accent` | Cian IoT | `#39D5FF` | Indicadores de sensor activo, gráficos |
+
+Los niveles de radiación se representan **siempre** con el sistema de semáforo (`success` → `warning` → `danger`) para garantizar una lectura inmediata e intuitiva en cualquier interfaz.
+ 
+---
+
+**Tipografía**
+
+EMSafe utiliza una jerarquía tipográfica de tres familias con roles diferenciados:
+
+| Familia | Uso | Importación |
+|---|---|---|
+| **Sora** | Encabezados, títulos, métricas clave | Google Fonts |
+| **IBM Plex Mono** | Valores numéricos de sensores, código, timestamps | Google Fonts |
+| **Inter** | Cuerpo de texto, formularios, párrafos | Google Fonts |
+
+---
+
+**Escala tipográfica:**
+
+| Nivel | Tamaño | Peso | Familia | Uso |
+|---|---|---|---|---|
+| Display | 48px | 700 | Sora | Hero de landing, valor principal del dashboard |
+| H1 | 32px | 700 | Sora | Títulos de sección |
+| H2 | 24px | 600 | Sora | Subtítulos |
+| H3 | 20px | 600 | Sora | Encabezados de tarjeta |
+| Body L | 16px | 400 | Inter | Párrafos, descripciones |
+| Body S | 14px | 400 | Inter | Labels, metadata |
+| Caption | 12px | 400 | Inter | Timestamps, notas auxiliares |
+| Metric | 36px | 700 | IBM Plex Mono | Lecturas de sensor en tiempo real |
+| Code | 13px | 400 | IBM Plex Mono | Valores técnicos, IDs de dispositivo |
+ 
+---
+
+**Espaciado y Grid**
+
+El sistema de espaciado sigue una base de **8px**. Los valores permitidos son múltiplos: 4, 8, 16, 24, 32, 48, 64, 80px.
+
+- **Grid web:** 12 columnas, gutter de 24px, margen lateral de 48px (desktop) y 16px (mobile).
+- **Grid móvil:** 4 columnas, gutter de 16px.
+- **Border radius:** Badges y chips: 4px. Tarjetas y paneles: 8px. Modales y bottom sheets: 12px. Botones: 6px.
+---
+
+**Iconografía**
+
+Se utiliza la librería **Phosphor Icons** en su variante `Regular` para interfaz general y `Bold` para estados de alerta crítica. Los iconos se renderizan a tamaños estandarizados: 16px (inline), 20px (botones), 24px (navegación), 32px (cards de métricas). Los iconos de nivel de radiación siempre van acompañados de su color semáforo correspondiente.
+ 
+---
+
+**Tono de comunicación**
+
+EMSafe comunica con un tono **técnico pero accesible**: preciso en los datos, claro en las recomendaciones y nunca alarmista. Las alertas usan lenguaje directo y orientado a la acción:
+
+- **Correcto:** "Nivel de radiación elevado detectado en Sala Principal. Se recomienda alejar el router al menos 2 metros."
+- **Incorrecto:** "¡PELIGRO! ¡Radiación peligrosa detectada!"
+  Los textos del sistema evitan tecnicismos innecesarios en la interfaz de usuario final (segmento hogar), y pueden incluir terminología técnica en la plataforma web administrativa (segmento empresarial/admin).
+
+---
+
+**Estados de componentes**
+
+Todos los componentes interactivos deben implementar los siguientes estados:
+
+| Estado | Comportamiento visual |
+|---|---|
+| Default | Color base del componente |
+| Hover | Ligero aumento de brillo o color `primary-dark` |
+| Active / Pressed | Reducción de escala `scale(0.97)` |
+| Focused | Outline de 2px en `--color-primary` |
+| Disabled | Opacidad `0.4`, cursor `not-allowed` |
+| Loading | Skeleton shimmer o spinner en `--color-accent` |
+| Error | Borde en `--color-danger`, icono de advertencia |
+| Success | Borde en `--color-success`, icono de verificación |
+ 
+---
+
+### 5.1.2. Web, Mobile and IoT Style Guidelines
+
+Esta sección especifica las adaptaciones de las General Style Guidelines para cada plataforma de la solución EMSafe: plataforma web administrativa, aplicación móvil y dispositivo IoT.
+ 
+---
+
+**Web Application Style Guidelines**
+
+La plataforma web de EMSafe está dirigida a **Administradores y Técnicos de campo**. Su diseño prioriza la densidad de información, la gestión de múltiples dispositivos y la generación de reportes.
+
+*Layout y estructura:*
+
+- Sidebar de navegación fija de 240px con colapso a 64px en modo compacto.
+- Header de 64px con breadcrumb, buscador global y notificaciones.
+- Área de contenido con máximo ancho de 1280px centrado.
+- Dashboard principal en grid de 3 columnas para métricas y 2 columnas para gráficos.
+  *Componentes específicos web:*
+
+| Componente | Especificación |
+|---|---|
+| Data Table | Paginación de 20 ítems, columnas ordenables, filtros inline |
+| Chart | Librería Recharts; colores del sistema semáforo para niveles EMF |
+| Calendar | Vista mensual/semanal/diaria; eventos con código de color por tipo de cita |
+| Badge de estado | Pills de 6px radius; colores según `DeviceStatus` |
+| Mapa de radiación | Integración con Leaflet.js; heatmap con paleta `success→warning→danger` |
+| Modal | Overlay 60% opacidad; ancho máximo 640px; animación slide-up 200ms |
+| Toast | Posición inferior derecha; duración 4s; íconos Phosphor |
+
+*Responsividad web:*
+
+| Breakpoint | Ancho | Comportamiento |
+|---|---|---|
+| Desktop L | ≥ 1440px | Layout completo, sidebar expandido |
+| Desktop | ≥ 1024px | Layout completo, sidebar colapsable |
+| Tablet | ≥ 768px | Sidebar colapsado por defecto, grid 2 columnas |
+| Mobile web | < 768px | Sidebar como drawer, grid 1 columna |
+ 
+---
+
+**Mobile Application Style Guidelines**
+
+La aplicación móvil de EMSafe está dirigida al **usuario final** (segmento hogar y personal de empresa). Su diseño prioriza la lectura rápida del nivel de radiación actual, las alertas y el acceso al chatbot ASTRA.
+
+*Dimensiones y áreas seguras:*
+
+- Diseño base para pantalla de 390px × 844px (iPhone 14 Pro como referencia).
+- Safe area insets respetados: top 44px, bottom 34px.
+- Bottom navigation bar de 56px de alto.
+- Botón de acción flotante (FAB) de 56px × 56px, posicionado 80px desde el fondo.
+  *Navegación móvil — Bottom Tab Bar:*
+
+| Tab | Ícono Phosphor | Label |
+|---|---|---|
+| Inicio | `House` | Inicio |
+| Monitoreo | `Waves` | Monitoreo |
+| Alertas | `Bell` | Alertas |
+| Perfil | `User` | Perfil |
+
+El badge en "Alertas" se muestra en `--color-danger` cuando hay alertas activas no leídas.
+
+*Componentes específicos móvil:*
+
+| Componente | Especificación |
+|---|---|
+| Gauge de radiación | Componente circular; arco de 270°; colores semáforo; valor central en IBM Plex Mono 36px bold |
+| Sensor card | 100% ancho, padding 16px, radius 8px; indicador online/offline en `--color-accent` |
+| Alert card | Swipe-to-dismiss; franja lateral de color según severidad |
+| Bottom sheet | Altura variable; drag indicator 36px × 4px; radius superior 16px |
+| Chatbot ASTRA | Pantalla full; burbujas de chat; input sticky en fondo; botón enviar en `--color-primary` |
+| Mapa domicilio | Integración Mapbox; marcadores de sensor con color semáforo; zoom 17 por defecto |
+
+*Gestos e interacciones:*
+
+- **Pull to refresh** en pantallas de monitoreo y alertas.
+- **Swipe left** en alert cards para marcar como leída o descartar.
+- **Long press** en sensor card para acceder a opciones rápidas (apagado remoto, historial).
+- **Haptic feedback** en alertas críticas (patrón de vibración `[100ms, 50ms, 100ms]`).
+---
+
+**IoT Device Style Guidelines**
+
+El dispositivo sensor de EMSafe (ESP32 con sensor GY-273) comunica su estado al usuario mediante **indicadores LED RGB** físicos. Se definen los siguientes patrones:
+
+| Estado del dispositivo | Color LED | Patrón |
+|---|---|---|
+| Encendido / Iniciando | Blanco | Pulso lento (1s on / 1s off) |
+| Conectado a WiFi | Azul | Encendido fijo |
+| Transmitiendo datos | Cian (`#39D5FF`) | Parpadeo rápido (200ms) |
+| Nivel de radiación bajo | Verde (`#2EA043`) | Encendido fijo |
+| Nivel de radiación medio | Amarillo (`#D29922`) | Parpadeo lento (1s) |
+| Nivel de radiación alto | Rojo (`#F85149`) | Parpadeo rápido (300ms) |
+| Sin conexión WiFi | Naranja | Parpadeo lento (2s) |
+| Error / Falla | Rojo | 3 destellos rápidos y pausa |
+| Firmware actualizando | Azul | Pulso continuo |
+| Apagado por comando remoto | Morado | 2 destellos y apagado |
+
+Los colores del LED físico se alinean intencionalmente con el sistema semáforo de la plataforma digital, creando **coherencia perceptual** entre el hardware y las interfaces digitales.
+
+*Etiquetado físico del dispositivo:*
+
+El dispositivo incluye una etiqueta adhesiva con logotipo EMSafe, QR code de vinculación único, ID de dispositivo en `IBM Plex Mono` 10px, e icono de señal WiFi con escala EMF de referencia rápida (tres franjas: verde / amarillo / rojo).
+
+## 5.2. Information Architecture
+
+### 5.2.1. Organization Systems
+
+Esta sección describe los sistemas de organización implementados tanto en la Landing Page actual como en futuras versiones de la plataforma EMSafe. Se definen los esquemas jerárquicos, secuenciales y temáticos utilizados para estructurar la información de manera clara, eficiente y alineada con los objetivos del proyecto. Esto garantiza una navegación fluida y una experiencia coherente para los distintos tipos de usuarios.
+
+## Landing Page
+
+### Grupo de Usuarios 1: Personas interesadas en su salud
+
+#### Organización jerárquica
+La estructura de la Landing Page está pensada para captar rápidamente la atención de este perfil de usuario, seguida de las características principales del sistema, sus beneficios a nivel personal, la problemática global, testimonios de usuarios reales y finalmente el contacto. Esta jerarquía permite al visitante comprender de forma progresiva cómo EMSafe puede ayudarle directamente en su vida diaria.
+
+### Grupo de Usuarios 2: Empresas que operan maquinaria de emisión electromagnética
+
+#### Organización jerárquica
+Este tipo de usuario encuentra primero información orientada al valor organizacional del sistema: monitoreo en tiempo real, prevención de riesgos laborales y cumplimiento normativo. Luego, se presenta evidencia del impacto positivo (testimonios de empresas) y un formulario de contacto para solicitar una demo adaptada a sus necesidades.
+
+--------
+
+## Aplicación Móvil
+
+### Grupo de Usuarios 1: Personas interesadas en su salud
+
+#### Organización jerárquica
+La aplicación móvil está estructurada para que el usuario acceda primero a su estado actual de exposición electromagnética mediante el Home Dashboard, que muestra el nivel de radiación en tiempo real. Desde allí se puede navegar hacia el monitoreo detallado, reportes históricos, recomendaciones de salud. Esta jerarquía garantiza que la información más crítica (el nivel de radiación actual) esté siempre accesible desde el inicio.
+
+### Grupo de Usuarios 2: Empresas que operan maquinaria de emisión electromagnética
+
+#### Organización matricial:
+En el contexto empresarial, la aplicación móvil permitirá a los responsables de seguridad visualizar una vista matricial con el estado de múltiples sensores IoT distribuidos en diferentes áreas o plantas de la organización, mostrando simultáneamente los niveles de exposición de cada zona y permitiendo identificar puntos críticos de forma inmediata.
+
+### 5.2.2. Labeling Systems
+
+A continuación, se presenta el sistema de etiquetado utilizado tanto en la Landing Page como en la Aplicación Móvil de EMSafe, el cual busca representar de forma clara, concisa y accesible los distintos grupos de información. Las etiquetas seleccionadas tienen un lenguaje simple y directo para facilitar la navegación y evitar confusión en los usuarios.
+
+## Aplicación Web
+
+Actualmente, la Landing Page cuenta con secciones identificadas con headings claros y minimalistas, orientados a explicar el funcionamiento y propósito de la plataforma.
+
+| Sección | Etiqueta Utilizada | Descripción |
+|---|---|---|
+| Inicio / Hero | Inicio | Presentación del nombre, descripción del sistema y llamado a la acción principal (CTA). |
+| Características | Características | Funciones clave como monitoreo, análisis y alertas, explicadas de forma visual mediante tarjetas. |
+| Beneficios | Beneficios | Ventajas del sistema para usuarios individuales y empresas, mostradas en tarjetas comparativas. |
+| Problemática | Problemática | Contexto sobre los riesgos de la radiación electromagnética y la necesidad de EMSafe. |
+| Testimonios | Testimonios | Experiencias breves de distintos usuarios, etiquetados por rol y nombre completo. |
+| Ubicación | Ubicación | Mapa que muestra la localización del equipo desarrollador del proyecto. |
+| Contacto | Contacto | Formulario corto con campos básicos para recibir información o solicitar demo. |
+
+---
+
+## Aplicación Móvil
+
+La aplicación móvil utiliza etiquetas cortas e iconográficas en la barra de navegación inferior, complementadas por títulos de pantalla en cada vista. Las etiquetas están diseñadas para ser reconocibles de forma inmediata, reduciendo la carga cognitiva del usuario.
+
+| Pantalla / Sección | Etiqueta Utilizada | Descripción |
+|---|---|---|
+| Splash Screen | EMSafe | Pantalla de carga inicial con logo e identidad visual de la marca. |
+| Bienvenida | Bienvenido a EMSafe | Introducción al sistema con opción de registro o inicio de sesión. |
+| Verificación OTP | Verificación | Confirmación de identidad mediante código de un solo uso enviado por correo. |
+| Autenticación Biométrica | Acceso Biométrico | Autenticación mediante huella dactilar o reconocimiento facial para mayor seguridad. |
+| Vinculación de Sensor | Vincular Sensor | Proceso guiado para emparejar el dispositivo IoT con la cuenta del usuario. |
+| Home Dashboard | Inicio | Panel principal con nivel de radiación actual, estado del sensor y accesos rápidos. |
+| Monitoreo en Tiempo Real | Monitoreo | Lectura continua de campos electromagnéticos con indicadores visuales de nivel. |
+| Mapa de Radiación (Hogar) | Mi Entorno | Visualización del nivel de radiación distribuida en el espacio del usuario. |
+| Mapa de Radiación (Ciudad) | Mapa Ciudad | Mapa con niveles de radiación electromagnética registrados en distintas zonas urbanas. |
+| Centro de Alertas | Alertas | Listado de alertas activas e historial de notificaciones por niveles de exposición. |
+| Protocolo de Emergencia | Emergencia | Guía paso a paso ante detección de niveles críticos de radiación. |
+| Insights de Salud | Salud | Análisis personalizados del impacto de la radiación en la salud del usuario. |
+| Recomendaciones de Salud | Recomendaciones | Acciones específicas para reducir la exposición electromagnética del usuario. |
+| Exportar Reporte Médico | Exportar Reporte | Generación y descarga de informe de exposición para compartir con profesionales de salud. |
+| Reproducción Histórica | Historial | Revisión cronológica de los niveles de radiación registrados en el pasado. |
+| Reporte Semanal | Reporte Semanal | Resumen visual de la exposición electromagnética acumulada durante la semana. |
+| Control de Dispositivos | Dispositivos | Gestión de aparatos conectados con posibilidad de activación/desactivación remota. |
+| Motor de Automatización | Automatización | Configuración de reglas automáticas para controlar dispositivos según umbrales de radiación. |
+| Asistente ASTRA | ASTRA | Asistente de inteligencia artificial para consultas sobre radiación y recomendaciones personalizadas. |
+
+### 5.2.3. SEO Tags and Meta Tags
+
+Los SEO Tags y Meta Tags son esenciales para mejorar el posicionamiento del web y mobile application de EMSafe en los motores de búsqueda y facilitar que los usuarios encuentren la plataforma al buscar soluciones relacionadas con salud, tecnología y monitoreo ambiental.
+
+### Web Application
+
+**Title:** EMsafe App – Panel de Monitoreo Electromagnético  
+
+**Description:**  
+Accede a tu panel de control EMsafe para visualizar niveles de radiación en tiempo real, gestionar sensores IoT y recibir alertas personalizadas.
+
+**Keywords:**  
+panel de control EMF, gestión de sensores IoT, monitoreo electromagnético, alertas de radiación, plataforma de bienestar, radiación en el trabajo.
+
+**Author:**  
+EMSafe Team
+
+---
+
+### Mobile Application
+
+**Title:** EMsafe – Monitor de Radiación Electromagnética  
+
+**Description:**  
+Monitorea en tiempo real la radiación electromagnética de tu entorno, recibe alertas personalizadas y accede a recomendaciones de salud desde tu dispositivo móvil.
+
+**Keywords:**  
+monitoreo EMF móvil, radiación electromagnética, sensores IoT, alertas de salud, campos electromagnéticos, protección radiación, bienestar, ASTRA asistente IA.
+
+**Author:**  
+EMSafe Team
+
+### 5.2.4. Searching Systems
+
+### 5.2.5. Navigation Systems
+
+## 5.3. Landing Page UI Design
+
+Las landing pages cumplen un papel clave en la transformación de visitantes en posibles usuarios, ya que utilizan mensajes persuasivos, presentan información relevante del producto y ofrecen un diseño fácil de usar. Considerando su importancia, se ha planteado una propuesta inicial de diseño que se adapta tanto a dispositivos móviles como a computadoras de escritorio.
+
+En el caso de la versión para escritorio, se ha diseñado una interfaz estructurada en secciones visuales claras, con opciones de navegación bien definidas y descripciones breves de las principales funcionalidades del sitio. El propósito es lograr que el usuario comprenda rápidamente el contenido y reducir al mínimo cualquier obstáculo en su experiencia. Además, se ha incorporado una barra de navegación fija, lo que permite acceder a ella en todo momento y favorece un recorrido más fluido por la landing page.
+
+### 5.3.1. Landing Page Wireframe
+
+En esta sección se presentarán los wireframes de la versión de la versión con menos exactitud del Landing Page.
+
+* **Sección Inicio**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-inicio.png" alt="Inicio" width="600"/><br>
+
+* **Sección Beneficios**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-beneficios.png" alt="Inicio" width="600"/><br>
+
+* **Sección Problema**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-problema.png" alt="Inicio" width="600"/><br>
+
+* **Sección Ubicacion**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-ubicacion.png" alt="Inicio" width="600"/><br>
+
+* **Sección Contacto**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-contacto.png" alt="Inicio" width="600"/><br>
+
+Figma: [https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node-id=14-9&t=m71F7tjyaI4ySMIN-1](https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node-id=14-9&t=m71F7tjyaI4ySMIN-1)
+
+### 5.3.2. Landing Page Mock-up
+En esta sección se muestra el mockup de la landing page desarrollada para la plataforma EMSafe. A diferencia del wireframe, este diseño presenta una aproximación más realista al producto final, integrando elementos visuales como colores, tipografías, gráficos y la organización del contenido, alineados con la identidad de la marca. El propósito de esta propuesta es evidenciar cómo se transmitirán los beneficios principales del sistema, el problema que busca solucionar, su localización, y cómo se facilitará el contacto con posibles usuarios.
+
+* **Sección Inicio**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-inicio.png" alt="Inicio" width="600"/><br>
+
+* **Sección Beneficios**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-beneficios.png" alt="Inicio" width="600"/><br>
+
+* **Sección Problema**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-problema.png" alt="Inicio" width="600"/><br>
+
+* **Sección Testimonio**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-testimonio.png" alt="Inicio" width="600"/><br>
+
+* **Sección Ubicacion**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-ubicacion.png" alt="Inicio" width="600"/><br>
+
+* **Sección Contacto**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-contacto.png" alt="Inicio" width="600"/><br>
+
+Figma: [https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node-id=14-9&t=m71F7tjyaI4ySMIN-1](https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node-id=14-9&t=m71F7tjyaI4ySMIN-1)
+
+## 5.4. Applications UX/UI Design
+
+### 5.4.1. Applications Wireframes
+
+### 5.4.2. Applications Wireflow Diagrams
+
+### 5.4.3. Applications Mock-ups
+
+### 5.4.4. Applications User Flow Diagrams
+
+## 5.5. Applications Prototyping
+
+## 5.6. IoT Device Design
+
+# Capítulo VI: Product Implementation, Validation & Deployment
+
+## 6.1. Software Configuration Management
+
+En esta sección el equipo establece las decisiones y convenciones que permitirán mantener la consistencia durante el ciclo de vida del producto. Se incluyen secciones para la configuración del entorno de desarrollo, la gestión del código fuente, las convenciones de estilo y la configuración de despliegue.
+
+### 6.1.1. Software Development Environment Configuration
+
+A continuación se especifican las herramientas de software utilizadas por el equipo para el desarrollo de la solución EMSafe, organizadas por tipo de actividad:
+
+**Project Management**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| GitHub | Plataforma para el alojamiento de repositorios y gestión de versiones del código fuente. | https://github.com |
+| Trello | Gestión de tareas y seguimiento del progreso del equipo mediante tableros Kanban. | https://trello.com |
+
+**Requirements Management**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Miro | Elaboración de Event Storming (Big Picture y Design-Level), mapas de contexto y diagramas colaborativos. | https://miro.com |
+| UXPressia | Creación de User Personas, User Journey Maps y Empathy Maps. | https://uxpressia.com |
+
+**Product UX/UI Design**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Figma | Diseño de wireframes, mockups y prototipos interactivos de la aplicación web y móvil. | https://figma.com |
+
+**Software Development**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Visual Studio Code | Editor de código principal para el desarrollo del Frontend Web y Landing Page. | https://code.visualstudio.com |
+| IntelliJ IDEA | IDE para el desarrollo del Backend con Spring Boot (Java). | https://www.jetbrains.com/idea |
+| Angular CLI | Framework para el desarrollo del Frontend Web Application con TypeScript. | https://angular.io/cli |
+| Spring Boot | Framework para el desarrollo del Backend RESTful Web Service. | https://spring.io/projects/spring-boot |
+| Wokwi | Simulador en línea para el desarrollo y prueba del Embedded Application en ESP32. | https://wokwi.com |
+| Arduino Framework (C++) | Framework para la programación del dispositivo IoT (ESP32). | https://www.arduino.cc |
+
+**Software Testing**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Postman | Pruebas manuales de los endpoints del RESTful Web Service. | https://www.postman.com |
+
+**Software Deployment**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| GitHub Pages | Despliegue del Landing Page directamente desde el repositorio de GitHub. | https://pages.github.com |
+| Vercel | Despliegue del Frontend Web Application. | https://vercel.com |
+| Railway | Despliegue del Backend RESTful Web Service. | https://railway.app |
+
+**Software Documentation**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Markdown | Formato de escritura utilizado para la documentación del informe en GitHub. | https://www.markdownguide.org |
+| Structurizr | Elaboración de diagramas de arquitectura de software bajo el modelo C4. | https://structurizr.com |
+| LucidChart | Elaboración de diagramas complementarios de arquitectura y flujos. | https://lucidchart.com |
+ 
+---
+
+### 6.1.2. Source Code Management
+
+El equipo utiliza **GitHub** como plataforma de control de versiones y colaboración. A continuación se listan los repositorios correspondientes a cada producto digital de la solución EMSafe:
+
+| Producto | Repositorio |
+|---|---|
+| Informe | https://github.com/Desarrollo-de-soluciones-IOT-UPC/Informe |
+| Landing Page | https://github.com/Desarrollo-de-soluciones-IOT-UPC/landing-page |
+| Frontend Web Application | https://github.com/Desarrollo-de-soluciones-IOT-UPC/Front-End |
+| Backend Web Services | https://github.com/Desarrollo-de-soluciones-IOT-UPC/Back-End |
+| Embedded Application | |
+
+**GitFlow como Workflow de control de versiones**
+
+El equipo implementa **GitFlow** como modelo de branching. Las ramas definidas son:
+
+- `main`: rama principal que contiene el código en producción. Solo recibe merges desde `release` o `hotfix`.
+- `develop`: rama de integración continua donde se consolidan los cambios de los feature branches antes de un release.
+- `feature/<nombre>`: ramas para el desarrollo de nuevas funcionalidades. Se crean desde `develop` y se fusionan de vuelta a `develop` al completarse. Ejemplo: `feature/emf-alert-module`.
+
+**Conventional Commits**
+
+Para los mensajes de commits se aplica la convención **Conventional Commits**, con el formato:
+
+```
+<type>(<scope>): <description>
+```
+
+Los tipos permitidos son:
+
+| Tipo | Uso |
+|---|---|
+| `feat` | Nueva funcionalidad |
+| `fix` | Corrección de errores |
+| `docs` | Cambios en documentación |
+| `style` | Cambios de formato sin afectar lógica |
+| `refactor` | Refactorización de código |
+| `test` | Adición o corrección de pruebas |
+| `chore` | Tareas de mantenimiento o configuración |
+
+Ejemplo: `feat(sensor): add threshold-based EMF alert trigger`
+
+---
+
+### 6.1.3. Source Code Style Guide & Conventions
+
+El equipo adopta las siguientes guías de estilo para cada lenguaje o tecnología utilizada en la solución. Todo el código fuente se escribe en **inglés**.
+
+**HTML**
+- Guía adoptada: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- Usar indentación de 2 espacios.
+- Todos los atributos deben estar en minúsculas y entre comillas dobles.
+- Incluir el atributo `alt` en todas las imágenes.
+  **CSS / SCSS**
+- Guía adoptada: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- Usar notación en `kebab-case` para nombres de clases.
+- Evitar el uso de `!important`.
+- Organizar las propiedades en orden alfabético.
+  **TypeScript / Angular**
+- Guía adoptada: [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html) y [Angular Coding Style Guide](https://angular.io/guide/styleguide)
+- Usar `camelCase` para variables y funciones; `PascalCase` para clases y componentes.
+- Tipar explícitamente todas las variables y parámetros de funciones.
+- Un componente por archivo; nomenclatura: `feature-name.component.ts`.
+  **Java / Spring Boot**
+- Guía adoptada: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+- Usar `camelCase` para métodos y variables; `PascalCase` para clases.
+- Seguir el patrón de capas: Controller → Service → Repository.
+- Documentar con Javadoc los métodos públicos relevantes.
+  **C++ (Arduino / ESP32)**
+- Usar `camelCase` para variables y funciones; `UPPER_SNAKE_CASE` para constantes.
+- Preferir `millis()` sobre `delay()` para temporización no bloqueante.
+- Cada función debe tener una única responsabilidad.
+- Comentar en inglés las secciones críticas del código.
+  **Gherkin (.feature)**
+- Guía adoptada: [Gherkin Conventions for Readable Specifications](https://cucumber.io/docs/gherkin/)
+- Usar el formato `Given / When / Then` en inglés.
+- Nombrar los archivos en `kebab-case`: `emf-alert.feature`.
+- Cada escenario debe ser independiente y cubrir un único caso de prueba.
+
+---
+
+### 6.1.4. Software Deployment Configuration
+
+En esta sección se describe la configuración de despliegue para cada producto digital de la solución EMSafe, detallando los pasos necesarios para publicar cada producto a partir de los repositorios de código fuente.
+
+**Landing Page**
+
+La Landing Page se despliega mediante **GitHub Pages** directamente desde el repositorio `landing-page`.
+
+Pasos:
+1. Asegurarse de que el archivo `index.html` se encuentre en la raíz o en la carpeta `/docs` de la rama `main`.
+2. Ir a `Settings > Pages` en el repositorio de GitHub.
+3. Seleccionar la rama `main` y la carpeta raíz (`/root`) como fuente.
+4. GitHub Pages generará automáticamente la URL de despliegue.
+   URL de despliegue: ``
+
+**Frontend Web Application**
+
+El Frontend se despliega mediante **Vercel** conectado al repositorio `Front-End`.
+
+Pasos:
+1. Crear un proyecto en Vercel e importar el repositorio `Front-End` desde GitHub.
+2. Configurar el comando de build: `ng build --configuration production`.
+3. Configurar el directorio de salida: `dist/<nombre-del-proyecto>`.
+4. Vercel detecta automáticamente los cambios en la rama `main` y realiza el redespliegue.
+   **Backend Web Services**
+
+El Backend se despliega mediante **Railway** conectado al repositorio `Back-End`.
+
+Pasos:
+1. Crear un nuevo proyecto en Railway e importar el repositorio `Back-End` desde GitHub.
+2. Configurar las variables de entorno necesarias (credenciales de base de datos, puertos, etc.).
+3. Railway detecta el proyecto Spring Boot y ejecuta automáticamente `mvn clean install`.
+4. El servicio queda expuesto en una URL pública generada por Railway.
+
+**Embedded Application**
+
+El firmware del dispositivo IoT (ESP32) se despliega de forma local desde el repositorio `Embedded-Application`.
+
+Pasos:
+1. Clonar el repositorio `Embedded-Application`.
+2. Abrir el proyecto en el Arduino IDE o PlatformIO.
+3. Conectar el dispositivo ESP32 mediante USB.
+4. Seleccionar la placa `ESP32 Dev Module` y el puerto COM correspondiente.
+5. Compilar y cargar el firmware con el comando `Upload`.
+> A continuación se presenta el Deployment Diagram del C4 Model que ilustra la infraestructura de despliegue de la solución EMSafe:
+
+## 6.2. Sprint 1
+
+### 6.2.1.1. Sprint Planning 1
+
+En este sprint, el enfoque estará en iniciar la implementación de los componentes principales de EMSafe, priorizando la configuración del backend, la comunicación con la base de datos y la preparación de los servicios que permitirán registrar, consultar y gestionar información relacionada con usuarios, dispositivos IoT, mediciones de radiación electromagnética y alertas del sistema. Asimismo, se busca establecer una base técnica ordenada para facilitar la integración posterior con la aplicación móvil, la plataforma web administrativa y el dispositivo IoT.
+
+| Sprint # | Sprint 1 |
+|---|---|
+| Sprint Planning Background | Durante la reunión se revisaron los requerimientos principales del producto, el Product Backlog y las funcionalidades necesarias para iniciar el desarrollo técnico de EMSafe. Se priorizó la implementación de la primera versión del Frontend Web Application, la estructura inicial de datos y la preparación de funcionalidades que permitan mostrar información relevante en la plataforma web. |
+| Date | 09-05-2026 |
+| Time | 3:00 p.m. |
+| Location | Reunión realizada mediante Discord |
+| Prepared By | Guimaraes Escalante, Carlos Eduardo |
+| Attendees (to planning meeting) | Sosa Soto, Oskar Rodrigo / Lopez de la Cruz, Mauro Fabricio / Guimaraes Escalante, Carlos Eduardo / Oliva Lopez, Fabian Alejandro / Lizano Coll Cardenas, Fernando Jesus |
+| Sprint Goal & User Stories |  |
+| Sprint 1 Goal | Implementar la base funcional del sistema EMSafe, desarrollando la primera versión del Frontend, la estructura de persistencia de datos y los componentes necesarios para la gestión de usuarios, dispositivos IoT, mediciones de radiación electromagnética y alertas, asegurando una arquitectura escalable, mantenible y alineada con las necesidades del producto. |
+| Sprint 1 Velocity | 15 Story Points |
+| Sum of Story Points | 26 Story Points |
+
+### 6.2.1.2. Aspect Leaders and Collaborators
+
+| Aspecto | Líder | Colaboradores |
+|---|---|---|
+| Frontend Development | Sosa Soto, Oskar Rodrigo | Lopez de la Cruz, Mauro Fabricio / Guimaraes Escalante, Carlos Eduardo |
+| UI Layout and Components | Lopez de la Cruz, Mauro Fabricio | Sosa Soto, Oskar Rodrigo / Oliva Lopez, Fabian Alejandro |
+| Navigation and Routing | Guimaraes Escalante, Carlos Eduardo | Sosa Soto, Oskar Rodrigo / Lizano Coll Cardenas, Fernando Jesus |
+| Dashboard and Data Visualization | Lizano Coll Cardenas, Fernando Jesus | Lopez de la Cruz, Mauro Fabricio / Sosa Soto, Oskar Rodrigo |
+| Mock Data and Service Integration | Oliva Lopez, Fabian Alejandro | Guimaraes Escalante, Carlos Eduardo / Lizano Coll Cardenas, Fernando Jesus |
+| Responsive Design and Styling | Lopez de la Cruz, Mauro Fabricio | Oliva Lopez, Fabian Alejandro / Sosa Soto, Oskar Rodrigo |
+| Testing and Validation | Guimaraes Escalante, Carlos Eduardo | Sosa Soto, Oskar Rodrigo / Lopez de la Cruz, Mauro Fabricio |
+| Repository Management and Deployment Preparation | Guimaraes Escalante, Carlos Eduardo | Lizano Coll Cardenas, Fernando Jesus / Oliva Lopez, Fabian Alejandro |
+
+Cada líder fue responsable de coordinar las tareas correspondientes a su aspecto dentro de la primera versión del Frontend Web Application de EMSafe. Los colaboradores apoyaron en la implementación de componentes visuales, organización de rutas, validación de interfaces, uso de datos simulados y preparación del repositorio para su posterior integración y despliegue.
+
+### 6.2.1.3. Sprint Backlog 1
+
+En este sprint, el enfoque estará en desarrollar la primera versión del **Frontend Web Application** y complementar las funcionalidades principales del **Landing Page** de EMSafe. Para ello, se priorizarán User Stories relacionadas con la visualización de secciones informativas, navegación, diseño responsive, dashboard, gestión de dispositivos, mapa de radiación, alarmas y perfil de usuario. Además, se incluirán tareas técnicas vinculadas a la integración inicial con endpoints del backend para preparar la comunicación entre la interfaz web y los servicios API.
+
+| ID | User Story | Work-Item / Task | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|
+| US46 | Visualizar la sección Características | T01: TS10 - Desarrollo de estructura HTML del Landing Page | Implementar la estructura base de la sección de características del Landing Page, respetando la organización visual definida para la primera versión. | 5 | Oskar | Done |
+| US46 | Visualizar la sección Características | T02: TS11 - Desarrollo de estilos CSS del Landing Page | Aplicar estilos visuales a la sección de características para mantener coherencia con el mock-up y la identidad visual de EMSafe. | 5 | Mauro | Done |
+| US47 | Visualizar la sección Problemática | T03: TS13 - Implementación de la Sección Problemática del Landing Page | Desarrollar la sección que explica la contaminación electromagnética y la necesidad que resuelve EMSafe. | 4 | Carlos | Done |
+| US53 | Visualizar la sección Beneficios | T04: TS12 - Implementación de la Sección Beneficios del Landing | Implementar la sección de beneficios, mostrando de forma clara las ventajas de usar la plataforma EMSafe. | 4 | Fabian | Done |
+| US50 | Testimonios de Usuarios | T05: TS14 - Implementación de la Sección Testimonios del Landing Page | Crear la sección de testimonios para mostrar experiencias de usuarios y reforzar la confianza en la solución. | 3 | Fernando | Done |
+| US52 | Visualización de la sección de ubicación del centro de investigación | T06: TS15 - Implementación de la Sección Ubicación del Landing Page | Implementar la sección de ubicación para mostrar información de localización de manera clara dentro del Landing Page. | 3 | Oskar | Done |
+| US48 | CTA Claros | T07: TS17 - Implementación de la Sección Iniciar Sesión del Landing Page | Desarrollar la sección de inicio de sesión o acceso, permitiendo que el visitante identifique fácilmente cómo ingresar a la plataforma. | 6 | Mauro | Done |
+| US48 | CTA Claros | T08: TS19 - Redirección a la Aplicación Web | Implementar el botón de redirección desde el Landing Page hacia la aplicación web de EMSafe. | 3 | Carlos | Done |
+| US49 | Responsive Design | T09: TS18 - Desarrollo de funcionalidad con JavaScript | Ajustar interacciones básicas y comportamiento responsive para mejorar la experiencia desde distintos dispositivos. | 4 | Fabian | Done |
+| US51 | Visualizar link público de acceso al Landing Page | T10: TS20 - Despliegue del Landing Page en GitHub | Publicar el Landing Page en el repositorio correspondiente y validar que el enlace público funcione correctamente. | 2 | Fernando | Done |
+| TS26 | Desarrollo de Dashboard (Frontend Web) | TS26: Desarrollo de Dashboard (Frontend Web) | Implementar el dashboard principal para mostrar un resumen general de la plataforma, métricas clave, accesos rápidos y alertas relevantes. | 6 | Oskar | Done |
+| TS22 | Desarrollo de sección Devices (Frontend Web) | TS22: Desarrollo de sección Devices (Frontend Web) | Implementar la sección de dispositivos para visualizar todos los dispositivos registrados en la plataforma. | 6 | Mauro | Done |
+| TS23 | Desarrollo de sección Map Radiation (Frontend Web) | TS23: Desarrollo de sección Map Radiation (Frontend Web) | Implementar la sección del mapa de radiación para visualizar los niveles de radiación registrados por zona geográfica. | 7 | Fernando | Done |
+| TS24 | Desarrollo de sección Alarms (Frontend Web) | TS24: Desarrollo de sección Alarms (Frontend Web) | Implementar la sección de alarmas para visualizar y gestionar las alertas generadas por la plataforma. | 6 | Carlos | Done |
+| TS25 | Desarrollo de sección Profile (Frontend Web) | TS25: Desarrollo de sección Profile (Frontend Web) | Implementar la sección de perfil para que los usuarios puedan ver y editar su información personal. | 5 | Fabian | Done |
+| US57 | API de Integración | US57: API de Integración | Preparar la integración de sensores vía API para que los datos puedan incorporarse en tiempo real a la plataforma. | 6 | Carlos | Done |
+| TS27 | Gestión de endpoints de Devices | TS27: Gestión de endpoints de Devices | Implementar y consumir los endpoints del módulo de dispositivos para mantener actualizada la información desde la aplicación. | 5 | Mauro | Done |
+| TS28 | Gestión de endpoints de Map Radiation | TS28: Gestión de endpoints de Map Radiation | Consumir los endpoints relacionados con puntos de radiación para visualizar la información en el mapa. | 5 | Fernando | Done |
+| TS29 | Gestión de endpoints de Alarms | TS29: Gestión de endpoints de Alarms | Consumir los endpoints de alarmas para mostrar, crear, actualizar y eliminar alertas del sistema. | 5 | Oskar | Done |
+| TS31 | Consulta de endpoints de Dashboard | TS31: Consulta de endpoints de Dashboard | Obtener los datos generales de la plataforma desde el dashboard para visualizar métricas clave y accesos rápidos. | 4 | Fabian | Done |
+
+### 6.2.1.4. Development Evidence for Sprint Review.
+
+La evidencia de desarrollo del Sprint 1 se sustenta en los commits realizados dentro del repositorio del **Frontend Web Application** de EMSafe. Estos commits reflejan la configuración inicial del proyecto, la implementación de la estructura base del sistema, el desarrollo de vistas principales del panel administrativo, la integración de cambios mediante pull request y ajustes finales en la documentación del repositorio.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| Front-End | main | 27ff5ec | Fix formatting in README.md | Se corrigió el formato del archivo README para mejorar la presentación de la documentación inicial del proyecto y facilitar su lectura. | 2026-05-13 |
+| Front-End | main | ec3121c | Merge pull request #1 from Desarrollo-de-soluciones-IOT-UPC/feature/ui-redesign | Se integraron en la rama principal los cambios desarrollados en la rama `feature/ui-redesign`, consolidando avances relevantes de la primera versión del frontend. | 2026-05-13 |
+| Front-End | main | b515a93 | feat: sidebar, topbar, dashboard, work orders, history and users pages | Se implementaron los componentes y páginas principales del panel administrativo, incluyendo la barra lateral, barra superior, dashboard y páginas de work orders, history y users. | 2026-05-13 |
+| Front-End | main | 75b87bb | chore: project setup, mock API and core services with i18n EN/ES | Se configuró la estructura base del proyecto, los servicios principales, una mock API para pruebas iniciales y el soporte de internacionalización en inglés y español. | 2026-05-13 |
+| Front-End | main | 1ce28bb | Initial commit - EMSafe Admin Panel | Se realizó el commit inicial del proyecto EMSafe Admin Panel, estableciendo la base del frontend para el desarrollo posterior del sprint. | 2026-05-12 |
+
+### 6.2.1.5. Testing Suite Evidence for Sprint Review.
+
+La evidencia de testing del Sprint 1 se basa en la validación realizada sobre la rama `feature/ui-redesign` del repositorio **Front-End**. Durante esta etapa se verificó el correcto funcionamiento visual de los componentes principales, la navegación entre vistas, la integración de servicios simulados y la consistencia general del panel administrativo de EMSafe.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| Front-End | feature/ui-redesign | ddbc82c | fix: fix cosmetic components in different views | Se corrigieron detalles visuales en diferentes vistas del frontend, validando la correcta presentación de los componentes y mejorando la consistencia de la interfaz. | 2026-05-13 |
+| Front-End | feature/ui-redesign | b515a93 | feat: sidebar, topbar, dashboard, work orders, history and users pages | Se verificó la implementación de las vistas principales del panel administrativo, incluyendo sidebar, topbar, dashboard, work orders, history y users pages. | 2026-05-13 |
+| Front-End | feature/ui-redesign | 75b87bb | chore: project setup, mock API and core services with i18n EN/ES | Se validó la configuración inicial del proyecto, el uso de mock API, los servicios principales y la compatibilidad de textos en inglés y español mediante i18n. | 2026-05-13 |
+| Front-End | feature/ui-redesign | 1ce28bb | Initial commit - EMSafe Admin Panel | Se revisó la estructura inicial del proyecto EMSafe Admin Panel como base para las pruebas posteriores de navegación, componentes y servicios. | 2026-05-13 |
+### 6.2.1.6. Execution Evidence for Sprint Review
+Durante el Sprint 1, se completó el desarrollo e implementación de la primera versión del
+  Frontend Web Application de EMSafe, incorporando el sistema de autenticación con redirección
+  por rol, el portal completo del técnico de campo y la preparación del proyecto para su
+  despliegue en un entorno de producción en la nube.                                             
+   
+  La aplicación fue desplegada en Microsoft Azure App Service con un pipeline CI/CD mediante     
+  GitHub Actions, el cual ejecuta el build de producción de Angular SSR y realiza el deploy
+  automáticamente con cada push a la rama `main`.
+
+  **Link de evidencia del servicio web desplegado:**
+  [https://emsafe-amh9hgdudda3bybj.eastus-01.azurewebsites.net](https://emsafe-amh9hgdudda3bybj.e
+  astus-01.azurewebsites.net)
+
+  A continuación se presentan las capturas de pantalla que evidencian la ejecución del servicio
+  web en producción:
+
+  **Pantalla de Login — Página de inicio de sesión de EMSafe desplegada en Azure.**
+
+  ![Login EMSafe](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/Login.png)
+
+  **Portal Administrativo — Dashboard principal con métricas, gráficos y órdenes recientes.**
+
+  ![Dashboard Admin](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/admin1.png)
+
+  **Portal Administrativo — Gestión de Work Orders con filtros funcionales.**
+
+  ![Work Orders Admin](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/admin2.png)
+
+  **Portal Técnico — My Schedule con calendario semanal y navegación por semana.**
+
+  ![Tech Schedule](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/tecnico1.png)
+
+  **Portal Técnico — Work Orders del técnico con tabs de filtrado por estado.**
+
+  ![Tech Work Orders](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/tecnico2.png)
+
+  **CI/CD Pipeline — GitHub Actions ejecutando el build y deploy automático a Azure.**
+
+  ![GitHub Actions
+  CI/CD](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/deploy.png)
+### 6.2.1.7. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación relacionada con los servicios utilizados en la primera versión del **Frontend Web Application** de EMSafe. Durante este sprint, se trabajó con una estructura inicial de servicios, datos simulados mediante **mock API** y componentes preparados para futuras integraciones con el backend.
+
+Debido a que el enfoque principal estuvo en la construcción del panel administrativo, la navegación, las vistas principales y la validación visual del sistema, en esta etapa aún no se generó una documentación completa de servicios backend. Sin embargo, se dejó preparada la base del frontend para conectarse posteriormente con los endpoints reales de la API.
+
+### 6.2.1.8. Software Deployment Evidence for Sprint Review
+
+En esta sección se describe el proceso de implementación de la plataforma en un entorno de producción. Además, se presentarán los hitos más importantes que marcarán el despliegue del proyecto y garantizarán su disponibilidad para los usuarios finales.
+
+**URL de despliegue del Landing Page:** [Landing Page](https://desarrollo-de-soluciones-iot-upc.github.io/landing-page/)
+
+1. Para la Landing Page, nuestro equipo creó una rama denominada “main” dentro del repositorio, en la cual se organizaron y almacenaron todos los archivos correspondientes al desarrollo de la Landing Page.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Main.png">
+
+2. Posteriormente, nos dirigimos a configuración y empleamos GitHub Pages, el servicio de alojamiento para sitios estáticos de GitHub, para publicar y poner en línea nuestra Landing Page.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Github Pages.png">
+
+3. Se seleccionó la rama previamente configurada y se procedió con el despliegue de la página.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Deployment.png">
+
+4. Finalmente, obtuvimos el enlace de publicación, que nos permite acceder y visualizar la Landing Page en línea.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Page Deploy.png">
+
+### 6.2.1.9. Team Collaboration Insights during Sprint
+
+Durante este sprint, el equipo enfocó sus esfuerzos en desarrollar la primera versión del **Frontend Web Application** de EMSafe. Para organizar el trabajo, se utilizó GitHub como herramienta principal de colaboración, trabajando con ramas como `main` y `feature/ui-redesign`, donde se fueron realizando commits relacionados con la configuración inicial del proyecto, la implementación de componentes principales, páginas del sistema web y correcciones visuales. Además, la coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar avances, distribuir tareas y mantener una integración ordenada de los cambios realizados durante el sprint.
+
+## Github analytics de nuestro primer sprint Landing Page:
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Landing Page Collaborators.png">
+
+## Github analytics de nuestro Front End: 
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Front End Collaborators.png">
+
 # Conclusiones
 
-El desarrollo de EmSafe permitió comprender la importancia del monitoreo de la contaminación electromagnética en entornos domésticos y laborales. A través de la integración de sensores IoT, una aplicación móvil y una plataforma web, se logró plantear una solución enfocada en el monitoreo en tiempo real, la generación de alertas automáticas y la prevención de riesgos asociados a la exposición electromagnética. Además, el uso de metodologías como Lean UX y Domain-Driven Design facilitó la organización del sistema, la identificación de las necesidades de los usuarios y el cumplimiento de los objetivos planteados durante el proyecto.
+## Conclusiones y recomendaciones
 
-Como recomendación, se propone continuar fortaleciendo la plataforma mediante la incorporación de nuevas funcionalidades y mejoras que permitan ofrecer una experiencia más eficiente, accesible y confiable para los usuarios. Asimismo, sería importante seguir impulsando la concientización sobre los riesgos de la exposición electromagnética y promover el uso de herramientas tecnológicas que contribuyan a la prevención y el bienestar de las personas.
+- La contaminación electromagnética en entornos domésticos e industriales representa un riesgo real y creciente, agravado por la ausencia de herramientas accesibles para medirla. EmSafe surge como respuesta directa a esta brecha mediante una solución IoT integrada.
+
+- Las entrevistas a ambos segmentos confirmaron preocupación genuina por la exposición electromagnética, aunque con falta de información y herramientas concretas para actuar. El segmento empresarial mostró especial interés en alertas automáticas y reportes exportables para auditorías.
+
+- Las User Stories y el Product Backlog cubren de forma completa los flujos de la app móvil, plataforma web y backend, priorizando funcionalidades de alto valor como el monitoreo en tiempo real, las alertas automáticas y la integración vía API REST.
+
+- La adopción de Domain-Driven Design permitió delimitar cinco bounded contexts con responsabilidades claras y bajo acoplamiento, evitando conflictos técnicos que habrían surgido de unificar contextos como Alert & Automation con Radiation Monitoring.
+
+- La distribución de bounded contexts entre los integrantes facilitó un desarrollo paralelo y organizado, mientras que el uso de Miro y GitHub fortaleció la comunicación técnica y la trazabilidad del avance del equipo.
 
 
 # Bibliografía
