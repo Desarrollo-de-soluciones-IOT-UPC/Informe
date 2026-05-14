@@ -2204,7 +2204,7 @@ Historias relacionadas: US26, US27, US28, US29, US31, US32, US33, US41, TS01, TS
 | `persistence/jpa/repositories/TechnicianRepository.java` | Repositorio JPA para el agregado `Technician`. Incluye query para buscar técnicos activos y verificar disponibilidad en un bloque horario. | Repository Impl |
 | `persistence/jpa/repositories/ClientRecordRepository.java` | Repositorio JPA para el agregado `ClientRecord`. Incluye queries para buscar por estado del servicio y para obtener métricas agregadas del dashboard. | Repository Impl |
 | `persistence/jpa/repositories/DeviceInventoryItemRepository.java` | Repositorio JPA para el agregado `DeviceInventoryItem`. Incluye queries para filtrar por estado y para detectar stock bajo. | Repository Impl |
- 
+
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 
 ![Admin & Operations Component Diagram](img/AV1/chapter-4/Admin%20&%20Operations/Admin_Operation_C4.png)
@@ -2901,10 +2901,143 @@ Figma: [https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node
 ## 5.4. Applications UX/UI Design
 
 ### 5.4.1. Applications Wireframes
+#### App Web
+##### Sprint 1
+Se presenta el diseño de baja fidelidad de la aplicación web del producto. En este se aprecia la jerarquía del contenido, representada principalmente a través del tamaño y el peso tipográfico.
+
+El diseño está compuesto por diversas secciones que contribuyen al objetivo estratégico de transmitir confianza a los usuarios.
+
+### ADMIN 
+* **Dashboard Principal**
+
+Vista general del sistema que permite al administrador monitorear métricas clave, estado de servicios y acceder rápidamente a las funcionalidades más importantes.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/dashboard_admin.png" alt="Dashboard Principal" width="600"/><br>
+
+* **Gestión de Servicios dde Instalacion, Mantenimiento y Recolección**
+
+Sección destinada a la creación, visualización y administración de órdenes de trabajo, permitiendo gestionar servicios según su tipo y estado.
+
+
+<img src="img/TB1/chapter-5/web-app/wireframes/work_orders_admin.png" alt="Gestión de Servicios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_work_order_admin.png" alt="Detalle de Servicio" width="600"/><br>
+
+* **Historial de Servicios**
+
+Registro de servicios realizados que facilita la consulta de actividades pasadas, seguimiento de operaciones y análisis del desempeño.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/work_orders_history_admin.png" alt="Historial de Servicios" width="600"/><br>
+
+* **Gestión de Usuarios**
+
+Módulo para administrar los diferentes tipos de usuarios del sistema, incluyendo administradores, técnicos y clientes, permitiendo su creación y configuración básica.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/users_admin.png" alt="Gestión de Usuarios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_admin.png" alt="Detalle de Usuario" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_technician.png" alt="Gestión de Técnicos" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_client_company.png" alt="Gestión de Empresas Cliente" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_client_individual.png" alt="Gestión de Técnicos" width="600"/><br>
+
+### TÉCNICO
+
+* **Calendario**
+Vista que permite al técnico organizar y visualizar sus servicios programados, facilitando la planificación diaria y el seguimiento de sus actividades.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/schedule_technician.png" alt="Calendario" width="600"/><br>
+
+* **Listado de Servicios Pendientes, en Progreso y Completados**
+Sección que muestra las órdenes de trabajo clasificadas por estado, permitiendo al técnico identificar rápidamente sus tareas, actualizar su progreso y gestionar sus actividades en tiempo real.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/users_technician.png" alt="Listado de Servicios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/completed_technician.png" alt="Listado de Servicios Pendientes" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/in_progress_technician.png" alt="Listado de Servicios en Progreso" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/in_progress_technician.png" alt="Listado de Servicios Completados" width="600"/><br>
+
+* **Historial de Servicios**
+Registro de servicios previamente realizados que permite al técnico consultar trabajos anteriores, revisar detalles y mantener un control de su desempeño.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/work_orders_technician.png" alt="Listado de Servicios" width="600"/><br>
+
 
 ### 5.4.2. Applications Wireflow Diagrams
 
 ### 5.4.3. Applications Mock-ups
+
+#### App Web
+
+##### Sprint 1
+
+Se presenta el diseño de alta fidelidad de la aplicación web del producto. En este diseño se integran los elementos visuales definidos en las Style Guidelines, como la paleta de colores, tipografías y componentes específicos para web, con el objetivo de transmitir confianza a los usuarios y facilitar la gestión operativa del sistema.
+
+### ADMIN 
+* **Dashboard Principal**
+
+Vista general del sistema que permite al administrador monitorear métricas clave, estado de servicios y acceder rápidamente a las funcionalidades más importantes.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/dashboard_admin_mockup.png" alt="Dashboard Principal" width="600"/><br>
+
+* **Gestión de Servicios dde Instalacion, Mantenimiento y Recolección**
+
+Sección destinada a la creación, visualización y administración de órdenes de trabajo, permitiendo gestionar servicios según su tipo y estado.
+
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/work_orders_admin_mockup.png" alt="Gestión de Servicios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_work_order_admin_mockup.png" alt="Detalle de Servicio" width="600"/><br>
+
+* **Historial de Servicios**
+
+Registro de servicios realizados que facilita la consulta de actividades pasadas, seguimiento de operaciones y análisis del desempeño.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/work_orders_history_admin_mockup.png" alt="Historial de Servicios" width="600"/><br>
+
+* **Gestión de Usuarios**
+
+Módulo para administrar los diferentes tipos de usuarios del sistema, incluyendo administradores, técnicos y clientes, permitiendo su creación y configuración básica.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/users_admin_mockup.png" alt="Gestión de Usuarios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_admin_mockup.png" alt="Detalle de Usuario" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_technician_mockup.png" alt="Gestión de Técnicos" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_client_company_mockup.png" alt="Gestión de Empresas Cliente" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_client_individual_mockup.png" alt="Gestión de Técnicos" width="600"/><br>
+
+### TÉCNICO
+
+* **Calendario**
+Vista que permite al técnico organizar y visualizar sus servicios programados, facilitando la planificación diaria y el seguimiento de sus actividades.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/schedule_technician_mockup.png" alt="Calendario" width="600"/><br>
+
+* **Listado de Servicios Pendientes, en Progreso y Completados**
+Sección que muestra las órdenes de trabajo clasificadas por estado, permitiendo al técnico identificar rápidamente sus tareas, actualizar su progreso y gestionar sus actividades en tiempo real.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/users_technician_mockup.png" alt="Listado de Servicios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/completed_technician_mockup.png" alt="Listado de Servicios Pendientes" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/in_progress_technician_mockup.png" alt="Listado de Servicios en Progreso" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/completed_technician_mockup.png" alt="Listado de Servicios Completados" width="600"/><br>
+
+* **Historial de Servicios**
+Registro de servicios previamente realizados que permite al técnico consultar trabajos anteriores, revisar detalles y mantener un control de su desempeño.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/work_orders_technician_mockup.png" alt="Listado de Servicios" width="600"/><br>
+
+
+
 
 ### 5.4.4. Applications User Flow Diagrams
 
