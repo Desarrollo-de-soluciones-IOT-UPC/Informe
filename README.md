@@ -3200,6 +3200,26 @@ Debido a que el enfoque principal estuvo en la construcción del panel administr
 
 ### 6.2.1.8. Software Deployment Evidence for Sprint Review
 
+En esta sección se describe el proceso de implementación de la plataforma en un entorno de producción. Además, se presentarán los hitos más importantes que marcarán el despliegue del proyecto y garantizarán su disponibilidad para los usuarios finales.
+
+**URL de despliegue del Landing Page:** [Landing Page](https://desarrollo-de-soluciones-iot-upc.github.io/landing-page/)
+
+1. Para la Landing Page, nuestro equipo creó una rama denominada “main” dentro del repositorio, en la cual se organizaron y almacenaron todos los archivos correspondientes al desarrollo de la Landing Page.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Main.png">
+
+2. Posteriormente, nos dirigimos a configuración y empleamos GitHub Pages, el servicio de alojamiento para sitios estáticos de GitHub, para publicar y poner en línea nuestra Landing Page.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Github Pages.png">
+
+3. Se seleccionó la rama previamente configurada y se procedió con el despliegue de la página.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Deployment.png">
+
+4. Finalmente, obtuvimos el enlace de publicación, que nos permite acceder y visualizar la Landing Page en línea.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Page Deploy.png">
+
 ### 6.2.1.9. Team Collaboration Insights during Sprint
 
 Durante este sprint, el equipo enfocó sus esfuerzos en desarrollar la primera versión del **Frontend Web Application** de EMSafe. Para organizar el trabajo, se utilizó GitHub como herramienta principal de colaboración, trabajando con ramas como `main` y `feature/ui-redesign`, donde se fueron realizando commits relacionados con la configuración inicial del proyecto, la implementación de componentes principales, páginas del sistema web y correcciones visuales. Además, la coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar avances, distribuir tareas y mantener una integración ordenada de los cambios realizados durante el sprint.
