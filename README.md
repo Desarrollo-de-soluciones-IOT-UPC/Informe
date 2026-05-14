@@ -2835,7 +2835,35 @@ EMSafe Team
 
 ### 5.2.4. Searching Systems
 
+Para ofrecer una experiencia de búsqueda eficiente y ordenada, EMSafe implementa un sistema de búsqueda y filtrado orientado a facilitar el acceso rápido a información crítica relacionada con sensores, órdenes de trabajo, usuarios, alertas y mediciones de radiación electromagnética:
+
+- **Búsqueda básica:** Se integran campos de búsqueda en las principales secciones del sistema, permitiendo localizar información mediante términos clave como nombres de usuarios, clientes, órdenes de trabajo, ubicaciones o identificadores de servicio.
+
+- **Filtros avanzados:** Se incluyen filtros que permiten segmentar los resultados según criterios como estado, tipo de servicio, rango de fechas, técnico asignado, tipo de usuario, ubicación o nivel de alerta. Esto facilita una revisión más precisa de los datos registrados en la plataforma.
+
+- **Ordenación y clasificación de resultados:** Los resultados pueden organizarse de acuerdo con su relevancia operativa, estado del proceso o fecha de registro, permitiendo priorizar información importante como alertas críticas, órdenes pendientes o tareas en progreso.
+
+- **Visualización clara de resultados:** La información encontrada se presenta mediante tablas, tarjetas, indicadores y reportes visuales, permitiendo que administradores, técnicos y usuarios finales comprendan rápidamente el estado del sistema.
+
+- **Búsqueda orientada al monitoreo:** En el contexto móvil, la búsqueda se complementa con funciones relacionadas al monitoreo de sensores, detección de dispositivos, consulta de zonas y revisión de alertas generadas por niveles de radiación.
+
+Con este enfoque, EMSafe permite que cada tipo de usuario encuentre rápidamente la información que necesita, reduciendo el tiempo de consulta y mejorando la toma de decisiones dentro del sistema.
+
 ### 5.2.5. Navigation Systems
+
+Para asegurar una experiencia de usuario fluida, accesible y organizada, EMSafe cuenta con un sistema de navegación adaptado a sus distintos entornos digitales, incluyendo panel administrativo, panel técnico y aplicación móvil:
+
+- **Menú de navegación claro:** Se emplean menús laterales y barras de navegación que permiten acceder de forma rápida a las secciones principales del sistema, como dashboard, órdenes de trabajo, historial, usuarios, sensores, alertas y configuración.
+
+- **Navegación por roles:** La estructura de navegación se adapta según el perfil del usuario. Los administradores acceden a funciones de gestión general, los técnicos a tareas operativas y los usuarios móviles a herramientas de monitoreo personal y control de sensores.
+
+- **Accesos rápidos a funciones importantes:** Se incorporan botones de acción para realizar tareas frecuentes como crear órdenes, iniciar trabajos, guardar cambios, marcar tareas como completadas, emparejar sensores, revisar mapas o exportar reportes.
+
+- **Flujos guiados:** La aplicación incluye procesos guiados para acciones como registro, inicio de sesión, verificación de identidad, configuración inicial, conexión de sensores y acceso al dashboard, facilitando el uso del sistema incluso para usuarios nuevos.
+
+- **Consistencia visual:** La navegación mantiene una estructura visual uniforme en las diferentes plataformas, utilizando iconos, colores, botones y jerarquías claras que ayudan al usuario a ubicarse dentro del sistema.
+
+Mediante estos principios de navegación, EMSafe garantiza que administradores, técnicos y usuarios finales puedan interactuar con la plataforma de manera clara, rápida e intuitiva.
 
 ## 5.3. Landing Page UI Design
 
