@@ -600,13 +600,13 @@ En consecuencia, se determina que el modelo final de **EmSafe** consta de los si
 #### 4.1.3.1. Software Architecture System Landscape Diagram
 
 El diagrama de System Landscape muestra una vista de alto nivel de todo el ecosistema EmSafe, incluyendo los tres tipos de usuarios (Usuario Final, Administrador y Técnico de Campo), el sistema principal EmSafe Platform y los sistemas externos con los que interactúa: la red de sensores IoT GY-273, los adaptadores inteligentes (smart plugs), Firebase Cloud Messaging y el servicio de email SMTP.
-![System Landscape Diagram](img/AV1/chapter-4/Software%20Architecture/Software%20Architecture%20System%20Landscape%20Diagram.png)
+![System Landscape Diagram](img/AV1/chapter-4/LandScapeC0_SystemLandscape-dark.png)
 #### 4.1.3.2. Software Architecture Context Level Diagrams
 El diagrama de contexto (C4 nivel 1) presenta el sistema EmSafe Platform como una caja negra, mostrando sus interacciones directas con los usuarios y sistemas externos. Se detallan los protocolos de comunicación utilizados: HTTPS/JSON para las aplicaciones cliente, MQTT vía WiFi para la comunicación con sensores y adaptadores inteligentes, y SMTP para el envío de correos electrónicos.
-![Context Level Diagram](img/AV1/chapter-4/Software%20Architecture/Software%20Architecture%20Context%20Level%20Diagrams.png)
+![Context Level Diagram](img/AV1/chapter-4/contextC1_Context-dark.png)
 #### 4.1.3.3. Software Architecture Container Level Diagrams
 El diagrama de contenedores (C4 nivel 2) muestra la estructura interna del sistema EmSafe Platform: la aplicación móvil (Angular/Ionic), la plataforma web administrativa (Angular), la API REST backend (Spring Boot con Java), el broker MQTT (Mosquitto en EC2) y la base de datos (MySQL en Amazon RDS). Se visualizan las conexiones entre cada contenedor y los sistemas externos.
-![Container Level Diagram](img/AV1/chapter-4/Software%20Architecture/Software%20Architecture%20Container%20Level%20Diagrams.png)
+![Container Level Diagram](img/AV1/chapter-4/ContainerC2_Containers-dark.png)
 #### 4.1.3.4. Software Architecture Deployment Diagrams
 El diagrama de despliegue muestra la distribución de la infraestructura en producción: Amazon EC2 para el backend con Jenkins CI/CD en contenedor Docker, una instancia EC2 separada para el broker Mosquitto MQTT, Amazon RDS para la base de datos MySQL, Firebase Hosting para la plataforma web, el dispositivo móvil del usuario final y la sede del cliente donde se instalan los sensores GY-273 y los adaptadores inteligentes.
 ![Deployment Diagram](img/AV1/chapter-4/Software%20Architecture/Software%20Architecture%20Deployment%20Diagrams.png)
