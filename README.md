@@ -2204,7 +2204,7 @@ Historias relacionadas: US26, US27, US28, US29, US31, US32, US33, US41, TS01, TS
 | `persistence/jpa/repositories/TechnicianRepository.java` | Repositorio JPA para el agregado `Technician`. Incluye query para buscar técnicos activos y verificar disponibilidad en un bloque horario. | Repository Impl |
 | `persistence/jpa/repositories/ClientRecordRepository.java` | Repositorio JPA para el agregado `ClientRecord`. Incluye queries para buscar por estado del servicio y para obtener métricas agregadas del dashboard. | Repository Impl |
 | `persistence/jpa/repositories/DeviceInventoryItemRepository.java` | Repositorio JPA para el agregado `DeviceInventoryItem`. Incluye queries para filtrar por estado y para detectar stock bajo. | Repository Impl |
- 
+
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 
 ![Admin & Operations Component Diagram](img/AV1/chapter-4/Admin%20&%20Operations/Admin_Operation_C4.png)
@@ -2835,7 +2835,35 @@ EMSafe Team
 
 ### 5.2.4. Searching Systems
 
+Para ofrecer una experiencia de búsqueda eficiente y ordenada, EMSafe implementa un sistema de búsqueda y filtrado orientado a facilitar el acceso rápido a información crítica relacionada con sensores, órdenes de trabajo, usuarios, alertas y mediciones de radiación electromagnética:
+
+- **Búsqueda básica:** Se integran campos de búsqueda en las principales secciones del sistema, permitiendo localizar información mediante términos clave como nombres de usuarios, clientes, órdenes de trabajo, ubicaciones o identificadores de servicio.
+
+- **Filtros avanzados:** Se incluyen filtros que permiten segmentar los resultados según criterios como estado, tipo de servicio, rango de fechas, técnico asignado, tipo de usuario, ubicación o nivel de alerta. Esto facilita una revisión más precisa de los datos registrados en la plataforma.
+
+- **Ordenación y clasificación de resultados:** Los resultados pueden organizarse de acuerdo con su relevancia operativa, estado del proceso o fecha de registro, permitiendo priorizar información importante como alertas críticas, órdenes pendientes o tareas en progreso.
+
+- **Visualización clara de resultados:** La información encontrada se presenta mediante tablas, tarjetas, indicadores y reportes visuales, permitiendo que administradores, técnicos y usuarios finales comprendan rápidamente el estado del sistema.
+
+- **Búsqueda orientada al monitoreo:** En el contexto móvil, la búsqueda se complementa con funciones relacionadas al monitoreo de sensores, detección de dispositivos, consulta de zonas y revisión de alertas generadas por niveles de radiación.
+
+Con este enfoque, EMSafe permite que cada tipo de usuario encuentre rápidamente la información que necesita, reduciendo el tiempo de consulta y mejorando la toma de decisiones dentro del sistema.
+
 ### 5.2.5. Navigation Systems
+
+Para asegurar una experiencia de usuario fluida, accesible y organizada, EMSafe cuenta con un sistema de navegación adaptado a sus distintos entornos digitales, incluyendo panel administrativo, panel técnico y aplicación móvil:
+
+- **Menú de navegación claro:** Se emplean menús laterales y barras de navegación que permiten acceder de forma rápida a las secciones principales del sistema, como dashboard, órdenes de trabajo, historial, usuarios, sensores, alertas y configuración.
+
+- **Navegación por roles:** La estructura de navegación se adapta según el perfil del usuario. Los administradores acceden a funciones de gestión general, los técnicos a tareas operativas y los usuarios móviles a herramientas de monitoreo personal y control de sensores.
+
+- **Accesos rápidos a funciones importantes:** Se incorporan botones de acción para realizar tareas frecuentes como crear órdenes, iniciar trabajos, guardar cambios, marcar tareas como completadas, emparejar sensores, revisar mapas o exportar reportes.
+
+- **Flujos guiados:** La aplicación incluye procesos guiados para acciones como registro, inicio de sesión, verificación de identidad, configuración inicial, conexión de sensores y acceso al dashboard, facilitando el uso del sistema incluso para usuarios nuevos.
+
+- **Consistencia visual:** La navegación mantiene una estructura visual uniforme en las diferentes plataformas, utilizando iconos, colores, botones y jerarquías claras que ayudan al usuario a ubicarse dentro del sistema.
+
+Mediante estos principios de navegación, EMSafe garantiza que administradores, técnicos y usuarios finales puedan interactuar con la plataforma de manera clara, rápida e intuitiva.
 
 ## 5.3. Landing Page UI Design
 
@@ -2901,14 +2929,185 @@ Figma: [https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node
 ## 5.4. Applications UX/UI Design
 
 ### 5.4.1. Applications Wireframes
+#### App Web
+##### Sprint 1
+Se presenta el diseño de baja fidelidad de la aplicación web del producto. En este se aprecia la jerarquía del contenido, representada principalmente a través del tamaño y el peso tipográfico.
+
+El diseño está compuesto por diversas secciones que contribuyen al objetivo estratégico de transmitir confianza a los usuarios.
+
+### ADMIN 
+* **Dashboard Principal**
+
+Vista general del sistema que permite al administrador monitorear métricas clave, estado de servicios y acceder rápidamente a las funcionalidades más importantes.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/dashboard_admin.png" alt="Dashboard Principal" width="600"/><br>
+
+* **Gestión de Servicios dde Instalacion, Mantenimiento y Recolección**
+
+Sección destinada a la creación, visualización y administración de órdenes de trabajo, permitiendo gestionar servicios según su tipo y estado.
+
+
+<img src="img/TB1/chapter-5/web-app/wireframes/work_orders_admin.png" alt="Gestión de Servicios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_work_order_admin.png" alt="Detalle de Servicio" width="600"/><br>
+
+* **Historial de Servicios**
+
+Registro de servicios realizados que facilita la consulta de actividades pasadas, seguimiento de operaciones y análisis del desempeño.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/work_orders_history_admin.png" alt="Historial de Servicios" width="600"/><br>
+
+* **Gestión de Usuarios**
+
+Módulo para administrar los diferentes tipos de usuarios del sistema, incluyendo administradores, técnicos y clientes, permitiendo su creación y configuración básica.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/users_admin.png" alt="Gestión de Usuarios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_admin.png" alt="Detalle de Usuario" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_technician.png" alt="Gestión de Técnicos" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_client_company.png" alt="Gestión de Empresas Cliente" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_client_individual.png" alt="Gestión de Técnicos" width="600"/><br>
+
+### TÉCNICO
+
+* **Calendario**
+Vista que permite al técnico organizar y visualizar sus servicios programados, facilitando la planificación diaria y el seguimiento de sus actividades.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/schedule_technician.png" alt="Calendario" width="600"/><br>
+
+* **Listado de Servicios Pendientes, en Progreso y Completados**
+Sección que muestra las órdenes de trabajo clasificadas por estado, permitiendo al técnico identificar rápidamente sus tareas, actualizar su progreso y gestionar sus actividades en tiempo real.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/users_technician.png" alt="Listado de Servicios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/completed_technician.png" alt="Listado de Servicios Pendientes" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/in_progress_technician.png" alt="Listado de Servicios en Progreso" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/in_progress_technician.png" alt="Listado de Servicios Completados" width="600"/><br>
+
+* **Historial de Servicios**
+Registro de servicios previamente realizados que permite al técnico consultar trabajos anteriores, revisar detalles y mantener un control de su desempeño.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/work_orders_technician.png" alt="Listado de Servicios" width="600"/><br>
+
 
 ### 5.4.2. Applications Wireflow Diagrams
 
+| User Persona: Administrador |
+|----------------------------------|
+| User Goal: Como administrador, quiero visualizar el resumen de sensores totales y alertas críticas en el Dashboard para identificar rápidamente qué áreas requieren intervención inmediata. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_1.png" width= 800/> |
+
+| User Persona: Administrador |
+|----------------------------------|
+| User Goal: Como administrador, quiero completar el formulario de "New Work Order" asignando un técnico y una ubicación específica para formalizar el requerimiento de mantenimiento de un sensor. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_2.png" alt="wireflow1" width= 800/> |
+
+| User Persona: Administrador |
+|----------------------------------|
+| User Goal: Como administrador, quiero registrar nuevos perfiles de técnicos en la sección de "Team Management" para expandir la capacidad operativa de la empresa en campo. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_3.png" alt="wireflow2" width= 800/> |
+
+| User Persona: Técnico |
+|----------------------------------|
+| User Goal: Como técnico, quiero visualizar mi calendario de servicios para organizar mi tiempo y planificar mis actividades. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_4.png" alt="wireflow3" width= 800/> |
+
+
+| User Persona: Técnico |
+|----------------------------------|
+| User Goal: Como técnico, quiero marcar una orden como "In Progress" y registrar los hallazgos en la sección de "Technician Notes" para mantener actualizado al centro de control sobre el estado del sensor. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_5.png" alt="wireflow4" width= 800/> |
+
+| User Persona: Técnico |
+|----------------------------------|
+| User Goal: Como técnico, quiero filtrar el "Work Orders History" por rango de fechas y tipo de servicio para auditar el cumplimiento de las inspecciones de seguridad electromagnética pasadas. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_6.png" alt="wireflow5" width= 800/> |
+
 ### 5.4.3. Applications Mock-ups
+
+#### App Web
+
+##### Sprint 1
+
+Se presenta el diseño de alta fidelidad de la aplicación web del producto. En este diseño se integran los elementos visuales definidos en las Style Guidelines, como la paleta de colores, tipografías y componentes específicos para web, con el objetivo de transmitir confianza a los usuarios y facilitar la gestión operativa del sistema.
+
+### ADMIN 
+* **Dashboard Principal**
+
+Vista general del sistema que permite al administrador monitorear métricas clave, estado de servicios y acceder rápidamente a las funcionalidades más importantes.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/dashboard_admin_mockup.png" alt="Dashboard Principal" width="600"/><br>
+
+* **Gestión de Servicios dde Instalacion, Mantenimiento y Recolección**
+
+Sección destinada a la creación, visualización y administración de órdenes de trabajo, permitiendo gestionar servicios según su tipo y estado.
+
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/work_orders_admin_mockup.png" alt="Gestión de Servicios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_work_order_admin_mockup.png" alt="Detalle de Servicio" width="600"/><br>
+
+* **Historial de Servicios**
+
+Registro de servicios realizados que facilita la consulta de actividades pasadas, seguimiento de operaciones y análisis del desempeño.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/work_orders_history_admin_mockup.png" alt="Historial de Servicios" width="600"/><br>
+
+* **Gestión de Usuarios**
+
+Módulo para administrar los diferentes tipos de usuarios del sistema, incluyendo administradores, técnicos y clientes, permitiendo su creación y configuración básica.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/users_admin_mockup.png" alt="Gestión de Usuarios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_admin_mockup.png" alt="Detalle de Usuario" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_technician_mockup.png" alt="Gestión de Técnicos" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_client_company_mockup.png" alt="Gestión de Empresas Cliente" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_client_individual_mockup.png" alt="Gestión de Técnicos" width="600"/><br>
+
+### TÉCNICO
+
+* **Calendario**
+Vista que permite al técnico organizar y visualizar sus servicios programados, facilitando la planificación diaria y el seguimiento de sus actividades.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/schedule_technician_mockup.png" alt="Calendario" width="600"/><br>
+
+* **Listado de Servicios Pendientes, en Progreso y Completados**
+Sección que muestra las órdenes de trabajo clasificadas por estado, permitiendo al técnico identificar rápidamente sus tareas, actualizar su progreso y gestionar sus actividades en tiempo real.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/users_technician_mockup.png" alt="Listado de Servicios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/completed_technician_mockup.png" alt="Listado de Servicios Pendientes" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/in_progress_technician_mockup.png" alt="Listado de Servicios en Progreso" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/completed_technician_mockup.png" alt="Listado de Servicios Completados" width="600"/><br>
+
+* **Historial de Servicios**
+Registro de servicios previamente realizados que permite al técnico consultar trabajos anteriores, revisar detalles y mantener un control de su desempeño.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/work_orders_technician_mockup.png" alt="Listado de Servicios" width="600"/><br>
+
 
 ### 5.4.4. Applications User Flow Diagrams
 
 ## 5.5. Applications Prototyping
+
+#### App Web
+
+##### Sprint 1
+En este primer sprint, se logró implementar la mayor parte de las funcionalidades de la aplicación web, abarcando principalmente los componentes core del frontend y cubriendo aspectos clave como la gestión de procesos, manejo de información y aplicación de reglas de negocio.
+
+* **Video de exploración de prototipo Web (Gauss - EMSafe):** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQDktdKKxmINQ7fXWALRJrG8AY34MIwA19xNLJ9oI41tm9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ELPcvP](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQDktdKKxmINQ7fXWALRJrG8AY34MIwA19xNLJ9oI41tm9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ELPcvP)
+
+<img src="img/TB1/chapter-5/prototype/web/web-prototype-video.png" alt="Prototipo Web" width="600"/><br>
 
 ## 5.6. IoT Device Design
 
