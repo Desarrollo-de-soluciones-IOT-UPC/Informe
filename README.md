@@ -84,6 +84,36 @@
         </ul>
       </td>
     </tr>
+    <tr>
+      <td style="margin: 0 auto; text-align: center;"><strong>TB1</strong></td>
+      <td style="margin: 0 auto; text-align: center;">14/05/2026</td>
+      <td>
+        <ul>
+          <li>Sosa Soto, Oskar Rodrigo</li>
+          <li>Lopez de la Cruz, Mauro Fabricio</li>
+          <li>Guimaraes Escalante, Carlos Eduardo</li>
+          <li>Oliva Lopez, Fabian Alejandro</li>
+          <li>Lizano Coll Cardenas, Fernando Jesus</li>
+        </ul>
+      </td>
+      <td>
+        Adición en las secciones:
+        <ul>
+          <li>Correción de la carátula</li>
+          <li>Correción de C4 Diagrams</li>
+          <li>Registro de Versiones del Informe</li>
+          <li>Project Report Collaboration Insights </li>
+          <li>Contenido</li>
+          <li>Student Outcome</li>
+        </ul>
+        Se han incluído los siguientes capítulos:
+        <ul>
+          <li>Capítulo V: Solution UI/UX Design</li>
+          <li>Capítulo VI: Product Implementation, Validation & Deployment. </li>
+          <li>Avance de Conclusiones y Anexos</li>
+        </ul>
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -161,11 +191,73 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
   </tbody>
 </table>
 
+**TB1**
+
+Para el desarrollo del informe correspondiente a todas las entregas, se estableció la implementación de secciones de la siguiente manera para cada integrante del equipo:
+<table>
+  <thead>
+    <tr>
+      <th>Integrante</th>
+      <th>Tareas Asignadas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sosa Soto, Oskar Rodrigo</td>
+      <td>
+      - Diseño en Figma de Aplicación movil (Wireframes y mockups) <br>
+      - Diseño de Userflows y Wireflows<br>
+      - Diseño de interaccion de aplicación movil en Figma<br>
+      - Participación en la implementación del FrontEnd<br>
+</td>
+    </tr>
+    <tr>
+      <td>Lopez de la Cruz, Mauro Fabricio</td>
+      <td> 
+      - Implementación del FrontEnd<br>
+      - Deploy del FrontEnd <br>
+      - Levantamiento de correcciones para diagramas C4<br>
+      - Documentación de Deployment en Capítulo VI<br>
+      - Implementación de Landing Page<br>
+    </tr>
+    <tr>
+      <td>Guimaraes Escalante, Carlos Eduardo</td>
+      <td>
+      - Diseño en Figma de Aplicación Web (Wireframes y mockups)<br>
+      - Diseño de Userflows y Wireflows<br>
+      - Diseño de interacion de aplicación Web en Figma<br>
+      - Documentación de Wireframes y Mockups de Landing Page 
+      - Correcciones en la implementación del FrontEnd <br>
+      - Correcciones del documento
+      </td>
+    </tr>
+    <tr>
+      <td>Oliva Lopez, Fabian Alejandro</td>
+      <td>
+      - Documentación del Capítulo 5: General Style Guidelines, Information Architecture, Searching Systems, Navigation Systems<br>
+      - Sprint Backlog 1 <br>
+      - Actualización de conclusiones <br>
+      - Creación de Wireframes para la aplicación movil <br>
+</td>
+    </tr>
+    <tr>
+      <td>Lizano Coll Cardenas, Fernando Jesus</td>
+      <td>
+      - IoT Design <br>
+      - Documentación del Capítulo VI: Software Configuration Management, Sprint 1<br>
+      - Documentación del Capítulo V: Labeling Systems, SEO Tags and Meta Tags, Organization Systems <br>
+    </tr>
+  </tbody>
+</table>
+
 El proceso de colaboración en el informe se realizó mediante commits constantes al repositorio de la organización.
 
 Se presenta el resumen de commits:<br>
 <strong>AV1</strong>
 ![Commits](img/AV1/colaboration-insights/collaboration-insights-av1.png)
+
+<strong>TB1</strong>
+
 
 ## Contenido
 - [Student Outcome](#student-outcome)
