@@ -3204,6 +3204,179 @@ En este primer sprint, se logró implementar la mayor parte de las funcionalidad
 
 ## 5.6. IoT Device Design
 
+Esta sección presenta el diseño físico y el diseño de circuito del dispositivo IoT que forma parte de la solución EMSafe. Se explican los criterios de diseño adoptados, la relación con la guía de estilos IoT definida en la sección 5.1.2, el diagrama del circuito y los principales flujos de interacción del prototipo.
+
+---
+
+### Introducción y criterios de diseño
+
+El dispositivo IoT de EMSafe tiene como propósito detectar niveles de campos electromagnéticos no ionizantes en el entorno del usuario y transmitir los datos en tiempo real hacia el backend de la plataforma. Para su diseño se consideraron los siguientes criterios:
+
+- **Microcontrolador:** Se seleccionó el **ESP32 DevKit V1** por su conectividad WiFi integrada, capacidad de procesamiento suficiente para el firmware embebido, compatibilidad con el Arduino Framework (C++) y disponibilidad en el ecosistema de simulación Wokwi.
+- **Sensor de campo electromagnético:** Dado que Wokwi no cuenta con un sensor EMF físico simulado, se utiliza un **potenciómetro** como elemento analógico que simula la variación de intensidad del campo electromagnético (0–100%). En el despliegue físico real, este componente sería reemplazado por el sensor **GY-273** o equivalente.
+- **Sensor ambiental:** Se integra el sensor **DHT22** para capturar temperatura y humedad del entorno, datos complementarios al monitoreo EMF.
+- **Indicadores visuales LED:** Se implementaron tres LEDs (verde, amarillo, rojo) que comunican el nivel de radiación detectado de forma inmediata, alineados con el sistema semáforo definido en la sección 5.1.2 (IoT Device Style Guidelines).
+- **Comunicación:** El dispositivo transmite los datos vía **HTTP POST** hacia el endpoint REST del backend EMSafe cuando se detecta un cambio significativo en los niveles o cuando el nivel alcanza el estado CRITICAL.
+- **Temporización no bloqueante:** Se utiliza `millis()` en lugar de `delay()` para garantizar un loop responsivo y sin bloqueos.
+
+La coherencia entre los colores LED del dispositivo físico y el sistema semáforo de la aplicación móvil y web permite que el usuario identifique el nivel de riesgo de manera consistente en todos los canales de la solución.
+
+---
+
+### Diseño físico del dispositivo
+
+El dispositivo EMSafe está concebido como una unidad compacta de monitoreo instalable en paredes o superficies planas dentro del entorno del usuario. Sus componentes principales son:
+
+| Componente | Función |
+|---|---|
+| ESP32 DevKit V1 | Microcontrolador principal con WiFi integrado |
+| Sensor DHT22 | Medición de temperatura y humedad ambiental |
+| Potenciómetro (simulación EMF) | Representa la intensidad del campo electromagnético |
+| LED Verde | Indica nivel de radiación BAJO (SAFE) |
+| LED Amarillo | Indica nivel de radiación MEDIO (WARNING) |
+| LED Rojo | Indica nivel de radiación ALTO (CRITICAL) |
+| Resistencias 220Ω (x3) | Protección de corriente para cada LED |
+
+El dispositivo comunica su estado mediante los indicadores LED RGB siguiendo los patrones definidos en la guía de estilos IoT:
+
+| Estado | LED activo | Significado |
+|---|---|---|
+| EMF < 30% | 🟢 Verde encendido fijo | Nivel seguro (SAFE) |
+| EMF 30–70% | 🟡 Amarillo encendido fijo | Nivel medio (WARNING) |
+| EMF > 70% | 🔴 Rojo encendido fijo | Nivel crítico (CRITICAL) |
+| Iniciando | Secuencia verde → amarillo → rojo | Startup del firmware |
+| Conectando WiFi | LED verde parpadeando | Intentando conexión |
+| WiFi conectado | LED verde 3 destellos | Conexión exitosa |
+
+---
+
+### Diagrama del circuito
+
+El circuito fue diseñado y validado en el simulador **Wokwi**. A continuación se presenta el diagrama de conexiones:
+
+![Diagrama del circuito EMSafe en Wokwi](img/TB1/iot/iot-device-design-prototype1.jpeg)
+
+**Enlace al proyecto Wokwi:** [https://wokwi.com/projects/464043432630822913](https://wokwi.com/projects/464043432630822913)
+
+**Tabla de conexiones pin a pin:**
+
+| Componente | Pin componente | Pin ESP32 | Cable |
+|---|---|---|---|
+| DHT22 | VCC | 3V3 | Rojo |
+| DHT22 | SDA (DATA) | D15 | Verde |
+| DHT22 | GND | GND | Negro |
+| Potenciómetro | VCC | 3V3 | Rojo |
+| Potenciómetro | SIG | D34 | Naranja |
+| Potenciómetro | GND | GND | Negro |
+| Resistencia R1 | Pin 1 | D25 | Verde |
+| Resistencia R1 | Pin 2 | LED Verde (A) | Verde |
+| LED Verde | C (cátodo) | GND | Negro |
+| Resistencia R2 | Pin 1 | D26 | Amarillo |
+| Resistencia R2 | Pin 2 | LED Amarillo (A) | Amarillo |
+| LED Amarillo | C (cátodo) | GND | Negro |
+| Resistencia R3 | Pin 1 | D27 | Rojo |
+| Resistencia R3 | Pin 2 | LED Rojo (A) | Rojo |
+| LED Rojo | C (cátodo) | GND | Negro |
+
+---
+
+### Flujos de interacción del prototipo
+
+A continuación se describen los principales flujos de interacción del firmware embebido del dispositivo EMSafe:
+
+**Flujo 1: Inicialización del dispositivo**
+
+1. El ESP32 inicia y ejecuta `setup()`.
+2. Se configuran los pines de los LEDs como salidas (`OUTPUT`).
+3. Se ejecuta la secuencia de startup LED: verde → amarillo → rojo.
+4. Se inicializa el sensor DHT22 en GPIO 15.
+5. El dispositivo intenta conectarse a la red WiFi (SSID: `Wokwi-GUEST`).
+6. Si la conexión es exitosa, el LED verde parpadea 3 veces como confirmación.
+
+**Flujo 2: Ciclo de monitoreo (loop principal)**
+
+1. Cada 5 segundos (`READING_INTERVAL = 5000ms`) el sistema toma una lectura.
+2. Se lee el valor analógico del potenciómetro (GPIO 34) → se mapea a 0–100%.
+3. Se leen temperatura y humedad del DHT22 (GPIO 15).
+4. Se determina el nivel EMF: SAFE / WARNING / CRITICAL.
+5. Se actualiza el LED correspondiente al nivel detectado.
+6. Se imprime la lectura en el Serial Monitor.
+
+**Flujo 3: Envío de datos al backend**
+
+1. El sistema evalúa si hubo un cambio significativo (≥ 5% en EMF o ≥ 0.5°C en temperatura) o si el nivel es CRITICAL.
+2. Si se cumple la condición, se construye un payload JSON:
+```json
+{
+  "deviceId": "ESP32-EMSafe-001",
+  "emfLevel": 75,
+  "temperature": 25.3,
+  "humidity": 60.2,
+  "status": "CRITICAL",
+  "unit": "percent"
+}
+```
+3. Se realiza un `HTTP POST` hacia el endpoint `/api/v1/readings`.
+4. Se registra el código de respuesta en el Serial Monitor.
+5. Se actualizan los valores de referencia para la próxima comparación.
+
+**Flujo 4: Reconexión WiFi automática**
+
+1. Al inicio de cada ciclo del `loop()` se verifica el estado de la conexión WiFi.
+2. Si `WiFi.status() != WL_CONNECTED`, se llama a `connectWiFi()`.
+3. El dispositivo intenta reconectarse hasta 20 veces con intervalos de 500ms.
+4. Si la reconexión falla, el ciclo se interrumpe y se reintenta en el siguiente loop.
+
+**Diagrama de flujo del firmware:**
+
+```
+[Encendido]
+     ↓
+[Setup: pines, DHT22, LEDs startup]
+     ↓
+[Conectar WiFi]
+     ↓ éxito
+[Loop cada 5s]
+     ↓
+[Leer potenciómetro → EMF%]
+[Leer DHT22 → Temp, Hum]
+     ↓
+[EMF < 30%?] → LED Verde (SAFE)
+[EMF 30-70%?] → LED Amarillo (WARNING)
+[EMF > 70%?] → LED Rojo (CRITICAL)
+     ↓
+[¿Cambio significativo o CRITICAL?]
+     ↓ sí
+[HTTP POST → /api/v1/readings]
+     ↓
+[Registrar respuesta en Serial Monitor]
+     ↓
+[Verificar WiFi → reconectar si necesario]
+     ↓
+[Esperar siguiente ciclo]
+```
+
+---
+
+### Evidencia de funcionamiento en simulación
+
+La siguiente captura muestra el circuito EMSafe en ejecución dentro del simulador Wokwi, con el LED rojo encendido indicando un nivel de radiación CRITICAL detectado por el potenciómetro en posición alta:
+
+![Simulación EMSafe funcionando en Wokwi](img/TB1/chapter-5/iot-device/wokwi-simulation-running.png)
+
+El Serial Monitor muestra las lecturas en tiempo real con el formato:
+
+```
+EMSafe IoT Device Starting...
+DHT22 initialized on GPIO 15
+Connecting to Wokwi-GUEST....
+Connected! IP: 10.0.0.2
+LED startup sequence complete
+[EMSafe] EMF: 75% | Temp: 15.0°C | Hum: 40.0% | Level: CRITICAL
+Sending to API: {"deviceId":"ESP32-EMSafe-001","emfLevel":75,...}
+API Response: 201
+```
+
 # Capítulo VI: Product Implementation, Validation & Deployment
 
 ## 6.1. Software Configuration Management
