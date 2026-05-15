@@ -2994,6 +2994,17 @@ Registro de servicios previamente realizados que permite al técnico consultar t
 
 <img src="img/TB1/chapter-5/web-app/wireframes/work_orders_technician.png" alt="Listado de Servicios" width="600"/><br>
 
+#### Movil App
+
+Se presenta el diseño de baja fidelidad de la aplicación movil del producto. En este se aprecia la jerarquía del contenido, representada principalmente a través del tamaño y el peso tipográfico.
+
+El diseño está compuesto por diversas secciones que contribuyen al objetivo estratégico de transmitir confianza a los usuarios.
+
+<img src="img/TB1/chapter-5/movilapp/wireframes/1.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/wireframes/2.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/wireframes/3.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/wireframes/4.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/wireframes/5.png" alt="" width="600"/><br>
 
 ### 5.4.2. Applications Wireflow Diagrams
 
@@ -3027,6 +3038,26 @@ Registro de servicios previamente realizados que permite al técnico consultar t
 |----------------------------------|
 | User Goal: Como técnico, quiero filtrar el "Work Orders History" por rango de fechas y tipo de servicio para auditar el cumplimiento de las inspecciones de seguridad electromagnética pasadas. |
 | <img src="./img/TB1/chapter-5/wireflows/Wireflow_6.png" alt="wireflow5" width= 800/> |
+
+
+### Movil Wireflow Diagrams
+
+| User Persona: Usuario Nuevo |
+|----------------------------------|
+| User Goal: Como usuario nuevo, quiero completar el proceso de onboarding y vinculación del hub "EmSafe S1" para iniciar el monitoreo de radiación en mi hogar. |
+| <img src="img/TB1/chapter-5/movilapp/FLOWMODELLING WIREFRAMES/1.png" alt="" width="600"/><br> |
+
+| User Persona: Usuario Nuevo |
+|----------------------------------|
+| User Goal: Como usuario nuevo, quiero autenticar mi identidad mediante Face ID y verificación en dos pasos (2FA) para asegurar que solo personal autorizado acceda al panel de control. |
+| <img src="img/TB1/chapter-5/movilapp/FLOWMODELLING WIREFRAMES/2.png" alt="" width="600"/><br> |
+
+| User Persona: Usuario Nuevo |
+|----------------------------------|
+| User Goal: Como usuario nuevo, quiero supervisar el Dashboard en tiempo real y el historial de alertas críticas para tomar acciones preventivas sobre los sensores de cada habitación. |
+| <img src="img/TB1/chapter-5/movilapp/FLOWMODELLING WIREFRAMES/3.png" alt="" width="600"/><br> |
+
+
 
 ### 5.4.3. Applications Mock-ups
 
@@ -3096,6 +3127,12 @@ Registro de servicios previamente realizados que permite al técnico consultar t
 <img src="img/TB1/chapter-5/web-app/mock-ups/work_orders_technician_mockup.png" alt="Listado de Servicios" width="600"/><br>
 
 
+##Movil App Mock-ups
+
+<img src="img/TB1/chapter-5/movilapp/mockups/1.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/mockups/2.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/mockups/3.png" alt="" width="600"/><br>
+
 ### 5.4.4. Applications User Flow Diagrams
 
 ## 5.5. Applications Prototyping
@@ -3108,6 +3145,16 @@ En este primer sprint, se logró implementar la mayor parte de las funcionalidad
 * **Video de exploración de prototipo Web (Gauss - EMSafe):** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQDktdKKxmINQ7fXWALRJrG8AY34MIwA19xNLJ9oI41tm9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ELPcvP](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQDktdKKxmINQ7fXWALRJrG8AY34MIwA19xNLJ9oI41tm9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ELPcvP)
 
 <img src="img/TB1/chapter-5/prototype/web/web-prototype-video.png" alt="Prototipo Web" width="600"/><br>
+
+En este primer sprint, se logró implementar la mayor parte de las funcionalidades de la aplicación movil, abarcando principalmente los componentes del frontend y cubriendo aspectos clave como el onboarding , auth y Dashboard.
+
+* **Video de exploración de prototipo Movil (Gauss - EMSafe):**
+
+
+
+ [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212214_upc_edu_pe/IQBLa5tUzn1sRbjL1wgthDkZAZ0oLf-VyS3pbduFu0a7iCk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ENE3RN](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212214_upc_edu_pe/IQBLa5tUzn1sRbjL1wgthDkZAZ0oLf-VyS3pbduFu0a7iCk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ENE3RN)
+
+<img src="img/TB1/chapter-5/movilapp/FLOWMODELLING WIREFRAMES/captura.png" alt="" width="600"/><br>
 
 ## 5.6. IoT Device Design
 
