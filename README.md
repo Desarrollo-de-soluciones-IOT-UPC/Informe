@@ -257,6 +257,7 @@ Se presenta el resumen de commits:<br>
 ![Commits](img/AV1/colaboration-insights/collaboration-insights-av1.png)
 
 <strong>TB1</strong>
+![Commits](img/AV1/colaboration-insights/collaboration-insights-tb1.png)
 
 
 ## Contenido
