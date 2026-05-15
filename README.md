@@ -3220,13 +3220,19 @@ Registro de servicios previamente realizados que permite al técnico consultar t
 <img src="img/TB1/chapter-5/web-app/mock-ups/work_orders_technician_mockup.png" alt="Listado de Servicios" width="600"/><br>
 
 
-##Movil App Mock-ups
+## Movil App Mock-ups
 
 <img src="img/TB1/chapter-5/movilapp/mockups/1.png" alt="" width="600"/><br>
 <img src="img/TB1/chapter-5/movilapp/mockups/2.png" alt="" width="600"/><br>
 <img src="img/TB1/chapter-5/movilapp/mockups/3.png" alt="" width="600"/><br>
 
 ### 5.4.4. Applications User Flow Diagrams
+
+MOCKSUPS DIAGRAM
+
+<img src="img/TB1/chapter-5/movilapp/MOCKSUPSDIAGRAM/1.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/MOCKSUPSDIAGRAM/2.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/MOCKSUPSDIAGRAM/3.png" alt="" width="600"/><br>
 
 ## 5.5. Applications Prototyping
 
