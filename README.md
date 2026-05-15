@@ -2997,6 +2997,37 @@ Registro de servicios previamente realizados que permite al técnico consultar t
 
 ### 5.4.2. Applications Wireflow Diagrams
 
+| User Persona: Administrador |
+|----------------------------------|
+| User Goal: Como administrador, quiero visualizar el resumen de sensores totales y alertas críticas en el Dashboard para identificar rápidamente qué áreas requieren intervención inmediata. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_1.png" width= 800/> |
+
+| User Persona: Administrador |
+|----------------------------------|
+| User Goal: Como administrador, quiero completar el formulario de "New Work Order" asignando un técnico y una ubicación específica para formalizar el requerimiento de mantenimiento de un sensor. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_2.png" alt="wireflow1" width= 800/> |
+
+| User Persona: Administrador |
+|----------------------------------|
+| User Goal: Como administrador, quiero registrar nuevos perfiles de técnicos en la sección de "Team Management" para expandir la capacidad operativa de la empresa en campo. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_3.png" alt="wireflow2" width= 800/> |
+
+| User Persona: Técnico |
+|----------------------------------|
+| User Goal: Como técnico, quiero visualizar mi calendario de servicios para organizar mi tiempo y planificar mis actividades. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_4.png" alt="wireflow3" width= 800/> |
+
+
+| User Persona: Técnico |
+|----------------------------------|
+| User Goal: Como técnico, quiero marcar una orden como "In Progress" y registrar los hallazgos en la sección de "Technician Notes" para mantener actualizado al centro de control sobre el estado del sensor. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_5.png" alt="wireflow4" width= 800/> |
+
+| User Persona: Técnico |
+|----------------------------------|
+| User Goal: Como técnico, quiero filtrar el "Work Orders History" por rango de fechas y tipo de servicio para auditar el cumplimiento de las inspecciones de seguridad electromagnética pasadas. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_6.png" alt="wireflow5" width= 800/> |
+
 ### 5.4.3. Applications Mock-ups
 
 #### App Web
