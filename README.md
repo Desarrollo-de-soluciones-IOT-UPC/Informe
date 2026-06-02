@@ -3680,26 +3680,26 @@ En este sprint, el enfoque estará en desarrollar la primera versión del **Fron
 
 | ID | User Story | Work-Item / Task | Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---|---|
-| US46 | Visualizar la sección Características | T01: TS10 - Desarrollo de estructura HTML del Landing Page | Implementar la estructura base de la sección de características del Landing Page, respetando la organización visual definida para la primera versión. | 5 | Oskar | Done |
-| US46 | Visualizar la sección Características | T02: TS11 - Desarrollo de estilos CSS del Landing Page | Aplicar estilos visuales a la sección de características para mantener coherencia con el mock-up y la identidad visual de EMSafe. | 5 | Mauro | Done |
-| US47 | Visualizar la sección Problemática | T03: TS13 - Implementación de la Sección Problemática del Landing Page | Desarrollar la sección que explica la contaminación electromagnética y la necesidad que resuelve EMSafe. | 4 | Carlos | Done |
-| US53 | Visualizar la sección Beneficios | T04: TS12 - Implementación de la Sección Beneficios del Landing | Implementar la sección de beneficios, mostrando de forma clara las ventajas de usar la plataforma EMSafe. | 4 | Fabian | Done |
+| US46 | Visualizar la sección Características | T01: TS10 - Desarrollo de estructura HTML del Landing Page | Implementar la estructura base de la sección de características del Landing Page, respetando la organización visual definida para la primera versión. | 1 | Oskar | Done |
+| US46 | Visualizar la sección Características | T02: TS11 - Desarrollo de estilos CSS del Landing Page | Aplicar estilos visuales a la sección de características para mantener coherencia con el mock-up y la identidad visual de EMSafe. | 2 | Mauro | Done |
+| US47 | Visualizar la sección Problemática | T03: TS13 - Implementación de la Sección Problemática del Landing Page | Desarrollar la sección que explica la contaminación electromagnética y la necesidad que resuelve EMSafe. | 2 | Carlos | Done |
+| US53 | Visualizar la sección Beneficios | T04: TS12 - Implementación de la Sección Beneficios del Landing | Implementar la sección de beneficios, mostrando de forma clara las ventajas de usar la plataforma EMSafe. | 2 | Fabian | Done |
 | US50 | Testimonios de Usuarios | T05: TS14 - Implementación de la Sección Testimonios del Landing Page | Crear la sección de testimonios para mostrar experiencias de usuarios y reforzar la confianza en la solución. | 3 | Fernando | Done |
 | US52 | Visualización de la sección de ubicación del centro de investigación | T06: TS15 - Implementación de la Sección Ubicación del Landing Page | Implementar la sección de ubicación para mostrar información de localización de manera clara dentro del Landing Page. | 3 | Oskar | Done |
-| US48 | CTA Claros | T07: TS17 - Implementación de la Sección Iniciar Sesión del Landing Page | Desarrollar la sección de inicio de sesión o acceso, permitiendo que el visitante identifique fácilmente cómo ingresar a la plataforma. | 6 | Mauro | Done |
+| US48 | CTA Claros | T07: TS17 - Implementación de la Sección Iniciar Sesión del Landing Page | Desarrollar la sección de inicio de sesión o acceso, permitiendo que el visitante identifique fácilmente cómo ingresar a la plataforma. | 1 | Mauro | Done |
 | US48 | CTA Claros | T08: TS19 - Redirección a la Aplicación Web | Implementar el botón de redirección desde el Landing Page hacia la aplicación web de EMSafe. | 3 | Carlos | Done |
-| US49 | Responsive Design | T09: TS18 - Desarrollo de funcionalidad con JavaScript | Ajustar interacciones básicas y comportamiento responsive para mejorar la experiencia desde distintos dispositivos. | 4 | Fabian | Done |
+| US49 | Responsive Design | T09: TS18 - Desarrollo de funcionalidad con JavaScript | Ajustar interacciones básicas y comportamiento responsive para mejorar la experiencia desde distintos dispositivos. | 2 | Fabian | Done |
 | US51 | Visualizar link público de acceso al Landing Page | T10: TS20 - Despliegue del Landing Page en GitHub | Publicar el Landing Page en el repositorio correspondiente y validar que el enlace público funcione correctamente. | 2 | Fernando | Done |
-| TS26 | Desarrollo de Dashboard (Frontend Web) | TS26: Desarrollo de Dashboard (Frontend Web) | Implementar el dashboard principal para mostrar un resumen general de la plataforma, métricas clave, accesos rápidos y alertas relevantes. | 6 | Oskar | Done |
-| TS22 | Desarrollo de sección Devices (Frontend Web) | TS22: Desarrollo de sección Devices (Frontend Web) | Implementar la sección de dispositivos para visualizar todos los dispositivos registrados en la plataforma. | 6 | Mauro | Done |
-| TS23 | Desarrollo de sección Map Radiation (Frontend Web) | TS23: Desarrollo de sección Map Radiation (Frontend Web) | Implementar la sección del mapa de radiación para visualizar los niveles de radiación registrados por zona geográfica. | 7 | Fernando | Done |
-| TS24 | Desarrollo de sección Alarms (Frontend Web) | TS24: Desarrollo de sección Alarms (Frontend Web) | Implementar la sección de alarmas para visualizar y gestionar las alertas generadas por la plataforma. | 6 | Carlos | Done |
-| TS25 | Desarrollo de sección Profile (Frontend Web) | TS25: Desarrollo de sección Profile (Frontend Web) | Implementar la sección de perfil para que los usuarios puedan ver y editar su información personal. | 5 | Fabian | Done |
-| US57 | API de Integración | US57: API de Integración | Preparar la integración de sensores vía API para que los datos puedan incorporarse en tiempo real a la plataforma. | 6 | Carlos | Done |
-| TS27 | Gestión de endpoints de Devices | TS27: Gestión de endpoints de Devices | Implementar y consumir los endpoints del módulo de dispositivos para mantener actualizada la información desde la aplicación. | 5 | Mauro | Done |
-| TS28 | Gestión de endpoints de Map Radiation | TS28: Gestión de endpoints de Map Radiation | Consumir los endpoints relacionados con puntos de radiación para visualizar la información en el mapa. | 5 | Fernando | Done |
-| TS29 | Gestión de endpoints de Alarms | TS29: Gestión de endpoints de Alarms | Consumir los endpoints de alarmas para mostrar, crear, actualizar y eliminar alertas del sistema. | 5 | Oskar | Done |
-| TS31 | Consulta de endpoints de Dashboard | TS31: Consulta de endpoints de Dashboard | Obtener los datos generales de la plataforma desde el dashboard para visualizar métricas clave y accesos rápidos. | 4 | Fabian | Done |
+| TS26 | Desarrollo de Dashboard (Frontend Web) | TS26: Desarrollo de Dashboard (Frontend Web) | Implementar el dashboard principal para mostrar un resumen general de la plataforma, métricas clave, accesos rápidos y alertas relevantes. | 2 | Oskar | Done |
+| TS22 | Desarrollo de sección Devices (Frontend Web) | TS22: Desarrollo de sección Devices (Frontend Web) | Implementar la sección de dispositivos para visualizar todos los dispositivos registrados en la plataforma. | 1 | Mauro | Done |
+| TS23 | Desarrollo de sección Map Radiation (Frontend Web) | TS23: Desarrollo de sección Map Radiation (Frontend Web) | Implementar la sección del mapa de radiación para visualizar los niveles de radiación registrados por zona geográfica. | 3 | Fernando | Done |
+| TS24 | Desarrollo de sección Alarms (Frontend Web) | TS24: Desarrollo de sección Alarms (Frontend Web) | Implementar la sección de alarmas para visualizar y gestionar las alertas generadas por la plataforma. | 2 | Carlos | Done |
+| TS25 | Desarrollo de sección Profile (Frontend Web) | TS25: Desarrollo de sección Profile (Frontend Web) | Implementar la sección de perfil para que los usuarios puedan ver y editar su información personal. | 1 | Fabian | Done |
+| US57 | API de Integración | US57: API de Integración | Preparar la integración de sensores vía API para que los datos puedan incorporarse en tiempo real a la plataforma. | 2 | Carlos | Done |
+| TS27 | Gestión de endpoints de Devices | TS27: Gestión de endpoints de Devices | Implementar y consumir los endpoints del módulo de dispositivos para mantener actualizada la información desde la aplicación. | 2 | Mauro | Done |
+| TS28 | Gestión de endpoints de Map Radiation | TS28: Gestión de endpoints de Map Radiation | Consumir los endpoints relacionados con puntos de radiación para visualizar la información en el mapa. | 1 | Fernando | Done |
+| TS29 | Gestión de endpoints de Alarms | TS29: Gestión de endpoints de Alarms | Consumir los endpoints de alarmas para mostrar, crear, actualizar y eliminar alertas del sistema. | 1 | Oskar | Done |
+| TS31 | Consulta de endpoints de Dashboard | TS31: Consulta de endpoints de Dashboard | Obtener los datos generales de la plataforma desde el dashboard para visualizar métricas clave y accesos rápidos. | 3 | Fabian | Done |
 
 ### 6.2.1.4. Development Evidence for Sprint Review.
 
@@ -3803,6 +3803,129 @@ Durante este sprint, el equipo enfocó sus esfuerzos en desarrollar la primera v
 ## Github analytics de nuestro Front End: 
 
 <img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Front End Collaborators.png">
+
+## 6.2.2. Sprint 2
+
+En este sprint, el enfoque estará en consolidar la integración completa entre el Frontend Web Application, la Mobile Application y el Backend API ya desplegado de EMSafe. Se priorizará el consumo real de endpoints, la implementación de funcionalidades clave en la app móvil (monitoreo en tiempo real, alertas, historial y perfil), y la mejora de la experiencia de usuario en la plataforma web administrativa con datos reales provenientes del backend.
+
+### 6.2.2.1. Sprint Planning 2
+
+En este sprint, el enfoque estará en consolidar la integración completa entre el Frontend Web Application, la Mobile Application y el Backend API ya desplegado de EMSafe. Se priorizará el consumo real de endpoints, la implementación de funcionalidades clave en la app móvil (monitoreo en tiempo real, alertas, historial y perfil), y la mejora de la experiencia de usuario en la plataforma web administrativa con datos reales provenientes del backend.
+
+| Sprint # | Sprint 2 |
+|---|---|
+| Sprint Planning Background | Durante la reunión se revisaron los avances del Sprint 1, el estado actual del Backend API y las funcionalidades pendientes para la Mobile Application y el Frontend Web. Se priorizó la integración real con los endpoints disponibles, el desarrollo de las vistas móviles principales y el refinamiento de la experiencia en la plataforma web. |
+| Date | 30-05-2026 |
+| Time | 3:00 p.m. |
+| Location | Reunión realizada mediante Discord |
+| Prepared By | Guimaraes Escalante, Carlos Eduardo |
+| Attendees (to planning meeting) | Sosa Soto, Oskar Rodrigo / Lopez de la Cruz, Mauro Fabricio / Guimaraes Escalante, Carlos Eduardo / Oliva Lopez, Fabian Alejandro / Lizano Coll Cardenas, Fernando Jesus |
+| Sprint Goal & User Stories | |
+| Sprint 2 Goal | Completar la integración del Frontend Web Application y la Mobile Application con el Backend API de EMSafe, desarrollando las funcionalidades principales de monitoreo, alertas, historial y gestión de dispositivos con datos reales, garantizando una experiencia fluida y coherente en ambas plataformas. |
+| Sprint 2 Velocity | 18 Story Points |
+| Sum of Story Points | 30 Story Points |
+
+### 6.2.2.2. Aspect Leaders and Collaborators
+
+| Aspecto | Líder | Colaboradores |
+|---|---|---|
+| Mobile App Development | Sosa Soto, Oskar Rodrigo | Sosa Soto, Oskar Rodrigo / Lopez de la Cruz, Mauro Fabricio |
+| Mobile UI and Navigation | Sosa Soto, Oskar Rodrigo | Oliva Lopez, Fabian Alejandro / Lizano Coll Cardenas, Fernando Jesus |
+| Backend API Integration (Web) | Guimaraes Escalante, Carlos Eduardo | Lopez de la Cruz, Mauro Fabricio / Sosa Soto, Oskar Rodrigo |
+| Backend API Integration (Mobile) | Lopez de la Cruz, Mauro Fabricio | Oliva Lopez, Fabian Alejandro / Guimaraes Escalante, Carlos Eduardo |
+| Real-Time Monitoring and Alerts | Lizano Coll Cardenas, Fernando Jesus | Sosa Soto, Oskar Rodrigo / Oliva Lopez, Fabian Alejandro |
+| Data Visualization and Charts | Oliva Lopez, Fabian Alejandro | Lizano Coll Cardenas, Fernando Jesus / Guimaraes Escalante, Carlos Eduardo |
+| Testing and Validation | Guimaraes Escalante, Carlos Eduardo | Lopez de la Cruz, Mauro Fabricio / Lizano Coll Cardenas, Fernando Jesus |
+| Deployment and CI/CD Update | Guimaraes Escalante, Carlos Eduardo | Oliva Lopez, Fabian Alejandro / Sosa Soto, Oskar Rodrigo |
+
+Cada líder fue responsable de coordinar las tareas correspondientes a su aspecto dentro del Sprint 2. Los colaboradores apoyaron en la implementación de vistas móviles, integración con endpoints reales, validación de flujos, visualización de datos y actualización del pipeline de despliegue.
+
+### 6.2.2.3. Sprint Backlog 2
+
+En este sprint, el enfoque estará en desarrollar las funcionalidades principales de la **Mobile Application** e integrar el **Frontend Web Application** con los endpoints reales del **Backend API** de EMSafe. Se priorizarán User Stories relacionadas con monitoreo en tiempo real, gestión de alertas, historial de exposición, perfil de usuario y administración de dispositivos IoT.
+
+| ID | User Story | Work-Item / Task | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|
+| EPIC01 - US01 | Visualizar nivel de radiación en tiempo real (Mobile) | T01: Implementación de pantalla Home Dashboard Mobile | Desarrollar la pantalla principal de la app móvil mostrando el nivel de radiación actual del sensor vinculado mediante datos reales del backend. | 3 | Fabian | Done |
+| EPIC01 - US02 | Configurar alertas de radiación (Mobile) | T02: Implementación del Alert Center Mobile | Desarrollar la sección de alertas en la app móvil para mostrar notificaciones activas e historial de alertas generadas por el sistema. | 3 | Oskar | Done |
+| EPIC01 - US03 | Visualizar historial de exposición (Mobile) | T03: Implementación de pantalla Historical Exposure Mobile | Crear la pantalla de historial de exposición electromagnética con visualización cronológica de lecturas registradas. | 4 | Mauro | Done |
+| EPIC01 - US04 | Ver recomendaciones de salud (Mobile) | T04: Implementación de pantalla Health Recommendations Mobile | Desarrollar la sección de recomendaciones de salud personalizadas basadas en los niveles de exposición registrados. | 2 | Fernando | Done |
+| EPIC01 - US05 | Gestionar perfil de usuario (Mobile) | T05: Implementación de pantalla Profile Mobile | Implementar la pantalla de perfil del usuario en la app móvil con visualización y edición de datos personales. | 2 | Fabian | Done |
+| EPIC01 - US06 | Vincular sensor IoT (Mobile) | T06: Implementación de flujo Sensor Pairing Mobile | Desarrollar el flujo completo de vinculación del sensor IoT con la cuenta del usuario mediante la app móvil. | 3 | Oskar | Done |
+| EPIC01 - US07 | Visualizar mapa de radiación del hogar (Mobile) | T07: Implementación de pantalla Home Radiation Map Mobile | Implementar la vista de mapa de radiación del hogar mostrando la distribución de niveles en el espacio del usuario. | 4 | Mauro | Done |
+| EPIC01 - US08 | Consultar asistente ASTRA (Mobile) | T08: Implementación de pantalla ASTRA Intelligent Assistant | Desarrollar la interfaz del asistente IA ASTRA para consultas sobre radiación y recomendaciones personalizadas. | 3 | Carlos | Done |
+| EPIC02 - US09 | Integrar datos reales en Dashboard Web | T09: Integración de endpoints en Dashboard Frontend Web | Reemplazar los datos simulados del dashboard por datos reales provenientes de los endpoints del backend. | 3 | Carlos | Done |
+| EPIC02 - US10 | Gestionar dispositivos IoT desde Web | T10: Integración de endpoints en sección Devices Frontend Web | Conectar la sección de dispositivos del frontend web con los endpoints reales del backend para listar, registrar y actualizar dispositivos. | 3 | Mauro | Done |
+| EPIC02 - US11 | Visualizar mapa de radiación en Web | T11: Integración de endpoints en sección Map Radiation Frontend Web | Conectar el mapa de radiación del frontend web con los endpoints reales para mostrar puntos de medición actualizados. | 4 | Fernando | Done |
+| EPIC02 - US12 | Gestionar alarmas desde Web | T12: Integración de endpoints en sección Alarms Frontend Web | Conectar la sección de alarmas del frontend web con los endpoints reales para mostrar, crear y gestionar alertas activas. | 2 | Oskar | Done |
+| EPIC02 - US13 | Ver y editar perfil desde Web | T13: Integración de endpoints en sección Profile Frontend Web | Conectar la sección de perfil del frontend web con los endpoints del backend para mostrar y actualizar datos del usuario. | 2 | Fabian | Done |
+| EPIC03 - US14 | Mejorar sección de contacto del Landing Page | T14: Actualización de sección Contacto del Landing Page | Actualizar el formulario de contacto del Landing Page para redirigir correctamente a la Web Application desplegada. | 1 | Carlos | Done |
+| EPIC04 - US15 | Consumir endpoint de mediciones de radiación | T15: Integración de endpoint de mediciones en Mobile y Web | Consumir el endpoint de mediciones de radiación en ambas plataformas para mostrar lecturas actualizadas en tiempo real. | 4 | Fernando | Done |
+| EPIC04 - US16 | Consumir endpoint de gestión de usuarios | T16: Integración de endpoint de usuarios en Frontend Web | Conectar el módulo de usuarios del frontend web con el endpoint correspondiente del backend para listar y gestionar cuentas. | 2 | Carlos | Done |
+
+### 6.2.2.4. Development Evidence for Sprint Review
+
+- Falta que se suba todo para agregarlo
+
+### 6.2.2.5. Testing Suite Evidence for Sprint Review
+
+- Falta que se suba todo para agregarlo
+
+### 6.2.2.6. Execution Evidence for Sprint Review
+
+Durante el Sprint 2, se completó la integración del **Frontend Web Application** con el **Backend API** real de EMSafe y se desarrollaron las vistas principales de la **Mobile Application**. La plataforma web fue actualizada en el entorno de producción en Azure con los nuevos cambios integrados, y la app móvil fue validada en entorno de desarrollo con datos reales.
+
+**Link del Frontend Web Application desplegado:** 
+
+**Frontend Web** - Poner Imagenes 
+
+**Mobile App** - Poner Imagenes
+
+### 6.2.2.7. Services Documentation Evidence for Sprint Review
+
+- Falta
+
+### 6.2.2.8. Software Deployment Evidence for Sprint Review
+
+En esta sección se describe el proceso de actualización del despliegue de la plataforma EMSafe correspondiente al Sprint 2. La infraestructura de producción se mantuvo en **Microsoft Azure App Service** con el pipeline CI/CD configurado en el Sprint anterior, ejecutando automáticamente el build y deploy con cada push a la rama `main`.
+
+1. Se realizaron los merges de las ramas de desarrollo hacia `main` en el repositorio del Frontend Web Application, activando automáticamente el pipeline de GitHub Actions.
+
+**poner imagen**
+
+2. GitHub Actions ejecutó el build de producción de Angular SSR y desplegó los cambios automáticamente en Azure App Service.
+
+**poner imagen**
+
+3. Se verificó que el despliegue fue exitoso accediendo a la URL de producción y validando las nuevas funcionalidades integradas con el backend real.
+
+**poner imagen**
+
+4. La Mobile Application fue validada en entorno de desarrollo mediante emulador y dispositivo físico, conectada a los endpoints reales del backend desplegado.
+
+**poner imagen**
+
+### 6.2.2.9. Team Collaboration Insights during Sprint
+
+Durante este sprint, el equipo enfocó sus esfuerzos en integrar el Backend API con el Frontend Web Application y desarrollar las vistas principales de la Mobile Application. Para organizar el trabajo, se continuó utilizando GitHub como herramienta principal de colaboración, trabajando con ramas como `main`, `feature/api-integration` y `feature/mobile-screens`. La coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar avances de integración, resolver bloqueos técnicos y mantener la sincronización entre el desarrollo web y móvil a lo largo del sprint.
+
+## Github analytics de nuestro Front End — Sprint 2:
+
+poner imagen
+
+## Github analytics de nuestra Mobile Application — Sprint 2:
+
+poner imagen
+
+## 6.3. Validation Interviews
+
+### 6.3.1. Diseño de Entrevistas
+
+### 6.3.2. Registro de Entrevistas
+
+### 6.3.3. Evaluaciones según heurísticas
+
+### 6.4. Video About-the-Product
 
 # Conclusiones
 
