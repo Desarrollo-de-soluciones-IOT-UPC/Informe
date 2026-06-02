@@ -3907,7 +3907,7 @@ En esta sección se describe el proceso de actualización del despliegue de la p
 
 ### 6.2.2.9. Team Collaboration Insights during Sprint
 
-Durante este sprint, el equipo enfocó sus esfuerzos en integrar el Backend API con el Frontend Web Application y desarrollar las vistas principales de la Mobile Application. Para organizar el trabajo, se continuó utilizando GitHub como herramienta principal de colaboración, trabajando con ramas como `main`, `feature/api-integration` y `feature/mobile-screens`. La coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar avances de integración, resolver bloqueos técnicos y mantener la sincronización entre el desarrollo web y móvil a lo largo del sprint.
+Durante este sprint, el equipo enfocó sus esfuerzos en integrar el Backend API con el Frontend Web Application y desarrollar las vistas principales de la Mobile Application. Para organizar el trabajo, se continuó utilizando GitHub como herramienta principal de colaboración, trabajando con ramas. La coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar avances de integración, resolver bloqueos técnicos y mantener la sincronización entre el desarrollo web y móvil a lo largo del sprint.
 
 ## Github analytics de nuestro Front End — Sprint 2:
 
