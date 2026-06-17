@@ -70,7 +70,7 @@
         <ul>
           <li>Carátula</li>
           <li>Registro de Versiones del Informe</li>
-          <li>Project Report Collaboration Insights </li>
+          <li>Project Report Collaboration Insights</li>
           <li>Contenido</li>
           <li>Student Outcome</li>
         </ul>
@@ -99,18 +99,52 @@
       <td>
         Adición en las secciones:
         <ul>
-          <li>Correción de la carátula</li>
-          <li>Correción de C4 Diagrams</li>
+          <li>Corrección de la carátula</li>
+          <li>Corrección de C4 Diagrams</li>
           <li>Registro de Versiones del Informe</li>
-          <li>Project Report Collaboration Insights </li>
+          <li>Project Report Collaboration Insights</li>
           <li>Contenido</li>
           <li>Student Outcome</li>
         </ul>
         Se han incluído los siguientes capítulos:
         <ul>
           <li>Capítulo V: Solution UI/UX Design</li>
-          <li>Capítulo VI: Product Implementation, Validation & Deployment. </li>
+          <li>Capítulo VI: Product Implementation, Validation & Deployment.</li>
           <li>Avance de Conclusiones y Anexos</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="margin: 0 auto; text-align: center;"><strong>AV2</strong></td>
+      <td style="margin: 0 auto; text-align: center;">16/06/2026</td>
+      <td>
+        <ul>
+          <li>Sosa Soto, Oskar Rodrigo</li>
+          <li>Lopez de la Cruz, Mauro Fabricio</li>
+          <li>Guimaraes Escalante, Carlos Eduardo</li>
+          <li>Oliva Lopez, Fabian Alejandro</li>
+          <li>Lizano Coll Cardenas, Fernando Jesus</li>
+        </ul>
+      </td>
+      <td>
+        Adición en las secciones:
+        <ul>
+          <li>Registro de Versiones del Informe</li>
+          <li>Project Report Collaboration Insights</li>
+          <li>Student Outcome</li>
+        </ul>
+        Se han incluído los siguientes capítulos:
+        <ul>
+          <li>Capítulo VI: Sprint 2 (Sprint Planning, Backlog, Development Evidence, Testing Suite, Execution Evidence, Services Documentation, Software Deployment Evidence, Team Collaboration Insights)</li>
+          <li>Capítulo VI: Validation Interviews (Diseño, Registro y Evaluaciones según heurísticas)</li>
+          <li>Capítulo VI: Video About-the-Product</li>
+          <li>Avance de Conclusiones y Anexos</li>
+        </ul>
+        Despliegues realizados:
+        <ul>
+          <li>Nueva versión del Landing Page desplegada</li>
+          <li>Nueva versión del Web Application desplegada</li>
+          <li>Primera versión del Mobile Application desplegada</li>
         </ul>
       </td>
     </tr>
@@ -250,6 +284,67 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
   </tbody>
 </table>
 
+**AV2**
+
+Para el desarrollo del informe correspondiente a todas las entregas, se estableció la implementación de secciones de la siguiente manera para cada integrante del equipo:
+
+<table>
+  <thead>
+    <tr>
+      <th>Integrante</th>
+      <th>Tareas Asignadas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sosa Soto, Oskar Rodrigo</td>
+      <td>
+      - Creación del aplicativo Mobile (pantallas principales: Home Dashboard, Alert Center, Historical Exposure, Health Recommendations, Profile, Sensor Pairing, Home Radiation Map, ASTRA) <br>
+      - Diseño e implementación de navegación y flujos en la app móvil <br>
+      - Documentación de Execution Evidence del Sprint 2 (capturas Mobile App) <br>
+      - Participación en Testing y validación de la Mobile Application <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Lopez de la Cruz, Mauro Fabricio</td>
+      <td>
+      - Despliegue de la nueva versión del Landing Page <br>
+      - Despliegue de la nueva versión del Web Application  <br>
+      - Integración de endpoints reales en sección Devices y Map Radiation del Frontend Web <br>
+      - Documentación de Software Deployment Evidence del Sprint 2 <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Guimaraes Escalante, Carlos Eduardo</td>
+      <td>
+      - Mejoras y mantenimiento del Backend API (nuevos endpoints, correcciones y optimizaciones) <br>
+      - Documentación de Services Documentation Evidence del Sprint 2 <br>
+      - Integración del Backend con Frontend Web y Mobile Application <br>
+      - Correcciones del documento y revisión general del informe <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Oliva Lopez, Fabian Alejandro</td>
+      <td>
+      - Sprint Planning 2 <br>
+      - Sprint Backlog 2 <br>
+      - Documentación del Capítulo VI: Development Evidence y Testing Suite Evidence del Sprint 2 <br>
+      - Actualización de conclusiones y anexos <br>
+      - Coordinación de tareas del equipo durante el sprint <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Lizano Coll Cardenas, Fernando Jesus</td>
+      <td>
+      - Desarrollo del prototipo IoT físico (ensamblado, programación y validación del sensor electromagnético) <br>
+      - Documentación del Capítulo VI: Aspect Leaders and Collaborators del Sprint 2 <br>
+      - Documentación de Team Collaboration Insights del Sprint 2 <br>
+      - Apoyo en Validation Interviews y evaluaciones según heurísticas <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 El proceso de colaboración en el informe se realizó mediante commits constantes al repositorio de la organización.
 
 Se presenta el resumen de commits:<br>
@@ -259,6 +354,8 @@ Se presenta el resumen de commits:<br>
 <strong>TB1</strong>
 ![Commits](img/AV1/colaboration-insights/collaboration-insights-tb1.png)
 
+<strong>AV2</strong>
+- Falta Subir
 
 ## Contenido
 - [Student Outcome](#student-outcome)
@@ -385,28 +482,39 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Participé activamente en el desarrollo del proyecto asumiendo responsabilidades dentro del equipo, especialmente en la definición de funcionalidades mobile y el diseño del Bounded Context. Contribuí en la elaboración, priorización del backlog y desarrollo de artefactos como diagramas de arquitectura y base de datos. Además, apoyé en la toma de decisiones técnicas relacionadas al análisis de datos de radiación y su visualización, aportando ideas y soluciones alineadas con los objetivos del proyecto. Esto permitió un trabajo más organizado y colaborativo entre los integrantes del equipo.<br><br>
         <strong>TP1</strong><br>
         Durante el desarrollo del proyecto se promovió un liderazgo colaborativo mediante la coordinación constante con los integrantes del equipo para organizar actividades, compartir ideas y tomar decisiones de manera conjunta. Se mantuvo una comunicación activa para asegurar que todos los miembros participaran en el avance del trabajo, contribuyendo desde sus responsabilidades al cumplimiento de los objetivos planteados. Asimismo, se brindó apoyo en las distintas etapas del proyecto para mantener coherencia y calidad en los entregables desarrollados.<br><br>
+        <strong>AV2</strong><br>
+        Durante el desarrollo del Sprint 2, asumí el liderazgo en la construcción del aplicativo móvil de EMSafe, coordinando con el equipo la definición de pantallas, flujos de navegación y la integración con el backend. Tomé decisiones técnicas sobre la arquitectura de la app móvil y participé activamente en la validación de las funcionalidades implementadas, asegurando que el producto final cumpliera con los objetivos planteados para esta entrega.<br><br>
         Lopez de la Cruz, Mauro Fabricio<br>
         <strong>AV1</strong><br>
         Durante el desarrollo de nuestras soluciones de software, he promovido un liderazgo distribuido trabajando de forma articulada con mis compañeros (Romina, Carlos, Camila y Ernesto). En lugar de centralizar la toma de decisiones, facilitamos espacios de discusión técnica donde cada integrante aportó desde su especialidad. Al definir la arquitectura de nuestros sistemas, estructurar los Bounded Contexts o evaluar migraciones críticas de backend hacia tecnologías como FastAPI, las directrices se establecieron mediante consenso. Esto aseguró que todo el equipo comprendiera, respaldara y se hiciera dueño de la dirección técnica adoptada, logrando un frente unido y cohesionado para superar los desafíos del proyecto.<br><br>
         <strong>TP1</strong><br>
         En TP1 ejercí liderazgo técnico desde la implementación, desarrollando código del frontend de la solución y desplegando la primera versión funcional del mismo, además de liderar la corrección integral de los diagramas C4 según la retroalimentación recibida en AV1. Coordiné con el equipo el rediseño del System Landscape, el Context Diagram y el Container Diagram para reflejar correctamente el sistema embebido como subsistema propio dentro de Gauss, eliminando los sensores y adaptadores como entidades separadas y consolidándolos en un único Edge Device. Este liderazgo distribuido se manifestó en que las decisiones de arquitectura no quedaron solo en documentación, sino que se materializaron en código desplegado y verificable, asegurando que todo el equipo pudiera respaldar técnicamente la dirección adoptada frente al cliente.<br><br>
+        <strong>AV2</strong><br>
+        En esta entrega ejercí liderazgo técnico en el proceso de despliegue, gestionando la actualización del Landing Page y la nueva versión del Web Application en Azure. Coordiné con el equipo la sincronización entre los repositorios de frontend y el pipeline CI/CD, asegurando que los cambios de todos los integrantes se integraran correctamente y que las versiones desplegadas fueran estables y verificables. Este rol me permitió contribuir desde la infraestructura al cumplimiento de los objetivos del sprint.<br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
         <strong>AV1</strong><br>
         A lo largo del desarrollo del proyecto, pude evidenciar la importancia de trabajar en equipo y cómo el liderazgo no recae en una sola persona, sino que puede ser compartido entre todos los integrantes. En distintos momentos, cada miembro asumió la iniciativa según sus fortalezas, lo que permitió avanzar de manera más eficiente y equilibrada. Personalmente, considero que esta experiencia fortaleció mi capacidad de comunicación, coordinación y adaptación dentro de un grupo, contribuyendo no solo al logro de los objetivos, sino también a un ambiente de trabajo colaborativo y respetuoso.<br><br>
         <strong>TP1</strong><br>
         Durante el desarrollo del proyecto, comprendí que el trabajo en equipo es fundamental y que el liderazgo puede asumirse de forma distribuida entre los integrantes, en lugar de recaer en una sola persona. A lo largo del proceso, cada miembro tomó la iniciativa en distintos momentos según sus habilidades, lo que favoreció un avance más ágil y balanceado. Esta experiencia me permitió mejorar mis capacidades de comunicación, organización y adaptación dentro de un equipo, aportando tanto al cumplimiento de los objetivos como a la construcción de un entorno de trabajo positivo y colaborativo.<br><br>
+        <strong>AV2</strong><br>
+        Durante el Sprint 2 lideré las mejoras del Backend API de EMSafe, coordinando con los integrantes del equipo responsables del frontend web y la app móvil para garantizar una integración fluida con los endpoints reales. Tomé decisiones sobre la estructura de los nuevos endpoints, las correcciones necesarias y las optimizaciones del servicio, asegurando que el backend respondiera correctamente a las necesidades de ambas plataformas y que el equipo contara con una base sólida para completar sus respectivas implementaciones.<br><br>
         Oliva Lopez, Fabian Alejandro<br>
         <strong>AV1</strong><br>
         Liderazgo Técnico en la fase de investigación de mercado y definición de producto. Ejecución del análisis competitivo y diseño de estrategias frente a competidores. Supervisión del registro de entrevistas para asegurar la extracción de insights accionables. Definición de la arquitectura técnica mediante el establecimiento del Bounded Context: Device Management.<br><br>
         <strong>TP1</strong><br>
         Durante el desarrollo del proyecto se impulsó un liderazgo compartido, basado en la comunicación constante y la participación activa de los integrantes del equipo. Las decisiones fueron tomadas de manera coordinada, considerando los aportes de cada miembro y buscando siempre mantener una correcta organización del trabajo. Asimismo, se apoyó en la revisión y mejora de los entregables para asegurar que el avance del proyecto mantuviera coherencia, calidad y cumplimiento con los objetivos establecidos.<br><br>
+        <strong>AV2</strong><br>
+        En este avance asumí la responsabilidad de liderar la planificación del Sprint 2, coordinando con el equipo la definición de objetivos, la distribución de tareas en el Sprint Backlog y el seguimiento del progreso durante el sprint. Esta labor me permitió contribuir al liderazgo conjunto del equipo, facilitando que cada integrante tuviera claridad sobre sus responsabilidades y que el grupo avanzara de manera organizada hacia el cumplimiento de las metas establecidas.<br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
         <strong>AV1</strong><br>
-        Lideré el diseño completo del Bounded Context IAM (Identity & Access Management), tomando decisiones de arquitectura sobre las capas Domain, Interface, Application e Infrastructure. Propuse y coordiné con el equipo la estructura de relaciones entre bounded contexts en el Context Mapping, asumiendo responsabilidad sobre mi parte del entregable de manera autónoma.
+        Lideré el diseño completo del Bounded Context IAM (Identity & Access Management), tomando decisiones de arquitectura sobre las capas Domain, Interface, Application e Infrastructure. Propuse y coordiné con el equipo la estructura de relaciones entre bounded contexts en el Context Mapping, asumiendo responsabilidad sobre mi parte del entregable de manera autónoma.<br><br>
+        <strong>AV2</strong><br>
+        Durante el Sprint 2 lideré el desarrollo del prototipo IoT físico de EMSafe, tomando decisiones sobre el ensamblado, la programación y la validación del sensor electromagnético. Coordiné con el equipo la integración del dispositivo físico con el backend, asegurando que los datos capturados por el sensor pudieran ser transmitidos y procesados correctamente por el sistema. Este rol me permitió contribuir al liderazgo técnico del equipo desde el componente de hardware del proyecto.
       </td>
       <td style="padding: 10px; vertical-align: top;">
           <strong>AV1:</strong> La dirección compartida y la sólida base técnica permitieron unificar la visión del producto con las capacidades del sistema. El liderazgo en el análisis estratégico aseguró que el equipo tomara decisiones informadas para diferenciar la solución en el mercado.<br><br>
-          <strong>TP1:</strong> En esta segunda entrega, el liderazgo distribuido se consolidó al asumir conjuntamente las correcciones arquitectónicas recibidas en AV1 y trasladarlas tanto a la documentación como a la implementación. La capacidad del equipo para absorber retroalimentación crítica sin perder cohesión técnica demostró una madurez de liderazgo conjunto que se materializó en una primera versión funcional del frontend desplegada y un modelo C4 defendible frente al cliente.
+          <strong>TP1:</strong> En esta segunda entrega, el liderazgo distribuido se consolidó al asumir conjuntamente las correcciones arquitectónicas recibidas en AV1 y trasladarlas tanto a la documentación como a la implementación. La capacidad del equipo para absorber retroalimentación crítica sin perder cohesión técnica demostró una madurez de liderazgo conjunto que se materializó en una primera versión funcional del frontend desplegada y un modelo C4 defendible frente al cliente.<br><br>
+          <strong>AV2:</strong> En esta entrega el liderazgo conjunto del equipo se evidenció en la capacidad de cada integrante de asumir roles técnicos específicos y coordinarse de manera efectiva para lograr la integración entre el frontend web, la app móvil, el backend y el prototipo IoT físico. La distribución del liderazgo por componentes permitió avanzar en paralelo sin perder cohesión, resultando en el despliegue exitoso de las nuevas versiones del Landing Page, Web Application y la primera versión funcional del Mobile Application.
       </td>
     </tr>
     <tr>
@@ -419,28 +527,39 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Durante el desarrollo del proyecto, contribuí a mantener una comunicación constante y respetuosa con el equipo, facilitando la coordinación de tareas y el cumplimiento de los objetivos establecidos. Participé en la planificación de actividades relacionadas a mi módulo, asegurando la entrega oportuna, diagramas y diseño de base de datos. Asimismo, estuve dispuesto a apoyar a mis compañeros y adaptar mi trabajo según las necesidades del equipo, lo que permitió avanzar de manera ordenada y cumplir con los entregables dentro del plazo establecido.<br><br>
         <strong>TP1</strong><br>
         Se fomentó un ambiente de trabajo colaborativo e inclusivo, permitiendo que cada integrante aportara propuestas y opiniones durante el desarrollo del proyecto. Además, se establecieron metas claras y una planificación organizada de tareas para distribuir adecuadamente las responsabilidades y optimizar los tiempos de trabajo. Gracias a esta coordinación y seguimiento continuo, se logró cumplir con los objetivos establecidos y completar las actividades dentro de los plazos definidos.<br><br>
+        <strong>AV2</strong><br>
+        Durante el Sprint 2 contribuí a mantener un entorno de trabajo colaborativo, participando activamente en las reuniones de coordinación del equipo y compartiendo avances del aplicativo móvil para recibir retroalimentación oportuna. Establecí metas claras para cada pantalla de la app, planifiqué las tareas de desarrollo de forma ordenada y cumplí con los entregables dentro del plazo del sprint, asegurando que la primera versión del Mobile Application estuviera lista para su validación.<br><br>
         Lopez de la Cruz, Mauro Fabricio<br>
         <strong>AV1</strong><br>
         Fomenté un espacio de trabajo donde la comunicación abierta y la seguridad técnica fueron la base para planificar nuestros ciclos de desarrollo. Nos enfocamos en desglosar los requerimientos de la solución en historias de usuario claras y tareas medibles desde el Product Backlog, asignándolas estratégicamente según las fortalezas de cada miembro entre el frontend, el backend y el control de calidad. Gracias a este entorno estructurado, al apoyo mutuo frente a los bloqueos técnicos y al seguimiento constante de nuestro progreso, logramos integrar nuestro código de manera continua y cumplir con éxito los objetivos y plazos de entrega propuestos para nuestros despliegues.<br><br>
         <strong>TP1</strong><br>
         Fomenté un entorno de trabajo donde la comunicación técnica fue clave para cerrar TP1 a tiempo. Planifiqué mis tareas en tres frentes paralelos — desarrollo de código del frontend, despliegue de la primera versión funcional, y corrección de los diagramas C4 — distribuyendo la carga de manera realista y manteniendo informado al equipo del avance de cada uno. Coordiné con mis compañeros para que las correcciones arquitectónicas en los diagramas se reflejaran también en la implementación, evitando inconsistencias entre la documentación y el código desplegado. Este enfoque estructurado me permitió cumplir con los objetivos del sprint y entregar una primera versión del frontend funcional, defendible técnicamente y alineada con el modelo C4 corregido.<br><br>
+        <strong>AV2</strong><br>
+        En esta entrega planifiqué y ejecuté el proceso de despliegue de manera estructurada, estableciendo pasos claros para la actualización del Landing Page y el Web Application. Mantuve al equipo informado sobre el estado de los despliegues y coordiné la resolución de incidencias que surgieron durante el proceso. Este enfoque organizado permitió cumplir con el objetivo de tener ambas plataformas desplegadas y operativas al cierre del sprint.<br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
         <strong>AV1</strong><br>
         Durante el desarrollo del proyecto, pude contribuir a la creación de un entorno colaborativo e inclusivo, donde todos los integrantes del equipo tuvieron la oportunidad de participar y aportar sus ideas. Se establecieron metas claras desde el inicio, lo que facilitó la planificación de tareas y la distribución equitativa de responsabilidades. Personalmente, considero que mantener una comunicación constante y respetuosa fue clave para cumplir con los objetivos propuestos, ya que permitió coordinar mejor el trabajo y adaptarnos ante cualquier dificultad que surgiera en el proceso.<br><br>
         <strong>TP1</strong><br>
         Durante el desarrollo del proyecto, participé en la consolidación de un entorno de trabajo participativo, en el que se fomentó la intervención activa de todos los integrantes del equipo. La definición de objetivos desde las primeras etapas permitió organizar el trabajo de manera más estructurada y asignar responsabilidades de forma balanceada. Asimismo, la comunicación continua dentro del grupo facilitó la coordinación de actividades y permitió afrontar de manera eficiente los retos que se presentaron a lo largo del proceso.<br><br>
+        <strong>AV2</strong><br>
+        Durante el Sprint 2 participé en la construcción de un entorno de trabajo colaborativo, manteniéndome disponible para resolver dudas del equipo sobre los endpoints del backend y adaptando los servicios según las necesidades que surgían en el desarrollo del frontend y la app móvil. Planifiqué las mejoras del backend de forma iterativa, priorizando los endpoints más críticos para el avance del equipo y cumpliendo con las integraciones necesarias dentro del plazo establecido.<br><br>
         Oliva Lopez, Fabian Alejandro<br>
         <strong>AV1</strong><br>
         Facilitación de sesiones de trabajo para la creación y refinamiento de User Stories, asegurando la participación de todos los roles del equipo. Coordinación de la planificación de tareas dentro del contexto de gestión de dispositivos. Integración de los hallazgos de las entrevistas de usuario en el flujo de desarrollo para mantener el cumplimiento de los objetivos del sprint.<br><br>
         <strong>TP1</strong><br>
         Se promovió un entorno de trabajo colaborativo, donde cada integrante pudo contribuir con ideas, propuestas y responsabilidades específicas dentro del proyecto. Para ello, se definieron metas claras y se organizaron las tareas de acuerdo con las capacidades y avances del equipo, permitiendo una mejor distribución del trabajo. Gracias a esta planificación y al seguimiento continuo de las actividades, se logró avanzar de manera ordenada y cumplir con los objetivos planteados dentro del tiempo previsto.<br><br>
+        <strong>AV2</strong><br>
+        Contribuí a la creación de un entorno colaborativo mediante la elaboración del Sprint Planning 2 y el Sprint Backlog 2, documentando de forma clara los objetivos, las tareas asignadas y las estimaciones de cada ítem. Esta planificación permitió que el equipo tuviera una guía de trabajo compartida desde el inicio del sprint, facilitando la distribución equitativa de responsabilidades y el seguimiento del progreso para cumplir con los objetivos definidos.<br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
         <strong>AV1</strong><br>
-        Planifiqué y completé las secciones asignadas del informe: Impact Mapping y el Bounded Context IAM (secciones 4.2.1.1 a 4.2.1.6), cumpliendo con los criterios establecidos por el equipo. Elaboré los diagramas de clases del dominio, el diseño de base de datos y el Component Level Diagram, asegurando coherencia con el resto de bounded contexts desarrollados por mis compañeros.
+        Planifiqué y completé las secciones asignadas del informe: Impact Mapping y el Bounded Context IAM (secciones 4.2.1.1 a 4.2.1.6), cumpliendo con los criterios establecidos por el equipo. Elaboré los diagramas de clases del dominio, el diseño de base de datos y el Component Level Diagram, asegurando coherencia con el resto de bounded contexts desarrollados por mis compañeros.<br><br>
+        <strong>AV2</strong><br>
+        Durante el Sprint 2 planifiqué y ejecuté el desarrollo del prototipo IoT físico de forma ordenada, estableciendo etapas de ensamblado, programación y validación del sensor. Mantuve al equipo informado sobre el avance del prototipo y coordiné las pruebas de integración con el backend, asegurando que el dispositivo físico pudiera transmitir datos correctamente al sistema. Esto permitió cumplir con el objetivo de contar con una primera versión funcional del componente IoT dentro del plazo del sprint.
       </td>
       <td style="padding: 10px; vertical-align: top;">
           <strong>AV1:</strong> El fomento de la comunicación abierta y la organización estructurada de las tareas técnicas facilitaron un flujo de trabajo cohesivo. Esto permitió que el equipo alcanzara las metas del sprint de manera eficiente, manteniendo siempre el enfoque en las necesidades validadas del usuario.<br><br>
-          <strong>TP1:</strong> El equipo consolidó en TP1 un entorno de trabajo donde la planificación se ajustó a las correcciones recibidas en AV1 sin perder ritmo de entrega. La comunicación abierta, la distribución equitativa de tareas y el seguimiento mutuo permitieron cumplir los objetivos del sprint, integrando frontend desplegado, correcciones arquitectónicas en los diagramas C4 y documentación actualizada en un único entregable coherente.
+          <strong>TP1:</strong> El equipo consolidó en TP1 un entorno de trabajo donde la planificación se ajustó a las correcciones recibidas en AV1 sin perder ritmo de entrega. La comunicación abierta, la distribución equitativa de tareas y el seguimiento mutuo permitieron cumplir los objetivos del sprint, integrando frontend desplegado, correcciones arquitectónicas en los diagramas C4 y documentación actualizada en un único entregable coherente.<br><br>
+          <strong>AV2:</strong> El equipo demostró en esta entrega una capacidad consolidada para planificar, distribuir y ejecutar tareas de forma colaborativa en un contexto de mayor complejidad técnica. La integración simultánea del frontend web, la app móvil, el backend y el prototipo IoT físico fue posible gracias a un entorno de trabajo inclusivo, donde cada integrante aportó desde su rol y se mantuvo comunicado con el resto. El cumplimiento de los objetivos del Sprint 2, reflejado en los despliegues realizados y la primera versión funcional del Mobile Application, evidencia la madurez del equipo para establecer metas y alcanzarlas de manera conjunta.
       </td>
     </tr>
   </tbody>
