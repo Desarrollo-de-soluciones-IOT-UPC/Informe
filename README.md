@@ -3984,25 +3984,183 @@ En este sprint, el enfoque estará en desarrollar las funcionalidades principale
 
 ### 6.2.2.4. Development Evidence for Sprint Review
 
-- Falta que se suba todo para agregarlo
+Durante el Sprint 2, el equipo consolidó la implementación de las principales funcionalidades de EMSafe en sus cuatro repositorios activos: Landing Page, Back-End, Front-End y Mobile App. Se realizaron avances en la integración con el backend real, el desarrollo de nuevas vistas en el frontend web, la construcción del aplicativo móvil y mejoras en el Landing Page. A continuación se presenta la tabla de commits relacionados con la implementación.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| landing-page | main | 5d0c9f5 | feat(checkout): Payment Methods completed | Se completó la implementación de los métodos de pago en el Landing Page. | 2026-06-18 |
+| landing-page | main | 755e43a | feat(checkout): add multi-step simulated purchase flow | Se añadió el flujo de compra simulado con múltiples pasos en la sección de checkout. | 2026-06-17 |
+| landing-page | main | 85cfb8f | feat(payments): add simulated checkout flow for plans | Se implementó el flujo de checkout simulado para los planes disponibles en el Landing Page. | 2026-06-17 |
+| landing-page | main | f47ed6b | feat(ui): add smooth motion design to landing page | Se añadió diseño de movimiento fluido para mejorar la experiencia visual del Landing Page. | 2026-06-17 |
+| Back-End | main | e073c43 | Merge pull request #3 from Desarrollo-de-soluciones-IOT-UPC/feature/web-back-end | Se integró la rama feature/web-back-end con los últimos endpoints desarrollados para la comunicación edge. | 2026-06-20 |
+| Back-End | main | df67b60 | feat: add edge endpoints for communication | Se añadieron endpoints de comunicación para el dispositivo edge del sistema IoT. | 2026-06-20 |
+| Back-End | main | c289d44 | Merge pull request #2 from Desarrollo-de-soluciones-IOT-UPC/feature/web-back-end | Se integró la rama feature/web-back-end con actualizaciones de múltiples módulos del backend. | 2026-06-19 |
+| Back-End | main | 36a7d8f | feat: update users feature | Se actualizó el módulo de usuarios del backend con mejoras en los endpoints existentes. | 2026-06-19 |
+| Back-End | main | 15f1b0f | feat: update history feature | Se actualizó el módulo de historial del backend para soportar nuevas consultas de exposición. | 2026-06-19 |
+| Back-End | main | 6999965 | feat: update work orders feature | Se actualizaron los endpoints del módulo de órdenes de trabajo en el backend. | 2026-06-19 |
+| Back-End | main | 66cf272 | feat: update devices endpoint | Se actualizó el endpoint de dispositivos para soportar nuevas operaciones de gestión IoT. | 2026-06-19 |
+| Back-End | main | b537727 | feat: update v2 alerts | Se actualizó la versión 2 de los endpoints de alertas del sistema. | 2026-06-19 |
+| Back-End | main | ead450d | feat: update alerts feature | Se realizaron mejoras generales al módulo de alertas del backend. | 2026-06-19 |
+| Back-End | main | 3e11b7f | feat: update database | Se actualizó la configuración y estructura de la base de datos del sistema. | 2026-06-19 |
+| Back-End | main | 55b74e2 | Merge pull request #1 from Desarrollo-de-soluciones-IOT-UPC/feature/role-client | Se integró el módulo de cliente con su rol y endpoints correspondientes. | 2026-06-13 |
+| Back-End | main | 743520e | feat: modulo client para app movil - ROLE_CLIENT + endpoints /api/client/** | Se implementó el módulo de cliente para la app móvil incluyendo el rol ROLE_CLIENT y sus endpoints. | 2026-06-13 |
+| Front-End | develop | c702be1 | Merge pull request #6 from Desarrollo-de-soluciones-IOT-UPC/feature/ui-redesign-stage-2 | Se integró la rama de rediseño de UI etapa 2 con todas las secciones actualizadas. | 2026-06-19 |
+| Front-End | develop | 8256cb3 | feat: update users section | Se actualizó la sección de usuarios del frontend web con el nuevo diseño. | 2026-06-19 |
+| Front-End | develop | 7c1d3dc | feat: update sidebar | Se actualizó el sidebar del panel administrativo con mejoras visuales y de navegación. | 2026-06-19 |
+| Front-End | develop | 6eb83d2 | feat: update history section | Se actualizó la sección de historial del frontend web. | 2026-06-19 |
+| Front-End | develop | 691e81a | feat: update devices section | Se actualizó la sección de dispositivos del frontend web. | 2026-06-19 |
+| Front-End | develop | cd8ea19 | feat: update work orders section | Se actualizó la sección de órdenes de trabajo del panel administrativo. | 2026-06-19 |
+| Front-End | develop | 2a57804 | feat: update dashboard section | Se actualizó el dashboard principal del frontend web con nuevas métricas y datos reales. | 2026-06-19 |
+| Front-End | develop | 8510b3f | feat: update alarms feature | Se actualizó la funcionalidad de alarmas del frontend web. | 2026-06-19 |
+| Front-End | develop | 2277d8a | fix: update tech-work | Se corrigieron detalles técnicos en el flujo de trabajo del frontend. | 2026-06-13 |
+| Mobile_App | main | 214f11b | fix: Add url prod | Se añadió la URL de producción del backend en la configuración de la app móvil. | 2026-06-19 |
+| Mobile_App | main | 25ecf4f | Merge pull request #1 from Desarrollo-de-soluciones-IOT-UPC/feature/backend-integration | Se integró la rama de integración con el backend real en la app móvil. | 2026-06-13 |
+| Mobile_App | main | b35c03e | feat: conectar app al backend - capa HTTP, login real, consumo de /api/client/** | Se implementó la capa HTTP de la app móvil conectándola al backend real con login y consumo de endpoints. | 2026-06-13 |
+| Mobile_App | main | a302ebb | fix(flow): Polish mobile screens | Se realizaron ajustes visuales y de flujo en las pantallas de la app móvil. | 2026-06-12 |
+| Mobile_App | main | 5eea6c8 | feat(onboarding): Add personal details flow | Se añadió el flujo de ingreso de datos personales en el proceso de onboarding. | 2026-06-12 |
+| Mobile_App | main | 1b7eb3b | fix(etapa3): Connect footer nav | Se conectó la navegación del footer en la etapa 3 de la app móvil. | 2026-06-12 |
+| Mobile_App | main | 9c1b070 | fix(etapa2): Open dashboard after auth | Se corrigió el flujo para abrir el dashboard automáticamente tras la autenticación. | 2026-06-12 |
+| Mobile_App | main | 848561f | feat(etapa3): Add system settings | Se añadió la pantalla de configuración del sistema en la etapa 3 de la app móvil. | 2026-06-12 |
+| Mobile_App | main | ada6a07 | feat(etapa3): Add empty state | Se añadió el estado vacío para pantallas sin datos en la etapa 3. | 2026-06-12 |
+| Mobile_App | main | 82e6c30 | feat(etapa3): Add alert history | Se implementó el historial de alertas en la etapa 3 de la app móvil. | 2026-06-12 |
+| Mobile_App | main | 3c675d5 | feat(etapa3): Add sensor detail | Se añadió la pantalla de detalle del sensor en la etapa 3. | 2026-06-12 |
+| Mobile_App | main | f989379 | feat(etapa3): Add dashboard overview | Se implementó la vista general del dashboard en la etapa 3 de la app móvil. | 2026-06-12 |
+| Mobile_App | main | 44f87b0 | refactor(assets): Remove unused design PNGs | Se eliminaron los archivos PNG de diseño no utilizados para limpiar el repositorio. | 2026-06-12 |
+| Mobile_App | main | 906f128 | Remove unused SVG assets | Se eliminaron los assets SVG sin uso del proyecto. | 2026-06-12 |
+| Mobile_App | main | f005dbb | Improve stage 2 auth UX | Se mejoraron los flujos de experiencia de usuario en la autenticación de la etapa 2. | 2026-06-12 |
+| Mobile_App | main | 59bbfa2 | Fix splash footer sign-in navigation | Se corrigió la navegación del footer del splash hacia el inicio de sesión. | 2026-06-10 |
+| Mobile_App | main | 62177db | feat(onboarding): add skip onboarding and sign in navigation | Se añadió la opción de omitir el onboarding y navegar directamente al inicio de sesión. | 2026-06-10 |
+| Mobile_App | main | 67c98b9 | fix(auth): Going to dashboard completed | Se completó la corrección del flujo de redirección al dashboard tras autenticación. | 2026-06-10 |
+| Mobile_App | main | bde1950 | refactor(auth): standardize responsive and scroll-safe layouts across stage 2 | Se estandarizaron los layouts responsivos y seguros para scroll en la etapa 2. | 2026-06-10 |
+| Mobile_App | main | 1bbec96 | fix(auth): remove fixed artboards, fix OTP overflow, and add real form fields | Se corrigieron artboards fijos, desbordamiento del OTP y se añadieron campos de formulario reales. | 2026-06-10 |
+| Mobile_App | main | f3d649c | fix(login): improve responsive layout, scrolling, and form fields | Se mejoró el layout responsivo, el scroll y los campos del formulario de login. | 2026-06-10 |
+| Mobile_App | main | d53683a | feat(ui): feat/etapa2-glass-ui-responsive | Se implementó la UI con efecto glass responsive para la etapa 2 de la app móvil. | 2026-06-05 |
+| Mobile_App | main | 110bee7 | fix(crystal-blur): make pop-up transparent over pairing_sensors | Se corrigió el efecto de blur para que el pop-up sea transparente sobre la pantalla de pairing de sensores. | 2026-06-05 |
+| Mobile_App | main | 2d5cb8c | fix(onboarding): splash, pair sensors & smart alerts | Se corrigieron las pantallas de splash, vinculación de sensores y alertas inteligentes del onboarding. | 2026-06-03 |
+| Mobile_App | main | 69268a1 | fix: update onboarding | Se actualizaron las pantallas del flujo de onboarding de la app móvil. | 2026-06-02 |
+| Mobile_App | main | cc93491 | Refactor onboarding screens: Convert HomeProfileSetupScreen to StatelessWidget, enhance PairingSensorsScreen with animation, and update PairYourSensorScreen to improve UI | Se refactorizaron las pantallas de onboarding mejorando estructura, animaciones y UI general. | 2026-06-01 |
+
 
 ### 6.2.2.5. Testing Suite Evidence for Sprint Review
 
-- Falta que se suba todo para agregarlo
+Durante el Sprint 2, las pruebas se centraron en la validación del correcto funcionamiento de los flujos de integración entre la Mobile Application y el Backend API, así como en la verificación visual y funcional de las secciones actualizadas del Frontend Web. Se validaron los flujos de autenticación, navegación, consumo de endpoints reales y presentación de datos en ambas plataformas. A continuación se presenta la tabla de commits relacionados con las actividades de testing.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| Back-End | main | e073c43 | Merge pull request #3 from Desarrollo-de-soluciones-IOT-UPC/feature/web-back-end | Se verificó la correcta integración de los endpoints de comunicación edge tras el merge a main. | 2026-06-20 |
+| Back-End | main | c289d44 | Merge pull request #2 from Desarrollo-de-soluciones-IOT-UPC/feature/web-back-end | Se validó el funcionamiento de los módulos de usuarios, historial, dispositivos, alertas y work orders tras el merge. | 2026-06-19 |
+| Front-End | develop | c702be1 | Merge pull request #6 from Desarrollo-de-soluciones-IOT-UPC/feature/ui-redesign-stage-2 | Se validó la correcta integración del rediseño de UI etapa 2 en todas las secciones del panel administrativo. | 2026-06-19 |
+| Front-End | develop | 2277d8a | fix: update tech-work | Se verificaron y corrigieron detalles técnicos detectados durante las pruebas del flujo de trabajo del frontend. | 2026-06-13 |
+| Mobile_App | main | 214f11b | fix: Add url prod | Se validó la conexión de la app móvil con la URL de producción del backend tras el ajuste de configuración. | 2026-06-19 |
+| Mobile_App | main | 25ecf4f | Merge pull request #1 from Desarrollo-de-soluciones-IOT-UPC/feature/backend-integration | Se verificó la integración completa de la app móvil con el backend real, incluyendo login y consumo de endpoints. | 2026-06-13 |
+| Mobile_App | main | a302ebb | fix(flow): Polish mobile screens | Se validaron los flujos de navegación y presentación visual en todas las pantallas de la app móvil. | 2026-06-12 |
+| Mobile_App | main | 9c1b070 | fix(etapa2): Open dashboard after auth | Se verificó el correcto redireccionamiento al dashboard tras completar el flujo de autenticación. | 2026-06-12 |
+| Mobile_App | main | 67c98b9 | fix(auth): Going to dashboard completed | Se validó el flujo completo de autenticación y redirección al dashboard en dispositivo real. | 2026-06-10 |
+| Mobile_App | main | 1bbec96 | fix(auth): remove fixed artboards, fix OTP overflow, and add real form fields | Se realizaron pruebas de los campos de formulario reales y se validó el comportamiento del componente OTP. | 2026-06-10 |
+| Mobile_App | main | 2d5cb8c | fix(onboarding): splash, pair sensors & smart alerts | Se validaron las pantallas de splash, vinculación de sensores y alertas inteligentes durante el onboarding. | 2026-06-03 |
+| Mobile_App | main | cc93491 | Refactor onboarding screens: Convert HomeProfileSetupScreen to StatelessWidget, enhance PairingSensorsScreen with animation, and update PairYourSensorScreen to improve UI | Se verificó el correcto funcionamiento de las pantallas de onboarding tras la refactorización. | 2026-06-01 |
 
 ### 6.2.2.6. Execution Evidence for Sprint Review
 
-Durante el Sprint 2, se completó la integración del **Frontend Web Application** con el **Backend API** real de EMSafe y se desarrollaron las vistas principales de la **Mobile Application**. La plataforma web fue actualizada en el entorno de producción en Azure con los nuevos cambios integrados, y la app móvil fue validada en entorno de desarrollo con datos reales.
+Durante el Sprint 2, se completó la integración del **Frontend Web Application** con el **Backend API** real de EMSafe. La plataforma web fue actualizada en el entorno de producción en Azure con los nuevos cambios integrados, y la app móvil fue validada en entorno de desarrollo con datos reales.
 
-**Link del Frontend Web Application desplegado:** 
+#### **Link del Frontend Web Application desplegado:** https://emsafe-amh9hgdudda3bybj.eastus-01.azurewebsites.net/admin
 
-**Frontend Web** - Poner Imagenes 
+**Pantalla de Login — Página de inicio de sesión de EMSafe desplegada en Azure.**
 
-**Mobile App** - Poner Imagenes
+<img src="img/TB1/Sprint-2/Login.png" alt="Pantalla de Login">
+
+**Portal Administrativo — Dashboard principal con métricas, gráficos y órdenes recientes.**
+
+<img src="img/TB1/Sprint-2/System Overview - 1.png" alt="Pantalla del System Overview">
+
+<img src="img/TB1/Sprint-2/System Overview - 2.png" alt="Pantalla del System Overview">
+
+**Portal Administrativo — Gestión de Work Orders con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Work Orders - 1.png" alt="Pantalla de Work Orders">
+
+<img src="img/TB1/Sprint-2/Work Orders - 2.png" alt="Pantalla de Word Orders">
+
+**Portal Administrativo — Gestión del Historial con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/History.png" alt="Pantalla del Historial">
+
+**Portal Administrativo — Gestión de Usuarios con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Team Management.png" alt="Pantalla del Administrador de Usuario">
+
+**Portal Administrativo — Gestión de Dispositivos con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Devices.png" alt="Pantalla del Administrador de Dispositivos">
+
+**Portal Administrativo — Lecturas de Radición Electromagnetica con mapa integrado.**
+
+<img src="img/TB1/Sprint-2/Radiation Map - 1.png" alt="Pantalla de Radiación con Mapa">
+
+<img src="img/TB1/Sprint-2/Radiation Map - 2.png" alt="Pantalla de Radiación con Mapa">
+
+**Portal Administrativo — Gestión de Alarmas con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Alarms.png" alt="Pantalla de Alarmas">
+
+**Portal Técnico — My Schedule con calendario semanal y navegación por semana.**
+
+<img src="img/TB1/Sprint-2/Technician Portal.png" alt="Pantalla del Dashboard del Tecnico">
+
+**Portal Técnico — Work Orders del técnico con tabs de filtrado por estado.**
+
+<img src="img/TB1/Sprint-2/Technician Work Orders.png" alt="Pantalla de Work Orders del Tecnico">
+
+**Portal Técnico — Historial del técnico con tabs de filtrado por estado.**
+
+<img src="img/TB1/Sprint-2/Technician Historyl.png" alt="Pantalla del Historial del Tecnico">
+
+### **Backend API**: https://emsafe-backend-hmf7asgja0d0h4cr.centralus-01.azurewebsites.net/swagger-ui/index.html
+
+**Backend API — Work Order Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Work_Oder_Controller.png" alt="Backend Work Order Controller">
+
+**Backend API — User Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-User_Controller.png" alt="Backend User Controller">
+
+**Backend API — Reading Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Reading_Controller.png" alt="Backend Reading Controller">
+
+**Backend API — History Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-History_Controller.png" alt="Backend History Controller">
+
+**Backend API — Device Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Device_Controller.png" alt="Backend Device Controller">
+
+**Backend API — Dashboard Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Dashboard_Controller.png" alt="Backend Dashboard Controller">
+
+**Backend API — Client Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Client_Controller.png" alt="Backend Client Controller">
+
+**Backend API — Auth Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Auth_Controller.png" alt="Backend Auth Controller">
+
+**Backend API — Alarm Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Alarm_Controller.png" alt="Backend Alarm Controller">
 
 ### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
-- Falta
+En esta sección se presenta la documentación relacionada con los servicios utilizados durante el Sprint 2 de EMSafe. A diferencia del Sprint 1, en esta entrega se realizó la integración completa con el **Backend API** real, abandonando el uso de mock data en el **Frontend Web Application** y conectando la **Mobile Application** directamente a los endpoints de producción.
+
+Durante este sprint, el Backend incorporó nuevos módulos y actualizó los existentes para soportar las necesidades de ambas plataformas. Se implementó el módulo de cliente (`ROLE_CLIENT`) con sus endpoints `/api/client/**` para la app móvil, se añadieron endpoints de comunicación edge para el dispositivo IoT, y se actualizaron los módulos de usuarios, historial, dispositivos, alertas y órdenes de trabajo. El Frontend Web consumió estos endpoints reales en todas sus secciones principales: dashboard, dispositivos, historial, alarmas, usuarios y work orders. Por su parte, la Mobile Application estableció su capa HTTP de conexión con el backend real, integrando el login, el onboarding y el consumo de datos desde producción.
+
+Debido a que el enfoque principal estuvo en la integración real entre las plataformas y el backend desplegado, en esta etapa se priorizó la validación funcional de los endpoints sobre la generación de documentación formal de servicios. Sin embargo, se dejó preparada la base de ambas plataformas para continuar incorporando nuevos endpoints en los siguientes sprints conforme el sistema continúe escalando.
 
 ### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
@@ -4010,43 +4168,76 @@ En esta sección se describe el proceso de actualización del despliegue de la p
 
 1. Se realizaron los merges de las ramas de desarrollo hacia `main` en el repositorio del Frontend Web Application, activando automáticamente el pipeline de GitHub Actions.
 
-**poner imagen**
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Main.png">
 
 2. GitHub Actions ejecutó el build de producción de Angular SSR y desplegó los cambios automáticamente en Azure App Service.
 
-**poner imagen**
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Github Pages.png">
 
 3. Se verificó que el despliegue fue exitoso accediendo a la URL de producción y validando las nuevas funcionalidades integradas con el backend real.
 
-**poner imagen**
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Deployment.png">
 
 4. La Mobile Application fue validada en entorno de desarrollo mediante emulador y dispositivo físico, conectada a los endpoints reales del backend desplegado.
 
-**poner imagen**
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Page Deploy.png">
 
 ### 6.2.2.9. Team Collaboration Insights during Sprint
 
 Durante este sprint, el equipo enfocó sus esfuerzos en integrar el Backend API con el Frontend Web Application y desarrollar las vistas principales de la Mobile Application. Para organizar el trabajo, se continuó utilizando GitHub como herramienta principal de colaboración, trabajando con ramas. La coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar avances de integración, resolver bloqueos técnicos y mantener la sincronización entre el desarrollo web y móvil a lo largo del sprint.
 
-## Github analytics de nuestro Front End — Sprint 2:
+## Github analytics de nuestro Front End – Sprint 2:
 
-poner imagen
+<img src="./img/TB1/Sprint-2_Contributors/Front%20End-Contributors.png" alt="Github analytics Front End Contributors">
 
-## Github analytics de nuestra Mobile Application — Sprint 2:
+## Github analytics de nuestra Mobile Application – Sprint 2:
 
-poner imagen
+<img src="./img/TB1/Sprint-2_Contributors/Mobile%20App-Contributors.png" alt="Github analytics Mobile Application Contributors">
+
+## Github analytics de nuestra Backend – Sprint 2:
+
+<img src="./img/TB1/Sprint-2_Contributors/Backend-Contributors.png" alt="Github analytics Backend Contributors">
+
+## Github analytics de nuestra Landing Page – Sprint 2:
+
+<img src="./img/TB1/Sprint-2_Contributors/Landing%20Page-Contributors.png" alt="Github analytics Landing Page Contributors">
 
 ## 6.3. Validation Interviews
 
 ### 6.3.1. Diseño de Entrevistas
 
+A continuación se presentan las preguntas diseñadas para las entrevistas finales, clasificadas según los segmentos objetivos del proyecto EMSafe. Estas entrevistas buscan validar la propuesta de valor, la utilidad de la solución y detectar oportunidades de mejora basadas en la experiencia de los usuarios.
+
+**✅ Segmento 1: Personas comprometidas con el cuidado de su salud**
+
+1. ¿Qué tan fácil te resultó entender los niveles de radiación que te muestra EMSafe?
+2. ¿Las alertas automáticas te generaron confianza sobre el estado de tu entorno?
+3. ¿Sentiste que la información presentada te ayudó a tomar decisiones sobre tu exposición diaria?
+4. ¿Qué funcionalidad de EMSafe consideraste más útil y por qué?
+5. ¿Qué mejorarías o añadirías a la plataforma para que sea más útil en tu día a día?
+6. ¿Recomendarías EMSafe a alguien de tu entorno? ¿Por qué?
+
+---
+
+**✅ Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética**
+
+1. ¿Cómo se integró EMSafe en los procesos o rutinas laborales de su organización?
+2. ¿Las mediciones en tiempo real les resultaron útiles para tomar decisiones de seguridad?
+3. ¿Las alertas automáticas contribuyeron a prevenir riesgos o cambiar comportamientos en el equipo?
+4. ¿La visualización de datos fue comprensible para personas sin conocimientos técnicos?
+5. ¿Qué funcionalidades adicionales consideran necesarias para un uso empresarial más completo?
+6. ¿Recomendarían EMSafe a otras empresas del sector? ¿Por qué?
+
+
 ### 6.3.2. Registro de Entrevistas
+
+
 
 ### 6.3.3. Evaluaciones según heurísticas
 
-### 6.4. Video About-the-Product
 
-# Conclusiones
+
+### 6.4. Video About-the-Product
 
 ## Conclusiones y recomendaciones
 
