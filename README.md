@@ -4210,23 +4210,31 @@ A continuación se presentan las preguntas diseñadas para las entrevistas final
 
 **✅ Segmento 1: Personas comprometidas con el cuidado de su salud**
 
-1. ¿Qué tan fácil te resultó entender los niveles de radiación que te muestra EMSafe?
-2. ¿Las alertas automáticas te generaron confianza sobre el estado de tu entorno?
-3. ¿Sentiste que la información presentada te ayudó a tomar decisiones sobre tu exposición diaria?
-4. ¿Qué funcionalidad de EMSafe consideraste más útil y por qué?
-5. ¿Qué mejorarías o añadirías a la plataforma para que sea más útil en tu día a día?
-6. ¿Recomendarías EMSafe a alguien de tu entorno? ¿Por qué?
+1. ¿Cómo te enteraste de EMSafe y qué te motivó a probarlo?
+2. ¿Qué tan fácil te resultó registrarte y comenzar a usar la plataforma?
+3. ¿Entendiste claramente los niveles de radiación que te muestra EMSafe?
+4. ¿Las alertas automáticas sobre niveles elevados te resultaron útiles en tu día a día?
+5. ¿Sentiste que la información presentada te ayudó a tomar decisiones sobre tu exposición diaria?
+6. ¿Aplicaste alguna recomendación de la plataforma para reducir tu exposición electromagnética?
+7. ¿Sientes que ahora tienes mayor control sobre tu entorno respecto a la radiación?
+8. ¿Qué parte de EMSafe consideraste más valiosa y por qué?
+9. ¿Qué mejorarías o añadirías a la plataforma para que sea más útil en tu rutina?
+10. ¿Recomendarías EMSafe a otras personas preocupadas por su salud? ¿Por qué?
 
 ---
 
 **✅ Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética**
 
-1. ¿Cómo se integró EMSafe en los procesos o rutinas laborales de su organización?
-2. ¿Las mediciones en tiempo real les resultaron útiles para tomar decisiones de seguridad?
-3. ¿Las alertas automáticas contribuyeron a prevenir riesgos o cambiar comportamientos en el equipo?
-4. ¿La visualización de datos fue comprensible para personas sin conocimientos técnicos?
-5. ¿Qué funcionalidades adicionales consideran necesarias para un uso empresarial más completo?
-6. ¿Recomendarían EMSafe a otras empresas del sector? ¿Por qué?
+1. ¿Qué tipo de maquinaria o tecnología utiliza su organización que emite radiación electromagnética?
+2. ¿Contaban con algún sistema de monitoreo previo antes de usar EMSafe?
+3. ¿Cómo se integró EMSafe en los procesos o rutinas laborales de su organización?
+4. ¿Las mediciones en tiempo real les resultaron útiles para tomar decisiones de seguridad?
+5. ¿Las alertas automáticas contribuyeron a prevenir riesgos o cambiar comportamientos en el equipo?
+6. ¿Qué impacto tuvo EMSafe en la percepción de seguridad de los trabajadores?
+7. ¿La visualización de datos fue comprensible para todo el equipo, incluso sin conocimientos técnicos?
+8. ¿Qué funcionalidades empresariales consideran que deberían incluirse en futuras versiones?
+9. ¿Consideran que EMSafe podría integrarse con otros sistemas de su organización, como salud ocupacional?
+10. ¿Recomendarían el uso de EMSafe a otras empresas del sector? ¿Por qué?
 
 
 ### 6.3.2. Registro de Entrevistas
