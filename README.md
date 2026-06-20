@@ -4244,6 +4244,89 @@ A continuación se presentan las preguntas diseñadas para las entrevistas final
 ### 6.3.3. Evaluaciones según heurísticas
 
 
+### UX Heuristics & Principles Evaluation  
+### Usability – Inclusive Design – Information Architecture
+
+**Carrera:** Ingeniería de Software  
+**Curso:** Desarrollo de Soluciones IoT  
+**NRC:** 6766  
+**Profesor:** Marco Antonio León Baca  
+**Auditor:** Equipo Gauss  
+**Cliente(s):** Equipo Gauss / Usuarios objetivo de EMSafe  
+
+---
+
+### SITE O APP A EVALUAR
+
+El sistema evaluado es **EMSafe**, una solución IoT orientada al monitoreo de radiación electromagnética no ionizante en entornos domésticos y laborales. La evaluación considera los siguientes módulos documentados en el proyecto:
+
+- **Landing Page de EMSafe:** secciones informativas de inicio, problemática, características, beneficios, testimonios, ubicación y contacto.
+- **Aplicación móvil EMSafe:** onboarding, autenticación, vinculación del dispositivo IoT, dashboard de monitoreo, visualización de alertas e historial.
+- **Plataforma web administrativa:** dashboard principal, gestión de dispositivos, alarmas, órdenes de trabajo, usuarios, técnicos, clientes e historial de servicios.
+- **Dispositivo IoT EMSafe:** prototipo basado en ESP32, sensor ambiental DHT22, simulación de medición EMF mediante potenciómetro e indicadores LED por nivel de riesgo.
+
+---
+
+### TAREAS A EVALUAR
+
+Las tareas seleccionadas corresponden a los flujos principales identificados en el informe, wireframes, mockups, prototipos y entrevistas del proyecto:
+
+1. Visualizar el estado actual de sensores IoT desde el dashboard.
+2. Interpretar niveles de radiación electromagnética mediante indicadores visuales.
+3. Revisar alertas críticas y tomar acciones preventivas.
+4. Vincular el dispositivo IoT “EmSafe S1” durante el onboarding móvil.
+5. Consultar historial de alertas y mediciones.
+6. Gestionar dispositivos, usuarios, técnicos y clientes desde la plataforma web.
+7. Crear y revisar órdenes de trabajo para instalación, mantenimiento o recolección de sensores.
+8. Navegar por la Landing Page para comprender la problemática, beneficios y propuesta de valor.
+9. Identificar el estado físico del dispositivo mediante LEDs de colores.
+
+---
+
+### TAREAS NO INCLUIDAS
+
+Las siguientes tareas quedan fuera del alcance de esta evaluación, debido a que no aparecen como funcionalidades implementadas completamente en la versión actual o se describen como futuras extensiones:
+
+- Integraciones externas avanzadas mediante API con sistemas de terceros.
+- Automatizaciones complejas para controlar dispositivos externos según umbrales.
+- Procesos de pago, planes de suscripción o facturación.
+- Administración avanzada de roles, permisos granulares o auditoría completa.
+- Exportación formal de reportes médicos o regulatorios.
+- Mantenimiento predictivo automatizado basado en inteligencia artificial.
+- Despliegue físico real de sensores EMF especializados, ya que el prototipo actual usa simulación mediante potenciómetro.
+- Funciones avanzadas del asistente ASTRA, salvo como referencia conceptual de diseño.
+
+---
+
+### ESCALA DE SEVERIDAD
+
+| Severidad | Descripción |
+|---|---|
+| 1 | Problema superficial, fácilmente superado y poco frecuente. |
+| 2 | Problema menor, ocurre con cierta frecuencia o genera leve fricción. |
+| 3 | Problema mayor, ocurre frecuentemente o impide que algunos usuarios completen la tarea. Requiere corrección prioritaria. |
+| 4 | Problema muy grave o bloqueante. Debe resolverse antes del lanzamiento. |
+
+---
+
+### TABLA RESUMEN
+
+| # | Problema | Severidad | Heurística violada |
+|---|---|---:|---|
+| 1 | Los niveles de radiación pueden resultar difíciles de interpretar para usuarios sin conocimientos técnicos. | 3 | Correspondencia entre el sistema y el mundo real / Diseño inclusivo |
+| 2 | El flujo de vinculación del sensor IoT puede generar incertidumbre si no comunica claramente el estado de conexión. | 3 | Visibilidad del estado del sistema |
+| 3 | Las alertas críticas pueden indicar riesgo, pero no siempre guían suficientemente la acción inmediata del usuario. | 3 | Ayuda a los usuarios a reconocer, diagnosticar y recuperarse |
+| 4 | La arquitectura de información de la plataforma web puede mezclar tareas administrativas con tareas operativas de técnicos. | 2 | Reconocimiento antes que recuerdo / Arquitectura de información |
+| 5 | El sistema depende en exceso del color para comunicar niveles de riesgo. | 2 | Accesibilidad y diseño inclusivo |
+
+---
+
+### SUPUESTOS BASADOS EN EL CONTEXTO DE LA REPO
+
+- La evaluación se basa en las entrevistas, análisis de usuarios, wireframes, mockups, prototipos y descripción del dispositivo IoT documentados en el informe.
+- Se asume que la validación corresponde a prototipos funcionales o semicompletos de la Landing Page, aplicación móvil, plataforma web y simulación IoT.
+- Se asume que los usuarios mencionados en las entrevistas representan los segmentos objetivo definidos: personas preocupadas por su salud y miembros de empresas u organizaciones expuestas a equipos tecnológicos o maquinaria.
+- Se asume que algunas funcionalidades descritas en la arquitectura de información, como automatización avanzada, asistente ASTRA o reportes exportables, pertenecen a una visión futura o no están completamente implementadas en la versión actual.
 
 ### 6.4. Video About-the-Product
 
