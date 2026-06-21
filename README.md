@@ -4296,6 +4296,27 @@ En esta sección se describe el proceso de despliegue de la aplicación móvil d
 
 <img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-5.jpg" alt="Firebase App Distribution Invitation">
 
+### Edge Service — Software Deployment Evidence Sprint 2
+
+Durante el Sprint 2, también se validó el despliegue local del **Edge Service** de EMSafe, desarrollado con Flask. Este servicio actúa como intermediario para recibir las lecturas del dispositivo IoT, procesar los datos de radiación electromagnética y exponer endpoints para validar el estado del servicio y registrar mediciones.
+
+1. Se verificó el endpoint de salud del servicio Edge mediante la ruta `/health`, confirmando que el servicio `emsafe-edge` se encontraba activo y respondiendo correctamente con estado `UP`.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-1.jpg" alt="Healthcheck del Edge Service activo">
+
+2. Se ejecutó el servidor Edge en entorno local utilizando Flask en el puerto `5000`. Esto permitió validar que el servicio quedara disponible tanto desde `localhost` como desde la dirección IP de red local.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-2.jpg" alt="Servidor Edge ejecutándose en Flask">
+
+3. Se realizaron pruebas de envío de datos hacia el endpoint `/api/v1/emf-monitoring/data-records`. En la consola se observa una primera solicitud con error `400` por formato incorrecto y luego una solicitud exitosa con código `201`, validando la recepción correcta de datos del sensor.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-3.jpg" alt="Registro de datos del sensor en el Edge Service">
+
+4. Finalmente, se confirmó el procesamiento de lecturas del sensor, mostrando registros con valores de exposición electromagnética y niveles de riesgo como `DANGER` y `SAFE`. Esto evidencia que el Edge Service recibe, interpreta y registra correctamente las mediciones enviadas por el dispositivo IoT.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-4.jpg" alt="Lecturas procesadas por el Edge Service">
+
+
 ### 6.2.2.9. Team Collaboration Insights during Sprint
 
 Durante este sprint, el equipo enfocó sus esfuerzos en integrar el Backend API con el Frontend Web Application y desarrollar las vistas principales de la Mobile Application. Para organizar el trabajo, se continuó utilizando GitHub como herramienta principal de colaboración, trabajando con ramas. La coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar avances de integración, resolver bloqueos técnicos y mantener la sincronización entre el desarrollo web y móvil a lo largo del sprint.
