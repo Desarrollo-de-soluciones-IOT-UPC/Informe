@@ -4166,6 +4166,8 @@ Debido a que el enfoque principal estuvo en la integración real entre las plata
 
 En esta sección se describe el proceso de actualización del despliegue de la plataforma EMSafe correspondiente al Sprint 2. La infraestructura de producción se mantuvo en **Microsoft Azure App Service** con el pipeline CI/CD configurado en el Sprint anterior, ejecutando automáticamente el build y deploy con cada push a la rama `main`.
 
+**Landing Page Deployment**
+
 1. Se realizaron los merges de las ramas de desarrollo hacia `main` en el repositorio del Frontend Web Application, activando automáticamente el pipeline de GitHub Actions.
 
 <img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Main.png">
@@ -4181,6 +4183,30 @@ En esta sección se describe el proceso de actualización del despliegue de la p
 4. La Mobile Application fue validada en entorno de desarrollo mediante emulador y dispositivo físico, conectada a los endpoints reales del backend desplegado.
 
 <img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Page Deploy.png">
+
+**Mobile Deployment**
+
+En esta sección se describe el proceso de despliegue de la aplicación móvil de EMSafe correspondiente al Sprint 2. Para esta entrega, el equipo generó una versión de producción de la aplicación móvil desarrollada en Flutter y la distribuyó mediante **Firebase App Distribution**, permitiendo que los testers puedan acceder a la aplicación desde sus dispositivos móviles.
+
+1. Se inició sesión en Firebase desde la línea de comandos utilizando Firebase CLI. Esto permitió autenticar el entorno local con la cuenta del proyecto y habilitar las operaciones necesarias para compilar y distribuir la aplicación móvil.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-1.jpg" alt="Firebase CLI Login">
+
+2. Se ejecutó el comando de compilación de Flutter en modo release, generando el archivo APK optimizado para distribución. Como resultado, se obtuvo el archivo `app-release.apk` dentro de la carpeta `build/app/outputs/flutter-apk/`.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-2.jpg" alt="Flutter Build APK Release">
+
+3. Luego, se utilizó Firebase App Distribution para subir el APK generado y distribuirlo a los testers definidos. Durante este proceso, se agregó una nota de versión indicando que correspondía a la demo funcional de EMSafe v1.0.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-3.jpg" alt="Firebase App Distribution Upload">
+
+4. Se verificó la correcta configuración del proyecto en Firebase, confirmando que la aplicación móvil Android se encontraba registrada dentro del proyecto `emsafe-mobile`, con su respectivo identificador de paquete.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-4.jpg" alt="Firebase Project Configuration">
+
+5. Finalmente, se validó que la invitación de prueba fue enviada correctamente mediante Firebase App Distribution. Esta invitación permite que los testers acepten el acceso, instalen la aplicación y comiencen con las pruebas funcionales de la versión móvil.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-5.jpg" alt="Firebase App Distribution Invitation">
 
 ### 6.2.2.9. Team Collaboration Insights during Sprint
 
