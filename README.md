@@ -4573,6 +4573,10 @@ Las siguientes tareas quedan fuera del alcance de esta evaluación, debido a que
 
 ### 6.4. Video About-the-Product
 
+El link del video About the Product realizado para este Sprint se encuentra en el siguiente Link: 
+
+<a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgD5CE8Y9bfdQr2tCfQZGnTIAc5GPQbFThJsQvlz8vtS4n0?e=tP2oOu" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgD5CE8Y9bfdQr2tCfQZGnTIAc5GPQbFThJsQvlz8vtS4n0?e=tP2oOu</a>
+
 ## Conclusiones y recomendaciones
 
 - La contaminación electromagnética en entornos domésticos e industriales representa un riesgo real y creciente, agravado por la ausencia de herramientas accesibles para medirla. EmSafe surge como respuesta directa a esta brecha mediante una solución IoT integrada.
