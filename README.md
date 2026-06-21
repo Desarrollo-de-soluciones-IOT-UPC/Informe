@@ -4208,7 +4208,7 @@ Durante este sprint, el equipo enfocó sus esfuerzos en integrar el Backend API 
 
 A continuación se presentan las preguntas diseñadas para las entrevistas finales, clasificadas según los segmentos objetivos del proyecto EMSafe. Estas entrevistas buscan validar la propuesta de valor, la utilidad de la solución y detectar oportunidades de mejora basadas en la experiencia de los usuarios.
 
-**✅ Segmento 1: Personas comprometidas con el cuidado de su salud**
+**Segmento 1: Personas comprometidas con el cuidado de su salud**
 
 1. ¿Cómo te enteraste de EMSafe y qué te motivó a probarlo?
 2. ¿Qué tan fácil te resultó registrarte y comenzar a usar la plataforma?
@@ -4223,7 +4223,7 @@ A continuación se presentan las preguntas diseñadas para las entrevistas final
 
 ---
 
-**✅ Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética**
+**Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética**
 
 1. ¿Qué tipo de maquinaria o tecnología utiliza su organización que emite radiación electromagnética?
 2. ¿Contaban con algún sistema de monitoreo previo antes de usar EMSafe?
@@ -4239,10 +4239,139 @@ A continuación se presentan las preguntas diseñadas para las entrevistas final
 
 ### 6.3.2. Registro de Entrevistas
 
+#### Segmento 1: Personas comprometidas con el cuidado de su salud
+    
+> Entrevistado 01: Mateo Mognge
 
+- **Sexo:** Masculino 
+- **Edad:**  24
+- **Distrito donde vive:** Santiago de Surco, Lima
+- **Nivel socioeconómico:** Medio 
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Sprint-2/entrevista-1-segmento-1.png)
+
+- **Link:** <a href="" target="_blank"></a>
+- **Duración:** 0:00 - 7:47
+- **Aplicaciones usadas:** TikTok, Netflix
+- **Tecnologías:**  Celular, Computadores   
+- **Entrevistador:** Carlos Eduardo Guimaraes Escalante
+
+**Resumen:**  
+Mateo se enteró de EMSafe a través de la landing page, que le llamó la atención por explicar de forma directa el riesgo de la exposición electromagnética; eso lo motivó a probar la app. El registro le resultó rápido e intuitivo, y valoró poder usar autenticación biométrica. Entendió con claridad los niveles de radiación gracias al sistema de colores (seguro/moderado/peligroso), que prefirió sobre los valores en µT. Destacó las alertas automáticas como lo más útil en su día a día, ya que pasa muchas horas frente a pantallas; gracias a ellas reorganizó su escritorio y alejó el router de su zona de trabajo, sintiendo que ahora tiene mayor control sobre su entorno. Lo que más valoró fue el historial de mediciones por su utilidad para identificar patrones. Como mejora, pidió recomendaciones más personalizadas y un widget para ver el nivel sin abrir la app. Recomendaría EMSafe sin dudarlo, sobre todo a personas que trabajan desde casa.
+
+> Entrevistado 02: Manuel Gutierrez
+
+- **Sexo:** Masculino
+- **Edad:** 23
+- **Distrito donde vive:** La Molina, Lima
+- **Nivel socioeconómico:** Medio Alto
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Sprint-2/entrevista-2-segmento-1.png)
+
+- **Link:** <a href="" target="_blank"></a>
+- **Duración:** 7:47 - 13:37
+- **Aplicaciones usadas:** Instagram, Chrome
+- **Tecnologías:** Laptop, Celular y Computadora
+- **Entrevistador:**  Carlos Eduardo Guimaraes Escalante
+
+**Resumen:**  
+Manuel conoció EMSafe por la landing y lo motivó la idea de obtener datos objetivos sobre una preocupación que ya tenía. El proceso de registro le pareció sencillo, aunque sugirió añadir un breve tutorial inicial para usuarios nuevos. Comprendió bien los niveles mostrados, aunque al principio tuvo que familiarizarse con la diferencia entre los estados; una vez entendidos, las alertas le resultaron muy útiles y le ayudaron a tomar decisiones concretas, como ventilar y reorganizar su espacio de trabajo. Aplicó varias recomendaciones de la plataforma y siente que ahora tiene más control y tranquilidad. Lo más valioso para él fue la visualización en tiempo real combinada con el historial. Como mejoras, propuso poder comparar distintos ambientes de su casa y exportar reportes. Recomendaría la plataforma, destacando su interfaz limpia y el modo oscuro.
+
+
+> Entrevistado 03: Diana Díaz
+
+- **Sexo:** Femenino
+- **Edad:** 19
+- **Distrito donde vive:** Jesús María, Lima
+- **Nivel socioeconómico:** Medio
+- **Entrevistador:**  Oskar Rodrigo Sosa Soto
+
+
+**Entrevista:**
+
+![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-1/entrevista-3-segmento-1.png)
+
+- **Link:** <a href="" target="_blank"></a>
+- **Duración:** 13:37 - 28:29
+- **Aplicaciones usadas:** Brave, YouTube y TikTok
+- **Tecnologías:** Celular y Laptop
+- **Entrevistador:** Oskar Rodrigo Sosa Soto
+
+**Resumen:**  
+Diana llegó a EMSafe por recomendación y reforzó su interés al ver la landing; la motivó su costumbre de dormir con el celular cerca. El registro le resultó muy fácil y rápido, lo cual valoró por no tener mucho conocimiento técnico. Entendió los niveles de radiación gracias a la simplicidad visual de la app y agradeció que el lenguaje no fuera complicado. Las alertas le parecieron lo más útil, especialmente una notificación nocturna que la llevó a alejar el teléfono de la almohada. Siente que aplicó recomendaciones simples y que ahora tiene más conciencia y control sobre su exposición. Lo que más valoró fue la claridad de las notificaciones y los consejos prácticos. Como mejora, pidió contenido educativo dentro de la app (por qué importa, cómo cuidarse). Recomendaría EMSafe ampliamente, sobre todo a su familia y a sus padres.
+
+
+
+#### Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética
+
+    
+> Entrevistado 01: Alejandro Oroncoy
+
+- **Sexo:** Masculino   
+- **Edad:** 20
+- **Distrito donde vive:** San Borja, Lima
+- **Nivel socioeconómico:** Medio Alto 
+- **Entrevistador:** Fabian Alejandro Oliva López
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Sprint-2/entrevista-1-segmento-2.png)
+
+- **Link:** <a href="" target="_blank"></a>
+- **Duración:** 28:29 - 38:06
+- **Aplicaciones usadas:** Zoom, Twitter, Chrome 
+- **Tecnologías:**  Celular y Laptop
+- **Entrevistador:**  Fabian Alejandro Oliva López
+
+**Resumen:**  
+Alejandro indicó que su organización opera equipos industriales y de comunicaciones que emiten radiación electromagnética. Antes de EMSafe el monitoreo era manual y esporádico, con mediciones puntuales y costosas, sin visibilidad continua. La integración de EMSafe fue fluida: instalaron sensores fijos y empezaron a usar el panel web para supervisar en tiempo real. Las mediciones en vivo les resultaron clave para tomar decisiones de seguridad, y las alertas automáticas permitieron actuar antes de que un equipo superara los umbrales, generando órdenes de trabajo para mantenimiento. Notó una mejora en la percepción de seguridad del personal y resaltó que el mapa de radiación por zona fue comprensible incluso para quienes no tienen perfil técnico. Como funcionalidades futuras pidió reportes automáticos de cumplimiento y roles más granulares. Considera viable integrarlo con sus sistemas existentes y recomendaría EMSafe a otras empresas del sector.
+
+> Entrevistado 02: Gael Rivera
+
+- **Sexo:**  Masculino
+- **Edad:**  25
+- **Distrito donde vive:** La Molina, Lima
+- **Nivel socioeconómico:**  Medio Alto
+- **Entrevistador:** Fabian Alejandro Oliva López
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Sprint-2/entrevista-2-segmento-2.png)
+
+- **Link:** <a href="" target="_blank"></a>
+- **Duración:** 38-06 - 47:04
+- **Aplicaciones usadas:**  Zoom, Instagram, YouTube
+- **Tecnologías:**  Celular y Laptop
+- **Entrevistador:**  Fabian Alejandro Oliva López
+
+**Resumen:**  
+Gael trabaja en el área operativa con maquinaria emisora y explicó que antes dependían de protocolos reactivos y de la experiencia del personal, sin un sistema de monitoreo continuo. EMSafe se integró a sus rutinas mediante el panel administrativo, que usan para supervisar sensores y asignar técnicos. Las mediciones en tiempo real les resultaron muy útiles para anticiparse a riesgos, y las alertas automáticas cambiaron comportamientos del equipo, que ahora reacciona de inmediato ante un nivel elevado. Esto mejoró notablemente la percepción de seguridad de los trabajadores. Valoró que los gráficos y el mapa de radiación por cliente/sensor fueran entendibles para todo el equipo. Como mejoras empresariales propuso un módulo de reportes gerenciales y notificaciones por correo/SMS. Ve potencial de integración con salud ocupacional y recomendaría la plataforma, destacando la trazabilidad de cada intervención.
+
+> Entrevistado 03: Jose Miguel Riega
+
+- **Sexo:** Masculino
+- **Edad:** 22 
+- **Distrito donde vive:** Chorrillos, Lima
+- **Nivel socioeconómico:** Alto
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Sprint-2/entrevista-3-segmento-2.png)
+
+- **Link:** <a href="" target="_blank"></a>
+- **Duración:** 47:04 - 54:07
+- **Aplicaciones usadas:** TikTok e Instagram
+- **Tecnologías:** Celular y Computadora
+- **Entrevistador:** Fernando Jesus Lizano Coll Cardenas
+
+**Resumen:**  
+Jose Miguel aportó una visión gerencial: su organización maneja equipos emisores en varias áreas y antes no contaban con un monitoreo sistematizado, solo revisiones aisladas. Resaltó que EMSafe se integró bien aportando control centralizado y documentación de cada acción. Las mediciones en tiempo real y las alertas les ayudaron a sustentar decisiones de seguridad y a reducir incertidumbre frente a temas regulatorios. Señaló que el impacto en la percepción de seguridad fue positivo, sobre todo por la sensación de control que da ver datos continuos. Valoró que la visualización (estadísticas, historial exportable en CSV y órdenes de trabajo con evidencias) fuera clara para perfiles no técnicos. Como funcionalidades futuras pidió mejor escalabilidad multi-sede y dashboards de cumplimiento. Considera muy valiosa la integración con salud ocupacional y recomendaría EMSafe por su utilidad para auditorías y reputación corporativa. Manifestó interés en un piloto formal.
 
 ### 6.3.3. Evaluaciones según heurísticas
-
 
 ### UX Heuristics & Principles Evaluation  
 ### Usability – Inclusive Design – Information Architecture
