@@ -4366,7 +4366,7 @@ A continuación se presentan las preguntas diseñadas para las entrevistas final
 
 ![Imagen de entrevista](img/TB1/Sprint-2/entrevista-1-segmento-1.png)
 
-- **Link:** <a href="" target="_blank"></a>
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX</a>
 - **Duración:** 0:00 - 7:47
 - **Aplicaciones usadas:** TikTok, Netflix
 - **Tecnologías:**  Celular, Computadores   
@@ -4386,7 +4386,7 @@ Mateo se enteró de EMSafe a través de la landing page, que le llamó la atenci
 
 ![Imagen de entrevista](img/TB1/Sprint-2/entrevista-2-segmento-1.png)
 
-- **Link:** <a href="" target="_blank"></a>
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX</a>
 - **Duración:** 7:47 - 13:37
 - **Aplicaciones usadas:** Instagram, Chrome
 - **Tecnologías:** Laptop, Celular y Computadora
@@ -4409,7 +4409,7 @@ Manuel conoció EMSafe por la landing y lo motivó la idea de obtener datos obje
 
 ![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-1/entrevista-3-segmento-1.png)
 
-- **Link:** <a href="" target="_blank"></a>
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX</a>
 - **Duración:** 13:37 - 28:29
 - **Aplicaciones usadas:** Brave, YouTube y TikTok
 - **Tecnologías:** Celular y Laptop
@@ -4435,7 +4435,7 @@ Diana llegó a EMSafe por recomendación y reforzó su interés al ver la landin
 
 ![Imagen de entrevista](img/TB1/Sprint-2/entrevista-1-segmento-2.png)
 
-- **Link:** <a href="" target="_blank"></a>
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX</a>
 - **Duración:** 28:29 - 38:06
 - **Aplicaciones usadas:** Zoom, Twitter, Chrome 
 - **Tecnologías:**  Celular y Laptop
@@ -4456,7 +4456,7 @@ Alejandro indicó que su organización opera equipos industriales y de comunicac
 
 ![Imagen de entrevista](img/TB1/Sprint-2/entrevista-2-segmento-2.png)
 
-- **Link:** <a href="" target="_blank"></a>
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX</a>
 - **Duración:** 38-06 - 47:04
 - **Aplicaciones usadas:**  Zoom, Instagram, YouTube
 - **Tecnologías:**  Celular y Laptop
@@ -4476,7 +4476,7 @@ Gael trabaja en el área operativa con maquinaria emisora y explicó que antes d
 
 ![Imagen de entrevista](img/TB1/Sprint-2/entrevista-3-segmento-2.png)
 
-- **Link:** <a href="" target="_blank"></a>
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX</a>
 - **Duración:** 47:04 - 54:07
 - **Aplicaciones usadas:** TikTok e Instagram
 - **Tecnologías:** Celular y Computadora
