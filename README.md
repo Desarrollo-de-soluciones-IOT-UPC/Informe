@@ -4154,6 +4154,40 @@ Durante el Sprint 2, se completó la integración del **Frontend Web Application
 
 <img src="./img/TB1/Sprint-2_Backend/Backend-Alarm_Controller.png" alt="Backend Alarm Controller">
 
+### Mobile Application 
+
+**Mobile Application — Pantalla de detalle del sensor con lectura actual de exposición electromagnética.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-1.jpg" alt="Pantalla de detalle del sensor en la app móvil">
+
+**Mobile Application — Dashboard principal con exposición actual, sensores activos y alertas registradas.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-2.jpg" alt="Dashboard principal de la app móvil">
+
+**Mobile Application — Pantalla de configuración con preferencias del sistema y listado de sensores.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-3.jpg" alt="Pantalla de configuración de la app móvil">
+
+**Mobile Application — Historial de alertas con eventos de radiación elevada registrados.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-4.jpg" alt="Historial de alertas de la app móvil">
+
+**Mobile Application — Pantalla inicial de EMSafe con carga de conexión segura.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-5.jpg" alt="Pantalla inicial de EMSafe Mobile">
+
+**Mobile Application — Pantalla informativa de Astra AI con recomendaciones personalizadas.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-6.jpg" alt="Pantalla de Astra AI en la app móvil">
+
+**Mobile Application — Formulario de registro de datos personales para creación de cuenta.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-7.jpg" alt="Formulario de datos personales de la app móvil">
+
+**Mobile Application — Pantalla de inicio de sesión seguro para acceso al sistema.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-8.jpg" alt="Pantalla de login de la app móvil">
+
 ### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
 En esta sección se presenta la documentación relacionada con los servicios utilizados durante el Sprint 2 de EMSafe. A diferencia del Sprint 1, en esta entrega se realizó la integración completa con el **Backend API** real, abandonando el uso de mock data en el **Frontend Web Application** y conectando la **Mobile Application** directamente a los endpoints de producción.
