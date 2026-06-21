@@ -3444,117 +3444,171 @@ El dispositivo comunica su estado mediante los indicadores LED RGB siguiendo los
 
 El circuito fue diseñado y validado en el simulador **Wokwi**. A continuación se presenta el diagrama de conexiones:
 
-![Diagrama del circuito EMSafe en Wokwi](img/TB1/iot/iot-device-design-prototype1.jpeg)
+![Diagrama del circuito EMSafe en Wokwi](img/TB1/wokwi/wokwi.png)
 
-**Enlace al proyecto Wokwi:** [https://wokwi.com/projects/464043432630822913](https://wokwi.com/projects/464043432630822913)
+**Enlace al proyecto Wokwi:** [https://wokwi.com/projects/467303833505243137](https://wokwi.com/projects/467303833505243137)
 
-**Tabla de conexiones pin a pin:**
-
-| Componente | Pin componente | Pin ESP32 | Cable |
-|---|---|---|---|
-| DHT22 | VCC | 3V3 | Rojo |
-| DHT22 | SDA (DATA) | D15 | Verde |
-| DHT22 | GND | GND | Negro |
-| Potenciómetro | VCC | 3V3 | Rojo |
-| Potenciómetro | SIG | D34 | Naranja |
-| Potenciómetro | GND | GND | Negro |
-| Resistencia R1 | Pin 1 | D25 | Verde |
-| Resistencia R1 | Pin 2 | LED Verde (A) | Verde |
-| LED Verde | C (cátodo) | GND | Negro |
-| Resistencia R2 | Pin 1 | D26 | Amarillo |
-| Resistencia R2 | Pin 2 | LED Amarillo (A) | Amarillo |
-| LED Amarillo | C (cátodo) | GND | Negro |
-| Resistencia R3 | Pin 1 | D27 | Rojo |
-| Resistencia R3 | Pin 2 | LED Rojo (A) | Rojo |
-| LED Rojo | C (cátodo) | GND | Negro |
-
+### Tabla de conexiones pin a pin
+ 
+| Componente | Pin componente | Pin ESP32 | Cable | Función |
+|---|---|---|---|---|
+| Custom Chip A3144 | VCC | 3V3 | Rojo | Alimentación del sensor |
+| Custom Chip A3144 | OUT | GPIO34 | Verde | Lectura analógica del campo EMF |
+| Custom Chip A3144 | GND | GND | Negro | Referencia |
+| LED RGB (ánodo común) | Rojo (R) | GPIO27 | Rojo | Indicador nivel DANGER |
+| LED RGB (ánodo común) | Verde (G) | GPIO25 | Verde | Indicador nivel SAFE |
+| LED RGB (ánodo común) | Azul (B) | GPIO26 | Azul | *Reservado* |
+| LED RGB (ánodo común) | Ánodo común | 3V3 | Rojo | Alimentación común |
+| Resistencia R1 (220Ω) | Pin 1 | LED Rojo | Rojo | Limitador corriente |
+| Resistencia R1 | Pin 2 | GPIO27 | Rojo | — |
+| Resistencia R2 (220Ω) | Pin 1 | LED Verde | Verde | Limitador corriente |
+| Resistencia R2 | Pin 2 | GPIO25 | Verde | — |
+| Resistencia R3 (220Ω) | Pin 1 | LED Azul | Azul | Limitador corriente |
+| Resistencia R3 | Pin 2 | GPIO26 | Azul | — |
+| Módulo Relé | VCC | 3V3 | Rojo | Alimentación |
+| Módulo Relé | IN | GPIO32 | Naranja | Control del relé |
+| Módulo Relé | GND | GND | Negro | Referencia |
+ 
 ---
-
-### Flujos de interacción del prototipo
-
+ 
+## Flujos de interacción del prototipo
+ 
 A continuación se describen los principales flujos de interacción del firmware embebido del dispositivo EMSafe:
-
-**Flujo 1: Inicialización del dispositivo**
-
+ 
+### Flujo 1: Inicialización del dispositivo
+ 
 1. El ESP32 inicia y ejecuta `setup()`.
-2. Se configuran los pines de los LEDs como salidas (`OUTPUT`).
-3. Se ejecuta la secuencia de startup LED: verde → amarillo → rojo.
-4. Se inicializa el sensor DHT22 en GPIO 15.
+2. Se configuran los pines de los LEDs RGB como salidas (`OUTPUT`).
+3. Se configura el pin del relé (GPIO32) como salida.
+4. Se inicializa el sensor A3144 (custom chip Wokwi) en GPIO34 (ADC).
 5. El dispositivo intenta conectarse a la red WiFi (SSID: `Wokwi-GUEST`).
-6. Si la conexión es exitosa, el LED verde parpadea 3 veces como confirmación.
-
-**Flujo 2: Ciclo de monitoreo (loop principal)**
-
-1. Cada 5 segundos (`READING_INTERVAL = 5000ms`) el sistema toma una lectura.
-2. Se lee el valor analógico del potenciómetro (GPIO 34) → se mapea a 0–100%.
-3. Se leen temperatura y humedad del DHT22 (GPIO 15).
-4. Se determina el nivel EMF: SAFE / WARNING / CRITICAL.
-5. Se actualiza el LED correspondiente al nivel detectado.
+6. Se sincroniza la hora vía NTP (zona horaria Perú UTC-5).
+7. Si la conexión es exitosa, el LED verde parpadea como confirmación.
+### Flujo 2: Ciclo de monitoreo (loop principal)
+ 
+1. Cada 1 segundo (`INTERVALO_MS = 1000ms`) el sistema toma una lectura analógica.
+2. Se lee el voltaje del custom chip A3144 en GPIO34 (ADC) → se mapea a 0–1000 µT.
+3. Se clasifica el nivel de alerta según el campo:
+   - **SAFE** (verde): campo < 100 µT
+   - **CAUTION** (amarillo): 100 µT ≤ campo < 200 µT
+   - **DANGER** (rojo): campo ≥ 200 µT
+4. Se actualiza el LED RGB al color correspondiente.
+5. Se evalúa el estado del enchufe inteligente (relé):
+   - Si nivel es **DANGER** → corta energía (relé OFF).
+   - Si campo desciende por debajo de 150 µT (histeresis) → restablece energía (relé ON).
 6. Se imprime la lectura en el Serial Monitor.
-
-**Flujo 3: Envío de datos al backend**
-
-1. El sistema evalúa si hubo un cambio significativo (≥ 5% en EMF o ≥ 0.5°C en temperatura) o si el nivel es CRITICAL.
-2. Si se cumple la condición, se construye un payload JSON:
+### Flujo 3: Envío de datos al edge
+ 
+1. El sistema evalúa si hubo un cambio de nivel o estado del enchufe.
+2. Si se cumple la condición y respeta el intervalo mínimo de 3 segundos (anti-saturación), se construye el payload JSON:
 ```json
 {
-  "deviceId": "ESP32-EMSafe-001",
-  "emfLevel": 75,
-  "temperature": 25.3,
-  "humidity": 60.2,
-  "status": "CRITICAL",
-  "unit": "percent"
+  "device_id": "EMSAFE-6766-01",
+  "field_uT": 250.4,
+  "level": "DANGER",
+  "plug": "OFF",
+  "created_at": "19/06/2026 18:40:12"
 }
 ```
-3. Se realiza un `HTTP POST` hacia el endpoint `/api/v1/readings`.
-4. Se registra el código de respuesta en el Serial Monitor.
-5. Se actualizan los valores de referencia para la próxima comparación.
-
-**Flujo 4: Reconexión WiFi automática**
-
-1. Al inicio de cada ciclo del `loop()` se verifica el estado de la conexión WiFi.
-2. Si `WiFi.status() != WL_CONNECTED`, se llama a `connectWiFi()`.
-3. El dispositivo intenta reconectarse hasta 20 veces con intervalos de 500ms.
-4. Si la reconexión falla, el ciclo se interrumpe y se reintenta en el siguiente loop.
-
-**Diagrama de flujo del firmware:**
-
+ 
+3. Se realiza un `HTTP POST` hacia el edge local (Flask):
+   - URL: `http://<IP-local>:5000/api/v1/emf-monitoring/data-records`
+   - Header: `X-API-Key: emsafe-edge-key-6766`
+4. El edge clasifica el nivel localmente (si el dispositivo no lo hubiera hecho) y lo persiste en SQLite.
+5. El edge sincroniza con el backend Azure si está habilitado (POST a `/api/v1/readings`).
+6. Se registra el código de respuesta HTTP en el Serial Monitor.
+### Flujo 4: Integración con la capa edge
+ 
+1. El dispositivo actúa de forma **local e inmediata**: reacción de LED + corte del enchufe sin depender de la conexión.
+2. El edge (Flask) actúa como **autoridad de alertas**: recibe la lectura, confirma la clasificación, la persiste localmente en SQLite, y sincroniza a la nube.
+3. El backend Azure (nube) se encarga de **plataforma y visualización**: dashboards, historial, mapa de radiación, alarmas, app.
+4. El flujo es **resiliente**: si la nube falla, el device sigue alertando y el edge sigue guardando localmente.
+---
+ 
+## Diagrama de flujo del firmware
+ 
 ```
 [Encendido]
      ↓
-[Setup: pines, DHT22, LEDs startup]
+[Setup: pines, A3144, LED RGB, relé, WiFi, NTP]
      ↓
-[Conectar WiFi]
+[Conectar WiFi a Wokwi-GUEST]
      ↓ éxito
-[Loop cada 5s]
+[Sincronizar hora (NTP)]
      ↓
-[Leer potenciómetro → EMF%]
-[Leer DHT22 → Temp, Hum]
+[Loop cada 1 segundo]
      ↓
-[EMF < 30%?] → LED Verde (SAFE)
-[EMF 30-70%?] → LED Amarillo (WARNING)
-[EMF > 70%?] → LED Rojo (CRITICAL)
+[Leer ADC GPIO34 → mapear a µT]
      ↓
-[¿Cambio significativo o CRITICAL?]
+[Clasificar nivel]
+[field_uT < 100?] → SAFE (LED verde)
+[100 ≤ field_uT < 200?] → CAUTION (LED amarillo)
+[field_uT ≥ 200?] → DANGER (LED rojo)
+     ↓
+[¿field_uT >= 200?] → Relé OFF (corta energía)
+[field_uT < 150?] → Relé ON (restablece, con histeresis)
+     ↓
+[Imprimir en Serial Monitor]
+     ↓
+[¿Cambio de nivel O cambio del enchufe?]
+[Y ¿intervalo mínimo 3s respetado?]
      ↓ sí
-[HTTP POST → /api/v1/readings]
+[HTTP POST al edge Flask]
+[Host: http://localhost:5000/api/v1/emf-monitoring/data-records]
+[Header X-API-Key: emsafe-edge-key-6766]
      ↓
-[Registrar respuesta en Serial Monitor]
+[Registrar código HTTP]
+     ↓
+[Edge clasifica → persiste en SQLite local]
+[Edge sincroniza al backend Azure (si enabled)]
      ↓
 [Verificar WiFi → reconectar si necesario]
      ↓
 [Esperar siguiente ciclo]
 ```
-
+ 
 ---
-
-### Evidencia de funcionamiento en simulación
-
-La siguiente captura muestra el circuito EMSafe en ejecución dentro del simulador Wokwi, con el LED rojo encendido indicando un nivel de radiación CRITICAL detectado por el potenciómetro en posición alta:
-
-![Simulación EMSafe funcionando en Wokwi](img/TB1/chapter-5/iot-device/wokwi-simulation-running.png)
-
-El Serial Monitor muestra las lecturas en tiempo real con el formato:
+ 
+## Notas de arquitectura
+ 
+### Wokwi vs Dispositivo físico
+ 
+En Wokwi se simula con el custom chip A3144 y `analogRead` (lectura analógica). En el dispositivo real, el sensor A3144 es digital y se usa `digitalRead` (detección digital de presencia de campo). La logística de detección difiere:
+ 
+- **Wokwi:** lectura continua de voltaje analógico proporcional al campo → mapeo a µT.
+- **Físico:** detección digital binaria (presencia/ausencia) → se requiere circuitería adicional para medir magnitud.
+Esta diferencia está documentada en la tabla de comparación Wokwi vs Físico del informe técnico.
+ 
+### Anti-saturación
+ 
+El sistema implementa filtrado en múltiples capas:
+ 
+1. **Embebido:** el dispositivo solo envía al edge cuando cambia el nivel o el enchufe (no envía cada segundo).
+2. **Edge:** persiste todo localmente (SQLite) y sincroniza al backend solo cambios significativos.
+3. **Backend:** recibe y procesa el flujo agregado, no el flujo crudo.
+Resultado: reducción de carga en la nube y uso eficiente del ancho de banda.
+ 
+### Resiliencia
+ 
+- El **LED y el relé responden al instante** sin esperar al edge o a la nube. Si el internet falla, el dispositivo sigue alertando y protegiendo.
+- El **edge persiste localmente** en SQLite, por lo que aunque la nube esté caída, los datos se guardan y se sincronizarán cuando recupere conectividad.
+- El flujo es **robusto ante desconexiones** en cualquier capa.
+---
+ 
+## Características principales del diseño
+ 
+| Aspecto | Valor |
+|---|---|
+| Rango de medición | 0–1000 µT |
+| Precisión de clasificación | ±10 µT (entre umbrales) |
+| Intervalo de muestreo | 1 segundo |
+| Intervalo mínimo entre envíos | 3 segundos (anti-saturación) |
+| Histeresis del relé | 50 µT (100–150 µT) |
+| Protocolo de comunicación | HTTP POST con JSON |
+| Autenticación del dispositivo | API Key (X-API-Key) |
+| Base de datos local | SQLite (persistencia en edge) |
+| Zona horaria | UTC-5 (Perú) |
+| WiFi | Wokwi-GUEST (sin contraseña) |
 
 ```
 EMSafe IoT Device Starting...
