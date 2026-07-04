@@ -1,41 +1,42 @@
 <div style="text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 50px;">
     <img src="img/AV1/caratula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
     <h1 style="font-size: 24px;">Universidad Peruana de Ciencias Aplicadas</h1>
-    <h2 style="font-size: 24px;">Ingeniería de Software</h2>
-    <p style="margin: 10px 0; border-bottom: none;">1ASI0572 | Desarrollo de Soluciones IoT</p>
-    <p style="margin: 10px 0; border-bottom: none;">NRC: 6766</p>
-    <p style="margin: 10px 0; border-bottom: none;">Periodo: 202610</p>
+    <h2 style="font-size: 24px;">Facultad de Ingeneria</h2>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Curso:</strong> 1ASI0572 - Desarrollo de Soluciones IoT</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>NRC:</strong> 6766</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Nombre del profesor:</strong> Marco Antonio León Baca</p>
     <h2 style="font-size: 24px;">Informe de Trabajo Final</h2>
-    <p style="margin: 10px 0; border-bottom: none;">Startup: Gauss</p>
-    <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; ">Producto: EMsafe</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Nombre del grupo:</strong> Gauss</p>
+    <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; "><strong>Nombre del producto:</strong> EMsafe</p>
+    <h4 style="font-size: 18px; margin-bottom: 20px;"><strong>Integrantes</strong></h4>
     <table style="width: 50%; margin: 0 auto; text-align: center;">
         <tr>
-            <th>Nombre</th>
             <th>Código</th>
+            <th>Apellidos y Nombres</th>
         </tr>
         <tr>
-            <td>Sosa Soto, Oskar Rodrigo</td>
             <td>U202212214</td>
+            <td>Sosa Soto, Oskar Rodrigo</td>
         </tr>
         <tr>
-            <td>Lopez de la Cruz, Mauro Fabricio</td>
             <td>U202215695</td>
+            <td>Lopez de la Cruz, Mauro Fabricio</td>
         </tr>
         <tr>
-            <td>Guimaraes Escalante, Carlos Eduardo</td>
             <td>U202210364</td>
+            <td>Guimaraes Escalante, Carlos Eduardo</td>
         </tr>
         <tr>
-            <td>Oliva Lopez, Fabian Alejandro</td>
             <td>U202312013</td>
+            <td>Oliva Lopez, Fabian Alejandro</td>
         </tr>
         <tr>
-            <td>Lizano Coll Cardenas, Fernando Jesus</td>
             <td>U202214522</td>
+            <td>Lizano Coll Cardenas, Fernando Jesus</td>
         </tr>
     </table>
     </br></br>
-    <p style="margin: 10px 0; border-bottom: none;">Abril de 2026</p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Lima - Abril 2025</strong></p>
 </div>
 
 <div style="page-break-before: always;">
@@ -69,7 +70,7 @@
         <ul>
           <li>Carátula</li>
           <li>Registro de Versiones del Informe</li>
-          <li>Project Report Collaboration Insights </li>
+          <li>Project Report Collaboration Insights</li>
           <li>Contenido</li>
           <li>Student Outcome</li>
         </ul>
@@ -80,6 +81,70 @@
           <li>Capítulo III: Requirements Specification</li>
           <li>Capítulo IV: Solution Software Design</li>
           <li>Avance de Conclusiones, Bibliografía y Anexos</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="margin: 0 auto; text-align: center;"><strong>TB1</strong></td>
+      <td style="margin: 0 auto; text-align: center;">14/05/2026</td>
+      <td>
+        <ul>
+          <li>Sosa Soto, Oskar Rodrigo</li>
+          <li>Lopez de la Cruz, Mauro Fabricio</li>
+          <li>Guimaraes Escalante, Carlos Eduardo</li>
+          <li>Oliva Lopez, Fabian Alejandro</li>
+          <li>Lizano Coll Cardenas, Fernando Jesus</li>
+        </ul>
+      </td>
+      <td>
+        Adición en las secciones:
+        <ul>
+          <li>Corrección de la carátula</li>
+          <li>Corrección de C4 Diagrams</li>
+          <li>Registro de Versiones del Informe</li>
+          <li>Project Report Collaboration Insights</li>
+          <li>Contenido</li>
+          <li>Student Outcome</li>
+        </ul>
+        Se han incluído los siguientes capítulos:
+        <ul>
+          <li>Capítulo V: Solution UI/UX Design</li>
+          <li>Capítulo VI: Product Implementation, Validation & Deployment.</li>
+          <li>Avance de Conclusiones y Anexos</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="margin: 0 auto; text-align: center;"><strong>AV2</strong></td>
+      <td style="margin: 0 auto; text-align: center;">16/06/2026</td>
+      <td>
+        <ul>
+          <li>Sosa Soto, Oskar Rodrigo</li>
+          <li>Lopez de la Cruz, Mauro Fabricio</li>
+          <li>Guimaraes Escalante, Carlos Eduardo</li>
+          <li>Oliva Lopez, Fabian Alejandro</li>
+          <li>Lizano Coll Cardenas, Fernando Jesus</li>
+        </ul>
+      </td>
+      <td>
+        Adición en las secciones:
+        <ul>
+          <li>Registro de Versiones del Informe</li>
+          <li>Project Report Collaboration Insights</li>
+          <li>Student Outcome</li>
+        </ul>
+        Se han incluído los siguientes capítulos:
+        <ul>
+          <li>Capítulo VI: Sprint 2 (Sprint Planning, Backlog, Development Evidence, Testing Suite, Execution Evidence, Services Documentation, Software Deployment Evidence, Team Collaboration Insights)</li>
+          <li>Capítulo VI: Validation Interviews (Diseño, Registro y Evaluaciones según heurísticas)</li>
+          <li>Capítulo VI: Video About-the-Product</li>
+          <li>Avance de Conclusiones y Anexos</li>
+        </ul>
+        Despliegues realizados:
+        <ul>
+          <li>Nueva versión del Landing Page desplegada</li>
+          <li>Nueva versión del Web Application desplegada</li>
+          <li>Primera versión del Mobile Application desplegada</li>
         </ul>
       </td>
     </tr>
@@ -160,11 +225,137 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
   </tbody>
 </table>
 
+**TB1**
+
+Para el desarrollo del informe correspondiente a todas las entregas, se estableció la implementación de secciones de la siguiente manera para cada integrante del equipo:
+<table>
+  <thead>
+    <tr>
+      <th>Integrante</th>
+      <th>Tareas Asignadas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sosa Soto, Oskar Rodrigo</td>
+      <td>
+      - Diseño en Figma de Aplicación movil (Wireframes y mockups) <br>
+      - Diseño de Userflows y Wireflows<br>
+      - Diseño de interaccion de aplicación movil en Figma<br>
+      - Participación en la implementación del FrontEnd<br>
+</td>
+    </tr>
+    <tr>
+      <td>Lopez de la Cruz, Mauro Fabricio</td>
+      <td> 
+      - Implementación del FrontEnd<br>
+      - Deploy del FrontEnd <br>
+      - Levantamiento de correcciones para diagramas C4<br>
+      - Documentación de Deployment en Capítulo VI<br>
+      - Implementación de Landing Page<br>
+    </tr>
+    <tr>
+      <td>Guimaraes Escalante, Carlos Eduardo</td>
+      <td>
+      - Diseño en Figma de Aplicación Web (Wireframes y mockups)<br>
+      - Diseño de Userflows y Wireflows<br>
+      - Diseño de interacion de aplicación Web en Figma<br>
+      - Documentación de Wireframes y Mockups de Landing Page 
+      - Correcciones en la implementación del FrontEnd <br>
+      - Correcciones del documento
+      </td>
+    </tr>
+    <tr>
+      <td>Oliva Lopez, Fabian Alejandro</td>
+      <td>
+      - Documentación del Capítulo 5: General Style Guidelines, Information Architecture, Searching Systems, Navigation Systems<br>
+      - Sprint Backlog 1 <br>
+      - Actualización de conclusiones <br>
+      - Creación de Wireframes para la aplicación movil <br>
+</td>
+    </tr>
+    <tr>
+      <td>Lizano Coll Cardenas, Fernando Jesus</td>
+      <td>
+      - IoT Design <br>
+      - Documentación del Capítulo VI: Software Configuration Management, Sprint 1<br>
+      - Documentación del Capítulo V: Labeling Systems, SEO Tags and Meta Tags, Organization Systems <br>
+    </tr>
+  </tbody>
+</table>
+
+**AV2**
+
+Para el desarrollo del informe correspondiente a todas las entregas, se estableció la implementación de secciones de la siguiente manera para cada integrante del equipo:
+
+<table>
+  <thead>
+    <tr>
+      <th>Integrante</th>
+      <th>Tareas Asignadas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sosa Soto, Oskar Rodrigo</td>
+      <td>
+      - Creación del aplicativo Mobile (pantallas principales: Home Dashboard, Alert Center, Historical Exposure, Health Recommendations, Profile, Sensor Pairing, Home Radiation Map, ASTRA) <br>
+      - Diseño e implementación de navegación y flujos en la app móvil <br>
+      - Documentación de Execution Evidence del Sprint 2 (capturas Mobile App) <br>
+      - Participación en Testing y validación de la Mobile Application <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Lopez de la Cruz, Mauro Fabricio</td>
+      <td>
+      - Despliegue de la nueva versión del Landing Page <br>
+      - Despliegue de la nueva versión del Web Application  <br>
+      - Integración de endpoints reales en sección Devices y Map Radiation del Frontend Web <br>
+      - Documentación de Software Deployment Evidence del Sprint 2 <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Guimaraes Escalante, Carlos Eduardo</td>
+      <td>
+      - Mejoras y mantenimiento del Backend API (nuevos endpoints, correcciones y optimizaciones) <br>
+      - Documentación de Services Documentation Evidence del Sprint 2 <br>
+      - Integración del Backend con Frontend Web y Mobile Application <br>
+      - Correcciones del documento y revisión general del informe <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Oliva Lopez, Fabian Alejandro</td>
+      <td>
+      - Sprint Planning 2 <br>
+      - Sprint Backlog 2 <br>
+      - Documentación del Capítulo VI: Development Evidence y Testing Suite Evidence del Sprint 2 <br>
+      - Actualización de conclusiones y anexos <br>
+      - Coordinación de tareas del equipo durante el sprint <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Lizano Coll Cardenas, Fernando Jesus</td>
+      <td>
+      - Desarrollo del prototipo IoT físico (ensamblado, programación y validación del sensor electromagnético) <br>
+      - Documentación del Capítulo VI: Aspect Leaders and Collaborators del Sprint 2 <br>
+      - Documentación de Team Collaboration Insights del Sprint 2 <br>
+      - Apoyo en Validation Interviews y evaluaciones según heurísticas <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 El proceso de colaboración en el informe se realizó mediante commits constantes al repositorio de la organización.
 
 Se presenta el resumen de commits:<br>
 <strong>AV1</strong>
 ![Commits](img/AV1/colaboration-insights/collaboration-insights-av1.png)
+
+<strong>TB1</strong>
+![Commits](img/AV1/colaboration-insights/collaboration-insights-tb1.png)
+
+<strong>AV2</strong>
+- Falta Subir
 
 ## Contenido
 - [Student Outcome](#student-outcome)
@@ -238,6 +429,28 @@ Se presenta el resumen de commits:<br>
     - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams.](#42x6-bounded-context-software-architecture-code-level-diagrams)
       - [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams.](#42x61-bounded-context-domain-layer-class-diagrams)
       - [4.2.X.6.2. Bounded Context Database Design Diagram.](#42x62-bounded-context-database-design-diagram)
+- [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+- [5.1. Style Guidelines.](#51-style-guidelines)
+  - [5.1.1. General Style Guidelines.](#511-general-style-guidelines)
+  - [5.1.2. Web, Mobile and IoT Style Guidelines.](#512-web-mobile-and-iot-style-guidelines)
+- [5.2. Information Architecture.](#52-information-architecture)
+  - [5.2.1. Organization Systems.](#521-organization-systems)
+  - [5.2.2. Labeling Systems.](#522-labeling-systems)
+  - [5.2.3. SEO Tags and Meta Tags.](#523-seo-tags-and-meta-tags)
+  - [5.2.4. Searching Systems.](#524-searching-systems)
+  - [5.2.5. Navigation Systems.](#525-navigation-systems)
+- [5.3. Landing Page UI Design.](#53-landing-page-ui-design)
+  - [5.3.1. Landing Page Wireframe.](#531-landing-page-wireframe)
+  - [5.3.2. Landing Page Mock-up.](#532-landing-page-mock-up)
+- [5.4. Applications UX/UI Design.](#54-applications-uxui-design)
+  - [5.4.1. Applications Wireframes.](#541-applications-wireframes)
+  - [5.4.2. Applications Wireflow Diagrams.](#542-applications-wireflow-diagrams)
+  - [5.4.3. Applications Mock-ups.](#543-applications-mock-ups)
+  - [5.4.4. Applications User Flow Diagrams.](#544-applications-user-flow-diagrams)
+  - [5.5. Applications Prototyping.](#55-applications-prototyping)
+  - [5.6. IoT Device Design.](#56-iot-device-design)
+- [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 
 <div style="page-break-before: always;">
 
@@ -267,21 +480,41 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Sosa Soto, Oskar Rodrigo<br>
         <strong>AV1</strong><br>
         Participé activamente en el desarrollo del proyecto asumiendo responsabilidades dentro del equipo, especialmente en la definición de funcionalidades mobile y el diseño del Bounded Context. Contribuí en la elaboración, priorización del backlog y desarrollo de artefactos como diagramas de arquitectura y base de datos. Además, apoyé en la toma de decisiones técnicas relacionadas al análisis de datos de radiación y su visualización, aportando ideas y soluciones alineadas con los objetivos del proyecto. Esto permitió un trabajo más organizado y colaborativo entre los integrantes del equipo.<br><br>
+        <strong>TP1</strong><br>
+        Durante el desarrollo del proyecto se promovió un liderazgo colaborativo mediante la coordinación constante con los integrantes del equipo para organizar actividades, compartir ideas y tomar decisiones de manera conjunta. Se mantuvo una comunicación activa para asegurar que todos los miembros participaran en el avance del trabajo, contribuyendo desde sus responsabilidades al cumplimiento de los objetivos planteados. Asimismo, se brindó apoyo en las distintas etapas del proyecto para mantener coherencia y calidad en los entregables desarrollados.<br><br>
+        <strong>AV2</strong><br>
+        Durante el desarrollo del Sprint 2, asumí el liderazgo en la construcción del aplicativo móvil de EMSafe, coordinando con el equipo la definición de pantallas, flujos de navegación y la integración con el backend. Tomé decisiones técnicas sobre la arquitectura de la app móvil y participé activamente en la validación de las funcionalidades implementadas, asegurando que el producto final cumpliera con los objetivos planteados para esta entrega.<br><br>
         Lopez de la Cruz, Mauro Fabricio<br>
         <strong>AV1</strong><br>
         Durante el desarrollo de nuestras soluciones de software, he promovido un liderazgo distribuido trabajando de forma articulada con mis compañeros (Romina, Carlos, Camila y Ernesto). En lugar de centralizar la toma de decisiones, facilitamos espacios de discusión técnica donde cada integrante aportó desde su especialidad. Al definir la arquitectura de nuestros sistemas, estructurar los Bounded Contexts o evaluar migraciones críticas de backend hacia tecnologías como FastAPI, las directrices se establecieron mediante consenso. Esto aseguró que todo el equipo comprendiera, respaldara y se hiciera dueño de la dirección técnica adoptada, logrando un frente unido y cohesionado para superar los desafíos del proyecto.<br><br>
+        <strong>TP1</strong><br>
+        En TP1 ejercí liderazgo técnico desde la implementación, desarrollando código del frontend de la solución y desplegando la primera versión funcional del mismo, además de liderar la corrección integral de los diagramas C4 según la retroalimentación recibida en AV1. Coordiné con el equipo el rediseño del System Landscape, el Context Diagram y el Container Diagram para reflejar correctamente el sistema embebido como subsistema propio dentro de Gauss, eliminando los sensores y adaptadores como entidades separadas y consolidándolos en un único Edge Device. Este liderazgo distribuido se manifestó en que las decisiones de arquitectura no quedaron solo en documentación, sino que se materializaron en código desplegado y verificable, asegurando que todo el equipo pudiera respaldar técnicamente la dirección adoptada frente al cliente.<br><br>
+        <strong>AV2</strong><br>
+        En esta entrega ejercí liderazgo técnico en el proceso de despliegue, gestionando la actualización del Landing Page y la nueva versión del Web Application en Azure. Coordiné con el equipo la sincronización entre los repositorios de frontend y el pipeline CI/CD, asegurando que los cambios de todos los integrantes se integraran correctamente y que las versiones desplegadas fueran estables y verificables. Este rol me permitió contribuir desde la infraestructura al cumplimiento de los objetivos del sprint.<br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
         <strong>AV1</strong><br>
         A lo largo del desarrollo del proyecto, pude evidenciar la importancia de trabajar en equipo y cómo el liderazgo no recae en una sola persona, sino que puede ser compartido entre todos los integrantes. En distintos momentos, cada miembro asumió la iniciativa según sus fortalezas, lo que permitió avanzar de manera más eficiente y equilibrada. Personalmente, considero que esta experiencia fortaleció mi capacidad de comunicación, coordinación y adaptación dentro de un grupo, contribuyendo no solo al logro de los objetivos, sino también a un ambiente de trabajo colaborativo y respetuoso.<br><br>
+        <strong>TP1</strong><br>
+        Durante el desarrollo del proyecto, comprendí que el trabajo en equipo es fundamental y que el liderazgo puede asumirse de forma distribuida entre los integrantes, en lugar de recaer en una sola persona. A lo largo del proceso, cada miembro tomó la iniciativa en distintos momentos según sus habilidades, lo que favoreció un avance más ágil y balanceado. Esta experiencia me permitió mejorar mis capacidades de comunicación, organización y adaptación dentro de un equipo, aportando tanto al cumplimiento de los objetivos como a la construcción de un entorno de trabajo positivo y colaborativo.<br><br>
+        <strong>AV2</strong><br>
+        Durante el Sprint 2 lideré las mejoras del Backend API de EMSafe, coordinando con los integrantes del equipo responsables del frontend web y la app móvil para garantizar una integración fluida con los endpoints reales. Tomé decisiones sobre la estructura de los nuevos endpoints, las correcciones necesarias y las optimizaciones del servicio, asegurando que el backend respondiera correctamente a las necesidades de ambas plataformas y que el equipo contara con una base sólida para completar sus respectivas implementaciones.<br><br>
         Oliva Lopez, Fabian Alejandro<br>
         <strong>AV1</strong><br>
         Liderazgo Técnico en la fase de investigación de mercado y definición de producto. Ejecución del análisis competitivo y diseño de estrategias frente a competidores. Supervisión del registro de entrevistas para asegurar la extracción de insights accionables. Definición de la arquitectura técnica mediante el establecimiento del Bounded Context: Device Management.<br><br>
+        <strong>TP1</strong><br>
+        Durante el desarrollo del proyecto se impulsó un liderazgo compartido, basado en la comunicación constante y la participación activa de los integrantes del equipo. Las decisiones fueron tomadas de manera coordinada, considerando los aportes de cada miembro y buscando siempre mantener una correcta organización del trabajo. Asimismo, se apoyó en la revisión y mejora de los entregables para asegurar que el avance del proyecto mantuviera coherencia, calidad y cumplimiento con los objetivos establecidos.<br><br>
+        <strong>AV2</strong><br>
+        En este avance asumí la responsabilidad de liderar la planificación del Sprint 2, coordinando con el equipo la definición de objetivos, la distribución de tareas en el Sprint Backlog y el seguimiento del progreso durante el sprint. Esta labor me permitió contribuir al liderazgo conjunto del equipo, facilitando que cada integrante tuviera claridad sobre sus responsabilidades y que el grupo avanzara de manera organizada hacia el cumplimiento de las metas establecidas.<br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
         <strong>AV1</strong><br>
-        Lideré el diseño completo del Bounded Context IAM (Identity & Access Management), tomando decisiones de arquitectura sobre las capas Domain, Interface, Application e Infrastructure. Propuse y coordiné con el equipo la estructura de relaciones entre bounded contexts en el Context Mapping, asumiendo responsabilidad sobre mi parte del entregable de manera autónoma.
+        Lideré el diseño completo del Bounded Context IAM (Identity & Access Management), tomando decisiones de arquitectura sobre las capas Domain, Interface, Application e Infrastructure. Propuse y coordiné con el equipo la estructura de relaciones entre bounded contexts en el Context Mapping, asumiendo responsabilidad sobre mi parte del entregable de manera autónoma.<br><br>
+        <strong>AV2</strong><br>
+        Durante el Sprint 2 lideré el desarrollo del prototipo IoT físico de EMSafe, tomando decisiones sobre el ensamblado, la programación y la validación del sensor electromagnético. Coordiné con el equipo la integración del dispositivo físico con el backend, asegurando que los datos capturados por el sensor pudieran ser transmitidos y procesados correctamente por el sistema. Este rol me permitió contribuir al liderazgo técnico del equipo desde el componente de hardware del proyecto.
       </td>
       <td style="padding: 10px; vertical-align: top;">
-          La dirección compartida y la sólida base técnica permitieron unificar la visión del producto con las capacidades del sistema. El liderazgo en el análisis estratégico aseguró que el equipo tomara decisiones informadas para diferenciar la solución en el mercado.
+          <strong>AV1:</strong> La dirección compartida y la sólida base técnica permitieron unificar la visión del producto con las capacidades del sistema. El liderazgo en el análisis estratégico aseguró que el equipo tomara decisiones informadas para diferenciar la solución en el mercado.<br><br>
+          <strong>TP1:</strong> En esta segunda entrega, el liderazgo distribuido se consolidó al asumir conjuntamente las correcciones arquitectónicas recibidas en AV1 y trasladarlas tanto a la documentación como a la implementación. La capacidad del equipo para absorber retroalimentación crítica sin perder cohesión técnica demostró una madurez de liderazgo conjunto que se materializó en una primera versión funcional del frontend desplegada y un modelo C4 defendible frente al cliente.<br><br>
+          <strong>AV2:</strong> En esta entrega el liderazgo conjunto del equipo se evidenció en la capacidad de cada integrante de asumir roles técnicos específicos y coordinarse de manera efectiva para lograr la integración entre el frontend web, la app móvil, el backend y el prototipo IoT físico. La distribución del liderazgo por componentes permitió avanzar en paralelo sin perder cohesión, resultando en el despliegue exitoso de las nuevas versiones del Landing Page, Web Application y la primera versión funcional del Mobile Application.
       </td>
     </tr>
     <tr>
@@ -292,21 +525,41 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Sosa Soto, Oskar Rodrigo<br>
         <strong>AV1</strong><br>
         Durante el desarrollo del proyecto, contribuí a mantener una comunicación constante y respetuosa con el equipo, facilitando la coordinación de tareas y el cumplimiento de los objetivos establecidos. Participé en la planificación de actividades relacionadas a mi módulo, asegurando la entrega oportuna, diagramas y diseño de base de datos. Asimismo, estuve dispuesto a apoyar a mis compañeros y adaptar mi trabajo según las necesidades del equipo, lo que permitió avanzar de manera ordenada y cumplir con los entregables dentro del plazo establecido.<br><br>
+        <strong>TP1</strong><br>
+        Se fomentó un ambiente de trabajo colaborativo e inclusivo, permitiendo que cada integrante aportara propuestas y opiniones durante el desarrollo del proyecto. Además, se establecieron metas claras y una planificación organizada de tareas para distribuir adecuadamente las responsabilidades y optimizar los tiempos de trabajo. Gracias a esta coordinación y seguimiento continuo, se logró cumplir con los objetivos establecidos y completar las actividades dentro de los plazos definidos.<br><br>
+        <strong>AV2</strong><br>
+        Durante el Sprint 2 contribuí a mantener un entorno de trabajo colaborativo, participando activamente en las reuniones de coordinación del equipo y compartiendo avances del aplicativo móvil para recibir retroalimentación oportuna. Establecí metas claras para cada pantalla de la app, planifiqué las tareas de desarrollo de forma ordenada y cumplí con los entregables dentro del plazo del sprint, asegurando que la primera versión del Mobile Application estuviera lista para su validación.<br><br>
         Lopez de la Cruz, Mauro Fabricio<br>
         <strong>AV1</strong><br>
-        Fomenté un espacio de trabajo donde la comunicación abierta y la seguridad técnica fueron la base para planificar nuestros ciclos de desarrollo. Nos enfocamos en desglosar los requerimientos de la solución en historias de usuario claras y tareas medibles desde el Product Backlog, asignándolas estratégicamente según las fortalezas de cada miembro entre el frontend, el backend y el control de calidad. Gracias a este entorno estructurado, al apoyo mutuo frente a los bloqueos técnicos y al seguimiento constante de nuestro progreso, logramos integrar nuestro código de manera continua y cumplir con éxito los objetivos y plazos de entrega propuestos para nuestros despliegues.</strong><br><br>
+        Fomenté un espacio de trabajo donde la comunicación abierta y la seguridad técnica fueron la base para planificar nuestros ciclos de desarrollo. Nos enfocamos en desglosar los requerimientos de la solución en historias de usuario claras y tareas medibles desde el Product Backlog, asignándolas estratégicamente según las fortalezas de cada miembro entre el frontend, el backend y el control de calidad. Gracias a este entorno estructurado, al apoyo mutuo frente a los bloqueos técnicos y al seguimiento constante de nuestro progreso, logramos integrar nuestro código de manera continua y cumplir con éxito los objetivos y plazos de entrega propuestos para nuestros despliegues.<br><br>
+        <strong>TP1</strong><br>
+        Fomenté un entorno de trabajo donde la comunicación técnica fue clave para cerrar TP1 a tiempo. Planifiqué mis tareas en tres frentes paralelos — desarrollo de código del frontend, despliegue de la primera versión funcional, y corrección de los diagramas C4 — distribuyendo la carga de manera realista y manteniendo informado al equipo del avance de cada uno. Coordiné con mis compañeros para que las correcciones arquitectónicas en los diagramas se reflejaran también en la implementación, evitando inconsistencias entre la documentación y el código desplegado. Este enfoque estructurado me permitió cumplir con los objetivos del sprint y entregar una primera versión del frontend funcional, defendible técnicamente y alineada con el modelo C4 corregido.<br><br>
+        <strong>AV2</strong><br>
+        En esta entrega planifiqué y ejecuté el proceso de despliegue de manera estructurada, estableciendo pasos claros para la actualización del Landing Page y el Web Application. Mantuve al equipo informado sobre el estado de los despliegues y coordiné la resolución de incidencias que surgieron durante el proceso. Este enfoque organizado permitió cumplir con el objetivo de tener ambas plataformas desplegadas y operativas al cierre del sprint.<br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
         <strong>AV1</strong><br>
         Durante el desarrollo del proyecto, pude contribuir a la creación de un entorno colaborativo e inclusivo, donde todos los integrantes del equipo tuvieron la oportunidad de participar y aportar sus ideas. Se establecieron metas claras desde el inicio, lo que facilitó la planificación de tareas y la distribución equitativa de responsabilidades. Personalmente, considero que mantener una comunicación constante y respetuosa fue clave para cumplir con los objetivos propuestos, ya que permitió coordinar mejor el trabajo y adaptarnos ante cualquier dificultad que surgiera en el proceso.<br><br>
+        <strong>TP1</strong><br>
+        Durante el desarrollo del proyecto, participé en la consolidación de un entorno de trabajo participativo, en el que se fomentó la intervención activa de todos los integrantes del equipo. La definición de objetivos desde las primeras etapas permitió organizar el trabajo de manera más estructurada y asignar responsabilidades de forma balanceada. Asimismo, la comunicación continua dentro del grupo facilitó la coordinación de actividades y permitió afrontar de manera eficiente los retos que se presentaron a lo largo del proceso.<br><br>
+        <strong>AV2</strong><br>
+        Durante el Sprint 2 participé en la construcción de un entorno de trabajo colaborativo, manteniéndome disponible para resolver dudas del equipo sobre los endpoints del backend y adaptando los servicios según las necesidades que surgían en el desarrollo del frontend y la app móvil. Planifiqué las mejoras del backend de forma iterativa, priorizando los endpoints más críticos para el avance del equipo y cumpliendo con las integraciones necesarias dentro del plazo establecido.<br><br>
         Oliva Lopez, Fabian Alejandro<br>
         <strong>AV1</strong><br>
         Facilitación de sesiones de trabajo para la creación y refinamiento de User Stories, asegurando la participación de todos los roles del equipo. Coordinación de la planificación de tareas dentro del contexto de gestión de dispositivos. Integración de los hallazgos de las entrevistas de usuario en el flujo de desarrollo para mantener el cumplimiento de los objetivos del sprint.<br><br>
+        <strong>TP1</strong><br>
+        Se promovió un entorno de trabajo colaborativo, donde cada integrante pudo contribuir con ideas, propuestas y responsabilidades específicas dentro del proyecto. Para ello, se definieron metas claras y se organizaron las tareas de acuerdo con las capacidades y avances del equipo, permitiendo una mejor distribución del trabajo. Gracias a esta planificación y al seguimiento continuo de las actividades, se logró avanzar de manera ordenada y cumplir con los objetivos planteados dentro del tiempo previsto.<br><br>
+        <strong>AV2</strong><br>
+        Contribuí a la creación de un entorno colaborativo mediante la elaboración del Sprint Planning 2 y el Sprint Backlog 2, documentando de forma clara los objetivos, las tareas asignadas y las estimaciones de cada ítem. Esta planificación permitió que el equipo tuviera una guía de trabajo compartida desde el inicio del sprint, facilitando la distribución equitativa de responsabilidades y el seguimiento del progreso para cumplir con los objetivos definidos.<br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
         <strong>AV1</strong><br>
-        Planifiqué y completé las secciones asignadas del informe: Impact Mapping y el Bounded Context IAM (secciones 4.2.1.1 a 4.2.1.6), cumpliendo con los criterios establecidos por el equipo. Elaboré los diagramas de clases del dominio, el diseño de base de datos y el Component Level Diagram, asegurando coherencia con el resto de bounded contexts desarrollados por mis compañeros.
+        Planifiqué y completé las secciones asignadas del informe: Impact Mapping y el Bounded Context IAM (secciones 4.2.1.1 a 4.2.1.6), cumpliendo con los criterios establecidos por el equipo. Elaboré los diagramas de clases del dominio, el diseño de base de datos y el Component Level Diagram, asegurando coherencia con el resto de bounded contexts desarrollados por mis compañeros.<br><br>
+        <strong>AV2</strong><br>
+        Durante el Sprint 2 planifiqué y ejecuté el desarrollo del prototipo IoT físico de forma ordenada, estableciendo etapas de ensamblado, programación y validación del sensor. Mantuve al equipo informado sobre el avance del prototipo y coordiné las pruebas de integración con el backend, asegurando que el dispositivo físico pudiera transmitir datos correctamente al sistema. Esto permitió cumplir con el objetivo de contar con una primera versión funcional del componente IoT dentro del plazo del sprint.
       </td>
       <td style="padding: 10px; vertical-align: top;">
-          El fomento de la comunicación abierta y la organización estructurada de las tareas técnicas facilitaron un flujo de trabajo cohesivo. Esto permitió que el equipo alcanzara las metas del sprint de manera eficiente, manteniendo siempre el enfoque en las necesidades validadas del usuario.
+          <strong>AV1:</strong> El fomento de la comunicación abierta y la organización estructurada de las tareas técnicas facilitaron un flujo de trabajo cohesivo. Esto permitió que el equipo alcanzara las metas del sprint de manera eficiente, manteniendo siempre el enfoque en las necesidades validadas del usuario.<br><br>
+          <strong>TP1:</strong> El equipo consolidó en TP1 un entorno de trabajo donde la planificación se ajustó a las correcciones recibidas en AV1 sin perder ritmo de entrega. La comunicación abierta, la distribución equitativa de tareas y el seguimiento mutuo permitieron cumplir los objetivos del sprint, integrando frontend desplegado, correcciones arquitectónicas en los diagramas C4 y documentación actualizada en un único entregable coherente.<br><br>
+          <strong>AV2:</strong> El equipo demostró en esta entrega una capacidad consolidada para planificar, distribuir y ejecutar tareas de forma colaborativa en un contexto de mayor complejidad técnica. La integración simultánea del frontend web, la app móvil, el backend y el prototipo IoT físico fue posible gracias a un entorno de trabajo inclusivo, donde cada integrante aportó desde su rol y se mantuvo comunicado con el resto. El cumplimiento de los objetivos del Sprint 2, reflejado en los despliegues realizados y la primera versión funcional del Mobile Application, evidencia la madurez del equipo para establecer metas y alcanzarlas de manera conjunta.
       </td>
     </tr>
   </tbody>
@@ -922,7 +1175,7 @@ El mapa de empatía de Ricardo Sánchez presenta a un profesional técnico altam
 ![Empathy map 2](img/AV1/chapter-2/needfinding/empathy-mapping/empathy-mapping-segmento-2.png)
 
 
-### 2.4. Big Picture Event Storming
+## 2.4. Big Picture Event Storming
 
 En esta sección el equipo presenta los resultados de la sesión de Big Picture Event
 Storming realizada de manera colaborativa, con el objetivo de explorar y comprender
@@ -1503,13 +1756,13 @@ En consecuencia, se determina que el modelo final de **EmSafe** consta de los si
 #### 4.1.3.1. Software Architecture System Landscape Diagram
 
 El diagrama de System Landscape muestra una vista de alto nivel de todo el ecosistema EmSafe, incluyendo los tres tipos de usuarios (Usuario Final, Administrador y Técnico de Campo), el sistema principal EmSafe Platform y los sistemas externos con los que interactúa: la red de sensores IoT GY-273, los adaptadores inteligentes (smart plugs), Firebase Cloud Messaging y el servicio de email SMTP.
-![System Landscape Diagram](img/AV1/chapter-4/Software%20Architecture/Software%20Architecture%20System%20Landscape%20Diagram.png)
+![System Landscape Diagram](img/AV1/chapter-4/Software%20Architecture/LandScapeC0_SystemLandscape-dark.png)
 #### 4.1.3.2. Software Architecture Context Level Diagrams
 El diagrama de contexto (C4 nivel 1) presenta el sistema EmSafe Platform como una caja negra, mostrando sus interacciones directas con los usuarios y sistemas externos. Se detallan los protocolos de comunicación utilizados: HTTPS/JSON para las aplicaciones cliente, MQTT vía WiFi para la comunicación con sensores y adaptadores inteligentes, y SMTP para el envío de correos electrónicos.
-![Context Level Diagram](img/AV1/chapter-4/Software%20Architecture/Software%20Architecture%20Context%20Level%20Diagrams.png)
+![Context Level Diagram](img/AV1/chapter-4/Software%20Architecture/contextC1_Context-dark.png)
 #### 4.1.3.3. Software Architecture Container Level Diagrams
 El diagrama de contenedores (C4 nivel 2) muestra la estructura interna del sistema EmSafe Platform: la aplicación móvil (Angular/Ionic), la plataforma web administrativa (Angular), la API REST backend (Spring Boot con Java), el broker MQTT (Mosquitto en EC2) y la base de datos (MySQL en Amazon RDS). Se visualizan las conexiones entre cada contenedor y los sistemas externos.
-![Container Level Diagram](img/AV1/chapter-4/Software%20Architecture/Software%20Architecture%20Container%20Level%20Diagrams.png)
+![Container Level Diagram](img/AV1/chapter-4/Software%20Architecture/ContainerC2_Containers-dark.png)
 #### 4.1.3.4. Software Architecture Deployment Diagrams
 El diagrama de despliegue muestra la distribución de la infraestructura en producción: Amazon EC2 para el backend con Jenkins CI/CD en contenedor Docker, una instancia EC2 separada para el broker Mosquitto MQTT, Amazon RDS para la base de datos MySQL, Firebase Hosting para la plataforma web, el dispositivo móvil del usuario final y la sede del cliente donde se instalan los sensores GY-273 y los adaptadores inteligentes.
 ![Deployment Diagram](img/AV1/chapter-4/Software%20Architecture/Software%20Architecture%20Deployment%20Diagrams.png)
@@ -2181,7 +2434,7 @@ Historias relacionadas: US26, US27, US28, US29, US31, US32, US33, US41, TS01, TS
 | `persistence/jpa/repositories/TechnicianRepository.java` | Repositorio JPA para el agregado `Technician`. Incluye query para buscar técnicos activos y verificar disponibilidad en un bloque horario. | Repository Impl |
 | `persistence/jpa/repositories/ClientRecordRepository.java` | Repositorio JPA para el agregado `ClientRecord`. Incluye queries para buscar por estado del servicio y para obtener métricas agregadas del dashboard. | Repository Impl |
 | `persistence/jpa/repositories/DeviceInventoryItemRepository.java` | Repositorio JPA para el agregado `DeviceInventoryItem`. Incluye queries para filtrar por estado y para detectar stock bajo. | Repository Impl |
- 
+
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 
 ![Admin & Operations Component Diagram](img/AV1/chapter-4/Admin%20&%20Operations/Admin_Operation_C4.png)
@@ -2492,11 +2745,1935 @@ erDiagram
     CLIENT_RECORD ||--o{ DEVICE_INVENTORY_ITEM : "tiene instalados"
 ``` 
 
-# Conclusiones
+# Capítulo V: Solution UI/UX Design
 
-El desarrollo de EmSafe permitió comprender la importancia del monitoreo de la contaminación electromagnética en entornos domésticos y laborales. A través de la integración de sensores IoT, una aplicación móvil y una plataforma web, se logró plantear una solución enfocada en el monitoreo en tiempo real, la generación de alertas automáticas y la prevención de riesgos asociados a la exposición electromagnética. Además, el uso de metodologías como Lean UX y Domain-Driven Design facilitó la organización del sistema, la identificación de las necesidades de los usuarios y el cumplimiento de los objetivos planteados durante el proyecto.
+## 5.1. Style Guidelines
 
-Como recomendación, se propone continuar fortaleciendo la plataforma mediante la incorporación de nuevas funcionalidades y mejoras que permitan ofrecer una experiencia más eficiente, accesible y confiable para los usuarios. Asimismo, sería importante seguir impulsando la concientización sobre los riesgos de la exposición electromagnética y promover el uso de herramientas tecnológicas que contribuyan a la prevención y el bienestar de las personas.
+### 5.1.1. General Style Guidelines
+
+Las General Style Guidelines de EMSafe definen los fundamentos visuales y comunicativos que garantizan coherencia en todos los canales de la solución: landing page, aplicación web y aplicación móvil. Estas decisiones de diseño reflejan los valores de la marca: **precisión técnica, confianza y accesibilidad**.
+
+---
+
+**Brand Overview**
+
+EMSafe es una plataforma de monitoreo de radiación electromagnética no ionizante. Su identidad visual transmite **seguridad, claridad y tecnología responsable**. El diseño evita el alarmismo visual; en su lugar, prioriza la legibilidad de datos críticos y la toma de decisiones informada.
+
+**Colores**
+
+La paleta de EMSafe combina tonos oscuros tecnológicos con acentos de alerta estandarizados internacionalmente. Se definen los siguientes tokens de color:
+
+| Token | Nombre | Valor HEX | Uso principal |
+|---|---|---|---|
+| `--color-primary` | Azul EMSafe | `#1A6EFF` | Botones primarios, enlaces, CTA |
+| `--color-primary-dark` | Azul oscuro | `#0D4DB3` | Hover de botones, énfasis |
+| `--color-background` | Fondo oscuro | `#0D1117` | Fondo principal de la plataforma |
+| `--color-surface` | Superficie | `#161B22` | Tarjetas, paneles, modales |
+| `--color-surface-alt` | Superficie alternativa | `#21262D` | Bordes de tarjetas, separadores |
+| `--color-text-primary` | Texto principal | `#E6EDF3` | Encabezados, cuerpo de texto |
+| `--color-text-secondary` | Texto secundario | `#8B949E` | Subtítulos, metadata, labels |
+| `--color-success` | Verde seguro | `#2EA043` | Nivel de radiación bajo (safe) |
+| `--color-warning` | Amarillo alerta | `#D29922` | Nivel de radiación medio (warning) |
+| `--color-danger` | Rojo crítico | `#F85149` | Nivel de radiación alto (critical) |
+| `--color-accent` | Cian IoT | `#39D5FF` | Indicadores de sensor activo, gráficos |
+
+Los niveles de radiación se representan **siempre** con el sistema de semáforo (`success` → `warning` → `danger`) para garantizar una lectura inmediata e intuitiva en cualquier interfaz.
+ 
+---
+
+**Tipografía**
+
+EMSafe utiliza una jerarquía tipográfica de tres familias con roles diferenciados:
+
+| Familia | Uso | Importación |
+|---|---|---|
+| **Sora** | Encabezados, títulos, métricas clave | Google Fonts |
+| **IBM Plex Mono** | Valores numéricos de sensores, código, timestamps | Google Fonts |
+| **Inter** | Cuerpo de texto, formularios, párrafos | Google Fonts |
+
+---
+
+**Escala tipográfica:**
+
+| Nivel | Tamaño | Peso | Familia | Uso |
+|---|---|---|---|---|
+| Display | 48px | 700 | Sora | Hero de landing, valor principal del dashboard |
+| H1 | 32px | 700 | Sora | Títulos de sección |
+| H2 | 24px | 600 | Sora | Subtítulos |
+| H3 | 20px | 600 | Sora | Encabezados de tarjeta |
+| Body L | 16px | 400 | Inter | Párrafos, descripciones |
+| Body S | 14px | 400 | Inter | Labels, metadata |
+| Caption | 12px | 400 | Inter | Timestamps, notas auxiliares |
+| Metric | 36px | 700 | IBM Plex Mono | Lecturas de sensor en tiempo real |
+| Code | 13px | 400 | IBM Plex Mono | Valores técnicos, IDs de dispositivo |
+ 
+---
+
+**Espaciado y Grid**
+
+El sistema de espaciado sigue una base de **8px**. Los valores permitidos son múltiplos: 4, 8, 16, 24, 32, 48, 64, 80px.
+
+- **Grid web:** 12 columnas, gutter de 24px, margen lateral de 48px (desktop) y 16px (mobile).
+- **Grid móvil:** 4 columnas, gutter de 16px.
+- **Border radius:** Badges y chips: 4px. Tarjetas y paneles: 8px. Modales y bottom sheets: 12px. Botones: 6px.
+---
+
+**Iconografía**
+
+Se utiliza la librería **Phosphor Icons** en su variante `Regular` para interfaz general y `Bold` para estados de alerta crítica. Los iconos se renderizan a tamaños estandarizados: 16px (inline), 20px (botones), 24px (navegación), 32px (cards de métricas). Los iconos de nivel de radiación siempre van acompañados de su color semáforo correspondiente.
+ 
+---
+
+**Tono de comunicación**
+
+EMSafe comunica con un tono **técnico pero accesible**: preciso en los datos, claro en las recomendaciones y nunca alarmista. Las alertas usan lenguaje directo y orientado a la acción:
+
+- **Correcto:** "Nivel de radiación elevado detectado en Sala Principal. Se recomienda alejar el router al menos 2 metros."
+- **Incorrecto:** "¡PELIGRO! ¡Radiación peligrosa detectada!"
+  Los textos del sistema evitan tecnicismos innecesarios en la interfaz de usuario final (segmento hogar), y pueden incluir terminología técnica en la plataforma web administrativa (segmento empresarial/admin).
+
+---
+
+**Estados de componentes**
+
+Todos los componentes interactivos deben implementar los siguientes estados:
+
+| Estado | Comportamiento visual |
+|---|---|
+| Default | Color base del componente |
+| Hover | Ligero aumento de brillo o color `primary-dark` |
+| Active / Pressed | Reducción de escala `scale(0.97)` |
+| Focused | Outline de 2px en `--color-primary` |
+| Disabled | Opacidad `0.4`, cursor `not-allowed` |
+| Loading | Skeleton shimmer o spinner en `--color-accent` |
+| Error | Borde en `--color-danger`, icono de advertencia |
+| Success | Borde en `--color-success`, icono de verificación |
+ 
+---
+
+### 5.1.2. Web, Mobile and IoT Style Guidelines
+
+Esta sección especifica las adaptaciones de las General Style Guidelines para cada plataforma de la solución EMSafe: plataforma web administrativa, aplicación móvil y dispositivo IoT.
+ 
+---
+
+**Web Application Style Guidelines**
+
+La plataforma web de EMSafe está dirigida a **Administradores y Técnicos de campo**. Su diseño prioriza la densidad de información, la gestión de múltiples dispositivos y la generación de reportes.
+
+*Layout y estructura:*
+
+- Sidebar de navegación fija de 240px con colapso a 64px en modo compacto.
+- Header de 64px con breadcrumb, buscador global y notificaciones.
+- Área de contenido con máximo ancho de 1280px centrado.
+- Dashboard principal en grid de 3 columnas para métricas y 2 columnas para gráficos.
+  *Componentes específicos web:*
+
+| Componente | Especificación |
+|---|---|
+| Data Table | Paginación de 20 ítems, columnas ordenables, filtros inline |
+| Chart | Librería Recharts; colores del sistema semáforo para niveles EMF |
+| Calendar | Vista mensual/semanal/diaria; eventos con código de color por tipo de cita |
+| Badge de estado | Pills de 6px radius; colores según `DeviceStatus` |
+| Mapa de radiación | Integración con Leaflet.js; heatmap con paleta `success→warning→danger` |
+| Modal | Overlay 60% opacidad; ancho máximo 640px; animación slide-up 200ms |
+| Toast | Posición inferior derecha; duración 4s; íconos Phosphor |
+
+*Responsividad web:*
+
+| Breakpoint | Ancho | Comportamiento |
+|---|---|---|
+| Desktop L | ≥ 1440px | Layout completo, sidebar expandido |
+| Desktop | ≥ 1024px | Layout completo, sidebar colapsable |
+| Tablet | ≥ 768px | Sidebar colapsado por defecto, grid 2 columnas |
+| Mobile web | < 768px | Sidebar como drawer, grid 1 columna |
+ 
+---
+
+**Mobile Application Style Guidelines**
+
+La aplicación móvil de EMSafe está dirigida al **usuario final** (segmento hogar y personal de empresa). Su diseño prioriza la lectura rápida del nivel de radiación actual, las alertas y el acceso al chatbot ASTRA.
+
+*Dimensiones y áreas seguras:*
+
+- Diseño base para pantalla de 390px × 844px (iPhone 14 Pro como referencia).
+- Safe area insets respetados: top 44px, bottom 34px.
+- Bottom navigation bar de 56px de alto.
+- Botón de acción flotante (FAB) de 56px × 56px, posicionado 80px desde el fondo.
+  *Navegación móvil — Bottom Tab Bar:*
+
+| Tab | Ícono Phosphor | Label |
+|---|---|---|
+| Inicio | `House` | Inicio |
+| Monitoreo | `Waves` | Monitoreo |
+| Alertas | `Bell` | Alertas |
+| Perfil | `User` | Perfil |
+
+El badge en "Alertas" se muestra en `--color-danger` cuando hay alertas activas no leídas.
+
+*Componentes específicos móvil:*
+
+| Componente | Especificación |
+|---|---|
+| Gauge de radiación | Componente circular; arco de 270°; colores semáforo; valor central en IBM Plex Mono 36px bold |
+| Sensor card | 100% ancho, padding 16px, radius 8px; indicador online/offline en `--color-accent` |
+| Alert card | Swipe-to-dismiss; franja lateral de color según severidad |
+| Bottom sheet | Altura variable; drag indicator 36px × 4px; radius superior 16px |
+| Chatbot ASTRA | Pantalla full; burbujas de chat; input sticky en fondo; botón enviar en `--color-primary` |
+| Mapa domicilio | Integración Mapbox; marcadores de sensor con color semáforo; zoom 17 por defecto |
+
+*Gestos e interacciones:*
+
+- **Pull to refresh** en pantallas de monitoreo y alertas.
+- **Swipe left** en alert cards para marcar como leída o descartar.
+- **Long press** en sensor card para acceder a opciones rápidas (apagado remoto, historial).
+- **Haptic feedback** en alertas críticas (patrón de vibración `[100ms, 50ms, 100ms]`).
+---
+
+**IoT Device Style Guidelines**
+
+El dispositivo sensor de EMSafe (ESP32 con sensor GY-273) comunica su estado al usuario mediante **indicadores LED RGB** físicos. Se definen los siguientes patrones:
+
+| Estado del dispositivo | Color LED | Patrón |
+|---|---|---|
+| Encendido / Iniciando | Blanco | Pulso lento (1s on / 1s off) |
+| Conectado a WiFi | Azul | Encendido fijo |
+| Transmitiendo datos | Cian (`#39D5FF`) | Parpadeo rápido (200ms) |
+| Nivel de radiación bajo | Verde (`#2EA043`) | Encendido fijo |
+| Nivel de radiación medio | Amarillo (`#D29922`) | Parpadeo lento (1s) |
+| Nivel de radiación alto | Rojo (`#F85149`) | Parpadeo rápido (300ms) |
+| Sin conexión WiFi | Naranja | Parpadeo lento (2s) |
+| Error / Falla | Rojo | 3 destellos rápidos y pausa |
+| Firmware actualizando | Azul | Pulso continuo |
+| Apagado por comando remoto | Morado | 2 destellos y apagado |
+
+Los colores del LED físico se alinean intencionalmente con el sistema semáforo de la plataforma digital, creando **coherencia perceptual** entre el hardware y las interfaces digitales.
+
+*Etiquetado físico del dispositivo:*
+
+El dispositivo incluye una etiqueta adhesiva con logotipo EMSafe, QR code de vinculación único, ID de dispositivo en `IBM Plex Mono` 10px, e icono de señal WiFi con escala EMF de referencia rápida (tres franjas: verde / amarillo / rojo).
+
+## 5.2. Information Architecture
+
+### 5.2.1. Organization Systems
+
+Esta sección describe los sistemas de organización implementados tanto en la Landing Page actual como en futuras versiones de la plataforma EMSafe. Se definen los esquemas jerárquicos, secuenciales y temáticos utilizados para estructurar la información de manera clara, eficiente y alineada con los objetivos del proyecto. Esto garantiza una navegación fluida y una experiencia coherente para los distintos tipos de usuarios.
+
+## Landing Page
+
+### Grupo de Usuarios 1: Personas interesadas en su salud
+
+#### Organización jerárquica
+La estructura de la Landing Page está pensada para captar rápidamente la atención de este perfil de usuario, seguida de las características principales del sistema, sus beneficios a nivel personal, la problemática global, testimonios de usuarios reales y finalmente el contacto. Esta jerarquía permite al visitante comprender de forma progresiva cómo EMSafe puede ayudarle directamente en su vida diaria.
+
+### Grupo de Usuarios 2: Empresas que operan maquinaria de emisión electromagnética
+
+#### Organización jerárquica
+Este tipo de usuario encuentra primero información orientada al valor organizacional del sistema: monitoreo en tiempo real, prevención de riesgos laborales y cumplimiento normativo. Luego, se presenta evidencia del impacto positivo (testimonios de empresas) y un formulario de contacto para solicitar una demo adaptada a sus necesidades.
+
+--------
+
+## Aplicación Móvil
+
+### Grupo de Usuarios 1: Personas interesadas en su salud
+
+#### Organización jerárquica
+La aplicación móvil está estructurada para que el usuario acceda primero a su estado actual de exposición electromagnética mediante el Home Dashboard, que muestra el nivel de radiación en tiempo real. Desde allí se puede navegar hacia el monitoreo detallado, reportes históricos, recomendaciones de salud. Esta jerarquía garantiza que la información más crítica (el nivel de radiación actual) esté siempre accesible desde el inicio.
+
+### Grupo de Usuarios 2: Empresas que operan maquinaria de emisión electromagnética
+
+#### Organización matricial:
+En el contexto empresarial, la aplicación móvil permitirá a los responsables de seguridad visualizar una vista matricial con el estado de múltiples sensores IoT distribuidos en diferentes áreas o plantas de la organización, mostrando simultáneamente los niveles de exposición de cada zona y permitiendo identificar puntos críticos de forma inmediata.
+
+### 5.2.2. Labeling Systems
+
+A continuación, se presenta el sistema de etiquetado utilizado tanto en la Landing Page como en la Aplicación Móvil de EMSafe, el cual busca representar de forma clara, concisa y accesible los distintos grupos de información. Las etiquetas seleccionadas tienen un lenguaje simple y directo para facilitar la navegación y evitar confusión en los usuarios.
+
+## Aplicación Web
+
+Actualmente, la Landing Page cuenta con secciones identificadas con headings claros y minimalistas, orientados a explicar el funcionamiento y propósito de la plataforma.
+
+| Sección | Etiqueta Utilizada | Descripción |
+|---|---|---|
+| Inicio / Hero | Inicio | Presentación del nombre, descripción del sistema y llamado a la acción principal (CTA). |
+| Características | Características | Funciones clave como monitoreo, análisis y alertas, explicadas de forma visual mediante tarjetas. |
+| Beneficios | Beneficios | Ventajas del sistema para usuarios individuales y empresas, mostradas en tarjetas comparativas. |
+| Problemática | Problemática | Contexto sobre los riesgos de la radiación electromagnética y la necesidad de EMSafe. |
+| Testimonios | Testimonios | Experiencias breves de distintos usuarios, etiquetados por rol y nombre completo. |
+| Ubicación | Ubicación | Mapa que muestra la localización del equipo desarrollador del proyecto. |
+| Contacto | Contacto | Formulario corto con campos básicos para recibir información o solicitar demo. |
+
+---
+
+## Aplicación Móvil
+
+La aplicación móvil utiliza etiquetas cortas e iconográficas en la barra de navegación inferior, complementadas por títulos de pantalla en cada vista. Las etiquetas están diseñadas para ser reconocibles de forma inmediata, reduciendo la carga cognitiva del usuario.
+
+| Pantalla / Sección | Etiqueta Utilizada | Descripción |
+|---|---|---|
+| Splash Screen | EMSafe | Pantalla de carga inicial con logo e identidad visual de la marca. |
+| Bienvenida | Bienvenido a EMSafe | Introducción al sistema con opción de registro o inicio de sesión. |
+| Verificación OTP | Verificación | Confirmación de identidad mediante código de un solo uso enviado por correo. |
+| Autenticación Biométrica | Acceso Biométrico | Autenticación mediante huella dactilar o reconocimiento facial para mayor seguridad. |
+| Vinculación de Sensor | Vincular Sensor | Proceso guiado para emparejar el dispositivo IoT con la cuenta del usuario. |
+| Home Dashboard | Inicio | Panel principal con nivel de radiación actual, estado del sensor y accesos rápidos. |
+| Monitoreo en Tiempo Real | Monitoreo | Lectura continua de campos electromagnéticos con indicadores visuales de nivel. |
+| Mapa de Radiación (Hogar) | Mi Entorno | Visualización del nivel de radiación distribuida en el espacio del usuario. |
+| Mapa de Radiación (Ciudad) | Mapa Ciudad | Mapa con niveles de radiación electromagnética registrados en distintas zonas urbanas. |
+| Centro de Alertas | Alertas | Listado de alertas activas e historial de notificaciones por niveles de exposición. |
+| Protocolo de Emergencia | Emergencia | Guía paso a paso ante detección de niveles críticos de radiación. |
+| Insights de Salud | Salud | Análisis personalizados del impacto de la radiación en la salud del usuario. |
+| Recomendaciones de Salud | Recomendaciones | Acciones específicas para reducir la exposición electromagnética del usuario. |
+| Exportar Reporte Médico | Exportar Reporte | Generación y descarga de informe de exposición para compartir con profesionales de salud. |
+| Reproducción Histórica | Historial | Revisión cronológica de los niveles de radiación registrados en el pasado. |
+| Reporte Semanal | Reporte Semanal | Resumen visual de la exposición electromagnética acumulada durante la semana. |
+| Control de Dispositivos | Dispositivos | Gestión de aparatos conectados con posibilidad de activación/desactivación remota. |
+| Motor de Automatización | Automatización | Configuración de reglas automáticas para controlar dispositivos según umbrales de radiación. |
+| Asistente ASTRA | ASTRA | Asistente de inteligencia artificial para consultas sobre radiación y recomendaciones personalizadas. |
+
+### 5.2.3. SEO Tags and Meta Tags
+
+Los SEO Tags y Meta Tags son esenciales para mejorar el posicionamiento del web y mobile application de EMSafe en los motores de búsqueda y facilitar que los usuarios encuentren la plataforma al buscar soluciones relacionadas con salud, tecnología y monitoreo ambiental.
+
+### Web Application
+
+**Title:** EMsafe App – Panel de Monitoreo Electromagnético  
+
+**Description:**  
+Accede a tu panel de control EMsafe para visualizar niveles de radiación en tiempo real, gestionar sensores IoT y recibir alertas personalizadas.
+
+**Keywords:**  
+panel de control EMF, gestión de sensores IoT, monitoreo electromagnético, alertas de radiación, plataforma de bienestar, radiación en el trabajo.
+
+**Author:**  
+EMSafe Team
+
+---
+
+### Mobile Application
+
+**Title:** EMsafe – Monitor de Radiación Electromagnética  
+
+**Description:**  
+Monitorea en tiempo real la radiación electromagnética de tu entorno, recibe alertas personalizadas y accede a recomendaciones de salud desde tu dispositivo móvil.
+
+**Keywords:**  
+monitoreo EMF móvil, radiación electromagnética, sensores IoT, alertas de salud, campos electromagnéticos, protección radiación, bienestar, ASTRA asistente IA.
+
+**Author:**  
+EMSafe Team
+
+### 5.2.4. Searching Systems
+
+Para ofrecer una experiencia de búsqueda eficiente y ordenada, EMSafe implementa un sistema de búsqueda y filtrado orientado a facilitar el acceso rápido a información crítica relacionada con sensores, órdenes de trabajo, usuarios, alertas y mediciones de radiación electromagnética:
+
+- **Búsqueda básica:** Se integran campos de búsqueda en las principales secciones del sistema, permitiendo localizar información mediante términos clave como nombres de usuarios, clientes, órdenes de trabajo, ubicaciones o identificadores de servicio.
+
+- **Filtros avanzados:** Se incluyen filtros que permiten segmentar los resultados según criterios como estado, tipo de servicio, rango de fechas, técnico asignado, tipo de usuario, ubicación o nivel de alerta. Esto facilita una revisión más precisa de los datos registrados en la plataforma.
+
+- **Ordenación y clasificación de resultados:** Los resultados pueden organizarse de acuerdo con su relevancia operativa, estado del proceso o fecha de registro, permitiendo priorizar información importante como alertas críticas, órdenes pendientes o tareas en progreso.
+
+- **Visualización clara de resultados:** La información encontrada se presenta mediante tablas, tarjetas, indicadores y reportes visuales, permitiendo que administradores, técnicos y usuarios finales comprendan rápidamente el estado del sistema.
+
+- **Búsqueda orientada al monitoreo:** En el contexto móvil, la búsqueda se complementa con funciones relacionadas al monitoreo de sensores, detección de dispositivos, consulta de zonas y revisión de alertas generadas por niveles de radiación.
+
+Con este enfoque, EMSafe permite que cada tipo de usuario encuentre rápidamente la información que necesita, reduciendo el tiempo de consulta y mejorando la toma de decisiones dentro del sistema.
+
+### 5.2.5. Navigation Systems
+
+Para asegurar una experiencia de usuario fluida, accesible y organizada, EMSafe cuenta con un sistema de navegación adaptado a sus distintos entornos digitales, incluyendo panel administrativo, panel técnico y aplicación móvil:
+
+- **Menú de navegación claro:** Se emplean menús laterales y barras de navegación que permiten acceder de forma rápida a las secciones principales del sistema, como dashboard, órdenes de trabajo, historial, usuarios, sensores, alertas y configuración.
+
+- **Navegación por roles:** La estructura de navegación se adapta según el perfil del usuario. Los administradores acceden a funciones de gestión general, los técnicos a tareas operativas y los usuarios móviles a herramientas de monitoreo personal y control de sensores.
+
+- **Accesos rápidos a funciones importantes:** Se incorporan botones de acción para realizar tareas frecuentes como crear órdenes, iniciar trabajos, guardar cambios, marcar tareas como completadas, emparejar sensores, revisar mapas o exportar reportes.
+
+- **Flujos guiados:** La aplicación incluye procesos guiados para acciones como registro, inicio de sesión, verificación de identidad, configuración inicial, conexión de sensores y acceso al dashboard, facilitando el uso del sistema incluso para usuarios nuevos.
+
+- **Consistencia visual:** La navegación mantiene una estructura visual uniforme en las diferentes plataformas, utilizando iconos, colores, botones y jerarquías claras que ayudan al usuario a ubicarse dentro del sistema.
+
+Mediante estos principios de navegación, EMSafe garantiza que administradores, técnicos y usuarios finales puedan interactuar con la plataforma de manera clara, rápida e intuitiva.
+
+## 5.3. Landing Page UI Design
+
+Las landing pages cumplen un papel clave en la transformación de visitantes en posibles usuarios, ya que utilizan mensajes persuasivos, presentan información relevante del producto y ofrecen un diseño fácil de usar. Considerando su importancia, se ha planteado una propuesta inicial de diseño que se adapta tanto a dispositivos móviles como a computadoras de escritorio.
+
+En el caso de la versión para escritorio, se ha diseñado una interfaz estructurada en secciones visuales claras, con opciones de navegación bien definidas y descripciones breves de las principales funcionalidades del sitio. El propósito es lograr que el usuario comprenda rápidamente el contenido y reducir al mínimo cualquier obstáculo en su experiencia. Además, se ha incorporado una barra de navegación fija, lo que permite acceder a ella en todo momento y favorece un recorrido más fluido por la landing page.
+
+### 5.3.1. Landing Page Wireframe
+
+En esta sección se presentarán los wireframes de la versión de la versión con menos exactitud del Landing Page.
+
+* **Sección Inicio**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-inicio.png" alt="Inicio" width="600"/><br>
+
+* **Sección Beneficios**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-beneficios.png" alt="Inicio" width="600"/><br>
+
+* **Sección Problema**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-problema.png" alt="Inicio" width="600"/><br>
+
+* **Sección Ubicacion**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-ubicacion.png" alt="Inicio" width="600"/><br>
+
+* **Sección Contacto**
+
+<img src="img/TB1/chapter-5/landing-page/wireframes/wireframe-contacto.png" alt="Inicio" width="600"/><br>
+
+Figma: [https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node-id=14-9&t=m71F7tjyaI4ySMIN-1](https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node-id=14-9&t=m71F7tjyaI4ySMIN-1)
+
+### 5.3.2. Landing Page Mock-up
+En esta sección se muestra el mockup de la landing page desarrollada para la plataforma EMSafe. A diferencia del wireframe, este diseño presenta una aproximación más realista al producto final, integrando elementos visuales como colores, tipografías, gráficos y la organización del contenido, alineados con la identidad de la marca. El propósito de esta propuesta es evidenciar cómo se transmitirán los beneficios principales del sistema, el problema que busca solucionar, su localización, y cómo se facilitará el contacto con posibles usuarios.
+
+* **Sección Inicio**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-inicio.png" alt="Inicio" width="600"/><br>
+
+* **Sección Beneficios**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-beneficios.png" alt="Inicio" width="600"/><br>
+
+* **Sección Problema**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-problema.png" alt="Inicio" width="600"/><br>
+
+* **Sección Testimonio**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-testimonio.png" alt="Inicio" width="600"/><br>
+
+* **Sección Ubicacion**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-ubicacion.png" alt="Inicio" width="600"/><br>
+
+* **Sección Contacto**
+
+<img src="img/TB1/chapter-5/landing-page/mock-ups/mock-up-contacto.png" alt="Inicio" width="600"/><br>
+
+Figma: [https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node-id=14-9&t=m71F7tjyaI4ySMIN-1](https://www.figma.com/design/CyInNfsN7X5ZOszkfSkloU/UI-Design-Gauss?node-id=14-9&t=m71F7tjyaI4ySMIN-1)
+
+## 5.4. Applications UX/UI Design
+
+### 5.4.1. Applications Wireframes
+#### App Web
+##### Sprint 1
+Se presenta el diseño de baja fidelidad de la aplicación web del producto. En este se aprecia la jerarquía del contenido, representada principalmente a través del tamaño y el peso tipográfico.
+
+El diseño está compuesto por diversas secciones que contribuyen al objetivo estratégico de transmitir confianza a los usuarios.
+
+### ADMIN 
+* **Dashboard Principal**
+
+Vista general del sistema que permite al administrador monitorear métricas clave, estado de servicios y acceder rápidamente a las funcionalidades más importantes.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/dashboard_admin.png" alt="Dashboard Principal" width="600"/><br>
+
+* **Gestión de Servicios dde Instalacion, Mantenimiento y Recolección**
+
+Sección destinada a la creación, visualización y administración de órdenes de trabajo, permitiendo gestionar servicios según su tipo y estado.
+
+
+<img src="img/TB1/chapter-5/web-app/wireframes/work_orders_admin.png" alt="Gestión de Servicios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_work_order_admin.png" alt="Detalle de Servicio" width="600"/><br>
+
+* **Historial de Servicios**
+
+Registro de servicios realizados que facilita la consulta de actividades pasadas, seguimiento de operaciones y análisis del desempeño.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/work_orders_history_admin.png" alt="Historial de Servicios" width="600"/><br>
+
+* **Gestión de Usuarios**
+
+Módulo para administrar los diferentes tipos de usuarios del sistema, incluyendo administradores, técnicos y clientes, permitiendo su creación y configuración básica.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/users_admin.png" alt="Gestión de Usuarios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_admin.png" alt="Detalle de Usuario" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_technician.png" alt="Gestión de Técnicos" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_client_company.png" alt="Gestión de Empresas Cliente" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/new_client_individual.png" alt="Gestión de Técnicos" width="600"/><br>
+
+### TÉCNICO
+
+* **Calendario**
+Vista que permite al técnico organizar y visualizar sus servicios programados, facilitando la planificación diaria y el seguimiento de sus actividades.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/schedule_technician.png" alt="Calendario" width="600"/><br>
+
+* **Listado de Servicios Pendientes, en Progreso y Completados**
+Sección que muestra las órdenes de trabajo clasificadas por estado, permitiendo al técnico identificar rápidamente sus tareas, actualizar su progreso y gestionar sus actividades en tiempo real.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/users_technician.png" alt="Listado de Servicios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/completed_technician.png" alt="Listado de Servicios Pendientes" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/in_progress_technician.png" alt="Listado de Servicios en Progreso" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/wireframes/in_progress_technician.png" alt="Listado de Servicios Completados" width="600"/><br>
+
+* **Historial de Servicios**
+Registro de servicios previamente realizados que permite al técnico consultar trabajos anteriores, revisar detalles y mantener un control de su desempeño.
+
+<img src="img/TB1/chapter-5/web-app/wireframes/work_orders_technician.png" alt="Listado de Servicios" width="600"/><br>
+
+#### Movil App
+
+Se presenta el diseño de baja fidelidad de la aplicación movil del producto. En este se aprecia la jerarquía del contenido, representada principalmente a través del tamaño y el peso tipográfico.
+
+El diseño está compuesto por diversas secciones que contribuyen al objetivo estratégico de transmitir confianza a los usuarios.
+
+<img src="img/TB1/chapter-5/movilapp/wireframes/1.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/wireframes/2.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/wireframes/3.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/wireframes/4.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/wireframes/5.png" alt="" width="600"/><br>
+
+### 5.4.2. Applications Wireflow Diagrams
+
+| User Persona: Administrador |
+|----------------------------------|
+| User Goal: Como administrador, quiero visualizar el resumen de sensores totales y alertas críticas en el Dashboard para identificar rápidamente qué áreas requieren intervención inmediata. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_1.png" width= 800/> |
+
+| User Persona: Administrador |
+|----------------------------------|
+| User Goal: Como administrador, quiero completar el formulario de "New Work Order" asignando un técnico y una ubicación específica para formalizar el requerimiento de mantenimiento de un sensor. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_2.png" alt="wireflow1" width= 800/> |
+
+| User Persona: Administrador |
+|----------------------------------|
+| User Goal: Como administrador, quiero registrar nuevos perfiles de técnicos en la sección de "Team Management" para expandir la capacidad operativa de la empresa en campo. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_3.png" alt="wireflow2" width= 800/> |
+
+| User Persona: Técnico |
+|----------------------------------|
+| User Goal: Como técnico, quiero visualizar mi calendario de servicios para organizar mi tiempo y planificar mis actividades. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_4.png" alt="wireflow3" width= 800/> |
+
+
+| User Persona: Técnico |
+|----------------------------------|
+| User Goal: Como técnico, quiero marcar una orden como "In Progress" y registrar los hallazgos en la sección de "Technician Notes" para mantener actualizado al centro de control sobre el estado del sensor. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_5.png" alt="wireflow4" width= 800/> |
+
+| User Persona: Técnico |
+|----------------------------------|
+| User Goal: Como técnico, quiero filtrar el "Work Orders History" por rango de fechas y tipo de servicio para auditar el cumplimiento de las inspecciones de seguridad electromagnética pasadas. |
+| <img src="./img/TB1/chapter-5/wireflows/Wireflow_6.png" alt="wireflow5" width= 800/> |
+
+
+### Movil Wireflow Diagrams
+
+| User Persona: Usuario Nuevo |
+|----------------------------------|
+| User Goal: Como usuario nuevo, quiero completar el proceso de onboarding y vinculación del hub "EmSafe S1" para iniciar el monitoreo de radiación en mi hogar. |
+| <img src="img/TB1/chapter-5/movilapp/FLOWMODELLING WIREFRAMES/1.png" alt="" width="600"/><br> |
+
+| User Persona: Usuario Nuevo |
+|----------------------------------|
+| User Goal: Como usuario nuevo, quiero autenticar mi identidad mediante Face ID y verificación en dos pasos (2FA) para asegurar que solo personal autorizado acceda al panel de control. |
+| <img src="img/TB1/chapter-5/movilapp/FLOWMODELLING WIREFRAMES/2.png" alt="" width="600"/><br> |
+
+| User Persona: Usuario Nuevo |
+|----------------------------------|
+| User Goal: Como usuario nuevo, quiero supervisar el Dashboard en tiempo real y el historial de alertas críticas para tomar acciones preventivas sobre los sensores de cada habitación. |
+| <img src="img/TB1/chapter-5/movilapp/FLOWMODELLING WIREFRAMES/3.png" alt="" width="600"/><br> |
+
+
+
+### 5.4.3. Applications Mock-ups
+
+#### App Web
+
+##### Sprint 1
+
+Se presenta el diseño de alta fidelidad de la aplicación web del producto. En este diseño se integran los elementos visuales definidos en las Style Guidelines, como la paleta de colores, tipografías y componentes específicos para web, con el objetivo de transmitir confianza a los usuarios y facilitar la gestión operativa del sistema.
+
+### ADMIN 
+* **Dashboard Principal**
+
+Vista general del sistema que permite al administrador monitorear métricas clave, estado de servicios y acceder rápidamente a las funcionalidades más importantes.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/dashboard_admin_mockup.png" alt="Dashboard Principal" width="600"/><br>
+
+* **Gestión de Servicios dde Instalacion, Mantenimiento y Recolección**
+
+Sección destinada a la creación, visualización y administración de órdenes de trabajo, permitiendo gestionar servicios según su tipo y estado.
+
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/work_orders_admin_mockup.png" alt="Gestión de Servicios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_work_order_admin_mockup.png" alt="Detalle de Servicio" width="600"/><br>
+
+* **Historial de Servicios**
+
+Registro de servicios realizados que facilita la consulta de actividades pasadas, seguimiento de operaciones y análisis del desempeño.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/work_orders_history_admin_mockup.png" alt="Historial de Servicios" width="600"/><br>
+
+* **Gestión de Usuarios**
+
+Módulo para administrar los diferentes tipos de usuarios del sistema, incluyendo administradores, técnicos y clientes, permitiendo su creación y configuración básica.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/users_admin_mockup.png" alt="Gestión de Usuarios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_admin_mockup.png" alt="Detalle de Usuario" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_technician_mockup.png" alt="Gestión de Técnicos" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_client_company_mockup.png" alt="Gestión de Empresas Cliente" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/new_client_individual_mockup.png" alt="Gestión de Técnicos" width="600"/><br>
+
+### TÉCNICO
+
+* **Calendario**
+Vista que permite al técnico organizar y visualizar sus servicios programados, facilitando la planificación diaria y el seguimiento de sus actividades.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/schedule_technician_mockup.png" alt="Calendario" width="600"/><br>
+
+* **Listado de Servicios Pendientes, en Progreso y Completados**
+Sección que muestra las órdenes de trabajo clasificadas por estado, permitiendo al técnico identificar rápidamente sus tareas, actualizar su progreso y gestionar sus actividades en tiempo real.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/users_technician_mockup.png" alt="Listado de Servicios" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/completed_technician_mockup.png" alt="Listado de Servicios Pendientes" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/in_progress_technician_mockup.png" alt="Listado de Servicios en Progreso" width="600"/><br>
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/completed_technician_mockup.png" alt="Listado de Servicios Completados" width="600"/><br>
+
+* **Historial de Servicios**
+Registro de servicios previamente realizados que permite al técnico consultar trabajos anteriores, revisar detalles y mantener un control de su desempeño.
+
+<img src="img/TB1/chapter-5/web-app/mock-ups/work_orders_technician_mockup.png" alt="Listado de Servicios" width="600"/><br>
+
+
+## Movil App Mock-ups
+
+<img src="img/TB1/chapter-5/movilapp/mockups/1.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/mockups/2.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/mockups/3.png" alt="" width="600"/><br>
+
+### 5.4.4. Applications User Flow Diagrams
+
+MOCKSUPS DIAGRAM
+
+<img src="img/TB1/chapter-5/movilapp/MOCKSUPSDIAGRAM/1.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/MOCKSUPSDIAGRAM/2.png" alt="" width="600"/><br>
+<img src="img/TB1/chapter-5/movilapp/MOCKSUPSDIAGRAM/3.png" alt="" width="600"/><br>
+
+## 5.5. Applications Prototyping
+
+#### App Web
+
+##### Sprint 1
+En este primer sprint, se logró implementar la mayor parte de las funcionalidades de la aplicación web, abarcando principalmente los componentes core del frontend y cubriendo aspectos clave como la gestión de procesos, manejo de información y aplicación de reglas de negocio.
+
+* **Video de exploración de prototipo Web (Gauss - EMSafe):** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQDktdKKxmINQ7fXWALRJrG8AY34MIwA19xNLJ9oI41tm9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ELPcvP](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQDktdKKxmINQ7fXWALRJrG8AY34MIwA19xNLJ9oI41tm9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ELPcvP)
+
+<img src="img/TB1/chapter-5/prototype/web/web-prototype-video.png" alt="Prototipo Web" width="600"/><br>
+
+En este primer sprint, se logró implementar la mayor parte de las funcionalidades de la aplicación movil, abarcando principalmente los componentes del frontend y cubriendo aspectos clave como el onboarding , auth y Dashboard.
+
+* **Video de exploración de prototipo Movil (Gauss - EMSafe):**
+
+
+
+ [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212214_upc_edu_pe/IQBLa5tUzn1sRbjL1wgthDkZAZ0oLf-VyS3pbduFu0a7iCk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ENE3RN](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212214_upc_edu_pe/IQBLa5tUzn1sRbjL1wgthDkZAZ0oLf-VyS3pbduFu0a7iCk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ENE3RN)
+
+<img src="img/TB1/chapter-5/movilapp/FLOWMODELLING WIREFRAMES/captura.png" alt="" width="600"/><br>
+
+## 5.6. IoT Device Design
+
+Esta sección presenta el diseño físico y el diseño de circuito del dispositivo IoT que forma parte de la solución EMSafe. Se explican los criterios de diseño adoptados, la relación con la guía de estilos IoT definida en la sección 5.1.2, el diagrama del circuito y los principales flujos de interacción del prototipo.
+
+---
+
+### Introducción y criterios de diseño
+
+El dispositivo IoT de EMSafe tiene como propósito detectar niveles de campos electromagnéticos no ionizantes en el entorno del usuario y transmitir los datos en tiempo real hacia el backend de la plataforma. Para su diseño se consideraron los siguientes criterios:
+
+- **Microcontrolador:** Se seleccionó el **ESP32 DevKit V1** por su conectividad WiFi integrada, capacidad de procesamiento suficiente para el firmware embebido, compatibilidad con el Arduino Framework (C++) y disponibilidad en el ecosistema de simulación Wokwi.
+- **Sensor de campo electromagnético:** Dado que Wokwi no cuenta con un sensor EMF físico simulado, se utiliza un **potenciómetro** como elemento analógico que simula la variación de intensidad del campo electromagnético (0–100%). En el despliegue físico real, este componente sería reemplazado por el sensor **GY-273** o equivalente.
+- **Sensor ambiental:** Se integra el sensor **DHT22** para capturar temperatura y humedad del entorno, datos complementarios al monitoreo EMF.
+- **Indicadores visuales LED:** Se implementaron tres LEDs (verde, amarillo, rojo) que comunican el nivel de radiación detectado de forma inmediata, alineados con el sistema semáforo definido en la sección 5.1.2 (IoT Device Style Guidelines).
+- **Comunicación:** El dispositivo transmite los datos vía **HTTP POST** hacia el endpoint REST del backend EMSafe cuando se detecta un cambio significativo en los niveles o cuando el nivel alcanza el estado CRITICAL.
+- **Temporización no bloqueante:** Se utiliza `millis()` en lugar de `delay()` para garantizar un loop responsivo y sin bloqueos.
+
+La coherencia entre los colores LED del dispositivo físico y el sistema semáforo de la aplicación móvil y web permite que el usuario identifique el nivel de riesgo de manera consistente en todos los canales de la solución.
+
+---
+
+### Diseño físico del dispositivo
+
+El dispositivo EMSafe está concebido como una unidad compacta de monitoreo instalable en paredes o superficies planas dentro del entorno del usuario. Sus componentes principales son:
+
+| Componente | Función |
+|---|---|
+| ESP32 DevKit V1 | Microcontrolador principal con WiFi integrado |
+| Sensor DHT22 | Medición de temperatura y humedad ambiental |
+| Potenciómetro (simulación EMF) | Representa la intensidad del campo electromagnético |
+| LED Verde | Indica nivel de radiación BAJO (SAFE) |
+| LED Amarillo | Indica nivel de radiación MEDIO (WARNING) |
+| LED Rojo | Indica nivel de radiación ALTO (CRITICAL) |
+| Resistencias 220Ω (x3) | Protección de corriente para cada LED |
+
+El dispositivo comunica su estado mediante los indicadores LED RGB siguiendo los patrones definidos en la guía de estilos IoT:
+
+| Estado | LED activo | Significado |
+|---|---|---|
+| EMF < 30% | 🟢 Verde encendido fijo | Nivel seguro (SAFE) |
+| EMF 30–70% | 🟡 Amarillo encendido fijo | Nivel medio (WARNING) |
+| EMF > 70% | 🔴 Rojo encendido fijo | Nivel crítico (CRITICAL) |
+| Iniciando | Secuencia verde → amarillo → rojo | Startup del firmware |
+| Conectando WiFi | LED verde parpadeando | Intentando conexión |
+| WiFi conectado | LED verde 3 destellos | Conexión exitosa |
+
+---
+
+### Diagrama del circuito
+
+El circuito fue diseñado y validado en el simulador **Wokwi**. A continuación se presenta el diagrama de conexiones:
+
+![Diagrama del circuito EMSafe en Wokwi](img/TB1/wokwi/wokwi.png)
+
+**Enlace al proyecto Wokwi:** [https://wokwi.com/projects/467303833505243137](https://wokwi.com/projects/467303833505243137)
+
+### Tabla de conexiones pin a pin
+ 
+| Componente | Pin componente | Pin ESP32 | Cable | Función |
+|---|---|---|---|---|
+| Custom Chip A3144 | VCC | 3V3 | Rojo | Alimentación del sensor |
+| Custom Chip A3144 | OUT | GPIO34 | Verde | Lectura analógica del campo EMF |
+| Custom Chip A3144 | GND | GND | Negro | Referencia |
+| LED RGB (ánodo común) | Rojo (R) | GPIO27 | Rojo | Indicador nivel DANGER |
+| LED RGB (ánodo común) | Verde (G) | GPIO25 | Verde | Indicador nivel SAFE |
+| LED RGB (ánodo común) | Azul (B) | GPIO26 | Azul | *Reservado* |
+| LED RGB (ánodo común) | Ánodo común | 3V3 | Rojo | Alimentación común |
+| Resistencia R1 (220Ω) | Pin 1 | LED Rojo | Rojo | Limitador corriente |
+| Resistencia R1 | Pin 2 | GPIO27 | Rojo | — |
+| Resistencia R2 (220Ω) | Pin 1 | LED Verde | Verde | Limitador corriente |
+| Resistencia R2 | Pin 2 | GPIO25 | Verde | — |
+| Resistencia R3 (220Ω) | Pin 1 | LED Azul | Azul | Limitador corriente |
+| Resistencia R3 | Pin 2 | GPIO26 | Azul | — |
+| Módulo Relé | VCC | 3V3 | Rojo | Alimentación |
+| Módulo Relé | IN | GPIO32 | Naranja | Control del relé |
+| Módulo Relé | GND | GND | Negro | Referencia |
+ 
+---
+ 
+## Flujos de interacción del prototipo
+ 
+A continuación se describen los principales flujos de interacción del firmware embebido del dispositivo EMSafe:
+ 
+### Flujo 1: Inicialización del dispositivo
+ 
+1. El ESP32 inicia y ejecuta `setup()`.
+2. Se configuran los pines de los LEDs RGB como salidas (`OUTPUT`).
+3. Se configura el pin del relé (GPIO32) como salida.
+4. Se inicializa el sensor A3144 (custom chip Wokwi) en GPIO34 (ADC).
+5. El dispositivo intenta conectarse a la red WiFi (SSID: `Wokwi-GUEST`).
+6. Se sincroniza la hora vía NTP (zona horaria Perú UTC-5).
+7. Si la conexión es exitosa, el LED verde parpadea como confirmación.
+### Flujo 2: Ciclo de monitoreo (loop principal)
+ 
+1. Cada 1 segundo (`INTERVALO_MS = 1000ms`) el sistema toma una lectura analógica.
+2. Se lee el voltaje del custom chip A3144 en GPIO34 (ADC) → se mapea a 0–1000 µT.
+3. Se clasifica el nivel de alerta según el campo:
+   - **SAFE** (verde): campo < 100 µT
+   - **CAUTION** (amarillo): 100 µT ≤ campo < 200 µT
+   - **DANGER** (rojo): campo ≥ 200 µT
+4. Se actualiza el LED RGB al color correspondiente.
+5. Se evalúa el estado del enchufe inteligente (relé):
+   - Si nivel es **DANGER** → corta energía (relé OFF).
+   - Si campo desciende por debajo de 150 µT (histeresis) → restablece energía (relé ON).
+6. Se imprime la lectura en el Serial Monitor.
+### Flujo 3: Envío de datos al edge
+ 
+1. El sistema evalúa si hubo un cambio de nivel o estado del enchufe.
+2. Si se cumple la condición y respeta el intervalo mínimo de 3 segundos (anti-saturación), se construye el payload JSON:
+```json
+{
+  "device_id": "EMSAFE-6766-01",
+  "field_uT": 250.4,
+  "level": "DANGER",
+  "plug": "OFF",
+  "created_at": "19/06/2026 18:40:12"
+}
+```
+ 
+3. Se realiza un `HTTP POST` hacia el edge local (Flask):
+   - URL: `http://<IP-local>:5000/api/v1/emf-monitoring/data-records`
+   - Header: `X-API-Key: emsafe-edge-key-6766`
+4. El edge clasifica el nivel localmente (si el dispositivo no lo hubiera hecho) y lo persiste en SQLite.
+5. El edge sincroniza con el backend Azure si está habilitado (POST a `/api/v1/readings`).
+6. Se registra el código de respuesta HTTP en el Serial Monitor.
+### Flujo 4: Integración con la capa edge
+ 
+1. El dispositivo actúa de forma **local e inmediata**: reacción de LED + corte del enchufe sin depender de la conexión.
+2. El edge (Flask) actúa como **autoridad de alertas**: recibe la lectura, confirma la clasificación, la persiste localmente en SQLite, y sincroniza a la nube.
+3. El backend Azure (nube) se encarga de **plataforma y visualización**: dashboards, historial, mapa de radiación, alarmas, app.
+4. El flujo es **resiliente**: si la nube falla, el device sigue alertando y el edge sigue guardando localmente.
+---
+ 
+## Diagrama de flujo del firmware
+ 
+```
+[Encendido]
+     ↓
+[Setup: pines, A3144, LED RGB, relé, WiFi, NTP]
+     ↓
+[Conectar WiFi a Wokwi-GUEST]
+     ↓ éxito
+[Sincronizar hora (NTP)]
+     ↓
+[Loop cada 1 segundo]
+     ↓
+[Leer ADC GPIO34 → mapear a µT]
+     ↓
+[Clasificar nivel]
+[field_uT < 100?] → SAFE (LED verde)
+[100 ≤ field_uT < 200?] → CAUTION (LED amarillo)
+[field_uT ≥ 200?] → DANGER (LED rojo)
+     ↓
+[¿field_uT >= 200?] → Relé OFF (corta energía)
+[field_uT < 150?] → Relé ON (restablece, con histeresis)
+     ↓
+[Imprimir en Serial Monitor]
+     ↓
+[¿Cambio de nivel O cambio del enchufe?]
+[Y ¿intervalo mínimo 3s respetado?]
+     ↓ sí
+[HTTP POST al edge Flask]
+[Host: http://localhost:5000/api/v1/emf-monitoring/data-records]
+[Header X-API-Key: emsafe-edge-key-6766]
+     ↓
+[Registrar código HTTP]
+     ↓
+[Edge clasifica → persiste en SQLite local]
+[Edge sincroniza al backend Azure (si enabled)]
+     ↓
+[Verificar WiFi → reconectar si necesario]
+     ↓
+[Esperar siguiente ciclo]
+```
+ 
+---
+ 
+## Notas de arquitectura
+ 
+### Wokwi vs Dispositivo físico
+ 
+En Wokwi se simula con el custom chip A3144 y `analogRead` (lectura analógica). En el dispositivo real, el sensor A3144 es digital y se usa `digitalRead` (detección digital de presencia de campo). La logística de detección difiere:
+ 
+- **Wokwi:** lectura continua de voltaje analógico proporcional al campo → mapeo a µT.
+- **Físico:** detección digital binaria (presencia/ausencia) → se requiere circuitería adicional para medir magnitud.
+Esta diferencia está documentada en la tabla de comparación Wokwi vs Físico del informe técnico.
+ 
+### Anti-saturación
+ 
+El sistema implementa filtrado en múltiples capas:
+ 
+1. **Embebido:** el dispositivo solo envía al edge cuando cambia el nivel o el enchufe (no envía cada segundo).
+2. **Edge:** persiste todo localmente (SQLite) y sincroniza al backend solo cambios significativos.
+3. **Backend:** recibe y procesa el flujo agregado, no el flujo crudo.
+Resultado: reducción de carga en la nube y uso eficiente del ancho de banda.
+ 
+### Resiliencia
+ 
+- El **LED y el relé responden al instante** sin esperar al edge o a la nube. Si el internet falla, el dispositivo sigue alertando y protegiendo.
+- El **edge persiste localmente** en SQLite, por lo que aunque la nube esté caída, los datos se guardan y se sincronizarán cuando recupere conectividad.
+- El flujo es **robusto ante desconexiones** en cualquier capa.
+---
+ 
+## Características principales del diseño
+ 
+| Aspecto | Valor |
+|---|---|
+| Rango de medición | 0–1000 µT |
+| Precisión de clasificación | ±10 µT (entre umbrales) |
+| Intervalo de muestreo | 1 segundo |
+| Intervalo mínimo entre envíos | 3 segundos (anti-saturación) |
+| Histeresis del relé | 50 µT (100–150 µT) |
+| Protocolo de comunicación | HTTP POST con JSON |
+| Autenticación del dispositivo | API Key (X-API-Key) |
+| Base de datos local | SQLite (persistencia en edge) |
+| Zona horaria | UTC-5 (Perú) |
+| WiFi | Wokwi-GUEST (sin contraseña) |
+
+```
+EMSafe IoT Device Starting...
+DHT22 initialized on GPIO 15
+Connecting to Wokwi-GUEST....
+Connected! IP: 10.0.0.2
+LED startup sequence complete
+[EMSafe] EMF: 75% | Temp: 15.0°C | Hum: 40.0% | Level: CRITICAL
+Sending to API: {"deviceId":"ESP32-EMSafe-001","emfLevel":75,...}
+API Response: 201
+```
+
+# Capítulo VI: Product Implementation, Validation & Deployment
+
+## 6.1. Software Configuration Management
+
+En esta sección el equipo establece las decisiones y convenciones que permitirán mantener la consistencia durante el ciclo de vida del producto. Se incluyen secciones para la configuración del entorno de desarrollo, la gestión del código fuente, las convenciones de estilo y la configuración de despliegue.
+
+### 6.1.1. Software Development Environment Configuration
+
+A continuación se especifican las herramientas de software utilizadas por el equipo para el desarrollo de la solución EMSafe, organizadas por tipo de actividad:
+
+**Project Management**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| GitHub | Plataforma para el alojamiento de repositorios y gestión de versiones del código fuente. | https://github.com |
+| Trello | Gestión de tareas y seguimiento del progreso del equipo mediante tableros Kanban. | https://trello.com |
+
+**Requirements Management**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Miro | Elaboración de Event Storming (Big Picture y Design-Level), mapas de contexto y diagramas colaborativos. | https://miro.com |
+| UXPressia | Creación de User Personas, User Journey Maps y Empathy Maps. | https://uxpressia.com |
+
+**Product UX/UI Design**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Figma | Diseño de wireframes, mockups y prototipos interactivos de la aplicación web y móvil. | https://figma.com |
+
+**Software Development**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Visual Studio Code | Editor de código principal para el desarrollo del Frontend Web y Landing Page. | https://code.visualstudio.com |
+| IntelliJ IDEA | IDE para el desarrollo del Backend con Spring Boot (Java). | https://www.jetbrains.com/idea |
+| Angular CLI | Framework para el desarrollo del Frontend Web Application con TypeScript. | https://angular.io/cli |
+| Spring Boot | Framework para el desarrollo del Backend RESTful Web Service. | https://spring.io/projects/spring-boot |
+| Wokwi | Simulador en línea para el desarrollo y prueba del Embedded Application en ESP32. | https://wokwi.com |
+| Arduino Framework (C++) | Framework para la programación del dispositivo IoT (ESP32). | https://www.arduino.cc |
+
+**Software Testing**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Postman | Pruebas manuales de los endpoints del RESTful Web Service. | https://www.postman.com |
+
+**Software Deployment**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| GitHub Pages | Despliegue del Landing Page directamente desde el repositorio de GitHub. | https://pages.github.com |
+| Vercel | Despliegue del Frontend Web Application. | https://vercel.com |
+| Railway | Despliegue del Backend RESTful Web Service. | https://railway.app |
+
+**Software Documentation**
+
+| Producto | Propósito | Referencia |
+|---|---|---|
+| Markdown | Formato de escritura utilizado para la documentación del informe en GitHub. | https://www.markdownguide.org |
+| Structurizr | Elaboración de diagramas de arquitectura de software bajo el modelo C4. | https://structurizr.com |
+| LucidChart | Elaboración de diagramas complementarios de arquitectura y flujos. | https://lucidchart.com |
+ 
+---
+
+### 6.1.2. Source Code Management
+
+El equipo utiliza **GitHub** como plataforma de control de versiones y colaboración. A continuación se listan los repositorios correspondientes a cada producto digital de la solución EMSafe:
+
+| Producto | Repositorio |
+|---|---|
+| Informe | https://github.com/Desarrollo-de-soluciones-IOT-UPC/Informe |
+| Landing Page | https://github.com/Desarrollo-de-soluciones-IOT-UPC/landing-page |
+| Frontend Web Application | https://github.com/Desarrollo-de-soluciones-IOT-UPC/Front-End |
+| Backend Web Services | https://github.com/Desarrollo-de-soluciones-IOT-UPC/Back-End |
+| Embedded Application | |
+
+**GitFlow como Workflow de control de versiones**
+
+El equipo implementa **GitFlow** como modelo de branching. Las ramas definidas son:
+
+- `main`: rama principal que contiene el código en producción. Solo recibe merges desde `release` o `hotfix`.
+- `develop`: rama de integración continua donde se consolidan los cambios de los feature branches antes de un release.
+- `feature/<nombre>`: ramas para el desarrollo de nuevas funcionalidades. Se crean desde `develop` y se fusionan de vuelta a `develop` al completarse. Ejemplo: `feature/emf-alert-module`.
+
+**Conventional Commits**
+
+Para los mensajes de commits se aplica la convención **Conventional Commits**, con el formato:
+
+```
+<type>(<scope>): <description>
+```
+
+Los tipos permitidos son:
+
+| Tipo | Uso |
+|---|---|
+| `feat` | Nueva funcionalidad |
+| `fix` | Corrección de errores |
+| `docs` | Cambios en documentación |
+| `style` | Cambios de formato sin afectar lógica |
+| `refactor` | Refactorización de código |
+| `test` | Adición o corrección de pruebas |
+| `chore` | Tareas de mantenimiento o configuración |
+
+Ejemplo: `feat(sensor): add threshold-based EMF alert trigger`
+
+---
+
+### 6.1.3. Source Code Style Guide & Conventions
+
+El equipo adopta las siguientes guías de estilo para cada lenguaje o tecnología utilizada en la solución. Todo el código fuente se escribe en **inglés**.
+
+**HTML**
+- Guía adoptada: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- Usar indentación de 2 espacios.
+- Todos los atributos deben estar en minúsculas y entre comillas dobles.
+- Incluir el atributo `alt` en todas las imágenes.
+  **CSS / SCSS**
+- Guía adoptada: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- Usar notación en `kebab-case` para nombres de clases.
+- Evitar el uso de `!important`.
+- Organizar las propiedades en orden alfabético.
+  **TypeScript / Angular**
+- Guía adoptada: [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html) y [Angular Coding Style Guide](https://angular.io/guide/styleguide)
+- Usar `camelCase` para variables y funciones; `PascalCase` para clases y componentes.
+- Tipar explícitamente todas las variables y parámetros de funciones.
+- Un componente por archivo; nomenclatura: `feature-name.component.ts`.
+  **Java / Spring Boot**
+- Guía adoptada: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+- Usar `camelCase` para métodos y variables; `PascalCase` para clases.
+- Seguir el patrón de capas: Controller → Service → Repository.
+- Documentar con Javadoc los métodos públicos relevantes.
+  **C++ (Arduino / ESP32)**
+- Usar `camelCase` para variables y funciones; `UPPER_SNAKE_CASE` para constantes.
+- Preferir `millis()` sobre `delay()` para temporización no bloqueante.
+- Cada función debe tener una única responsabilidad.
+- Comentar en inglés las secciones críticas del código.
+  **Gherkin (.feature)**
+- Guía adoptada: [Gherkin Conventions for Readable Specifications](https://cucumber.io/docs/gherkin/)
+- Usar el formato `Given / When / Then` en inglés.
+- Nombrar los archivos en `kebab-case`: `emf-alert.feature`.
+- Cada escenario debe ser independiente y cubrir un único caso de prueba.
+
+---
+
+### 6.1.4. Software Deployment Configuration
+
+En esta sección se describe la configuración de despliegue para cada producto digital de la solución EMSafe, detallando los pasos necesarios para publicar cada producto a partir de los repositorios de código fuente.
+
+**Landing Page**
+
+La Landing Page se despliega mediante **GitHub Pages** directamente desde el repositorio `landing-page`.
+
+Pasos:
+1. Asegurarse de que el archivo `index.html` se encuentre en la raíz o en la carpeta `/docs` de la rama `main`.
+2. Ir a `Settings > Pages` en el repositorio de GitHub.
+3. Seleccionar la rama `main` y la carpeta raíz (`/root`) como fuente.
+4. GitHub Pages generará automáticamente la URL de despliegue.
+   URL de despliegue: ``
+
+**Frontend Web Application**
+
+El Frontend se despliega mediante **Vercel** conectado al repositorio `Front-End`.
+
+Pasos:
+1. Crear un proyecto en Vercel e importar el repositorio `Front-End` desde GitHub.
+2. Configurar el comando de build: `ng build --configuration production`.
+3. Configurar el directorio de salida: `dist/<nombre-del-proyecto>`.
+4. Vercel detecta automáticamente los cambios en la rama `main` y realiza el redespliegue.
+   **Backend Web Services**
+
+El Backend se despliega mediante **Railway** conectado al repositorio `Back-End`.
+
+Pasos:
+1. Crear un nuevo proyecto en Railway e importar el repositorio `Back-End` desde GitHub.
+2. Configurar las variables de entorno necesarias (credenciales de base de datos, puertos, etc.).
+3. Railway detecta el proyecto Spring Boot y ejecuta automáticamente `mvn clean install`.
+4. El servicio queda expuesto en una URL pública generada por Railway.
+
+**Embedded Application**
+
+El firmware del dispositivo IoT (ESP32) se despliega de forma local desde el repositorio `Embedded-Application`.
+
+Pasos:
+1. Clonar el repositorio `Embedded-Application`.
+2. Abrir el proyecto en el Arduino IDE o PlatformIO.
+3. Conectar el dispositivo ESP32 mediante USB.
+4. Seleccionar la placa `ESP32 Dev Module` y el puerto COM correspondiente.
+5. Compilar y cargar el firmware con el comando `Upload`.
+> A continuación se presenta el Deployment Diagram del C4 Model que ilustra la infraestructura de despliegue de la solución EMSafe:
+
+## 6.2. Sprint 1
+
+### 6.2.1.1. Sprint Planning 1
+
+En este sprint, el enfoque estará en iniciar la implementación de los componentes principales de EMSafe, priorizando la configuración del backend, la comunicación con la base de datos y la preparación de los servicios que permitirán registrar, consultar y gestionar información relacionada con usuarios, dispositivos IoT, mediciones de radiación electromagnética y alertas del sistema. Asimismo, se busca establecer una base técnica ordenada para facilitar la integración posterior con la aplicación móvil, la plataforma web administrativa y el dispositivo IoT.
+
+| Sprint # | Sprint 1 |
+|---|---|
+| Sprint Planning Background | Durante la reunión se revisaron los requerimientos principales del producto, el Product Backlog y las funcionalidades necesarias para iniciar el desarrollo técnico de EMSafe. Se priorizó la implementación de la primera versión del Frontend Web Application, la estructura inicial de datos y la preparación de funcionalidades que permitan mostrar información relevante en la plataforma web. |
+| Date | 09-05-2026 |
+| Time | 3:00 p.m. |
+| Location | Reunión realizada mediante Discord |
+| Prepared By | Guimaraes Escalante, Carlos Eduardo |
+| Attendees (to planning meeting) | Sosa Soto, Oskar Rodrigo / Lopez de la Cruz, Mauro Fabricio / Guimaraes Escalante, Carlos Eduardo / Oliva Lopez, Fabian Alejandro / Lizano Coll Cardenas, Fernando Jesus |
+| Sprint Goal & User Stories |  |
+| Sprint 1 Goal | Implementar la base funcional del sistema EMSafe, desarrollando la primera versión del Frontend, la estructura de persistencia de datos y los componentes necesarios para la gestión de usuarios, dispositivos IoT, mediciones de radiación electromagnética y alertas, asegurando una arquitectura escalable, mantenible y alineada con las necesidades del producto. |
+| Sprint 1 Velocity | 15 Story Points |
+| Sum of Story Points | 26 Story Points |
+
+### 6.2.1.2. Aspect Leaders and Collaborators
+
+| Aspecto | Líder | Colaboradores |
+|---|---|---|
+| Frontend Development | Sosa Soto, Oskar Rodrigo | Lopez de la Cruz, Mauro Fabricio / Guimaraes Escalante, Carlos Eduardo |
+| UI Layout and Components | Lopez de la Cruz, Mauro Fabricio | Sosa Soto, Oskar Rodrigo / Oliva Lopez, Fabian Alejandro |
+| Navigation and Routing | Guimaraes Escalante, Carlos Eduardo | Sosa Soto, Oskar Rodrigo / Lizano Coll Cardenas, Fernando Jesus |
+| Dashboard and Data Visualization | Lizano Coll Cardenas, Fernando Jesus | Lopez de la Cruz, Mauro Fabricio / Sosa Soto, Oskar Rodrigo |
+| Mock Data and Service Integration | Oliva Lopez, Fabian Alejandro | Guimaraes Escalante, Carlos Eduardo / Lizano Coll Cardenas, Fernando Jesus |
+| Responsive Design and Styling | Lopez de la Cruz, Mauro Fabricio | Oliva Lopez, Fabian Alejandro / Sosa Soto, Oskar Rodrigo |
+| Testing and Validation | Guimaraes Escalante, Carlos Eduardo | Sosa Soto, Oskar Rodrigo / Lopez de la Cruz, Mauro Fabricio |
+| Repository Management and Deployment Preparation | Guimaraes Escalante, Carlos Eduardo | Lizano Coll Cardenas, Fernando Jesus / Oliva Lopez, Fabian Alejandro |
+
+Cada líder fue responsable de coordinar las tareas correspondientes a su aspecto dentro de la primera versión del Frontend Web Application de EMSafe. Los colaboradores apoyaron en la implementación de componentes visuales, organización de rutas, validación de interfaces, uso de datos simulados y preparación del repositorio para su posterior integración y despliegue.
+
+### 6.2.1.3. Sprint Backlog 1
+
+En este sprint, el enfoque estará en desarrollar la primera versión del **Frontend Web Application** y complementar las funcionalidades principales del **Landing Page** de EMSafe. Para ello, se priorizarán User Stories relacionadas con la visualización de secciones informativas, navegación, diseño responsive, dashboard, gestión de dispositivos, mapa de radiación, alarmas y perfil de usuario. Además, se incluirán tareas técnicas vinculadas a la integración inicial con endpoints del backend para preparar la comunicación entre la interfaz web y los servicios API.
+
+| ID | User Story | Work-Item / Task | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|
+| US46 | Visualizar la sección Características | T01: TS10 - Desarrollo de estructura HTML del Landing Page | Implementar la estructura base de la sección de características del Landing Page, respetando la organización visual definida para la primera versión. | 1 | Oskar | Done |
+| US46 | Visualizar la sección Características | T02: TS11 - Desarrollo de estilos CSS del Landing Page | Aplicar estilos visuales a la sección de características para mantener coherencia con el mock-up y la identidad visual de EMSafe. | 2 | Mauro | Done |
+| US47 | Visualizar la sección Problemática | T03: TS13 - Implementación de la Sección Problemática del Landing Page | Desarrollar la sección que explica la contaminación electromagnética y la necesidad que resuelve EMSafe. | 2 | Carlos | Done |
+| US53 | Visualizar la sección Beneficios | T04: TS12 - Implementación de la Sección Beneficios del Landing | Implementar la sección de beneficios, mostrando de forma clara las ventajas de usar la plataforma EMSafe. | 2 | Fabian | Done |
+| US50 | Testimonios de Usuarios | T05: TS14 - Implementación de la Sección Testimonios del Landing Page | Crear la sección de testimonios para mostrar experiencias de usuarios y reforzar la confianza en la solución. | 3 | Fernando | Done |
+| US52 | Visualización de la sección de ubicación del centro de investigación | T06: TS15 - Implementación de la Sección Ubicación del Landing Page | Implementar la sección de ubicación para mostrar información de localización de manera clara dentro del Landing Page. | 3 | Oskar | Done |
+| US48 | CTA Claros | T07: TS17 - Implementación de la Sección Iniciar Sesión del Landing Page | Desarrollar la sección de inicio de sesión o acceso, permitiendo que el visitante identifique fácilmente cómo ingresar a la plataforma. | 1 | Mauro | Done |
+| US48 | CTA Claros | T08: TS19 - Redirección a la Aplicación Web | Implementar el botón de redirección desde el Landing Page hacia la aplicación web de EMSafe. | 3 | Carlos | Done |
+| US49 | Responsive Design | T09: TS18 - Desarrollo de funcionalidad con JavaScript | Ajustar interacciones básicas y comportamiento responsive para mejorar la experiencia desde distintos dispositivos. | 2 | Fabian | Done |
+| US51 | Visualizar link público de acceso al Landing Page | T10: TS20 - Despliegue del Landing Page en GitHub | Publicar el Landing Page en el repositorio correspondiente y validar que el enlace público funcione correctamente. | 2 | Fernando | Done |
+| TS26 | Desarrollo de Dashboard (Frontend Web) | TS26: Desarrollo de Dashboard (Frontend Web) | Implementar el dashboard principal para mostrar un resumen general de la plataforma, métricas clave, accesos rápidos y alertas relevantes. | 2 | Oskar | Done |
+| TS22 | Desarrollo de sección Devices (Frontend Web) | TS22: Desarrollo de sección Devices (Frontend Web) | Implementar la sección de dispositivos para visualizar todos los dispositivos registrados en la plataforma. | 1 | Mauro | Done |
+| TS23 | Desarrollo de sección Map Radiation (Frontend Web) | TS23: Desarrollo de sección Map Radiation (Frontend Web) | Implementar la sección del mapa de radiación para visualizar los niveles de radiación registrados por zona geográfica. | 3 | Fernando | Done |
+| TS24 | Desarrollo de sección Alarms (Frontend Web) | TS24: Desarrollo de sección Alarms (Frontend Web) | Implementar la sección de alarmas para visualizar y gestionar las alertas generadas por la plataforma. | 2 | Carlos | Done |
+| TS25 | Desarrollo de sección Profile (Frontend Web) | TS25: Desarrollo de sección Profile (Frontend Web) | Implementar la sección de perfil para que los usuarios puedan ver y editar su información personal. | 1 | Fabian | Done |
+| US57 | API de Integración | US57: API de Integración | Preparar la integración de sensores vía API para que los datos puedan incorporarse en tiempo real a la plataforma. | 2 | Carlos | Done |
+| TS27 | Gestión de endpoints de Devices | TS27: Gestión de endpoints de Devices | Implementar y consumir los endpoints del módulo de dispositivos para mantener actualizada la información desde la aplicación. | 2 | Mauro | Done |
+| TS28 | Gestión de endpoints de Map Radiation | TS28: Gestión de endpoints de Map Radiation | Consumir los endpoints relacionados con puntos de radiación para visualizar la información en el mapa. | 1 | Fernando | Done |
+| TS29 | Gestión de endpoints de Alarms | TS29: Gestión de endpoints de Alarms | Consumir los endpoints de alarmas para mostrar, crear, actualizar y eliminar alertas del sistema. | 1 | Oskar | Done |
+| TS31 | Consulta de endpoints de Dashboard | TS31: Consulta de endpoints de Dashboard | Obtener los datos generales de la plataforma desde el dashboard para visualizar métricas clave y accesos rápidos. | 3 | Fabian | Done |
+
+### 6.2.1.4. Development Evidence for Sprint Review.
+
+La evidencia de desarrollo del Sprint 1 se sustenta en los commits realizados dentro del repositorio del **Frontend Web Application** de EMSafe. Estos commits reflejan la configuración inicial del proyecto, la implementación de la estructura base del sistema, el desarrollo de vistas principales del panel administrativo, la integración de cambios mediante pull request y ajustes finales en la documentación del repositorio.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| Front-End | main | 27ff5ec | Fix formatting in README.md | Se corrigió el formato del archivo README para mejorar la presentación de la documentación inicial del proyecto y facilitar su lectura. | 2026-05-13 |
+| Front-End | main | ec3121c | Merge pull request #1 from Desarrollo-de-soluciones-IOT-UPC/feature/ui-redesign | Se integraron en la rama principal los cambios desarrollados en la rama `feature/ui-redesign`, consolidando avances relevantes de la primera versión del frontend. | 2026-05-13 |
+| Front-End | main | b515a93 | feat: sidebar, topbar, dashboard, work orders, history and users pages | Se implementaron los componentes y páginas principales del panel administrativo, incluyendo la barra lateral, barra superior, dashboard y páginas de work orders, history y users. | 2026-05-13 |
+| Front-End | main | 75b87bb | chore: project setup, mock API and core services with i18n EN/ES | Se configuró la estructura base del proyecto, los servicios principales, una mock API para pruebas iniciales y el soporte de internacionalización en inglés y español. | 2026-05-13 |
+| Front-End | main | 1ce28bb | Initial commit - EMSafe Admin Panel | Se realizó el commit inicial del proyecto EMSafe Admin Panel, estableciendo la base del frontend para el desarrollo posterior del sprint. | 2026-05-12 |
+
+### 6.2.1.5. Testing Suite Evidence for Sprint Review.
+
+La evidencia de testing del Sprint 1 se basa en la validación realizada sobre la rama `feature/ui-redesign` del repositorio **Front-End**. Durante esta etapa se verificó el correcto funcionamiento visual de los componentes principales, la navegación entre vistas, la integración de servicios simulados y la consistencia general del panel administrativo de EMSafe.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| Front-End | feature/ui-redesign | ddbc82c | fix: fix cosmetic components in different views | Se corrigieron detalles visuales en diferentes vistas del frontend, validando la correcta presentación de los componentes y mejorando la consistencia de la interfaz. | 2026-05-13 |
+| Front-End | feature/ui-redesign | b515a93 | feat: sidebar, topbar, dashboard, work orders, history and users pages | Se verificó la implementación de las vistas principales del panel administrativo, incluyendo sidebar, topbar, dashboard, work orders, history y users pages. | 2026-05-13 |
+| Front-End | feature/ui-redesign | 75b87bb | chore: project setup, mock API and core services with i18n EN/ES | Se validó la configuración inicial del proyecto, el uso de mock API, los servicios principales y la compatibilidad de textos en inglés y español mediante i18n. | 2026-05-13 |
+| Front-End | feature/ui-redesign | 1ce28bb | Initial commit - EMSafe Admin Panel | Se revisó la estructura inicial del proyecto EMSafe Admin Panel como base para las pruebas posteriores de navegación, componentes y servicios. | 2026-05-13 |
+### 6.2.1.6. Execution Evidence for Sprint Review
+Durante el Sprint 1, se completó el desarrollo e implementación de la primera versión del
+  Frontend Web Application de EMSafe, incorporando el sistema de autenticación con redirección
+  por rol, el portal completo del técnico de campo y la preparación del proyecto para su
+  despliegue en un entorno de producción en la nube.                                             
+   
+  La aplicación fue desplegada en Microsoft Azure App Service con un pipeline CI/CD mediante     
+  GitHub Actions, el cual ejecuta el build de producción de Angular SSR y realiza el deploy
+  automáticamente con cada push a la rama `main`.
+
+  **Link de evidencia del servicio web desplegado:**
+  [https://emsafe-amh9hgdudda3bybj.eastus-01.azurewebsites.net](https://emsafe-amh9hgdudda3bybj.e
+  astus-01.azurewebsites.net)
+
+  A continuación se presentan las capturas de pantalla que evidencian la ejecución del servicio
+  web en producción:
+
+  **Pantalla de Login — Página de inicio de sesión de EMSafe desplegada en Azure.**
+
+  ![Login EMSafe](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/Login.png)
+
+  **Portal Administrativo — Dashboard principal con métricas, gráficos y órdenes recientes.**
+
+  ![Dashboard Admin](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/admin1.png)
+
+  **Portal Administrativo — Gestión de Work Orders con filtros funcionales.**
+
+  ![Work Orders Admin](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/admin2.png)
+
+  **Portal Técnico — My Schedule con calendario semanal y navegación por semana.**
+
+  ![Tech Schedule](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/tecnico1.png)
+
+  **Portal Técnico — Work Orders del técnico con tabs de filtrado por estado.**
+
+  ![Tech Work Orders](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/tecnico2.png)
+
+  **CI/CD Pipeline — GitHub Actions ejecutando el build y deploy automático a Azure.**
+
+  ![GitHub Actions
+  CI/CD](img/TB1/chapter-5/landing-page/Team%20Colaborations%20Insight/deploy.png)
+### 6.2.1.7. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación relacionada con los servicios utilizados en la primera versión del **Frontend Web Application** de EMSafe. Durante este sprint, se trabajó con una estructura inicial de servicios, datos simulados mediante **mock API** y componentes preparados para futuras integraciones con el backend.
+
+Debido a que el enfoque principal estuvo en la construcción del panel administrativo, la navegación, las vistas principales y la validación visual del sistema, en esta etapa aún no se generó una documentación completa de servicios backend. Sin embargo, se dejó preparada la base del frontend para conectarse posteriormente con los endpoints reales de la API.
+
+### 6.2.1.8. Software Deployment Evidence for Sprint Review
+
+En esta sección se describe el proceso de implementación de la plataforma en un entorno de producción. Además, se presentarán los hitos más importantes que marcarán el despliegue del proyecto y garantizarán su disponibilidad para los usuarios finales.
+
+**URL de despliegue del Landing Page:** [Landing Page](https://desarrollo-de-soluciones-iot-upc.github.io/landing-page/)
+
+1. Para la Landing Page, nuestro equipo creó una rama denominada “main” dentro del repositorio, en la cual se organizaron y almacenaron todos los archivos correspondientes al desarrollo de la Landing Page.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Main.png">
+
+2. Posteriormente, nos dirigimos a configuración y empleamos GitHub Pages, el servicio de alojamiento para sitios estáticos de GitHub, para publicar y poner en línea nuestra Landing Page.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Github Pages.png">
+
+3. Se seleccionó la rama previamente configurada y se procedió con el despliegue de la página.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Deployment.png">
+
+4. Finalmente, obtuvimos el enlace de publicación, que nos permite acceder y visualizar la Landing Page en línea.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Page Deploy.png">
+
+### 6.2.1.9. Team Collaboration Insights during Sprint
+
+Durante este sprint, el equipo enfocó sus esfuerzos en desarrollar la primera versión del **Frontend Web Application** de EMSafe. Para organizar el trabajo, se utilizó GitHub como herramienta principal de colaboración, trabajando con ramas como `main` y `feature/ui-redesign`, donde se fueron realizando commits relacionados con la configuración inicial del proyecto, la implementación de componentes principales, páginas del sistema web y correcciones visuales. Además, la coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar avances, distribuir tareas y mantener una integración ordenada de los cambios realizados durante el sprint.
+
+## Github analytics de nuestro primer sprint Landing Page:
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Landing Page Collaborators.png">
+
+## Github analytics de nuestro Front End: 
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Front End Collaborators.png">
+
+## 6.2.2. Sprint 2
+
+En este sprint, el enfoque estará en consolidar la integración completa entre el Frontend Web Application, la Mobile Application y el Backend API ya desplegado de EMSafe. Se priorizará el consumo real de endpoints, la implementación de funcionalidades clave en la app móvil (monitoreo en tiempo real, alertas, historial y perfil), y la mejora de la experiencia de usuario en la plataforma web administrativa con datos reales provenientes del backend.
+
+### 6.2.2.1. Sprint Planning 2
+
+En este sprint, el enfoque estará en desarrollar las funcionalidades principales de la **Mobile Application** e integrar el **Frontend Web Application** con los endpoints reales del **Backend API** ya desplegado de EMSafe. Se priorizará el consumo real de endpoints, la implementación de las vistas móviles principales (monitoreo en tiempo real, alertas, historial y perfil) y la conexión de las secciones del panel web administrativo con datos reales provenientes del backend.
+
+| Sprint # | Sprint 2 |
+|---|---|
+| Sprint Planning Background | Durante la reunión se revisaron los avances del Sprint 1, el estado actual del Backend API y las funcionalidades pendientes para la Mobile Application y el Frontend Web. Se identificaron las User Stories prioritarias para conectar ambas plataformas con los endpoints reales del backend, reemplazando los datos simulados del Sprint 1 y desarrollando las vistas móviles que aún no habían sido implementadas. |
+| Date | 30-05-2026 |
+| Time | 3:00 p.m. |
+| Location | Reunión realizada mediante Discord |
+| Prepared By | Guimaraes Escalante, Carlos Eduardo |
+| Attendees (to planning meeting) | Sosa Soto, Oskar Rodrigo / Lopez de la Cruz, Mauro Fabricio / Guimaraes Escalante, Carlos Eduardo / Oliva Lopez, Fabian Alejandro / Lizano Coll Cardenas, Fernando Jesus |
+| Sprint Goal & User Stories | |
+| Sprint 2 Goal | Desarrollar las funcionalidades principales de la Mobile Application e integrar el Frontend Web Application con los endpoints reales del Backend API de EMSafe, implementando las vistas de monitoreo, alertas, historial, gestión de dispositivos y perfil de usuario, garantizando una experiencia fluida y coherente en ambas plataformas con datos reales. |
+| Sprint 2 Velocity | 18 Story Points |
+| Sum of Story Points | 30 Story Points |
+
+### 6.2.2.2. Aspect Leaders and Collaborators
+
+| Aspecto | Líder | Colaboradores |
+|---|---|---|
+| Mobile App Development | Sosa Soto, Oskar Rodrigo | Sosa Soto, Oskar Rodrigo / Lopez de la Cruz, Mauro Fabricio |
+| Mobile UI and Navigation | Sosa Soto, Oskar Rodrigo | Oliva Lopez, Fabian Alejandro / Lizano Coll Cardenas, Fernando Jesus |
+| Backend API Integration (Web) | Guimaraes Escalante, Carlos Eduardo | Lopez de la Cruz, Mauro Fabricio / Sosa Soto, Oskar Rodrigo |
+| Backend API Integration (Mobile) | Lopez de la Cruz, Mauro Fabricio | Oliva Lopez, Fabian Alejandro / Guimaraes Escalante, Carlos Eduardo |
+| Real-Time Monitoring and Alerts | Lizano Coll Cardenas, Fernando Jesus | Sosa Soto, Oskar Rodrigo / Oliva Lopez, Fabian Alejandro |
+| Data Visualization and Charts | Oliva Lopez, Fabian Alejandro | Lizano Coll Cardenas, Fernando Jesus / Guimaraes Escalante, Carlos Eduardo |
+| Testing and Validation | Guimaraes Escalante, Carlos Eduardo | Lopez de la Cruz, Mauro Fabricio / Lizano Coll Cardenas, Fernando Jesus |
+| Deployment and CI/CD Update | Guimaraes Escalante, Carlos Eduardo | Oliva Lopez, Fabian Alejandro / Sosa Soto, Oskar Rodrigo |
+
+Cada líder fue responsable de coordinar las tareas correspondientes a su aspecto dentro del Sprint 2. Los colaboradores apoyaron en la implementación de vistas móviles, integración con endpoints reales, validación de flujos, visualización de datos y actualización del pipeline de despliegue.
+
+### 6.2.2.3. Sprint Backlog 2
+
+En este sprint, el enfoque estará en desarrollar las funcionalidades principales de la **Mobile Application** e integrar el **Frontend Web Application** con los endpoints reales del **Backend API** de EMSafe. Se priorizarán User Stories relacionadas con monitoreo en tiempo real, gestión de alertas, historial de exposición, perfil de usuario y administración de dispositivos IoT. Cada User Story fue descompuesta en Engineering Tasks estimadas entre 4 y 8 horas para facilitar su seguimiento dentro del tablero ágil.
+
+| ID | User Story | Work-Item / Task | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|
+| EPIC01 - US01 | Visualizar nivel de radiación en tiempo real (Mobile) | T01: Diseño e implementación de UI del Home Dashboard Mobile <br><br> T02: Integración del Home Dashboard con el endpoint de mediciones | T01: Construir la interfaz visual del Home Dashboard, incluyendo el indicador de nivel de radiación, estado del sensor y accesos rápidos. <br><br> T02: Conectar la pantalla Home Dashboard con el endpoint real de mediciones del backend para mostrar el nivel de radiación actualizado. | T01: 5 <br> T02: 4 | Fabian | Done |
+| EPIC01 - US02 | Configurar alertas de radiación (Mobile) | T03: Diseño e implementación de UI del Alert Center Mobile <br><br> T04: Integración del Alert Center con el endpoint de alertas | T03: Construir la interfaz del Alert Center mostrando la lista de notificaciones activas e historial de alertas. <br><br> T04: Conectar el Alert Center con el endpoint real de alertas del backend para listar y actualizar notificaciones. | T03: 4 <br> T04: 4 | Oskar | Done |
+| EPIC01 - US03 | Visualizar historial de exposición (Mobile) | T05: Diseño e implementación de UI de Historical Exposure Mobile <br><br> T06: Integración del historial con el endpoint de mediciones | T05: Construir la pantalla de historial con visualización cronológica de lecturas registradas de radiación. <br><br> T06: Conectar la pantalla de historial con el endpoint real de mediciones para mostrar lecturas pasadas del usuario. | T05: 5 <br> T06: 4 | Mauro | Done |
+| EPIC01 - US04 | Ver recomendaciones de salud (Mobile) | T07: Diseño e implementación de UI de Health Recommendations Mobile <br><br> T08: Integración de recomendaciones con datos de exposición del backend | T07: Construir la interfaz de recomendaciones de salud personalizadas según el nivel de exposición del usuario. <br><br> T08: Conectar la lógica de recomendaciones con los datos reales de exposición obtenidos del backend. | T07: 4 <br> T08: 4 | Fernando | Done |
+| EPIC01 - US05 | Gestionar perfil de usuario (Mobile) | T09: Diseño e implementación de UI de Profile Mobile <br><br> T10: Integración del perfil con los endpoints de usuario | T09: Construir la pantalla de perfil con visualización y edición de datos personales del usuario. <br><br> T10: Conectar la pantalla de perfil con los endpoints reales de consulta y actualización de datos del usuario. | T09: 4 <br> T10: 4 | Fabian | Done |
+| EPIC01 - US06 | Vincular sensor IoT (Mobile) | T11: Diseño e implementación de flujo de Sensor Pairing Mobile <br><br> T12: Integración del flujo de vinculación con el endpoint de dispositivos | T11: Construir las pantallas del flujo de vinculación del sensor IoT con la cuenta del usuario. <br><br> T12: Conectar el flujo de Sensor Pairing con el endpoint real de registro de dispositivos del backend. | T11: 5 <br> T12: 4 | Oskar | Done |
+| EPIC01 - US07 | Visualizar mapa de radiación del hogar (Mobile) | T13: Diseño e implementación de UI del Home Radiation Map Mobile <br><br> T14: Integración del mapa con el endpoint de puntos de medición | T13: Construir la vista del mapa de radiación del hogar mostrando la distribución de niveles en el espacio del usuario. <br><br> T14: Conectar el mapa de radiación del hogar con el endpoint real de puntos de medición del backend. | T13: 6 <br> T14: 4 | Mauro | Done |
+| EPIC01 - US08 | Consultar asistente ASTRA (Mobile) | T15: Diseño e implementación de UI del ASTRA Intelligent Assistant <br><br> T16: Integración de ASTRA con el servicio de recomendaciones personalizadas | T15: Construir la interfaz de chat del asistente IA ASTRA para consultas sobre radiación. <br><br> T16: Conectar la interfaz de ASTRA con el servicio backend encargado de generar recomendaciones personalizadas. | T15: 5 <br> T16: 4 | Carlos | Done |
+| EPIC02 - US09 | Integrar datos reales en Dashboard Web | T17: Reemplazo de mock data por consumo del endpoint de Dashboard <br><br> T18: Manejo de estados de carga y error en Dashboard Web | T17: Eliminar los datos simulados del dashboard y conectar la vista con el endpoint real de métricas del backend. <br><br> T18: Implementar indicadores de carga y manejo de errores al consumir el endpoint real del dashboard. | T17: 4 <br> T18: 4 | Carlos | Done |
+| EPIC02 - US10 | Gestionar dispositivos IoT desde Web | T19: Integración de endpoints GET y POST en sección Devices Frontend Web <br><br> T20: Integración de endpoint PUT en sección Devices Frontend Web | T19: Conectar la sección de dispositivos con los endpoints reales para listar y registrar nuevos dispositivos IoT. <br><br> T20: Conectar la funcionalidad de edición de dispositivos con el endpoint real de actualización del backend. | T19: 4 <br> T20: 4 | Mauro | Done |
+| EPIC02 - US11 | Visualizar mapa de radiación en Web | T21: Integración del mapa web con el endpoint de puntos de medición <br><br> T22: Implementación de filtros y actualización dinámica del mapa | T21: Conectar el mapa de radiación del frontend web con el endpoint real para mostrar los puntos de medición actualizados. <br><br> T22: Añadir filtros de visualización y actualización dinámica de los puntos mostrados en el mapa de radiación web. | T21: 5 <br> T22: 4 | Fernando | Done |
+| EPIC02 - US12 | Gestionar alarmas desde Web | T23: Integración de endpoints GET y POST en sección Alarms Frontend Web <br><br> T24: Integración de endpoint DELETE en sección Alarms Frontend Web | T23: Conectar la sección de alarmas con los endpoints reales para listar y crear nuevas alertas desde la plataforma web. <br><br> T24: Conectar la funcionalidad de eliminación de alarmas con el endpoint real correspondiente del backend. | T23: 4 <br> T24: 4 | Oskar | Done |
+| EPIC02 - US13 | Ver y editar perfil desde Web | T25: Integración del endpoint GET de perfil en Frontend Web <br><br> T26: Integración del endpoint PUT de perfil en Frontend Web | T25: Conectar la sección de perfil con el endpoint real para mostrar los datos del usuario autenticado. <br><br> T26: Conectar la funcionalidad de edición de perfil con el endpoint real de actualización de datos del usuario. | T25: 4 <br> T26: 4 | Fabian | Done |
+| EPIC03 - US14 | Mejorar sección de contacto del Landing Page | T27: Actualización del formulario de contacto del Landing Page <br><br> T28: Implementación de redirección hacia la Web Application desplegada | T27: Ajustar el formulario de contacto del Landing Page para validar correctamente los campos requeridos. <br><br> T28: Configurar la redirección del botón de contacto/CTA del Landing Page hacia la URL de producción de la Web Application. | T27: 4 <br> T28: 4 | Carlos | Done |
+| EPIC04 - US15 | Consumir endpoint de mediciones de radiación | T29: Integración del endpoint de mediciones en Mobile Application <br><br> T30: Integración del endpoint de mediciones en Frontend Web | T29: Consumir el endpoint de mediciones de radiación desde la app móvil para mostrar lecturas actualizadas en tiempo real. <br><br> T30: Consumir el endpoint de mediciones de radiación desde el frontend web para mostrar lecturas actualizadas en el dashboard. | T29: 4 <br> T30: 4 | Fernando | Done |
+| EPIC04 - US16 | Consumir endpoint de gestión de usuarios | T31: Integración del endpoint GET de usuarios en Frontend Web <br><br> T32: Integración del endpoint PUT de usuarios en Frontend Web | T31: Conectar el módulo de usuarios del frontend web con el endpoint real para listar las cuentas registradas. <br><br> T32: Conectar el módulo de usuarios del frontend web con el endpoint real para actualizar la información de las cuentas. | T31: 4 <br> T32: 4 | Carlos | Done |
+
+### 6.2.2.4. Development Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo consolidó la implementación de las principales funcionalidades de EMSafe en sus cuatro repositorios activos: Landing Page, Back-End, Front-End y Mobile App. Se realizaron avances en la integración con el backend real, el desarrollo de nuevas vistas en el frontend web, la construcción del aplicativo móvil y mejoras en el Landing Page. A continuación se presenta la tabla de commits relacionados con la implementación.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| landing-page | main | 5d0c9f5 | feat(checkout): Payment Methods completed | Se completó la implementación de los métodos de pago en el Landing Page. | 2026-06-18 |
+| landing-page | main | 755e43a | feat(checkout): add multi-step simulated purchase flow | Se añadió el flujo de compra simulado con múltiples pasos en la sección de checkout. | 2026-06-17 |
+| landing-page | main | 85cfb8f | feat(payments): add simulated checkout flow for plans | Se implementó el flujo de checkout simulado para los planes disponibles en el Landing Page. | 2026-06-17 |
+| landing-page | main | f47ed6b | feat(ui): add smooth motion design to landing page | Se añadió diseño de movimiento fluido para mejorar la experiencia visual del Landing Page. | 2026-06-17 |
+| Back-End | main | e073c43 | Merge pull request #3 from Desarrollo-de-soluciones-IOT-UPC/feature/web-back-end | Se integró la rama feature/web-back-end con los últimos endpoints desarrollados para la comunicación edge. | 2026-06-20 |
+| Back-End | main | df67b60 | feat: add edge endpoints for communication | Se añadieron endpoints de comunicación para el dispositivo edge del sistema IoT. | 2026-06-20 |
+| Back-End | main | c289d44 | Merge pull request #2 from Desarrollo-de-soluciones-IOT-UPC/feature/web-back-end | Se integró la rama feature/web-back-end con actualizaciones de múltiples módulos del backend. | 2026-06-19 |
+| Back-End | main | 36a7d8f | feat: update users feature | Se actualizó el módulo de usuarios del backend con mejoras en los endpoints existentes. | 2026-06-19 |
+| Back-End | main | 15f1b0f | feat: update history feature | Se actualizó el módulo de historial del backend para soportar nuevas consultas de exposición. | 2026-06-19 |
+| Back-End | main | 6999965 | feat: update work orders feature | Se actualizaron los endpoints del módulo de órdenes de trabajo en el backend. | 2026-06-19 |
+| Back-End | main | 66cf272 | feat: update devices endpoint | Se actualizó el endpoint de dispositivos para soportar nuevas operaciones de gestión IoT. | 2026-06-19 |
+| Back-End | main | b537727 | feat: update v2 alerts | Se actualizó la versión 2 de los endpoints de alertas del sistema. | 2026-06-19 |
+| Back-End | main | ead450d | feat: update alerts feature | Se realizaron mejoras generales al módulo de alertas del backend. | 2026-06-19 |
+| Back-End | main | 3e11b7f | feat: update database | Se actualizó la configuración y estructura de la base de datos del sistema. | 2026-06-19 |
+| Back-End | main | 55b74e2 | Merge pull request #1 from Desarrollo-de-soluciones-IOT-UPC/feature/role-client | Se integró el módulo de cliente con su rol y endpoints correspondientes. | 2026-06-13 |
+| Back-End | main | 743520e | feat: modulo client para app movil - ROLE_CLIENT + endpoints /api/client/** | Se implementó el módulo de cliente para la app móvil incluyendo el rol ROLE_CLIENT y sus endpoints. | 2026-06-13 |
+| Front-End | develop | c702be1 | Merge pull request #6 from Desarrollo-de-soluciones-IOT-UPC/feature/ui-redesign-stage-2 | Se integró la rama de rediseño de UI etapa 2 con todas las secciones actualizadas. | 2026-06-19 |
+| Front-End | develop | 8256cb3 | feat: update users section | Se actualizó la sección de usuarios del frontend web con el nuevo diseño. | 2026-06-19 |
+| Front-End | develop | 7c1d3dc | feat: update sidebar | Se actualizó el sidebar del panel administrativo con mejoras visuales y de navegación. | 2026-06-19 |
+| Front-End | develop | 6eb83d2 | feat: update history section | Se actualizó la sección de historial del frontend web. | 2026-06-19 |
+| Front-End | develop | 691e81a | feat: update devices section | Se actualizó la sección de dispositivos del frontend web. | 2026-06-19 |
+| Front-End | develop | cd8ea19 | feat: update work orders section | Se actualizó la sección de órdenes de trabajo del panel administrativo. | 2026-06-19 |
+| Front-End | develop | 2a57804 | feat: update dashboard section | Se actualizó el dashboard principal del frontend web con nuevas métricas y datos reales. | 2026-06-19 |
+| Front-End | develop | 8510b3f | feat: update alarms feature | Se actualizó la funcionalidad de alarmas del frontend web. | 2026-06-19 |
+| Front-End | develop | 2277d8a | fix: update tech-work | Se corrigieron detalles técnicos en el flujo de trabajo del frontend. | 2026-06-13 |
+| Mobile_App | main | 214f11b | fix: Add url prod | Se añadió la URL de producción del backend en la configuración de la app móvil. | 2026-06-19 |
+| Mobile_App | main | 25ecf4f | Merge pull request #1 from Desarrollo-de-soluciones-IOT-UPC/feature/backend-integration | Se integró la rama de integración con el backend real en la app móvil. | 2026-06-13 |
+| Mobile_App | main | b35c03e | feat: conectar app al backend - capa HTTP, login real, consumo de /api/client/** | Se implementó la capa HTTP de la app móvil conectándola al backend real con login y consumo de endpoints. | 2026-06-13 |
+| Mobile_App | main | a302ebb | fix(flow): Polish mobile screens | Se realizaron ajustes visuales y de flujo en las pantallas de la app móvil. | 2026-06-12 |
+| Mobile_App | main | 5eea6c8 | feat(onboarding): Add personal details flow | Se añadió el flujo de ingreso de datos personales en el proceso de onboarding. | 2026-06-12 |
+| Mobile_App | main | 1b7eb3b | fix(etapa3): Connect footer nav | Se conectó la navegación del footer en la etapa 3 de la app móvil. | 2026-06-12 |
+| Mobile_App | main | 9c1b070 | fix(etapa2): Open dashboard after auth | Se corrigió el flujo para abrir el dashboard automáticamente tras la autenticación. | 2026-06-12 |
+| Mobile_App | main | 848561f | feat(etapa3): Add system settings | Se añadió la pantalla de configuración del sistema en la etapa 3 de la app móvil. | 2026-06-12 |
+| Mobile_App | main | ada6a07 | feat(etapa3): Add empty state | Se añadió el estado vacío para pantallas sin datos en la etapa 3. | 2026-06-12 |
+| Mobile_App | main | 82e6c30 | feat(etapa3): Add alert history | Se implementó el historial de alertas en la etapa 3 de la app móvil. | 2026-06-12 |
+| Mobile_App | main | 3c675d5 | feat(etapa3): Add sensor detail | Se añadió la pantalla de detalle del sensor en la etapa 3. | 2026-06-12 |
+| Mobile_App | main | f989379 | feat(etapa3): Add dashboard overview | Se implementó la vista general del dashboard en la etapa 3 de la app móvil. | 2026-06-12 |
+| Mobile_App | main | 44f87b0 | refactor(assets): Remove unused design PNGs | Se eliminaron los archivos PNG de diseño no utilizados para limpiar el repositorio. | 2026-06-12 |
+| Mobile_App | main | 906f128 | Remove unused SVG assets | Se eliminaron los assets SVG sin uso del proyecto. | 2026-06-12 |
+| Mobile_App | main | f005dbb | Improve stage 2 auth UX | Se mejoraron los flujos de experiencia de usuario en la autenticación de la etapa 2. | 2026-06-12 |
+| Mobile_App | main | 59bbfa2 | Fix splash footer sign-in navigation | Se corrigió la navegación del footer del splash hacia el inicio de sesión. | 2026-06-10 |
+| Mobile_App | main | 62177db | feat(onboarding): add skip onboarding and sign in navigation | Se añadió la opción de omitir el onboarding y navegar directamente al inicio de sesión. | 2026-06-10 |
+| Mobile_App | main | 67c98b9 | fix(auth): Going to dashboard completed | Se completó la corrección del flujo de redirección al dashboard tras autenticación. | 2026-06-10 |
+| Mobile_App | main | bde1950 | refactor(auth): standardize responsive and scroll-safe layouts across stage 2 | Se estandarizaron los layouts responsivos y seguros para scroll en la etapa 2. | 2026-06-10 |
+| Mobile_App | main | 1bbec96 | fix(auth): remove fixed artboards, fix OTP overflow, and add real form fields | Se corrigieron artboards fijos, desbordamiento del OTP y se añadieron campos de formulario reales. | 2026-06-10 |
+| Mobile_App | main | f3d649c | fix(login): improve responsive layout, scrolling, and form fields | Se mejoró el layout responsivo, el scroll y los campos del formulario de login. | 2026-06-10 |
+| Mobile_App | main | d53683a | feat(ui): feat/etapa2-glass-ui-responsive | Se implementó la UI con efecto glass responsive para la etapa 2 de la app móvil. | 2026-06-05 |
+| Mobile_App | main | 110bee7 | fix(crystal-blur): make pop-up transparent over pairing_sensors | Se corrigió el efecto de blur para que el pop-up sea transparente sobre la pantalla de pairing de sensores. | 2026-06-05 |
+| Mobile_App | main | 2d5cb8c | fix(onboarding): splash, pair sensors & smart alerts | Se corrigieron las pantallas de splash, vinculación de sensores y alertas inteligentes del onboarding. | 2026-06-03 |
+| Mobile_App | main | 69268a1 | fix: update onboarding | Se actualizaron las pantallas del flujo de onboarding de la app móvil. | 2026-06-02 |
+| Mobile_App | main | cc93491 | Refactor onboarding screens: Convert HomeProfileSetupScreen to StatelessWidget, enhance PairingSensorsScreen with animation, and update PairYourSensorScreen to improve UI | Se refactorizaron las pantallas de onboarding mejorando estructura, animaciones y UI general. | 2026-06-01 |
+
+
+### 6.2.2.5. Testing Suite Evidence for Sprint Review
+
+Durante el Sprint 2, las pruebas se centraron en la validación del correcto funcionamiento de los flujos de integración entre la Mobile Application y el Backend API, así como en la verificación visual y funcional de las secciones actualizadas del Frontend Web. Se validaron los flujos de autenticación, navegación, consumo de endpoints reales y presentación de datos en ambas plataformas. A continuación se presenta la tabla de commits relacionados con las actividades de testing.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| Back-End | main | e073c43 | Merge pull request #3 from Desarrollo-de-soluciones-IOT-UPC/feature/web-back-end | Se verificó la correcta integración de los endpoints de comunicación edge tras el merge a main. | 2026-06-20 |
+| Back-End | main | c289d44 | Merge pull request #2 from Desarrollo-de-soluciones-IOT-UPC/feature/web-back-end | Se validó el funcionamiento de los módulos de usuarios, historial, dispositivos, alertas y work orders tras el merge. | 2026-06-19 |
+| Front-End | develop | c702be1 | Merge pull request #6 from Desarrollo-de-soluciones-IOT-UPC/feature/ui-redesign-stage-2 | Se validó la correcta integración del rediseño de UI etapa 2 en todas las secciones del panel administrativo. | 2026-06-19 |
+| Front-End | develop | 2277d8a | fix: update tech-work | Se verificaron y corrigieron detalles técnicos detectados durante las pruebas del flujo de trabajo del frontend. | 2026-06-13 |
+| Mobile_App | main | 214f11b | fix: Add url prod | Se validó la conexión de la app móvil con la URL de producción del backend tras el ajuste de configuración. | 2026-06-19 |
+| Mobile_App | main | 25ecf4f | Merge pull request #1 from Desarrollo-de-soluciones-IOT-UPC/feature/backend-integration | Se verificó la integración completa de la app móvil con el backend real, incluyendo login y consumo de endpoints. | 2026-06-13 |
+| Mobile_App | main | a302ebb | fix(flow): Polish mobile screens | Se validaron los flujos de navegación y presentación visual en todas las pantallas de la app móvil. | 2026-06-12 |
+| Mobile_App | main | 9c1b070 | fix(etapa2): Open dashboard after auth | Se verificó el correcto redireccionamiento al dashboard tras completar el flujo de autenticación. | 2026-06-12 |
+| Mobile_App | main | 67c98b9 | fix(auth): Going to dashboard completed | Se validó el flujo completo de autenticación y redirección al dashboard en dispositivo real. | 2026-06-10 |
+| Mobile_App | main | 1bbec96 | fix(auth): remove fixed artboards, fix OTP overflow, and add real form fields | Se realizaron pruebas de los campos de formulario reales y se validó el comportamiento del componente OTP. | 2026-06-10 |
+| Mobile_App | main | 2d5cb8c | fix(onboarding): splash, pair sensors & smart alerts | Se validaron las pantallas de splash, vinculación de sensores y alertas inteligentes durante el onboarding. | 2026-06-03 |
+| Mobile_App | main | cc93491 | Refactor onboarding screens: Convert HomeProfileSetupScreen to StatelessWidget, enhance PairingSensorsScreen with animation, and update PairYourSensorScreen to improve UI | Se verificó el correcto funcionamiento de las pantallas de onboarding tras la refactorización. | 2026-06-01 |
+
+### 6.2.2.6. Execution Evidence for Sprint Review
+
+Durante el Sprint 2, se completó la integración del **Frontend Web Application** con el **Backend API** real de EMSafe. La plataforma web fue actualizada en el entorno de producción en Azure con los nuevos cambios integrados, y la app móvil fue validada en entorno de desarrollo con datos reales.
+
+#### **Link del Frontend Web Application desplegado:** https://emsafe-amh9hgdudda3bybj.eastus-01.azurewebsites.net/admin
+
+**Pantalla de Login — Página de inicio de sesión de EMSafe desplegada en Azure.**
+
+<img src="img/TB1/Sprint-2/Login.png" alt="Pantalla de Login">
+
+**Portal Administrativo — Dashboard principal con métricas, gráficos y órdenes recientes.**
+
+<img src="img/TB1/Sprint-2/System Overview - 1.png" alt="Pantalla del System Overview">
+
+<img src="img/TB1/Sprint-2/System Overview - 2.png" alt="Pantalla del System Overview">
+
+**Portal Administrativo — Gestión de Work Orders con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Work Orders - 1.png" alt="Pantalla de Work Orders">
+
+<img src="img/TB1/Sprint-2/Work Orders - 2.png" alt="Pantalla de Word Orders">
+
+**Portal Administrativo — Gestión del Historial con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/History.png" alt="Pantalla del Historial">
+
+**Portal Administrativo — Gestión de Usuarios con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Team Management.png" alt="Pantalla del Administrador de Usuario">
+
+**Portal Administrativo — Gestión de Dispositivos con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Devices.png" alt="Pantalla del Administrador de Dispositivos">
+
+**Portal Administrativo — Lecturas de Radición Electromagnetica con mapa integrado.**
+
+<img src="img/TB1/Sprint-2/Radiation Map - 1.png" alt="Pantalla de Radiación con Mapa">
+
+<img src="img/TB1/Sprint-2/Radiation Map - 2.png" alt="Pantalla de Radiación con Mapa">
+
+**Portal Administrativo — Gestión de Alarmas con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Alarms.png" alt="Pantalla de Alarmas">
+
+**Portal Técnico — My Schedule con calendario semanal y navegación por semana.**
+
+<img src="img/TB1/Sprint-2/Technician Portal.png" alt="Pantalla del Dashboard del Tecnico">
+
+**Portal Técnico — Work Orders del técnico con tabs de filtrado por estado.**
+
+<img src="img/TB1/Sprint-2/Technician Work Orders.png" alt="Pantalla de Work Orders del Tecnico">
+
+**Portal Técnico — Historial del técnico con tabs de filtrado por estado.**
+
+<img src="img/TB1/Sprint-2/Technician Historyl.png" alt="Pantalla del Historial del Tecnico">
+
+### **Backend API**: https://emsafe-backend-hmf7asgja0d0h4cr.centralus-01.azurewebsites.net/swagger-ui/index.html
+
+**Backend API — Work Order Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Work_Oder_Controller.png" alt="Backend Work Order Controller">
+
+**Backend API — User Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-User_Controller.png" alt="Backend User Controller">
+
+**Backend API — Reading Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Reading_Controller.png" alt="Backend Reading Controller">
+
+**Backend API — History Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-History_Controller.png" alt="Backend History Controller">
+
+**Backend API — Device Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Device_Controller.png" alt="Backend Device Controller">
+
+**Backend API — Dashboard Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Dashboard_Controller.png" alt="Backend Dashboard Controller">
+
+**Backend API — Client Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Client_Controller.png" alt="Backend Client Controller">
+
+**Backend API — Auth Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Auth_Controller.png" alt="Backend Auth Controller">
+
+**Backend API — Alarm Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Alarm_Controller.png" alt="Backend Alarm Controller">
+
+### Mobile Application 
+
+**Mobile Application — Pantalla de detalle del sensor con lectura actual de exposición electromagnética.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-1.jpg" alt="Pantalla de detalle del sensor en la app móvil">
+
+**Mobile Application — Dashboard principal con exposición actual, sensores activos y alertas registradas.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-2.jpg" alt="Dashboard principal de la app móvil">
+
+**Mobile Application — Pantalla de configuración con preferencias del sistema y listado de sensores.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-3.jpg" alt="Pantalla de configuración de la app móvil">
+
+**Mobile Application — Historial de alertas con eventos de radiación elevada registrados.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-4.jpg" alt="Historial de alertas de la app móvil">
+
+**Mobile Application — Pantalla inicial de EMSafe con carga de conexión segura.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-5.jpg" alt="Pantalla inicial de EMSafe Mobile">
+
+**Mobile Application — Pantalla informativa de Astra AI con recomendaciones personalizadas.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-6.jpg" alt="Pantalla de Astra AI en la app móvil">
+
+**Mobile Application — Formulario de registro de datos personales para creación de cuenta.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-7.jpg" alt="Formulario de datos personales de la app móvil">
+
+**Mobile Application — Pantalla de inicio de sesión seguro para acceso al sistema.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-8.jpg" alt="Pantalla de login de la app móvil">
+
+### 6.2.2.7. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación relacionada con los servicios utilizados durante el Sprint 2 de EMSafe. A diferencia del Sprint 1, en esta entrega se realizó la integración completa con el **Backend API** real, abandonando el uso de mock data en el **Frontend Web Application** y conectando la **Mobile Application** directamente a los endpoints de producción.
+
+Durante este sprint, el Backend incorporó nuevos módulos y actualizó los existentes para soportar las necesidades de ambas plataformas. Se implementó el módulo de cliente (`ROLE_CLIENT`) con sus endpoints `/api/client/**` para la app móvil, se añadieron endpoints de comunicación edge para el dispositivo IoT, y se actualizaron los módulos de usuarios, historial, dispositivos, alertas y órdenes de trabajo. El Frontend Web consumió estos endpoints reales en todas sus secciones principales: dashboard, dispositivos, historial, alarmas, usuarios y work orders. Por su parte, la Mobile Application estableció su capa HTTP de conexión con el backend real, integrando el login, el onboarding y el consumo de datos desde producción.
+
+Debido a que el enfoque principal estuvo en la integración real entre las plataformas y el backend desplegado, en esta etapa se priorizó la validación funcional de los endpoints sobre la generación de documentación formal de servicios. Sin embargo, se dejó preparada la base de ambas plataformas para continuar incorporando nuevos endpoints en los siguientes sprints conforme el sistema continúe escalando.
+
+### 6.2.2.8. Software Deployment Evidence for Sprint Review
+
+En esta sección se describe el proceso de actualización del despliegue de la plataforma EMSafe correspondiente al Sprint 2. La infraestructura de producción se mantuvo en **Microsoft Azure App Service** con el pipeline CI/CD configurado en el Sprint anterior, ejecutando automáticamente el build y deploy con cada push a la rama `main`.
+
+**Landing Page Deployment**
+
+1. Se realizaron los merges de las ramas de desarrollo hacia `main` en el repositorio del Frontend Web Application, activando automáticamente el pipeline de GitHub Actions.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Main.png">
+
+2. GitHub Actions ejecutó el build de producción de Angular SSR y desplegó los cambios automáticamente en Azure App Service.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Github Pages.png">
+
+3. Se verificó que el despliegue fue exitoso accediendo a la URL de producción y validando las nuevas funcionalidades integradas con el backend real.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Deployment.png">
+
+4. La Mobile Application fue validada en entorno de desarrollo mediante emulador y dispositivo físico, conectada a los endpoints reales del backend desplegado.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Page Deploy.png">
+
+**Mobile Deployment**
+
+En esta sección se describe el proceso de despliegue de la aplicación móvil de EMSafe correspondiente al Sprint 2. Para esta entrega, el equipo generó una versión de producción de la aplicación móvil desarrollada en Flutter y la distribuyó mediante **Firebase App Distribution**, permitiendo que los testers puedan acceder a la aplicación desde sus dispositivos móviles.
+
+1. Se inició sesión en Firebase desde la línea de comandos utilizando Firebase CLI. Esto permitió autenticar el entorno local con la cuenta del proyecto y habilitar las operaciones necesarias para compilar y distribuir la aplicación móvil.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-1.jpg" alt="Firebase CLI Login">
+
+2. Se ejecutó el comando de compilación de Flutter en modo release, generando el archivo APK optimizado para distribución. Como resultado, se obtuvo el archivo `app-release.apk` dentro de la carpeta `build/app/outputs/flutter-apk/`.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-2.jpg" alt="Flutter Build APK Release">
+
+3. Luego, se utilizó Firebase App Distribution para subir el APK generado y distribuirlo a los testers definidos. Durante este proceso, se agregó una nota de versión indicando que correspondía a la demo funcional de EMSafe v1.0.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-3.jpg" alt="Firebase App Distribution Upload">
+
+4. Se verificó la correcta configuración del proyecto en Firebase, confirmando que la aplicación móvil Android se encontraba registrada dentro del proyecto `emsafe-mobile`, con su respectivo identificador de paquete.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-4.jpg" alt="Firebase Project Configuration">
+
+5. Finalmente, se validó que la invitación de prueba fue enviada correctamente mediante Firebase App Distribution. Esta invitación permite que los testers acepten el acceso, instalen la aplicación y comiencen con las pruebas funcionales de la versión móvil.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-5.jpg" alt="Firebase App Distribution Invitation">
+
+### Edge Service — Software Deployment Evidence Sprint 2
+
+Durante el Sprint 2, también se validó el despliegue local del **Edge Service** de EMSafe, desarrollado con Flask. Este servicio actúa como intermediario para recibir las lecturas del dispositivo IoT, procesar los datos de radiación electromagnética y exponer endpoints para validar el estado del servicio y registrar mediciones.
+
+1. Se verificó el endpoint de salud del servicio Edge mediante la ruta `/health`, confirmando que el servicio `emsafe-edge` se encontraba activo y respondiendo correctamente con estado `UP`.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-1.jpg" alt="Healthcheck del Edge Service activo">
+
+2. Se ejecutó el servidor Edge en entorno local utilizando Flask en el puerto `5000`. Esto permitió validar que el servicio quedara disponible tanto desde `localhost` como desde la dirección IP de red local.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-2.jpg" alt="Servidor Edge ejecutándose en Flask">
+
+3. Se realizaron pruebas de envío de datos hacia el endpoint `/api/v1/emf-monitoring/data-records`. En la consola se observa una primera solicitud con error `400` por formato incorrecto y luego una solicitud exitosa con código `201`, validando la recepción correcta de datos del sensor.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-3.jpg" alt="Registro de datos del sensor en el Edge Service">
+
+4. Finalmente, se confirmó el procesamiento de lecturas del sensor, mostrando registros con valores de exposición electromagnética y niveles de riesgo como `DANGER` y `SAFE`. Esto evidencia que el Edge Service recibe, interpreta y registra correctamente las mediciones enviadas por el dispositivo IoT.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-4.jpg" alt="Lecturas procesadas por el Edge Service">
+
+
+### 6.2.2.9. Team Collaboration Insights during Sprint
+
+Durante este sprint, el equipo enfocó sus esfuerzos en integrar el Backend API con el Frontend Web Application y desarrollar las vistas principales de la Mobile Application. Para organizar el trabajo, se continuó utilizando GitHub como herramienta principal de colaboración, trabajando con ramas. La coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar avances de integración, resolver bloqueos técnicos y mantener la sincronización entre el desarrollo web y móvil a lo largo del sprint.
+
+## Github analytics de nuestro Front End – Sprint 2:
+
+<img src="./img/TB1/Sprint-2_Contributors/Front%20End-Contributors.png" alt="Github analytics Front End Contributors">
+
+## Github analytics de nuestra Mobile Application – Sprint 2:
+
+<img src="./img/TB1/Sprint-2_Contributors/Mobile%20App-Contributors.png" alt="Github analytics Mobile Application Contributors">
+
+## Github analytics de nuestra Backend – Sprint 2:
+
+<img src="./img/TB1/Sprint-2_Contributors/Backend-Contributors.png" alt="Github analytics Backend Contributors">
+
+## Github analytics de nuestra Landing Page – Sprint 2:
+
+<img src="./img/TB1/Sprint-2_Contributors/Landing%20Page-Contributors.png" alt="Github analytics Landing Page Contributors">
+
+## 6.3. Validation Interviews
+
+### 6.3.1. Diseño de Entrevistas
+
+A continuación se presentan las preguntas diseñadas para las entrevistas finales, clasificadas según los segmentos objetivos del proyecto EMSafe. Estas entrevistas buscan validar la propuesta de valor, la utilidad de la solución y detectar oportunidades de mejora basadas en la experiencia de los usuarios.
+
+**Segmento 1: Personas comprometidas con el cuidado de su salud**
+
+1. ¿Cómo te enteraste de EMSafe y qué te motivó a probarlo?
+2. ¿Qué tan fácil te resultó registrarte y comenzar a usar la plataforma?
+3. ¿Entendiste claramente los niveles de radiación que te muestra EMSafe?
+4. ¿Las alertas automáticas sobre niveles elevados te resultaron útiles en tu día a día?
+5. ¿Sentiste que la información presentada te ayudó a tomar decisiones sobre tu exposición diaria?
+6. ¿Aplicaste alguna recomendación de la plataforma para reducir tu exposición electromagnética?
+7. ¿Sientes que ahora tienes mayor control sobre tu entorno respecto a la radiación?
+8. ¿Qué parte de EMSafe consideraste más valiosa y por qué?
+9. ¿Qué mejorarías o añadirías a la plataforma para que sea más útil en tu rutina?
+10. ¿Recomendarías EMSafe a otras personas preocupadas por su salud? ¿Por qué?
+
+---
+
+**Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética**
+
+1. ¿Qué tipo de maquinaria o tecnología utiliza su organización que emite radiación electromagnética?
+2. ¿Contaban con algún sistema de monitoreo previo antes de usar EMSafe?
+3. ¿Cómo se integró EMSafe en los procesos o rutinas laborales de su organización?
+4. ¿Las mediciones en tiempo real les resultaron útiles para tomar decisiones de seguridad?
+5. ¿Las alertas automáticas contribuyeron a prevenir riesgos o cambiar comportamientos en el equipo?
+6. ¿Qué impacto tuvo EMSafe en la percepción de seguridad de los trabajadores?
+7. ¿La visualización de datos fue comprensible para todo el equipo, incluso sin conocimientos técnicos?
+8. ¿Qué funcionalidades empresariales consideran que deberían incluirse en futuras versiones?
+9. ¿Consideran que EMSafe podría integrarse con otros sistemas de su organización, como salud ocupacional?
+10. ¿Recomendarían el uso de EMSafe a otras empresas del sector? ¿Por qué?
+
+
+### 6.3.2. Registro de Entrevistas
+
+#### Segmento 1: Personas comprometidas con el cuidado de su salud
+    
+> Entrevistado 01: Mateo Mognge
+
+- **Sexo:** Masculino 
+- **Edad:**  24
+- **Distrito donde vive:** Santiago de Surco, Lima
+- **Nivel socioeconómico:** Medio 
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Sprint-2/entrevista-1-segmento-1.png)
+
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX</a>
+- **Duración:** 0:00 - 7:47
+- **Aplicaciones usadas:** TikTok, Netflix
+- **Tecnologías:**  Celular, Computadores   
+- **Entrevistador:** Carlos Eduardo Guimaraes Escalante
+
+**Resumen:**  
+Mateo se enteró de EMSafe a través de la landing page, que le llamó la atención por explicar de forma directa el riesgo de la exposición electromagnética; eso lo motivó a probar la app. El registro le resultó rápido e intuitivo, y valoró poder usar autenticación biométrica. Entendió con claridad los niveles de radiación gracias al sistema de colores (seguro/moderado/peligroso), que prefirió sobre los valores en µT. Destacó las alertas automáticas como lo más útil en su día a día, ya que pasa muchas horas frente a pantallas; gracias a ellas reorganizó su escritorio y alejó el router de su zona de trabajo, sintiendo que ahora tiene mayor control sobre su entorno. Lo que más valoró fue el historial de mediciones por su utilidad para identificar patrones. Como mejora, pidió recomendaciones más personalizadas y un widget para ver el nivel sin abrir la app. Recomendaría EMSafe sin dudarlo, sobre todo a personas que trabajan desde casa.
+
+> Entrevistado 02: Manuel Gutierrez
+
+- **Sexo:** Masculino
+- **Edad:** 23
+- **Distrito donde vive:** La Molina, Lima
+- **Nivel socioeconómico:** Medio Alto
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Sprint-2/entrevista-2-segmento-1.png)
+
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX</a>
+- **Duración:** 7:47 - 13:37
+- **Aplicaciones usadas:** Instagram, Chrome
+- **Tecnologías:** Laptop, Celular y Computadora
+- **Entrevistador:**  Carlos Eduardo Guimaraes Escalante
+
+**Resumen:**  
+Manuel conoció EMSafe por la landing y lo motivó la idea de obtener datos objetivos sobre una preocupación que ya tenía. El proceso de registro le pareció sencillo, aunque sugirió añadir un breve tutorial inicial para usuarios nuevos. Comprendió bien los niveles mostrados, aunque al principio tuvo que familiarizarse con la diferencia entre los estados; una vez entendidos, las alertas le resultaron muy útiles y le ayudaron a tomar decisiones concretas, como ventilar y reorganizar su espacio de trabajo. Aplicó varias recomendaciones de la plataforma y siente que ahora tiene más control y tranquilidad. Lo más valioso para él fue la visualización en tiempo real combinada con el historial. Como mejoras, propuso poder comparar distintos ambientes de su casa y exportar reportes. Recomendaría la plataforma, destacando su interfaz limpia y el modo oscuro.
+
+
+> Entrevistado 03: Diana Díaz
+
+- **Sexo:** Femenino
+- **Edad:** 19
+- **Distrito donde vive:** Jesús María, Lima
+- **Nivel socioeconómico:** Medio
+- **Entrevistador:**  Oskar Rodrigo Sosa Soto
+
+
+**Entrevista:**
+
+![Imagen de entrevista](img/AV1/chapter-2/entrevistas/segmento-1/entrevista-3-segmento-1.png)
+
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX</a>
+- **Duración:** 13:37 - 28:29
+- **Aplicaciones usadas:** Brave, YouTube y TikTok
+- **Tecnologías:** Celular y Laptop
+- **Entrevistador:** Oskar Rodrigo Sosa Soto
+
+**Resumen:**  
+Diana llegó a EMSafe por recomendación y reforzó su interés al ver la landing; la motivó su costumbre de dormir con el celular cerca. El registro le resultó muy fácil y rápido, lo cual valoró por no tener mucho conocimiento técnico. Entendió los niveles de radiación gracias a la simplicidad visual de la app y agradeció que el lenguaje no fuera complicado. Las alertas le parecieron lo más útil, especialmente una notificación nocturna que la llevó a alejar el teléfono de la almohada. Siente que aplicó recomendaciones simples y que ahora tiene más conciencia y control sobre su exposición. Lo que más valoró fue la claridad de las notificaciones y los consejos prácticos. Como mejora, pidió contenido educativo dentro de la app (por qué importa, cómo cuidarse). Recomendaría EMSafe ampliamente, sobre todo a su familia y a sus padres.
+
+
+
+#### Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética
+
+    
+> Entrevistado 01: Alejandro Oroncoy
+
+- **Sexo:** Masculino   
+- **Edad:** 20
+- **Distrito donde vive:** San Borja, Lima
+- **Nivel socioeconómico:** Medio Alto 
+- **Entrevistador:** Fabian Alejandro Oliva López
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Sprint-2/entrevista-1-segmento-2.png)
+
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX</a>
+- **Duración:** 28:29 - 38:06
+- **Aplicaciones usadas:** Zoom, Twitter, Chrome 
+- **Tecnologías:**  Celular y Laptop
+- **Entrevistador:**  Fabian Alejandro Oliva López
+
+**Resumen:**  
+Alejandro indicó que su organización opera equipos industriales y de comunicaciones que emiten radiación electromagnética. Antes de EMSafe el monitoreo era manual y esporádico, con mediciones puntuales y costosas, sin visibilidad continua. La integración de EMSafe fue fluida: instalaron sensores fijos y empezaron a usar el panel web para supervisar en tiempo real. Las mediciones en vivo les resultaron clave para tomar decisiones de seguridad, y las alertas automáticas permitieron actuar antes de que un equipo superara los umbrales, generando órdenes de trabajo para mantenimiento. Notó una mejora en la percepción de seguridad del personal y resaltó que el mapa de radiación por zona fue comprensible incluso para quienes no tienen perfil técnico. Como funcionalidades futuras pidió reportes automáticos de cumplimiento y roles más granulares. Considera viable integrarlo con sus sistemas existentes y recomendaría EMSafe a otras empresas del sector.
+
+> Entrevistado 02: Gael Rivera
+
+- **Sexo:**  Masculino
+- **Edad:**  25
+- **Distrito donde vive:** La Molina, Lima
+- **Nivel socioeconómico:**  Medio Alto
+- **Entrevistador:** Fabian Alejandro Oliva López
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Sprint-2/entrevista-2-segmento-2.png)
+
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX</a>
+- **Duración:** 38-06 - 47:04
+- **Aplicaciones usadas:**  Zoom, Instagram, YouTube
+- **Tecnologías:**  Celular y Laptop
+- **Entrevistador:**  Fabian Alejandro Oliva López
+
+**Resumen:**  
+Gael trabaja en el área operativa con maquinaria emisora y explicó que antes dependían de protocolos reactivos y de la experiencia del personal, sin un sistema de monitoreo continuo. EMSafe se integró a sus rutinas mediante el panel administrativo, que usan para supervisar sensores y asignar técnicos. Las mediciones en tiempo real les resultaron muy útiles para anticiparse a riesgos, y las alertas automáticas cambiaron comportamientos del equipo, que ahora reacciona de inmediato ante un nivel elevado. Esto mejoró notablemente la percepción de seguridad de los trabajadores. Valoró que los gráficos y el mapa de radiación por cliente/sensor fueran entendibles para todo el equipo. Como mejoras empresariales propuso un módulo de reportes gerenciales y notificaciones por correo/SMS. Ve potencial de integración con salud ocupacional y recomendaría la plataforma, destacando la trazabilidad de cada intervención.
+
+> Entrevistado 03: Jose Miguel Riega
+
+- **Sexo:** Masculino
+- **Edad:** 22 
+- **Distrito donde vive:** Chorrillos, Lima
+- **Nivel socioeconómico:** Alto
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Sprint-2/entrevista-3-segmento-2.png)
+
+- **Link:** <a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgClKcalsJYLTJ63r7C5dIbHASBjXdLCpV89FPW0FGt-3Vw?e=MhYgcX</a>
+- **Duración:** 47:04 - 54:07
+- **Aplicaciones usadas:** TikTok e Instagram
+- **Tecnologías:** Celular y Computadora
+- **Entrevistador:** Fernando Jesus Lizano Coll Cardenas
+
+**Resumen:**  
+Jose Miguel aportó una visión gerencial: su organización maneja equipos emisores en varias áreas y antes no contaban con un monitoreo sistematizado, solo revisiones aisladas. Resaltó que EMSafe se integró bien aportando control centralizado y documentación de cada acción. Las mediciones en tiempo real y las alertas les ayudaron a sustentar decisiones de seguridad y a reducir incertidumbre frente a temas regulatorios. Señaló que el impacto en la percepción de seguridad fue positivo, sobre todo por la sensación de control que da ver datos continuos. Valoró que la visualización (estadísticas, historial exportable en CSV y órdenes de trabajo con evidencias) fuera clara para perfiles no técnicos. Como funcionalidades futuras pidió mejor escalabilidad multi-sede y dashboards de cumplimiento. Considera muy valiosa la integración con salud ocupacional y recomendaría EMSafe por su utilidad para auditorías y reputación corporativa. Manifestó interés en un piloto formal.
+
+### 6.3.3. Evaluaciones según heurísticas
+
+### UX Heuristics & Principles Evaluation  
+### Usability – Inclusive Design – Information Architecture
+
+**Carrera:** Ingeniería de Software  
+**Curso:** Desarrollo de Soluciones IoT  
+**NRC:** 6766  
+**Profesor:** Marco Antonio León Baca  
+**Auditor:** Equipo Gauss  
+**Cliente(s):** Equipo Gauss / Usuarios objetivo de EMSafe  
+
+---
+
+### SITE O APP A EVALUAR
+
+El sistema evaluado es **EMSafe**, una solución IoT orientada al monitoreo de radiación electromagnética no ionizante en entornos domésticos y laborales. La evaluación considera los siguientes módulos documentados en el proyecto:
+
+- **Landing Page de EMSafe:** secciones informativas de inicio, problemática, características, beneficios, testimonios, ubicación y contacto.
+- **Aplicación móvil EMSafe:** onboarding, autenticación, vinculación del dispositivo IoT, dashboard de monitoreo, visualización de alertas e historial.
+- **Plataforma web administrativa:** dashboard principal, gestión de dispositivos, alarmas, órdenes de trabajo, usuarios, técnicos, clientes e historial de servicios.
+- **Dispositivo IoT EMSafe:** prototipo basado en ESP32, sensor ambiental DHT22, simulación de medición EMF mediante potenciómetro e indicadores LED por nivel de riesgo.
+
+---
+
+### TAREAS A EVALUAR
+
+Las tareas seleccionadas corresponden a los flujos principales identificados en el informe, wireframes, mockups, prototipos y entrevistas del proyecto:
+
+1. Visualizar el estado actual de sensores IoT desde el dashboard.
+2. Interpretar niveles de radiación electromagnética mediante indicadores visuales.
+3. Revisar alertas críticas y tomar acciones preventivas.
+4. Vincular el dispositivo IoT “EmSafe S1” durante el onboarding móvil.
+5. Consultar historial de alertas y mediciones.
+6. Gestionar dispositivos, usuarios, técnicos y clientes desde la plataforma web.
+7. Crear y revisar órdenes de trabajo para instalación, mantenimiento o recolección de sensores.
+8. Navegar por la Landing Page para comprender la problemática, beneficios y propuesta de valor.
+9. Identificar el estado físico del dispositivo mediante LEDs de colores.
+
+---
+
+### TAREAS NO INCLUIDAS
+
+Las siguientes tareas quedan fuera del alcance de esta evaluación, debido a que no aparecen como funcionalidades implementadas completamente en la versión actual o se describen como futuras extensiones:
+
+- Integraciones externas avanzadas mediante API con sistemas de terceros.
+- Automatizaciones complejas para controlar dispositivos externos según umbrales.
+- Procesos de pago, planes de suscripción o facturación.
+- Administración avanzada de roles, permisos granulares o auditoría completa.
+- Exportación formal de reportes médicos o regulatorios.
+- Mantenimiento predictivo automatizado basado en inteligencia artificial.
+- Despliegue físico real de sensores EMF especializados, ya que el prototipo actual usa simulación mediante potenciómetro.
+- Funciones avanzadas del asistente ASTRA, salvo como referencia conceptual de diseño.
+
+---
+
+### ESCALA DE SEVERIDAD
+
+| Severidad | Descripción |
+|---|---|
+| 1 | Problema superficial, fácilmente superado y poco frecuente. |
+| 2 | Problema menor, ocurre con cierta frecuencia o genera leve fricción. |
+| 3 | Problema mayor, ocurre frecuentemente o impide que algunos usuarios completen la tarea. Requiere corrección prioritaria. |
+| 4 | Problema muy grave o bloqueante. Debe resolverse antes del lanzamiento. |
+
+---
+
+### TABLA RESUMEN
+
+| # | Problema | Severidad | Heurística violada |
+|---|---|---:|---|
+| 1 | Los niveles de radiación pueden resultar difíciles de interpretar para usuarios sin conocimientos técnicos. | 3 | Correspondencia entre el sistema y el mundo real / Diseño inclusivo |
+| 2 | El flujo de vinculación del sensor IoT puede generar incertidumbre si no comunica claramente el estado de conexión. | 3 | Visibilidad del estado del sistema |
+| 3 | Las alertas críticas pueden indicar riesgo, pero no siempre guían suficientemente la acción inmediata del usuario. | 3 | Ayuda a los usuarios a reconocer, diagnosticar y recuperarse |
+| 4 | La arquitectura de información de la plataforma web puede mezclar tareas administrativas con tareas operativas de técnicos. | 2 | Reconocimiento antes que recuerdo / Arquitectura de información |
+| 5 | El sistema depende en exceso del color para comunicar niveles de riesgo. | 2 | Accesibilidad y diseño inclusivo |
+
+---
+
+### SUPUESTOS BASADOS EN EL CONTEXTO DE LA REPO
+
+- La evaluación se basa en las entrevistas, análisis de usuarios, wireframes, mockups, prototipos y descripción del dispositivo IoT documentados en el informe.
+- Se asume que la validación corresponde a prototipos funcionales o semicompletos de la Landing Page, aplicación móvil, plataforma web y simulación IoT.
+- Se asume que los usuarios mencionados en las entrevistas representan los segmentos objetivo definidos: personas preocupadas por su salud y miembros de empresas u organizaciones expuestas a equipos tecnológicos o maquinaria.
+- Se asume que algunas funcionalidades descritas en la arquitectura de información, como automatización avanzada, asistente ASTRA o reportes exportables, pertenecen a una visión futura o no están completamente implementadas en la versión actual.
+
+### 6.4. Video About-the-Product
+
+El link del video About the Product realizado para este Sprint se encuentra en el siguiente Link: 
+
+<a href="https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgD5CE8Y9bfdQr2tCfQZGnTIAc5GPQbFThJsQvlz8vtS4n0?e=tP2oOu" target="_blank">https://upcedupe-my.sharepoint.com/:f:/g/personal/u202210364_upc_edu_pe/IgD5CE8Y9bfdQr2tCfQZGnTIAc5GPQbFThJsQvlz8vtS4n0?e=tP2oOu</a>
+
+## 6.2.3. Sprint 3
+
+### 6.2.3.1. Sprint Planning 3
+
+En este sprint, el enfoque estará en validar el funcionamiento completo del sistema EMSafe integrando el dispositivo IoT físico con el Backend API, el Frontend Web Application y la Mobile Application ya desplegados. Se priorizará la verificación end-to-end de la transmisión de datos de radiación electromagnética desde el sensor físico hasta las interfaces de usuario, asegurando que las lecturas, alertas y visualizaciones respondan correctamente ante datos reales capturados por el hardware.
+
+| Sprint # | Sprint 3 |
+|---|---|
+| Sprint Planning Background | Durante la reunión se revisaron los avances del Sprint 2 y el estado de integración entre las plataformas desplegadas. Se identificó que las integraciones entre Frontend Web, Mobile Application y Backend API se encontraban completadas, por lo que el equipo priorizó la validación funcional completa del sistema con el dispositivo IoT físico, verificando la transmisión de datos reales de radiación y el comportamiento de alertas, mapas y reportes ante lecturas reales del sensor. |
+| Date | 30-06-2026 |
+| Time | 3:00 p.m. |
+| Location | Reunión realizada mediante Discord |
+| Prepared By | Guimaraes Escalante, Carlos Eduardo |
+| Attendees (to planning meeting) | Sosa Soto, Oskar Rodrigo / Lopez de la Cruz, Mauro Fabricio / Guimaraes Escalante, Carlos Eduardo / Oliva Lopez, Fabian Alejandro / Lizano Coll Cardenas, Fernando Jesus |
+| Sprint Goal & User Stories | |
+| Sprint 3 Goal | Validar el funcionamiento end-to-end del sistema EMSafe con el dispositivo IoT físico, verificando la correcta transmisión de datos de radiación electromagnética desde el sensor hasta el Backend API, y su correcta visualización en el Frontend Web Application y la Mobile Application desplegados, garantizando un sistema funcional, estable y listo para la entrega final. |
+| Sprint 3 Velocity | 20 Story Points |
+| Sum of Story Points | 40 Story Points |
+
+### 6.2.3.2. Aspect Leaders and Collaborators
+
+| Aspecto | Líder | Colaboradores |
+|---|---|---|
+| Mobile Radiation Map and Filtering | Lopez de la Cruz, Mauro Fabricio | Sosa Soto, Oskar Rodrigo / Lizano Coll Cardenas, Fernando Jesus |
+| Mobile Reports and Trends | Lizano Coll Cardenas, Fernando Jesus | Oliva Lopez, Fabian Alejandro / Lopez de la Cruz, Mauro Fabricio |
+| Chatbot and AI Integration | Guimaraes Escalante, Carlos Eduardo | Sosa Soto, Oskar Rodrigo / Oliva Lopez, Fabian Alejandro |
+| Mobile Profile Management | Oliva Lopez, Fabian Alejandro | Sosa Soto, Oskar Rodrigo / Guimaraes Escalante, Carlos Eduardo |
+| Web Dashboard and Alarms | Sosa Soto, Oskar Rodrigo | Lopez de la Cruz, Mauro Fabricio / Lizano Coll Cardenas, Fernando Jesus |
+| Web Device Management | Lopez de la Cruz, Mauro Fabricio | Guimaraes Escalante, Carlos Eduardo / Sosa Soto, Oskar Rodrigo |
+| Web Profile Section | Oliva Lopez, Fabian Alejandro | Lopez de la Cruz, Mauro Fabricio / Lizano Coll Cardenas, Fernando Jesus |
+| Landing Page Contact Section | Guimaraes Escalante, Carlos Eduardo | Oliva Lopez, Fabian Alejandro / Lizano Coll Cardenas, Fernando Jesus |
+| Backend Services and Optimization | Guimaraes Escalante, Carlos Eduardo | Lizano Coll Cardenas, Fernando Jesus / Lopez de la Cruz, Mauro Fabricio |
+| Testing and Final Validation | Lizano Coll Cardenas, Fernando Jesus | Sosa Soto, Oskar Rodrigo / Lopez de la Cruz, Mauro Fabricio / Guimaraes Escalante, Carlos Eduardo / Oliva Lopez, Fabian Alejandro |
+| Deployment and CI/CD Final Release | Lopez de la Cruz, Mauro Fabricio | Guimaraes Escalante, Carlos Eduardo / Sosa Soto, Oskar Rodrigo |
+
+Cada líder fue responsable de coordinar las tareas correspondientes a su aspecto dentro del Sprint 3. Los colaboradores apoyaron en la implementación de funcionalidades finales, integración con el backend, validación de flujos completos en ambas plataformas y preparación de la versión final para su despliegue.
+
+### 6.2.3.3. Sprint Backlog 3
+
+En este sprint, el enfoque estará en completar las funcionalidades restantes de la **Mobile Application** y del **Frontend Web Application**, integrando las User Stories priorizadas del Product Backlog relacionadas con monitoreo avanzado, reportes, chatbot, gestión de perfiles, dashboard web y administración de dispositivos. Se priorizó dejar fuera del alcance el módulo de agendamiento técnico por no formar parte del core funcional de EMSafe definido para esta entrega final. Cada User Story fue descompuesta en Engineering Tasks estimadas entre 4 y 8 horas.
+
+| ID | User Story | Work-Item / Task | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|
+| EPIC01 - US01 | Visualización de Niveles EM | T01: Diseño e implementación de UI de visualización de niveles EM en tiempo real <br><br> T02: Integración de la visualización con el endpoint de mediciones en tiempo real | T01: Construir la interfaz de la app móvil que muestra los niveles de contaminación electromagnética en tiempo real de la zona del usuario. <br><br> T02: Conectar la pantalla de niveles EM con el endpoint del backend para obtener lecturas actualizadas en tiempo real. | T01: 5 <br> T02: 5 | Oskar | Done |
+| EPIC01 - US02 | Alertas Automatizadas | T03: Implementación de lógica de generación de alertas por umbral <br><br> T04: Integración de notificaciones push para alertas automatizadas | T03: Desarrollar la lógica que detecta cuándo los niveles EM superan los límites recomendados y dispara una alerta. <br><br> T04: Implementar el envío de notificaciones push al usuario cuando se genera una alerta automática. | T03: 4 <br> T04: 4 | Mauro | Done |
+| EPIC01 - US16 | Mapa de Radiación | T05: Diseño e implementación de UI del mapa de radiación en tiempo real <br><br> T06: Integración del mapa con el endpoint de mapa de calor | T05: Construir la vista del mapa con los niveles de radiación geolocalizados en tiempo real. <br><br> T06: Conectar el mapa de radiación con el endpoint del backend que genera el mapa de calor de niveles EM. | T05: 6 <br> T06: 5 | Mauro | Done |
+| EPIC01 - US17 | Filtrado del Mapa | T07: Implementación de filtros por fecha, zona y nivel en el mapa <br><br> T08: Validación y actualización dinámica del mapa al aplicar filtros | T07: Desarrollar los controles de filtrado para que el usuario pueda segmentar la información mostrada en el mapa. <br><br> T08: Implementar la lógica que actualiza el mapa en tiempo real al aplicar o cambiar los filtros seleccionados. | T07: 4 <br> T08: 4 | Mauro | Done |
+| EPIC01 - US19 | Visualización de reporte mensual de radiación | T09: Diseño e implementación de UI de reporte mensual <br><br> T10: Integración del reporte mensual con el endpoint de datos históricos | T09: Construir la pantalla que muestra el reporte mensual de niveles de radiación del usuario. <br><br> T10: Conectar el reporte mensual con el endpoint que agrega los datos históricos de radiación. | T09: 5 <br> T10: 4 | Fernando | Done |
+| EPIC01 - US20 | Visualización de reporte anual de radiación | T11: Diseño e implementación de UI de reporte anual <br><br> T12: Integración del reporte anual con el endpoint de datos históricos | T11: Construir la pantalla que muestra el reporte anual de exposición a radiación del usuario. <br><br> T12: Conectar el reporte anual con el endpoint backend de agregación de datos históricos. | T11: 5 <br> T12: 4 | Fernando | Done |
+| EPIC01 - US22 | Visualización de gráficos de tendencias de radiación | T13: Implementación de gráficos de tendencias en reportes mensual y anual <br><br> T14: Integración de gráficos de tendencias con datos reales del backend | T13: Desarrollar los gráficos de tendencias que permiten identificar patrones de exposición a lo largo del tiempo. <br><br> T14: Conectar los gráficos de tendencias con los datos históricos reales obtenidos desde el backend. | T13: 5 <br> T14: 4 | Fernando | Done |
+| EPIC01 - US10 | Consulta de dudas mediante chatbot | T15: Diseño e implementación de UI del chatbot en la app móvil <br><br> T16: Integración del chatbot con el servicio de IA del backend | T15: Construir la interfaz de conversación del chatbot dentro de la app móvil. <br><br> T16: Conectar la interfaz del chatbot con el servicio de inteligencia artificial encargado de procesar las consultas. | T15: 5 <br> T16: 5 | Carlos | Done |
+| EPIC01 - US44 | Actualizar perfil de usuario | T17: Implementación de edición de datos personales en Profile Mobile <br><br> T18: Validación de campos y confirmación de actualización en Profile Mobile | T17: Desarrollar la funcionalidad que permite al usuario actualizar su información personal desde la app móvil. <br><br> T18: Implementar la validación de campos del formulario de perfil y el mensaje de confirmación al guardar los cambios. | T17: 4 <br> T18: 4 | Fabian | Done |
+| EPIC01 - US45 | Gestión de Perfiles | T19: Implementación de configuración de preferencias y alertas en Profile Mobile <br><br> T20: Integración de preferencias de perfil con el endpoint de configuración de usuario | T19: Desarrollar la sección de preferencias del perfil para ajustar alertas y zonas de interés del usuario. <br><br> T20: Conectar la sección de preferencias con el endpoint del backend encargado de guardar la configuración del usuario. | T19: 4 <br> T20: 4 | Fabian | Done |
+| EPIC02 - US41 | Visualización de Dashboard Web | T21: Implementación de UI final del Dashboard Web con métricas completas <br><br> T22: Integración final de Dashboard Web con endpoints de métricas generales | T21: Completar el dashboard web integrando todas las métricas, gráficos y accesos rápidos definidos para la versión final. <br><br> T22: Conectar el dashboard con los endpoints finales de métricas del sistema para reflejar el estado completo de la plataforma. | T21: 6 <br> T22: 5 | Oskar | Done |
+| EPIC02 - US39 | Visualización de Historial de Alarmas | T23: Implementación de vista de historial de alarmas en Frontend Web <br><br> T24: Integración del historial de alarmas con el endpoint correspondiente del backend | T23: Construir la vista que lista el historial completo de alarmas generadas en el sistema. <br><br> T24: Conectar la vista de historial de alarmas con el endpoint real del backend para mostrar datos actualizados. | T23: 4 <br> T24: 4 | Oskar | Done |
+| EPIC02 - US40 | Gestión de Alarmas | T25: Implementación de funcionalidad para marcar alarmas como resueltas o en revisión <br><br> T26: Integración de la gestión de estados de alarmas con el endpoint PUT del backend | T25: Desarrollar la lógica que permite cambiar el estado de una alarma desde la plataforma web. <br><br> T26: Conectar la funcionalidad de cambio de estado de alarmas con el endpoint real de actualización del backend. | T25: 4 <br> T26: 4 | Oskar | Done |
+| EPIC02 - US35 | Gestión de Dispositivos | T27: Implementación de UI final para agregar, editar y eliminar dispositivos <br><br> T28: Integración final de la sección Devices con endpoints CRUD del backend | T27: Completar la sección de dispositivos del frontend web con las operaciones CRUD necesarias para su gestión completa. <br><br> T28: Conectar la sección de dispositivos con los endpoints finales de creación, edición y eliminación del backend. | T27: 6 <br> T28: 5 | Mauro | Done |
+| EPIC02 - US36 | Configuración de Dispositivos | T29: Implementación de formulario de configuración de parámetros y ubicación de dispositivos <br><br> T30: Integración del formulario de configuración con el endpoint de actualización de dispositivos | T29: Desarrollar el formulario que permite configurar los parámetros técnicos y la ubicación de cada dispositivo IoT. <br><br> T30: Conectar el formulario de configuración de dispositivos con el endpoint real de actualización del backend. | T29: 4 <br> T30: 4 | Mauro | Done |
+| EPIC02 - TS25 | Desarrollo de sección Profile (Frontend Web) | T31: Implementación de UI final de la sección Profile en Frontend Web <br><br> T32: Integración final de la sección Profile con endpoints de usuario | T31: Completar la sección de perfil del frontend web con visualización y edición de datos del usuario. <br><br> T32: Conectar la sección de perfil web con los endpoints finales de consulta y actualización de datos del usuario. | T31: 5 <br> T32: 4 | Fabian | Done |
+| EPIC03 - US54 | Visualizar sección Contacto | T33: Implementación de estructura HTML de la sección Contacto del Landing Page <br><br> T34: Desarrollo de estilos y validación de campos en la sección Contacto | T33: Desarrollar la estructura base del formulario de contacto en el Landing Page. <br><br> T34: Aplicar estilos visuales y validaciones de formulario a la sección de contacto del Landing Page. | T33: 4 <br> T34: 5 | Carlos | Done |
+| EPIC04 - TS30 | Gestión de endpoints de Profile | T35: Implementación de endpoints GET y PUT de perfil de usuario <br><br> T36: Implementación de endpoint DELETE de datos personales de usuario | T35: Desarrollar los endpoints del backend para consultar y actualizar los datos personales del usuario. <br><br> T36: Desarrollar el endpoint que permite eliminar los datos personales de un usuario del sistema de forma segura. | T35: 5 <br> T36: 4 | Fabian | Done |
+| EPIC04 - TS07 | Agregación de datos históricos de radiación | T37: Implementación de servicio de agregación mensual y anual de radiación <br><br> T38: Implementación de endpoint de consulta de datos históricos agregados | T37: Desarrollar el servicio backend que agrupa los datos de radiación por periodos mensual y anual. <br><br> T38: Desarrollar el endpoint que expone los datos históricos agregados para su consumo desde Mobile y Web. | T37: 6 <br> T38: 5 | Fernando | Done |
+| EPIC04 - TS09 | Generación de mapa de calor de radiación | T39: Implementación del servicio de generación de mapa de calor <br><br> T40: Implementación del endpoint de consulta del mapa de calor | T39: Desarrollar el servicio backend que genera el mapa de calor basado en los niveles de radiación registrados. <br><br> T40: Desarrollar el endpoint que expone los datos del mapa de calor para su consumo desde la app móvil y el frontend web. | T39: 6 <br> T40: 5 | Fernando | Done |
+| EPIC04 - TS21 | Eliminar datos personales de un usuario | T41: Implementación de endpoint de eliminación de datos personales vía API <br><br> T42: Validación de permisos y confirmación antes de eliminar datos personales | T41: Desarrollar el endpoint que permite eliminar de forma segura los datos personales de un usuario mediante la API. <br><br> T42: Implementar la lógica de validación de permisos y el flujo de confirmación previo a la eliminación de datos del usuario. | T41: 4 <br> T42: 4 | Carlos | Done |
+
+## Conclusiones y recomendaciones
+
+- La contaminación electromagnética en entornos domésticos e industriales representa un riesgo real y creciente, agravado por la ausencia de herramientas accesibles para medirla. EmSafe surge como respuesta directa a esta brecha mediante una solución IoT integrada.
+
+- Las entrevistas a ambos segmentos confirmaron preocupación genuina por la exposición electromagnética, aunque con falta de información y herramientas concretas para actuar. El segmento empresarial mostró especial interés en alertas automáticas y reportes exportables para auditorías.
+
+- Las User Stories y el Product Backlog cubren de forma completa los flujos de la app móvil, plataforma web y backend, priorizando funcionalidades de alto valor como el monitoreo en tiempo real, las alertas automáticas y la integración vía API REST.
+
+- La adopción de Domain-Driven Design permitió delimitar cinco bounded contexts con responsabilidades claras y bajo acoplamiento, evitando conflictos técnicos que habrían surgido de unificar contextos como Alert & Automation con Radiation Monitoring.
+
+- La distribución de bounded contexts entre los integrantes facilitó un desarrollo paralelo y organizado, mientras que el uso de Miro y GitHub fortaleció la comunicación técnica y la trazabilidad del avance del equipo.
 
 
 # Bibliografía
