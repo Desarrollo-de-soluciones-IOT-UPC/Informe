@@ -4911,7 +4911,7 @@ A continuación se presentan las preguntas diseñadas para las entrevistas final
 
 ---
 
-**✅ Segmento 1: Personas comprometidas con el cuidado de su salud**
+**Segmento 1: Personas comprometidas con el cuidado de su salud**
 
 1. ¿La pantalla principal te permitió entender de forma inmediata cuál era tu nivel de exposición electromagnética en ese momento?
 2. ¿Las notificaciones que recibiste cuando los niveles superaron los límites te resultaron oportunas y comprensibles?
@@ -4926,7 +4926,7 @@ A continuación se presentan las preguntas diseñadas para las entrevistas final
 
 ---
 
-**✅ Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética**
+**Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética**
 
 1. ¿El panel principal les brindó una visión clara y rápida del estado de radiación en su entorno laboral?
 2. ¿Las alertas automáticas generadas por el sistema les resultaron útiles para tomar decisiones de seguridad de forma oportuna?
