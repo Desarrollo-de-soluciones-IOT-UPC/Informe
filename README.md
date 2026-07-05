@@ -4663,6 +4663,296 @@ En este sprint, el enfoque estará en completar las funcionalidades restantes de
 | EPIC04 - TS09 | Generación de mapa de calor de radiación | T39: Implementación del servicio de generación de mapa de calor <br><br> T40: Implementación del endpoint de consulta del mapa de calor | T39: Desarrollar el servicio backend que genera el mapa de calor basado en los niveles de radiación registrados. <br><br> T40: Desarrollar el endpoint que expone los datos del mapa de calor para su consumo desde la app móvil y el frontend web. | T39: 6 <br> T40: 5 | Fernando | Done |
 | EPIC04 - TS21 | Eliminar datos personales de un usuario | T41: Implementación de endpoint de eliminación de datos personales vía API <br><br> T42: Validación de permisos y confirmación antes de eliminar datos personales | T41: Desarrollar el endpoint que permite eliminar de forma segura los datos personales de un usuario mediante la API. <br><br> T42: Implementar la lógica de validación de permisos y el flujo de confirmación previo a la eliminación de datos del usuario. | T41: 4 <br> T42: 4 | Carlos | Done |
 
+### 6.2.3.4. Development Evidence for Sprint Review
+
+Durante el Sprint 3, el equipo se enfocó en la validación e integración final del sistema EMSafe con el dispositivo IoT físico. Los commits de este sprint reflejan los ajustes finales realizados en el **Frontend Web Application**, el **Backend API** y el nuevo repositorio **emsafe-edge-flask**, encargado de la comunicación entre el dispositivo ESP32 y la nube. A continuación se presenta la tabla de commits relacionados con la implementación.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| Front-End | develop | 81e322f | Merge pull request #10 from Desarrollo-de-soluciones-IOT-UPC/feature/ui-redesign-stage-2 | Se integraron en la rama develop los cambios finales de UI desarrollados en la rama feature/ui-redesign-stage-2, completando los ajustes visuales de la versión final del Frontend Web Application. | 2026-07-03 |
+| Back-End | main | ac69bf4 | feat: smart-edge uT scale, technician ownership checks, plug end-to-end (V12), client register/reports/chat/account-delete | Se implementaron las funcionalidades finales del backend incluyendo la escala smart-edge, validaciones de propiedad del técnico, integración plug end-to-end en su versión 12, y los módulos de registro de cliente, reportes, chat y eliminación de cuenta. | 2026-07-04 |
+| Back-End | main | 0b95710 | Merge pull request #4 from Desarrollo-de-soluciones-IOT-UPC/feature/web-back-end | Se integró la rama feature/web-back-end con los cambios finales del backend necesarios para soportar la comunicación con el dispositivo IoT físico y las plataformas web y móvil. | 2026-07-03 |
+| emsafe-edge-flask | main | 964f566 | feat: sync plug state to cloud, fetch desiredPlug for device, version ESP32 firmware | Se implementó la sincronización del estado del plug hacia la nube, la consulta del estado deseado del plug para el dispositivo y la versión final del firmware del ESP32. | 2026-07-04 |
+
+### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+Durante el Sprint 3, las pruebas se centraron en la validación end-to-end del sistema EMSafe con el dispositivo IoT físico, verificando la correcta transmisión de datos desde el sensor ESP32 hacia el Backend API y su correcta visualización en el Frontend Web Application y la Mobile Application. Se validaron los flujos de sincronización del estado del dispositivo, la comunicación edge-to-cloud y las funcionalidades finales del backend. A continuación se presenta la tabla de commits relacionados con las actividades de testing.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| Back-End | main | ac69bf4 | feat: smart-edge uT scale, technician ownership checks, plug end-to-end (V12), client register/reports/chat/account-delete | Se validó el funcionamiento completo de los módulos finales del backend, incluyendo la integración plug end-to-end, validaciones de propiedad y los endpoints de registro, reportes, chat y eliminación de cuenta. | 2026-07-04 |
+| Back-End | main | 0b95710 | Merge pull request #4 from Desarrollo-de-soluciones-IOT-UPC/feature/web-back-end | Se verificó la correcta integración de los cambios finales del backend tras el merge, validando la comunicación con el dispositivo IoT físico y las plataformas desplegadas. | 2026-07-03 |
+| emsafe-edge-flask | main | 964f566 | feat: sync plug state to cloud, fetch desiredPlug for device, version ESP32 firmware | Se validó la sincronización del estado del plug con la nube y la correcta consulta del estado deseado desde el dispositivo ESP32, verificando la comunicación end-to-end entre el hardware y el backend. | 2026-07-04 |
+| Front-End | develop | 81e322f | Merge pull request #10 from Desarrollo-de-soluciones-IOT-UPC/feature/ui-redesign-stage-2 | Se verificó que los ajustes finales de UI integrados en la rama develop se renderizan correctamente y son consistentes con el diseño final del sistema. | 2026-07-03 |
+
+### 6.2.3.6. Execution Evidence for Sprint Review
+
+Durante el Sprint 2, se completó la integración del **Frontend Web Application** con el **Backend API** real de EMSafe. La plataforma web fue actualizada en el entorno de producción en Azure con los nuevos cambios integrados, y la app móvil fue validada en entorno de desarrollo con datos reales.
+
+#### **Link del Frontend Web Application desplegado:** https://emsafe-amh9hgdudda3bybj.eastus-01.azurewebsites.net/admin
+
+**Pantalla de Login — Página de inicio de sesión de EMSafe desplegada en Azure.**
+
+<img src="img/TB1/Sprint-2/Login.png" alt="Pantalla de Login">
+
+**Portal Administrativo — Dashboard principal con métricas, gráficos y órdenes recientes.**
+
+<img src="img/TB1/Sprint-2/System Overview - 1.png" alt="Pantalla del System Overview">
+
+<img src="img/TB1/Sprint-2/System Overview - 2.png" alt="Pantalla del System Overview">
+
+**Portal Administrativo — Gestión de Work Orders con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Work Orders - 1.png" alt="Pantalla de Work Orders">
+
+<img src="img/TB1/Sprint-2/Work Orders - 2.png" alt="Pantalla de Word Orders">
+
+**Portal Administrativo — Gestión del Historial con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/History.png" alt="Pantalla del Historial">
+
+**Portal Administrativo — Gestión de Usuarios con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Team Management.png" alt="Pantalla del Administrador de Usuario">
+
+**Portal Administrativo — Gestión de Dispositivos con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Devices.png" alt="Pantalla del Administrador de Dispositivos">
+
+**Portal Administrativo — Lecturas de Radición Electromagnetica con mapa integrado.**
+
+<img src="img/TB1/Sprint-2/Radiation Map - 1.png" alt="Pantalla de Radiación con Mapa">
+
+<img src="img/TB1/Sprint-2/Radiation Map - 2.png" alt="Pantalla de Radiación con Mapa">
+
+**Portal Administrativo — Gestión de Alarmas con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Alarms.png" alt="Pantalla de Alarmas">
+
+**Portal Técnico — My Schedule con calendario semanal y navegación por semana.**
+
+<img src="img/TB1/Sprint-2/Technician Portal.png" alt="Pantalla del Dashboard del Tecnico">
+
+**Portal Técnico — Work Orders del técnico con tabs de filtrado por estado.**
+
+<img src="img/TB1/Sprint-2/Technician Work Orders.png" alt="Pantalla de Work Orders del Tecnico">
+
+**Portal Técnico — Historial del técnico con tabs de filtrado por estado.**
+
+<img src="img/TB1/Sprint-2/Technician Historyl.png" alt="Pantalla del Historial del Tecnico">
+
+### **Backend API**: https://emsafe-backend-hmf7asgja0d0h4cr.centralus-01.azurewebsites.net/swagger-ui/index.html
+
+**Backend API — Work Order Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Work_Oder_Controller.png" alt="Backend Work Order Controller">
+
+**Backend API — User Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-User_Controller.png" alt="Backend User Controller">
+
+**Backend API — Reading Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Reading_Controller.png" alt="Backend Reading Controller">
+
+**Backend API — History Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-History_Controller.png" alt="Backend History Controller">
+
+**Backend API — Device Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Device_Controller.png" alt="Backend Device Controller">
+
+**Backend API — Dashboard Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Dashboard_Controller.png" alt="Backend Dashboard Controller">
+
+**Backend API — Client Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Client_Controller.png" alt="Backend Client Controller">
+
+**Backend API — Auth Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Auth_Controller.png" alt="Backend Auth Controller">
+
+**Backend API — Alarm Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Alarm_Controller.png" alt="Backend Alarm Controller">
+
+### Mobile Application 
+
+**Mobile Application — Pantalla de detalle del sensor con lectura actual de exposición electromagnética.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-1.jpg" alt="Pantalla de detalle del sensor en la app móvil">
+
+**Mobile Application — Dashboard principal con exposición actual, sensores activos y alertas registradas.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-2.jpg" alt="Dashboard principal de la app móvil">
+
+**Mobile Application — Pantalla de configuración con preferencias del sistema y listado de sensores.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-3.jpg" alt="Pantalla de configuración de la app móvil">
+
+**Mobile Application — Historial de alertas con eventos de radiación elevada registrados.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-4.jpg" alt="Historial de alertas de la app móvil">
+
+**Mobile Application — Pantalla inicial de EMSafe con carga de conexión segura.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-5.jpg" alt="Pantalla inicial de EMSafe Mobile">
+
+**Mobile Application — Pantalla informativa de Astra AI con recomendaciones personalizadas.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-6.jpg" alt="Pantalla de Astra AI en la app móvil">
+
+**Mobile Application — Formulario de registro de datos personales para creación de cuenta.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-7.jpg" alt="Formulario de datos personales de la app móvil">
+
+**Mobile Application — Pantalla de inicio de sesión seguro para acceso al sistema.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-8.jpg" alt="Pantalla de login de la app móvil">
+
+### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación relacionada con los servicios utilizados durante el Sprint 3 de EMSafe. A diferencia de los sprints anteriores, en esta entrega el enfoque no estuvo en la integración de nuevos endpoints sino en la **validación end-to-end del sistema completo** con el dispositivo IoT físico, verificando que los servicios ya desplegados respondieran correctamente ante datos reales capturados por el sensor ESP32.
+
+Durante este sprint, se incorporó el repositorio **emsafe-edge-flask**, encargado de gestionar la comunicación entre el dispositivo físico ESP32 y el Backend API en la nube. Este servicio implementó la sincronización del estado del plug hacia la nube y la consulta del estado deseado del dispositivo, completando así el flujo de comunicación edge-to-cloud del sistema. Por su parte, el Backend finalizó los módulos de reportes, chat, registro de cliente y eliminación de cuenta, cerrando el conjunto de endpoints necesarios para la versión final del producto.
+
+Debido a que el enfoque principal estuvo en la validación funcional con hardware real y en los ajustes finales del sistema, en esta etapa se priorizó la verificación del flujo completo de datos desde el sensor hasta las interfaces de usuario sobre la generación de nueva documentación de servicios. El sistema quedó completamente integrado y validado en su versión final, con todos los endpoints consumidos correctamente por el Frontend Web Application y la Mobile Application desplegados.
+
+### 6.2.3.8. Software Deployment Evidence for Sprint Review
+
+En esta sección se describe el proceso de actualización del despliegue de la plataforma EMSafe correspondiente al Sprint 2. La infraestructura de producción se mantuvo en **Microsoft Azure App Service** con el pipeline CI/CD configurado en el Sprint anterior, ejecutando automáticamente el build y deploy con cada push a la rama `main`.
+
+**Landing Page Deployment**
+
+1. Se realizaron los merges de las ramas de desarrollo hacia `main` en el repositorio del Frontend Web Application, activando automáticamente el pipeline de GitHub Actions.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Main.png">
+
+2. GitHub Actions ejecutó el build de producción de Angular SSR y desplegó los cambios automáticamente en Azure App Service.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Github Pages.png">
+
+3. Se verificó que el despliegue fue exitoso accediendo a la URL de producción y validando las nuevas funcionalidades integradas con el backend real.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Deployment.png">
+
+4. La Mobile Application fue validada en entorno de desarrollo mediante emulador y dispositivo físico, conectada a los endpoints reales del backend desplegado.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Page Deploy.png">
+
+**Mobile Deployment**
+
+En esta sección se describe el proceso de despliegue de la aplicación móvil de EMSafe correspondiente al Sprint 2. Para esta entrega, el equipo generó una versión de producción de la aplicación móvil desarrollada en Flutter y la distribuyó mediante **Firebase App Distribution**, permitiendo que los testers puedan acceder a la aplicación desde sus dispositivos móviles.
+
+1. Se inició sesión en Firebase desde la línea de comandos utilizando Firebase CLI. Esto permitió autenticar el entorno local con la cuenta del proyecto y habilitar las operaciones necesarias para compilar y distribuir la aplicación móvil.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-1.jpg" alt="Firebase CLI Login">
+
+2. Se ejecutó el comando de compilación de Flutter en modo release, generando el archivo APK optimizado para distribución. Como resultado, se obtuvo el archivo `app-release.apk` dentro de la carpeta `build/app/outputs/flutter-apk/`.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-2.jpg" alt="Flutter Build APK Release">
+
+3. Luego, se utilizó Firebase App Distribution para subir el APK generado y distribuirlo a los testers definidos. Durante este proceso, se agregó una nota de versión indicando que correspondía a la demo funcional de EMSafe v1.0.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-3.jpg" alt="Firebase App Distribution Upload">
+
+4. Se verificó la correcta configuración del proyecto en Firebase, confirmando que la aplicación móvil Android se encontraba registrada dentro del proyecto `emsafe-mobile`, con su respectivo identificador de paquete.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-4.jpg" alt="Firebase Project Configuration">
+
+5. Finalmente, se validó que la invitación de prueba fue enviada correctamente mediante Firebase App Distribution. Esta invitación permite que los testers acepten el acceso, instalen la aplicación y comiencen con las pruebas funcionales de la versión móvil.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-5.jpg" alt="Firebase App Distribution Invitation">
+
+### Edge Service — Software Deployment Evidence Sprint 2
+
+Durante el Sprint 2, también se validó el despliegue local del **Edge Service** de EMSafe, desarrollado con Flask. Este servicio actúa como intermediario para recibir las lecturas del dispositivo IoT, procesar los datos de radiación electromagnética y exponer endpoints para validar el estado del servicio y registrar mediciones.
+
+1. Se verificó el endpoint de salud del servicio Edge mediante la ruta `/health`, confirmando que el servicio `emsafe-edge` se encontraba activo y respondiendo correctamente con estado `UP`.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-1.jpg" alt="Healthcheck del Edge Service activo">
+
+2. Se ejecutó el servidor Edge en entorno local utilizando Flask en el puerto `5000`. Esto permitió validar que el servicio quedara disponible tanto desde `localhost` como desde la dirección IP de red local.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-2.jpg" alt="Servidor Edge ejecutándose en Flask">
+
+3. Se realizaron pruebas de envío de datos hacia el endpoint `/api/v1/emf-monitoring/data-records`. En la consola se observa una primera solicitud con error `400` por formato incorrecto y luego una solicitud exitosa con código `201`, validando la recepción correcta de datos del sensor.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-3.jpg" alt="Registro de datos del sensor en el Edge Service">
+
+4. Finalmente, se confirmó el procesamiento de lecturas del sensor, mostrando registros con valores de exposición electromagnética y niveles de riesgo como `DANGER` y `SAFE`. Esto evidencia que el Edge Service recibe, interpreta y registra correctamente las mediciones enviadas por el dispositivo IoT.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-4.jpg" alt="Lecturas procesadas por el Edge Service">
+
+### 6.2.3.9. Team Collaboration Insights during Sprint
+
+Durante este sprint, el equipo enfocó sus esfuerzos en la validación end-to-end del sistema EMSafe con el dispositivo IoT físico, asegurando que el flujo completo de datos desde el sensor ESP32 hasta las interfaces de usuario funcionara correctamente en producción. Para organizar el trabajo, se continuó utilizando GitHub como herramienta principal de colaboración, incorporando el nuevo repositorio **emsafe-edge-flask** para gestionar la comunicación entre el hardware y la nube, y trabajando sobre las ramas `main` y `develop` de los repositorios existentes para aplicar los ajustes finales del sistema. La coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar los resultados de las pruebas con el dispositivo físico, resolver incidencias de integración hardware-software y sincronizar los retoques finales en el Backend, Frontend Web y Mobile Application para el cierre del proyecto.
+
+## Github analytics de nuestro Back-End — Sprint 3:
+
+poner imagen
+
+## Github analytics de nuestro Front-End — Sprint 3:
+
+poner imagen
+
+## Github analytics de nuestro emsafe-edge-flask — Sprint 3:
+
+poner imagen
+
+## 6.3. Validation Interviews
+
+### 6.3.1. Diseño de Entrevistas
+
+A continuación se presentan las preguntas diseñadas para las entrevistas finales, clasificadas según los segmentos objetivos del proyecto EMSafe. Estas entrevistas buscan validar la propuesta de valor, la utilidad de la solución y detectar oportunidades de mejora basadas en la experiencia real de los usuarios con el sistema desplegado.
+
+---
+
+**✅ Segmento 1: Personas comprometidas con el cuidado de su salud**
+
+1. ¿La pantalla principal te permitió entender de forma inmediata cuál era tu nivel de exposición electromagnética en ese momento?
+2. ¿Las notificaciones que recibiste cuando los niveles superaron los límites te resultaron oportunas y comprensibles?
+3. ¿La visualización del mapa te ayudó a identificar con claridad las zonas de mayor radiación en tu entorno?
+4. ¿El historial de exposición te permitió entender cómo han variado tus niveles de radiación a lo largo del tiempo?
+5. ¿Las recomendaciones que te brindó la aplicación fueron claras y aplicables a tu rutina diaria?
+6. ¿Consideras que una herramienta como EMSafe es necesaria para el cuidado de la salud en el contexto actual?
+7. ¿Qué tan preocupado estabas por tu exposición a la radiación electromagnética antes de conocer EMSafe?
+8. ¿Crees que la información que ofrece EMSafe es suficiente para tomar decisiones sobre tu entorno?
+9. ¿Recomendarías EMSafe a personas de tu entorno? ¿Por qué?
+10. ¿Qué mejoras o funcionalidades adicionales considerarías valiosas para una próxima versión?
+
+---
+
+**✅ Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética**
+
+1. ¿El panel principal les brindó una visión clara y rápida del estado de radiación en su entorno laboral?
+2. ¿Las alertas automáticas generadas por el sistema les resultaron útiles para tomar decisiones de seguridad de forma oportuna?
+3. ¿La visualización del mapa de radiación fue suficientemente clara para identificar las zonas de mayor riesgo dentro de su organización?
+4. ¿El historial de exposición les permitió analizar el comportamiento de los niveles de radiación a lo largo del tiempo en su entorno de trabajo?
+5. ¿Consideran que la información presentada en la aplicación es comprensible para personas sin conocimientos técnicos en el equipo?
+6. ¿Su organización contaba con algún mecanismo previo para monitorear los niveles de radiación electromagnética?
+7. ¿Creen que una solución como EMSafe podría contribuir al cumplimiento de normativas de seguridad laboral en su sector?
+8. ¿Qué tan viable consideran la implementación de EMSafe como parte de los protocolos de seguridad de su organización?
+9. ¿Recomendarían EMSafe a otras empresas del sector que operan maquinaria de emisión electromagnética? ¿Por qué?
+10. ¿Qué funcionalidades empresariales adicionales considerarían necesarias para adoptar EMSafe de forma permanente?
+
+---
+
+### 6.3.2. Registro de Entrevistas
+
+poner entrevistas
+
+### 6.3.3. Evaluaciones según heurísticas
+
+falta entrevistas
+
+## 6.4. Video About-the-Product
+
+poner video
+
 ## Conclusiones y recomendaciones
 
 - La contaminación electromagnética en entornos domésticos e industriales representa un riesgo real y creciente, agravado por la ausencia de herramientas accesibles para medirla. EmSafe surge como respuesta directa a esta brecha mediante una solución IoT integrada.
