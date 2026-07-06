@@ -36,7 +36,7 @@
         </tr>
     </table>
     </br></br>
-    <p style="margin: 10px 0; border-bottom: none;"><strong>Lima - Abril 2025</strong></p>
+    <p style="margin: 10px 0; border-bottom: none;"><strong>Lima - Julio 2025</strong></p>
 </div>
 
 <div style="page-break-before: always;">
