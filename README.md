@@ -5111,7 +5111,7 @@ A continuación se presentan las preguntas diseñadas para las entrevistas final
 ![Imagen de entrevista](img/TB1/Entrevistas/Entrevista1-Segmento1.png)
 
 - **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
-validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQAC_B1hZYbtRaf-j6yk2RnZAWleZHvzuLEwVm4Em2ZxUFg?e=3cisI8)
 - **Duración:** 0:00 - 13:22
 - **Aplicaciones usadas:** Instagram, Chrome
 - **Tecnologías:** Computadora, Celular
@@ -5132,7 +5132,7 @@ Para Diana, la interfaz de EMSafe es fundamental para mantener la paz mental en 
 ![Imagen de entrevista](img/TB1/Entrevistas/Entrevista2-Segmento1.png)
 
 - **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
-validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQAC_B1hZYbtRaf-j6yk2RnZAWleZHvzuLEwVm4Em2ZxUFg?e=3cisI8)
 - **Duración:** 13:23 - 22:29
 - **Aplicaciones usadas:** Youtube, Tiktok
 - **Tecnologías:** Celular, Computadora
@@ -5152,7 +5152,8 @@ Hangales percibe a EMSafe como una pieza clave para desenvolverse en ambientes a
 
 ![Imagen de entrevista](img/TB1/Entrevistas/Entrevista5-Segmento1.png)
 
-- **Link:** link
+- **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQAC_B1hZYbtRaf-j6yk2RnZAWleZHvzuLEwVm4Em2ZxUFg?e=3cisI8)
 - **Duración:** 22:30 - 30:14
 - **Aplicaciones usadas:** Youtube, Instagram
 - **Tecnologías:** Computadore, Celular
@@ -5175,7 +5176,7 @@ Mateo considera que EMSafe es una herramienta útil para personas que buscan ten
 ![Imagen de entrevista](img/TB1/Entrevistas/Entrevista3-Segmento2.png)
 
 - **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
-validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQAC_B1hZYbtRaf-j6yk2RnZAWleZHvzuLEwVm4Em2ZxUFg?e=3cisI8)
 - **Duración:** 30:15 - 44:20
 - **Aplicaciones usadas:** Tiktok, Facebook
 - **Tecnologías:** Computadora
@@ -5196,7 +5197,7 @@ Gael considera que EMSafe representa una herramienta importante para empresas qu
 ![Imagen de entrevista](img/TB1/Entrevistas/Entrevista4-Segmento2.png)
 
 - **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
-validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQAC_B1hZYbtRaf-j6yk2RnZAWleZHvzuLEwVm4Em2ZxUFg?e=3cisI8)
 - **Duración:** 44:20 - 55:20
 - **Aplicaciones usadas:** Facebook, Instagram
 - **Tecnologías:** Celular
@@ -5216,7 +5217,8 @@ Alejandro percibe a EMSafe como una solución útil para organizaciones que nece
 
 ![Imagen de entrevista](img/TB1/Entrevistas/Entrevista%206-Segmento%202.png)
 
-- **Link:** link
+- **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQAC_B1hZYbtRaf-j6yk2RnZAWleZHvzuLEwVm4Em2ZxUFg?e=3cisI8)
 - **Duración:** 55:21 - 1:02:23
 - **Aplicaciones usadas:** Facebook
 - **Tecnologías:** Celular Computadora
