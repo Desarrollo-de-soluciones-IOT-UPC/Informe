@@ -1,45 +1,61 @@
-<div style="text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 50px;">
-    <img src="img/AV1/caratula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
-    <h1 style="font-size: 24px;">Universidad Peruana de Ciencias Aplicadas</h1>
-    <h2 style="font-size: 24px;">Facultad de Ingeneria</h2>
-    <p style="margin: 10px 0; border-bottom: none;"><strong>Curso:</strong> 1ASI0572 - Desarrollo de Soluciones IoT</p>
-    <p style="margin: 10px 0; border-bottom: none;"><strong>NRC:</strong> 6766</p>
-    <p style="margin: 10px 0; border-bottom: none;"><strong>Nombre del profesor:</strong> Marco Antonio León Baca</p>
-    <h2 style="font-size: 24px;">Informe de Trabajo Final</h2>
-    <p style="margin: 10px 0; border-bottom: none;"><strong>Nombre del grupo:</strong> Gauss</p>
-    <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; "><strong>Nombre del producto:</strong> EMsafe</p>
-    <h4 style="font-size: 18px; margin-bottom: 20px;"><strong>Integrantes</strong></h4>
-    <table style="width: 50%; margin: 0 auto; text-align: center;">
-        <tr>
-            <th>Código</th>
-            <th>Apellidos y Nombres</th>
-        </tr>
-        <tr>
-            <td>U202212214</td>
-            <td>Sosa Soto, Oskar Rodrigo</td>
-        </tr>
-        <tr>
-            <td>U202215695</td>
-            <td>Lopez de la Cruz, Mauro Fabricio</td>
-        </tr>
-        <tr>
-            <td>U202210364</td>
-            <td>Guimaraes Escalante, Carlos Eduardo</td>
-        </tr>
-        <tr>
-            <td>U202312013</td>
-            <td>Oliva Lopez, Fabian Alejandro</td>
-        </tr>
-        <tr>
-            <td>U202214522</td>
-            <td>Lizano Coll Cardenas, Fernando Jesus</td>
-        </tr>
-    </table>
-    </br></br>
-    <p style="margin: 10px 0; border-bottom: none;"><strong>Lima - Julio 2025</strong></p>
+<div style="text-align: center; font-family: Arial, sans-serif; font-size: 15px; line-height: 1.55; margin: 0; padding: 30px 40px;">
+
+<img src="img/AV1/caratula/upc-logo.png" alt="Logo UPC" style="width: 95px; display: block; margin: 0 auto 28px auto;">
+
+<p style="margin: 0;">Universidad Peruana de Ciencias Aplicadas</p>
+<p style="margin: 0 0 32px 0;">Carrera de Ingeniería de Software</p>
+
+<p style="margin: 0;"><strong>1ASI0572</strong></p>
+<p style="margin: 0;"><strong>Desarrollo de Soluciones IoT</strong></p>
+
+<p style="margin: 20px 0 0 0;">NRC</p>
+<p style="margin: 0;"><strong>6766</strong></p>
+
+<h2 style="font-size: 23px; margin: 26px 0 20px 0;">Informe del Trabajo Final</h2>
+
+<p style="margin: 0;">Docente</p>
+<p style="margin: 0 0 28px 0;"><strong>León Baca, Marco Antonio</strong></p>
+
+<p style="margin: 0;">Equipo</p>
+<p style="margin: 0 0 28px 0;"><strong>Gauss</strong></p>
+
+<p style="margin: 0;">Proyecto</p>
+<p style="margin: 0 0 32px 0;"><strong>EMSafe</strong></p>
+
+<p style="margin: 0 0 14px 0;"><strong>Integrantes</strong></p>
+
+<table style="width: 82%; margin: 0 auto; border-collapse: collapse; text-align: left; font-size: 14px;">
+<tr>
+<th style="padding: 6px 12px; border: 1px solid #cccccc;">Código</th>
+<th style="padding: 6px 12px; border: 1px solid #cccccc;">Apellidos y Nombres</th>
+</tr>
+<tr>
+<td style="padding: 6px 12px; border: 1px solid #cccccc;">U202212214</td>
+<td style="padding: 6px 12px; border: 1px solid #cccccc;">Sosa Soto, Oskar Rodrigo</td>
+</tr>
+<tr>
+<td style="padding: 6px 12px; border: 1px solid #cccccc;">U202215695</td>
+<td style="padding: 6px 12px; border: 1px solid #cccccc;">Lopez de la Cruz, Mauro Fabricio</td>
+</tr>
+<tr>
+<td style="padding: 6px 12px; border: 1px solid #cccccc;">U202210364</td>
+<td style="padding: 6px 12px; border: 1px solid #cccccc;">Guimaraes Escalante, Carlos Eduardo</td>
+</tr>
+<tr>
+<td style="padding: 6px 12px; border: 1px solid #cccccc;">U202312013</td>
+<td style="padding: 6px 12px; border: 1px solid #cccccc;">Oliva Lopez, Fabian Alejandro</td>
+</tr>
+<tr>
+<td style="padding: 6px 12px; border: 1px solid #cccccc;">U202214522</td>
+<td style="padding: 6px 12px; border: 1px solid #cccccc;">Lizano Coll Cardenas, Fernando Jesus</td>
+</tr>
+</table>
+
+<p style="margin-top: 90px;"><strong>Periodo 202610</strong></p>
+
 </div>
 
-<div style="page-break-before: always;">
+<div style="page-break-before: always;"></div>
 
 ## Registro de versiones del informe
 
