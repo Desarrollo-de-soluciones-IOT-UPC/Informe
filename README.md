@@ -5388,7 +5388,11 @@ Las siguientes tareas quedan fuera del alcance de esta evaluación, debido a que
 
 ## 6.4. Video About-the-Product
 
-poner video
+El link del video About the Product realizado para este Sprint se encuentra en el siguiente Link:
+
+<a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQDa7RJaPxBKRKiiupyrOo2TARAXO-w0xUJwipeeVdbyvRA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=NXJq4J">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQDa7RJaPxBKRKiiupyrOo2TARAXO-w0xUJwipeeVdbyvRA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=NXJq4J</a>
+
+
 
 ## Conclusiones y recomendaciones
 
@@ -5411,6 +5415,10 @@ poner video
 
 # Anexo
 
+ANEXO A:
+
 Video About the team - [upc-pre-202610-1asi0572-6766-EmSafe-
 about the team-sprint-3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212214_upc_edu_pe/IQCSQ311RLewTafDPis-h1W0AQEOsLWqx8Bp93cuA2WUu7c?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=QSZMDR)
+
+
 
