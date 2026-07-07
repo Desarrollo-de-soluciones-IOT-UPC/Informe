@@ -4967,6 +4967,26 @@ Durante el Sprint 2, se completó la integración del **Frontend Web Application
 
 <img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-8.jpg" alt="Pantalla de login de la app móvil">
 
+**Mobile Application — Monitoreo del sensor con lectura actual de exposición electromagnética.**
+
+<img src="img/TB1/MobileEvidence/Monitoreo-Sensor.jpg" alt="Monitoreo del sensor en la app móvil">
+
+**Mobile Application — Tips de salud para reducir la exposición electromagnética.**
+
+<img src="img/TB1/MobileEvidence/Tipo-Salud.jpg" alt="Tips de salud en la app móvil">
+
+**Mobile Application — Historial de medidas con lecturas recientes del sensor.**
+
+<img src="img/TB1/MobileEvidence/Historial-Medidas.jpg" alt="Historial de medidas del sensor en la app móvil">
+
+**Mobile Application — Alerta que activa el actuador ante radiación peligrosa.**
+
+<img src="img/TB1/MobileEvidence/Alertas.jpg" alt="Alerta de radiación peligrosa y activación del actuador">
+
+**Mobile Application — Mapa de radiación electromagnética con zonas monitoreadas.**
+
+<img src="img/TB1/MobileEvidence/Radiaton%20Map%20-%203.jpg" alt="Mapa de radiación electromagnética en la app móvil">
+
 ### 6.2.3.7. Services Documentation Evidence for Sprint Review
 
 En esta sección se presenta la documentación relacionada con los servicios utilizados durante el Sprint 3 de EMSafe. A diferencia de los sprints anteriores, en esta entrega el enfoque no estuvo en la integración de nuevos endpoints sino en la **validación end-to-end del sistema completo** con el dispositivo IoT físico, verificando que los servicios ya desplegados respondieran correctamente ante datos reales capturados por el sensor ESP32.
@@ -5041,21 +5061,33 @@ Durante el Sprint 2, también se validó el despliegue local del **Edge Service*
 
 <img src="img/TB1/Sprint-2_Edge/Edge_Evidence-4.jpg" alt="Lecturas procesadas por el Edge Service">
 
+### **Evidencia de Despliegue Continua**
+
+<img src="img/TB1/MobileEvidence/Despliegue.jpg">
+
 ### 6.2.3.9. Team Collaboration Insights during Sprint
 
 Durante este sprint, el equipo enfocó sus esfuerzos en la validación end-to-end del sistema EMSafe con el dispositivo IoT físico, asegurando que el flujo completo de datos desde el sensor ESP32 hasta las interfaces de usuario funcionara correctamente en producción. Para organizar el trabajo, se continuó utilizando GitHub como herramienta principal de colaboración, incorporando el nuevo repositorio **emsafe-edge-flask** para gestionar la comunicación entre el hardware y la nube, y trabajando sobre las ramas `main` y `develop` de los repositorios existentes para aplicar los ajustes finales del sistema. La coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar los resultados de las pruebas con el dispositivo físico, resolver incidencias de integración hardware-software y sincronizar los retoques finales en el Backend, Frontend Web y Mobile Application para el cierre del proyecto.
 
 ## Github analytics de nuestro Back-End — Sprint 3:
 
-poner imagen
+<img src="img/TB1/Collaborators/Back%20End-Collaborators.jpg" alt="Github analytics Back-End Sprint 3">
 
 ## Github analytics de nuestro Front-End — Sprint 3:
 
-poner imagen
+<img src="img/TB1/Collaborators/Front%20End-Collaborators.jpg" alt="Github analytics Front-End Sprint 3">
 
 ## Github analytics de nuestro emsafe-edge-flask — Sprint 3:
 
-poner imagen
+<img src="img/TB1/Collaborators/Edge-Collaborators.jpg" alt="Github analytics emsafe-edge-flask Sprint 3">
+
+## Github analytics de nuestro Mobile App — Sprint 3:
+
+<img src="img/TB1/Collaborators/Mobile%20App-Collaborators.jpg" alt="Github analytics Mobile App Sprint 3">
+
+## Github analytics de nuestro Informe — Sprint 3:
+
+<img src="img/TB1/Collaborators/Informe-Collaborators.jpg" alt="Github analytics Informe Sprint 3">
 
 ## 6.3. Validation Interviews
 
@@ -5357,4 +5389,6 @@ poner video
 
 # Anexo
 
+Video About the team - [upc-pre-202610-1asi0572-6766-EmSafe-
+about the team-sprint-3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212214_upc_edu_pe/IQCSQ311RLewTafDPis-h1W0AQEOsLWqx8Bp93cuA2WUu7c?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=QSZMDR)
 
