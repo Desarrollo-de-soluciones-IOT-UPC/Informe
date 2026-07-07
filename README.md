@@ -1,61 +1,79 @@
-<div style="text-align: center; font-family: Arial, sans-serif; font-size: 15px; line-height: 1.55; margin: 0; padding: 30px 40px;">
+<div align="center">
 
-<img src="img/AV1/caratula/upc-logo.png" alt="Logo UPC" style="width: 95px; display: block; margin: 0 auto 28px auto;">
+<img src="img/AV1/caratula/upc-logo.png" alt="Logo UPC" width="100">
 
-<p style="margin: 0;">Universidad Peruana de Ciencias Aplicadas</p>
-<p style="margin: 0 0 32px 0;">Carrera de Ingeniería de Software</p>
+<br>
 
-<p style="margin: 0;"><strong>1ASI0572</strong></p>
-<p style="margin: 0;"><strong>Desarrollo de Soluciones IoT</strong></p>
+Universidad Peruana de Ciencias Aplicadas  
+Carrera de Ingeniería de Software
 
-<p style="margin: 20px 0 0 0;">NRC</p>
-<p style="margin: 0;"><strong>6766</strong></p>
+<br><br>
 
-<h2 style="font-size: 23px; margin: 26px 0 20px 0;">Informe del Trabajo Final</h2>
+<strong>1ASI0572</strong>  
+<strong>Desarrollo de Soluciones IoT</strong>
 
-<p style="margin: 0;">Docente</p>
-<p style="margin: 0 0 28px 0;"><strong>León Baca, Marco Antonio</strong></p>
+<br><br>
 
-<p style="margin: 0;">Equipo</p>
-<p style="margin: 0 0 28px 0;"><strong>Gauss</strong></p>
+NRC  
+<strong>6766</strong>
 
-<p style="margin: 0;">Proyecto</p>
-<p style="margin: 0 0 32px 0;"><strong>EMSafe</strong></p>
+<br><br>
 
-<p style="margin: 0 0 14px 0;"><strong>Integrantes</strong></p>
+<h2>Informe del Trabajo Final</h2>
 
-<table style="width: 82%; margin: 0 auto; border-collapse: collapse; text-align: left; font-size: 14px;">
-<tr>
-<th style="padding: 6px 12px; border: 1px solid #cccccc;">Código</th>
-<th style="padding: 6px 12px; border: 1px solid #cccccc;">Apellidos y Nombres</th>
-</tr>
-<tr>
-<td style="padding: 6px 12px; border: 1px solid #cccccc;">U202212214</td>
-<td style="padding: 6px 12px; border: 1px solid #cccccc;">Sosa Soto, Oskar Rodrigo</td>
-</tr>
-<tr>
-<td style="padding: 6px 12px; border: 1px solid #cccccc;">U202215695</td>
-<td style="padding: 6px 12px; border: 1px solid #cccccc;">Lopez de la Cruz, Mauro Fabricio</td>
-</tr>
-<tr>
-<td style="padding: 6px 12px; border: 1px solid #cccccc;">U202210364</td>
-<td style="padding: 6px 12px; border: 1px solid #cccccc;">Guimaraes Escalante, Carlos Eduardo</td>
-</tr>
-<tr>
-<td style="padding: 6px 12px; border: 1px solid #cccccc;">U202312013</td>
-<td style="padding: 6px 12px; border: 1px solid #cccccc;">Oliva Lopez, Fabian Alejandro</td>
-</tr>
-<tr>
-<td style="padding: 6px 12px; border: 1px solid #cccccc;">U202214522</td>
-<td style="padding: 6px 12px; border: 1px solid #cccccc;">Lizano Coll Cardenas, Fernando Jesus</td>
-</tr>
+Docente  
+<strong>León Baca, Marco Antonio</strong>
+
+<br><br>
+
+Equipo  
+<strong>Gauss</strong>
+
+<br><br>
+
+Proyecto  
+<strong>EMSafe</strong>
+
+<br><br>
+
+<strong>Integrantes</strong>
+
+<br><br>
+
+<table align="center">
+  <tr>
+    <th>Código</th>
+    <th>Apellidos y Nombres</th>
+  </tr>
+  <tr>
+    <td>U202212214</td>
+    <td>Sosa Soto, Oskar Rodrigo</td>
+  </tr>
+  <tr>
+    <td>U202215695</td>
+    <td>Lopez de la Cruz, Mauro Fabricio</td>
+  </tr>
+  <tr>
+    <td>U202210364</td>
+    <td>Guimaraes Escalante, Carlos Eduardo</td>
+  </tr>
+  <tr>
+    <td>U202312013</td>
+    <td>Oliva Lopez, Fabian Alejandro</td>
+  </tr>
+  <tr>
+    <td>U202214522</td>
+    <td>Lizano Coll Cardenas, Fernando Jesus</td>
+  </tr>
 </table>
 
-<p style="margin-top: 90px;"><strong>Periodo 202610</strong></p>
+<br><br>
+
+<strong>Periodo 202610</strong>
 
 </div>
 
-<div style="page-break-before: always;"></div>
+<br><br>
 
 ## Registro de versiones del informe
 
