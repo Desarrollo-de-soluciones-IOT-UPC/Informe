@@ -5141,14 +5141,34 @@ validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIP
 **Resumen:**  
 Hangales percibe a EMSafe como una pieza clave para desenvolverse en ambientes altamente tecnologizados, donde antes sentía una preocupación constante por la exposición electromagnética, pero no tenía una forma clara de medirla. La claridad de la pantalla principal le brinda la seguridad necesaria para tomar decisiones informadas sobre su entorno, transformando una incertidumbre invisible en datos precisos. Considera que el sistema de recomendaciones es altamente aplicable a su rutina, facilitando una reducción efectiva de los niveles de radiación. Para él, lo más valioso es que la aplicación funciona como un puente entre la tecnología y la salud preventiva, permitiendo que cualquier persona tome medidas concretas para protegerse. Recomendaría la herramienta a su círculo cercano, especialmente a quienes pasan largas jornadas cerca de dispositivos móviles y routers, destacando que representa un estándar necesario de bienestar. Como mejora, sugiere una mayor integración de los reportes, de manera que la información recolectada por los sensores IoT pueda visualizarse con mayor detalle analítico y así comprender mejor el impacto a largo plazo en su salud.
 
+> Entrevistado 03: Mateo Monge
+
+- **Sexo:** Masculino
+- **Edad:** 26
+- **Distrito donde vive:** Miraflores, Lima
+- **Nivel socioeconómico:** Medio
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Entrevistas/Entrevista5-Segmento1.png)
+
+- **Link:** link
+- **Duración:** 22:30 - 30:14
+- **Aplicaciones usadas:** Youtube, Instagram
+- **Tecnologías:** Computadore, Celular
+- **Entrevistador:** Carlos Guimaraes
+
+**Resumen:**  
+Mateo considera que EMSafe es una herramienta útil para personas que buscan tener mayor control sobre su bienestar en espacios donde usan constantemente dispositivos electrónicos. Señala que, antes de conocer la aplicación, no tenía una forma clara de identificar si su exposición electromagnética era baja, moderada o alta, por lo que valoró que la app presente esta información de manera visual y sencilla. Destaca especialmente las alertas automáticas, ya que le permiten reaccionar a tiempo cuando se detectan niveles elevados, sin necesidad de revisar la aplicación constantemente. También considera importante el historial de mediciones, porque le ayuda a reconocer patrones en su rutina diaria y a tomar decisiones como alejar ciertos dispositivos de su zona de descanso o trabajo. Para él, EMSafe aporta tranquilidad, prevención y mayor conciencia sobre un riesgo que normalmente pasa desapercibido. Como mejora, sugiere incluir recomendaciones más específicas según el tipo de ambiente, por ejemplo dormitorio, sala de estudio o zona de trabajo.
+
 #### Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética
 
 > Entrevistado 01: Gael Rivera
 
 - **Sexo:** Masculino
 - **Edad:** 25
-- **Distrito donde vive:** Pendiente
-- **Nivel socioeconómico:** Pendiente
+- **Distrito donde vive:** El Agustino, Lima
+- **Nivel socioeconómico:** Medio
 
 **Entrevista:**
 
@@ -5156,9 +5176,9 @@ Hangales percibe a EMSafe como una pieza clave para desenvolverse en ambientes a
 
 - **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
 validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
-- **Duración:** 22:30 - 35:36
-- **Aplicaciones usadas:** Pendiente
-- **Tecnologías:** Pendiente
+- **Duración:** 30:15 - 44:20
+- **Aplicaciones usadas:** Tiktok, Facebook
+- **Tecnologías:** Computadora
 - **Entrevistador:** Fabian Alejandro Oliva Lopez
 
 **Resumen:**  
@@ -5168,8 +5188,8 @@ Gael considera que EMSafe representa una herramienta importante para empresas qu
 
 - **Sexo:** Masculino
 - **Edad:** 28
-- **Distrito donde vive:** Pendiente
-- **Nivel socioeconómico:** Pendiente
+- **Distrito donde vive:** Miraflores, Lina
+- **Nivel socioeconómico:** Medio Alto
 
 **Entrevista:**
 
@@ -5177,13 +5197,33 @@ Gael considera que EMSafe representa una herramienta importante para empresas qu
 
 - **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
 validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
-- **Duración:** 35:37 - 46:95
-- **Aplicaciones usadas:** Pendiente
-- **Tecnologías:** Pendiente
+- **Duración:** 44:20 - 55:20
+- **Aplicaciones usadas:** Facebook, Instagram
+- **Tecnologías:** Celular
 - **Entrevistador:** Fabian Alejandro Oliva Lopez
 
 **Resumen:**  
 Alejandro percibe a EMSafe como una solución útil para organizaciones que necesitan controlar ambientes donde existen equipos tecnológicos, maquinaria industrial o dispositivos que pueden generar exposición electromagnética. Señala que, en muchas empresas, este tipo de riesgo suele pasar desapercibido porque no es visible y porque las mediciones tradicionales suelen realizarse solo de manera puntual. Por ello, considera valioso que EMSafe permita centralizar la información mediante sensores IoT y una plataforma que muestre el estado de las zonas monitoreadas. Destaca que el mapa de radiación y los indicadores visuales pueden ayudar tanto al personal técnico como a los responsables administrativos a comprender rápidamente qué áreas requieren atención. Además, considera que las alertas pueden fortalecer los protocolos de seguridad, ya que permiten reaccionar de forma preventiva antes de que los niveles se conviertan en un problema mayor. Para Alejandro, la principal ventaja de EMSafe es que aporta trazabilidad, evidencia y control continuo a la gestión de seguridad ocupacional. Como mejora, propone agregar dashboards comparativos por área o sede, así como reportes exportables que permitan demostrar el cumplimiento de medidas preventivas ante gerencia o auditorías.
+
+> Entrevistado 03: Jose Miguel
+
+- **Sexo:** Masculino
+- **Edad:** 26
+- **Distrito donde vive:** San Miguel, Lima
+- **Nivel socioeconómico:** Medio
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Entrevistas/Entrevista%206-Segmento%202.png)
+
+- **Link:** link
+- **Duración:** 55:21 - 1:02:23
+- **Aplicaciones usadas:** Facebook
+- **Tecnologías:** Celular Computadora
+- **Entrevistador:** Fernando Lizano
+
+**Resumen:**  
+Jose Miguel percibe a EMSafe como una solución importante para empresas u organizaciones que trabajan con equipos capaces de emitir radiación electromagnética, ya que permite monitorear el entorno laboral de forma más ordenada y continua. Desde su punto de vista, muchas organizaciones suelen enfocarse en riesgos visibles, pero no siempre cuentan con herramientas para controlar factores ambientales menos evidentes, como la exposición electromagnética. Por ello, considera valioso que EMSafe integre sensores IoT, alertas y una plataforma de seguimiento que permita identificar zonas críticas y actuar de manera preventiva. Destaca que el sistema puede ayudar a mejorar la seguridad ocupacional, facilitar la supervisión del personal responsable y generar evidencia para futuras auditorías internas. También valora que los datos se puedan visualizar de forma clara mediante indicadores, historial y mapas, ya que esto permite tomar decisiones sin depender únicamente de mediciones manuales. Como mejora, sugiere incorporar reportes comparativos por áreas de trabajo y notificaciones automáticas para responsables de seguridad o mantenimiento.
 
 ### 6.3.3. Evaluaciones según heurísticas
 
