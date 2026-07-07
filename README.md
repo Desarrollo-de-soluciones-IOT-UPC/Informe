@@ -5110,7 +5110,8 @@ A continuación se presentan las preguntas diseñadas para las entrevistas final
 
 ![Imagen de entrevista](img/TB1/Entrevistas/Entrevista1-Segmento1.png)
 
-- **Link:** [link](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
+- **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
 - **Duración:** 0:00 - 13:22
 - **Aplicaciones usadas:** Instagram, Chrome
 - **Tecnologías:** Computadora, Celular
@@ -5130,7 +5131,8 @@ Para Diana, la interfaz de EMSafe es fundamental para mantener la paz mental en 
 
 ![Imagen de entrevista](img/TB1/Entrevistas/Entrevista2-Segmento1.png)
 
-- **Link:** [link](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
+- **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
 - **Duración:** 13:23 - 22:29
 - **Aplicaciones usadas:** Youtube, Tiktok
 - **Tecnologías:** Celular, Computadora
@@ -5152,7 +5154,8 @@ Hangales percibe a EMSafe como una pieza clave para desenvolverse en ambientes a
 
 ![Imagen de entrevista](img/TB1/Entrevistas/Entrevista3-Segmento2.png)
 
-- **Link:** [link](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
+- **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
 - **Duración:** 22:30 - 35:36
 - **Aplicaciones usadas:** Pendiente
 - **Tecnologías:** Pendiente
@@ -5172,7 +5175,8 @@ Gael considera que EMSafe representa una herramienta importante para empresas qu
 
 ![Imagen de entrevista](img/TB1/Entrevistas/Entrevista4-Segmento2.png)
 
-- **Link:** [link](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
+- **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQBqxGKPP2ijQauvjvQyIPDrAdYDCuVHKKDnCpys4xeFqwc?e=EMfh7g)
 - **Duración:** 35:37 - 46:95
 - **Aplicaciones usadas:** Pendiente
 - **Tecnologías:** Pendiente
