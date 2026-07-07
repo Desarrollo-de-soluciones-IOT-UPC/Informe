@@ -1,44 +1,42 @@
 <div align="center">
 
-<img src="img/AV1/caratula/upc-logo.png" alt="Logo UPC" width="100">
+<img src="img/AV1/caratula/upc-logo.png" alt="Logo UPC" width="95">
 
-<br>
-
-Universidad Peruana de Ciencias Aplicadas  
+<p align="center">
+Universidad Peruana de Ciencias Aplicadas<br>
 Carrera de Ingeniería de Software
+</p>
 
-<br><br>
-
-<strong>1ASI0572</strong>  
+<p align="center">
+<strong>1ASI0572</strong><br>
 <strong>Desarrollo de Soluciones IoT</strong>
+</p>
 
-<br><br>
-
-NRC  
+<p align="center">
+NRC<br>
 <strong>6766</strong>
+</p>
 
-<br><br>
+<h3 align="center">Informe del Trabajo Final</h3>
 
-<h2>Informe del Trabajo Final</h2>
-
-Docente  
+<p align="center">
+Docente<br>
 <strong>León Baca, Marco Antonio</strong>
+</p>
 
-<br><br>
-
-Equipo  
+<p align="center">
+Equipo<br>
 <strong>Gauss</strong>
+</p>
 
-<br><br>
-
-Proyecto  
+<p align="center">
+Proyecto<br>
 <strong>EMSafe</strong>
+</p>
 
-<br><br>
-
+<p align="center">
 <strong>Integrantes</strong>
-
-<br><br>
+</p>
 
 <table align="center">
   <tr>
@@ -67,13 +65,11 @@ Proyecto
   </tr>
 </table>
 
-<br><br>
-
+<p align="center">
 <strong>Periodo 202610</strong>
+</p>
 
 </div>
-
-<br><br>
 
 ## Registro de versiones del informe
 
