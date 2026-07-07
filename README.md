@@ -5017,6 +5017,10 @@ En esta sección se describe el proceso de actualización del despliegue de la p
 
 <img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Page Deploy.png">
 
+5. Se realizó el último cambio de la Landing Page, verificando que la página desplegada refleje correctamente las actualizaciones finales realizadas durante el Sprint 3.
+
+<img src="img/TB1/Collaborators/landing%20page.jpg" alt="Github analytics Landing Page Sprint 3">
+
 **Mobile Deployment**
 
 En esta sección se describe el proceso de despliegue de la aplicación móvil de EMSafe correspondiente al Sprint 2. Para esta entrega, el equipo generó una versión de producción de la aplicación móvil desarrollada en Flutter y la distribuyó mediante **Firebase App Distribution**, permitiendo que los testers puedan acceder a la aplicación desde sus dispositivos móviles.
