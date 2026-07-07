@@ -5097,11 +5097,194 @@ A continuación se presentan las preguntas diseñadas para las entrevistas final
 
 ### 6.3.2. Registro de Entrevistas
 
-poner entrevistas
+#### Segmento 1: Personas comprometidas con el cuidado de su salud
+
+> Entrevistado 01: Diana Gupioc
+
+- **Sexo:** Femenino
+- **Edad:** 25
+- **Distrito donde vive:** Santiago de Surco, Lima
+- **Nivel socioeconómico:** Medio
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Entrevistas/Entrevista1-Segmento1.png)
+
+- **Link:** link
+- **Duración:** 0:00 - 13:22
+- **Aplicaciones usadas:** Instagram, Chrome
+- **Tecnologías:** Computadora, Celular
+- **Entrevistador:** Rodrigo Sosa
+
+**Resumen:**  
+Para Diana, la interfaz de EMSafe es fundamental para mantener la paz mental en su vida diaria, ya que le permite conocer de inmediato el nivel de exposición electromagnética al que está sometida, sin necesidad de ser una experta técnica. Valora que las notificaciones funcionen como una alerta oportuna, permitiéndole actuar rápidamente antes de que se superen los umbrales de seguridad recomendados. Considera que la visualización del mapa es una herramienta muy útil para identificar y evitar zonas de alta radiación en su hogar y entorno cercano. Gracias al historial de exposición, ha logrado entender cómo varían sus niveles de radiación a lo largo del tiempo, lo cual, junto con las recomendaciones personalizadas, le ha permitido ajustar sus hábitos diarios para crear un espacio más seguro. Para ella, EMSafe es una solución necesaria ante el crecimiento tecnológico actual, y recomendaría la aplicación a cualquier persona que busque tomar el control de su bienestar ambiental mediante información basada en evidencia. Como mejora, sugiere implementar funciones específicas para monitorear la exposición en áreas críticas, como el dormitorio durante las horas de descanso.
+
+> Entrevistado 02: Hangales Cieza
+
+- **Sexo:** Femenino
+- **Edad:** 26
+- **Distrito donde vive:** San Borja, Lima
+- **Nivel socioeconómico:** Medio
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Entrevistas/Entrevista2-Segmento1.png)
+
+- **Link:** link
+- **Duración:** 13:23 - 22:29
+- **Aplicaciones usadas:** Youtube, Tiktok
+- **Tecnologías:** Celular, Computadora
+- **Entrevistador:** Rodrigo Sosa
+
+**Resumen:**  
+Hangales percibe a EMSafe como una pieza clave para desenvolverse en ambientes altamente tecnologizados, donde antes sentía una preocupación constante por la exposición electromagnética, pero no tenía una forma clara de medirla. La claridad de la pantalla principal le brinda la seguridad necesaria para tomar decisiones informadas sobre su entorno, transformando una incertidumbre invisible en datos precisos. Considera que el sistema de recomendaciones es altamente aplicable a su rutina, facilitando una reducción efectiva de los niveles de radiación. Para él, lo más valioso es que la aplicación funciona como un puente entre la tecnología y la salud preventiva, permitiendo que cualquier persona tome medidas concretas para protegerse. Recomendaría la herramienta a su círculo cercano, especialmente a quienes pasan largas jornadas cerca de dispositivos móviles y routers, destacando que representa un estándar necesario de bienestar. Como mejora, sugiere una mayor integración de los reportes, de manera que la información recolectada por los sensores IoT pueda visualizarse con mayor detalle analítico y así comprender mejor el impacto a largo plazo en su salud.
+
+#### Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética
+
+> Entrevistado 01: Gael Rivera
+
+- **Sexo:** Masculino
+- **Edad:** 25
+- **Distrito donde vive:** Pendiente
+- **Nivel socioeconómico:** Pendiente
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Entrevistas/Entrevista3-Segmento2.png)
+
+- **Link:** link
+- **Duración:** 22:30 - 35:36
+- **Aplicaciones usadas:** Pendiente
+- **Tecnologías:** Pendiente
+- **Entrevistador:** Fabian Alejandro Oliva Lopez
+
+**Resumen:**  
+Gael considera que EMSafe representa una herramienta importante para empresas que trabajan con maquinaria o equipos capaces de generar emisiones electromagnéticas, ya que permite pasar de un control manual y poco frecuente a un monitoreo más constante y ordenado. Desde su perspectiva, contar con información en tiempo real facilita que el personal responsable pueda identificar zonas de mayor exposición y actuar antes de que se presenten riesgos para los trabajadores. Valora especialmente el panel de visualización, porque permite interpretar los niveles de radiación de manera clara sin depender únicamente de conocimientos técnicos. También destaca que las alertas automáticas pueden mejorar la respuesta operativa, ayudando a tomar decisiones rápidas como revisar equipos, restringir temporalmente un área o solicitar mantenimiento preventivo. Para él, el uso de EMSafe no solo contribuye a la seguridad laboral, sino también a generar mayor confianza dentro de la organización. Como mejora, sugiere incorporar reportes automáticos para supervisores y responsables de seguridad ocupacional, de modo que la información pueda utilizarse en auditorías internas y en la toma de decisiones empresariales.
+
+> Entrevistado 02: Alejandro Oroncoy
+
+- **Sexo:** Masculino
+- **Edad:** 28
+- **Distrito donde vive:** Pendiente
+- **Nivel socioeconómico:** Pendiente
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Entrevistas/Entrevista4-Segmento2.png)
+
+- **Link:** link
+- **Duración:** 35:37 - 46:95
+- **Aplicaciones usadas:** Pendiente
+- **Tecnologías:** Pendiente
+- **Entrevistador:** Fabian Alejandro Oliva Lopez
+
+**Resumen:**  
+Alejandro percibe a EMSafe como una solución útil para organizaciones que necesitan controlar ambientes donde existen equipos tecnológicos, maquinaria industrial o dispositivos que pueden generar exposición electromagnética. Señala que, en muchas empresas, este tipo de riesgo suele pasar desapercibido porque no es visible y porque las mediciones tradicionales suelen realizarse solo de manera puntual. Por ello, considera valioso que EMSafe permita centralizar la información mediante sensores IoT y una plataforma que muestre el estado de las zonas monitoreadas. Destaca que el mapa de radiación y los indicadores visuales pueden ayudar tanto al personal técnico como a los responsables administrativos a comprender rápidamente qué áreas requieren atención. Además, considera que las alertas pueden fortalecer los protocolos de seguridad, ya que permiten reaccionar de forma preventiva antes de que los niveles se conviertan en un problema mayor. Para Alejandro, la principal ventaja de EMSafe es que aporta trazabilidad, evidencia y control continuo a la gestión de seguridad ocupacional. Como mejora, propone agregar dashboards comparativos por área o sede, así como reportes exportables que permitan demostrar el cumplimiento de medidas preventivas ante gerencia o auditorías.
 
 ### 6.3.3. Evaluaciones según heurísticas
 
-falta entrevistas
+### UX Heuristics & Principles Evaluation  
+### Usability – Inclusive Design – Information Architecture
+
+**Carrera:** Ingeniería de Software  
+**Curso:** Desarrollo de Soluciones IoT  
+**NRC:** 6766  
+**Profesor:** Marco Antonio León Baca  
+**Auditor:** Equipo Gauss  
+**Cliente(s):** Equipo Gauss / Usuarios objetivo de EMSafe  
+
+---
+
+### SITE O APP A EVALUAR
+
+El sistema evaluado es **EMSafe**, una solución IoT orientada al monitoreo de radiación electromagnética no ionizante en entornos domésticos y laborales. Para este Sprint 3, la evaluación se enfoca en la versión final integrada del sistema, considerando la conexión end-to-end entre el dispositivo IoT físico, el Edge Service, el Backend API, el Frontend Web Application y la Mobile Application.
+
+La evaluación considera los siguientes módulos desarrollados, integrados y validados durante el sprint:
+
+- **Aplicación móvil EMSafe:** visualización de niveles de radiación electromagnética en tiempo real, alertas automatizadas, mapa de radiación, filtros por fecha/zona/nivel, reportes mensuales y anuales, gráficos de tendencias, chatbot con IA, gestión de perfil y preferencias del usuario.
+- **Plataforma web administrativa:** dashboard principal con métricas completas, historial de alarmas, gestión de alarmas, gestión de dispositivos, configuración de dispositivos y sección de perfil web.
+- **Backend API:** endpoints para mediciones en tiempo real, datos históricos agregados, mapa de calor, perfil de usuario, eliminación de datos personales, reportes, chat, registro de cliente y sincronización con el dispositivo IoT.
+- **Edge Service EMSafe:** servicio desarrollado con Flask para gestionar la comunicación entre el dispositivo físico ESP32 y el Backend API, sincronizando el estado del dispositivo y enviando lecturas reales hacia la nube.
+- **Dispositivo IoT EMSafe:** prototipo físico basado en ESP32, encargado de capturar datos de radiación electromagnética y transmitirlos hacia el sistema mediante el flujo edge-to-cloud.
+- **Landing Page de EMSafe:** sección de contacto implementada con estructura, estilos y validación de campos.
+
+---
+
+### TAREAS A EVALUAR
+
+Las tareas seleccionadas corresponden a los flujos principales implementados y validados durante el Sprint 3, considerando la experiencia de usuarios finales, administradores y responsables técnicos del sistema:
+
+1. Visualizar niveles de radiación electromagnética en tiempo real desde la Mobile Application.
+2. Recibir e interpretar alertas automatizadas cuando los niveles superan los umbrales establecidos.
+3. Consultar el mapa de radiación en tiempo real desde la aplicación móvil.
+4. Aplicar filtros por fecha, zona y nivel de radiación dentro del mapa.
+5. Consultar reportes mensuales y anuales de exposición electromagnética.
+6. Interpretar gráficos de tendencias para identificar patrones de exposición.
+7. Realizar consultas mediante el chatbot integrado con el servicio de IA.
+8. Actualizar datos personales y preferencias desde el perfil móvil.
+9. Visualizar métricas generales desde el Dashboard Web.
+10. Revisar el historial de alarmas desde la plataforma web administrativa.
+11. Cambiar el estado de una alarma a resuelta o en revisión.
+12. Agregar, editar, eliminar y configurar dispositivos IoT desde la plataforma web.
+13. Validar la transmisión de datos desde el dispositivo ESP32 hacia el Backend API mediante el Edge Service.
+14. Verificar que las lecturas capturadas por el dispositivo físico se reflejen correctamente en la Mobile Application y el Frontend Web Application.
+15. Utilizar la sección de contacto de la Landing Page para enviar información mediante el formulario.
+
+---
+
+### TAREAS NO INCLUIDAS
+
+Las siguientes tareas quedan fuera del alcance de esta evaluación, debido a que no forman parte del core funcional definido para la entrega final del Sprint 3 o se consideran futuras extensiones del sistema:
+
+- Módulo de agendamiento técnico avanzado, debido a que fue priorizado fuera del alcance principal del sprint.
+- Integraciones externas avanzadas con sistemas empresariales de terceros.
+- Automatizaciones complejas para controlar dispositivos externos más allá del flujo validado con el dispositivo IoT físico.
+- Procesos de pago, planes de suscripción o facturación.
+- Administración avanzada de roles, permisos granulares o auditoría completa.
+- Reportes regulatorios oficiales o certificados para entidades externas.
+- Mantenimiento predictivo automatizado basado en inteligencia artificial.
+- Despliegue masivo de sensores EMF especializados en ambientes reales de producción.
+- Publicación formal de la Mobile Application en tiendas como Google Play o App Store.
+- Funciones clínicas, médicas o diagnósticas relacionadas con la exposición electromagnética.
+
+---
+
+### ESCALA DE SEVERIDAD
+
+| Severidad | Descripción |
+|---|---|
+| 1 | Problema superficial, fácilmente superado y poco frecuente. |
+| 2 | Problema menor, ocurre con cierta frecuencia o genera leve fricción. |
+| 3 | Problema mayor, ocurre frecuentemente o impide que algunos usuarios completen la tarea. Requiere corrección prioritaria. |
+| 4 | Problema muy grave o bloqueante. Debe resolverse antes del lanzamiento. |
+
+---
+
+### TABLA RESUMEN
+
+| # | Problema | Severidad | Heurística violada |
+|---|---|---:|---|
+| 1 | El flujo end-to-end entre el ESP32, Edge Service, Backend API y las interfaces puede generar incertidumbre si no se muestra claramente el estado de sincronización de cada etapa. | 3 | Visibilidad del estado del sistema |
+| 2 | El mapa de radiación y sus filtros pueden resultar complejos para usuarios sin experiencia técnica si no se explica claramente qué representa cada zona, color o nivel. | 3 | Correspondencia entre el sistema y el mundo real / Diseño inclusivo |
+| 3 | Los reportes mensuales, anuales y gráficos de tendencias muestran información valiosa, pero pueden requerir explicaciones adicionales para facilitar la interpretación de patrones de exposición. | 2 | Reconocimiento antes que recuerdo |
+| 4 | La gestión de alarmas desde la plataforma web puede generar errores si los cambios de estado no incluyen confirmaciones claras o retroalimentación visible. | 3 | Prevención de errores / Visibilidad del estado del sistema |
+| 5 | La eliminación de datos personales del usuario requiere especial cuidado, ya que una acción irreversible sin confirmación suficiente puede afectar la confianza y seguridad del usuario. | 4 | Prevención de errores / Control y libertad del usuario |
+| 6 | La gestión de dispositivos IoT puede ser riesgosa si las acciones de editar, eliminar o configurar parámetros técnicos no diferencian claramente sus consecuencias. | 3 | Prevención de errores / Ayuda y documentación |
+| 7 | El chatbot con IA puede generar expectativas incorrectas si no comunica sus límites y si las recomendaciones no se presentan como orientación preventiva, no médica. | 3 | Ayuda y documentación / Diseño ético e inclusivo |
+| 8 | El sistema continúa dependiendo en parte del color para comunicar niveles de riesgo, lo que puede afectar a usuarios con dificultades visuales o daltonismo. | 2 | Accesibilidad y diseño inclusivo |
+
+---
+
+### SUPUESTOS BASADOS EN EL CONTEXTO DEL SPRINT 3
+
+- La evaluación se basa en las funcionalidades implementadas y validadas durante el Sprint 3.
+- Se asume que el sistema EMSafe cuenta con integración funcional entre el dispositivo físico ESP32, el Edge Service, el Backend API, el Frontend Web Application y la Mobile Application.
+- Se asume que la Mobile Application permite visualizar niveles de radiación, alertas, mapa, filtros, reportes, tendencias, chatbot y perfil de usuario.
+- Se asume que la plataforma web administrativa permite gestionar dashboard, alarmas, dispositivos y perfil.
+- Se asume que el Backend API expone los endpoints necesarios para mediciones en tiempo real, mapa de calor, reportes, perfil, eliminación de datos personales y comunicación con el Edge Service.
+- Se asume que el Edge Service funciona como intermediario entre el dispositivo IoT físico y la nube.
+- Se asume que el sistema fue validado con datos reales capturados por el hardware físico durante la etapa de pruebas end-to-end.
+- Se asume que algunas funcionalidades, como mantenimiento predictivo, reportes regulatorios oficiales, integraciones externas avanzadas y agendamiento técnico avanzado, pertenecen a una visión futura del producto.
 
 ## 6.4. Video About-the-Product
 
