@@ -5067,7 +5067,13 @@ Durante el Sprint 2, también se validó el despliegue local del **Edge Service*
 
 ### **Evidencia de Despliegue Continua**
 
+Como parte del Sprint 3, se verificó el despliegue continuo de la plataforma EMSafe mediante Azure App Service. En la evidencia se observa el historial de implementaciones realizadas correctamente, incluyendo merges desde ramas de desarrollo hacia el entorno desplegado, lo que confirma que los cambios fueron integrados y publicados de forma automática.
+
 <img src="img/TB1/MobileEvidence/Despliegue.jpg">
+
+<img src="img/TB1/Deploy Continuo/Front Continuo.jpg">
+
+<img src="img/TB1/Deploy Continuo/Back Continuo.jpg">
 
 ### 6.2.3.9. Team Collaboration Insights during Sprint
 
