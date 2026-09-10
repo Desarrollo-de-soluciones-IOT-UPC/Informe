@@ -1,45 +1,75 @@
-<div style="text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 50px;">
-    <img src="img/AV1/caratula/upc-logo.png" alt="LogoUPC" style="width: 150px; display: block; margin: 20px auto; margin-bottom: 60px;">
-    <h1 style="font-size: 24px;">Universidad Peruana de Ciencias Aplicadas</h1>
-    <h2 style="font-size: 24px;">Facultad de Ingeneria</h2>
-    <p style="margin: 10px 0; border-bottom: none;"><strong>Curso:</strong> 1ASI0572 - Desarrollo de Soluciones IoT</p>
-    <p style="margin: 10px 0; border-bottom: none;"><strong>NRC:</strong> 6766</p>
-    <p style="margin: 10px 0; border-bottom: none;"><strong>Nombre del profesor:</strong> Marco Antonio León Baca</p>
-    <h2 style="font-size: 24px;">Informe de Trabajo Final</h2>
-    <p style="margin: 10px 0; border-bottom: none;"><strong>Nombre del grupo:</strong> Gauss</p>
-    <p style="margin: 10px 0; border-bottom: none; margin-bottom: 40px; "><strong>Nombre del producto:</strong> EMsafe</p>
-    <h4 style="font-size: 18px; margin-bottom: 20px;"><strong>Integrantes</strong></h4>
-    <table style="width: 50%; margin: 0 auto; text-align: center;">
-        <tr>
-            <th>Código</th>
-            <th>Apellidos y Nombres</th>
-        </tr>
-        <tr>
-            <td>U202212214</td>
-            <td>Sosa Soto, Oskar Rodrigo</td>
-        </tr>
-        <tr>
-            <td>U202215695</td>
-            <td>Lopez de la Cruz, Mauro Fabricio</td>
-        </tr>
-        <tr>
-            <td>U202210364</td>
-            <td>Guimaraes Escalante, Carlos Eduardo</td>
-        </tr>
-        <tr>
-            <td>U202312013</td>
-            <td>Oliva Lopez, Fabian Alejandro</td>
-        </tr>
-        <tr>
-            <td>U202214522</td>
-            <td>Lizano Coll Cardenas, Fernando Jesus</td>
-        </tr>
-    </table>
-    </br></br>
-    <p style="margin: 10px 0; border-bottom: none;"><strong>Lima - Abril 2025</strong></p>
-</div>
+<div align="center">
 
-<div style="page-break-before: always;">
+<img src="img/AV1/caratula/upc-logo.png" alt="Logo UPC" width="95">
+
+<p align="center">
+Universidad Peruana de Ciencias Aplicadas<br>
+Carrera de Ingeniería de Software
+</p>
+
+<p align="center">
+<strong>1ASI0572</strong><br>
+<strong>Desarrollo de Soluciones IoT</strong>
+</p>
+
+<p align="center">
+NRC<br>
+<strong>6766</strong>
+</p>
+
+<h3 align="center">Informe del Trabajo Final</h3>
+
+<p align="center">
+Docente<br>
+<strong>León Baca, Marco Antonio</strong>
+</p>
+
+<p align="center">
+Equipo<br>
+<strong>Gauss</strong>
+</p>
+
+<p align="center">
+Proyecto<br>
+<strong>EMSafe</strong>
+</p>
+
+<p align="center">
+<strong>Integrantes</strong>
+</p>
+
+<table align="center">
+  <tr>
+    <th>Código</th>
+    <th>Apellidos y Nombres</th>
+  </tr>
+  <tr>
+    <td>U202212214</td>
+    <td>Sosa Soto, Oskar Rodrigo</td>
+  </tr>
+  <tr>
+    <td>U202215695</td>
+    <td>Lopez de la Cruz, Mauro Fabricio</td>
+  </tr>
+  <tr>
+    <td>U202210364</td>
+    <td>Guimaraes Escalante, Carlos Eduardo</td>
+  </tr>
+  <tr>
+    <td>U202312013</td>
+    <td>Oliva Lopez, Fabian Alejandro</td>
+  </tr>
+  <tr>
+    <td>U202214522</td>
+    <td>Lizano Coll Cardenas, Fernando Jesus</td>
+  </tr>
+</table>
+
+<p align="center">
+<strong>Periodo 202610</strong>
+</p>
+
+</div>
 
 ## Registro de versiones del informe
 
@@ -145,6 +175,43 @@
           <li>Nueva versión del Landing Page desplegada</li>
           <li>Nueva versión del Web Application desplegada</li>
           <li>Primera versión del Mobile Application desplegada</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="margin: 0 auto; text-align: center;"><strong>TB2</strong></td>
+      <td style="margin: 0 auto; text-align: center;">05/07/2026</td>
+      <td>
+        <ul>
+          <li>Sosa Soto, Oskar Rodrigo</li>
+          <li>Lopez de la Cruz, Mauro Fabricio</li>
+          <li>Guimaraes Escalante, Carlos Eduardo</li>
+          <li>Oliva Lopez, Fabian Alejandro</li>
+          <li>Lizano Coll Cardenas, Fernando Jesus</li>
+        </ul>
+      </td>
+      <td>
+        Adición en las secciones:
+        <ul>
+          <li>Registro de Versiones del Informe</li>
+          <li>Project Report Collaboration Insights</li>
+          <li>Student Outcome</li>
+          <li>Conclusiones finales</li>
+          <li>Anexos</li>
+        </ul>
+        Se han incluído los siguientes capítulos:
+        <ul>
+          <li>Capítulo VI: Sprint 3 (Sprint Planning, Aspect Leaders and Collaborators, Backlog, Development Evidence, Testing Suite Evidence, Execution Evidence, Services Documentation, Software Deployment Evidence, Team Collaboration Insights)</li>
+          <li>Capítulo VI: Validation Interviews (Diseño, Registro y Evaluaciones según heurísticas)</li>
+          <li>Capítulo VI: Video About-the-Product</li>
+          <li>Conclusiones y Anexos finales</li>
+        </ul>
+        Despliegues realizados:
+        <ul>
+          <li>Versión final del Landing Page desplegada</li>
+          <li>Versión final del Web Application desplegada</li>
+          <li>Versión final del Mobile Application desplegada</li>
+          <li>Versión final del Edge Application (emsafe-edge-flask) desplegada</li>
         </ul>
       </td>
     </tr>
@@ -345,6 +412,68 @@ Para el desarrollo del informe correspondiente a todas las entregas, se establec
   </tbody>
 </table>
 
+**TB2**
+
+Para el desarrollo del informe correspondiente a todas las entregas, se estableció la implementación de secciones de la siguiente manera para cada integrante del equipo:
+
+<table>
+  <thead>
+    <tr>
+      <th>Integrante</th>
+      <th>Tareas Asignadas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sosa Soto, Oskar Rodrigo</td>
+      <td>
+      - Versión final del aplicativo Mobile (ajustes visuales, correcciones de flujo y validación end-to-end con el dispositivo IoT físico) <br>
+      - Documentación de Execution Evidence del Sprint 3 (capturas de la versión final del Mobile Application) <br>
+      - Participación en Testing y validación final del sistema con el dispositivo IoT físico <br>
+      - Apoyo en Validation Interviews del Segmento 1 <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Lopez de la Cruz, Mauro Fabricio</td>
+      <td>
+      - Despliegue de la versión final del Landing Page <br>
+      - Despliegue de la versión final del Web Application <br>
+      - Despliegue de la versión final del Mobile Application <br>
+      - Despliegue de la versión final del Edge Application (emsafe-edge-flask) <br>
+      - Documentación de Software Deployment Evidence del Sprint 3 <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Guimaraes Escalante, Carlos Eduardo</td>
+      <td>
+      - Implementación de funcionalidades finales del Backend API (módulos de reportes, chat, registro de cliente y eliminación de cuenta) <br>
+      - Integración final del Backend con el dispositivo IoT físico mediante el Edge Application <br>
+      - Documentación de Services Documentation Evidence del Sprint 3 <br>
+      - Correcciones del documento y revisión general del informe final <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Oliva Lopez, Fabian Alejandro</td>
+      <td>
+      - Sprint Planning 3 <br>
+      - Sprint Backlog 3 <br>
+      - Documentación del Capítulo VI: Development Evidence y Testing Suite Evidence del Sprint 3 <br>
+      - Actualización de conclusiones finales y anexos <br>
+      - Coordinación de tareas del equipo durante el sprint <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Lizano Coll Cardenas, Fernando Jesus</td>
+      <td>
+      - Validación end-to-end del prototipo IoT físico con el Backend API y las plataformas desplegadas <br>
+      - Implementación del Edge Application (emsafe-edge-flask) para la comunicación entre el ESP32 y la nube <br>
+      - Documentación del Capítulo VI: Aspect Leaders and Collaborators y Team Collaboration Insights del Sprint 3 <br>
+      - Apoyo en Validation Interviews y evaluaciones según heurísticas <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 El proceso de colaboración en el informe se realizó mediante commits constantes al repositorio de la organización.
 
 Se presenta el resumen de commits:<br>
@@ -355,7 +484,10 @@ Se presenta el resumen de commits:<br>
 ![Commits](img/AV1/colaboration-insights/collaboration-insights-tb1.png)
 
 <strong>AV2</strong>
-- Falta Subir
+![Commits](./img/AV1/colaboration-insights/Insights.png)
+
+<strong>AV3</strong>
+![Commits](./img/AV1/colaboration-insights/Insights.png)
 
 ## Contenido
 - [Student Outcome](#student-outcome)
@@ -484,6 +616,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Durante el desarrollo del proyecto se promovió un liderazgo colaborativo mediante la coordinación constante con los integrantes del equipo para organizar actividades, compartir ideas y tomar decisiones de manera conjunta. Se mantuvo una comunicación activa para asegurar que todos los miembros participaran en el avance del trabajo, contribuyendo desde sus responsabilidades al cumplimiento de los objetivos planteados. Asimismo, se brindó apoyo en las distintas etapas del proyecto para mantener coherencia y calidad en los entregables desarrollados.<br><br>
         <strong>AV2</strong><br>
         Durante el desarrollo del Sprint 2, asumí el liderazgo en la construcción del aplicativo móvil de EMSafe, coordinando con el equipo la definición de pantallas, flujos de navegación y la integración con el backend. Tomé decisiones técnicas sobre la arquitectura de la app móvil y participé activamente en la validación de las funcionalidades implementadas, asegurando que el producto final cumpliera con los objetivos planteados para esta entrega.<br><br>
+        <strong>TB2</strong><br>
+        Durante el Sprint 3 lideré la validación final del aplicativo móvil con el dispositivo IoT físico, coordinando con el equipo las pruebas end-to-end para verificar que el flujo completo de datos desde el sensor hasta la interfaz móvil funcionara correctamente en producción. Tomé decisiones sobre los ajustes visuales y de flujo necesarios para dejar la versión final del Mobile Application lista para la entrega del proyecto.<br><br>
         Lopez de la Cruz, Mauro Fabricio<br>
         <strong>AV1</strong><br>
         Durante el desarrollo de nuestras soluciones de software, he promovido un liderazgo distribuido trabajando de forma articulada con mis compañeros (Romina, Carlos, Camila y Ernesto). En lugar de centralizar la toma de decisiones, facilitamos espacios de discusión técnica donde cada integrante aportó desde su especialidad. Al definir la arquitectura de nuestros sistemas, estructurar los Bounded Contexts o evaluar migraciones críticas de backend hacia tecnologías como FastAPI, las directrices se establecieron mediante consenso. Esto aseguró que todo el equipo comprendiera, respaldara y se hiciera dueño de la dirección técnica adoptada, logrando un frente unido y cohesionado para superar los desafíos del proyecto.<br><br>
@@ -491,6 +625,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         En TP1 ejercí liderazgo técnico desde la implementación, desarrollando código del frontend de la solución y desplegando la primera versión funcional del mismo, además de liderar la corrección integral de los diagramas C4 según la retroalimentación recibida en AV1. Coordiné con el equipo el rediseño del System Landscape, el Context Diagram y el Container Diagram para reflejar correctamente el sistema embebido como subsistema propio dentro de Gauss, eliminando los sensores y adaptadores como entidades separadas y consolidándolos en un único Edge Device. Este liderazgo distribuido se manifestó en que las decisiones de arquitectura no quedaron solo en documentación, sino que se materializaron en código desplegado y verificable, asegurando que todo el equipo pudiera respaldar técnicamente la dirección adoptada frente al cliente.<br><br>
         <strong>AV2</strong><br>
         En esta entrega ejercí liderazgo técnico en el proceso de despliegue, gestionando la actualización del Landing Page y la nueva versión del Web Application en Azure. Coordiné con el equipo la sincronización entre los repositorios de frontend y el pipeline CI/CD, asegurando que los cambios de todos los integrantes se integraran correctamente y que las versiones desplegadas fueran estables y verificables. Este rol me permitió contribuir desde la infraestructura al cumplimiento de los objetivos del sprint.<br><br>
+        <strong>TB2</strong><br>
+        En el Sprint 3 lideré el proceso de despliegue final de todas las plataformas del sistema EMSafe, coordinando la publicación de la versión final del Landing Page, Web Application, Mobile Application y el Edge Application. Tomé decisiones sobre la configuración del pipeline CI/CD para garantizar que todos los componentes quedaran desplegados de forma estable y verificable, cerrando así el ciclo de vida del proyecto con todas las plataformas operativas en producción.<br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
         <strong>AV1</strong><br>
         A lo largo del desarrollo del proyecto, pude evidenciar la importancia de trabajar en equipo y cómo el liderazgo no recae en una sola persona, sino que puede ser compartido entre todos los integrantes. En distintos momentos, cada miembro asumió la iniciativa según sus fortalezas, lo que permitió avanzar de manera más eficiente y equilibrada. Personalmente, considero que esta experiencia fortaleció mi capacidad de comunicación, coordinación y adaptación dentro de un grupo, contribuyendo no solo al logro de los objetivos, sino también a un ambiente de trabajo colaborativo y respetuoso.<br><br>
@@ -498,6 +634,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Durante el desarrollo del proyecto, comprendí que el trabajo en equipo es fundamental y que el liderazgo puede asumirse de forma distribuida entre los integrantes, en lugar de recaer en una sola persona. A lo largo del proceso, cada miembro tomó la iniciativa en distintos momentos según sus habilidades, lo que favoreció un avance más ágil y balanceado. Esta experiencia me permitió mejorar mis capacidades de comunicación, organización y adaptación dentro de un equipo, aportando tanto al cumplimiento de los objetivos como a la construcción de un entorno de trabajo positivo y colaborativo.<br><br>
         <strong>AV2</strong><br>
         Durante el Sprint 2 lideré las mejoras del Backend API de EMSafe, coordinando con los integrantes del equipo responsables del frontend web y la app móvil para garantizar una integración fluida con los endpoints reales. Tomé decisiones sobre la estructura de los nuevos endpoints, las correcciones necesarias y las optimizaciones del servicio, asegurando que el backend respondiera correctamente a las necesidades de ambas plataformas y que el equipo contara con una base sólida para completar sus respectivas implementaciones.<br><br>
+        <strong>TB2</strong><br>
+        Durante el Sprint 3 lideré la implementación de las funcionalidades finales del Backend API, coordinando con el equipo la integración del sistema con el dispositivo IoT físico a través del Edge Application. Tomé decisiones sobre los módulos finales a desarrollar (reportes, chat, registro de cliente y eliminación de cuenta) y aseguré que el backend respondiera correctamente ante datos reales transmitidos por el sensor ESP32, garantizando la estabilidad del sistema en su versión final.<br><br>
         Oliva Lopez, Fabian Alejandro<br>
         <strong>AV1</strong><br>
         Liderazgo Técnico en la fase de investigación de mercado y definición de producto. Ejecución del análisis competitivo y diseño de estrategias frente a competidores. Supervisión del registro de entrevistas para asegurar la extracción de insights accionables. Definición de la arquitectura técnica mediante el establecimiento del Bounded Context: Device Management.<br><br>
@@ -505,16 +643,21 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Durante el desarrollo del proyecto se impulsó un liderazgo compartido, basado en la comunicación constante y la participación activa de los integrantes del equipo. Las decisiones fueron tomadas de manera coordinada, considerando los aportes de cada miembro y buscando siempre mantener una correcta organización del trabajo. Asimismo, se apoyó en la revisión y mejora de los entregables para asegurar que el avance del proyecto mantuviera coherencia, calidad y cumplimiento con los objetivos establecidos.<br><br>
         <strong>AV2</strong><br>
         En este avance asumí la responsabilidad de liderar la planificación del Sprint 2, coordinando con el equipo la definición de objetivos, la distribución de tareas en el Sprint Backlog y el seguimiento del progreso durante el sprint. Esta labor me permitió contribuir al liderazgo conjunto del equipo, facilitando que cada integrante tuviera claridad sobre sus responsabilidades y que el grupo avanzara de manera organizada hacia el cumplimiento de las metas establecidas.<br><br>
+        <strong>TB2</strong><br>
+        En el Sprint 3 lideré la planificación y documentación del sprint final del proyecto, coordinando con el equipo la definición del Sprint Goal orientado a la validación con el dispositivo IoT físico, la distribución de tareas en el Sprint Backlog y el seguimiento del progreso hasta el cierre del proyecto. Esta labor permitió que el equipo tuviera una guía de trabajo clara para la entrega final, facilitando la organización y el cumplimiento de los objetivos definidos.<br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
         <strong>AV1</strong><br>
         Lideré el diseño completo del Bounded Context IAM (Identity & Access Management), tomando decisiones de arquitectura sobre las capas Domain, Interface, Application e Infrastructure. Propuse y coordiné con el equipo la estructura de relaciones entre bounded contexts en el Context Mapping, asumiendo responsabilidad sobre mi parte del entregable de manera autónoma.<br><br>
         <strong>AV2</strong><br>
-        Durante el Sprint 2 lideré el desarrollo del prototipo IoT físico de EMSafe, tomando decisiones sobre el ensamblado, la programación y la validación del sensor electromagnético. Coordiné con el equipo la integración del dispositivo físico con el backend, asegurando que los datos capturados por el sensor pudieran ser transmitidos y procesados correctamente por el sistema. Este rol me permitió contribuir al liderazgo técnico del equipo desde el componente de hardware del proyecto.
+        Durante el Sprint 2 lideré el desarrollo del prototipo IoT físico de EMSafe, tomando decisiones sobre el ensamblado, la programación y la validación del sensor electromagnético. Coordiné con el equipo la integración del dispositivo físico con el backend, asegurando que los datos capturados por el sensor pudieran ser transmitidos y procesados correctamente por el sistema. Este rol me permitió contribuir al liderazgo técnico del equipo desde el componente de hardware del proyecto.<br><br>
+        <strong>TB2</strong><br>
+        Durante el Sprint 3 lideré la validación end-to-end del prototipo IoT físico con el Backend API y las plataformas desplegadas, coordinando las pruebas de integración entre el sensor ESP32 y el Edge Application para verificar que los datos de radiación se transmitieran y procesaran correctamente. Este rol me permitió cerrar el ciclo de vida del componente IoT del proyecto, asegurando que el sistema funcionara de forma completa y estable con hardware real.
       </td>
       <td style="padding: 10px; vertical-align: top;">
           <strong>AV1:</strong> La dirección compartida y la sólida base técnica permitieron unificar la visión del producto con las capacidades del sistema. El liderazgo en el análisis estratégico aseguró que el equipo tomara decisiones informadas para diferenciar la solución en el mercado.<br><br>
           <strong>TP1:</strong> En esta segunda entrega, el liderazgo distribuido se consolidó al asumir conjuntamente las correcciones arquitectónicas recibidas en AV1 y trasladarlas tanto a la documentación como a la implementación. La capacidad del equipo para absorber retroalimentación crítica sin perder cohesión técnica demostró una madurez de liderazgo conjunto que se materializó en una primera versión funcional del frontend desplegada y un modelo C4 defendible frente al cliente.<br><br>
-          <strong>AV2:</strong> En esta entrega el liderazgo conjunto del equipo se evidenció en la capacidad de cada integrante de asumir roles técnicos específicos y coordinarse de manera efectiva para lograr la integración entre el frontend web, la app móvil, el backend y el prototipo IoT físico. La distribución del liderazgo por componentes permitió avanzar en paralelo sin perder cohesión, resultando en el despliegue exitoso de las nuevas versiones del Landing Page, Web Application y la primera versión funcional del Mobile Application.
+          <strong>AV2:</strong> En esta entrega el liderazgo conjunto del equipo se evidenció en la capacidad de cada integrante de asumir roles técnicos específicos y coordinarse de manera efectiva para lograr la integración entre el frontend web, la app móvil, el backend y el prototipo IoT físico. La distribución del liderazgo por componentes permitió avanzar en paralelo sin perder cohesión, resultando en el despliegue exitoso de las nuevas versiones del Landing Page, Web Application y la primera versión funcional del Mobile Application.<br><br>
+          <strong>TB2:</strong> En la entrega final el equipo demostró una capacidad plena de liderazgo conjunto al coordinar la validación end-to-end del sistema completo con el dispositivo IoT físico. Cada integrante asumió el liderazgo de su componente — hardware, backend, frontend web, app móvil y despliegue — y los articuló de forma coherente para entregar un sistema funcional, estable e integrado en todas sus capas, cerrando el proyecto con el alcance completo definido desde el inicio.
       </td>
     </tr>
     <tr>
@@ -529,6 +672,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Se fomentó un ambiente de trabajo colaborativo e inclusivo, permitiendo que cada integrante aportara propuestas y opiniones durante el desarrollo del proyecto. Además, se establecieron metas claras y una planificación organizada de tareas para distribuir adecuadamente las responsabilidades y optimizar los tiempos de trabajo. Gracias a esta coordinación y seguimiento continuo, se logró cumplir con los objetivos establecidos y completar las actividades dentro de los plazos definidos.<br><br>
         <strong>AV2</strong><br>
         Durante el Sprint 2 contribuí a mantener un entorno de trabajo colaborativo, participando activamente en las reuniones de coordinación del equipo y compartiendo avances del aplicativo móvil para recibir retroalimentación oportuna. Establecí metas claras para cada pantalla de la app, planifiqué las tareas de desarrollo de forma ordenada y cumplí con los entregables dentro del plazo del sprint, asegurando que la primera versión del Mobile Application estuviera lista para su validación.<br><br>
+        <strong>TB2</strong><br>
+        Durante el Sprint 3 mantuve un entorno de trabajo colaborativo participando activamente en las pruebas de validación del sistema con el dispositivo IoT físico, compartiendo los resultados con el equipo y coordinando los ajustes finales necesarios en el aplicativo móvil. Establecí metas claras para completar la versión final del Mobile Application y cumplí con los entregables dentro del plazo definido para el cierre del proyecto.<br><br>
         Lopez de la Cruz, Mauro Fabricio<br>
         <strong>AV1</strong><br>
         Fomenté un espacio de trabajo donde la comunicación abierta y la seguridad técnica fueron la base para planificar nuestros ciclos de desarrollo. Nos enfocamos en desglosar los requerimientos de la solución en historias de usuario claras y tareas medibles desde el Product Backlog, asignándolas estratégicamente según las fortalezas de cada miembro entre el frontend, el backend y el control de calidad. Gracias a este entorno estructurado, al apoyo mutuo frente a los bloqueos técnicos y al seguimiento constante de nuestro progreso, logramos integrar nuestro código de manera continua y cumplir con éxito los objetivos y plazos de entrega propuestos para nuestros despliegues.<br><br>
@@ -536,6 +681,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Fomenté un entorno de trabajo donde la comunicación técnica fue clave para cerrar TP1 a tiempo. Planifiqué mis tareas en tres frentes paralelos — desarrollo de código del frontend, despliegue de la primera versión funcional, y corrección de los diagramas C4 — distribuyendo la carga de manera realista y manteniendo informado al equipo del avance de cada uno. Coordiné con mis compañeros para que las correcciones arquitectónicas en los diagramas se reflejaran también en la implementación, evitando inconsistencias entre la documentación y el código desplegado. Este enfoque estructurado me permitió cumplir con los objetivos del sprint y entregar una primera versión del frontend funcional, defendible técnicamente y alineada con el modelo C4 corregido.<br><br>
         <strong>AV2</strong><br>
         En esta entrega planifiqué y ejecuté el proceso de despliegue de manera estructurada, estableciendo pasos claros para la actualización del Landing Page y el Web Application. Mantuve al equipo informado sobre el estado de los despliegues y coordiné la resolución de incidencias que surgieron durante el proceso. Este enfoque organizado permitió cumplir con el objetivo de tener ambas plataformas desplegadas y operativas al cierre del sprint.<br><br>
+        <strong>TB2</strong><br>
+        En el Sprint 3 planifiqué y ejecuté el proceso de despliegue final de todas las plataformas de manera estructurada, estableciendo una secuencia ordenada para publicar la versión final del Landing Page, Web Application, Mobile Application y Edge Application. Mantuve al equipo informado sobre el estado de cada despliegue y coordiné la resolución de incidencias de última hora, asegurando que todos los componentes quedaran operativos en producción al cierre del proyecto.<br><br>
         Guimaraes Escalante, Carlos Eduardo<br>
         <strong>AV1</strong><br>
         Durante el desarrollo del proyecto, pude contribuir a la creación de un entorno colaborativo e inclusivo, donde todos los integrantes del equipo tuvieron la oportunidad de participar y aportar sus ideas. Se establecieron metas claras desde el inicio, lo que facilitó la planificación de tareas y la distribución equitativa de responsabilidades. Personalmente, considero que mantener una comunicación constante y respetuosa fue clave para cumplir con los objetivos propuestos, ya que permitió coordinar mejor el trabajo y adaptarnos ante cualquier dificultad que surgiera en el proceso.<br><br>
@@ -543,6 +690,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Durante el desarrollo del proyecto, participé en la consolidación de un entorno de trabajo participativo, en el que se fomentó la intervención activa de todos los integrantes del equipo. La definición de objetivos desde las primeras etapas permitió organizar el trabajo de manera más estructurada y asignar responsabilidades de forma balanceada. Asimismo, la comunicación continua dentro del grupo facilitó la coordinación de actividades y permitió afrontar de manera eficiente los retos que se presentaron a lo largo del proceso.<br><br>
         <strong>AV2</strong><br>
         Durante el Sprint 2 participé en la construcción de un entorno de trabajo colaborativo, manteniéndome disponible para resolver dudas del equipo sobre los endpoints del backend y adaptando los servicios según las necesidades que surgían en el desarrollo del frontend y la app móvil. Planifiqué las mejoras del backend de forma iterativa, priorizando los endpoints más críticos para el avance del equipo y cumpliendo con las integraciones necesarias dentro del plazo establecido.<br><br>
+        <strong>TB2</strong><br>
+        Durante el Sprint 3 contribuí a mantener un entorno colaborativo manteniéndome disponible para coordinar con el equipo la integración del dispositivo IoT físico con el backend. Planifiqué los módulos finales del backend de forma ordenada, priorizando los endpoints necesarios para completar el flujo end-to-end del sistema y cumpliendo con las implementaciones requeridas dentro del plazo del sprint final.<br><br>
         Oliva Lopez, Fabian Alejandro<br>
         <strong>AV1</strong><br>
         Facilitación de sesiones de trabajo para la creación y refinamiento de User Stories, asegurando la participación de todos los roles del equipo. Coordinación de la planificación de tareas dentro del contexto de gestión de dispositivos. Integración de los hallazgos de las entrevistas de usuario en el flujo de desarrollo para mantener el cumplimiento de los objetivos del sprint.<br><br>
@@ -550,16 +699,21 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Se promovió un entorno de trabajo colaborativo, donde cada integrante pudo contribuir con ideas, propuestas y responsabilidades específicas dentro del proyecto. Para ello, se definieron metas claras y se organizaron las tareas de acuerdo con las capacidades y avances del equipo, permitiendo una mejor distribución del trabajo. Gracias a esta planificación y al seguimiento continuo de las actividades, se logró avanzar de manera ordenada y cumplir con los objetivos planteados dentro del tiempo previsto.<br><br>
         <strong>AV2</strong><br>
         Contribuí a la creación de un entorno colaborativo mediante la elaboración del Sprint Planning 2 y el Sprint Backlog 2, documentando de forma clara los objetivos, las tareas asignadas y las estimaciones de cada ítem. Esta planificación permitió que el equipo tuviera una guía de trabajo compartida desde el inicio del sprint, facilitando la distribución equitativa de responsabilidades y el seguimiento del progreso para cumplir con los objetivos definidos.<br><br>
+        <strong>TB2</strong><br>
+        Contribuí al entorno colaborativo del equipo mediante la elaboración del Sprint Planning 3 y el Sprint Backlog 3, documentando de forma clara el objetivo del sprint final orientado a la validación con el dispositivo IoT físico, las tareas asignadas y las estimaciones correspondientes. Esta planificación permitió que el equipo tuviera una guía compartida para cerrar el proyecto de forma organizada, facilitando el seguimiento del progreso y el cumplimiento de los objetivos de la entrega final.<br><br>
         Lizano Coll Cardenas, Fernando Jesus<br>
         <strong>AV1</strong><br>
         Planifiqué y completé las secciones asignadas del informe: Impact Mapping y el Bounded Context IAM (secciones 4.2.1.1 a 4.2.1.6), cumpliendo con los criterios establecidos por el equipo. Elaboré los diagramas de clases del dominio, el diseño de base de datos y el Component Level Diagram, asegurando coherencia con el resto de bounded contexts desarrollados por mis compañeros.<br><br>
         <strong>AV2</strong><br>
-        Durante el Sprint 2 planifiqué y ejecuté el desarrollo del prototipo IoT físico de forma ordenada, estableciendo etapas de ensamblado, programación y validación del sensor. Mantuve al equipo informado sobre el avance del prototipo y coordiné las pruebas de integración con el backend, asegurando que el dispositivo físico pudiera transmitir datos correctamente al sistema. Esto permitió cumplir con el objetivo de contar con una primera versión funcional del componente IoT dentro del plazo del sprint.
+        Durante el Sprint 2 planifiqué y ejecuté el desarrollo del prototipo IoT físico de forma ordenada, estableciendo etapas de ensamblado, programación y validación del sensor. Mantuve al equipo informado sobre el avance del prototipo y coordiné las pruebas de integración con el backend, asegurando que el dispositivo físico pudiera transmitir datos correctamente al sistema. Esto permitió cumplir con el objetivo de contar con una primera versión funcional del componente IoT dentro del plazo del sprint.<br><br>
+        <strong>TB2</strong><br>
+        Durante el Sprint 3 planifiqué y ejecuté la validación final del prototipo IoT físico de forma ordenada, estableciendo etapas de prueba para verificar la transmisión de datos desde el sensor ESP32 hasta el backend y las plataformas desplegadas. Mantuve al equipo informado sobre los resultados de cada prueba y coordiné los ajustes necesarios en el Edge Application para garantizar la estabilidad del sistema. Esto permitió cumplir con el objetivo de entregar un sistema completamente integrado y validado con hardware real al cierre del proyecto.
       </td>
       <td style="padding: 10px; vertical-align: top;">
           <strong>AV1:</strong> El fomento de la comunicación abierta y la organización estructurada de las tareas técnicas facilitaron un flujo de trabajo cohesivo. Esto permitió que el equipo alcanzara las metas del sprint de manera eficiente, manteniendo siempre el enfoque en las necesidades validadas del usuario.<br><br>
           <strong>TP1:</strong> El equipo consolidó en TP1 un entorno de trabajo donde la planificación se ajustó a las correcciones recibidas en AV1 sin perder ritmo de entrega. La comunicación abierta, la distribución equitativa de tareas y el seguimiento mutuo permitieron cumplir los objetivos del sprint, integrando frontend desplegado, correcciones arquitectónicas en los diagramas C4 y documentación actualizada en un único entregable coherente.<br><br>
-          <strong>AV2:</strong> El equipo demostró en esta entrega una capacidad consolidada para planificar, distribuir y ejecutar tareas de forma colaborativa en un contexto de mayor complejidad técnica. La integración simultánea del frontend web, la app móvil, el backend y el prototipo IoT físico fue posible gracias a un entorno de trabajo inclusivo, donde cada integrante aportó desde su rol y se mantuvo comunicado con el resto. El cumplimiento de los objetivos del Sprint 2, reflejado en los despliegues realizados y la primera versión funcional del Mobile Application, evidencia la madurez del equipo para establecer metas y alcanzarlas de manera conjunta.
+          <strong>AV2:</strong> El equipo demostró en esta entrega una capacidad consolidada para planificar, distribuir y ejecutar tareas de forma colaborativa en un contexto de mayor complejidad técnica. La integración simultánea del frontend web, la app móvil, el backend y el prototipo IoT físico fue posible gracias a un entorno de trabajo inclusivo, donde cada integrante aportó desde su rol y se mantuvo comunicado con el resto. El cumplimiento de los objetivos del Sprint 2, reflejado en los despliegues realizados y la primera versión funcional del Mobile Application, evidencia la madurez del equipo para establecer metas y alcanzarlas de manera conjunta.<br><br>
+          <strong>TB2:</strong> En la entrega final el equipo demostró una capacidad plena para planificar, distribuir y cumplir objetivos en el contexto más exigente del proyecto: la validación end-to-end con hardware real. La organización del Sprint 3, la comunicación constante durante las pruebas de integración y el compromiso de cada integrante con su rol permitieron cerrar el proyecto con todas las plataformas desplegadas en su versión final y el sistema completamente validado con el dispositivo IoT físico, evidenciando la madurez del equipo para establecer metas y alcanzarlas de manera conjunta hasta el cierre.
       </td>
     </tr>
   </tbody>
@@ -4663,6 +4817,583 @@ En este sprint, el enfoque estará en completar las funcionalidades restantes de
 | EPIC04 - TS09 | Generación de mapa de calor de radiación | T39: Implementación del servicio de generación de mapa de calor <br><br> T40: Implementación del endpoint de consulta del mapa de calor | T39: Desarrollar el servicio backend que genera el mapa de calor basado en los niveles de radiación registrados. <br><br> T40: Desarrollar el endpoint que expone los datos del mapa de calor para su consumo desde la app móvil y el frontend web. | T39: 6 <br> T40: 5 | Fernando | Done |
 | EPIC04 - TS21 | Eliminar datos personales de un usuario | T41: Implementación de endpoint de eliminación de datos personales vía API <br><br> T42: Validación de permisos y confirmación antes de eliminar datos personales | T41: Desarrollar el endpoint que permite eliminar de forma segura los datos personales de un usuario mediante la API. <br><br> T42: Implementar la lógica de validación de permisos y el flujo de confirmación previo a la eliminación de datos del usuario. | T41: 4 <br> T42: 4 | Carlos | Done |
 
+### 6.2.3.4. Development Evidence for Sprint Review
+
+Durante el Sprint 3, el equipo se enfocó en la validación e integración final del sistema EMSafe con el dispositivo IoT físico. Los commits de este sprint reflejan los ajustes finales realizados en el **Frontend Web Application**, el **Backend API** y el nuevo repositorio **emsafe-edge-flask**, encargado de la comunicación entre el dispositivo ESP32 y la nube. A continuación se presenta la tabla de commits relacionados con la implementación.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| Front-End | develop | 81e322f | Merge pull request #10 from Desarrollo-de-soluciones-IOT-UPC/feature/ui-redesign-stage-2 | Se integraron en la rama develop los cambios finales de UI desarrollados en la rama feature/ui-redesign-stage-2, completando los ajustes visuales de la versión final del Frontend Web Application. | 2026-07-03 |
+| Back-End | main | ac69bf4 | feat: smart-edge uT scale, technician ownership checks, plug end-to-end (V12), client register/reports/chat/account-delete | Se implementaron las funcionalidades finales del backend incluyendo la escala smart-edge, validaciones de propiedad del técnico, integración plug end-to-end en su versión 12, y los módulos de registro de cliente, reportes, chat y eliminación de cuenta. | 2026-07-04 |
+| Back-End | main | 0b95710 | Merge pull request #4 from Desarrollo-de-soluciones-IOT-UPC/feature/web-back-end | Se integró la rama feature/web-back-end con los cambios finales del backend necesarios para soportar la comunicación con el dispositivo IoT físico y las plataformas web y móvil. | 2026-07-03 |
+| emsafe-edge-flask | main | 964f566 | feat: sync plug state to cloud, fetch desiredPlug for device, version ESP32 firmware | Se implementó la sincronización del estado del plug hacia la nube, la consulta del estado deseado del plug para el dispositivo y la versión final del firmware del ESP32. | 2026-07-04 |
+
+### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+Durante el Sprint 3, las pruebas se centraron en la validación end-to-end del sistema EMSafe con el dispositivo IoT físico, verificando la correcta transmisión de datos desde el sensor ESP32 hacia el Backend API y su correcta visualización en el Frontend Web Application y la Mobile Application. Se validaron los flujos de sincronización del estado del dispositivo, la comunicación edge-to-cloud y las funcionalidades finales del backend. A continuación se presenta la tabla de commits relacionados con las actividades de testing.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| Back-End | main | 890c8af | Merge pull request #5 from Desarrollo-de-soluciones-IOT-UPC/feature/sprint-3 | Se integraron los cambios finales del Back-End correspondientes al Sprint 3, validando la actualización de endpoints y la integración con el flujo completo del sistema EMSafe. | 2026-07-07 |
+| Back-End | feature/sprint-3 | 7ae2f56 | feat: update back-end final v1 | Se validó la versión final del Back-End para el Sprint 3, incorporando ajustes finales en los servicios y controladores necesarios para el funcionamiento end-to-end. | 2026-07-07 |
+| Back-End | main | ac69bf4 | feat: smart-edge uT scale, technician ownership checks, plug end-to-end (V12), client register/reports/chat/account-delete | Se validó el funcionamiento completo de los módulos finales del backend, incluyendo la integración plug end-to-end, validaciones de propiedad y los endpoints de registro, reportes, chat y eliminación de cuenta. | 2026-07-04 |
+| Back-End | main | 0b95710 | Merge pull request #4 from Desarrollo-de-soluciones-IOT-UPC/feature/web-back-end | Se verificó la correcta integración de los cambios finales del backend tras el merge, validando la comunicación con el dispositivo IoT físico y las plataformas desplegadas. | 2026-07-03 |
+| Front-End | main | 2674458 | Merge pull request #12 from Desarrollo-de-soluciones-IOT-UPC/feature/sprint-3 | Se integraron los cambios finales del Front-End en la rama principal, confirmando que las nuevas funcionalidades y pantallas del Sprint 3 fueron desplegadas correctamente. | 2026-07-07 |
+| Front-End | feature/sprint-3 | d776661 | feat: update data readings consumption | Se validó la actualización del consumo de lecturas de datos en el Front-End, permitiendo visualizar correctamente la información proveniente del backend y del Edge Service. | 2026-07-07 |
+| Front-End | main | 51f71fc | fix: leaflet dynamic import default interop in production builds | Se corrigió el comportamiento del mapa en builds de producción, validando que los componentes relacionados con Leaflet funcionen correctamente en el entorno desplegado. | 2026-07-05 |
+| Front-End | main | b0571e5 | feat: uT scale with edge-computed levels, pending account activation in Users | Se validó la escala de medición en microteslas y la visualización de niveles calculados desde el Edge, además de ajustes relacionados con la activación de cuentas de usuario. | 2026-07-05 |
+| Front-End | develop | 81e322f | Merge pull request #10 from Desarrollo-de-soluciones-IOT-UPC/feature/ui-redesign-stage-2 | Se verificó que los ajustes finales de UI integrados en la rama develop se renderizan correctamente y son consistentes con el diseño final del sistema. | 2026-07-03 |
+| Mobile App | feature/health-tips-vitals-design | 8cd5b1c | feat: update mobile final version | Se validó la versión final de la aplicación móvil para el Sprint 3, incluyendo pantallas de monitoreo, salud electromagnética, alertas y visualización de datos del sensor. | 2026-07-07 |
+| Mobile App | feature/sprint-3 | 214f11b | fix: Add url prod | Se configuró la URL de producción en la aplicación móvil, permitiendo la conexión con los servicios desplegados del sistema EMSafe. | 2026-07-05 |
+| Mobile App | feature/health-tips-vitals-design | dc69e7e | feat: full client app - i18n EN/ES, real signup, reports | Se validó la aplicación cliente con soporte multilenguaje, flujo de registro real, reportes y funcionalidades principales para usuarios finales. | 2026-07-05 |
+| Mobile App | feature/health-tips-vitals-design | 3d0ff68 | feat: add electromagnetic health tips screen for vitals tab | Se implementó y validó la pantalla de consejos de salud electromagnética dentro de la pestaña de signos vitales, complementando la experiencia de monitoreo del usuario. | 2026-07-01 |
+| emsafe-edge-flask | main | ed1b57 | Merge pull request #1 from Desarrollo-de-soluciones-IOT-UPC/feature/sprint-3 | Se integraron los cambios finales del Edge Service en la rama principal, validando la comunicación entre el dispositivo físico, el servicio Edge y la nube. | 2026-07-07 |
+| emsafe-edge-flask | feature/sprint-3 | 53d9b67 | feat: update edge app | Se validó la actualización final del Edge Service, asegurando la recepción de lecturas del sensor y el procesamiento correcto de los niveles de exposición electromagnética. | 2026-07-07 |
+| emsafe-edge-flask | main | 964f566 | feat: sync plug state to cloud, fetch desiredPlug for device, version ESP32 firmware | Se validó la sincronización del estado del plug con la nube y la correcta consulta del estado deseado desde el dispositivo ESP32, verificando la comunicación end-to-end entre el hardware y el backend. | 2026-07-04 |
+
+### 6.2.3.6. Execution Evidence for Sprint Review
+
+Durante el Sprint 2, se completó la integración del **Frontend Web Application** con el **Backend API** real de EMSafe. La plataforma web fue actualizada en el entorno de producción en Azure con los nuevos cambios integrados, y la app móvil fue validada en entorno de desarrollo con datos reales.
+
+#### **Link del Frontend Web Application desplegado:** https://emsafe-amh9hgdudda3bybj.eastus-01.azurewebsites.net/admin
+
+**Pantalla de Login — Página de inicio de sesión de EMSafe desplegada en Azure.**
+
+<img src="img/TB1/Sprint-2/Login.png" alt="Pantalla de Login">
+
+**Portal Administrativo — Dashboard principal con métricas, gráficos y órdenes recientes.**
+
+<img src="img/TB1/Sprint-2/System Overview - 1.png" alt="Pantalla del System Overview">
+
+<img src="img/TB1/Sprint-2/System Overview - 2.png" alt="Pantalla del System Overview">
+
+**Portal Administrativo — Gestión de Work Orders con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Work Orders - 1.png" alt="Pantalla de Work Orders">
+
+<img src="img/TB1/Sprint-2/Work Orders - 2.png" alt="Pantalla de Word Orders">
+
+**Portal Administrativo — Gestión del Historial con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/History.png" alt="Pantalla del Historial">
+
+**Portal Administrativo — Gestión de Usuarios con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Team Management.png" alt="Pantalla del Administrador de Usuario">
+
+**Portal Administrativo — Gestión de Dispositivos con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Devices.png" alt="Pantalla del Administrador de Dispositivos">
+
+**Portal Administrativo — Lecturas de Radición Electromagnetica con mapa integrado.**
+
+<img src="img/TB1/Sprint-2/Radiation Map - 1.png" alt="Pantalla de Radiación con Mapa">
+
+<img src="img/TB1/Sprint-2/Radiation Map - 2.png" alt="Pantalla de Radiación con Mapa">
+
+**Portal Administrativo — Gestión de Alarmas con filtros funcionales.**
+
+<img src="img/TB1/Sprint-2/Alarms.png" alt="Pantalla de Alarmas">
+
+**Portal Técnico — My Schedule con calendario semanal y navegación por semana.**
+
+<img src="img/TB1/Sprint-2/Technician Portal.png" alt="Pantalla del Dashboard del Tecnico">
+
+**Portal Técnico — Work Orders del técnico con tabs de filtrado por estado.**
+
+<img src="img/TB1/Sprint-2/Technician Work Orders.png" alt="Pantalla de Work Orders del Tecnico">
+
+**Portal Técnico — Historial del técnico con tabs de filtrado por estado.**
+
+<img src="img/TB1/Sprint-2/Technician Historyl.png" alt="Pantalla del Historial del Tecnico">
+
+### **Backend API**: https://emsafe-backend-hmf7asgja0d0h4cr.centralus-01.azurewebsites.net/swagger-ui/index.html
+
+**Backend API — Work Order Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Work_Oder_Controller.png" alt="Backend Work Order Controller">
+
+**Backend API — User Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-User_Controller.png" alt="Backend User Controller">
+
+**Backend API — Reading Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Reading_Controller.png" alt="Backend Reading Controller">
+
+**Backend API — History Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-History_Controller.png" alt="Backend History Controller">
+
+**Backend API — Device Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Device_Controller.png" alt="Backend Device Controller">
+
+**Backend API — Dashboard Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Dashboard_Controller.png" alt="Backend Dashboard Controller">
+
+**Backend API — Client Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Client_Controller.png" alt="Backend Client Controller">
+
+**Backend API — Auth Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Auth_Controller.png" alt="Backend Auth Controller">
+
+**Backend API — Alarm Controller.**
+
+<img src="./img/TB1/Sprint-2_Backend/Backend-Alarm_Controller.png" alt="Backend Alarm Controller">
+
+### Mobile Application 
+
+**Mobile Application — Pantalla de detalle del sensor con lectura actual de exposición electromagnética.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-1.jpg" alt="Pantalla de detalle del sensor en la app móvil">
+
+**Mobile Application — Dashboard principal con exposición actual, sensores activos y alertas registradas.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-2.jpg" alt="Dashboard principal de la app móvil">
+
+**Mobile Application — Pantalla de configuración con preferencias del sistema y listado de sensores.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-3.jpg" alt="Pantalla de configuración de la app móvil">
+
+**Mobile Application — Historial de alertas con eventos de radiación elevada registrados.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-4.jpg" alt="Historial de alertas de la app móvil">
+
+**Mobile Application — Pantalla inicial de EMSafe con carga de conexión segura.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-5.jpg" alt="Pantalla inicial de EMSafe Mobile">
+
+**Mobile Application — Pantalla informativa de Astra AI con recomendaciones personalizadas.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-6.jpg" alt="Pantalla de Astra AI en la app móvil">
+
+**Mobile Application — Formulario de registro de datos personales para creación de cuenta.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-7.jpg" alt="Formulario de datos personales de la app móvil">
+
+**Mobile Application — Pantalla de inicio de sesión seguro para acceso al sistema.**
+
+<img src="img/TB1/Sprint-2_Mobile_Evidence/Mobile%20Evidence-8.jpg" alt="Pantalla de login de la app móvil">
+
+**Mobile Application — Monitoreo del sensor con lectura actual de exposición electromagnética.**
+
+<img src="img/TB1/MobileEvidence/Monitoreo-Sensor.jpg" alt="Monitoreo del sensor en la app móvil">
+
+**Mobile Application — Tips de salud para reducir la exposición electromagnética.**
+
+<img src="img/TB1/MobileEvidence/Tipo-Salud.jpg" alt="Tips de salud en la app móvil">
+
+**Mobile Application — Historial de medidas con lecturas recientes del sensor.**
+
+<img src="img/TB1/MobileEvidence/Historial-Medidas.jpg" alt="Historial de medidas del sensor en la app móvil">
+
+**Mobile Application — Alerta que activa el actuador ante radiación peligrosa.**
+
+<img src="img/TB1/MobileEvidence/Alertas.jpg" alt="Alerta de radiación peligrosa y activación del actuador">
+
+**Mobile Application — Mapa de radiación electromagnética con zonas monitoreadas.**
+
+<img src="img/TB1/MobileEvidence/Radiaton%20Map%20-%203.jpg" alt="Mapa de radiación electromagnética en la app móvil">
+
+### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación relacionada con los servicios utilizados durante el Sprint 3 de EMSafe. A diferencia de los sprints anteriores, en esta entrega el enfoque no estuvo en la integración de nuevos endpoints sino en la **validación end-to-end del sistema completo** con el dispositivo IoT físico, verificando que los servicios ya desplegados respondieran correctamente ante datos reales capturados por el sensor ESP32.
+
+Durante este sprint, se incorporó el repositorio **emsafe-edge-flask**, encargado de gestionar la comunicación entre el dispositivo físico ESP32 y el Backend API en la nube. Este servicio implementó la sincronización del estado del plug hacia la nube y la consulta del estado deseado del dispositivo, completando así el flujo de comunicación edge-to-cloud del sistema. Por su parte, el Backend finalizó los módulos de reportes, chat, registro de cliente y eliminación de cuenta, cerrando el conjunto de endpoints necesarios para la versión final del producto.
+
+Debido a que el enfoque principal estuvo en la validación funcional con hardware real y en los ajustes finales del sistema, en esta etapa se priorizó la verificación del flujo completo de datos desde el sensor hasta las interfaces de usuario sobre la generación de nueva documentación de servicios. El sistema quedó completamente integrado y validado en su versión final, con todos los endpoints consumidos correctamente por el Frontend Web Application y la Mobile Application desplegados.
+
+### 6.2.3.8. Software Deployment Evidence for Sprint Review
+
+En esta sección se describe el proceso de actualización del despliegue de la plataforma EMSafe correspondiente al Sprint 2. La infraestructura de producción se mantuvo en **Microsoft Azure App Service** con el pipeline CI/CD configurado en el Sprint anterior, ejecutando automáticamente el build y deploy con cada push a la rama `main`.
+
+**Landing Page Deployment**
+
+1. Se realizaron los merges de las ramas de desarrollo hacia `main` en el repositorio del Frontend Web Application, activando automáticamente el pipeline de GitHub Actions.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Main.png">
+
+2. GitHub Actions ejecutó el build de producción de Angular SSR y desplegó los cambios automáticamente en Azure App Service.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Github Pages.png">
+
+3. Se verificó que el despliegue fue exitoso accediendo a la URL de producción y validando las nuevas funcionalidades integradas con el backend real.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Deployment.png">
+
+4. La Mobile Application fue validada en entorno de desarrollo mediante emulador y dispositivo físico, conectada a los endpoints reales del backend desplegado.
+
+<img src="img/TB1/chapter-5/landing-page/Team Colaborations Insight/Page Deploy.png">
+
+5. Se realizó el último cambio de la Landing Page, verificando que la página desplegada refleje correctamente las actualizaciones finales realizadas durante el Sprint 3.
+
+<img src="img/TB1/Collaborators/landing%20page.jpg" alt="Github analytics Landing Page Sprint 3">
+
+**Mobile Deployment**
+
+En esta sección se describe el proceso de despliegue de la aplicación móvil de EMSafe correspondiente al Sprint 2. Para esta entrega, el equipo generó una versión de producción de la aplicación móvil desarrollada en Flutter y la distribuyó mediante **Firebase App Distribution**, permitiendo que los testers puedan acceder a la aplicación desde sus dispositivos móviles.
+
+1. Se inició sesión en Firebase desde la línea de comandos utilizando Firebase CLI. Esto permitió autenticar el entorno local con la cuenta del proyecto y habilitar las operaciones necesarias para compilar y distribuir la aplicación móvil.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-1.jpg" alt="Firebase CLI Login">
+
+2. Se ejecutó el comando de compilación de Flutter en modo release, generando el archivo APK optimizado para distribución. Como resultado, se obtuvo el archivo `app-release.apk` dentro de la carpeta `build/app/outputs/flutter-apk/`.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-2.jpg" alt="Flutter Build APK Release">
+
+3. Luego, se utilizó Firebase App Distribution para subir el APK generado y distribuirlo a los testers definidos. Durante este proceso, se agregó una nota de versión indicando que correspondía a la demo funcional de EMSafe v1.0.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-3.jpg" alt="Firebase App Distribution Upload">
+
+4. Se verificó la correcta configuración del proyecto en Firebase, confirmando que la aplicación móvil Android se encontraba registrada dentro del proyecto `emsafe-mobile`, con su respectivo identificador de paquete.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-4.jpg" alt="Firebase Project Configuration">
+
+5. Finalmente, se validó que la invitación de prueba fue enviada correctamente mediante Firebase App Distribution. Esta invitación permite que los testers acepten el acceso, instalen la aplicación y comiencen con las pruebas funcionales de la versión móvil.
+
+<img src="./img/TB1/Sprint-2_Mobile_Deployment/Deployment%20Evidence-5.jpg" alt="Firebase App Distribution Invitation">
+
+### Edge Service — Software Deployment Evidence Sprint 2
+
+Durante el Sprint 2, también se validó el despliegue local del **Edge Service** de EMSafe, desarrollado con Flask. Este servicio actúa como intermediario para recibir las lecturas del dispositivo IoT, procesar los datos de radiación electromagnética y exponer endpoints para validar el estado del servicio y registrar mediciones.
+
+1. Se verificó el endpoint de salud del servicio Edge mediante la ruta `/health`, confirmando que el servicio `emsafe-edge` se encontraba activo y respondiendo correctamente con estado `UP`.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-1.jpg" alt="Healthcheck del Edge Service activo">
+
+2. Se ejecutó el servidor Edge en entorno local utilizando Flask en el puerto `5000`. Esto permitió validar que el servicio quedara disponible tanto desde `localhost` como desde la dirección IP de red local.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-2.jpg" alt="Servidor Edge ejecutándose en Flask">
+
+3. Se realizaron pruebas de envío de datos hacia el endpoint `/api/v1/emf-monitoring/data-records`. En la consola se observa una primera solicitud con error `400` por formato incorrecto y luego una solicitud exitosa con código `201`, validando la recepción correcta de datos del sensor.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-3.jpg" alt="Registro de datos del sensor en el Edge Service">
+
+4. Finalmente, se confirmó el procesamiento de lecturas del sensor, mostrando registros con valores de exposición electromagnética y niveles de riesgo como `DANGER` y `SAFE`. Esto evidencia que el Edge Service recibe, interpreta y registra correctamente las mediciones enviadas por el dispositivo IoT.
+
+<img src="img/TB1/Sprint-2_Edge/Edge_Evidence-4.jpg" alt="Lecturas procesadas por el Edge Service">
+
+### **Evidencia de Despliegue Continua**
+
+Como parte del Sprint 3, se verificó el despliegue continuo de la plataforma EMSafe mediante Azure App Service. En la evidencia se observa el historial de implementaciones realizadas correctamente, incluyendo merges desde ramas de desarrollo hacia el entorno desplegado, lo que confirma que los cambios fueron integrados y publicados de forma automática.
+
+<img src="img/TB1/MobileEvidence/Despliegue.jpg">
+
+<img src="img/TB1/Deploy Continuo/Front Continuo.jpg">
+
+<img src="img/TB1/Deploy Continuo/Back Continuo.jpg">
+
+### 6.2.3.9. Team Collaboration Insights during Sprint
+
+Durante este sprint, el equipo enfocó sus esfuerzos en la validación end-to-end del sistema EMSafe con el dispositivo IoT físico, asegurando que el flujo completo de datos desde el sensor ESP32 hasta las interfaces de usuario funcionara correctamente en producción. Para organizar el trabajo, se continuó utilizando GitHub como herramienta principal de colaboración, incorporando el nuevo repositorio **emsafe-edge-flask** para gestionar la comunicación entre el hardware y la nube, y trabajando sobre las ramas `main` y `develop` de los repositorios existentes para aplicar los ajustes finales del sistema. La coordinación del equipo se realizó mediante reuniones por Discord, permitiendo revisar los resultados de las pruebas con el dispositivo físico, resolver incidencias de integración hardware-software y sincronizar los retoques finales en el Backend, Frontend Web y Mobile Application para el cierre del proyecto.
+
+## Github analytics de nuestro Back-End — Sprint 3:
+
+<img src="img/TB1/Collaborators/Back%20End-Collaborators.jpg" alt="Github analytics Back-End Sprint 3">
+
+## Github analytics de nuestro Front-End — Sprint 3:
+
+<img src="img/TB1/Collaborators/Front%20End-Collaborators.jpg" alt="Github analytics Front-End Sprint 3">
+
+## Github analytics de nuestro emsafe-edge-flask — Sprint 3:
+
+<img src="img/TB1/Collaborators/Edge-Collaborators.jpg" alt="Github analytics emsafe-edge-flask Sprint 3">
+
+## Github analytics de nuestro Mobile App — Sprint 3:
+
+<img src="img/TB1/Collaborators/Mobile%20App-Collaborators.jpg" alt="Github analytics Mobile App Sprint 3">
+
+## Github analytics de nuestro Informe — Sprint 3:
+
+<img src="img/TB1/Collaborators/Informe-Collaborators.jpg" alt="Github analytics Informe Sprint 3">
+
+## 6.3. Validation Interviews
+
+### 6.3.1. Diseño de Entrevistas
+
+A continuación se presentan las preguntas diseñadas para las entrevistas finales, clasificadas según los segmentos objetivos del proyecto EMSafe. Estas entrevistas buscan validar la propuesta de valor, la utilidad de la solución y detectar oportunidades de mejora basadas en la experiencia real de los usuarios con el sistema desplegado.
+
+---
+
+**Segmento 1: Personas comprometidas con el cuidado de su salud**
+
+1. ¿La pantalla principal te permitió entender de forma inmediata cuál era tu nivel de exposición electromagnética en ese momento?
+2. ¿Las notificaciones que recibiste cuando los niveles superaron los límites te resultaron oportunas y comprensibles?
+3. ¿La visualización del mapa te ayudó a identificar con claridad las zonas de mayor radiación en tu entorno?
+4. ¿El historial de exposición te permitió entender cómo han variado tus niveles de radiación a lo largo del tiempo?
+5. ¿Las recomendaciones que te brindó la aplicación fueron claras y aplicables a tu rutina diaria?
+6. ¿Consideras que una herramienta como EMSafe es necesaria para el cuidado de la salud en el contexto actual?
+7. ¿Qué tan preocupado estabas por tu exposición a la radiación electromagnética antes de conocer EMSafe?
+8. ¿Crees que la información que ofrece EMSafe es suficiente para tomar decisiones sobre tu entorno?
+9. ¿Recomendarías EMSafe a personas de tu entorno? ¿Por qué?
+10. ¿Qué mejoras o funcionalidades adicionales considerarías valiosas para una próxima versión?
+
+---
+
+**Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética**
+
+1. ¿El panel principal les brindó una visión clara y rápida del estado de radiación en su entorno laboral?
+2. ¿Las alertas automáticas generadas por el sistema les resultaron útiles para tomar decisiones de seguridad de forma oportuna?
+3. ¿La visualización del mapa de radiación fue suficientemente clara para identificar las zonas de mayor riesgo dentro de su organización?
+4. ¿El historial de exposición les permitió analizar el comportamiento de los niveles de radiación a lo largo del tiempo en su entorno de trabajo?
+5. ¿Consideran que la información presentada en la aplicación es comprensible para personas sin conocimientos técnicos en el equipo?
+6. ¿Su organización contaba con algún mecanismo previo para monitorear los niveles de radiación electromagnética?
+7. ¿Creen que una solución como EMSafe podría contribuir al cumplimiento de normativas de seguridad laboral en su sector?
+8. ¿Qué tan viable consideran la implementación de EMSafe como parte de los protocolos de seguridad de su organización?
+9. ¿Recomendarían EMSafe a otras empresas del sector que operan maquinaria de emisión electromagnética? ¿Por qué?
+10. ¿Qué funcionalidades empresariales adicionales considerarían necesarias para adoptar EMSafe de forma permanente?
+
+---
+
+### 6.3.2. Registro de Entrevistas
+
+#### Segmento 1: Personas comprometidas con el cuidado de su salud
+
+> Entrevistado 01: Diana Gupioc
+
+- **Sexo:** Femenino
+- **Edad:** 25
+- **Distrito donde vive:** Santiago de Surco, Lima
+- **Nivel socioeconómico:** Medio
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Entrevistas/Entrevista1-Segmento1.png)
+
+- **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQAC_B1hZYbtRaf-j6yk2RnZAWleZHvzuLEwVm4Em2ZxUFg?e=3cisI8)
+- **Duración:** 0:00 - 13:22
+- **Aplicaciones usadas:** Instagram, Chrome
+- **Tecnologías:** Computadora, Celular
+- **Entrevistador:** Rodrigo Sosa
+
+**Resumen:**  
+Para Diana, la interfaz de EMSafe es fundamental para mantener la paz mental en su vida diaria, ya que le permite conocer de inmediato el nivel de exposición electromagnética al que está sometida, sin necesidad de ser una experta técnica. Valora que las notificaciones funcionen como una alerta oportuna, permitiéndole actuar rápidamente antes de que se superen los umbrales de seguridad recomendados. Considera que la visualización del mapa es una herramienta muy útil para identificar y evitar zonas de alta radiación en su hogar y entorno cercano. Gracias al historial de exposición, ha logrado entender cómo varían sus niveles de radiación a lo largo del tiempo, lo cual, junto con las recomendaciones personalizadas, le ha permitido ajustar sus hábitos diarios para crear un espacio más seguro. Para ella, EMSafe es una solución necesaria ante el crecimiento tecnológico actual, y recomendaría la aplicación a cualquier persona que busque tomar el control de su bienestar ambiental mediante información basada en evidencia. Como mejora, sugiere implementar funciones específicas para monitorear la exposición en áreas críticas, como el dormitorio durante las horas de descanso.
+
+> Entrevistado 02: Hangales Cieza
+
+- **Sexo:** Femenino
+- **Edad:** 26
+- **Distrito donde vive:** San Borja, Lima
+- **Nivel socioeconómico:** Medio
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Entrevistas/Entrevista2-Segmento1.png)
+
+- **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQAC_B1hZYbtRaf-j6yk2RnZAWleZHvzuLEwVm4Em2ZxUFg?e=3cisI8)
+- **Duración:** 13:23 - 22:29
+- **Aplicaciones usadas:** Youtube, Tiktok
+- **Tecnologías:** Celular, Computadora
+- **Entrevistador:** Rodrigo Sosa
+
+**Resumen:**  
+Hangales percibe a EMSafe como una pieza clave para desenvolverse en ambientes altamente tecnologizados, donde antes sentía una preocupación constante por la exposición electromagnética, pero no tenía una forma clara de medirla. La claridad de la pantalla principal le brinda la seguridad necesaria para tomar decisiones informadas sobre su entorno, transformando una incertidumbre invisible en datos precisos. Considera que el sistema de recomendaciones es altamente aplicable a su rutina, facilitando una reducción efectiva de los niveles de radiación. Para él, lo más valioso es que la aplicación funciona como un puente entre la tecnología y la salud preventiva, permitiendo que cualquier persona tome medidas concretas para protegerse. Recomendaría la herramienta a su círculo cercano, especialmente a quienes pasan largas jornadas cerca de dispositivos móviles y routers, destacando que representa un estándar necesario de bienestar. Como mejora, sugiere una mayor integración de los reportes, de manera que la información recolectada por los sensores IoT pueda visualizarse con mayor detalle analítico y así comprender mejor el impacto a largo plazo en su salud.
+
+> Entrevistado 03: Mateo Monge
+
+- **Sexo:** Masculino
+- **Edad:** 26
+- **Distrito donde vive:** Miraflores, Lima
+- **Nivel socioeconómico:** Medio
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Entrevistas/Entrevista5-Segmento1.png)
+
+- **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQAC_B1hZYbtRaf-j6yk2RnZAWleZHvzuLEwVm4Em2ZxUFg?e=3cisI8)
+- **Duración:** 22:30 - 30:14
+- **Aplicaciones usadas:** Youtube, Instagram
+- **Tecnologías:** Computadore, Celular
+- **Entrevistador:** Carlos Guimaraes
+
+**Resumen:**  
+Mateo considera que EMSafe es una herramienta útil para personas que buscan tener mayor control sobre su bienestar en espacios donde usan constantemente dispositivos electrónicos. Señala que, antes de conocer la aplicación, no tenía una forma clara de identificar si su exposición electromagnética era baja, moderada o alta, por lo que valoró que la app presente esta información de manera visual y sencilla. Destaca especialmente las alertas automáticas, ya que le permiten reaccionar a tiempo cuando se detectan niveles elevados, sin necesidad de revisar la aplicación constantemente. También considera importante el historial de mediciones, porque le ayuda a reconocer patrones en su rutina diaria y a tomar decisiones como alejar ciertos dispositivos de su zona de descanso o trabajo. Para él, EMSafe aporta tranquilidad, prevención y mayor conciencia sobre un riesgo que normalmente pasa desapercibido. Como mejora, sugiere incluir recomendaciones más específicas según el tipo de ambiente, por ejemplo dormitorio, sala de estudio o zona de trabajo.
+
+#### Segmento 2: Miembros de empresas y organizaciones que operan maquinaria de emisión electromagnética
+
+> Entrevistado 01: Gael Rivera
+
+- **Sexo:** Masculino
+- **Edad:** 25
+- **Distrito donde vive:** El Agustino, Lima
+- **Nivel socioeconómico:** Medio
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Entrevistas/Entrevista3-Segmento2.png)
+
+- **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQAC_B1hZYbtRaf-j6yk2RnZAWleZHvzuLEwVm4Em2ZxUFg?e=3cisI8)
+- **Duración:** 30:15 - 44:20
+- **Aplicaciones usadas:** Tiktok, Facebook
+- **Tecnologías:** Computadora
+- **Entrevistador:** Fabian Alejandro Oliva Lopez
+
+**Resumen:**  
+Gael considera que EMSafe representa una herramienta importante para empresas que trabajan con maquinaria o equipos capaces de generar emisiones electromagnéticas, ya que permite pasar de un control manual y poco frecuente a un monitoreo más constante y ordenado. Desde su perspectiva, contar con información en tiempo real facilita que el personal responsable pueda identificar zonas de mayor exposición y actuar antes de que se presenten riesgos para los trabajadores. Valora especialmente el panel de visualización, porque permite interpretar los niveles de radiación de manera clara sin depender únicamente de conocimientos técnicos. También destaca que las alertas automáticas pueden mejorar la respuesta operativa, ayudando a tomar decisiones rápidas como revisar equipos, restringir temporalmente un área o solicitar mantenimiento preventivo. Para él, el uso de EMSafe no solo contribuye a la seguridad laboral, sino también a generar mayor confianza dentro de la organización. Como mejora, sugiere incorporar reportes automáticos para supervisores y responsables de seguridad ocupacional, de modo que la información pueda utilizarse en auditorías internas y en la toma de decisiones empresariales.
+
+> Entrevistado 02: Alejandro Oroncoy
+
+- **Sexo:** Masculino
+- **Edad:** 28
+- **Distrito donde vive:** Miraflores, Lina
+- **Nivel socioeconómico:** Medio Alto
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Entrevistas/Entrevista4-Segmento2.png)
+
+- **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQAC_B1hZYbtRaf-j6yk2RnZAWleZHvzuLEwVm4Em2ZxUFg?e=3cisI8)
+- **Duración:** 44:20 - 55:20
+- **Aplicaciones usadas:** Facebook, Instagram
+- **Tecnologías:** Celular
+- **Entrevistador:** Fabian Alejandro Oliva Lopez
+
+**Resumen:**  
+Alejandro percibe a EMSafe como una solución útil para organizaciones que necesitan controlar ambientes donde existen equipos tecnológicos, maquinaria industrial o dispositivos que pueden generar exposición electromagnética. Señala que, en muchas empresas, este tipo de riesgo suele pasar desapercibido porque no es visible y porque las mediciones tradicionales suelen realizarse solo de manera puntual. Por ello, considera valioso que EMSafe permita centralizar la información mediante sensores IoT y una plataforma que muestre el estado de las zonas monitoreadas. Destaca que el mapa de radiación y los indicadores visuales pueden ayudar tanto al personal técnico como a los responsables administrativos a comprender rápidamente qué áreas requieren atención. Además, considera que las alertas pueden fortalecer los protocolos de seguridad, ya que permiten reaccionar de forma preventiva antes de que los niveles se conviertan en un problema mayor. Para Alejandro, la principal ventaja de EMSafe es que aporta trazabilidad, evidencia y control continuo a la gestión de seguridad ocupacional. Como mejora, propone agregar dashboards comparativos por área o sede, así como reportes exportables que permitan demostrar el cumplimiento de medidas preventivas ante gerencia o auditorías.
+
+> Entrevistado 03: Jose Miguel
+
+- **Sexo:** Masculino
+- **Edad:** 26
+- **Distrito donde vive:** San Miguel, Lima
+- **Nivel socioeconómico:** Medio
+
+**Entrevista:**
+
+![Imagen de entrevista](img/TB1/Entrevistas/Entrevista%206-Segmento%202.png)
+
+- **Link:** [upc-pre-202610-1asi0572-6766-EmSafe-
+validation-sprint-3](https://1drv.ms/v/c/665433351cdb4706/IQAC_B1hZYbtRaf-j6yk2RnZAWleZHvzuLEwVm4Em2ZxUFg?e=3cisI8)
+- **Duración:** 55:21 - 1:02:23
+- **Aplicaciones usadas:** Facebook
+- **Tecnologías:** Celular Computadora
+- **Entrevistador:** Fernando Lizano
+
+**Resumen:**  
+Jose Miguel percibe a EMSafe como una solución importante para empresas u organizaciones que trabajan con equipos capaces de emitir radiación electromagnética, ya que permite monitorear el entorno laboral de forma más ordenada y continua. Desde su punto de vista, muchas organizaciones suelen enfocarse en riesgos visibles, pero no siempre cuentan con herramientas para controlar factores ambientales menos evidentes, como la exposición electromagnética. Por ello, considera valioso que EMSafe integre sensores IoT, alertas y una plataforma de seguimiento que permita identificar zonas críticas y actuar de manera preventiva. Destaca que el sistema puede ayudar a mejorar la seguridad ocupacional, facilitar la supervisión del personal responsable y generar evidencia para futuras auditorías internas. También valora que los datos se puedan visualizar de forma clara mediante indicadores, historial y mapas, ya que esto permite tomar decisiones sin depender únicamente de mediciones manuales. Como mejora, sugiere incorporar reportes comparativos por áreas de trabajo y notificaciones automáticas para responsables de seguridad o mantenimiento.
+
+### 6.3.3. Evaluaciones según heurísticas
+
+### UX Heuristics & Principles Evaluation  
+### Usability – Inclusive Design – Information Architecture
+
+**Carrera:** Ingeniería de Software  
+**Curso:** Desarrollo de Soluciones IoT  
+**NRC:** 6766  
+**Profesor:** Marco Antonio León Baca  
+**Auditor:** Equipo Gauss  
+**Cliente(s):** Equipo Gauss / Usuarios objetivo de EMSafe  
+
+---
+
+### SITE O APP A EVALUAR
+
+El sistema evaluado es **EMSafe**, una solución IoT orientada al monitoreo de radiación electromagnética no ionizante en entornos domésticos y laborales. Para este Sprint 3, la evaluación se enfoca en la versión final integrada del sistema, considerando la conexión end-to-end entre el dispositivo IoT físico, el Edge Service, el Backend API, el Frontend Web Application y la Mobile Application.
+
+La evaluación considera los siguientes módulos desarrollados, integrados y validados durante el sprint:
+
+- **Aplicación móvil EMSafe:** visualización de niveles de radiación electromagnética en tiempo real, alertas automatizadas, mapa de radiación, filtros por fecha/zona/nivel, reportes mensuales y anuales, gráficos de tendencias, chatbot con IA, gestión de perfil y preferencias del usuario.
+- **Plataforma web administrativa:** dashboard principal con métricas completas, historial de alarmas, gestión de alarmas, gestión de dispositivos, configuración de dispositivos y sección de perfil web.
+- **Backend API:** endpoints para mediciones en tiempo real, datos históricos agregados, mapa de calor, perfil de usuario, eliminación de datos personales, reportes, chat, registro de cliente y sincronización con el dispositivo IoT.
+- **Edge Service EMSafe:** servicio desarrollado con Flask para gestionar la comunicación entre el dispositivo físico ESP32 y el Backend API, sincronizando el estado del dispositivo y enviando lecturas reales hacia la nube.
+- **Dispositivo IoT EMSafe:** prototipo físico basado en ESP32, encargado de capturar datos de radiación electromagnética y transmitirlos hacia el sistema mediante el flujo edge-to-cloud.
+- **Landing Page de EMSafe:** sección de contacto implementada con estructura, estilos y validación de campos.
+
+---
+
+### TAREAS A EVALUAR
+
+Las tareas seleccionadas corresponden a los flujos principales implementados y validados durante el Sprint 3, considerando la experiencia de usuarios finales, administradores y responsables técnicos del sistema:
+
+1. Visualizar niveles de radiación electromagnética en tiempo real desde la Mobile Application.
+2. Recibir e interpretar alertas automatizadas cuando los niveles superan los umbrales establecidos.
+3. Consultar el mapa de radiación en tiempo real desde la aplicación móvil.
+4. Aplicar filtros por fecha, zona y nivel de radiación dentro del mapa.
+5. Consultar reportes mensuales y anuales de exposición electromagnética.
+6. Interpretar gráficos de tendencias para identificar patrones de exposición.
+7. Realizar consultas mediante el chatbot integrado con el servicio de IA.
+8. Actualizar datos personales y preferencias desde el perfil móvil.
+9. Visualizar métricas generales desde el Dashboard Web.
+10. Revisar el historial de alarmas desde la plataforma web administrativa.
+11. Cambiar el estado de una alarma a resuelta o en revisión.
+12. Agregar, editar, eliminar y configurar dispositivos IoT desde la plataforma web.
+13. Validar la transmisión de datos desde el dispositivo ESP32 hacia el Backend API mediante el Edge Service.
+14. Verificar que las lecturas capturadas por el dispositivo físico se reflejen correctamente en la Mobile Application y el Frontend Web Application.
+15. Utilizar la sección de contacto de la Landing Page para enviar información mediante el formulario.
+
+---
+
+### TAREAS NO INCLUIDAS
+
+Las siguientes tareas quedan fuera del alcance de esta evaluación, debido a que no forman parte del core funcional definido para la entrega final del Sprint 3 o se consideran futuras extensiones del sistema:
+
+- Módulo de agendamiento técnico avanzado, debido a que fue priorizado fuera del alcance principal del sprint.
+- Integraciones externas avanzadas con sistemas empresariales de terceros.
+- Automatizaciones complejas para controlar dispositivos externos más allá del flujo validado con el dispositivo IoT físico.
+- Procesos de pago, planes de suscripción o facturación.
+- Administración avanzada de roles, permisos granulares o auditoría completa.
+- Reportes regulatorios oficiales o certificados para entidades externas.
+- Mantenimiento predictivo automatizado basado en inteligencia artificial.
+- Despliegue masivo de sensores EMF especializados en ambientes reales de producción.
+- Publicación formal de la Mobile Application en tiendas como Google Play o App Store.
+- Funciones clínicas, médicas o diagnósticas relacionadas con la exposición electromagnética.
+
+---
+
+### ESCALA DE SEVERIDAD
+
+| Severidad | Descripción |
+|---|---|
+| 1 | Problema superficial, fácilmente superado y poco frecuente. |
+| 2 | Problema menor, ocurre con cierta frecuencia o genera leve fricción. |
+| 3 | Problema mayor, ocurre frecuentemente o impide que algunos usuarios completen la tarea. Requiere corrección prioritaria. |
+| 4 | Problema muy grave o bloqueante. Debe resolverse antes del lanzamiento. |
+
+---
+
+### TABLA RESUMEN
+
+| # | Problema | Severidad | Heurística violada |
+|---|---|---:|---|
+| 1 | El flujo end-to-end entre el ESP32, Edge Service, Backend API y las interfaces puede generar incertidumbre si no se muestra claramente el estado de sincronización de cada etapa. | 3 | Visibilidad del estado del sistema |
+| 2 | El mapa de radiación y sus filtros pueden resultar complejos para usuarios sin experiencia técnica si no se explica claramente qué representa cada zona, color o nivel. | 3 | Correspondencia entre el sistema y el mundo real / Diseño inclusivo |
+| 3 | Los reportes mensuales, anuales y gráficos de tendencias muestran información valiosa, pero pueden requerir explicaciones adicionales para facilitar la interpretación de patrones de exposición. | 2 | Reconocimiento antes que recuerdo |
+| 4 | La gestión de alarmas desde la plataforma web puede generar errores si los cambios de estado no incluyen confirmaciones claras o retroalimentación visible. | 3 | Prevención de errores / Visibilidad del estado del sistema |
+| 5 | La eliminación de datos personales del usuario requiere especial cuidado, ya que una acción irreversible sin confirmación suficiente puede afectar la confianza y seguridad del usuario. | 4 | Prevención de errores / Control y libertad del usuario |
+| 6 | La gestión de dispositivos IoT puede ser riesgosa si las acciones de editar, eliminar o configurar parámetros técnicos no diferencian claramente sus consecuencias. | 3 | Prevención de errores / Ayuda y documentación |
+| 7 | El chatbot con IA puede generar expectativas incorrectas si no comunica sus límites y si las recomendaciones no se presentan como orientación preventiva, no médica. | 3 | Ayuda y documentación / Diseño ético e inclusivo |
+| 8 | El sistema continúa dependiendo en parte del color para comunicar niveles de riesgo, lo que puede afectar a usuarios con dificultades visuales o daltonismo. | 2 | Accesibilidad y diseño inclusivo |
+
+---
+
+### SUPUESTOS BASADOS EN EL CONTEXTO DEL SPRINT 3
+
+- La evaluación se basa en las funcionalidades implementadas y validadas durante el Sprint 3.
+- Se asume que el sistema EMSafe cuenta con integración funcional entre el dispositivo físico ESP32, el Edge Service, el Backend API, el Frontend Web Application y la Mobile Application.
+- Se asume que la Mobile Application permite visualizar niveles de radiación, alertas, mapa, filtros, reportes, tendencias, chatbot y perfil de usuario.
+- Se asume que la plataforma web administrativa permite gestionar dashboard, alarmas, dispositivos y perfil.
+- Se asume que el Backend API expone los endpoints necesarios para mediciones en tiempo real, mapa de calor, reportes, perfil, eliminación de datos personales y comunicación con el Edge Service.
+- Se asume que el Edge Service funciona como intermediario entre el dispositivo IoT físico y la nube.
+- Se asume que el sistema fue validado con datos reales capturados por el hardware físico durante la etapa de pruebas end-to-end.
+- Se asume que algunas funcionalidades, como mantenimiento predictivo, reportes regulatorios oficiales, integraciones externas avanzadas y agendamiento técnico avanzado, pertenecen a una visión futura del producto.
+
+## 6.4. Video About-the-Product
+
+El link del video About the Product realizado para este Sprint se encuentra en el siguiente Link:
+
+<a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQDa7RJaPxBKRKiiupyrOo2TARAXO-w0xUJwipeeVdbyvRA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=NXJq4J">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210364_upc_edu_pe/IQDa7RJaPxBKRKiiupyrOo2TARAXO-w0xUJwipeeVdbyvRA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=NXJq4J</a>
+
+
+
 ## Conclusiones y recomendaciones
 
 - La contaminación electromagnética en entornos domésticos e industriales representa un riesgo real y creciente, agravado por la ausencia de herramientas accesibles para medirla. EmSafe surge como respuesta directa a esta brecha mediante una solución IoT integrada.
@@ -4683,5 +5414,11 @@ En este sprint, el enfoque estará en completar las funcionalidades restantes de
 * Sujay, L. (2024). Number of IoT connections worldwide 2022-2033. Statista. [Number of IoT connections worldwide 2022-2033](https://www.statista.com/statistics/1183457/iot-connected-devices-worldwide/) 
 
 # Anexo
+
+ANEXO A:
+
+Video About the team - [upc-pre-202610-1asi0572-6766-EmSafe-
+about the team-sprint-3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212214_upc_edu_pe/IQCSQ311RLewTafDPis-h1W0AQEOsLWqx8Bp93cuA2WUu7c?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=QSZMDR)
+
 
 
